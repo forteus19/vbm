@@ -1,0 +1,32 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1124 com/boehmod/blockfront/client/gui/Crosshair
+	FIELD field_6281 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_1124;
+	FIELD field_6282 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_6283 top Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6284 bottom Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6285 left Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6286 right Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6287 middle Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6288 DEFAULT_TOP Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6289 DEFAULT_BOTTOM Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6290 DEFAULT_LEFT Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6291 DEFAULT_RIGHT Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6292 DEFAULT_MIDDLE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6293 name Ljava/lang/String;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 name
+		ARG 2 top
+		ARG 3 bottom
+		ARG 4 left
+		ARG 5 right
+		ARG 6 middle
+	METHOD method_5472 top ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_5473 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_5474 bottom ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_5475 left ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_5476 right ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_5477 middle ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_5478 name ()Ljava/lang/String;
+	CLASS BF_1125 Resource
+		METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+			ARG 1 minecraft

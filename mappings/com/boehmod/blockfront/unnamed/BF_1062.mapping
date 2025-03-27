@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1062
+	FIELD field_4331 FORMAT Ljava/text/NumberFormat;
+	METHOD method_4545 formatLong (J)Ljava/lang/String;
+		ARG 0 value

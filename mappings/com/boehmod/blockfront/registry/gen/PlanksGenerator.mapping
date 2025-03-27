@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_521 com/boehmod/blockfront/registry/gen/PlanksGenerator
+	FIELD field_2214 INSTANCES Lit/unimi/dsi/fastutil/objects/ObjectList;
+	METHOD method_1853 provideBlock (Lcom/boehmod/blockfront/unnamed/BF_592;)V
+		ARG 1 provider
+	METHOD method_1855 provideItem (Lcom/boehmod/blockfront/unnamed/BF_594;)V
+		ARG 1 provider
+	METHOD method_1856 provideLanguage (Lcom/boehmod/blockfront/unnamed/BF_595;)V
+		ARG 1 provider

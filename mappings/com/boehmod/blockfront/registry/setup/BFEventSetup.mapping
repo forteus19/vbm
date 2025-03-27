@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1102 com/boehmod/blockfront/registry/setup/BFEventSetup
+	METHOD method_5134 register (Lnet/neoforged/bus/api/IEventBus;)V
+		ARG 0 bus

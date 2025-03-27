@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_519 com/boehmod/blockfront/registry/gen/MultiformGenerator
+	FIELD field_2191 INSTANCES Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_2192 block Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2193 slab Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2194 stair Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2195 wall Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 id
+		ARG 2 properties
+	METHOD method_1828 provideBlock (Lcom/boehmod/blockfront/unnamed/BF_592;)V
+		ARG 1 provider
+	METHOD method_1829 provideItem (Lcom/boehmod/blockfront/unnamed/BF_594;)V
+		ARG 1 provider

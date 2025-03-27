@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_518 com/boehmod/blockfront/common/block/BarrierWallBlock
+	FIELD field_2190 predicate Lcom/boehmod/blockfront/unnamed/BF_513;
+	METHOD <init> (ZZLcom/boehmod/blockfront/unnamed/BF_513;)V
+		ARG 3 predicate

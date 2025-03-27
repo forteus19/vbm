@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_665 com/boehmod/blockfront/registry/setup/BFPacketSetup
+	METHOD method_2568 register (Lnet/neoforged/neoforge/network/event/RegisterPayloadHandlersEvent;)V
+		ARG 0 event

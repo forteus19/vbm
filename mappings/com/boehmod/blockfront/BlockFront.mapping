@@ -1,0 +1,31 @@
+CLASS com/boehmod/blockfront/unnamed/BF_27 com/boehmod/blockfront/BlockFront
+	FIELD field_105 CLOUD_PORT I
+	FIELD field_106 INSTANCE Lcom/boehmod/blockfront/unnamed/BF_27;
+	FIELD field_107 modManager Lcom/boehmod/blockfront/unnamed/BF_445;
+	FIELD field_108 RELEASE_STAGE Lcom/boehmod/blockfront/unnamed/BF_448;
+	FIELD field_109 DISPLAY_NAME Ljava/lang/String;
+	FIELD field_110 VERSION_COMPONENT Lnet/minecraft/network/chat/Component;
+	FIELD field_111 MOD_ID Ljava/lang/String;
+	FIELD field_112 DISPLAY_NAME_COMPONENT Lnet/minecraft/network/chat/Component;
+	FIELD field_113 VERSION Ljava/lang/String;
+	FIELD field_114 RELEASE_STAGE_COMPONENT Lnet/minecraft/network/chat/Component;
+	FIELD field_115 CLOUD_URL Ljava/lang/String;
+	FIELD field_116 DATA_FOLDER Ljava/lang/String;
+	METHOD <init> (Lnet/neoforged/bus/api/IEventBus;)V
+		ARG 1 modBus
+	METHOD method_146 getInstance ()Lcom/boehmod/blockfront/unnamed/BF_27;
+	METHOD method_147 getManager ()Lcom/boehmod/blockfront/unnamed/BF_445;
+	METHOD method_148 setManager (Lcom/boehmod/blockfront/unnamed/BF_445;)V
+		ARG 1 manager
+	METHOD method_149 (Lnet/neoforged/fml/event/lifecycle/FMLClientSetupEvent;)V
+		ARG 1 clientSetupEvent
+	METHOD method_150 commonSetup (Lnet/neoforged/fml/event/lifecycle/FMLCommonSetupEvent;)V
+		ARG 1 event
+	METHOD method_151 (Lnet/neoforged/fml/event/lifecycle/FMLDedicatedServerSetupEvent;)V
+		ARG 1 serverSetupEvent
+	METHOD method_152 gatherData (Lnet/neoforged/neoforge/data/event/GatherDataEvent;)V
+		ARG 1 event
+	METHOD method_153 registerCommands (Lnet/neoforged/neoforge/event/RegisterCommandsEvent;)V
+		ARG 1 event
+	METHOD method_154 addNewRegistries (Lnet/neoforged/neoforge/registries/NewRegistryEvent;)V
+		ARG 1 event

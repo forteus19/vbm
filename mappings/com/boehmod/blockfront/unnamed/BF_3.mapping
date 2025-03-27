@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_3
+	FIELD field_17 bakery Lcom/boehmod/blockfront/client/corpse/physics/b;
+	METHOD method_23 addChunkSection (Lnet/minecraft/world/level/chunk/LevelChunkSection;III)V
+		ARG 1 section
+	METHOD method_26 instantiateCollider (Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 level
+	METHOD method_28 freeCollider ()V

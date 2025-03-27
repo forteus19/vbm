@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_517 com/boehmod/blockfront/common/block/BarrierStairBlock
+	FIELD field_2185 predicate Lcom/boehmod/blockfront/unnamed/BF_513;
+	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockState;ZZLcom/boehmod/blockfront/unnamed/BF_513;)V
+		ARG 4 predicate

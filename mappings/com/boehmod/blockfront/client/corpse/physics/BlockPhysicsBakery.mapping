@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/client/corpse/physics/b com/boehmod/blockfront/client/corpse/physics/BlockPhysicsBakery
+	FIELD field_1094 level Lnet/minecraft/client/multiplayer/ClientLevel;
+	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 level
+	METHOD method_784 getLevel ()Lnet/minecraft/world/level/Level;

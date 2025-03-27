@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_475 com/boehmod/blockfront/cloud/connection/IConnectionDetails
+	METHOD attemptConnection attemptConnection ()V
+	METHOD getChannelType getChannelType ()Lcom/boehmod/bflib/cloud/common/ChannelType;
+	METHOD getHardwareId getHardwareId ()[B
+	METHOD getUsername getUsername ()Ljava/lang/String;
+	METHOD getVersion getVersion ()Ljava/lang/String;
+	METHOD getVersionHash getVersionHash ()Ljava/lang/String;
+	METHOD method_1701 getLocation ()Ljava/lang/String;
+	METHOD method_1702 getUUID ()Ljava/util/UUID;
+	METHOD method_1707 getPort ()I

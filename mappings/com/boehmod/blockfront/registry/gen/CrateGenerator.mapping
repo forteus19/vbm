@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_520 com/boehmod/blockfront/registry/gen/CrateGenerator
+	FIELD field_2197 INSTANCES Lit/unimi/dsi/fastutil/objects/ObjectList;
+	METHOD method_1834 provideBlock (Lcom/boehmod/blockfront/unnamed/BF_592;)V
+		ARG 1 provider
+	METHOD method_1839 provideItem (Lcom/boehmod/blockfront/unnamed/BF_594;)V
+		ARG 1 provider
+	METHOD method_1840 provideLanguage (Lcom/boehmod/blockfront/unnamed/BF_595;)V
+		ARG 1 provider
+	CLASS 1

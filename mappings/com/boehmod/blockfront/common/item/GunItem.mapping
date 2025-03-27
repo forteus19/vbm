@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/GunItem
+	METHOD method_4126 ammo (II)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4129 shake (Lcom/boehmod/blockfront/unnamed/BF_427;)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4131 damage (Lcom/boehmod/blockfront/unnamed/BF_951;)Lcom/boehmod/blockfront/unnamed/BF_993;

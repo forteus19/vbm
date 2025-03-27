@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/cloud/connection/ModConnectionChannelInitializer com/boehmod/blockfront/cloud/connection/BFConnectionChannelInitializer
+	FIELD connectionHandler connectionHandler Lcom/boehmod/blockfront/cloud/connection/ModConnection;
+	METHOD <init> (Lcom/boehmod/blockfront/cloud/connection/ModConnection;)V
+		ARG 1 modConnection
+	METHOD initChannel initChannel (Lio/netty/channel/Channel;)V
+		ARG 1 socketChannel

@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1107 com/boehmod/blockfront/registry/BFItems
+	FIELD field_5081 DR Lnet/neoforged/neoforge/registries/DeferredRegister$Items;
+	FIELD field_5117 ID_MAP Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
+	FIELD field_5183 GUN_BAR Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5221 GUN_PTRS Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_5239 (Lnet/minecraft/world/item/Item$Properties;)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 0 properties

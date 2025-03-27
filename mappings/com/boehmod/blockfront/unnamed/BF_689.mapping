@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_689
+	METHOD method_2981 createPlayerStatsComponent (Lcom/boehmod/blockfront/unnamed/BF_476;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 0 cloudData

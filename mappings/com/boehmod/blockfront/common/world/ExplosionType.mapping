@@ -1,0 +1,26 @@
+CLASS com/boehmod/blockfront/unnamed/BF_676 com/boehmod/blockfront/common/world/ExplosionType
+	FIELD audioConfig audioConfig Lcom/boehmod/blockfront/unnamed/BF_674;
+	FIELD blockDamageMotion blockDamageMotion Lnet/minecraft/world/phys/Vec2;
+	FIELD blockDamageRadius blockDamageRadius I
+	FIELD maxDistance maxDistance F
+	FIELD power power F
+	FIELD shakeNodeData shakeNodeData Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD shakeNodeFaintData shakeNodeFaintData Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD shouldDisplayBlockDamage shouldDisplayBlockDamage Z
+	METHOD <init> (Ljava/lang/String;IFFILnet/minecraft/world/phys/Vec2;Lcom/boehmod/blockfront/unnamed/BF_674;Lcom/boehmod/blockfront/unnamed/BF_427;Lcom/boehmod/blockfront/unnamed/BF_427;Z)V
+		ARG 3 maxDistance
+		ARG 4 power
+		ARG 5 blockDamageRadius
+		ARG 6 blockDamageMotion
+		ARG 7 audioConfig
+		ARG 8 shakeNodeData
+		ARG 9 shakeNodeFaintData
+		ARG 10 shouldDisplayBlockDamage
+	METHOD getAudioConfig getAudioConfig ()Lcom/boehmod/blockfront/unnamed/BF_674;
+	METHOD getBlockDamageMotion getBlockDamageMotion ()Lnet/minecraft/world/phys/Vec2;
+	METHOD getBlockDamageRadius getBlockDamageRadius ()I
+	METHOD getMaxDistance getMaxDistance ()F
+	METHOD getPower getPower ()F
+	METHOD getShakeNodeData getShakeNodeData ()Lcom/boehmod/blockfront/unnamed/BF_427;
+	METHOD getShakeNodeFaintData getShakeNodeFaintData ()Lcom/boehmod/blockfront/unnamed/BF_427;
+	METHOD shouldDisplayBlockDamage shouldDisplayBlockDamage ()Z

@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1088 com/boehmod/blockfront/registry/BFBlockSoundAttributes
+	FIELD field_4436 DR Lnet/neoforged/neoforge/registries/DeferredRegister;

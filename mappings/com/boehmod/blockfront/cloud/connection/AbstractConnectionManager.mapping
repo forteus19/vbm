@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_411 com/boehmod/blockfront/cloud/connection/AbstractConnectionManager
+	FIELD field_1863 manager Lcom/boehmod/blockfront/unnamed/BF_445;

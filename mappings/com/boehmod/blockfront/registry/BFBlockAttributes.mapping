@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1086 com/boehmod/blockfront/registry/BFBlockAttributes
+	FIELD field_4371 DR Lnet/neoforged/neoforge/registries/DeferredRegister;

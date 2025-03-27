@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1110 com/boehmod/blockfront/registry/BFAttachments
+	FIELD field_5286 SERVER_PLAYER_DATA_ID Ljava/lang/String;
+	FIELD field_5287 CLIENT_PLAYER_DATA_ID Ljava/lang/String;
+	FIELD field_5288 CLOUD_PLAYER_DATA_ID Ljava/lang/String;
+	FIELD field_5290 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
+	FIELD field_5291 SERVER_PLAYER_DATA Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5292 CLIENT_PLAYER_DATA Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5293 CLOUD_PLAYER_DATA Lnet/neoforged/neoforge/registries/DeferredHolder;

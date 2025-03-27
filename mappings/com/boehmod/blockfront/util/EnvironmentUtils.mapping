@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_443 com/boehmod/blockfront/util/EnvironmentUtils
+	METHOD method_1545 isClient ()Z
+	METHOD method_1546 isServer ()Z
+	METHOD method_1547 getServer ()Lnet/minecraft/server/MinecraftServer;

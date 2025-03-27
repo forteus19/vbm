@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_593 com/boehmod/blockfront/registry/gen/provider/BFBlockTagsProvider
+	METHOD <init> (Lnet/minecraft/data/PackOutput;Ljava/util/concurrent/CompletableFuture;Lnet/neoforged/neoforge/common/data/ExistingFileHelper;)V
+		ARG 1 packOutput
+		ARG 2 completableFuture
+		ARG 3 existingFileHelper
+	METHOD addTags addTags (Lnet/minecraft/core/HolderLookup$Provider;)V
+		ARG 1 provider

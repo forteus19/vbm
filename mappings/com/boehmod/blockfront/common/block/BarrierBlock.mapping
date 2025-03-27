@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_514 com/boehmod/blockfront/common/block/BarrierBlock
+	FIELD field_2173 predicate Lcom/boehmod/blockfront/unnamed/BF_513;
+	FIELD field_2176 WATERLOGGED Lnet/minecraft/world/level/block/state/properties/BooleanProperty;
+	METHOD <init> (ZZLcom/boehmod/blockfront/unnamed/BF_513;)V
+		ARG 3 predicate

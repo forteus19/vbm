@@ -1,0 +1,14 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1103 com/boehmod/blockfront/registry/BFCreativeTabs
+	FIELD field_4914 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
+	FIELD field_4915 SHUTTERS_NAME Lnet/minecraft/network/chat/Component;
+	FIELD field_4916 PLANKS_NAME Lnet/minecraft/network/chat/Component;
+	FIELD field_4917 CRATES_NAME Lnet/minecraft/network/chat/Component;
+	FIELD field_4918 BUILDING_BLOCKS_NAME Lnet/minecraft/network/chat/Component;
+	FIELD field_4919 BLOCKS_NAME Lnet/minecraft/network/chat/Component;
+	FIELD field_4920 ITEMS_NAME Lnet/minecraft/network/chat/Component;
+	FIELD field_4921 ITEMS Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4922 BLOCKS Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4923 BUILDING_BLOCKS Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4924 CRATES Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4925 PLANKS Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4926 SHUTTERS Lnet/neoforged/neoforge/registries/DeferredHolder;

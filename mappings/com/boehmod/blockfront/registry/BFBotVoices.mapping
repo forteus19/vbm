@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1092 com/boehmod/blockfront/registry/BFBotVoices
+	FIELD field_4890 DR Lnet/neoforged/neoforge/registries/DeferredRegister;

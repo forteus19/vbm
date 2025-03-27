@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_594 com/boehmod/blockfront/registry/gen/provider/BFItemModelProvider
+	METHOD <init> (Lnet/minecraft/data/PackOutput;Lnet/neoforged/neoforge/common/data/ExistingFileHelper;)V
+		ARG 1 packOutput
+		ARG 2 existingFileHelper
+	METHOD registerModels registerModels ()V

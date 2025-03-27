@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbstractManager
+	FIELD field_2032 connectionManager Lcom/boehmod/blockfront/unnamed/BF_411;
+	FIELD field_2033 antiCheat Lcom/boehmod/blockfront/unnamed/BF_451;
+	FIELD field_2034 assetStore Lcom/boehmod/blockfront/unnamed/BF_459;
+	METHOD method_1550 createConnectionManager ()Lcom/boehmod/blockfront/unnamed/BF_411;
+	METHOD method_1551 createAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
+	METHOD method_1552 createAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;
+	METHOD method_1554 logConnectionStatus (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatusContext;)V
+		ARG 1 fromStatus
+		ARG 2 toStatus
+		ARG 3 context
+	METHOD method_1568 setGameRules (Lnet/minecraft/world/level/Level;Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 level
+		ARG 2 server
+	METHOD method_1569 getConnectionManager ()Lcom/boehmod/blockfront/unnamed/BF_411;
+	METHOD method_1570 getAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
+	METHOD method_1571 getAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;

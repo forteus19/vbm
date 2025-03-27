@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_522 com/boehmod/blockfront/registry/gen/ShuttersGenerator
+	FIELD field_2220 full Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2221 left Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2222 right Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2224 INSTANCES Lit/unimi/dsi/fastutil/objects/ObjectList;
+	METHOD method_1872 provideBlock (Lcom/boehmod/blockfront/unnamed/BF_592;)V
+		ARG 1 provider
+	METHOD method_1874 provideItem (Lcom/boehmod/blockfront/unnamed/BF_594;)V
+		ARG 1 provider
+	METHOD method_1875 provideLanguage (Lcom/boehmod/blockfront/unnamed/BF_595;)V
+		ARG 1 provider

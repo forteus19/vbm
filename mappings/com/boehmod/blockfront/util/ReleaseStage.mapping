@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_448 com/boehmod/blockfront/util/ReleaseStage
+	FIELD displayDisclaimer displayDisclaimer Z
+	FIELD nameComponent nameComponent Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Z)V
+		ARG 3 name
+		ARG 4 displayDisclaimer
+	METHOD getNameComponent getNameComponent ()Lnet/minecraft/network/chat/Component;
+	METHOD shouldDisplayDisclaimer shouldDisplayDisclaimer ()Z

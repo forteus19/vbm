@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_686
+	FIELD field_2932 name Ljava/lang/String;
+	FIELD field_2935 color I
+	METHOD getColor getColor ()I
+	METHOD getName getName ()Ljava/lang/String;
+	METHOD method_2823 isAllies ()Z
+	METHOD method_2824 isAxis ()Z

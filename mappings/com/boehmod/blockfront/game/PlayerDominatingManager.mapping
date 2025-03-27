@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_767 com/boehmod/blockfront/game/PlayerDominatingManager
+	FIELD field_3288 entries Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+	METHOD method_3199 clear ()V
+	CLASS BF_768 Entry

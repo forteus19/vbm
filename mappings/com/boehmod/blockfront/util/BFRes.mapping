@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_446 com/boehmod/blockfront/util/BFRes
+	METHOD method_1579 fromCloud (Lcom/boehmod/bflib/cloud/common/item/CloudResourceLocation;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 crl
+	METHOD method_1580 toCloud (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/bflib/cloud/common/item/CloudResourceLocation;
+		ARG 0 loc
+	METHOD method_1581 loc (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 path

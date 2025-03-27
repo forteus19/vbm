@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/AbstractGame
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
+		ARG 1 manager

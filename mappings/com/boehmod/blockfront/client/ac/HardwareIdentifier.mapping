@@ -1,0 +1,19 @@
+CLASS com/boehmod/blockfront/unnamed/BF_474 com/boehmod/blockfront/client/ac/HardwareIdentifier
+	FIELD field_2113 EMPTY [B
+	FIELD field_2114 THIS_ID [B
+	METHOD method_1692 getThisId ()[B
+	METHOD method_1693 (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+		ARG 1 string
+	METHOD method_1694 bytesToHexString ([B)Ljava/lang/String;
+		ARG 0 bytes
+	METHOD method_1695 generateHardwareID ()[B
+	METHOD method_1696 (Ljava/lang/String;)Z
+		ARG 0 string
+	METHOD method_1697 (Ljava/lang/StringBuilder;Ljava/lang/String;)V
+		ARG 1 string
+	METHOD method_1698 (Ljava/lang/String;)Z
+		ARG 0 string
+	METHOD method_1699 deNullifyString (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 string
+	METHOD method_1700 sha512Hash (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 string

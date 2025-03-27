@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_786 com/boehmod/blockfront/game/dom/CommanderAction
+	FIELD hasTimeLimit hasTimeLimit Z
+	FIELD icon icon Lnet/minecraft/resources/ResourceLocation;
+	FIELD iconName iconName Ljava/lang/String;
+	FIELD locale locale Ljava/lang/String;
+	FIELD spawnProtected spawnProtected Z
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;ZZLjava/lang/String;)V
+		ARG 3 iconName
+		ARG 4 hasTimeLimit
+		ARG 5 spawnProtected
+		ARG 6 locale
+	METHOD getIcon getIcon ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD getIconName getIconName ()Ljava/lang/String;
+	METHOD getLocale getLocale ()Ljava/lang/String;
+	METHOD hasSpawnProtection hasSpawnProtection ()Z
+	METHOD hasTimeLimit hasTimeLimit ()Z

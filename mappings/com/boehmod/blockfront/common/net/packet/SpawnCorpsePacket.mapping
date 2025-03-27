@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1049 com/boehmod/blockfront/common/net/packet/SpawnCorpsePacket
+	CLASS BF_1050 Data

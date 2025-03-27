@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClientManager
+	FIELD field_2552 versionChecker Lcom/boehmod/blockfront/unnamed/BF_449;
+	METHOD method_2232 getVersionChecker ()Lcom/boehmod/blockfront/unnamed/BF_449;
+	METHOD method_2256 getInstance ()Lcom/boehmod/blockfront/unnamed/BF_606;

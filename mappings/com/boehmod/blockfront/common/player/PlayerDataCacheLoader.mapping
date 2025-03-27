@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/common/player/PlayerDataCacheLoader
+	FIELD handler handler Lcom/boehmod/blockfront/common/player/c;
+	METHOD load load (Ljava/lang/Object;)Ljava/lang/Object;

@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1063 com/boehmod/blockfront/server/BFServer
+	METHOD method_4550 init (Lcom/boehmod/blockfront/unnamed/BF_27;Lnet/neoforged/fml/event/lifecycle/FMLDedicatedServerSetupEvent;)V
+		ARG 0 bf
+		ARG 1 event

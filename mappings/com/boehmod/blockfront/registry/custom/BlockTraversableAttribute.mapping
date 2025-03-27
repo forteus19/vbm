@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1000 com/boehmod/blockfront/registry/custom/BlockTraversableAttribute
+	FIELD field_4101 REGISTRY Lnet/minecraft/core/Registry;
+	FIELD field_4102 KEY Lnet/minecraft/resources/ResourceKey;

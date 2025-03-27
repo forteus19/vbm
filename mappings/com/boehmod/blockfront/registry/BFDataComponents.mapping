@@ -1,0 +1,21 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1104 com/boehmod/blockfront/registry/BFDataComponents
+	FIELD field_4927 NAME_TAG Ljava/util/function/Supplier;
+	FIELD field_4928 MAG_TYPE Ljava/util/function/Supplier;
+	FIELD field_4929 BARREL_TYPE Ljava/util/function/Supplier;
+	FIELD field_4930 AMMO Ljava/util/function/Supplier;
+	FIELD field_4931 AMMO_LOADED Ljava/util/function/Supplier;
+	FIELD field_4932 MAX_AMMO Ljava/util/function/Supplier;
+	FIELD field_4933 RELOAD_TICK Ljava/util/function/Supplier;
+	FIELD field_4934 MUZZLE_FLASH Ljava/util/function/Supplier;
+	FIELD field_4935 HEAT Ljava/util/function/Supplier;
+	FIELD field_4936 SCOPE Ljava/util/function/Supplier;
+	FIELD field_4937 ACTIVE Ljava/util/function/Supplier;
+	FIELD field_4938 EXPLODE_TIME Ljava/util/function/Supplier;
+	FIELD field_4939 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
+	FIELD field_4940 HAS_TAG Ljava/util/function/Supplier;
+	FIELD field_4941 STICKER_0 Ljava/util/function/Supplier;
+	FIELD field_4942 STICKER_1 Ljava/util/function/Supplier;
+	FIELD field_4943 STICKER_2 Ljava/util/function/Supplier;
+	FIELD field_4944 SKIN_ID Ljava/util/function/Supplier;
+	FIELD field_4945 ORIGINAL_OWNER Ljava/util/function/Supplier;
+	FIELD field_4946 DISPLAY_GUN Ljava/util/function/Supplier;

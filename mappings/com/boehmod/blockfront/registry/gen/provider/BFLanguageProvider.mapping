@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_595 com/boehmod/blockfront/registry/gen/provider/BFLanguageProvider
+	METHOD <init> (Lnet/minecraft/data/PackOutput;)V
+		ARG 1 packOutput
+	METHOD addTranslations addTranslations ()V
