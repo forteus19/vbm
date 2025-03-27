@@ -1,3 +1,7 @@
-/export
-/jars
-/libs
+*
+!/intermediary
+!/mappings
+!/matches
+!/.gitignore
+!/README.md
+!/*.patch
