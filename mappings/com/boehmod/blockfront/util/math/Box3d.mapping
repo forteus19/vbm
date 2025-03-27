@@ -1,0 +1,39 @@
+CLASS com/boehmod/blockfront/unnamed/BF_9 com/boehmod/blockfront/util/math/Box3d
+	FIELD field_62 minX D
+	FIELD field_63 minY D
+	FIELD field_64 minZ D
+	FIELD field_65 maxX D
+	FIELD field_66 maxY D
+	FIELD field_67 maxZ D
+	METHOD <init> (DDDDDD)V
+		ARG 1 x1
+		ARG 3 y1
+		ARG 5 z1
+		ARG 7 x2
+		ARG 9 y2
+		ARG 11 z2
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_10;)V
+		ARG 1 other
+	METHOD <init> (Lnet/minecraft/world/phys/AABB;)V
+		ARG 1 aabb
+	METHOD <init> (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 v1
+		ARG 2 v2
+	METHOD method_52 fixAndSetPoints (DDDDDD)V
+		ARG 1 x1
+		ARG 3 y1
+		ARG 5 z1
+		ARG 7 x2
+		ARG 9 y2
+		ARG 11 z2
+	METHOD method_53 fixAndSetOther (Lcom/boehmod/blockfront/unnamed/BF_10;)V
+		ARG 1 other
+	METHOD method_54 setPoints (DDDDDD)V
+		ARG 1 minX
+		ARG 3 minY
+		ARG 5 minZ
+		ARG 7 maxX
+		ARG 9 maxY
+		ARG 11 maxZ
+	METHOD method_55 setOther (Lcom/boehmod/blockfront/unnamed/BF_10;)V
+		ARG 1 other

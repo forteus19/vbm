@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_10 com/boehmod/blockfront/util/math/IBox3d
+	METHOD method_68 minX ()D
+	METHOD method_70 minY ()D
+	METHOD method_71 minZ ()D
+	METHOD method_72 maxX ()D
+	METHOD method_73 maxY ()D
+	METHOD method_74 maxZ ()D
