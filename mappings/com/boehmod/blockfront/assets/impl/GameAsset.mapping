@@ -1,1 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_683 com/boehmod/blockfront/assets/impl/GameAsset
+	FIELD field_2922 manager Lcom/boehmod/blockfront/unnamed/BF_445;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
+		ARG 1 manager

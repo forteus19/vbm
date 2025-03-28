@@ -1,3 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/AbstractGame
+	FIELD field_2823 COMMAND Lcom/boehmod/blockfront/unnamed/BF_462;
+	FIELD field_2840 FIRST_BLOOD_MESSAGE Lnet/minecraft/network/chat/Component;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager

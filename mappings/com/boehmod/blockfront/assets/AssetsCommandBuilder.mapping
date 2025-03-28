@@ -1,1 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_462 com/boehmod/blockfront/assets/AssetsCommandBuilder
+	METHOD method_1656 sub (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_462;)Lcom/boehmod/blockfront/unnamed/BF_462;
+		ARG 1 name
+		ARG 2 builder
