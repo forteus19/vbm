@@ -1,0 +1,19 @@
+CLASS com/boehmod/blockfront/unnamed/BF_471 com/boehmod/blockfront/cloud/client/ClientCloudRequester
+	FIELD field_2105 queue Ljava/util/Deque;
+	FIELD field_2106 manager Lcom/boehmod/blockfront/unnamed/BF_445;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
+		ARG 1 manager
+	METHOD method_1683 push (Lcom/boehmod/bflib/cloud/common/RequestType;)V
+		ARG 1 requestType
+	METHOD method_1684 push (Lcom/boehmod/bflib/cloud/common/RequestType;Ljava/util/UUID;)V
+		ARG 1 requestType
+		ARG 2 playerUUID
+	METHOD onUpdate onUpdate ()V
+	CLASS BF_472 Entry
+		FIELD field_2111 requestType Lcom/boehmod/bflib/cloud/common/RequestType;
+		FIELD field_2112 playerUUID Ljava/util/UUID;
+		METHOD <init> (Lcom/boehmod/bflib/cloud/common/RequestType;Ljava/util/UUID;)V
+			ARG 1 requestType
+			ARG 2 playerUUID
+		METHOD method_1689 requestType ()Lcom/boehmod/bflib/cloud/common/RequestType;
+		METHOD method_1690 playerUUID ()Ljava/util/UUID;

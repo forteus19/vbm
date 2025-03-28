@@ -1,3 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFBlocks
 	FIELD field_4553 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
 	FIELD field_4610 DR_GEN Lnet/neoforged/neoforge/registries/DeferredRegister;
+	METHOD method_5066 (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity
+	METHOD method_5071 (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity
+	METHOD method_5074 (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity
+	METHOD method_5077 (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity

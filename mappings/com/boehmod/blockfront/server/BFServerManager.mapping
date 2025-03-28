@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1067 com/boehmod/blockfront/server/BFServerManager
+	FIELD field_4337 matchMakingEnabled Z

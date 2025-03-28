@@ -1,7 +1,46 @@
 CLASS com/boehmod/blockfront/unnamed/BF_10 com/boehmod/blockfront/util/math/IBox3d
+	METHOD method_56 asAABB ()Lnet/minecraft/world/phys/AABB;
+	METHOD method_57 within (DDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_58 intersects (DDDDDD)Z
+		ARG 1 minX
+		ARG 3 minY
+		ARG 5 minZ
+		ARG 7 maxX
+		ARG 9 maxY
+		ARG 11 maxZ
+	METHOD method_59 setAndExtend (DDDLcom/boehmod/blockfront/unnamed/BF_9;)Lcom/boehmod/blockfront/unnamed/BF_9;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 other
+	METHOD method_60 expand (DLcom/boehmod/blockfront/unnamed/BF_9;)Lcom/boehmod/blockfront/unnamed/BF_9;
+		ARG 1 amount
+		ARG 3 other
+	METHOD method_61 intersects (Lcom/boehmod/blockfront/unnamed/BF_10;)Z
+		ARG 1 other
+	METHOD method_62 setAndEncase (Lcom/boehmod/blockfront/unnamed/BF_10;Lcom/boehmod/blockfront/unnamed/BF_9;)Lcom/boehmod/blockfront/unnamed/BF_9;
+		ARG 1 box1
+		ARG 2 box2
+	METHOD method_64 intersects (Lnet/minecraft/world/phys/AABB;)Z
+		ARG 1 aabb
+	METHOD method_65 center (Lorg/joml/Vector3d;)Lorg/joml/Vector3d;
+		COMMENT Sets the vector to the midpoint of the box.
+		ARG 1 vec
+	METHOD method_66 within (Lorg/joml/Vector3dc;)Z
+		ARG 1 vec
+	METHOD method_67 setAndExtend (Lorg/joml/Vector3dc;Lcom/boehmod/blockfront/unnamed/BF_9;)Lcom/boehmod/blockfront/unnamed/BF_9;
+		ARG 1 vec
+		ARG 2 other
 	METHOD method_68 minX ()D
+	METHOD method_69 size (Lorg/joml/Vector3d;)Lorg/joml/Vector3d;
+		COMMENT Sets the vector to the size of the box.
+		ARG 1 vec
 	METHOD method_70 minY ()D
 	METHOD method_71 minZ ()D
 	METHOD method_72 maxX ()D
 	METHOD method_73 maxY ()D
 	METHOD method_74 maxZ ()D
+	METHOD method_75 diagonalLen ()D

@@ -1,6 +1,7 @@
 *
 !/intermediary
 !/mappings
+!/mappings/**
 !/matches
 !/.gitignore
 !/README.md

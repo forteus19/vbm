@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/common/player/c com/boehmod/blockfront/common/player/PlayerDataHandler
+	FIELD field_1182 clanData Lcom/google/common/cache/LoadingCache;
+	METHOD method_866 putClanData (Ljava/util/UUID;Lcom/boehmod/bflib/cloud/common/AbstractClanData;)V
+		ARG 1 uuid
+		ARG 2 clanData

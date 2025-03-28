@@ -1,0 +1,38 @@
+CLASS com/boehmod/blockfront/unnamed/BF_928 com/boehmod/blockfront/common/match/BFCountry
+	FIELD botVoices botVoices Ljava/util/List;
+	FIELD miscItems miscItems Ljava/util/List;
+	FIELD name name Ljava/lang/String;
+	FIELD nationIcon nationIcon Lnet/minecraft/resources/ResourceLocation;
+	FIELD tag tag Ljava/lang/String;
+	FIELD usernames usernames Ljava/util/List;
+	FIELD warCryCrowdSound warCryCrowdSound Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD warCrySound warCrySound Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD warCrySoundCommander warCrySoundCommander Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD warCrySoundDistant warCrySoundDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
+		ARG 3 tag
+		ARG 4 name
+	METHOD fromTag fromTag (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_928;
+		ARG 0 tag
+	METHOD getMiscItems getMiscItems ()Ljava/util/List;
+	METHOD getName getName ()Ljava/lang/String;
+	METHOD getNationIcon getNationIcon ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD getRandomBotVoice getRandomBotVoice ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD getRandomUsername getRandomUsername ()Ljava/lang/String;
+	METHOD getSerializedName getSerializedName ()Ljava/lang/String;
+	METHOD getTag getTag ()Ljava/lang/String;
+	METHOD getWarCryCrowdSound getWarCryCrowdSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD getWarCrySound getWarCrySound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD getWarCrySoundCommander getWarCrySoundCommander ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD getWarCrySoundDistant getWarCrySoundDistant ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD registerBotVoice registerBotVoice (Lnet/neoforged/neoforge/registries/DeferredHolder;)V
+		ARG 1 botVoice
+	METHOD registerMiscItem registerMiscItem (Ljava/util/function/Supplier;)V
+		ARG 1 supplier
+	METHOD registerName registerName (Ljava/lang/String;)V
+		ARG 1 username
+	METHOD registerWarCrySounds registerWarCrySounds (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)V
+		ARG 1 sound
+		ARG 2 soundDistant
+		ARG 3 crowdSound
+		ARG 4 soundCommander

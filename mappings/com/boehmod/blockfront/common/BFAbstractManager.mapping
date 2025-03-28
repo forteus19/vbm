@@ -1,7 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbstractManager
+	FIELD field_2031 playerDataHandler Lcom/boehmod/blockfront/common/player/c;
 	FIELD field_2032 connectionManager Lcom/boehmod/blockfront/unnamed/BF_411;
 	FIELD field_2033 antiCheat Lcom/boehmod/blockfront/unnamed/BF_451;
 	FIELD field_2034 assetStore Lcom/boehmod/blockfront/unnamed/BF_459;
+	METHOD <init> (Lcom/boehmod/blockfront/common/player/c;)V
+		ARG 1 playerDataHandler
+	METHOD method_1549 getPlayerDataHandler ()Lcom/boehmod/blockfront/common/player/c;
 	METHOD method_1550 createConnectionManager ()Lcom/boehmod/blockfront/unnamed/BF_411;
 	METHOD method_1551 createAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
 	METHOD method_1552 createAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;
@@ -15,3 +19,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1569 getConnectionManager ()Lcom/boehmod/blockfront/unnamed/BF_411;
 	METHOD method_1570 getAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
 	METHOD method_1571 getAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;
+	METHOD method_1575 matchMakingEnabled ()Z

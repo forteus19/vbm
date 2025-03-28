@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_414 com/boehmod/blockfront/cloud/BFFeatureFlagManager
+	FIELD field_1864 currentEvent Ljava/lang/String;
+	METHOD featureFlagsChanged featureFlagsChanged ()V
+	METHOD method_1469 updateFeatureFlags ()V

@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_494 com/boehmod/blockfront/cloud/common/BFCommonCloudPacketHandlers
+	METHOD method_1774 featureFlags (Lcom/boehmod/bflib/cloud/packet/common/PacketFeatureFlags;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+	METHOD method_1775 requestedInventory (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedInventory;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+	METHOD method_1776 requestedItemDefault (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedItemDefault;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+	METHOD method_1777 requestedItemShowcase (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedItemShowcase;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+	METHOD method_1778 requestedPlayerData (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedPlayerData;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+	METHOD method_1779 requestedPlayerDataSet (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedPlayerDataSet;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+	METHOD method_1780 requestedPlayerStatusSet (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedPlayerStatusSet;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+	METHOD method_1781 serverNotification (Lcom/boehmod/bflib/cloud/packet/common/server/PacketServerNotification;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+	METHOD method_1782 register ()V
