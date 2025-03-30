@@ -1,8 +1,10 @@
 *
 !/intermediary
+!/intermediary/**
 !/mappings
 !/mappings/**
 !/matches
+!/matches/**
 !/.gitignore
 !/README.md
 !/*.patch
