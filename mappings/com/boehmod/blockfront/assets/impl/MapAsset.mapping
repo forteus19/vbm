@@ -1,1 +1,49 @@
 CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/MapAsset
+	FIELD field_3701 environmentType Lcom/boehmod/blockfront/unnamed/BF_771;
+	FIELD field_3702 DEFAULT_NAME Ljava/lang/String;
+	FIELD field_3703 DEFAULT_AUTHOR Ljava/lang/String;
+	FIELD field_3704 DEFAULT_MUSIC_SET Ljava/lang/String;
+	FIELD field_3705 author Ljava/lang/String;
+	FIELD field_3706 musicSet Ljava/lang/String;
+	FIELD field_3707 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_927;
+	FIELD field_3710 alliesTeam Lcom/boehmod/blockfront/unnamed/BF_929;
+	FIELD field_3711 axisTeam Lcom/boehmod/blockfront/unnamed/BF_929;
+	FIELD field_3712 shaderResource Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3713 hasCustomLightColor Z
+	FIELD field_3714 hasCustomSky Z
+	FIELD field_3715 hasCustomWater Z
+	FIELD field_3716 disableClouds Z
+	FIELD field_3717 disableSky Z
+	FIELD field_3719 hasCustomFog Z
+	FIELD field_3720 fogDensityNear F
+	FIELD field_3721 fogDensityFar F
+	FIELD field_3722 command Lcom/boehmod/blockfront/unnamed/BF_462;
+	FIELD field_3723 lightColor I
+	FIELD field_3724 skyColor I
+	FIELD field_3725 fogColor I
+	FIELD field_3726 waterColor I
+	FIELD field_3727 mapTime I
+	FIELD field_3730 name Ljava/lang/String;
+	METHOD getName getName ()Ljava/lang/String;
+	METHOD method_3840 getAuthor ()Ljava/lang/String;
+	METHOD method_3841 getEnvironmentType ()Lcom/boehmod/blockfront/unnamed/BF_771;
+	METHOD method_3843 setCustomFog (FF)Lcom/boehmod/blockfront/unnamed/BF_927;
+		ARG 1 densityNear
+		ARG 2 densityFar
+	METHOD method_3844 setCustomWaterColor (I)Lcom/boehmod/blockfront/unnamed/BF_927;
+		ARG 1 waterColor
+	METHOD method_3845 setCustomSky (II)Lcom/boehmod/blockfront/unnamed/BF_927;
+		ARG 1 skyColor
+		ARG 2 fogColor
+	METHOD method_3849 setEnvironmentType (Lcom/boehmod/blockfront/unnamed/BF_771;)V
+		ARG 1 environmentType
+	METHOD method_3860 setMapTime (I)Lcom/boehmod/blockfront/unnamed/BF_927;
+		ARG 1 mapTime
+	METHOD method_3861 removeShader ()V
+	METHOD method_3870 writeBuf (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_3872 readBuf (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_3879 setShader (Ljava/lang/String;)V
+		ARG 1 shaderName
+	METHOD method_3880 getShaderResource ()Lnet/minecraft/resources/ResourceLocation;

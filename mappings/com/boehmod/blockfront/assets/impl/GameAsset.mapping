@@ -1,4 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_683 com/boehmod/blockfront/assets/impl/GameAsset
+	FIELD field_2919 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	FIELD field_2922 manager Lcom/boehmod/blockfront/unnamed/BF_445;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
+	METHOD method_2800 getGameFromName (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_677;
+		ARG 1 manager
+		ARG 2 name

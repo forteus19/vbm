@@ -1,1 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/MatchLoadout
+	FIELD field_3732 id B
+	FIELD field_3735 INSTANCES Ljava/util/List;
+	FIELD field_3737 US_AIRBORNE Lcom/boehmod/blockfront/unnamed/BF_929;
+	FIELD field_3741 GER_WEHRMACHT Lcom/boehmod/blockfront/unnamed/BF_929;
+	METHOD method_3886 fromId (I)Lcom/boehmod/blockfront/unnamed/BF_929;
+		ARG 0 id
