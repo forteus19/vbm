@@ -2,3 +2,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4126 ammo (II)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4129 shake (Lcom/boehmod/blockfront/unnamed/BF_427;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4131 damage (Lcom/boehmod/blockfront/unnamed/BF_951;)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4154 setMagType (Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 itemStack
+		ARG 1 type
