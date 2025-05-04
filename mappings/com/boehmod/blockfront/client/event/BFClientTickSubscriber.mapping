@@ -1,7 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_83 com/boehmod/blockfront/client/event/BFClientTickSubscriber
 	FIELD field_402 TICK_RUNNERS Ljava/util/List;
-	FIELD field_403 MESSAGE_RIGHT_HAND Lnet/minecraft/network/chat/Component;
-	FIELD field_404 MESSAGE_SHADER Lnet/minecraft/network/chat/Component;
 	METHOD method_447 (Lit/unimi/dsi/fastutil/objects/ObjectArrayList;)V
 		ARG 0 list
 	METHOD method_448 hideGui (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;)V
