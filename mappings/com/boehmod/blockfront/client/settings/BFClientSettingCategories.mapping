@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_433 com/boehmod/blockfront/client/settings/BFClientSettingCategories
+	FIELD field_2001 INSTANCES Ljava/util/List;
+	FIELD field_2002 NOTIFICATIONS Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_2003 AUDIO Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_2004 CROSSHAIR Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_2005 UI Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_2006 EXPERIMENTAL Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_2007 DEBUG Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_2008 RULES Lcom/boehmod/blockfront/unnamed/BF_434;
+	METHOD method_1516 add (Lcom/boehmod/blockfront/unnamed/BF_434;)Lcom/boehmod/blockfront/unnamed/BF_434;
+		ARG 0 category

@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_432 com/boehmod/blockfront/client/settings/BFClientSettings
+	FIELD field_1968 INSTANCES Ljava/util/List;
+	FIELD field_1977 NOTIFICATION_MAP Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
+	FIELD field_1979 CLINIT_TIME J
+	METHOD method_1515 addNotification (Lcom/boehmod/bflib/cloud/common/NotificationType;Lcom/boehmod/blockfront/unnamed/BF_431;)Lcom/boehmod/blockfront/unnamed/BF_431;
+		ARG 0 notificationType
+		ARG 1 setting

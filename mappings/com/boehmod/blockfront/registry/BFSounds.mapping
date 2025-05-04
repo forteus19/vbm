@@ -2,6 +2,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_1112 com/boehmod/blockfront/registry/BFS
 	FIELD field_5596 MEMES Ljava/util/HashMap;
 	FIELD field_5598 RES_STRING_MAP Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
 	FIELD field_5599 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
+	FIELD field_5688 MATCH_CAPTUREPOINT_SIREN Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5689 MATCH_CAPTUREPOINT_TICK Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_5831 ENTITY_INFECTED_DEATH Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_5444 registerSound (Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
 		ARG 0 name

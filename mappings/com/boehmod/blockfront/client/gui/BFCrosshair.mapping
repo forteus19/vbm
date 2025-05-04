@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1124 com/boehmod/blockfront/client/gui/Crosshair
+CLASS com/boehmod/blockfront/unnamed/BF_1124 com/boehmod/blockfront/client/gui/BFCrosshair
 	FIELD field_6281 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_1124;
 	FIELD field_6282 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_6283 top Lnet/minecraft/resources/ResourceLocation;
