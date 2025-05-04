@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_906 com/boehmod/blockfront/common/item/BFWeaponItem
+	METHOD getName getName (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;
+		ARG 1 itemStack
+	METHOD inventoryTick inventoryTick (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;IZ)V
+		ARG 1 itemStack
+		ARG 2 level
+		ARG 3 entity
+		ARG 4 slotId
+		ARG 5 isSelected
+	METHOD method_3758 getMiscConfig ()Lcom/boehmod/blockfront/unnamed/BF_900;
+	METHOD method_3760 misc (Lcom/boehmod/blockfront/unnamed/BF_900;)Lcom/boehmod/blockfront/unnamed/BF_906;

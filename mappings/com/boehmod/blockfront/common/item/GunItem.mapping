@@ -1,7 +1,96 @@
 CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/GunItem
+	FIELD field_4003 damageConfig Lcom/boehmod/blockfront/unnamed/BF_951;
+	FIELD field_4004 reloadConfig Lcom/boehmod/blockfront/unnamed/BF_953;
+	FIELD field_4005 soundConfig Lcom/boehmod/blockfront/unnamed/BF_956;
+	FIELD field_4006 defaultFireConfig Lcom/boehmod/blockfront/unnamed/BF_957;
+	FIELD field_4009 equipSound Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4010 fireConfigs [Lcom/boehmod/blockfront/unnamed/BF_957;
+	FIELD field_4030 hasEquipSound Z
+	FIELD field_4051 weight F
+	FIELD field_4061 maxHitDist I
+	FIELD field_4062 currentFireConfig I
+	FIELD field_4068 ID_TO_MAG_TYPE Ljava/util/Map;
+	FIELD field_4069 ID_TO_BARREL_TYPE Ljava/util/Map;
+	FIELD shakeNodeData shakeNodeData Lcom/boehmod/blockfront/unnamed/BF_427;
+	METHOD appendHoverText appendHoverText (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item$TooltipContext;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V
+		ARG 1 itemStack
+		ARG 2 context
+		ARG 3 entries
+		ARG 4 flag
+	METHOD method_4118 getDamageConfig ()Lcom/boehmod/blockfront/unnamed/BF_951;
+	METHOD method_4119 getDefaultFireConfig ()Lcom/boehmod/blockfront/unnamed/BF_957;
+	METHOD method_4123 getFireConfigs ()[Lcom/boehmod/blockfront/unnamed/BF_957;
 	METHOD method_4126 ammo (II)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4129 shake (Lcom/boehmod/blockfront/unnamed/BF_427;)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4130 scope (Lcom/boehmod/blockfront/unnamed/BF_949$BF_950;Lcom/boehmod/blockfront/unnamed/BF_949;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4131 damage (Lcom/boehmod/blockfront/unnamed/BF_951;)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4132 reload (Lcom/boehmod/blockfront/unnamed/BF_953;)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 config
+	METHOD method_4133 sound (Lcom/boehmod/blockfront/unnamed/BF_956;)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4139 mag (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_994;)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4146 getAmmoLoaded (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 itemStack
+	METHOD method_4149 getBarrelTypeOrDefault (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_988;
+		ARG 1 itemStack
+	METHOD method_4150 getMagTypeOrDefault (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_994;
+		ARG 1 itemStack
+	METHOD method_4153 setAmmoLoaded (Lnet/minecraft/world/item/ItemStack;I)V
+		ARG 0 itemStack
+		ARG 1 value
 	METHOD method_4154 setMagType (Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)Lnet/minecraft/world/item/ItemStack;
 		ARG 0 itemStack
 		ARG 1 type
+	METHOD method_4158 setScope (Lnet/minecraft/world/item/ItemStack;Z)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 itemStack
+		ARG 1 value
+	METHOD method_4159 equipSound (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 sound
+	METHOD method_4164 fireModes ([Lcom/boehmod/blockfront/unnamed/BF_957;)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 configs
+	METHOD method_4174 getAmmo (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 itemStack
+	METHOD method_4175 setHeat (Lnet/minecraft/world/item/ItemStack;F)V
+		ARG 0 itemStack
+		ARG 1 value
+	METHOD method_4176 setAmmo (Lnet/minecraft/world/item/ItemStack;I)V
+		ARG 0 itemStack
+		ARG 1 value
+	METHOD method_4177 setBarrelType (Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 itemStack
+		ARG 1 value
+	METHOD method_4198 getHeat (Lnet/minecraft/world/item/ItemStack;)F
+		ARG 0 itemStack
+	METHOD method_4199 getMaxAmmo (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 itemStack
+	METHOD method_4200 getMagType (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
+		ARG 0 itemStack
+	METHOD method_4201 getScope (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 itemStack
+	METHOD method_4202 setMaxAmmo (Lnet/minecraft/world/item/ItemStack;I)V
+		ARG 0 itemStack
+		ARG 1 value
+	METHOD method_4205 weight (F)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 weight
+	METHOD method_4208 getReloadTick (Lnet/minecraft/world/item/ItemStack;)I
+		ARG 0 itemStack
+	METHOD method_4209 getBarrelType (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
+		ARG 0 itemStack
+	METHOD method_4210 restockAmmo (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 itemStack
+	METHOD method_4211 hasAmmo (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 itemStack
+	METHOD method_4212 setReloadTick (Lnet/minecraft/world/item/ItemStack;I)V
+		ARG 0 itemStack
+		ARG 1 value
+	METHOD method_4218 resetReloadTick (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 itemStack
+	METHOD method_4219 isReloading (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 itemStack
+	METHOD method_4220 setMuzzleFlash (Lnet/minecraft/world/item/ItemStack;I)V
+		ARG 0 itemStack
+		ARG 1 value
+	METHOD method_4224 updateMuzzleFlash (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 itemStack
+	METHOD method_4225 hasMuzzleFlash (Lnet/minecraft/world/item/ItemStack;)Z
+		ARG 0 itemStack
+	METHOD shouldCauseReequipAnimation shouldCauseReequipAnimation (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Z)Z

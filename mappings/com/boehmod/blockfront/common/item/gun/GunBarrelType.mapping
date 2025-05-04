@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_988 com/boehmod/blockfront/common/item/gun/GunBarrelType
+	FIELD field_3982 soundConfig Lcom/boehmod/blockfront/unnamed/BF_956;
+	FIELD field_3983 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_988;
+	FIELD field_3984 DEFAULT_ID Ljava/lang/String;
+	FIELD field_3986 displayName Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 displayName
+	METHOD getDisplayName getDisplayName ()Lnet/minecraft/network/chat/Component;
+	METHOD method_4097 getSoundConfig ()Lcom/boehmod/blockfront/unnamed/BF_956;
+	METHOD method_4098 setSoundConfig (Lcom/boehmod/blockfront/unnamed/BF_956;)Lcom/boehmod/blockfront/unnamed/BF_988;
+		ARG 1 config

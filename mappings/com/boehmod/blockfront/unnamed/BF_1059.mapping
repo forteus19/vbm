@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1059
+	METHOD method_4510 lerp (FFF)F
+		ARG 0 max
+		ARG 1 min
+		ARG 2 t

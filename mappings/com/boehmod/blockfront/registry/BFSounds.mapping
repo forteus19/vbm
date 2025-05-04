@@ -5,5 +5,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1112 com/boehmod/blockfront/registry/BFS
 	FIELD field_5688 MATCH_CAPTUREPOINT_SIREN Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_5689 MATCH_CAPTUREPOINT_TICK Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_5831 ENTITY_INFECTED_DEATH Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_6133 ITEM_GUN_DELISLECARBINE_PRE Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_6168 ITEM_GUN_PANZERBUCHSE39_EQUIP Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_5444 registerSound (Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;
 		ARG 0 name

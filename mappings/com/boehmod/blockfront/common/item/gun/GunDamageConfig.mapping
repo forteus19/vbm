@@ -1,1 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_951 com/boehmod/blockfront/common/item/gun/GunDamageConfig
+	FIELD field_3853 entries Lit/unimi/dsi/fastutil/floats/Float2ObjectMap;
+	METHOD <init> (FF)V
+		ARG 1 body
+		ARG 2 head
+	METHOD method_3949 add (FFF)Lcom/boehmod/blockfront/unnamed/BF_951;
+		ARG 1 distance
+		ARG 2 body
+		ARG 3 head
+	METHOD method_3951 getEntries ()Ljava/util/Map;

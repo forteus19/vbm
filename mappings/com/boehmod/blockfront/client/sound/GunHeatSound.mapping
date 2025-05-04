@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_394 com/boehmod/blockfront/client/sound/GunHeatSound
+	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
+		ARG 1 event
+		ARG 2 source
+	METHOD canPlaySound canPlaySound ()Z
+	METHOD canStartSilent canStartSilent ()Z
+	METHOD tick tick ()V

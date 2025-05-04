@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1062 com/boehmod/blockfront/util/StringUtils
+	FIELD field_4330 FANCY_CHARS Ljava/util/Map;
+	FIELD field_4331 FORMAT Ljava/text/NumberFormat;
+	METHOD method_4545 formatLong (J)Ljava/lang/String;
+		ARG 0 value
+	METHOD method_4546 abbreviate (Ljava/lang/String;I)Ljava/lang/String;
+		ARG 0 str
+		ARG 1 max
+	METHOD method_4547 abbreviate (Ljava/lang/String;II)Ljava/lang/String;
+		ARG 0 str
+		ARG 1 min
+		ARG 2 max
+	METHOD method_4548 formatDuration (J)Ljava/lang/String;
+		ARG 0 millis
+	METHOD method_4549 makeFancy (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 str
