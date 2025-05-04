@@ -22,3 +22,7 @@ There are some naming conventions that are loosely followed:
 - Client specific classes are in the `client` package, server specific classes are in the `server` package, and common classes are in the `common` package
   - ...except for packges at the root level, like `assets`, `cloud`, `game`, `registry`, and `util`.
 - Classes that are not obfuscated in the release jar (e.g. `RustCorpsePhysics`) should **not** be changed.
+
+## Project structure
+
+Each branch in this repo contains the mappings for its respective BlockFront version. Verions which had patches released later follow the naming scheme `BaseVersion+X`, where `X` is the patch number.
