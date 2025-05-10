@@ -1,0 +1,22 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1139 com/boehmod/blockfront/registry/gen/BFBlockMaterialSet
+	FIELD field_6425 bigBricks Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6426 brick Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6427 bricks Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6428 cobbled Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6429 cobbledTiles Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6430 crackedBrick Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6431 polished Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6432 polishedBrick Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6433 polishedSmoothBrick Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6434 powder Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6435 rough Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6436 smooth Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6437 smoothBrick Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6438 smoothCrackedBrick Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6439 smoothWindswept Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6440 stone Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6441 tiles Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6442 windswept Lcom/boehmod/blockfront/unnamed/BF_519;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 baseId
+		ARG 2 blockProperties

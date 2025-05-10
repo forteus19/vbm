@@ -1,6 +1,33 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFBlocks
+	FIELD field_4466 MUD_MULTI Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_4467 MUD_DARK_MULTI Lcom/boehmod/blockfront/unnamed/BF_519;
 	FIELD field_4553 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
 	FIELD field_4610 DR_GEN Lnet/neoforged/neoforge/registries/DeferredRegister;
+	FIELD field_6443 AUGITE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6444 CHERT_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6445 COQUINA_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6446 DEEP_ROCK_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6447 DEEPSLATE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6448 FELDSPAR_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6449 FOSSIL_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6450 HEMATITE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6451 LIMESTONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6452 LIMONITE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6453 MOONROCK_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6454 MUD_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6455 OZARK_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6456 PUMICE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6457 QUARTZITE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6458 RED_SANDSTONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6459 SANDSTONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6460 SCORIA_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6461 ASSORTED_BRICKS_MULTI Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6462 SHALE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6463 HALF_N_HALF_BRICKS_MULTI Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_6464 SLATE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6465 SOAPSTONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6466 STONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_6467 TUFF_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	METHOD method_5066 (Lnet/minecraft/world/entity/Entity;)Z
 		ARG 0 entity
 	METHOD method_5071 (Lnet/minecraft/world/entity/Entity;)Z

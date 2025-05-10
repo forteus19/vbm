@@ -1,9 +1,46 @@
 CLASS com/boehmod/blockfront/unnamed/BF_520 com/boehmod/blockfront/registry/gen/CrateGenerator
+	FIELD field_2196 baseId Ljava/lang/String;
 	FIELD field_2197 INSTANCES Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_2198 base Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2199 squint Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2200 small Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2201 openEmpty Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2202 openBullets Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2203 smallOpen Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2204 bigOpen Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 baseId
+		ARG 2 blockProperties
 	METHOD method_1834 provideBlock (Lcom/boehmod/blockfront/unnamed/BF_592;)V
 		ARG 1 provider
+	METHOD method_1835 getConfiguredModel (Lcom/boehmod/blockfront/unnamed/BF_592;Ljava/lang/String;Ljava/lang/String;)Lnet/neoforged/neoforge/client/model/generators/ConfiguredModel;
+		ARG 1 provider
+		ARG 2 name
+		ARG 3 parent
+	METHOD method_1836 getConfiguredModel (Lcom/boehmod/blockfront/unnamed/BF_592;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lnet/neoforged/neoforge/client/model/generators/ConfiguredModel;
+		ARG 1 provider
+		ARG 2 name
+		ARG 3 parent
+		ARG 4 suffix
+	METHOD method_1837 datagenSmall (Lcom/boehmod/blockfront/unnamed/BF_592;Lnet/neoforged/neoforge/registries/DeferredHolder;)V
+		ARG 1 provider
+		ARG 2 block
+	METHOD method_1838 datagenSlabBase (Lcom/boehmod/blockfront/unnamed/BF_592;Lnet/neoforged/neoforge/registries/DeferredHolder;Ljava/lang/String;)V
+		ARG 1 provider
+		ARG 2 block
+		ARG 3 suffix
 	METHOD method_1839 provideItem (Lcom/boehmod/blockfront/unnamed/BF_594;)V
 		ARG 1 provider
 	METHOD method_1840 provideLanguage (Lcom/boehmod/blockfront/unnamed/BF_595;)V
 		ARG 1 provider
+	METHOD method_1843 datagenSmallOpen (Lcom/boehmod/blockfront/unnamed/BF_592;Lnet/neoforged/neoforge/registries/DeferredHolder;)V
+		ARG 1 provider
+		ARG 2 block
+	METHOD method_1844 datagenOpen (Lcom/boehmod/blockfront/unnamed/BF_592;Lnet/neoforged/neoforge/registries/DeferredHolder;Ljava/lang/String;)V
+		ARG 1 provider
+		ARG 2 block
+		ARG 3 suffix
+	METHOD method_1850 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 word
+	METHOD method_1851 createBaseDisplayName ()Ljava/lang/String;
 	CLASS 1

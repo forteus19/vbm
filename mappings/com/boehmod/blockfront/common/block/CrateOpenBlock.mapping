@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_505 com/boehmod/blockfront/common/block/CrateOpenBlock
+	FIELD field_2166 SHAPE Lnet/minecraft/world/phys/shapes/VoxelShape;

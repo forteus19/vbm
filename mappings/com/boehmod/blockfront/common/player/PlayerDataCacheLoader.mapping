@@ -1,3 +1,6 @@
 CLASS com/boehmod/blockfront/common/player/PlayerDataCacheLoader
 	FIELD handler handler Lcom/boehmod/blockfront/common/player/c;
+	METHOD <init> (Lcom/boehmod/blockfront/common/player/c;)V
+		ARG 1 handler
 	METHOD load load (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 uuid

@@ -4,6 +4,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_1112 com/boehmod/blockfront/registry/BFS
 	FIELD field_5599 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
 	FIELD field_5688 MATCH_CAPTUREPOINT_SIREN Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_5689 MATCH_CAPTUREPOINT_TICK Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5800 BLOCK_PLANK_STEP Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5801 BLOCK_RUBBLE_STEP Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_5831 ENTITY_INFECTED_DEATH Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_6133 ITEM_GUN_DELISLECARBINE_PRE Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_6168 ITEM_GUN_PANZERBUCHSE39_EQUIP Lnet/neoforged/neoforge/registries/DeferredHolder;

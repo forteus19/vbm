@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_528 com/boehmod/blockfront/common/block/FloorDecalBlock
+	FIELD field_2239 SHAPE Lnet/minecraft/world/phys/shapes/VoxelShape;

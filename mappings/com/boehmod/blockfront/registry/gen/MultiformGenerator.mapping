@@ -4,10 +4,33 @@ CLASS com/boehmod/blockfront/unnamed/BF_519 com/boehmod/blockfront/registry/gen/
 	FIELD field_2193 slab Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_2194 stair Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_2195 wall Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_6421 EXCLUDE_LIST Ljava/util/List;
+	FIELD field_6422 baseId Ljava/lang/String;
+	FIELD field_6423 doDatagen Z
+	FIELD field_6424 mirrorVariance Z
 	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
 		ARG 1 id
 		ARG 2 properties
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;ZZ)V
+		ARG 1 baseId
+		ARG 2 blockProperties
+		ARG 3 doDatagen
+		ARG 4 mirrorVariance
 	METHOD method_1828 provideBlock (Lcom/boehmod/blockfront/unnamed/BF_592;)V
 		ARG 1 provider
 	METHOD method_1829 provideItem (Lcom/boehmod/blockfront/unnamed/BF_594;)V
 		ARG 1 provider
+	METHOD method_5543 getConfiguredModel (Lcom/boehmod/blockfront/unnamed/BF_592;Ljava/lang/String;ZI)Lnet/neoforged/neoforge/client/model/generators/ConfiguredModel;
+		ARG 1 provider
+		ARG 2 name
+		ARG 3 mirrored
+		ARG 4 rotationY
+	METHOD method_5544 provideLanguage (Lcom/boehmod/blockfront/unnamed/BF_595;)V
+		ARG 1 provider
+	METHOD method_5545 create (Ljava/lang/String;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Z)Lcom/boehmod/blockfront/unnamed/BF_519;
+		ARG 0 id
+		ARG 1 blockProperties
+		ARG 2 mirrorVariance
+	METHOD method_5550 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 word
+	METHOD method_5551 createBaseDisplayName ()Ljava/lang/String;

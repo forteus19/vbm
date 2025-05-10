@@ -4,6 +4,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_449 com/boehmod/blockfront/client/BFVers
 	METHOD method_1583 getCurrentVersion ()Ljava/lang/String;
 	METHOD method_1584 getVersionHash ()Ljava/lang/String;
 	METHOD method_1585 calculateJarHash ()Ljava/lang/String;
+	METHOD onUpdate onUpdate ()V
 	CLASS BF_450 APIThread
 		FIELD field_2052 versionChecker Lcom/boehmod/blockfront/unnamed/BF_449;
 		METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_449;Lcom/boehmod/blockfront/unnamed/BF_449;)V

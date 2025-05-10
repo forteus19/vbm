@@ -2,10 +2,26 @@ CLASS com/boehmod/blockfront/unnamed/BF_522 com/boehmod/blockfront/registry/gen/
 	FIELD field_2220 full Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_2221 left Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_2222 right Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2223 baseId Ljava/lang/String;
 	FIELD field_2224 INSTANCES Lit/unimi/dsi/fastutil/objects/ObjectList;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 baseId
+		ARG 2 blockProperties
 	METHOD method_1872 provideBlock (Lcom/boehmod/blockfront/unnamed/BF_592;)V
 		ARG 1 provider
+	METHOD method_1873 getConfiguredModel (Lcom/boehmod/blockfront/unnamed/BF_592;Ljava/lang/String;Ljava/lang/String;I)Lnet/neoforged/neoforge/client/model/generators/ConfiguredModel;
+		ARG 1 provider
+		ARG 2 name
+		ARG 3 parent
+		ARG 4 rotationY
 	METHOD method_1874 provideItem (Lcom/boehmod/blockfront/unnamed/BF_594;)V
 		ARG 1 provider
 	METHOD method_1875 provideLanguage (Lcom/boehmod/blockfront/unnamed/BF_595;)V
 		ARG 1 provider
+	METHOD method_1877 datagenBlock (Lcom/boehmod/blockfront/unnamed/BF_592;Lnet/neoforged/neoforge/registries/DeferredHolder;Ljava/lang/String;)V
+		ARG 1 provider
+		ARG 2 block
+		ARG 3 suffix
+	METHOD method_1880 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 word
+	METHOD method_1881 createBaseDisplayName ()Ljava/lang/String;

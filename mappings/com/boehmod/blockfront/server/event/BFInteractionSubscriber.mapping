@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1079 com/boehmod/blockfront/server/event/BFInteractionSubscriber
+	METHOD method_4600 onAttackEntityEvent (Lnet/neoforged/neoforge/event/entity/player/AttackEntityEvent;)V
+		ARG 0 event
+	METHOD method_4601 onPlayerInteractEntityEvent (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent$EntityInteract;)V
+		ARG 0 event
+	METHOD method_4602 onRightClickBlockEvent (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent$RightClickBlock;)V
+		ARG 0 event

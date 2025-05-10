@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/gui/ClientGuiUtils
+	FIELD field_215 RANK_BG_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_216 DEFAULT_CALLINGCARD_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_219 RED_CHAT_COLOR I
+	FIELD field_241 EMBER_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_242 DEBUG_SKIN_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6299 SHADOWEFFECT_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_262 drawTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;III)V
+	METHOD method_283 drawString (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;III)V
+		ARG 0 font
+		ARG 1 graphics
+		ARG 2 component
+		ARG 3 x
+		ARG 4 y
+		ARG 5 color
+	METHOD method_346 translucentBlack ()I
+	METHOD onUpdate onUpdate ()V
