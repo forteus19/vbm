@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_461 com/boehmod/blockfront/common/file/BFResource
+CLASS com/boehmod/blockfront/unnamed/BF_461 com/boehmod/blockfront/common/data/BFResource
 	FIELD field_2088 fallback Ljava/lang/Object;
 	FIELD field_2089 codec Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/lang/String;Ljava/lang/String;Lcom/mojang/serialization/Codec;Ljava/lang/Object;Ljava/util/function/Function;)V

@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_588 com/boehmod/blockfront/common/command/ShakeCommand
+	METHOD method_2138 register (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher
+	METHOD method_2139 run (Lcom/mojang/brigadier/context/CommandContext;FFFFFFFFI)V
+		ARG 0 context
+		ARG 1 pitchAmplitude
+		ARG 2 yawAmplitude
+		ARG 3 rollAplitude
+		ARG 4 pitchFrequency
+		ARG 5 yawFrequency
+		ARG 6 rollFrequency
+		ARG 7 easeInLerp
+		ARG 8 easeOutLerp
+		ARG 9 idleTime
+	METHOD method_2140 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context

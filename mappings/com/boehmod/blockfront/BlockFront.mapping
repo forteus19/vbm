@@ -1,6 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_27 com/boehmod/blockfront/BlockFront
+	COMMENT BlockFront mod entry point
 	FIELD field_105 CLOUD_PORT I
 	FIELD field_106 INSTANCE Lcom/boehmod/blockfront/unnamed/BF_27;
+		COMMENT Singleton instance
 	FIELD field_107 modManager Lcom/boehmod/blockfront/unnamed/BF_445;
 	FIELD field_108 RELEASE_STAGE Lcom/boehmod/blockfront/unnamed/BF_448;
 	FIELD field_109 DISPLAY_NAME Ljava/lang/String;

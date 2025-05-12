@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1100 com/boehmod/blockfront/client/setup/BFParticleProvidersSetup
+	METHOD method_5132 register (Lnet/neoforged/neoforge/client/event/RegisterParticleProvidersEvent;)V
+		ARG 0 event

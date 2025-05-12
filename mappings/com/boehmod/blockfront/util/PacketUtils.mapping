@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_971 com/boehmod/blockfront/util/PacketUtils
+	METHOD method_4058 sendToAllPlayers (Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;)V
+		ARG 0 payload
+	METHOD method_4059 sendToGamePlayers (Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 0 payload
+		ARG 1 game
+	METHOD method_4060 sendToPlayers (Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;Ljava/util/List;)V
+		ARG 0 payload
+		ARG 1 players
+	METHOD method_4061 sendToPlayer (Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 payload
+		ARG 1 player
+	METHOD method_4062 sendToServer (Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;)V
+		ARG 0 payload
+	METHOD method_4063 (Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player

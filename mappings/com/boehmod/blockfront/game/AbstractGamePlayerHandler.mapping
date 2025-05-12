@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/AbstractGamePlayerHandler
+	METHOD method_2794 getPlayerUUIDs ()Ljava/util/Set;

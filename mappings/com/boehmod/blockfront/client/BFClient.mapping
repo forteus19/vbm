@@ -8,3 +8,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_150 com/boehmod/blockfront/client/BFClie
 		ARG 1 manager
 	METHOD method_626 registerDimensionEffects (Lnet/neoforged/neoforge/client/event/RegisterDimensionSpecialEffectsEvent;)V
 		ARG 0 event
+	METHOD method_629 registerParticleProviders (Lnet/neoforged/neoforge/client/event/RegisterParticleProvidersEvent;)V
+		ARG 0 event

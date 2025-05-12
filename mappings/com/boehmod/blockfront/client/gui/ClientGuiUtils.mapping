@@ -2,6 +2,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/gui/Cli
 	FIELD field_215 RANK_BG_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_216 DEFAULT_CALLINGCARD_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_219 RED_CHAT_COLOR I
+	FIELD field_222 TRANSLUCENT_BLACK_COLOR I
 	FIELD field_241 EMBER_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_242 DEBUG_SKIN_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_6299 SHADOWEFFECT_TEXTURE Lnet/minecraft/resources/ResourceLocation;
@@ -13,5 +14,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/gui/Cli
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
+	METHOD method_325 getRenderTime ()F
 	METHOD method_346 translucentBlack ()I
 	METHOD onUpdate onUpdate ()V

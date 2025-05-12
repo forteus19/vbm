@@ -1,0 +1,33 @@
+CLASS com/boehmod/blockfront/unnamed/BF_427 com/boehmod/blockfront/util/math/ShakeNodeData
+	FIELD field_1892 pitchAmplitude F
+	FIELD field_1893 yawAmplitude F
+	FIELD field_1894 rollAplitude F
+	FIELD field_1895 pitchFrequency F
+	FIELD field_1896 yawFrequency F
+	FIELD field_1897 rollFrequency F
+	FIELD field_1898 easeInLerp F
+	FIELD field_1899 easeOutLerp F
+	FIELD field_1900 idleTime I
+	METHOD <init> (FFFFFFFFI)V
+		ARG 1 pitchAmplitude
+		ARG 2 yawAmplitude
+		ARG 3 rollAplitude
+		ARG 4 pitchFrequency
+		ARG 5 yawFrequency
+		ARG 6 rollFrequency
+		ARG 7 easeInLerp
+		ARG 8 easeOutLerp
+		ARG 9 idleTime
+	METHOD method_1494 idleTime ()I
+	METHOD method_1495 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_427;
+		ARG 0 buf
+	METHOD method_1496 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD method_1497 pitchAmplitude ()F
+	METHOD method_1498 yawAmplitude ()F
+	METHOD method_1499 rollAplitude ()F
+	METHOD method_1500 pitchFrequency ()F
+	METHOD method_1501 yawFrequency ()F
+	METHOD method_1502 rollFrequency ()F
+	METHOD method_1503 easeInLerp ()F
+	METHOD method_1504 easeOutLerp ()F
