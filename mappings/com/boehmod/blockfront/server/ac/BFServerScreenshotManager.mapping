@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1072 com/boehmod/blockfront/server/ac/BFServerScreenshotManager
+	FIELD field_4347 REQUESTERS Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
+	METHOD method_4588 enqueue (Lnet/minecraft/server/level/ServerPlayer;)Lcom/boehmod/blockfront/unnamed/BF_1073;
+		ARG 1 player
+	METHOD method_4590 unqueue (Ljava/util/UUID;)V
+		ARG 1 playerUuid

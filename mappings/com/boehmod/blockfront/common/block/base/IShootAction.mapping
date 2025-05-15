@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_536 com/boehmod/blockfront/common/block/extra/IShootAction
+CLASS com/boehmod/blockfront/unnamed/BF_536 com/boehmod/blockfront/common/block/base/IShootAction
 	METHOD method_1894 showParticle ()Z
 	METHOD method_1895 onShoot (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/world/level/Level;ILnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 minecraft

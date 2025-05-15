@@ -7,6 +7,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_459 com/boehmod/blockfront/assets/AssetS
 		ARG 1 manager
 	METHOD init init ()V
 	METHOD method_1631 getWatcher ()Lcom/boehmod/blockfront/unnamed/BF_456;
+	METHOD method_1633 getRegistry (Ljava/lang/Class;)Lcom/boehmod/blockfront/unnamed/BF_458;
 	METHOD method_1634 registerAssetType (Ljava/lang/Class;Ljava/lang/String;Ljava/util/function/Supplier;)V
 		ARG 1 assetClass
 		ARG 2 name

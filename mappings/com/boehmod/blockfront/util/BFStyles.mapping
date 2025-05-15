@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_447 com/boehmod/blockfront/util/BFStyles
+	FIELD field_2040 BOLD Lnet/minecraft/network/chat/Style;
+	FIELD field_2041 BLUE Lnet/minecraft/network/chat/Style;
+	FIELD field_2042 GREEN Lnet/minecraft/network/chat/Style;

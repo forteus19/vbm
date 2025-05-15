@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_545 com/boehmod/blockfront/common/block/RadioBlock
+	FIELD field_2267 shape Lcom/boehmod/blockfront/unnamed/BF_582;
+	FIELD field_2268 chatterSound Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_6533 HORIZONTAL_FACING Lnet/minecraft/world/level/block/state/properties/DirectionProperty;
+	FIELD field_6534 WATERLOGGED Lnet/minecraft/world/level/block/state/properties/BooleanProperty;
+	METHOD <init> (FFFFFFLnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/neoforged/neoforge/registries/DeferredHolder;)V
+		ARG 1 shapeX1
+		ARG 2 shapeY1
+		ARG 3 shapeZ1
+		ARG 4 shapeX2
+		ARG 5 shapeY2
+		ARG 6 shapeZ2
+		ARG 8 chatterSound
+	METHOD animateTick (Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)V
+		ARG 2 level
+		ARG 4 random

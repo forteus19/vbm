@@ -1,0 +1,14 @@
+CLASS com/boehmod/blockfront/unnamed/BF_587 com/boehmod/blockfront/common/command/ScreenshotCommand
+	METHOD method_2133 runScreenshot (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 manager
+		ARG 1 playerData
+		ARG 2 context
+		ARG 3 player
+	METHOD method_2134 regiser (Lcom/mojang/brigadier/CommandDispatcher;)V
+		ARG 0 dispatcher
+	METHOD method_2135 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_2136 (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 3 player
+	METHOD method_2137 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context

@@ -1,0 +1,42 @@
+CLASS com/boehmod/blockfront/unnamed/BF_585 com/boehmod/blockfront/common/command/BFCoreCommand
+	FIELD field_2468 NO_GAME_MAP_ERROR Lnet/minecraft/network/chat/Component;
+	FIELD field_2469 NOT_IN_GAME_ERROR Lnet/minecraft/network/chat/Component;
+	FIELD field_2470 DISABLED_ERROR Lnet/minecraft/network/chat/Component;
+	FIELD field_2471 FAIL_ERROR Lnet/minecraft/network/chat/Component;
+	FIELD field_2472 IN_GAME_ERROR Lnet/minecraft/network/chat/Component;
+	METHOD method_2108 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/commands/CommandBuildContext;)V
+		ARG 0 dispatcher
+		ARG 1 context
+	METHOD method_2109 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_2110 runToggleTeamSizes (Lcom/mojang/brigadier/context/CommandContext;)V
+	METHOD method_2111 runJoin (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)V
+	METHOD method_2112 runVehicleSpawn (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/core/Holder$Reference;)V
+	METHOD method_2113 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_2114 runLeave (Lcom/mojang/brigadier/context/CommandContext;)V
+	METHOD method_2115 runMapChange (Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)V
+	METHOD method_2116 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_2117 runReset (Lcom/mojang/brigadier/context/CommandContext;)V
+	METHOD method_2118 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_2119 runStageNext (Lcom/mojang/brigadier/context/CommandContext;)V
+	METHOD method_2120 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 context
+		ARG 1 suggestions
+	METHOD method_2121 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_2122 runNextbot (Lcom/mojang/brigadier/context/CommandContext;)V
+	METHOD method_2123 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
+		ARG 0 context
+		ARG 1 suggestions
+	METHOD method_2124 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_2125 runPause (Lcom/mojang/brigadier/context/CommandContext;)V
+	METHOD method_2126 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_2127 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_2128 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context

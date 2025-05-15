@@ -1,1 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_458 com/boehmod/blockfront/assets/AssetRegistry
+	FIELD field_2079 entries Ljava/util/Map;
+	METHOD method_1614 loadFromDisk ()V
+	METHOD method_1621 getEntries ()Ljava/util/Map;

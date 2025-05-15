@@ -9,6 +9,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1550 createConnectionManager ()Lcom/boehmod/blockfront/unnamed/BF_411;
 	METHOD method_1551 createAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
 	METHOD method_1552 createAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;
+	METHOD method_1553 getGames ()Ljava/util/Map;
 	METHOD method_1554 logConnectionStatus (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatusContext;)V
 		ARG 1 fromStatus
 		ARG 2 toStatus

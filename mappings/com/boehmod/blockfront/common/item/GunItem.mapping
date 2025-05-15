@@ -5,6 +5,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	FIELD field_4006 defaultFireConfig Lcom/boehmod/blockfront/unnamed/BF_957;
 	FIELD field_4009 equipSound Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_4010 fireConfigs [Lcom/boehmod/blockfront/unnamed/BF_957;
+	FIELD field_4024 isSecondary Z
 	FIELD field_4030 hasEquipSound Z
 	FIELD field_4051 weight F
 	FIELD field_4061 maxHitDist I
@@ -58,6 +59,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4177 setBarrelType (Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)Lnet/minecraft/world/item/ItemStack;
 		ARG 0 itemStack
 		ARG 1 value
+	METHOD method_4186 isSecondary ()Z
 	METHOD method_4198 getHeat (Lnet/minecraft/world/item/ItemStack;)F
 		ARG 0 itemStack
 	METHOD method_4199 getMaxAmmo (Lnet/minecraft/world/item/ItemStack;)I

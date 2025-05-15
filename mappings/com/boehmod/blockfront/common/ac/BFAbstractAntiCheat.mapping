@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_451 com/boehmod/blockfront/common/ac/BFAbstractAntiCheat
+	METHOD method_1586 getScreenshotManager ()Lcom/boehmod/blockfront/unnamed/BF_452;

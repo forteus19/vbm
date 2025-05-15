@@ -1,8 +1,9 @@
-CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/MatchLoadout
+CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/DivisionData
 	FIELD field_3732 id B
 	FIELD field_3733 country Lcom/boehmod/blockfront/unnamed/BF_928;
 	FIELD field_3734 skin Ljava/lang/String;
 	FIELD field_3735 INSTANCES Ljava/util/List;
+	FIELD field_3736 races Ljava/util/List;
 	FIELD field_3737 US_AIRBORNE Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3738 US_MARINES Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3739 US_INFANTRY Lcom/boehmod/blockfront/unnamed/BF_929;
@@ -10,10 +11,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 	FIELD field_3741 GER_WEHRMACHT Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3742 GER_AFRIKAKORPS Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3743 GER_SS Lcom/boehmod/blockfront/unnamed/BF_929;
-	FIELD field_3744 MINIMUM_2 I
-	FIELD field_3745 MINIMUM_3 I
-	FIELD field_3746 MINIMUM_4 I
-	FIELD field_3747 MINIMUM_5 I
+	FIELD field_3744 LOADOUT_MIN_2 I
+	FIELD field_3745 LOADOUT_MIN_3 I
+	FIELD field_3746 LOADOUT_MIN_4 I
+	FIELD field_3747 LOADOUT_MIN_5 I
 	FIELD field_3748 GER_SNOW Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3749 GER_PANZER Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3750 GB_INFANTRY Lcom/boehmod/blockfront/unnamed/BF_929;
@@ -21,6 +22,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 	FIELD field_3752 GB_PARACHUTE Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3753 GB_REGULARS Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3754 USSR_INFANTRY Lcom/boehmod/blockfront/unnamed/BF_929;
+	FIELD field_3755 loadouts Ljava/util/Map;
 	FIELD field_3756 POL_INFANTRY Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3757 JPN_INFANTRY Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3758 JPN_TROPICAL Lcom/boehmod/blockfront/unnamed/BF_929;
@@ -32,8 +34,32 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 		ARG 2 country
 		ARG 3 skin
 	METHOD getSkin getSkin ()Ljava/lang/String;
+	METHOD method_3884 getRandomRace ()Lcom/boehmod/blockfront/unnamed/BF_567;
 	METHOD method_3885 getCountry ()Lcom/boehmod/blockfront/unnamed/BF_928;
 	METHOD method_3886 fromId (I)Lcom/boehmod/blockfront/unnamed/BF_929;
 		ARG 0 id
+	METHOD method_3887 (Lcom/boehmod/blockfront/unnamed/BF_924;)Ljava/util/List;
+		ARG 0 existing
+	METHOD method_3888 getLoadout (Lcom/boehmod/blockfront/unnamed/BF_924;I)Lcom/boehmod/blockfront/unnamed/BF_759;
+		ARG 1 clazz
+		ARG 2 level
 	METHOD method_3889 addLevel (Lcom/boehmod/blockfront/unnamed/BF_924;Lcom/boehmod/blockfront/unnamed/BF_759;)V
+		ARG 1 clazz
+		ARG 2 loadout
+	METHOD method_3890 getByCountryAndSkin (Lcom/boehmod/blockfront/unnamed/BF_928;Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_929;
+		ARG 0 country
+		ARG 1 skin
+	METHOD method_3891 races (Ljava/util/List;)Lcom/boehmod/blockfront/unnamed/BF_929;
+		ARG 1 races
+	METHOD method_3892 getRandomLoadout (Z)Ljava/util/Optional;
+		ARG 1 checkBotFriendly
+	METHOD method_3893 getRandomLoadout (ZLjava/util/function/Predicate;)Ljava/util/Optional;
+		ARG 1 checkBotFriendly
+		ARG 2 predicate
 	METHOD method_3894 getId ()I
+	METHOD method_3895 copyLoadouts (Lcom/boehmod/blockfront/unnamed/BF_929;)V
+		ARG 1 data
+	METHOD method_3896 (Lorg/apache/commons/lang3/tuple/Pair;)Z
+		ARG 0 pair
+	METHOD method_3897 getLoadouts ()Ljava/util/Map;
+	METHOD method_3898 getRandom ()Lcom/boehmod/blockfront/unnamed/BF_929;
