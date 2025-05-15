@@ -1,8 +1,13 @@
 CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbstractManager
+	COMMENT The shared manager class between client and server.
+	COMMENT
+	COMMENT Manager classes contain most of the state held by BlockFront, including the asset store, cloud connection, and anti-cheat.
 	FIELD field_2031 playerDataHandler Lcom/boehmod/blockfront/common/player/c;
 	FIELD field_2032 connectionManager Lcom/boehmod/blockfront/unnamed/BF_411;
 	FIELD field_2033 antiCheat Lcom/boehmod/blockfront/unnamed/BF_451;
 	FIELD field_2034 assetStore Lcom/boehmod/blockfront/unnamed/BF_459;
+	FIELD field_2039 instanceUUID Ljava/util/UUID;
+	FIELD field_6328 cloudRegistry Lcom/boehmod/bflib/cloud/common/CloudRegistry;
 	METHOD <init> (Lcom/boehmod/blockfront/common/player/c;)V
 		ARG 1 playerDataHandler
 	METHOD method_1549 getPlayerDataHandler ()Lcom/boehmod/blockfront/common/player/c;
@@ -14,6 +19,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 1 fromStatus
 		ARG 2 toStatus
 		ARG 3 context
+	METHOD method_1556 joinGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+		ARG 4 game
 	METHOD method_1568 setGameRules (Lnet/minecraft/world/level/Level;Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 level
 		ARG 2 server
@@ -21,3 +31,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1570 getAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
 	METHOD method_1571 getAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;
 	METHOD method_1575 matchMakingEnabled ()Z
+	METHOD method_1577 getInstanceUUID ()Ljava/util/UUID;
+	METHOD method_5487 getCloudRegistry ()Lcom/boehmod/bflib/cloud/common/CloudRegistry;

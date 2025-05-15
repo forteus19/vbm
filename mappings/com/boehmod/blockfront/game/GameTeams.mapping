@@ -1,0 +1,14 @@
+CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeams
+	FIELD field_2929 teamSpawns Ljava/util/List;
+	FIELD field_2932 name Ljava/lang/String;
+	FIELD field_2935 color I
+	FIELD field_2938 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;Lnet/minecraft/network/chat/Style;Lnet/minecraft/network/chat/Style;I)V
+		ARG 1 game
+		ARG 2 name
+	METHOD getColor getColor ()I
+	METHOD getName getName ()Ljava/lang/String;
+	METHOD method_2823 isAllies ()Z
+	METHOD method_2824 isAxis ()Z
+	METHOD method_2840 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

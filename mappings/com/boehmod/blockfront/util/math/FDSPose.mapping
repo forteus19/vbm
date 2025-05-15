@@ -1,0 +1,55 @@
+CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDSPose
+	FIELD field_2960 position Lnet/minecraft/world/phys/Vec3;
+	FIELD field_2961 rotation Lnet/minecraft/world/phys/Vec2;
+		COMMENT x = pitch, y = yaw
+	METHOD <init> (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD <init> (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 pitch
+		ARG 8 yaw
+	METHOD <init> (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Lnet/minecraft/core/BlockPos;FF)V
+		ARG 1 blockPos
+		ARG 2 pitch
+		ARG 3 yaw
+	METHOD <init> (Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 player
+	METHOD <init> (Lnet/minecraft/world/entity/player/Player;FF)V
+		ARG 1 player
+		ARG 2 pitch
+		ARG 3 yaw
+	METHOD <init> (Lnet/minecraft/world/phys/Vec3;FF)V
+		ARG 1 vec
+		ARG 2 pitch
+		ARG 3 yaw
+	METHOD method_3005 getPitch ()F
+	METHOD method_3006 getYaw ()F
+	METHOD method_3007 getArea (I)Lnet/minecraft/world/phys/AABB;
+	METHOD method_3013 readNamedFDS (Ljava/lang/String;Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_692;
+		ARG 0 tagName
+		ARG 1 root
+	METHOD method_3014 writeNamedFDS (Ljava/lang/String;Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 nameTag
+		ARG 2 root
+	METHOD method_3018 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_692;
+		ARG 0 buf
+	METHOD method_3027 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD method_3028 asBlockPos ()Lnet/minecraft/core/BlockPos;
+	METHOD method_3030 getX ()D
+	METHOD method_3031 getY ()D
+	METHOD method_3032 getZ ()D
+	METHOD read read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD readFromFDS readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD write write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD writeToFDS writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

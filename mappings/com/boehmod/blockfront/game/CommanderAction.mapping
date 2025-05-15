@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_786 com/boehmod/blockfront/game/dom/CommanderAction
+CLASS com/boehmod/blockfront/unnamed/BF_786 com/boehmod/blockfront/game/CommanderAction
 	FIELD hasTimeLimit hasTimeLimit Z
 	FIELD icon icon Lnet/minecraft/resources/ResourceLocation;
 	FIELD iconName iconName Ljava/lang/String;

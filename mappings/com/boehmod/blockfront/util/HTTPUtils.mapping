@@ -1,4 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1058 com/boehmod/blockfront/util/HTTPUtils
 	FIELD field_4323 CLIENT Ljava/net/http/HttpClient;
 	METHOD method_4477 get (Ljava/net/URI;)Ljava/lang/String;
+		COMMENT Sends a GET request using HTTP.
+		COMMENT
+		COMMENT @param uri The URI to send the request to.
+		COMMENT @return The response body encoded as a string.
+		COMMENT
+		COMMENT @throws IOException If the response code is not 200.
 		ARG 0 uri

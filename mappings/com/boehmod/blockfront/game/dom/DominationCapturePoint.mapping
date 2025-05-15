@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1132 com/boehmod/blockfront/game/dom/DominationCapturePoint
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_804;)V
+		ARG 1 playerHandler
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_804;Lio/netty/buffer/ByteBuf;)V
+		ARG 1 playerHandler
+		ARG 2 buf
