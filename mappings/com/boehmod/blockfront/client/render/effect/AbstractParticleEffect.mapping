@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_21 com/boehmod/blockfront/client/render/effect/AbstractParticleEffect
+	METHOD method_143 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 level
+		ARG 4 random
+		ARG 5 cameraPos
+		ARG 6 cameraBlockPos

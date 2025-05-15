@@ -5,6 +5,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	FIELD field_3705 author Ljava/lang/String;
 	FIELD field_3706 musicSet Ljava/lang/String;
 	FIELD field_3707 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_927;
+	FIELD field_3708 particleEffects Ljava/util/EnumSet;
 	FIELD field_3710 alliesTeam Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3711 axisTeam Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3712 shaderResource Lnet/minecraft/resources/ResourceLocation;

@@ -1,2 +1,27 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1109 com/boehmod/blockfront/registry/BFParticles
 	FIELD field_5262 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
+	FIELD field_5263 FAR_SMOKE Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5264 BLOOD_SPLAT Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5265 BLOOD_GROUND_SPLAT Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5266 FALLING_LEAF Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5267 ACID_SPLAT Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5268 ACID_GROUND_SPLAT Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5269 GRENADE_FLASH Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5270 LONG_GRENADE_SMOKE Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5271 BULLET Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5272 SURRENDER_PAPER Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5273 POWERFUL_BLOOD_SPLAT Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5274 ELECTRIC_SPARK Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5275 BULLET_SPARK Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5276 BULLET_IMPACT_SMOKE Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5277 SHRAPNEL_SMOKE Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5278 BLOOD_IMPACT_SMOKE Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5279 ALERT Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5280 HEAL Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5282 GUN_FLASH Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5283 FALLING_SNOW Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5284 POOF Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_5285 CLOUD Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_6397 BULLET_IMPACT_FLASH_BASIC Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_6398 BULLET_IMPACT_FLASH_STRONG Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_6524 RAINDROP Lnet/neoforged/neoforge/registries/DeferredHolder;

@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_325 com/boehmod/blockfront/client/particle/BFSimpleParticle
+	COMMENT Equivalent to {@link SimpleParticleType}.
+	METHOD <init> (Z)V
+		ARG 1 alwaysShow
