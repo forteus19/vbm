@@ -20,3 +20,7 @@ There are some naming conventions that are loosely followed:
 ### Project structure
 
 Each branch in this repo contains the mappings for its respective BlockFront version. Versions which had patches released later follow the naming scheme `BaseVersion+X`, where `X` is the patch number.
+
+## License
+
+`vbm` is licensed under the GNU General Public License, version 3. See `LICENSE.txt`.
