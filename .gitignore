@@ -1,11 +1,5 @@
-*
-!/intermediary
-!/intermediary/**
-!/mappings
-!/mappings/**
-!/matches
-!/matches/**
-!/.gitignore
-!/README.md
-!/*.patch
+files
+build
 .DS_Store
+.gradle
+.idea

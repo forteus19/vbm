@@ -2,20 +2,13 @@
 
 A project that aims to turn BlockFront's obfuscated names into clear and understandable ones.
 
-## Setting up a development environment
+## Contributing
 
-This process is currently pretty manual, and there will be an automated system in place soon&#x2122;.
+Modifying the mappings should be as easy as running the `enigma` task in the gradle project (run the command `./gradlew enigma`). If you have encounter any issues with the new build script, please open an issue.
 
-- Download the latest **mapped** BF version and save it somewhere
-- Clone [bf-intermediary](https://github.com/forteus19/bf-intermediary) for the intermediary mappings
-- Clone [Tiny Remapper](https://github.com/FabricMC/tiny-remapper) and use it to create an intermediary jar with the intermediary mappings
-- Clone [Enigma](https://github.com/FabricMC/Enigma) and apply the patch in this repo (`enigma.patch`)
-- Open the intermediary jar in Enigma
-- Open the mappings directory in Enigma as an Enigma directory
+## Notes
 
-And now you're off to the races.
-
-## Contribution notes
+### Naming conventions
 
 There are some naming conventions that are loosely followed:
 
@@ -24,6 +17,6 @@ There are some naming conventions that are loosely followed:
   - ...except for packges at the root level, like `assets`, `cloud`, `game`, `registry`, and `util`.
 - Classes that are not obfuscated in the release jar (e.g. `RustCorpsePhysics`) should **not** be changed.
 
-## Project structure
+### Project structure
 
-Each branch in this repo contains the mappings for its respective BlockFront version. Verions which had patches released later follow the naming scheme `BaseVersion+X`, where `X` is the patch number.
+Each branch in this repo contains the mappings for its respective BlockFront version. Versions which had patches released later follow the naming scheme `BaseVersion+X`, where `X` is the patch number.
