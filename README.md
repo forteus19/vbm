@@ -7,6 +7,7 @@ A project that aims to turn BlockFront's obfuscated names into clear and underst
 This process is currently pretty manual, and there will be an automated system in place soon&#x2122;.
 
 - Download the latest **mapped** BF version and save it somewhere
+- Clone [bf-intermediary](https://github.com/forteus19/bf-intermediary) for the intermediary mappings
 - Clone [Tiny Remapper](https://github.com/FabricMC/tiny-remapper) and use it to create an intermediary jar with the intermediary mappings
 - Clone [Enigma](https://github.com/FabricMC/Enigma) and apply the patch in this repo (`enigma.patch`)
 - Open the intermediary jar in Enigma
