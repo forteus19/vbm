@@ -1,26 +1,18 @@
 import de.undercouch.gradle.tasks.download.Download
-import net.fabricmc.tinyremapper.OutputConsumerPath
-import net.fabricmc.tinyremapper.TinyRemapper
-import net.fabricmc.tinyremapper.TinyUtils
-import java.nio.file.Files
-
-buildscript {
-    repositories {
-        maven("https://maven.fabricmc.net")
-        mavenCentral()
-    }
-    dependencies {
-        classpath("com.google.code.gson:gson:2.13.1")
-        classpath("net.fabricmc:tiny-remapper:0.11.1")
-    }
-}
+import net.fabricmc.mappingio.format.MappingFormat
 
 plugins {
     id("de.undercouch.download") version "5.6.0"
+    idea
+}
+
+idea.project {
+    setLanguageLevel("1.7")
 }
 
 repositories {
     maven("https://maven.jaxonpow.com/snapshots")
+    mavenCentral()
 }
 
 val bfVersion = "0.7.0.9b"
@@ -29,9 +21,14 @@ val bfDownloadUrl = "https://cdn.modrinth.com/data/hTexWmdS/versions/WmlyHsQJ/Bl
 val intermediaryDownloadUrl = "https://raw.githubusercontent.com/forteus19/bf-intermediary/main/intermediary/${bfVersion}.tiny"
 
 val vbmBuildFile = layout.buildDirectory.file("vbm").get().asFile
-val baseJarFile = vbmBuildFile.resolve("original").resolve("${bfVersion}.jar")
-val intermediaryMappingsFile = vbmBuildFile.resolve("intermediaryMapping").resolve("${bfVersion}.tiny")
-val intermediaryJarFile = vbmBuildFile.resolve("intermediaryJar").resolve("${bfVersion}.jar")
+val baseJarFile = vbmBuildFile.resolve("originalJar").resolve("${bfVersion}-original.jar")
+val intermediaryMappingsFile = vbmBuildFile.resolve("intermediaryMapping").resolve("${bfVersion}-intermediary.tiny")
+val intermediaryJarFile = vbmBuildFile.resolve("intermediaryJar").resolve("${bfVersion}-intermediary.jar")
+val specializedMappingsFile = vbmBuildFile.resolve("specializedMapping").resolve("${bfVersion}-specialized.tiny")
+val mergedMappingsFile = vbmBuildFile.resolve("mergedMapping").resolve("${bfVersion}-merged.tiny")
+val namedJarFile = vbmBuildFile.resolve("namedJar").resolve("${bfVersion}-named.jar")
+val namedJarFullFile = vbmBuildFile.resolve("namedJar").resolve("${bfVersion}-named-full.jar")
+val decompVineflowerFile = vbmBuildFile.resolve("decompVineflower").resolve(bfVersion)
 
 val mappingsFile = layout.projectDirectory.file("mappings").asFile
 
@@ -40,9 +37,11 @@ val enigmaRuntime: Configuration by configurations.creating {
         attribute(Bundling.BUNDLING_ATTRIBUTE, objects.named(Bundling.SHADOWED))
     }
 }
+val decompileRuntime: Configuration by configurations.creating
 
 dependencies {
     enigmaRuntime("cuchaz:enigma-swing:2.5.2-NRC-SNAPSHOT")
+    decompileRuntime("org.vineflower:vineflower:1.11.1")
 }
 
 val downloadBaseJarTask = tasks.register<Download>("downloadBaseJar") {
@@ -59,15 +58,55 @@ val downloadIntermediaryTask = tasks.register<Download>("downloadIntermediary") 
     overwrite(false)
 }
 
-val mapIntermediaryJarTask = tasks.register<MapJarTask>("mapIntermediaryJar") {
-    dependsOn(downloadBaseJarTask)
-    dependsOn(downloadIntermediaryTask)
+val mapIntermediaryJarTask = tasks.register<TinyRemapperTask>("mapIntermediaryJar") {
+    dependsOn(downloadBaseJarTask, downloadIntermediaryTask)
     group = "vbm"
-    input.set(baseJarFile)
-    mappings.set(intermediaryMappingsFile)
+    input.set(downloadBaseJarTask.get().dest)
+    mappings.set(downloadIntermediaryTask.get().dest)
     output.set(intermediaryJarFile)
     from.set("official")
     to.set("intermediary")
+    nonClassFiles.set(false)
+}
+
+val mapSpecializedMethodsTask = tasks.register<MapSpecializedMethodsTask>("mapSpecializedMethods") {
+    dependsOn(mapIntermediaryJarTask)
+    group = "vbm"
+    jar.set(mapIntermediaryJarTask.get().output)
+    input.set(mappingsFile)
+    output.set(specializedMappingsFile)
+    inputFormat.set("enigma")
+    outputFormat.set("tinyv2:intermediary:named")
+}
+
+val mergeMappingsTask = tasks.register<MergeMappingsTask>("mergeMappings") {
+    dependsOn(mapSpecializedMethodsTask)
+    group = "vbm"
+    inputFiles.from(downloadIntermediaryTask.get().dest, mapSpecializedMethodsTask.get().output)
+    output.set(mergedMappingsFile)
+    format.set(MappingFormat.TINY_2_FILE)
+}
+
+val mapNamedJarTask = tasks.register<TinyRemapperTask>("mapNamedJar") {
+    dependsOn(mergeMappingsTask)
+    group = "vbm"
+    input.set(mapIntermediaryJarTask.get().output)
+    mappings.set(mergeMappingsTask.get().output)
+    output.set(namedJarFile)
+    from.set("intermediary")
+    to.set("named")
+    nonClassFiles.set(false)
+}
+
+val mapNamedJarFullTask = tasks.register<TinyRemapperTask>("mapNamedJarFull") {
+    dependsOn(mergeMappingsTask)
+    group = "vbm"
+    input.set(downloadBaseJarTask.get().dest)
+    mappings.set(mergeMappingsTask.get().output)
+    output.set(namedJarFullFile)
+    from.set("official")
+    to.set("named")
+    nonClassFiles.set(true)
 }
 
 val enigmaTask = tasks.register<JavaExec>("enigma") {
@@ -78,35 +117,10 @@ val enigmaTask = tasks.register<JavaExec>("enigma") {
     args("-jar", intermediaryJarFile.absolutePath, "-mappings", mappingsFile.absolutePath)
 }
 
-abstract class MapJarTask : DefaultTask() {
-    @get:InputFile
-    abstract val input: RegularFileProperty
-    @get:InputFile
-    abstract val mappings: RegularFileProperty
-    @get:OutputFile
-    abstract val output: RegularFileProperty
-    @get:Input
-    abstract val from: Property<String>
-    @get:Input
-    abstract val to: Property<String>
-
-    @TaskAction
-    fun run() {
-        val inputPath = input.asFile.get().toPath()
-        val mappingsPath = mappings.asFile.get().toPath()
-        val outputPath = output.asFile.get().toPath()
-
-        Files.deleteIfExists(outputPath)
-
-        val remapper = TinyRemapper.newRemapper()
-            .withMappings(TinyUtils.createTinyMappingProvider(mappingsPath, from.get(), to.get()))
-            .build()
-
-        OutputConsumerPath.Builder(outputPath).build().use { output ->
-            output.addNonClassFiles(inputPath)
-            remapper.readInputsAsync(inputPath)
-            remapper.apply(output)
-            remapper.finish()
-        }
-    }
+val decompileVineflowerTask = tasks.register<JavaExec>("decompileVineflower") {
+    dependsOn(mapNamedJarTask)
+    group = "vbm"
+    classpath = files(decompileRuntime)
+    mainClass = "org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler"
+    args("--folder", mapNamedJarTask.get().output.get().asFile.absolutePath, decompVineflowerFile.absolutePath)
 }

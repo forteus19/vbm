@@ -1,3 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_456 com/boehmod/blockfront/assets/AssetWatcher
 	METHOD run run ()V
-	CLASS 1

@@ -43,4 +43,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_520 com/boehmod/blockfront/registry/gen/
 	METHOD method_1850 (Ljava/lang/String;)Ljava/lang/String;
 		ARG 0 word
 	METHOD method_1851 createBaseDisplayName ()Ljava/lang/String;
-	CLASS 1

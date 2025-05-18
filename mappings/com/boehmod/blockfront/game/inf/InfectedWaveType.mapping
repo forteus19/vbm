@@ -12,8 +12,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_883 com/boehmod/blockfront/game/inf/Infe
 	METHOD getRoundCallable getRoundCallable ()Lcom/boehmod/blockfront/unnamed/BF_883$BF_885;
 	METHOD getRoundEndSound getRoundEndSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD getRoundStartSound getRoundStartSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
-	CLASS 1
-	CLASS 2
 	CLASS BF_884 Values
 		FIELD field_3555 DOGS_POPUP Lnet/minecraft/network/chat/Component;
 	CLASS BF_885 RoundCallable
