@@ -15,9 +15,9 @@ repositories {
     mavenCentral()
 }
 
-val bfVersion = "0.7.0.9b"
+val bfVersion = "0.7.0.10b"
 
-val bfDownloadUrl = "https://cdn.modrinth.com/data/hTexWmdS/versions/WmlyHsQJ/BlockFront-1.21.1-0.7.0.9b-RELEASE.jar"
+val bfDownloadUrl = "https://cdn.modrinth.com/data/hTexWmdS/versions/2w8sWRMB/BlockFront-1.21.1-0.7.0.10b-RELEASE.jar"
 val intermediaryDownloadUrl = "https://raw.githubusercontent.com/forteus19/bf-intermediary/main/intermediary/${bfVersion}.tiny"
 
 val vbmBuildFile = layout.buildDirectory.file("vbm").get().asFile

@@ -6,7 +6,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2561 CONNECTION_ESTABLISHED_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2562 CONNECTION_LOST_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2563 SAVING_LEVEL_MESSAGE Lnet/minecraft/network/chat/Component;
-	FIELD field_6357 WINDOW_TITLE Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_2232 getVersionChecker ()Lcom/boehmod/blockfront/unnamed/BF_449;
