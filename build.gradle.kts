@@ -7,7 +7,7 @@ plugins {
 }
 
 idea.project {
-    setLanguageLevel("1.7")
+    setLanguageLevel("21")
 }
 
 repositories {
@@ -110,11 +110,11 @@ val mapNamedJarFullTask = tasks.register<TinyRemapperTask>("mapNamedJarFull") {
 }
 
 val enigmaTask = tasks.register<JavaExec>("enigma") {
-    dependsOn(mapIntermediaryJarTask)
+    dependsOn(mapIntermediaryJarTask, project(":enigmaPlugin").tasks["build"])
     group = "vbm"
-    classpath = files(enigmaRuntime)
+    classpath = files(enigmaRuntime, project(":enigmaPlugin").tasks["jar"].outputs)
     mainClass = "cuchaz.enigma.gui.Main"
-    args("-jar", intermediaryJarFile.absolutePath, "-mappings", mappingsFile.absolutePath)
+    args("-jar", intermediaryJarFile.absolutePath, "-mappings", mappingsFile.absolutePath, "-profile", file("enigma.json").absolutePath)
 }
 
 val decompileVineflowerTask = tasks.register<JavaExec>("decompileVineflower") {

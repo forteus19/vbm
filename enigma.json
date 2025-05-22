@@ -1,0 +1,10 @@
+{
+  "services": {
+    "name_proposal": {
+      "id": "vbm:name_proposal"
+    },
+    "jar_indexer": {
+      "id": "vbm:jar_indexer"
+    }
+  }
+}
