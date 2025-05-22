@@ -6,7 +6,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_150 com/boehmod/blockfront/client/BFClie
 	METHOD method_620 setup (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;)V
 		ARG 0 minecraft
 		ARG 1 manager
+	METHOD method_623 registerLayerDefinitions (Lnet/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions;)V
+		ARG 0 event
+	METHOD method_624 registerRenderers (Lnet/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers;)V
+		ARG 0 event
+	METHOD method_625 registerClientReloadListeners (Lnet/neoforged/neoforge/client/event/RegisterClientReloadListenersEvent;)V
+		ARG 0 event
 	METHOD method_626 registerDimensionEffects (Lnet/neoforged/neoforge/client/event/RegisterDimensionSpecialEffectsEvent;)V
+		ARG 0 event
+	METHOD method_627 registerGuiLayers (Lnet/neoforged/neoforge/client/event/RegisterGuiLayersEvent;)V
+		ARG 0 event
+	METHOD method_628 registerKeyMappings (Lnet/neoforged/neoforge/client/event/RegisterKeyMappingsEvent;)V
 		ARG 0 event
 	METHOD method_629 registerParticleProviders (Lnet/neoforged/neoforge/client/event/RegisterParticleProvidersEvent;)V
 		ARG 0 event

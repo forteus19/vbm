@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1099 com/boehmod/blockfront/client/setup/BFClientReloadListenersSetup
+	METHOD method_5131 register (Lnet/neoforged/neoforge/client/event/RegisterClientReloadListenersEvent;)V
+		ARG 0 event

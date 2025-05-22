@@ -1,5 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_3 com/boehmod/blockfront/client/corpse/ClientCorpseManager
 	FIELD field_17 bakery Lcom/boehmod/blockfront/client/corpse/physics/b;
+	METHOD method_21 ragdollEntity (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_1049$BF_1050;Lnet/minecraft/world/entity/LivingEntity;F)Lcom/boehmod/blockfront/unnamed/BF_2;
+		ARG 1 minecraft
+		ARG 2 data
+		ARG 3 entity
+		ARG 4 delta
 	METHOD method_23 addChunkSection (Lnet/minecraft/world/level/chunk/LevelChunkSection;III)V
 		ARG 1 section
 	METHOD method_26 instantiateCollider (Lnet/minecraft/client/multiplayer/ClientLevel;)V

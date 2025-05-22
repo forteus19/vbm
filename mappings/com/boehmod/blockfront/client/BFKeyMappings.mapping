@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1093 com/boehmod/blockfront/client/BFKeyMappings
+	FIELD field_4900 GUN_RELOAD Lnet/minecraft/client/KeyMapping;
+	FIELD field_4901 INSTANCES Ljava/util/List;
+	FIELD field_4902 GUN_FIREMODE Lnet/minecraft/client/KeyMapping;
+	FIELD field_4903 GUN_INSPECT Lnet/minecraft/client/KeyMapping;
+	FIELD field_4904 MATCH_WARCRY Lnet/minecraft/client/KeyMapping;
+	FIELD field_4905 MATCH_TEAMCHAT Lnet/minecraft/client/KeyMapping;
+	FIELD field_4906 CALLOUT Lnet/minecraft/client/KeyMapping;
+	FIELD field_4907 VEHICLE_HORN Lnet/minecraft/client/KeyMapping;
+	FIELD field_4908 MATCH_CLASS_SELECTION Lnet/minecraft/client/KeyMapping;
+	METHOD method_5115 register (Lcom/boehmod/blockfront/unnamed/BF_1093$BF_1095;)Lcom/boehmod/blockfront/unnamed/BF_1093$BF_1095;
+	METHOD method_5116 register (Lnet/neoforged/neoforge/client/event/RegisterKeyMappingsEvent;)V
+		ARG 0 event
+	CLASS BF_1094 WithConsumer
+	CLASS BF_1095 Basic
+	CLASS BF_1096 Updatable

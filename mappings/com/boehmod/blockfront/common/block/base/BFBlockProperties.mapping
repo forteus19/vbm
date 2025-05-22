@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1159 com/boehmod/blockfront/common/block/base/BFBlockProperties
+	FIELD field_6565 MAX_TEXTURE_INDEX I
+	FIELD field_6566 BODY_ROTATION Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+	FIELD field_6567 HEAD_ROTATION Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+	FIELD field_6568 TEXTURE_INDEX Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+	FIELD field_6569 SPARKING Lnet/minecraft/world/level/block/state/properties/BooleanProperty;

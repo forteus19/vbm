@@ -43,3 +43,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1107 com/boehmod/blockfront/registry/BFI
 	FIELD field_5223 GUN_BATR Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_5239 (Lnet/minecraft/world/item/Item$Properties;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 0 properties
+	METHOD method_5257 retrieve (Lcom/boehmod/bflib/cloud/common/item/CloudResourceLocation;)Ljava/util/Optional;
+		ARG 0 cloudRes
+	METHOD method_5258 retrieve (Lnet/minecraft/resources/ResourceLocation;)Ljava/util/Optional;
+		ARG 0 res
