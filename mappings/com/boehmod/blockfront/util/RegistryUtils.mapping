@@ -1,3 +1,26 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1061 com/boehmod/blockfront/util/RegistryUtils
-	METHOD method_4544 getItemById (Ljava/lang/String;)Ljava/util/function/Supplier;
+	FIELD field_6595 LOGGER Lorg/apache/logging/log4j/Logger;
+	METHOD method_4526 retrieveBlockEntity (Ljava/lang/String;)Ljava/util/function/Supplier;
+		ARG 0 id
+	METHOD method_4533 getBlockEntityTypeId (Ljava/util/function/Supplier;)Ljava/lang/String;
+		ARG 0 supplier
+	METHOD method_4534 getParticleTypeId (Lnet/minecraft/core/particles/ParticleType;)Ljava/lang/String;
+		ARG 0 particleType
+	METHOD method_4535 getItemId (Lnet/minecraft/world/item/Item;)Ljava/lang/String;
+		ARG 0 item
+	METHOD method_4536 getBlockId (Lnet/minecraft/world/level/block/Block;)Ljava/lang/String;
+		ARG 0 block
+	METHOD method_4537 retrieveEntityType (Ljava/lang/String;)Ljava/util/function/Supplier;
+		ARG 0 id
+	METHOD method_4539 getEntityTypeId (Ljava/util/function/Supplier;)Ljava/lang/String;
+		ARG 0 supplier
+	METHOD method_4540 retrieveBlock (Ljava/lang/String;)Ljava/util/function/Supplier;
+		ARG 0 id
+	METHOD method_4541 retrieveSoundEvent (Ljava/lang/String;)Ljava/util/function/Supplier;
+		ARG 0 id
+	METHOD method_4542 getSoundEventId (Lnet/minecraft/sounds/SoundEvent;)Ljava/lang/String;
+		ARG 0 soundEvent
+	METHOD method_4543 retrieveParticleType (Ljava/lang/String;)Ljava/util/function/Supplier;
+		ARG 0 id
+	METHOD method_4544 retrieveItem (Ljava/lang/String;)Ljava/util/function/Supplier;
 		ARG 0 id
