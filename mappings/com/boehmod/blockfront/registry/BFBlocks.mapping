@@ -4,9 +4,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 	FIELD field_4468 MAP_BARRIERS Lcom/boehmod/blockfront/unnamed/BF_515;
 	FIELD field_4473 MAP_BARRIERS_SOLID Lcom/boehmod/blockfront/unnamed/BF_515;
 	FIELD field_4478 MAP_BARRIERS_BOTS Lcom/boehmod/blockfront/unnamed/BF_515;
-	FIELD field_4484 RADIO_CIVILIAN Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_4485 RADIO_GERMAN Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_4486 RADIO_AMERICAN Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_4495 MAP_BARRIERS_PLAYERS Lcom/boehmod/blockfront/unnamed/BF_515;
 	FIELD field_4553 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
 	FIELD field_4610 DR_GEN Lnet/neoforged/neoforge/registries/DeferredRegister;

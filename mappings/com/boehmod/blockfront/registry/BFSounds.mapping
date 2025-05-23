@@ -3,23 +3,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1112 com/boehmod/blockfront/registry/BFS
 	FIELD field_5597 BULLET_SNAPS Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_5598 BY_ID Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
 	FIELD field_5599 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
-	FIELD field_5688 MATCH_CAPTUREPOINT_SIREN Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5689 MATCH_CAPTUREPOINT_TICK Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5798 BLOCK_RADIO_CHATTER_GERMAN Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5799 BLOCK_RADIO_CHATTER_AMERICAN Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5800 BLOCK_PLANK_STEP Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5801 BLOCK_RUBBLE_STEP Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5831 ENTITY_INFECTED_DEATH Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5841 BLOCK_RADIO_STATIC Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5842 BLOCK_RADIO_MORSE Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5873 ITEM_GUN_BULLET_SNAP_0 Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5874 ITEM_GUN_BULLET_SNAP_1 Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5927 ITEM_GUN_BULLET_SNAP_2 Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5928 ITEM_GUN_BULLET_SNAP_3 Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5929 ITEM_GUN_BULLET_SNAP_4 Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_5930 ITEM_GUN_BULLET_SNAP_5 Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_6133 ITEM_GUN_DELISLECARBINE_PRE Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_6168 ITEM_GUN_PANZERBUCHSE39_EQUIP Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_5443 retrieve (Ljava/lang/String;)Lnet/minecraft/sounds/SoundEvent;
 		ARG 0 id
 	METHOD method_5444 registerSound (Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredHolder;

@@ -6,9 +6,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_1103 com/boehmod/blockfront/registry/BFC
 	FIELD field_4918 BUILDING_BLOCKS_NAME Lnet/minecraft/network/chat/Component;
 	FIELD field_4919 BLOCKS_NAME Lnet/minecraft/network/chat/Component;
 	FIELD field_4920 ITEMS_NAME Lnet/minecraft/network/chat/Component;
-	FIELD field_4921 ITEMS Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_4922 BLOCKS Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_4923 BUILDING_BLOCKS Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_4924 CRATES Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_4925 PLANKS Lnet/neoforged/neoforge/registries/DeferredHolder;
-	FIELD field_4926 SHUTTERS Lnet/neoforged/neoforge/registries/DeferredHolder;
