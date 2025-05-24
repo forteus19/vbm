@@ -3,6 +3,7 @@ import net.fabricmc.mappingio.format.MappingFormat
 
 plugins {
     id("de.undercouch.download") version "5.6.0"
+    `maven-publish`
     idea
 }
 
@@ -25,6 +26,7 @@ val baseJarFile = vbmBuildFile.resolve("originalJar").resolve("${bfVersion}-orig
 val intermediaryMappingsFile = vbmBuildFile.resolve("intermediaryMapping").resolve("${bfVersion}-intermediary.tiny")
 val intermediaryJarFile = vbmBuildFile.resolve("intermediaryJar").resolve("${bfVersion}-intermediary.jar")
 val specializedMappingsFile = vbmBuildFile.resolve("specializedMapping").resolve("${bfVersion}-specialized.tiny")
+val proposedMappingsFile = vbmBuildFile.resolve("proposedMapping").resolve("${bfVersion}-proposed.tiny")
 val mergedMappingsFile = vbmBuildFile.resolve("mergedMapping").resolve("${bfVersion}-merged.tiny")
 val namedJarFile = vbmBuildFile.resolve("namedJar").resolve("${bfVersion}-named.jar")
 val namedJarFullFile = vbmBuildFile.resolve("namedJar").resolve("${bfVersion}-named-full.jar")
@@ -79,10 +81,19 @@ val mapSpecializedMethodsTask = tasks.register<MapSpecializedMethodsTask>("mapSp
     outputFormat.set("tinyv2:intermediary:named")
 }
 
-val mergeMappingsTask = tasks.register<MergeMappingsTask>("mergeMappings") {
+val insertProposedMappingsTask = tasks.register<InsertProposedMappingsTask>("insertProposedMappings") {
     dependsOn(mapSpecializedMethodsTask)
     group = "vbm"
-    inputFiles.from(downloadIntermediaryTask.get().dest, mapSpecializedMethodsTask.get().output)
+    jar.set(mapIntermediaryJarTask.get().output)
+    input.set(mapSpecializedMethodsTask.get().output)
+    output.set(proposedMappingsFile)
+    format.set(MappingFormat.TINY_2_FILE)
+}
+
+val mergeMappingsTask = tasks.register<MergeMappingsTask>("mergeMappings") {
+    dependsOn(insertProposedMappingsTask)
+    group = "vbm"
+    inputFiles.from(downloadIntermediaryTask.get().dest, insertProposedMappingsTask.get().output)
     output.set(mergedMappingsFile)
     format.set(MappingFormat.TINY_2_FILE)
 }
@@ -110,9 +121,9 @@ val mapNamedJarFullTask = tasks.register<TinyRemapperTask>("mapNamedJarFull") {
 }
 
 val enigmaTask = tasks.register<JavaExec>("enigma") {
-    dependsOn(mapIntermediaryJarTask, project(":enigmaPlugin").tasks["build"])
+    dependsOn(mapIntermediaryJarTask, project(":specialist").tasks["build"])
     group = "vbm"
-    classpath = files(enigmaRuntime, project(":enigmaPlugin").tasks["jar"].outputs)
+    classpath = files(enigmaRuntime, project(":specialist").tasks["jar"].outputs)
     mainClass = "cuchaz.enigma.gui.Main"
     args("-jar", intermediaryJarFile.absolutePath, "-mappings", mappingsFile.absolutePath, "-profile", file("enigma.json").absolutePath)
 }
@@ -123,4 +134,26 @@ val decompileVineflowerTask = tasks.register<JavaExec>("decompileVineflower") {
     classpath = files(decompileRuntime)
     mainClass = "org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler"
     args("--folder", mapNamedJarTask.get().output.get().asFile.absolutePath, decompVineflowerFile.absolutePath)
+}
+
+allprojects {
+    apply(plugin = "maven-publish")
+
+    publishing {
+        repositories {
+            val envUrl = System.getenv("MAVEN_URL")
+            val envUsername = System.getenv("MAVEN_USERNAME")
+            val envPassword = System.getenv("MAVEN_PASSWORD")
+            if (envUrl != null && envUsername != null && envPassword != null) {
+                maven {
+                    url = uri(envUrl)
+                    credentials {
+                        username = envUsername
+                        password = envPassword
+                    }
+                    isAllowInsecureProtocol = true
+                }
+            }
+        }
+    }
 }

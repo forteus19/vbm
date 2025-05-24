@@ -25,11 +25,11 @@ abstract class MapSpecializedMethodsTask : DefaultTask() {
     @TaskAction
     fun run() {
         MapSpecializedMethodsCommand.run(
-            jar.get().asFile.toPath(),
+            jar.get().asPath,
             inputFormat.get(),
-            input.get().asFile.toPath(),
+            input.get().asPath,
             outputFormat.get(),
-            output.get().asFile.toPath()
+            output.get().asPath
         )
     }
 }

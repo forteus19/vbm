@@ -1,3 +1,3 @@
 rootProject.name = "vbm"
 
-include("enigmaPlugin")
+include("specialist")

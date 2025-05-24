@@ -1,4 +1,4 @@
-package red.vuis.vbm.enigma;
+package red.vuis.vbm.proposal;
 
 import java.util.Arrays;
 import org.objectweb.asm.Opcodes;
@@ -13,8 +13,8 @@ public class LdcStringForInvokeVisitor extends ClassInitVisitor {
     private final int invokeOpcode;
     private final String[] registerMethods;
 
-    public LdcStringForInvokeVisitor(int invokeOpcode, String... registerMethods) {
-        super(Opcodes.ASM9);
+    public LdcStringForInvokeVisitor(ProposalCollector collector, int invokeOpcode, String... registerMethods) {
+        super(collector);
         this.invokeOpcode = invokeOpcode;
         this.registerMethods = registerMethods;
     }
@@ -43,7 +43,7 @@ public class LdcStringForInvokeVisitor extends ClassInitVisitor {
 
             String ldcValue = getStringLdc(frames[i]);
             if (ldcValue != null) {
-                addFieldTarget(className, insn2.name, insn2.desc, VbmUtils.javaName(ldcValue));
+                collector.collectField(className, insn2.name, insn2.desc, VbmUtils.javaName(ldcValue));
             }
         }
     }

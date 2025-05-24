@@ -40,7 +40,7 @@ abstract class MergeMappingsTask : DefaultTask() {
             entry.setDstName(matchEnclosingClass(entry.srcName, tree), namedId)
         }
 
-        MappingWriter.create(output.get().asFile.toPath(), format.get()).use { writer ->
+        MappingWriter.create(output.get().asPath, format.get()).use { writer ->
             tree.accept(
                 MappingSourceNsSwitch(
                     MappingDstNsReorder(

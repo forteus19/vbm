@@ -1,13 +1,7 @@
-package red.vuis.vbm.enigma;
+package red.vuis.vbm.proposal;
 
-import cuchaz.enigma.translation.representation.TypeDescriptor;
-import cuchaz.enigma.translation.representation.entry.ClassEntry;
-import cuchaz.enigma.translation.representation.entry.Entry;
-import cuchaz.enigma.translation.representation.entry.FieldEntry;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
 import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.AbstractInsnNode;
 import org.objectweb.asm.tree.FieldInsnNode;
 import org.objectweb.asm.tree.InsnList;
@@ -17,40 +11,18 @@ import org.objectweb.asm.tree.analysis.SourceValue;
 import red.vuis.vbm.util.FieldId;
 
 public abstract class ProposalVisitor extends ClassVisitor {
-    private static final Map<Entry<?>, String> TARGETS = new HashMap<>();
+    protected final ProposalCollector collector;
     protected String className = null;
 
-    public ProposalVisitor(int api) {
-        super(api);
+    public ProposalVisitor(ProposalCollector collector) {
+        super(Opcodes.ASM9);
+        this.collector = collector;
     }
 
     @Override
     public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
         super.visit(version, access, name, signature, superName, interfaces);
         className = name;
-    }
-
-    public static Optional<String> propose(Entry<?> entry) {
-        return Optional.ofNullable(TARGETS.get(entry));
-    }
-
-    protected void addTarget(Entry<?> entry, String name) {
-        if (TARGETS.containsKey(entry)) {
-            System.err.printf("Duplicate entry \"%s\" with name \"%s\"\n", entry.getFullName(), name);
-            return;
-        }
-        TARGETS.put(entry, name);
-    }
-
-    protected void addFieldTarget(String className, String fieldName, String fieldDesc, String name) {
-        addTarget(
-                new FieldEntry(
-                        new ClassEntry(className),
-                        fieldName,
-                        new TypeDescriptor(fieldDesc)
-                ),
-                name
-        );
     }
 
     protected static String getStringLdc(Frame<SourceValue> frame) {

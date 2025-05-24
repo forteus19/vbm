@@ -1,4 +1,4 @@
-package red.vuis.vbm.enigma;
+package red.vuis.vbm.proposal;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -15,8 +15,8 @@ import red.vuis.vbm.util.VbmUtils;
 public final class EnumVisitor extends ClassInitVisitor {
     private final Set<FieldId> enumFields = new HashSet<>();
 
-    public EnumVisitor() {
-        super(Opcodes.ASM9);
+    public EnumVisitor(ProposalCollector collector) {
+        super(collector);
     }
 
     @Override
@@ -58,7 +58,7 @@ public final class EnumVisitor extends ClassInitVisitor {
 
             String ldcValue = getStringLdc(frames[i]);
             if (ldcValue != null) {
-                addFieldTarget(className, insn2.name, insn2.desc, VbmUtils.javaName(ldcValue));
+                collector.collectField(className, insn2.name, insn2.desc, VbmUtils.javaName(ldcValue));
             }
         }
     }

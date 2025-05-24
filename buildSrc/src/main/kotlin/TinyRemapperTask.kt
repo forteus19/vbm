@@ -26,9 +26,9 @@ abstract class TinyRemapperTask : DefaultTask() {
 
     @TaskAction
     fun run() {
-        val inputPath = input.asFile.get().toPath()
-        val mappingsPath = mappings.asFile.get().toPath()
-        val outputPath = output.asFile.get().toPath()
+        val inputPath = input.get().asPath
+        val mappingsPath = mappings.get().asPath
+        val outputPath = output.get().asPath
         Files.deleteIfExists(outputPath)
 
         val remapper = TinyRemapper.newRemapper()

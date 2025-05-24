@@ -1,4 +1,4 @@
-package red.vuis.vbm.enigma;
+package red.vuis.vbm.proposal;
 
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.tree.MethodNode;
@@ -11,8 +11,8 @@ import org.objectweb.asm.tree.analysis.SourceValue;
 public abstract class ClassInitVisitor extends ProposalVisitor {
     private MethodNode clInit = null;
 
-    protected ClassInitVisitor(int api) {
-        super(api);
+    public ClassInitVisitor(ProposalCollector collector) {
+        super(collector);
     }
 
     @Override

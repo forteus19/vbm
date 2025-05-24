@@ -1,0 +1,81 @@
+package red.vuis.vbm.util;
+
+import java.io.IOException;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Stream;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.tree.ClassNode;
+
+public final class VbmUtils {
+    private VbmUtils() {}
+
+    public static boolean all(boolean... values) {
+        for (boolean value : values) {
+            if (!value) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    public static boolean any(boolean... values) {
+        for (boolean value : values) {
+            if (value) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static Set<ClassNode> readJarClassNodes(Path jar) throws IOException {
+        Set<ClassNode> classNodes = new HashSet<>();
+
+        try (FileSystem fileSystem = FileSystems.newFileSystem(jar)) {
+            for (Path root : fileSystem.getRootDirectories()) {
+                try (Stream<Path> stream = Files.walk(root)) {
+                    stream.forEach(path -> {
+                        if (!path.toString().endsWith(".class")) return;
+                        try {
+                            classNodes.add(readClassNode(path));
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    });
+                }
+            }
+        }
+
+        return classNodes;
+    }
+
+    public static ClassNode readClassNode(Path path) throws IOException {
+        byte[] bytes = Files.readAllBytes(path);
+        ClassReader reader = new ClassReader(bytes);
+        ClassNode node = new ClassNode();
+        reader.accept(node, 0);
+        return node;
+    }
+
+    public static String javaName(String rawName) {
+        StringBuilder result = new StringBuilder(rawName.length());
+        for (int i = 0; i < rawName.length(); i++) {
+            char c = rawName.charAt(i);
+            boolean alpha = Character.isAlphabetic(c);
+            boolean digit = Character.isDigit(c);
+            if (i == 0 && digit) {
+                result.append('_');
+            }
+            if (alpha || digit) {
+                result.append(Character.toUpperCase(c));
+            } else {
+                result.append('_');
+            }
+        }
+        return result.toString();
+    }
+}
