@@ -6,6 +6,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2561 CONNECTION_ESTABLISHED_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2562 CONNECTION_LOST_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2563 SAVING_LEVEL_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_2565 dataPath Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_2232 getVersionChecker ()Lcom/boehmod/blockfront/unnamed/BF_449;
@@ -16,4 +17,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_2254 initCorpsePhysics (Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 level
 	METHOD method_2256 getInstance ()Lcom/boehmod/blockfront/unnamed/BF_606;
+	METHOD method_2258 setDataPath (Ljava/lang/String;)V
+		ARG 1 path
+	METHOD method_2259 getDataPath ()Ljava/lang/String;
+	METHOD method_2260 getClientDataPath ()Ljava/lang/String;
 	METHOD method_2261 closeCorpsePhysics (Lcom/boehmod/blockfront/unnamed/BF_271;)V

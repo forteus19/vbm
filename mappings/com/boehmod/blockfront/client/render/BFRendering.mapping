@@ -1,9 +1,12 @@
 CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/BFRendering
 	FIELD field_215 RANK_BG_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_216 DEFAULT_CALLINGCARD_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_217 RUNNING_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_218 GAMEMODE_CORNER_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_219 RED_CHAT_COLOR I
 	FIELD field_222 TRANSLUCENT_BLACK_COLOR I
 	FIELD field_231 BYTE_TO_FLOAT_RATIO F
+	FIELD field_236 PARTY_LEADER_COMPONENT Lnet/minecraft/network/chat/Component;
 	FIELD field_241 EMBER_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_242 DEBUG_SKIN_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_6299 SHADOWEFFECT_TEXTURE Lnet/minecraft/resources/ResourceLocation;
@@ -121,6 +124,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 7 alpha
 		ARG 8 color
 	METHOD method_214 texture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDI)V
+	METHOD method_225 smallRank (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_476;FFZ)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 poseStack
+		ARG 3 font
+		ARG 4 graphics
+		ARG 5 partOwnerProfile
+		ARG 6 profile
+		ARG 7 x
+		ARG 8 y
+		ARG 9 highlight
 	METHOD method_226 component (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDD)V
 		ARG 0 poseStack
 		ARG 1 font
@@ -151,7 +165,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 9 z
 		ARG 11 scale
 		ARG 12 color
-		ARG 13 ignoreDepthTest
+		ARG 13 depthTest
 	METHOD method_229 component2d (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;FF)V
 		ARG 0 poseStack
 		ARG 1 font
@@ -323,6 +337,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 height
 		ARG 4 color1
 		ARG 5 color2
+	METHOD method_250 gamemodeSelection (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;IIII)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
 	METHOD method_256 textureSquare (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;FFF)V
 		ARG 0 poseStack
 		ARG 1 graphics
@@ -595,7 +616,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 5 height
 		ARG 6 color1
 		ARG 7 color2
-	METHOD method_310 (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;FFF)V
+	METHOD method_310 centeredTextureSquare (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;FFF)V
 		ARG 0 poseStack
 		ARG 1 graphics
 		ARG 2 texture

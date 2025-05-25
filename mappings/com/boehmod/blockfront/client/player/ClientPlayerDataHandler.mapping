@@ -1,1 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_273 com/boehmod/blockfront/client/player/ClientPlayerDataHandler
+	FIELD field_1622 cachedData Lcom/boehmod/blockfront/unnamed/BF_271;
+	FIELD field_1623 cachedProfile Lcom/boehmod/blockfront/unnamed/BF_476;
+	METHOD method_1159 getCloudData (Lnet/minecraft/client/Minecraft;)Lcom/boehmod/blockfront/unnamed/BF_271;
+		ARG 1 minecraft
+	METHOD method_1160 getCloudProfile (Lnet/minecraft/client/Minecraft;)Lcom/boehmod/blockfront/unnamed/BF_476;
+		ARG 1 minecraft
+	METHOD method_1161 isPlayerInGame (Lnet/minecraft/client/Minecraft;Ljava/util/UUID;)Z
+		ARG 1 minecraft
+		ARG 2 uuid

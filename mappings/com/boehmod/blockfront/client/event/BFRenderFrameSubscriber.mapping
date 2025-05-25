@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_68 com/boehmod/blockfront/client/event/BFRenderFrameSubscriber
+	FIELD field_333 ALLIES_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_335 AXIS_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_337 NEUTRAL_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_419 onRenderFrame (Lnet/neoforged/neoforge/client/event/RenderFrameEvent$Post;)V
+		ARG 0 event

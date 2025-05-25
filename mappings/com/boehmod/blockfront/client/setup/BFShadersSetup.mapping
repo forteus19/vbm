@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1111 com/boehmod/blockfront/client/setup/BFShadersSetup
+	FIELD field_5294 shader Lnet/minecraft/client/renderer/ShaderInstance;
+	FIELD field_5295 VEHICLE_BLOCK_NAME Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_5441 register (Lnet/neoforged/neoforge/client/event/RegisterShadersEvent;)V
+		ARG 0 event
+	METHOD method_5442 (Lnet/minecraft/client/renderer/ShaderInstance;)V
+		ARG 0 shaderInstance

@@ -2,6 +2,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_432 com/boehmod/blockfront/client/settin
 	FIELD field_1947 NOTIFICATIONS_DAILY_CHALLENGES Lcom/boehmod/blockfront/unnamed/BF_431;
 	FIELD field_1948 NOTIFICATIONS_PARTY_INVITES Lcom/boehmod/blockfront/unnamed/BF_431;
 	FIELD field_1968 INSTANCES Ljava/util/List;
+	FIELD field_1972 isUnsaved Z
 	FIELD field_1977 NOTIFICATION_MAP Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
 	FIELD field_1979 CLINIT_TIME J
 	FIELD field_1994 NOTIFICATIONS_FRIENDS_POKE Lcom/boehmod/blockfront/unnamed/BF_431;

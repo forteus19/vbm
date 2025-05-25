@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1085 com/boehmod/blockfront/client/setup/BFClipTextRendererSetup
+	METHOD method_4612 register ()V

@@ -5,6 +5,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	FIELD field_4006 defaultFireConfig Lcom/boehmod/blockfront/unnamed/BF_957;
 	FIELD field_4009 equipSound Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_4010 fireConfigs [Lcom/boehmod/blockfront/unnamed/BF_957;
+	FIELD field_4016 clipTextRenderer Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
 	FIELD field_4024 isSecondary Z
 	FIELD field_4030 hasEquipSound Z
 	FIELD field_4051 weight F
@@ -20,6 +21,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 4 flag
 	METHOD method_4118 getDamageConfig ()Lcom/boehmod/blockfront/unnamed/BF_951;
 	METHOD method_4119 getDefaultFireConfig ()Lcom/boehmod/blockfront/unnamed/BF_957;
+	METHOD method_4120 getClipTextRenderer ()Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
 	METHOD method_4123 getFireConfigs ()[Lcom/boehmod/blockfront/unnamed/BF_957;
 	METHOD method_4126 ammo (II)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4129 shake (Lcom/boehmod/blockfront/unnamed/BF_427;)Lcom/boehmod/blockfront/unnamed/BF_993;
@@ -28,6 +30,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4132 reload (Lcom/boehmod/blockfront/unnamed/BF_953;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 config
 	METHOD method_4133 sound (Lcom/boehmod/blockfront/unnamed/BF_956;)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4135 setClipTextRenderer (Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;)V
+		ARG 1 renderer
 	METHOD method_4139 mag (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_994;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4146 getAmmoLoaded (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack

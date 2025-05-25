@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_335 com/boehmod/blockfront/util/WindowUtils
+	FIELD field_1695 ICON_16 Ljava/lang/String;
+	FIELD field_1696 ICON_32 Ljava/lang/String;
+	FIELD field_1697 ICON_UPDATE_16 Ljava/lang/String;
+	FIELD field_1698 ICON_UPDATE_32 Ljava/lang/String;
+	FIELD field_1699 WINDOW_TITLE Ljava/lang/String;
+	METHOD method_1228 setWindowIcon (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/mojang/blaze3d/platform/Window;)V
+		ARG 0 manager
+		ARG 1 window
+	METHOD method_1230 setWindowIconNative (Lcom/mojang/blaze3d/platform/Window;Lnet/minecraft/server/packs/resources/IoSupplier;)V
+		ARG 0 window
+		ARG 1 ioSupplier
+	METHOD method_5521 setWindowTitle (Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
+		ARG 0 manager
+		ARG 1 minecraft
+		ARG 2 suffix

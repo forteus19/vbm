@@ -1,0 +1,15 @@
+CLASS com/boehmod/blockfront/unnamed/BF_270 com/boehmod/blockfront/client/render/BFShaders
+	FIELD field_1600 INSTANCE Lcom/boehmod/blockfront/unnamed/BF_270;
+	FIELD field_1601 softParticle Lnet/minecraft/client/renderer/ShaderInstance;
+	FIELD field_1602 instancedSoftParticle Lnet/minecraft/client/renderer/ShaderInstance;
+	FIELD field_1603 SOFT_PARTICLE_NAME Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1604 INSTANCED_SOFT_PARTICLE_NAME Lnet/minecraft/resources/ResourceLocation;
+	METHOD begin begin (Lcom/mojang/blaze3d/vertex/Tesselator;Lnet/minecraft/client/renderer/texture/TextureManager;)Lcom/mojang/blaze3d/vertex/BufferBuilder;
+		ARG 1 tesselator
+		ARG 2 textureManager
+	METHOD method_1127 getSoftParticle ()Lnet/minecraft/client/renderer/ShaderInstance;
+	METHOD method_1128 setSoftParticle (Lnet/minecraft/client/renderer/ShaderInstance;)V
+		ARG 0 shader
+	METHOD method_1129 getInstancedSoftParticle ()Lnet/minecraft/client/renderer/ShaderInstance;
+	METHOD method_1130 setInstancedSoftParticle (Lnet/minecraft/client/renderer/ShaderInstance;)V
+		ARG 0 shader

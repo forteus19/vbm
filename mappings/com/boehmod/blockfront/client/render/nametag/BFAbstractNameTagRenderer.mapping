@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_377 com/boehmod/blockfront/client/render/nametag/BFAbstractNameTagRenderer
+	METHOD method_1339 register (Lnet/minecraft/world/entity/EntityType;Lcom/boehmod/blockfront/unnamed/BF_377;)V

@@ -24,7 +24,7 @@ public final class ProposalRegistry {
                     /* BFBotVoices */ "com/boehmod/blockfront/unnamed/BF_1092",
                     /* BFCreativeTabs */ "com/boehmod/blockfront/unnamed/BF_1103",
                     /* BFDataComponents */ "com/boehmod/blockfront/unnamed/BF_1104",
-                    /* BFEntities */ "com/boehmod/blockfront/unnamed/BF_1106",
+                    /* BFEntityTypes */ "com/boehmod/blockfront/unnamed/BF_1106",
                     /* BFItems */ "com/boehmod/blockfront/unnamed/BF_1107",
                     /* BFParticles */ "com/boehmod/blockfront/unnamed/BF_1109"
             ),

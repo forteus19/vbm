@@ -1,6 +1,15 @@
 CLASS com/boehmod/blockfront/unnamed/BF_449 com/boehmod/blockfront/client/BFVersionChecker
+	FIELD field_2044 isThreadRunning Ljava/util/concurrent/atomic/AtomicBoolean;
+	FIELD field_2045 cloudUrl Ljava/lang/String;
 	FIELD field_2046 currentVersion Ljava/lang/String;
 	FIELD field_2047 versionHash Ljava/lang/String;
+	FIELD field_2048 hasUpdate Z
+	FIELD field_2049 QUERY_PORT I
+	FIELD field_2050 QUERY_INTERVAL I
+	FIELD field_2051 ticksUntilQuery I
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 cloudUrl
+	METHOD method_1582 hasUpdate ()Z
 	METHOD method_1583 getCurrentVersion ()Ljava/lang/String;
 	METHOD method_1584 getVersionHash ()Ljava/lang/String;
 	METHOD method_1585 calculateJarHash ()Ljava/lang/String;

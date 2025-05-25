@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_272 com/boehmod/blockfront/client/player/ClientPlayerDataCacheLoader
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_273;)V
+		ARG 1 dataHandler

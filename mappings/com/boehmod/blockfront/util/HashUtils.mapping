@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1057 com/boehmod/blockfront/util/HashUtils
+	METHOD method_4476 hashMD5 (Ljava/nio/file/Path;)Ljava/lang/String;
+		ARG 0 path

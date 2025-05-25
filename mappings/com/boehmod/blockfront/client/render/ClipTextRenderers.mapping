@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_991 com/boehmod/blockfront/client/render/ClipTextRenderers
+	FIELD field_3998 FLAMETHROWER Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
+	FIELD field_3999 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
+	FIELD field_4000 SLASH_COMPONENT Lnet/minecraft/network/chat/Component;
+	CLASS BF_992 Renderer
