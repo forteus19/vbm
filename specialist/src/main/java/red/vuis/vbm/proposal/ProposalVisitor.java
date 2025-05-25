@@ -25,13 +25,16 @@ public abstract class ProposalVisitor extends ClassVisitor {
         className = name;
     }
 
-    protected static String getStringLdc(Frame<SourceValue> frame) {
+    protected static String getStringLdc(Frame<SourceValue> frame, int argIndex) {
+        int a = 0;
         for (int i = 0; i < frame.getStackSize(); i++) {
             SourceValue source = frame.getStack(i);
 
             for (AbstractInsnNode sourceInsn : source.insns) {
                 if (sourceInsn instanceof LdcInsnNode ldcInsn && ldcInsn.cst instanceof String value) {
-                    return value;
+                    if (a++ == argIndex) {
+                        return value;
+                    }
                 }
             }
         }

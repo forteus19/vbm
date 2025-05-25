@@ -11,11 +11,13 @@ import red.vuis.vbm.util.VbmUtils;
 
 public class LdcStringForInvokeVisitor extends ClassInitVisitor {
     private final int invokeOpcode;
+    private final int argIndex;
     private final String[] registerMethods;
 
-    public LdcStringForInvokeVisitor(ProposalCollector collector, int invokeOpcode, String... registerMethods) {
+    public LdcStringForInvokeVisitor(ProposalCollector collector, int invokeOpcode, int argIndex, String... registerMethods) {
         super(collector);
         this.invokeOpcode = invokeOpcode;
+        this.argIndex = argIndex;
         this.registerMethods = registerMethods;
     }
 
@@ -41,7 +43,7 @@ public class LdcStringForInvokeVisitor extends ClassInitVisitor {
                 continue;
             }
 
-            String ldcValue = getStringLdc(frames[i]);
+            String ldcValue = getStringLdc(frames[i], argIndex);
             if (ldcValue != null) {
                 collector.collectField(className, insn2.name, insn2.desc, VbmUtils.javaName(ldcValue));
             }

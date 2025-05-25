@@ -56,7 +56,7 @@ public final class EnumVisitor extends ClassInitVisitor {
                 continue;
             }
 
-            String ldcValue = getStringLdc(frames[i]);
+            String ldcValue = getStringLdc(frames[i], 0);
             if (ldcValue != null) {
                 collector.collectField(className, insn2.name, insn2.desc, VbmUtils.javaName(ldcValue));
             }

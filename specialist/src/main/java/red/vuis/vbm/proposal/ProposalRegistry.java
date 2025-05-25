@@ -15,7 +15,7 @@ public final class ProposalRegistry {
                     node -> (node.access & Opcodes.ACC_ENUM) != 0
             ),
             new VisitorEntry(
-                    collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKEVIRTUAL, "register", "registerItem"),
+                    collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKEVIRTUAL, 0, "register", "registerItem"),
                     /* BFAttachments */ "com/boehmod/blockfront/unnamed/BF_1110",
                     /* BFBlockAttributes */ "com/boehmod/blockfront/unnamed/BF_1086",
                     /* BFBlockSoundAttributes */ "com/boehmod/blockfront/unnamed/BF_1088",
@@ -29,8 +29,12 @@ public final class ProposalRegistry {
                     /* BFParticles */ "com/boehmod/blockfront/unnamed/BF_1109"
             ),
             new VisitorEntry(
-                    collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKESTATIC, "method_5444"),
+                    collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKESTATIC, 0, "method_5444"),
                     /* BFSounds */ "com/boehmod/blockfront/unnamed/BF_1112"
+            ),
+            new VisitorEntry(
+                    collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKESPECIAL, 1, "<init>"),
+                    /* BFClientSettings */ "com/boehmod/blockfront/unnamed/BF_432"
             )
     );
 
