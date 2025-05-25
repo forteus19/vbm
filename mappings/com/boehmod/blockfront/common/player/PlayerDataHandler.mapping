@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/common/player/c com/boehmod/blockfront/common/player/PlayerDataHandler
+	FIELD field_1179 cloudAttachmentType Lnet/neoforged/neoforge/attachment/AttachmentType;
 	FIELD field_1181 profileAttachmentType Lnet/neoforged/neoforge/attachment/AttachmentType;
 	FIELD field_1182 clanData Lcom/google/common/cache/LoadingCache;
 	METHOD method_864 load (Ljava/util/UUID;)Lcom/boehmod/blockfront/common/player/b;
@@ -6,5 +7,7 @@ CLASS com/boehmod/blockfront/common/player/c com/boehmod/blockfront/common/playe
 	METHOD method_866 putClanData (Ljava/util/UUID;Lcom/boehmod/bflib/cloud/common/AbstractClanData;)V
 		ARG 1 uuid
 		ARG 2 clanData
+	METHOD method_867 getPlayerCloudData (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/common/player/b;
+		ARG 1 player
 	METHOD method_868 getCloudProfile (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/unnamed/BF_476;
 		ARG 1 player

@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_381 com/boehmod/blockfront/client/render/entity/NextbotEntityRenderer
+	METHOD <init> (Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;)V
+		ARG 1 context
+	METHOD getTextureLocation getTextureLocation (Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 1 entity
+	METHOD render render (Lnet/minecraft/world/entity/Entity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V
+		ARG 1 entity
+		ARG 2 entityYaw
+		ARG 3 partialTick
+		ARG 4 poseStack
+		ARG 5 bufferSource
+		ARG 6 packedLight

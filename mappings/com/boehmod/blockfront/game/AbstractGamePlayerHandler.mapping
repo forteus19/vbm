@@ -1,3 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/AbstractGamePlayerHandler
-	FIELD field_2916 game Lcom/boehmod/blockfront/unnamed/BF_677;
-	METHOD method_2794 getPlayerUUIDs ()Ljava/util/Set;

@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/AbstractGameManager
+	FIELD field_2911 teams Ljava/util/List;
+	FIELD field_2913 playerData Lcom/boehmod/blockfront/common/player/c;
+	FIELD field_2914 lobbySpawn Lcom/boehmod/blockfront/unnamed/BF_692;
+	FIELD field_2916 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/common/player/c;)V
+		ARG 1 game
+		ARG 2 playerData
+	METHOD method_2765 getTeamByName (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_686;
+		ARG 1 name
+	METHOD method_2794 getPlayerUUIDs ()Ljava/util/Set;
+	METHOD method_2798 getTeams ()Ljava/util/List;

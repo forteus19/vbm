@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_607 com/boehmod/blockfront/common/entity/MedicalBagEntity
+	FIELD field_2570 PLAYER_HEALED_POPUP_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_2571 MEDIC_BAG_HEAL_MESSAGE Lnet/minecraft/network/chat/Component;

@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_639 com/boehmod/blockfront/common/entity/NextbotEntity
+	METHOD method_2479 getTexture ()Ljava/lang/String;
+	METHOD method_2480 getFunnySound ()Lnet/minecraft/core/Holder;

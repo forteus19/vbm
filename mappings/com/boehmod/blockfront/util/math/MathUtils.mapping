@@ -1,0 +1,151 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1059 com/boehmod/blockfront/util/math/MathUtils
+	COMMENT Various static math helper methods.
+	COMMENT
+	COMMENT WARNING: contains much jank!!!
+	FIELD field_4324 PI F
+	FIELD field_4325 DEG_TO_RAD_RATIO F
+	FIELD field_4326 HALF_PI F
+	METHOD method_4478 degWrapDifference (DD)D
+		ARG 0 val1
+		ARG 2 val2
+	METHOD method_4479 lerpd (DDD)D
+		ARG 0 min
+		ARG 2 max
+		ARG 4 t
+	METHOD method_4480 yawDifference (DDDDF)F
+		ARG 0 fromX
+		ARG 2 fromZ
+		ARG 4 toX
+		ARG 6 toZ
+		ARG 8 toYaw
+	METHOD method_4481 lerpdFt (DDF)D
+		ARG 0 max
+		ARG 2 min
+		ARG 4 t
+	METHOD method_4482 randomLerp (FF)F
+		ARG 0 min
+		ARG 1 max
+	METHOD method_4483 lookingVec (FF)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 rotX
+		ARG 1 rotY
+	METHOD method_4484 withAlphaf (IF)I
+		ARG 0 color
+		ARG 1 alpha
+	METHOD method_4485 lerpColor (IIF)I
+		ARG 0 min
+		ARG 1 max
+		ARG 2 t
+	METHOD method_4486 divIntoArray (IIII)[F
+		ARG 0 num1
+		ARG 1 num2
+		ARG 2 den1
+		ARG 3 den2
+	METHOD method_4487 lerpIntoVec3 (Lcom/boehmod/blockfront/unnamed/BF_692;Lcom/boehmod/blockfront/unnamed/BF_692;F)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 max
+		ARG 1 min
+		ARG 2 t
+	METHOD method_4488 moveTowards (Lcom/boehmod/blockfront/unnamed/BF_692;Lcom/boehmod/blockfront/unnamed/BF_692;Lcom/boehmod/blockfront/unnamed/BF_692;D)Lcom/boehmod/blockfront/unnamed/BF_692;
+		ARG 0 from
+		ARG 1 to
+		ARG 2 target
+		ARG 3 amount
+	METHOD method_4489 getScaledBoxTextWidth (Ljava/lang/String;Lnet/minecraft/client/gui/Font;FIF)F
+		ARG 0 text
+		ARG 1 font
+		ARG 2 scale
+		ARG 3 maxWidth
+		ARG 4 maxScale
+	METHOD method_4490 averageMc (Ljava/util/List;)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 vecs
+	METHOD method_4491 getTickDelta (Lnet/minecraft/client/Minecraft;)F
+		ARG 0 minecraft
+	METHOD method_4492 withinDistance (Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/Vec3;D)Z
+		ARG 0 blockPos
+		ARG 1 vecPos
+		ARG 2 distance
+	METHOD method_4493 directionVec (Lnet/minecraft/core/Direction;F)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 direction
+		ARG 1 magnitude
+	METHOD method_4494 gaussianRandomSign (Lnet/minecraft/util/RandomSource;)F
+		ARG 0 random
+	METHOD method_4495 stepUpAndDrift (Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/phys/Vec3;I)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 random
+		ARG 1 origin
+		ARG 2 magnitude
+	METHOD method_4496 lookingVec (Lnet/minecraft/world/entity/Entity;FF)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 entity
+		ARG 1 xRotOffset
+		ARG 2 yRotOffset
+	METHOD method_4497 lerp (Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/world/phys/Vec2;F)Lnet/minecraft/world/phys/Vec2;
+		ARG 0 max
+		ARG 1 min
+		ARG 2 t
+	METHOD method_4498 yaw (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;)F
+		ARG 0 vec1
+		ARG 1 vec2
+	METHOD method_4499 moveTowards (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;F)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 from
+		ARG 1 to
+		ARG 2 amount
+	METHOD method_4500 intersect (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;)Ljava/util/Optional;
+		COMMENT Casts a ray in 3D space with a box and checks for any intersections.
+		COMMENT
+		COMMENT @param origin The origin point of the ray.
+		COMMENT @param direction The non-zero direction of the ray.
+		COMMENT @param box The box to collide with.
+		COMMENT @return The first point of intersection, or an empty optional if there are none.
+		ARG 0 origin
+		ARG 1 direction
+		ARG 2 box
+	METHOD method_4501 clampPartsd (Lorg/joml/Vector3d;DD)Lorg/joml/Vector3d;
+		ARG 0 vec
+		ARG 1 min
+		ARG 3 max
+	METHOD method_4502 clampPartsf (Lorg/joml/Vector3f;FF)Lorg/joml/Vector3f;
+		ARG 0 vec
+		ARG 1 min
+		ARG 2 max
+	METHOD method_4503 averageJoml ([Lorg/joml/Vector3f;)Lorg/joml/Vector3f;
+		ARG 0 vecs
+	METHOD method_4504 rotateLerpd (DDD)D
+		ARG 0 min
+		ARG 2 max
+		ARG 4 t
+	METHOD method_4505 snapToMultiple (FF)F
+		ARG 0 value
+		ARG 1 step
+	METHOD method_4506 yawDifference (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/Entity;)F
+		ARG 0 entity1
+		ARG 1 entity2
+	METHOD method_4507 lerp (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;F)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 max
+		ARG 1 min
+		ARG 2 t
+	METHOD method_4508 roundDiv5 (F)I
+		ARG 0 value
+	METHOD method_4509 moveTowards (FFF)F
+		ARG 0 from
+		ARG 1 to
+		ARG 2 amount
+	METHOD method_4510 lerpf1 (FFF)F
+		ARG 0 max
+		ARG 1 min
+		ARG 2 t
+	METHOD method_4511 rotateLerpf (FFF)F
+		ARG 0 max
+		ARG 1 min
+		ARG 2 t
+	METHOD method_4512 lerpf2 (FFF)F
+		ARG 0 min
+		ARG 1 max
+		ARG 2 t
+	METHOD method_4513 midPointDist (FFF)F
+		ARG 0 min
+		ARG 1 max
+		ARG 2 t
+	METHOD method_4514 normalRevClampSlope (FFF)F
+		ARG 0 min
+		ARG 1 max
+		ARG 2 t
+	METHOD method_4515 wrapDegrees (F)F
+		ARG 0 angle

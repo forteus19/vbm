@@ -31,6 +31,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDS
 	METHOD method_3005 getPitch ()F
 	METHOD method_3006 getYaw ()F
 	METHOD method_3007 getArea (I)Lnet/minecraft/world/phys/AABB;
+	METHOD method_3012 distance (Lcom/boehmod/blockfront/unnamed/BF_692;)D
+		ARG 1 other
 	METHOD method_3013 readNamedFDS (Ljava/lang/String;Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_692;
 		ARG 0 tagName
 		ARG 1 root
@@ -39,6 +41,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDS
 		ARG 2 root
 	METHOD method_3018 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_692;
 		ARG 0 buf
+	METHOD method_3026 distanceSqr (Lcom/boehmod/blockfront/unnamed/BF_692;)D
+		ARG 1 other
 	METHOD method_3027 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
 	METHOD method_3028 asBlockPos ()Lnet/minecraft/core/BlockPos;

@@ -1,12 +1,13 @@
 CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/AbstractGame
-	FIELD field_2823 COMMAND Lcom/boehmod/blockfront/unnamed/BF_462;
-	FIELD field_2824 playerHandler Lcom/boehmod/blockfront/unnamed/BF_682;
+	FIELD field_2823 BASE_COMMAND Lcom/boehmod/blockfront/unnamed/BF_462;
+	FIELD field_2824 gameManager Lcom/boehmod/blockfront/unnamed/BF_682;
 	FIELD field_2827 dominatingManager Lcom/boehmod/blockfront/unnamed/BF_767;
 	FIELD field_2829 map Lcom/boehmod/blockfront/unnamed/BF_927;
 	FIELD field_2840 FIRST_BLOOD_MESSAGE Lnet/minecraft/network/chat/Component;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
 	METHOD method_2588 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
+	METHOD method_2640 entityBoundSize ()I
 	METHOD method_2644 getPlayerHandler ()Lcom/boehmod/blockfront/unnamed/BF_682;
 	METHOD method_2652 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 	METHOD method_2669 writeSpecificFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V

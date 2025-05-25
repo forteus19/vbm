@@ -1,4 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
+	FIELD field_2950 TEAM_TYPING_PREFIX Ljava/lang/String;
+	FIELD field_2951 OBJECTIVE_PREFIX Lnet/minecraft/network/chat/Component;
+	FIELD field_2952 OBJECTIVE_UP_PREFIX Lnet/minecraft/network/chat/Component;
+	FIELD field_2953 COMMAND_PREFIX Lnet/minecraft/network/chat/Component;
+	FIELD field_2954 ADMIN_PREFIX Lnet/minecraft/network/chat/Component;
+	FIELD field_2955 DEAD_PREFIX Lnet/minecraft/network/chat/Component;
+	FIELD field_2956 TEAM_PREFIX Lnet/minecraft/network/chat/Component;
 	METHOD method_2890 triggerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
 		ARG 0 manager
 		ARG 1 game
@@ -10,6 +17,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 playerUUID
 		ARG 1 header
 		ARG 2 message
+	METHOD method_2941 discardAllMatchEntities (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;)V
+		ARG 0 level
+		ARG 1 game
+		ARG 2 playerHandler
 	METHOD method_2953 sendPopupMessage (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_921;)V
 		ARG 0 player
 		ARG 1 popup
@@ -17,6 +28,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 player
 		ARG 1 header
 		ARG 2 message
+	METHOD method_2966 isPlayerUnavailable (Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/common/player/b;)Z
+		ARG 0 player
+		ARG 1 data
 	METHOD method_2975 playSound (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
 		ARG 0 level
 		ARG 1 pos
