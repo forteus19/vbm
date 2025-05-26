@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_925 com/boehmod/blockfront/game/GameType
+CLASS com/boehmod/blockfront/unnamed/BF_925 com/boehmod/blockfront/game/BFGame
 	FIELD description description Lnet/minecraft/network/chat/Component;
 	FIELD field_3680 name Ljava/lang/String;
 	FIELD field_3681 searchGame Lcom/boehmod/bflib/cloud/common/mm/SearchGame;
@@ -12,7 +12,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_925 com/boehmod/blockfront/game/GameType
 	FIELD field_3689 iconTexture Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_3690 TEAM_DEATHMATCH Lcom/boehmod/blockfront/unnamed/BF_925;
 	FIELD field_3691 GUN_GAME Lcom/boehmod/blockfront/unnamed/BF_925;
-	FIELD field_3692 experimental Z
+	FIELD field_3692 isExperimental Z
 	FIELD field_3694 FREE_FOR_ALL Lcom/boehmod/blockfront/unnamed/BF_925;
 	FIELD field_3695 INFECTED Lcom/boehmod/blockfront/unnamed/BF_925;
 	FIELD field_3696 TROUBLE_TOWN Lcom/boehmod/blockfront/unnamed/BF_925;
@@ -32,6 +32,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_925 com/boehmod/blockfront/game/GameType
 	METHOD method_3825 getAlternativeTypes ()Ljava/util/List;
 	METHOD method_3826 getSearchGame ()Lcom/boehmod/bflib/cloud/common/mm/SearchGame;
 	METHOD method_3827 getSelectSound ()Ljava/util/function/Supplier;
+	METHOD method_3828 getForCategory (Lcom/boehmod/blockfront/unnamed/BF_925$BF_926;)Ljava/util/List;
+		ARG 0 category
 	METHOD method_3829 addAlternativeType (Lcom/boehmod/blockfront/unnamed/BF_925;)V
 		ARG 1 type
 	METHOD method_3830 getByName (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_925;
@@ -42,6 +44,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_925 com/boehmod/blockfront/game/GameType
 		ARG 1 description
 	METHOD method_3833 experimental ()Lcom/boehmod/blockfront/unnamed/BF_925;
 	METHOD method_3834 getGameClass ()Ljava/lang/Class;
+	METHOD method_3835 isExperimental ()Z
 	METHOD method_3838 values ()Ljava/util/Collection;
 	METHOD method_3839 getIconTexture ()Lnet/minecraft/resources/ResourceLocation;
 	CLASS BF_926 Category

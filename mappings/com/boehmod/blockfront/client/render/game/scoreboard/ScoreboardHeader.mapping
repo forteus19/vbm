@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_933 com/boehmod/blockfront/client/render/game/scoreboard/ScoreboardHeader
+	FIELD field_3769 currentRenderer Lcom/boehmod/blockfront/unnamed/BF_932;
+	FIELD field_3770 renderers Ljava/util/List;
+	FIELD field_3771 currentIndex I
+	METHOD method_3903 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_677;IIIIIIF)V
+		ARG 1 poseStack
+		ARG 2 font
+		ARG 3 graphics
+		ARG 4 game
+	METHOD onUpdate onUpdate ()V

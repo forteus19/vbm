@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_889 com/boehmod/blockfront/client/ac/BFClientAntiCheatThread
+	FIELD field_3566 manager Lcom/boehmod/blockfront/unnamed/BF_606;
+	FIELD field_3567 antiCheat Lcom/boehmod/blockfront/unnamed/BF_833;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_833;)V
+		ARG 1 manager
+		ARG 2 antiCheat
+	METHOD run run ()V

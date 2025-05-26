@@ -6,7 +6,20 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/common/player/c;)V
 		ARG 1 game
 		ARG 2 playerData
+	METHOD method_2763 addTeam (Lcom/boehmod/blockfront/unnamed/BF_686;)V
+		ARG 1 team
+	METHOD method_2764 setLobbySpawn (Lcom/boehmod/blockfront/unnamed/BF_692;)V
+		ARG 1 pose
 	METHOD method_2765 getTeamByName (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_686;
 		ARG 1 name
+	METHOD method_2766 getPlayerTeam (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_686;
+		ARG 1 uuid
+	METHOD method_2768 (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_686;)Z
+		ARG 1 team
+	METHOD method_2782 getMaxPlayers ()I
+	METHOD method_2783 isAcceptingPlayers ()Z
+	METHOD method_2788 getLobbySpawn ()Lcom/boehmod/blockfront/unnamed/BF_692;
+	METHOD method_2790 hasPlayer (Ljava/util/UUID;)Z
+		ARG 1 uuid
 	METHOD method_2794 getPlayerUUIDs ()Ljava/util/Set;
 	METHOD method_2798 getTeams ()Ljava/util/List;

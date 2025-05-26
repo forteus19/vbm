@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_600 com/boehmod/blockfront/util/Interpolators
+CLASS com/boehmod/blockfront/unnamed/BF_600 com/boehmod/blockfront/util/math/Interpolators
 	FIELD interpolator interpolator Lcom/boehmod/blockfront/unnamed/BF_601;
 	METHOD <init> (Ljava/lang/String;ILcom/boehmod/blockfront/unnamed/BF_601;)V
 		ARG 3 interpolator

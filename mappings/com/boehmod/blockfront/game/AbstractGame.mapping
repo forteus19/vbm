@@ -1,14 +1,33 @@
 CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/AbstractGame
-	FIELD field_2823 BASE_COMMAND Lcom/boehmod/blockfront/unnamed/BF_462;
+	FIELD field_2823 baseCommand Lcom/boehmod/blockfront/unnamed/BF_462;
 	FIELD field_2824 gameManager Lcom/boehmod/blockfront/unnamed/BF_682;
+	FIELD field_2826 playerStatus Lcom/boehmod/blockfront/unnamed/BF_685;
 	FIELD field_2827 dominatingManager Lcom/boehmod/blockfront/unnamed/BF_767;
 	FIELD field_2829 map Lcom/boehmod/blockfront/unnamed/BF_927;
+	FIELD field_2830 stageManager Lcom/boehmod/blockfront/unnamed/BF_939;
+	FIELD field_2832 name Ljava/lang/String;
+	FIELD field_2836 playerStatData Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
 	FIELD field_2840 FIRST_BLOOD_MESSAGE Lnet/minecraft/network/chat/Component;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 2 name
+	METHOD method_2584 getName ()Ljava/lang/String;
 	METHOD method_2588 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
+	METHOD method_2591 getPlayerStatus ()Lcom/boehmod/blockfront/unnamed/BF_685;
+	METHOD method_2592 getDominatingManager ()Lcom/boehmod/blockfront/unnamed/BF_767;
+	METHOD method_2595 getMap ()Lcom/boehmod/blockfront/unnamed/BF_927;
+	METHOD method_2598 getStageManager ()Lcom/boehmod/blockfront/unnamed/BF_939;
+	METHOD method_2621 setPlayerStatus (Lcom/boehmod/blockfront/unnamed/BF_685;)V
+		ARG 1 playerStatus
+	METHOD method_2629 getPlayerStatData (Ljava/util/UUID;)Lcom/boehmod/bflib/fds/tag/FDSTagCompound;
+		ARG 1 uuid
+	METHOD method_2635 hasPlayerLimit ()Z
 	METHOD method_2640 entityBoundSize ()I
-	METHOD method_2644 getPlayerHandler ()Lcom/boehmod/blockfront/unnamed/BF_682;
+	METHOD method_2644 getGameManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
 	METHOD method_2652 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD method_2666 getUUID ()Ljava/util/UUID;
 	METHOD method_2669 writeSpecificFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 	METHOD method_2670 readSpecificFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD method_2674 setName (Ljava/lang/String;)V
+		ARG 1 name

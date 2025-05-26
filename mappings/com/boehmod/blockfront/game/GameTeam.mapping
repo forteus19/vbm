@@ -1,7 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	FIELD field_2929 playerSpawns Ljava/util/List;
+	FIELD field_2931 players Lit/unimi/dsi/fastutil/objects/ObjectOpenHashSet;
 	FIELD field_2932 name Ljava/lang/String;
+	FIELD field_2933 style Lnet/minecraft/network/chat/Style;
 	FIELD field_2935 color I
+	FIELD field_2937 maxPlayers I
 	FIELD field_2938 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;Lnet/minecraft/network/chat/Style;Lnet/minecraft/network/chat/Style;I)V
 		ARG 1 game
@@ -9,8 +12,21 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	METHOD getColor getColor ()I
 	METHOD getName getName ()Ljava/lang/String;
 	METHOD method_2809 getStyle ()Lnet/minecraft/network/chat/Style;
+	METHOD method_2819 addPlayers (Ljava/util/Set;)V
+		ARG 1 uuids
+	METHOD method_2820 getMaxPlayers ()I
+	METHOD method_2822 numPlayers ()I
 	METHOD method_2823 isAllies ()Z
 	METHOD method_2824 isAxis ()Z
+	METHOD method_2827 addPlayerSpawn (Lcom/boehmod/blockfront/unnamed/BF_692;)V
+		ARG 1 pose
+	METHOD method_2830 clearPlayers ()V
+	METHOD method_2831 clearPlayerSpawns ()V
+	METHOD method_2832 removePlayer (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_2834 hasPlayer (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_2837 getPlayers ()Ljava/util/Set;
 	METHOD method_2840 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
 	METHOD method_2842 getPlayerSpawns ()Ljava/util/List;

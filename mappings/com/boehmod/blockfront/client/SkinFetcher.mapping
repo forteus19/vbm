@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_410 com/boehmod/blockfront/client/SkinFetcher
+	FIELD field_1858 URL Ljava/lang/String;
+	FIELD field_1859 cache Lcom/google/common/cache/Cache;
+	FIELD field_1860 executor Ljava/util/concurrent/ExecutorService;
+	METHOD method_1453 (Lcom/google/common/cache/RemovalNotification;)V
+		ARG 0 notification
+	METHOD method_1456 fetchSkinCached (Lnet/minecraft/client/Minecraft;Ljava/util/UUID;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 1 minecraft
+		ARG 2 playerId
+	METHOD method_1457 fetchSkin (Lnet/minecraft/client/Minecraft;Ljava/util/UUID;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 1 minecraft
+		ARG 2 playerId
+	METHOD shutdown shutdown ()V

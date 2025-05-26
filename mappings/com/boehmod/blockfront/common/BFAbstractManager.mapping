@@ -6,6 +6,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	FIELD field_2032 connectionManager Lcom/boehmod/blockfront/unnamed/BF_411;
 	FIELD field_2033 antiCheat Lcom/boehmod/blockfront/unnamed/BF_451;
 	FIELD field_2034 assetStore Lcom/boehmod/blockfront/unnamed/BF_459;
+	FIELD field_2035 isGameRulesSet Z
 	FIELD field_2039 instanceUUID Ljava/util/UUID;
 	FIELD field_6328 cloudRegistry Lcom/boehmod/bflib/cloud/common/CloudRegistry;
 	METHOD <init> (Lcom/boehmod/blockfront/common/player/c;)V
@@ -19,17 +20,26 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 1 fromStatus
 		ARG 2 toStatus
 		ARG 3 context
-	METHOD method_1556 joinGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
+	METHOD method_1556 playerJoinGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
 		ARG 1 manager
 		ARG 2 level
 		ARG 3 player
 		ARG 4 game
+	METHOD method_1562 getGameWithPlayer (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_677;
+		ARG 1 uuid
+	METHOD method_1565 onUpdate (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 server
+		ARG 2 level
+	METHOD method_1567 getGameWithPlayer (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/unnamed/BF_677;
+		ARG 1 player
 	METHOD method_1568 setGameRules (Lnet/minecraft/world/level/Level;Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 level
 		ARG 2 server
 	METHOD method_1569 getConnectionManager ()Lcom/boehmod/blockfront/unnamed/BF_411;
 	METHOD method_1570 getAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
 	METHOD method_1571 getAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;
+	METHOD method_1572 getGamesInRotation ()Ljava/util/Map;
 	METHOD method_1575 matchMakingEnabled ()Z
 	METHOD method_1577 getInstanceUUID ()Ljava/util/UUID;
+	METHOD method_1578 isConnectionVerified ()Z
 	METHOD method_5487 getCloudRegistry ()Lcom/boehmod/bflib/cloud/common/CloudRegistry;

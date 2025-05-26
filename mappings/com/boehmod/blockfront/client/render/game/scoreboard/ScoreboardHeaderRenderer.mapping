@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_932 com/boehmod/blockfront/client/render/game/scoreboard/ScoreboardHeaderRenderer
+	METHOD method_3899 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_677;IIIIIIF)V
+		ARG 1 poseStack
+		ARG 2 font
+		ARG 3 graphics
+		ARG 4 game
+	METHOD method_3900 reset ()V
+	METHOD method_3901 shouldSwitch ()Z

@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_462 com/boehmod/blockfront/assets/AssetCommandBuilder
+	FIELD field_2093 validators Ljava/util/List;
+	FIELD field_2094 subCommands Ljava/util/Map;
+	METHOD method_1654 validator (Lcom/boehmod/blockfront/unnamed/BF_463;)Lcom/boehmod/blockfront/unnamed/BF_462;
+		ARG 1 validator
+	METHOD method_1656 subCommand (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_462;)Lcom/boehmod/blockfront/unnamed/BF_462;
+		ARG 1 name
+		ARG 2 builder
+	METHOD method_1657 subCommands (Ljava/util/Map;)Lcom/boehmod/blockfront/unnamed/BF_462;
+		ARG 1 commands

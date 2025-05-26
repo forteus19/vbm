@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_873 com/boehmod/blockfront/game/gg/GunGamePlayerHandler
+CLASS com/boehmod/blockfront/unnamed/BF_873 com/boehmod/blockfront/game/gg/GunGameManager
 	FIELD field_3514 DEGRADE_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_3515 UPGRADE_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_3516 KNIFE_MESSAGE Lnet/minecraft/network/chat/Component;

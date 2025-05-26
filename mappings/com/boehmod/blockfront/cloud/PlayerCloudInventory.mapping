@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_470 com/boehmod/blockfront/cloud/PlayerCloudInventory
+	METHOD method_1676 deleteItem (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/bflib/cloud/common/item/CloudItemStack;)V
+		ARG 1 manager
+		ARG 2 itemStack

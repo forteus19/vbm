@@ -10,6 +10,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_444 com/boehmod/blockfront/util/BFLog
 		ARG 0 fmt
 		ARG 1 throwable
 		ARG 2 args
-	METHOD method_5601 warn (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD method_5601 logWarn (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 0 fmt
 		ARG 1 args

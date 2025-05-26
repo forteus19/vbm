@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_464 com/boehmod/blockfront/assets/AssetCommandValidators
+	FIELD field_2097 ONLY_PLAYERS Lcom/boehmod/blockfront/unnamed/BF_463;
+	FIELD field_2098 ERROR_MESSAGE Lnet/minecraft/network/chat/MutableComponent;
+	METHOD method_1663 (ILcom/mojang/brigadier/context/CommandContext;[Ljava/lang/String;)Z
+		ARG 1 context
+		ARG 2 args
+	METHOD method_1664 (Lcom/mojang/brigadier/context/CommandContext;[Ljava/lang/String;)Z
+		ARG 0 context
+		ARG 1 args
+	METHOD method_1665 count ([Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_463;
+		ARG 0 args
+	METHOD method_1666 ([Ljava/lang/String;Lcom/mojang/brigadier/context/CommandContext;[Ljava/lang/String;)Z
+		ARG 1 context
+		ARG 2 args
+	METHOD method_1667 onlyAllowed ([Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_463;
+		ARG 0 items

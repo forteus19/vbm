@@ -1,5 +1,7 @@
 CLASS com/boehmod/blockfront/common/player/c com/boehmod/blockfront/common/player/PlayerDataHandler
+	FIELD field_1178 cloudProfileCache Lcom/google/common/cache/LoadingCache;
 	FIELD field_1179 cloudAttachmentType Lnet/neoforged/neoforge/attachment/AttachmentType;
+	FIELD field_1180 cloudDataCache Lcom/google/common/cache/LoadingCache;
 	FIELD field_1181 profileAttachmentType Lnet/neoforged/neoforge/attachment/AttachmentType;
 	FIELD field_1182 clanData Lcom/google/common/cache/LoadingCache;
 	METHOD method_860 createPlayerDataCacheLoader ()Lcom/boehmod/blockfront/common/player/PlayerDataCacheLoader;
@@ -18,3 +20,7 @@ CLASS com/boehmod/blockfront/common/player/c com/boehmod/blockfront/common/playe
 		ARG 1 uuid
 	METHOD method_872 isPlayerInGame (Ljava/util/UUID;)Z
 		ARG 1 uuid
+	METHOD method_877 removeData (Ljava/util/UUID;)V
+		ARG 1 playerUUID
+	METHOD method_878 removeCloudData (Ljava/util/UUID;)V
+		ARG 1 playerUUID

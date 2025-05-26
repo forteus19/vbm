@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/BFGameRenderer
+CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/AbstractGameRenderer
 	FIELD field_2869 STOPWATCH_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2870 PLAYER_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2871 FRIENDS_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;

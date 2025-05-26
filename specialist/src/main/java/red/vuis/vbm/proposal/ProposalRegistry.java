@@ -53,8 +53,12 @@ public final class ProposalRegistry {
     }
 
     private record VisitorEntry(Function<ProposalCollector, ProposalVisitor> constructor, Predicate<ClassNode> nodeTest) implements Predicate<ClassNode> {
+        public VisitorEntry(Function<ProposalCollector, ProposalVisitor> constructor, List<String> classNames) {
+            this(constructor, node -> classNames.contains(node.name));
+        }
+
         public VisitorEntry(Function<ProposalCollector, ProposalVisitor> constructor, String... classNames) {
-            this(constructor, node -> Arrays.asList(classNames).contains(node.name));
+            this(constructor, List.of(classNames));
         }
 
         @Override

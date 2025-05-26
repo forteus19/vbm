@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_81 com/boehmod/blockfront/client/event/BFClientScreenSubscriber
+	METHOD method_437 onOpenScreen (Lnet/neoforged/neoforge/client/event/ScreenEvent$Opening;)V
+		ARG 0 event

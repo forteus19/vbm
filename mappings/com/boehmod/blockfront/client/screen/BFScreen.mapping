@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_187 com/boehmod/blockfront/client/screen/BFScreen
+	FIELD field_1069 playerDataHandler Lcom/boehmod/blockfront/unnamed/BF_273;
+	FIELD field_1070 minecraft Lnet/minecraft/client/Minecraft;
+	FIELD field_1071 manager Lcom/boehmod/blockfront/unnamed/BF_606;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 title

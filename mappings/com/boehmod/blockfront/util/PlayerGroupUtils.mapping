@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_473 com/boehmod/blockfront/util/PlayerGroupUtils
+	METHOD method_1691 getComponent (Lcom/boehmod/bflib/cloud/common/player/PlayerGroup;)Lnet/minecraft/network/chat/MutableComponent;
+		ARG 0 playerGroup

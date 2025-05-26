@@ -1,2 +1,26 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1067 com/boehmod/blockfront/server/BFServerManager
+	FIELD field_4334 profanityManager Lcom/boehmod/blockfront/unnamed/BF_1120;
+	FIELD field_4335 matchMakingRegion Lcom/boehmod/bflib/cloud/common/mm/SearchRegion;
+	FIELD field_4336 matchMakingPassword Ljava/lang/String;
 	FIELD field_4337 matchMakingEnabled Z
+	FIELD field_4338 matchMakingShutdown Z
+	FIELD field_4339 cloudUrl Ljava/lang/String;
+	FIELD field_4340 GAMES_STATUS_UPDATE_INTERVAL I
+	FIELD field_4341 statusUpdateTimer I
+	METHOD method_4562 getMatchMakingPassword ()Ljava/lang/String;
+	METHOD method_4566 getProfanityManager ()Lcom/boehmod/blockfront/unnamed/BF_1120;
+	METHOD method_4567 getCloudUrl ()Ljava/lang/String;
+	METHOD method_4568 getMatchMakingRegion ()Lcom/boehmod/bflib/cloud/common/mm/SearchRegion;
+	METHOD method_4569 readMatchMakingSettings ()V
+	METHOD method_4570 shutdown ()V
+	METHOD method_4571 tickGamesStatus ()V
+	METHOD method_4572 updateGamesStatus ()V
+	METHOD method_4573 getMatchMakingShutdown ()Z
+	METHOD method_4574 requestPlayerInventories (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_4575 removePlayer (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_4576 shutdown (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD method_4577 sendSystemMessage (Ljava/lang/String;)V
+		ARG 1 message

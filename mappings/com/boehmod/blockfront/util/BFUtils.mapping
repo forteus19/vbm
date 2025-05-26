@@ -6,11 +6,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 	FIELD field_2954 ADMIN_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2955 DEAD_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2956 TEAM_PREFIX Lnet/minecraft/network/chat/Component;
+	METHOD method_2877 teleportPlayer (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_692;)V
+		ARG 0 dataHandler
+		ARG 1 player
+		ARG 2 pose
 	METHOD method_2890 triggerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
 		ARG 0 manager
 		ARG 1 game
 		ARG 2 playerUUID
 		ARG 3 stat
+	METHOD method_2902 getStat (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;)I
+		ARG 0 game
+		ARG 1 playerUuid
+		ARG 2 stat
 	METHOD method_2926 getPlayerByUUID (Ljava/util/UUID;)Lnet/minecraft/server/level/ServerPlayer;
 		ARG 0 uuid
 	METHOD method_2930 sendFancyMessage (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V

@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_870 com/boehmod/blockfront/game/gg/GunGame
+	FIELD field_3498 command Lcom/boehmod/blockfront/unnamed/BF_462;

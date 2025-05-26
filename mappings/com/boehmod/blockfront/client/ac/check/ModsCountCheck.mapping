@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1002 com/boehmod/blockfront/client/ac/check/ModsCountCheck
+	FIELD field_4116 targetModCount I

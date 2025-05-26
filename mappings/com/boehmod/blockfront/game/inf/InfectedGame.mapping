@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_878 com/boehmod/blockfront/game/inf/InfectedGame
+	FIELD field_3530 command Lcom/boehmod/blockfront/unnamed/BF_462;

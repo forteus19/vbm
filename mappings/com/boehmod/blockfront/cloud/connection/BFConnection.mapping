@@ -1,20 +1,23 @@
 CLASS com/boehmod/blockfront/cloud/connection/ModConnection com/boehmod/blockfront/cloud/connection/BFConnection
 	FIELD ATTEMPTING_CONNECTION ATTEMPTING_CONNECTION Ljava/util/concurrent/atomic/AtomicBoolean;
-	FIELD CONNECT_TIME_MAX_TICKS CONNECT_TIME_MAX_TICKS I
-	FIELD HEARTBEAT_INTERVAL_TICKS HEARTBEAT_INTERVAL_TICKS I
-	FIELD LOGIN_TIME_MAX_TICKS LOGIN_TIME_MAX_TICKS I
-	FIELD MAX_IDLE_TICKS MAX_IDLE_TICKS I
 	FIELD channel channel Lio/netty/channel/Channel;
 	FIELD clientConnection clientConnection Lcom/boehmod/blockfront/unnamed/BF_475;
+	FIELD CONNECT_TIME_MAX_TICKS CONNECT_TIME_MAX_TICKS I
 	FIELD connectionExecutor connectionExecutor Ljava/util/concurrent/ExecutorService;
 	FIELD connectionHeartBeat connectionHeartBeat I
 	FIELD connectionTick connectionTick I
 	FIELD eventLoopGroup eventLoopGroup Lio/netty/channel/EventLoopGroup;
+	FIELD HEARTBEAT_INTERVAL_TICKS HEARTBEAT_INTERVAL_TICKS I
 	FIELD incomingPackets incomingPackets Ljava/util/Queue;
+	FIELD LOGIN_TIME_MAX_TICKS LOGIN_TIME_MAX_TICKS I
 	FIELD loginSendTimer loginSendTimer I
+	FIELD MAX_IDLE_TICKS MAX_IDLE_TICKS I
 	FIELD modManager modManager Lcom/boehmod/blockfront/unnamed/BF_445;
 	FIELD playerCloudData playerCloudData Lcom/boehmod/blockfront/unnamed/BF_476;
 	FIELD running running Z
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_475;Lcom/boehmod/blockfront/unnamed/BF_445;)V
+		ARG 1 details
+		ARG 2 manager
 	METHOD addIncomingPacket addIncomingPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)V
 		ARG 1 packet
 	METHOD attemptConnection attemptConnection ()V
@@ -24,13 +27,17 @@ CLASS com/boehmod/blockfront/cloud/connection/ModConnection com/boehmod/blockfro
 	METHOD getLoginSendTimer getLoginSendTimer ()I
 	METHOD getPlayerCloudData getPlayerCloudData ()Lcom/boehmod/bflib/cloud/common/player/AbstractPlayerCloudData;
 	METHOD getReconnectTickCount getReconnectTickCount ()I
-	METHOD getUUID getUUID ()Ljava/util/UUID;
 	METHOD getUsername getUsername ()Ljava/lang/String;
+	METHOD getUUID getUUID ()Ljava/util/UUID;
 	METHOD getVersion getVersion ()Ljava/lang/String;
 	METHOD getVersionHash getVersionHash ()Ljava/lang/String;
 	METHOD lambda$new$0 (Ljava/lang/Runnable;)Ljava/lang/Thread;
 		ARG 0 runnable
 	METHOD onConnectionStatusChanged onConnectionStatusChanged (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatusContext;)V
+	METHOD onIllegalPacket onIllegalPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;Lcom/boehmod/bflib/cloud/common/ConnectionType;Lcom/boehmod/bflib/cloud/common/ConnectionType;)V
+		ARG 1 packet
+		ARG 2 typeActual
+		ARG 3 typeExpected
 	METHOD onUpdate onUpdate ()V
 	METHOD sendCredentials sendCredentials ()V
 	METHOD sendLogin sendLogin ()V

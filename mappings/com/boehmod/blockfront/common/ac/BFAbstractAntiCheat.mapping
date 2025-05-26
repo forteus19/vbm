@@ -1,2 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_451 com/boehmod/blockfront/common/ac/BFAbstractAntiCheat
+	FIELD field_2054 screenshotManager Lcom/boehmod/blockfront/unnamed/BF_452;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_452;)V
+		ARG 1 screenshotManager
 	METHOD method_1586 getScreenshotManager ()Lcom/boehmod/blockfront/unnamed/BF_452;
+	METHOD method_1587 onUpdate (Lcom/boehmod/blockfront/unnamed/BF_445;)V
+		ARG 1 manager

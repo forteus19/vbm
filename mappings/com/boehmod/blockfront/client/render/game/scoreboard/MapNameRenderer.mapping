@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_930 com/boehmod/blockfront/client/render/game/scoreboard/MapNameRenderer
+	FIELD field_3762 EMBLEM_TEXTURE Lnet/minecraft/resources/ResourceLocation;

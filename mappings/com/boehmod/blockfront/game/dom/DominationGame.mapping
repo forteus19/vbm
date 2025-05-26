@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_802 com/boehmod/blockfront/game/dom/DominationGame
+	FIELD field_3392 command Lcom/boehmod/blockfront/unnamed/BF_462;
