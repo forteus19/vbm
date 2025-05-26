@@ -1,6 +1,5 @@
 import net.fabricmc.mappingio.MappingReader
 import net.fabricmc.mappingio.MappingWriter
-import net.fabricmc.mappingio.adapter.MappingNsCompleter
 import net.fabricmc.mappingio.format.MappingFormat
 import net.fabricmc.mappingio.tree.MemoryMappingTree
 import org.gradle.api.DefaultTask

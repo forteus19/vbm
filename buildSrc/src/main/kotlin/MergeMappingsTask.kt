@@ -14,7 +14,6 @@ import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.InputFiles
 import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
-import java.util.regex.Pattern
 
 // https://github.com/FabricMC/yarn/blob/25w20a/filament/src/main/java/net/fabricmc/filament/task/mappingio/MergeMappingsTask.java
 abstract class MergeMappingsTask : DefaultTask() {

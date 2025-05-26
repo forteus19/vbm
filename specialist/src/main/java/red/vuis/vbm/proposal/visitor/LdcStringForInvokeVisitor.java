@@ -1,12 +1,14 @@
-package red.vuis.vbm.proposal;
+package red.vuis.vbm.proposal.visitor;
 
 import java.util.Arrays;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.FieldInsnNode;
+import org.objectweb.asm.tree.InsnList;
 import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.tree.analysis.Frame;
 import org.objectweb.asm.tree.analysis.SourceValue;
+import red.vuis.vbm.proposal.ProposalCollector;
 import red.vuis.vbm.util.VbmUtils;
 
 public class LdcStringForInvokeVisitor extends ClassInitVisitor {
@@ -24,11 +26,7 @@ public class LdcStringForInvokeVisitor extends ClassInitVisitor {
     @Override
     protected void analyzeClInit(MethodNode clInit, Frame<SourceValue>[] frames) {
         for (int i = 0; i < clInit.instructions.size() - 1; i++) {
-            var match = matchTwoInsns(
-                    clInit.instructions, i,
-                    MethodInsnNode.class, FieldInsnNode.class,
-                    invokeOpcode, Opcodes.PUTSTATIC
-            );
+            var match = matchInvokePutPattern(className, clInit.instructions, i, invokeOpcode);
             if (match == null) {
                 continue;
             }
@@ -36,10 +34,7 @@ public class LdcStringForInvokeVisitor extends ClassInitVisitor {
             MethodInsnNode insn1 = match.insn1();
             FieldInsnNode insn2 = match.insn2();
 
-            if (!VbmUtils.all(
-                    Arrays.asList(registerMethods).contains(insn1.name),
-                    insn2.owner.equals(className)
-            )) {
+            if (!Arrays.asList(registerMethods).contains(insn1.name)) {
                 continue;
             }
 
@@ -48,5 +43,17 @@ public class LdcStringForInvokeVisitor extends ClassInitVisitor {
                 collector.collectField(className, insn2.name, insn2.desc, VbmUtils.javaName(ldcValue));
             }
         }
+    }
+
+    public static MatchTwoResult<MethodInsnNode, FieldInsnNode> matchInvokePutPattern(String className, InsnList insns, int offset, int invokeOpcode) {
+        var match = matchTwoInsns(
+                insns, offset,
+                MethodInsnNode.class, FieldInsnNode.class,
+                invokeOpcode, Opcodes.PUTSTATIC
+        );
+        if (match == null || !match.insn2().owner.equals(className)) {
+            return null;
+        }
+        return match;
     }
 }

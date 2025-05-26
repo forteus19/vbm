@@ -1,12 +1,11 @@
-package red.vuis.vbm.proposal;
+package red.vuis.vbm.proposal.visitor;
 
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.tree.MethodNode;
-import org.objectweb.asm.tree.analysis.Analyzer;
-import org.objectweb.asm.tree.analysis.AnalyzerException;
 import org.objectweb.asm.tree.analysis.Frame;
-import org.objectweb.asm.tree.analysis.SourceInterpreter;
 import org.objectweb.asm.tree.analysis.SourceValue;
+import red.vuis.vbm.proposal.ProposalCollector;
+import red.vuis.vbm.util.VbmUtils;
 
 public abstract class ClassInitVisitor extends ProposalVisitor {
     private MethodNode clInit = null;
@@ -34,14 +33,7 @@ public abstract class ClassInitVisitor extends ProposalVisitor {
     public void visitEnd() {
         super.visitEnd();
         if (clInit != null) {
-            Analyzer<SourceValue> analyzer = new Analyzer<>(new SourceInterpreter());
-            Frame<SourceValue>[] frames;
-            try {
-                frames = analyzer.analyze(className, clInit);
-            } catch (AnalyzerException e) {
-                throw new RuntimeException(e);
-            }
-            analyzeClInit(clInit, frames);
+            analyzeClInit(clInit, VbmUtils.getMethodFrames(className, clInit));
         }
     }
 

@@ -1,4 +1,4 @@
-package red.vuis.vbm.proposal;
+package red.vuis.vbm.proposal.visitor;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,6 +9,7 @@ import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.tree.analysis.Frame;
 import org.objectweb.asm.tree.analysis.SourceValue;
+import red.vuis.vbm.proposal.ProposalCollector;
 import red.vuis.vbm.util.FieldId;
 import red.vuis.vbm.util.VbmUtils;
 

@@ -1,4 +1,4 @@
-package red.vuis.vbm.proposal;
+package red.vuis.vbm.proposal.visitor;
 
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
@@ -8,6 +8,7 @@ import org.objectweb.asm.tree.InsnList;
 import org.objectweb.asm.tree.LdcInsnNode;
 import org.objectweb.asm.tree.analysis.Frame;
 import org.objectweb.asm.tree.analysis.SourceValue;
+import red.vuis.vbm.proposal.ProposalCollector;
 import red.vuis.vbm.util.FieldId;
 
 public abstract class ProposalVisitor extends ClassVisitor {
@@ -25,7 +26,7 @@ public abstract class ProposalVisitor extends ClassVisitor {
         className = name;
     }
 
-    protected static String getStringLdc(Frame<SourceValue> frame, int argIndex) {
+    public static String getStringLdc(Frame<SourceValue> frame, int argIndex) {
         int a = 0;
         for (int i = 0; i < frame.getStackSize(); i++) {
             SourceValue source = frame.getStack(i);
@@ -41,7 +42,7 @@ public abstract class ProposalVisitor extends ClassVisitor {
         return null;
     }
 
-    protected static <A extends AbstractInsnNode, B extends AbstractInsnNode> MatchTwoResult<A, B> matchTwoInsns(InsnList insns, int offset, Class<A> insnClass1, Class<B> insnClass2, int opcode1, int opcode2) {
+    public static <A extends AbstractInsnNode, B extends AbstractInsnNode> MatchTwoResult<A, B> matchTwoInsns(InsnList insns, int offset, Class<A> insnClass1, Class<B> insnClass2, int opcode1, int opcode2) {
         AbstractInsnNode absInsn1 = insns.get(offset);
         AbstractInsnNode absInsn2 = insns.get(offset + 1);
         if (absInsn1.getOpcode() == opcode1 && absInsn2.getOpcode() == opcode2) {
@@ -51,7 +52,7 @@ public abstract class ProposalVisitor extends ClassVisitor {
         }
     }
 
-    protected record MatchTwoResult<A extends AbstractInsnNode, B extends AbstractInsnNode>(A insn1, B insn2) {
+    public record MatchTwoResult<A extends AbstractInsnNode, B extends AbstractInsnNode>(A insn1, B insn2) {
         public FieldId fieldId2() {
             if (insn2 instanceof FieldInsnNode fieldInsn2) {
                 return new FieldId(fieldInsn2.name, fieldInsn2.desc);

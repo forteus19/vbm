@@ -1,12 +1,15 @@
 package red.vuis.vbm.proposal;
 
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
+import red.vuis.vbm.proposal.visitor.BFBlocksVisitor;
+import red.vuis.vbm.proposal.visitor.EnumVisitor;
+import red.vuis.vbm.proposal.visitor.LdcStringForInvokeVisitor;
+import red.vuis.vbm.proposal.visitor.ProposalVisitor;
 
 public final class ProposalRegistry {
     private static final List<VisitorEntry> ENTRIES = List.of(
@@ -20,7 +23,6 @@ public final class ProposalRegistry {
                     /* BFBlockAttributes */ "com/boehmod/blockfront/unnamed/BF_1086",
                     /* BFBlockSoundAttributes */ "com/boehmod/blockfront/unnamed/BF_1088",
                     /* BFBlockTraversableAttributes */ "com/boehmod/blockfront/unnamed/BF_1090",
-                    /* BFBlocks */ "com/boehmod/blockfront/unnamed/BF_1091",
                     /* BFBotVoices */ "com/boehmod/blockfront/unnamed/BF_1092",
                     /* BFCreativeTabs */ "com/boehmod/blockfront/unnamed/BF_1103",
                     /* BFDataComponents */ "com/boehmod/blockfront/unnamed/BF_1104",
@@ -41,6 +43,7 @@ public final class ProposalRegistry {
     private ProposalRegistry() {}
 
     public static void collect(ProposalCollector collector, Iterator<ClassNode> classNodes) {
+        BFBlocksVisitor bfBlocksVisitor = new BFBlocksVisitor(collector);
         classNodes.forEachRemaining(node -> {
             for (VisitorEntry entry : ENTRIES) {
                 if (entry.test(node)) {
@@ -48,6 +51,7 @@ public final class ProposalRegistry {
                     node.accept(visitor);
                 }
             }
+            bfBlocksVisitor.accept(node);
         });
         collector.finished();
     }

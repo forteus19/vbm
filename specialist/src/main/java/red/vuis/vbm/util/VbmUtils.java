@@ -10,6 +10,12 @@ import java.util.Set;
 import java.util.stream.Stream;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.tree.ClassNode;
+import org.objectweb.asm.tree.MethodNode;
+import org.objectweb.asm.tree.analysis.Analyzer;
+import org.objectweb.asm.tree.analysis.AnalyzerException;
+import org.objectweb.asm.tree.analysis.Frame;
+import org.objectweb.asm.tree.analysis.SourceInterpreter;
+import org.objectweb.asm.tree.analysis.SourceValue;
 
 public final class VbmUtils {
     private VbmUtils() {}
@@ -77,5 +83,13 @@ public final class VbmUtils {
             }
         }
         return result.toString();
+    }
+
+    public static Frame<SourceValue>[] getMethodFrames(String className, MethodNode method) {
+        try {
+            return new Analyzer<>(new SourceInterpreter()).analyze(className, method);
+        } catch (AnalyzerException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
