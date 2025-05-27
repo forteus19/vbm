@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_18 com/boehmod/blockfront/discord/BFDiscordEventAdapter
+	FIELD field_88 manager Lcom/boehmod/blockfront/unnamed/BF_606;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;)V
+		ARG 1 manager
+	METHOD onActivityJoin onActivityJoin (Ljava/lang/String;)V
+		ARG 1 secret

@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1082 com/boehmod/blockfront/server/event/BFServerTickSubscriber
+	METHOD method_4605 onTickPost (Lnet/neoforged/neoforge/event/tick/ServerTickEvent$Post;)V
+		ARG 0 event

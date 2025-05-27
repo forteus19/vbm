@@ -1,5 +1,14 @@
 CLASS com/boehmod/blockfront/unnamed/BF_3 com/boehmod/blockfront/client/corpse/ClientCorpseManager
 	FIELD field_17 bakery Lcom/boehmod/blockfront/client/corpse/physics/b;
+	FIELD field_24 ragdollRenderers Ljava/util/List;
+	METHOD method_18 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_271;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lcom/mojang/blaze3d/vertex/PoseStack;F)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 playerData
+		ARG 4 level
+		ARG 5 player
+		ARG 6 poseStack
+		ARG 7 deltaTick
 	METHOD method_21 ragdollEntity (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_1049$BF_1050;Lnet/minecraft/world/entity/LivingEntity;F)Lcom/boehmod/blockfront/unnamed/BF_2;
 		ARG 1 minecraft
 		ARG 2 data

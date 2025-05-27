@@ -35,6 +35,10 @@ public final class ProposalRegistry {
                     /* BFSounds */ "com/boehmod/blockfront/unnamed/BF_1112"
             ),
             new VisitorEntry(
+                    collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKESPECIAL, 0, "<init>"),
+                    /* BFBlockSetTypes */ "com/boehmod/blockfront/unnamed/BF_1089"
+            ),
+            new VisitorEntry(
                     collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKESPECIAL, 1, "<init>"),
                     /* BFClientSettings */ "com/boehmod/blockfront/unnamed/BF_432"
             )

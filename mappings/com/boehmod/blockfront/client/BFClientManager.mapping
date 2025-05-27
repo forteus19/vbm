@@ -1,7 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClientManager
 	FIELD field_2544 corpseManager Lcom/boehmod/blockfront/unnamed/BF_3;
+	FIELD field_2545 discordManager Lcom/boehmod/blockfront/unnamed/BF_19;
 	FIELD field_2549 skinFetcher Lcom/boehmod/blockfront/unnamed/BF_410;
 	FIELD field_2552 versionChecker Lcom/boehmod/blockfront/unnamed/BF_449;
+	FIELD field_2554 cinematics Lcom/boehmod/blockfront/unnamed/BF_599;
 	FIELD field_2555 currentGame Lcom/boehmod/blockfront/unnamed/BF_677;
 	FIELD field_2556 gameRenderer Lcom/boehmod/blockfront/unnamed/BF_679;
 	FIELD field_2558 crosshairResource Lcom/boehmod/blockfront/unnamed/BF_1124$BF_1125;
@@ -13,9 +15,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2565 dataPath Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD method_2224 getCorpseManager ()Lcom/boehmod/blockfront/unnamed/BF_3;
 	METHOD method_2229 getSkinFetcher ()Lcom/boehmod/blockfront/unnamed/BF_410;
 	METHOD method_2232 getVersionChecker ()Lcom/boehmod/blockfront/unnamed/BF_449;
+	METHOD method_2234 getCinematics ()Lcom/boehmod/blockfront/unnamed/BF_599;
 	METHOD method_2235 getCurrentGame ()Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD method_2236 getGameRenderer ()Lcom/boehmod/blockfront/unnamed/BF_679;
+	METHOD method_2239 getCrosshairResource ()Lcom/boehmod/blockfront/unnamed/BF_1124$BF_1125;
+	METHOD method_2240 getCreditsEntryResource ()Lcom/boehmod/blockfront/unnamed/BF_1126$BF_1127;
 	METHOD method_2241 getMinecraft ()Lnet/minecraft/client/Minecraft;
 	METHOD method_2242 showConnectionToast (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;)V
 		ARG 1 fromStatus

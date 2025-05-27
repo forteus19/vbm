@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_892 com/boehmod/blockfront/common/match/MapVoteManager
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 game
+	METHOD method_3719 startVoteSequence (Lcom/boehmod/blockfront/unnamed/BF_445;)V

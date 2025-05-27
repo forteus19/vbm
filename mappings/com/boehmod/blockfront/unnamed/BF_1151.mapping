@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1151
+	FIELD field_6500 instance Lcom/boehmod/blockfront/unnamed/BF_1151;
+	METHOD method_5586 getInstance ()Lcom/boehmod/blockfront/unnamed/BF_1151;

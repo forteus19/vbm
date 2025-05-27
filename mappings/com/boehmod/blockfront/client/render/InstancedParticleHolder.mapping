@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_267 com/boehmod/blockfront/client/render/InstancedParticleHolder
+	METHOD method_1115 clearAll ()V

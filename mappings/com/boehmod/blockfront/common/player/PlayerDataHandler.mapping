@@ -12,7 +12,7 @@ CLASS com/boehmod/blockfront/common/player/c com/boehmod/blockfront/common/playe
 	METHOD method_866 putClanData (Ljava/util/UUID;Lcom/boehmod/bflib/cloud/common/AbstractClanData;)V
 		ARG 1 uuid
 		ARG 2 clanData
-	METHOD method_867 getPlayerCloudData (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/common/player/b;
+	METHOD method_867 getPlayerGameData (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/common/player/b;
 		ARG 1 player
 	METHOD method_868 getCloudProfile (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/unnamed/BF_476;
 		ARG 1 player

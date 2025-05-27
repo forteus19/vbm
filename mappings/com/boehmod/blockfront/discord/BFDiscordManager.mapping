@@ -1,0 +1,39 @@
+CLASS com/boehmod/blockfront/unnamed/BF_19 com/boehmod/blockfront/discord/BFDiscordManager
+	FIELD field_89 POPULATE_INTERVAL I
+	FIELD field_90 INIT_INTERVAL I
+	FIELD field_91 populateTimer I
+	FIELD field_92 initTimer I
+	FIELD field_93 core Lde/jcm/discordgamesdk/Core;
+	FIELD field_94 activityButton Lde/jcm/discordgamesdk/activity/ActivityButton;
+	FIELD field_95 callbackThread Ljava/lang/Thread;
+	FIELD field_96 timeNow Ljava/time/Instant;
+	FIELD field_97 CLIENT_ID J
+	FIELD field_98 manager Lcom/boehmod/blockfront/unnamed/BF_606;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_476;)V
+		ARG 1 manager
+		ARG 2 profile
+	METHOD method_130 createCore ()Lde/jcm/discordgamesdk/Core;
+	METHOD method_131 getPlayerBadge (Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;
+		ARG 0 profile
+		ARG 1 mcProfile
+	METHOD method_132 getCurrentMapInfo (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_476;)Ljava/lang/String;
+		ARG 0 game
+		ARG 1 profile
+	METHOD method_133 getHeadImageUrl (Lcom/mojang/authlib/GameProfile;)Ljava/lang/String;
+		ARG 0 mcProfile
+	METHOD method_134 (Lde/jcm/discordgamesdk/LogLevel;Ljava/lang/String;)V
+		ARG 0 level
+		ARG 1 message
+	METHOD method_135 setActivityPartySize (Lde/jcm/discordgamesdk/activity/ActivityParty;Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 party
+		ARG 2 game
+	METHOD method_136 init (Lcom/boehmod/blockfront/unnamed/BF_476;)V
+		ARG 1 profile
+	METHOD method_137 update (Lcom/boehmod/blockfront/unnamed/BF_476;)V
+		ARG 1 profile
+	METHOD method_138 populateInfo (Lcom/boehmod/blockfront/unnamed/BF_476;)V
+		ARG 1 profile
+	METHOD method_139 startCallbackThread ()V
+	METHOD method_140 close ()V
+	METHOD method_141 discordCallback ()V
+	METHOD shutdown shutdown ()V

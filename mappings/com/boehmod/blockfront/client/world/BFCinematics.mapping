@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_599 com/boehmod/blockfront/client/world/BFCinematics
+	FIELD field_2510 isSequencePlaying Z
+	FIELD field_2518 manager Lcom/boehmod/blockfront/unnamed/BF_606;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;)V
+		ARG 1 manager
+	METHOD method_2194 isSequencePlaying ()Z

@@ -488,6 +488,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 5 a
 	METHOD method_272 (Ljava/util/UUID;Lnet/minecraft/network/chat/MutableComponent;Lcom/boehmod/bflib/cloud/common/mm/MatchParty;)V
 		ARG 2 party
+	METHOD method_273 cameraOrigin (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;)V
+		ARG 0 camera
+		ARG 1 poseStack
 	METHOD method_274 billboardLine (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;FI)V
 		ARG 0 camera
 		ARG 1 poseStack

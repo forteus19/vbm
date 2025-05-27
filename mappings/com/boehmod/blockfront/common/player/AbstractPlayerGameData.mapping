@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/player/PlayerCloudData
+CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/player/AbstractPlayerGameData
 	FIELD field_1155 previousMessages Ljava/util/List;
 	FIELD field_1175 calloutCooldown I
 	METHOD method_829 getPreviousMessages ()Ljava/util/List;

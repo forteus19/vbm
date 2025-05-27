@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_530
+CLASS com/boehmod/blockfront/unnamed/BF_530 com/boehmod/blockfront/common/block/PropBlock
 	FIELD field_2241 WATERLOGGED Lnet/minecraft/world/level/block/state/properties/BooleanProperty;
 	FIELD field_2242 HORIZONTAL_FACING Lnet/minecraft/world/level/block/state/properties/DirectionProperty;
 	METHOD <init> (Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V

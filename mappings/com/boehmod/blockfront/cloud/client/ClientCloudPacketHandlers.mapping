@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_497 com/boehmod/blockfront/client/net/ClientCloudPacketHandlers
+CLASS com/boehmod/blockfront/unnamed/BF_497 com/boehmod/blockfront/cloud/client/ClientCloudPacketHandlers
 	FIELD field_2151 VERIFY_CHANNEL Lnet/minecraft/network/chat/Component;
 	FIELD field_2152 VERIFY_COMMAND Lnet/minecraft/network/chat/Component;
 	METHOD method_1785 chatMessageFromCloud (Lcom/boehmod/bflib/cloud/packet/common/PacketChatMessageFromCloud;Lcom/boehmod/bflib/cloud/connection/Connection;)V

@@ -25,6 +25,7 @@ val vbmBuildFile = layout.buildDirectory.file("vbm").get().asFile
 val baseJarFile = vbmBuildFile.resolve("originalJar").resolve("${bfVersion}-original.jar")
 val intermediaryMappingsFile = vbmBuildFile.resolve("intermediaryMapping").resolve("${bfVersion}-intermediary.tiny")
 val intermediaryJarFile = vbmBuildFile.resolve("intermediaryJar").resolve("${bfVersion}-intermediary.jar")
+val intermediaryJarFullFile = vbmBuildFile.resolve("intermediaryJar").resolve("${bfVersion}-intermediary-full.jar")
 val specializedMappingsFile = vbmBuildFile.resolve("specializedMapping").resolve("${bfVersion}-specialized.tiny")
 val proposedMappingsFile = vbmBuildFile.resolve("proposedMapping").resolve("${bfVersion}-proposed.tiny")
 val mergedMappingsFile = vbmBuildFile.resolve("mergedMapping").resolve("${bfVersion}-merged.tiny")
@@ -69,6 +70,17 @@ val mapIntermediaryJarTask = tasks.register<TinyRemapperTask>("mapIntermediaryJa
     from.set("official")
     to.set("intermediary")
     nonClassFiles.set(false)
+}
+
+val mapIntermediaryJarFullTask = tasks.register<TinyRemapperTask>("mapIntermediaryJarFull") {
+    dependsOn(downloadBaseJarTask, downloadIntermediaryTask)
+    group = "vbm"
+    input.set(downloadBaseJarTask.get().dest)
+    mappings.set(downloadIntermediaryTask.get().dest)
+    output.set(intermediaryJarFullFile)
+    from.set("official")
+    to.set("intermediary")
+    nonClassFiles.set(true)
 }
 
 val mapSpecializedMethodsTask = tasks.register<MapSpecializedMethodsTask>("mapSpecializedMethods") {
