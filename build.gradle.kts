@@ -2,21 +2,20 @@ import de.undercouch.gradle.tasks.download.Download
 import net.fabricmc.mappingio.format.MappingFormat
 
 plugins {
-    id("de.undercouch.download") version "5.6.0"
+    `java-library`
     `maven-publish`
-    idea
+    id("de.undercouch.download") version "5.6.0"
 }
 
-idea.project {
-    setLanguageLevel("21")
-}
+val bfVersion = "0.7.0.10b"
+
+group = "red.vuis.vbm"
+version = "${bfVersion}-SNAPSHOT"
 
 repositories {
     maven("https://maven.jaxonpow.com/snapshots")
     mavenCentral()
 }
-
-val bfVersion = "0.7.0.10b"
 
 val bfDownloadUrl = "https://cdn.modrinth.com/data/hTexWmdS/versions/2w8sWRMB/BlockFront-1.21.1-0.7.0.10b-RELEASE.jar"
 val intermediaryDownloadUrl = "https://raw.githubusercontent.com/forteus19/bf-intermediary/main/intermediary/${bfVersion}.tiny"
@@ -146,6 +145,35 @@ val decompileVineflowerTask = tasks.register<JavaExec>("decompileVineflower") {
     classpath = files(decompileRuntime)
     mainClass = "org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler"
     args("--folder", mapNamedJarTask.get().output.get().asFile.absolutePath, decompVineflowerFile.absolutePath)
+}
+
+val mappingsJarTask = tasks.register<Jar>("mappingsJar") {
+    dependsOn(mergeMappingsTask)
+    group = "vbm"
+    archiveBaseName = "mappings"
+    from(mergeMappingsTask.get().output) {
+        rename { "mappings/merged.tiny" }
+    }
+    manifest {
+        attributes["BlockFront-Version"] = bfVersion
+        attributes["BlockFront-Origin"] = bfDownloadUrl
+    }
+}
+
+tasks.build {
+    dependsOn(mappingsJarTask)
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("mappings") {
+            groupId = project.group.toString()
+            artifactId = "mappings"
+            version = project.version.toString()
+
+            artifact(mappingsJarTask)
+        }
+    }
 }
 
 allprojects {
