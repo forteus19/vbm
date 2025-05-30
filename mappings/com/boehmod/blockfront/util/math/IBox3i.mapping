@@ -1,1 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_12 com/boehmod/blockfront/util/math/IBox3i
+	METHOD method_92 minX ()I
+	METHOD method_93 minY ()I
+	METHOD method_94 minZ ()I
+	METHOD method_95 maxX ()I
+	METHOD method_96 maxY ()I
+	METHOD method_97 maxZ ()I

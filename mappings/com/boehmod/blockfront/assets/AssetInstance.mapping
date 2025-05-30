@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_457 com/boehmod/blockfront/assets/AssetInstance
+	FIELD field_2067 instance Lcom/boehmod/blockfront/unnamed/BF_460;
+	FIELD field_2068 assetClass Ljava/lang/Class;
+	FIELD field_2069 name Ljava/lang/String;
+	FIELD field_2070 fallback Lcom/boehmod/blockfront/unnamed/BF_460;
+	FIELD field_2071 noFallback Z
+	FIELD field_2072 initialTimesLoaded I
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_460;)V
+		ARG 1 instance
+	METHOD <init> (Ljava/lang/Class;Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_460;)V
+		ARG 1 assetClass
+		ARG 2 name
+		ARG 3 fallback
+	METHOD method_1603 isPresent ()Z
+	METHOD method_1604 isEmpty ()Z
+	METHOD method_1605 get ()Lcom/boehmod/blockfront/unnamed/BF_460;
+	METHOD method_1606 retrieveInstance ()V

@@ -51,4 +51,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 		ARG 1 key
 	METHOD method_2840 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
+	METHOD method_2841 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
 	METHOD method_2842 getPlayerSpawns ()Ljava/util/List;

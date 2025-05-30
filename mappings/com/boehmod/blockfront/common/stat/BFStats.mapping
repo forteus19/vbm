@@ -23,6 +23,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_943 com/boehmod/blockfront/common/stat/B
 	FIELD field_3811 SAID_GG Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3812 SPAWN_PRO Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3813 PLAY_TIME Lcom/boehmod/blockfront/unnamed/BF_941;
+	FIELD field_3814 NOTICE_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_3815 CLASS Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3818 CLASS_INDEX Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3819 CLASS_ALIVE Lcom/boehmod/blockfront/unnamed/BF_941;

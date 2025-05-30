@@ -1,5 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_754 com/boehmod/blockfront/game/AbstractCapturePoint
+	FIELD field_3223 captureArea Lnet/minecraft/world/phys/AABB;
 	FIELD field_3224 name Ljava/lang/String;
+	FIELD field_3236 captureTimer I
 	FIELD field_6358 gameManager Lcom/boehmod/blockfront/unnamed/BF_682;
 	FIELD field_6359 cbTeam Lcom/boehmod/blockfront/unnamed/BF_686;
 	FIELD field_6360 cpTeam Lcom/boehmod/blockfront/unnamed/BF_686;
@@ -7,5 +9,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_754 com/boehmod/blockfront/game/Abstract
 		ARG 1 gameManager
 		ARG 2 player
 		ARG 3 name
+	METHOD method_3138 onUpdate (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 game
+		ARG 4 level
+		ARG 5 players
+	METHOD method_3142 createCaptureArea ()Lnet/minecraft/world/phys/AABB;
+	METHOD method_3145 getCaptureArea ()Lnet/minecraft/world/phys/AABB;
 	METHOD method_5505 getCbTeam ()Lcom/boehmod/blockfront/unnamed/BF_686;
 	METHOD method_5507 getCpTeam ()Lcom/boehmod/blockfront/unnamed/BF_686;

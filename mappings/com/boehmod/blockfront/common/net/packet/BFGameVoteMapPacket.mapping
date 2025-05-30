@@ -1,4 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1021 com/boehmod/blockfront/common/net/packet/BFGameVoteMapPacket
 	FIELD field_4186 CODEC Lnet/minecraft/network/codec/StreamCodec;
-	FIELD field_4187 TYPE Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload$Type;
 	METHOD type type ()Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload$Type;

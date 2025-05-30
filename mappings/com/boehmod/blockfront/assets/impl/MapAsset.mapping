@@ -6,8 +6,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	FIELD field_3706 musicSet Ljava/lang/String;
 	FIELD field_3707 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_927;
 	FIELD field_3708 particleEffects Ljava/util/EnumSet;
-	FIELD field_3710 alliesTeam Lcom/boehmod/blockfront/unnamed/BF_929;
-	FIELD field_3711 axisTeam Lcom/boehmod/blockfront/unnamed/BF_929;
+	FIELD field_3710 alliesDivision Lcom/boehmod/blockfront/unnamed/BF_929;
+	FIELD field_3711 axisDivision Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3712 shaderResource Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_3713 hasCustomLightColor Z
 	FIELD field_3714 hasCustomSky Z
@@ -37,6 +37,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	METHOD method_3860 setMapTime (I)Lcom/boehmod/blockfront/unnamed/BF_927;
 		ARG 1 mapTime
 	METHOD method_3861 removeShader ()V
+	METHOD method_3862 getAlliesDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
+	METHOD method_3863 getAxisDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
 	METHOD method_3870 writeBuf (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD method_3872 readBuf (Lio/netty/buffer/ByteBuf;)V

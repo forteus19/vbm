@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_4 com/boehmod/blockfront/client/corpse/physics/CorpsePartPhysics
+	FIELD field_34 body Lcom/boehmod/blockfront/client/corpse/physics/d;
+	FIELD field_35 camera Lcom/boehmod/blockfront/unnamed/BF_642;

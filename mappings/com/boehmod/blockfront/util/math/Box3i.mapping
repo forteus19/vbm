@@ -1,1 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_11 com/boehmod/blockfront/util/math/Box3i
+	FIELD field_68 minX I
+	FIELD field_69 minY I
+	FIELD field_70 minZ I
+	FIELD field_71 maxX I
+	FIELD field_72 maxY I
+	FIELD field_73 maxZ I

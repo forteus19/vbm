@@ -1,5 +1,6 @@
 package red.vuis.vbm.proposal.visitor;
 
+import org.jetbrains.annotations.NotNull;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.AbstractInsnNode;
@@ -15,7 +16,7 @@ public abstract class ProposalVisitor extends ClassVisitor {
     protected final ProposalCollector collector;
     protected String className = null;
 
-    public ProposalVisitor(ProposalCollector collector) {
+    public ProposalVisitor(@NotNull ProposalCollector collector) {
         super(Opcodes.ASM9);
         this.collector = collector;
     }

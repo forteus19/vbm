@@ -51,7 +51,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDS
 	METHOD method_3032 getZ ()D
 	METHOD read read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD readFromFDS readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD readFromFDS readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
 	METHOD write write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf

@@ -28,6 +28,27 @@ public final class MappingIoProposalCollector implements ProposalCollector {
     }
 
     @Override
+    public void collectMethod(String className, String methodName, String methodDesc, String target) {
+        updateCurrentClass(className);
+        try {
+            visitor.visitMethod(methodName, methodDesc);
+            visitor.visitDstName(MappedElementKind.METHOD, destNs, target);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void collectMethodArg(int index, int slot, String target) {
+        try {
+            visitor.visitMethodArg(index, slot, null);
+            visitor.visitDstName(MappedElementKind.METHOD_ARG, destNs, target);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
     public void finished() {
         try {
             visitor.visitEnd();

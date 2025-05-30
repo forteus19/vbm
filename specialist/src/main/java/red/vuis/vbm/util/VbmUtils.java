@@ -1,11 +1,14 @@
 package red.vuis.vbm.util;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Stream;
 import org.objectweb.asm.ClassReader;
@@ -38,6 +41,27 @@ public final class VbmUtils {
         return false;
     }
 
+    public static boolean anyEquals(Object target, Object... values) {
+        for (Object value : values) {
+            if (Objects.equals(target, value)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean allBits(int value, int mask) {
+        return (value & mask) == mask;
+    }
+
+    @SuppressWarnings("unchecked")
+    public static <E> List<E> listOf(E first, E[] after) {
+        E[] all = (E[]) Array.newInstance(after.getClass().componentType(), after.length + 1);
+        all[0] = first;
+        System.arraycopy(after, 0, all, 1, after.length);
+        return List.of(all);
+    }
+
     public static Set<ClassNode> readJarClassNodes(Path jar) throws IOException {
         Set<ClassNode> classNodes = new HashSet<>();
 
@@ -66,6 +90,8 @@ public final class VbmUtils {
         reader.accept(node, 0);
         return node;
     }
+
+
 
     public static String javaName(String rawName) {
         StringBuilder result = new StringBuilder(rawName.length());

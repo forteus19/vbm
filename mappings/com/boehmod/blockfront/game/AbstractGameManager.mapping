@@ -35,4 +35,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 	METHOD method_2790 hasPlayer (Ljava/util/UUID;)Z
 		ARG 1 uuid
 	METHOD method_2794 getPlayerUUIDs ()Ljava/util/Set;
+	METHOD method_2796 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD method_2797 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
 	METHOD method_2798 getTeams ()Ljava/util/List;
+	METHOD onUpdate onUpdate ()V

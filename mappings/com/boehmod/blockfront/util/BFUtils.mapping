@@ -19,13 +19,26 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 game
 		ARG 1 playerUuid
 		ARG 2 stat
+	METHOD method_2913 sendTeamFancyMessage (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 team
+		ARG 1 prefix
+		ARG 2 message
+	METHOD method_2918 sendNoticeMessage (Ljava/util/Set;Ljava/lang/String;)V
+		ARG 0 players
+		ARG 1 message
+	METHOD method_2921 sendFancyMessage (Ljava/util/Set;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 players
+		ARG 1 prefix
+		ARG 2 message
 	METHOD method_2926 getPlayerByUUID (Ljava/util/UUID;)Lnet/minecraft/server/level/ServerPlayer;
 		ARG 0 uuid
 	METHOD method_2930 sendFancyMessage (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 playerUUID
 		ARG 1 header
 		ARG 2 message
-	METHOD method_2941 discardAllMatchEntities (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;)V
+	METHOD method_2940 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+		ARG 2 uuid
+	METHOD method_2941 discardMatchEntities (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;)V
 		ARG 0 level
 		ARG 1 game
 		ARG 2 playerHandler
@@ -48,3 +61,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 5 pitch
 	METHOD method_2981 createPlayerStatsComponent (Lcom/boehmod/blockfront/unnamed/BF_476;)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 0 cloudData
+	METHOD method_2983 sendNoticeMessage (Ljava/util/Set;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 players
+		ARG 1 message
+	METHOD method_2986 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+		ARG 2 uuid
+	METHOD method_2997 broadcastPlayerPing (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 player

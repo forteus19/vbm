@@ -4,18 +4,32 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
+
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
 import red.vuis.vbm.proposal.visitor.BFBlocksVisitor;
 import red.vuis.vbm.proposal.visitor.EnumVisitor;
 import red.vuis.vbm.proposal.visitor.LdcStringForInvokeVisitor;
+import red.vuis.vbm.proposal.visitor.PacketVisitor;
 import red.vuis.vbm.proposal.visitor.ProposalVisitor;
+import red.vuis.vbm.util.VbmUtils;
 
 public final class ProposalRegistry {
     private static final List<VisitorEntry> ENTRIES = List.of(
             new VisitorEntry(
                     EnumVisitor::new,
                     node -> (node.access & Opcodes.ACC_ENUM) != 0
+            ),
+            new VisitorEntry(
+                    PacketVisitor::new,
+                    node -> node.interfaces.contains(PacketVisitor.CUSTOM_PACKET_PAYLOAD)
+            ),
+            new VisitorEntry(
+                    BFBlocksVisitor::new,
+                    BFBlocksVisitor.BF_BLOCK_ENTITY_TYPES,
+                    BFBlocksVisitor.BF_BLOCKS
             ),
             new VisitorEntry(
                     collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKEVIRTUAL, 0, "register", "registerItem"),
@@ -46,32 +60,46 @@ public final class ProposalRegistry {
 
     private ProposalRegistry() {}
 
+    public static void collect(ProposalCollector collector, Iterable<ClassNode> classNodes) {
+        collect(collector, classNodes.iterator());
+    }
+
     public static void collect(ProposalCollector collector, Iterator<ClassNode> classNodes) {
-        BFBlocksVisitor bfBlocksVisitor = new BFBlocksVisitor(collector);
+        ProposalVisitor[] visitors = new ProposalVisitor[ENTRIES.size()];
+        for (int i = 0; i < visitors.length; i++) {
+            visitors[i] = ENTRIES.get(i).constructor().apply(collector);
+        }
+
         classNodes.forEachRemaining(node -> {
-            for (VisitorEntry entry : ENTRIES) {
-                if (entry.test(node)) {
-                    ProposalVisitor visitor = entry.constructor().apply(collector);
-                    node.accept(visitor);
+            for (int i = 0; i < visitors.length; i++) {
+                if (ENTRIES.get(i).test(node)) {
+                    node.accept(visitors[i]);
                 }
             }
-            bfBlocksVisitor.accept(node);
         });
+
         collector.finished();
     }
 
-    private record VisitorEntry(Function<ProposalCollector, ProposalVisitor> constructor, Predicate<ClassNode> nodeTest) implements Predicate<ClassNode> {
-        public VisitorEntry(Function<ProposalCollector, ProposalVisitor> constructor, List<String> classNames) {
+    private record VisitorEntry(@NotNull VisitorConstructor constructor, @Nullable Predicate<ClassNode> nodeTest) implements Predicate<ClassNode> {
+        public VisitorEntry(VisitorConstructor constructor) {
+            this(constructor, (Predicate<ClassNode>) null);
+        }
+
+        public VisitorEntry(VisitorConstructor constructor, List<String> classNames) {
             this(constructor, node -> classNames.contains(node.name));
         }
 
-        public VisitorEntry(Function<ProposalCollector, ProposalVisitor> constructor, String... classNames) {
-            this(constructor, List.of(classNames));
+        public VisitorEntry(VisitorConstructor constructor, String classNameFirst, String... classNames) {
+            this(constructor, VbmUtils.listOf(classNameFirst, classNames));
         }
 
         @Override
         public boolean test(ClassNode classNode) {
             return nodeTest == null || nodeTest.test(classNode);
         }
+    }
+
+    private interface VisitorConstructor extends Function<ProposalCollector, ProposalVisitor> {
     }
 }

@@ -3,7 +3,6 @@ package red.vuis.vbm.proposal.visitor;
 import java.util.HashMap;
 import java.util.Map;
 import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.FieldInsnNode;
 import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.MethodNode;
@@ -13,8 +12,8 @@ import red.vuis.vbm.proposal.ProposalCollector;
 import red.vuis.vbm.util.VbmUtils;
 
 public class BFBlocksVisitor extends ClassInitVisitor {
-    private static final String BF_BLOCK_ENTITY_TYPES = "com/boehmod/blockfront/unnamed/BF_1087";
-    private static final String BF_BLOCKS = "com/boehmod/blockfront/unnamed/BF_1091";
+    public static final String BF_BLOCK_ENTITY_TYPES = "com/boehmod/blockfront/unnamed/BF_1087";
+    public static final String BF_BLOCKS = "com/boehmod/blockfront/unnamed/BF_1091";
 
     private final Map<String, String> blockNames = new HashMap<>();
     private MethodNode clInitBet = null;
@@ -96,12 +95,6 @@ public class BFBlocksVisitor extends ClassInitVisitor {
             if (blockNames.containsKey(lastBlock.name)) {
                 collector.collectField(BF_BLOCK_ENTITY_TYPES, insn2.name, insn2.desc, blockNames.get(lastBlock.name));
             }
-        }
-    }
-
-    public void accept(ClassNode node) {
-        switch (node.name) {
-            case BF_BLOCK_ENTITY_TYPES, BF_BLOCKS -> node.accept(this);
         }
     }
 }

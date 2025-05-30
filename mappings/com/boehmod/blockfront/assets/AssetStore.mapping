@@ -2,14 +2,21 @@ CLASS com/boehmod/blockfront/unnamed/BF_459 com/boehmod/blockfront/assets/AssetS
 	FIELD field_2080 watcher Lcom/boehmod/blockfront/unnamed/BF_456;
 	FIELD field_2081 INSTANCE Lcom/boehmod/blockfront/unnamed/BF_459;
 	FIELD field_2083 manager Lcom/boehmod/blockfront/unnamed/BF_445;
+	FIELD field_2084 timesLoaded I
 	FIELD field_2085 registeredAssets Ljava/util/Map;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Z)V
 		ARG 1 manager
 	METHOD init init ()V
+	METHOD method_1628 assetCount ()I
+	METHOD method_1629 numRegistered ()I
+	METHOD method_1630 getTimesLoaded ()I
 	METHOD method_1631 getWatcher ()Lcom/boehmod/blockfront/unnamed/BF_456;
+	METHOD method_1632 (Lcom/boehmod/blockfront/unnamed/BF_458;)I
+		ARG 0 store
 	METHOD method_1633 getRegistry (Ljava/lang/Class;)Lcom/boehmod/blockfront/unnamed/BF_458;
 	METHOD method_1634 registerAssetType (Ljava/lang/Class;Ljava/lang/String;Ljava/util/function/Supplier;)V
 		ARG 1 assetClass
 		ARG 2 name
 		ARG 3 factory
+	METHOD method_1637 loadFromDisk ()V
 	METHOD method_1639 getInstance ()Lcom/boehmod/blockfront/unnamed/BF_459;

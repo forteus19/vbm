@@ -1,2 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_802 com/boehmod/blockfront/game/dom/DominationGame
+	FIELD field_3388 capturePoints Ljava/util/List;
+	FIELD field_3390 introSequence Lcom/boehmod/blockfront/unnamed/BF_597;
+	FIELD field_3391 outroSequence Lcom/boehmod/blockfront/unnamed/BF_597;
 	FIELD field_3392 command Lcom/boehmod/blockfront/unnamed/BF_462;

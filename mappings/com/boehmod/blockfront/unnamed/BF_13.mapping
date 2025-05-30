@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_13
+	FIELD field_76 position Lorg/joml/Vector3d;
