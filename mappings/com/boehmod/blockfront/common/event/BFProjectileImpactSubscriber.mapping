@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_664 com/boehmod/blockfront/common/event/BFProjectileImpactSubscriber
+	METHOD method_2567 onProjectileImpact (Lnet/neoforged/neoforge/event/entity/ProjectileImpactEvent;)V
+		ARG 0 event

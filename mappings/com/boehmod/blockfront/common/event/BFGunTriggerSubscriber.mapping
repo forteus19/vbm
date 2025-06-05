@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_715 com/boehmod/blockfront/common/event/BFGunTriggerSubscriber
+	METHOD method_3058 onEntityTriggerGun (Lcom/boehmod/blockfront/unnamed/BF_669$BF_672;)V
+		ARG 0 event

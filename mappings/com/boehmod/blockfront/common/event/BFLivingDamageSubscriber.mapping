@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_710 com/boehmod/blockfront/common/event/BFLivingDamageSubscriber
+	METHOD method_3050 onLivingDamagePre (Lnet/neoforged/neoforge/event/entity/living/LivingDamageEvent$Pre;)V
+		ARG 0 event

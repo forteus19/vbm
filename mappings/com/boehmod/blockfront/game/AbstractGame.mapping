@@ -13,12 +13,16 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2837 hasPlayerLimit Z
 	FIELD field_2838 shouldRestart Z
 	FIELD field_2840 FIRST_BLOOD_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_2848 SWITCHTEAMS_ERROR_NOTEAM Lnet/minecraft/network/chat/Component;
+	FIELD field_2849 SWITCHTEAMS_ERROR_UNBALANCED Lnet/minecraft/network/chat/Component;
+	FIELD field_2850 SWITCHTEAMS_ERROR_POSTGAME Lnet/minecraft/network/chat/Component;
 	FIELD field_2854 uuid Ljava/util/UUID;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;Ljava/lang/String;)V
 		ARG 2 name
-	METHOD method_2584 getName ()Ljava/lang/String;
+	METHOD method_2583 getName ()Ljava/lang/String;
+	METHOD method_2584 getType ()Ljava/lang/String;
 	METHOD method_2588 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
 	METHOD method_2591 getPlayerStatus ()Lcom/boehmod/blockfront/unnamed/BF_685;
 	METHOD method_2592 getDominatingManager ()Lcom/boehmod/blockfront/unnamed/BF_767;
@@ -26,6 +30,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2595 getMap ()Lcom/boehmod/blockfront/unnamed/BF_927;
 	METHOD method_2596 getAlliesDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
 	METHOD method_2598 getStageManager ()Lcom/boehmod/blockfront/unnamed/BF_939;
+	METHOD method_2602 requestSupplyDrops (Lcom/boehmod/blockfront/unnamed/BF_445;ILjava/util/Set;)V
+		ARG 1 manager
+		ARG 2 randomMax
+		ARG 3 players
 	METHOD method_2605 playerJoinTeam (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)Z
 		ARG 1 manager
 		ARG 2 joinType
@@ -34,21 +42,35 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2607 onUpdate (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 manager
 		ARG 2 level
+	METHOD method_2612 playerSwitchTeamInternal (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+		ARG 4 uuid
+	METHOD method_2618 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_457;)V
+		ARG 1 mapInstance
 	METHOD method_2621 setPlayerStatus (Lcom/boehmod/blockfront/unnamed/BF_685;)V
 		ARG 1 playerStatus
+	METHOD method_2623 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_927;)V
+		ARG 1 mapAsset
 	METHOD method_2629 getPlayerStatData (Ljava/util/UUID;)Lcom/boehmod/bflib/fds/tag/FDSTagCompound;
 		ARG 1 uuid
 	METHOD method_2632 hasPlayers (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)Z
 		ARG 1 level
 		ARG 2 playerUUIDs
+	METHOD method_2634 getSwitchTeamMessage (Lnet/minecraft/world/entity/player/Player;II)Lnet/minecraft/network/chat/Component;
 	METHOD method_2635 hasPlayerLimit ()Z
 	METHOD method_2640 entityBoundSize ()I
 	METHOD method_2644 getGameManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
 	METHOD method_2645 getAxisDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
+	METHOD method_2648 init (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level
 	METHOD method_2650 clearPlayerStatData ()V
 	METHOD method_2651 togglePlayerLimit ()V
 	METHOD method_2652 readAllFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
+	METHOD method_2653 stopMatchMaking (Lcom/boehmod/blockfront/unnamed/BF_445;)V
+		ARG 1 manager
 	METHOD method_2655 removePlayerStatData (Ljava/util/UUID;)V
 		ARG 1 uuid
 	METHOD method_2657 writeAllFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
@@ -62,8 +84,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2670 readSpecificFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 	METHOD method_2671 getErrorMessages (Ljava/util/List;)V
 		ARG 1 messages
-	METHOD method_2674 setName (Ljava/lang/String;)V
+	METHOD method_2672 setName (Ljava/lang/String;)V
 		ARG 1 name
+	METHOD method_2674 setType (Ljava/lang/String;)V
+		ARG 1 type
 	METHOD read read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD stop stop ()V

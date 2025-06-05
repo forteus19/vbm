@@ -2,5 +2,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_460 com/boehmod/blockfront/assets/IAsset
 	METHOD method_1642 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
 	METHOD method_1643 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
+	METHOD method_1644 sendErrorMessages (Lnet/minecraft/commands/CommandSource;)V
+		ARG 1 source
 	METHOD method_1645 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root

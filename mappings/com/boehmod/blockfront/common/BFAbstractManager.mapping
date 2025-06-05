@@ -45,7 +45,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1574 updateGames (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 server
 		ARG 2 level
-	METHOD method_1575 matchMakingEnabled ()Z
+	METHOD method_1575 isMatchMakingEnabled ()Z
 	METHOD method_1577 getInstanceUUID ()Ljava/util/UUID;
 	METHOD method_1578 isConnectionVerified ()Z
 	METHOD method_5487 getCloudRegistry ()Lcom/boehmod/bflib/cloud/common/CloudRegistry;

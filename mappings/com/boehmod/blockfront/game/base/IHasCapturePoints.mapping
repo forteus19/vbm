@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_812 com/boehmod/blockfront/game/base/IHasCapturePoints
+	METHOD method_3399 getCapturePoints ()Ljava/util/List;

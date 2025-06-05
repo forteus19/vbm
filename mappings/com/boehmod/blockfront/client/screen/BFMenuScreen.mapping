@@ -1,0 +1,19 @@
+CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen/BFMenuScreen
+	FIELD field_1044 splashText Ljava/lang/String;
+	FIELD field_1049 RETURN_ICON Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1050 LOGO Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1051 BACKSHADOW Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1052 FADE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1053 FADE_YELLOW Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1054 STARBURST Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1055 STARBURST_YELLOW Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1056 SHADOWEFFECT_STRONG Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1057 SHADOWEFFECT Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1058 BG_US Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1059 CREDITS_LINE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1060 TROPHY Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1061 FLARE_WHITE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1062 BACKSHADOW_WHITE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1063 CORNERSHADOW Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1064 SPLASHES Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_773 getSplashText ()Ljava/lang/String;

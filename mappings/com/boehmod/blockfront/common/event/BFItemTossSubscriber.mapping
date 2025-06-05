@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_718 com/boehmod/blockfront/common/event/BFItemTossSubscriber
+	METHOD method_3061 onItemToss (Lnet/neoforged/neoforge/event/entity/item/ItemTossEvent;)V
+		ARG 0 event

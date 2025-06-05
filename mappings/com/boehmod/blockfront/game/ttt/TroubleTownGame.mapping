@@ -1,2 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_849 com/boehmod/blockfront/game/ttt/TroubleTownGame
+	FIELD field_3465 ITEM_DROPS Ljava/util/List;
 	FIELD field_3467 command Lcom/boehmod/blockfront/unnamed/BF_462;

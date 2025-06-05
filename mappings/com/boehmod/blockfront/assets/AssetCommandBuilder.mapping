@@ -1,10 +1,28 @@
 CLASS com/boehmod/blockfront/unnamed/BF_462 com/boehmod/blockfront/assets/AssetCommandBuilder
+	FIELD field_2092 runner Ljava/util/function/BiConsumer;
 	FIELD field_2093 validators Ljava/util/List;
 	FIELD field_2094 subCommands Ljava/util/Map;
+	METHOD <init> (Ljava/util/function/BiConsumer;)V
+		ARG 1 runner
+	METHOD method_1653 inherit (Lcom/boehmod/blockfront/unnamed/BF_462;)Lcom/boehmod/blockfront/unnamed/BF_462;
+		ARG 1 builder
 	METHOD method_1654 validator (Lcom/boehmod/blockfront/unnamed/BF_463;)Lcom/boehmod/blockfront/unnamed/BF_462;
 		ARG 1 validator
+	METHOD method_1655 run (Lcom/mojang/brigadier/context/CommandContext;[Ljava/lang/String;)V
+		ARG 1 context
+		ARG 2 args
 	METHOD method_1656 subCommand (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_462;)Lcom/boehmod/blockfront/unnamed/BF_462;
 		ARG 1 name
 		ARG 2 builder
 	METHOD method_1657 subCommands (Ljava/util/Map;)Lcom/boehmod/blockfront/unnamed/BF_462;
 		ARG 1 commands
+	METHOD method_1658 subCommand ([Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_462;)Lcom/boehmod/blockfront/unnamed/BF_462;
+		ARG 1 names
+		ARG 2 builder
+	METHOD method_1659 runSubCommands (Lcom/mojang/brigadier/context/CommandContext;[Ljava/lang/String;)V
+		ARG 1 context
+		ARG 2 args
+	METHOD method_1660 getErrorSuggestions ()Lnet/minecraft/network/chat/MutableComponent;
+	METHOD method_1661 runThis (Lcom/mojang/brigadier/context/CommandContext;[Ljava/lang/String;)V
+		ARG 1 context
+		ARG 2 args

@@ -1,7 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_413 com/boehmod/blockfront/util/ClanUtils
 	METHOD method_1465 makeClanPrefix (Lcom/boehmod/bflib/cloud/common/AbstractClanData;)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 0 clan
-	METHOD method_1466 getClanAverageKD (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/bflib/cloud/common/AbstractClanData;)F
+	METHOD method_1466 getSkillLevel (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/bflib/cloud/common/AbstractClanData;)F
 		ARG 0 handler
 		ARG 1 clan
 	METHOD method_1467 (Lcom/boehmod/blockfront/common/player/c;Ljava/util/UUID;)Ljava/lang/Float;

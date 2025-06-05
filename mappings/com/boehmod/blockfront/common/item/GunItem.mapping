@@ -32,9 +32,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4133 sound (Lcom/boehmod/blockfront/unnamed/BF_956;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4135 setClipTextRenderer (Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;)V
 		ARG 1 renderer
+	METHOD method_4138 barrel (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_988;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4139 mag (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_994;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4146 getAmmoLoaded (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack
+	METHOD method_4148 getSoundConfig (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 itemStack
 	METHOD method_4149 getBarrelTypeOrDefault (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_988;
 		ARG 1 itemStack
 	METHOD method_4150 getMagTypeOrDefault (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_994;
@@ -52,6 +55,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 1 sound
 	METHOD method_4164 fireModes ([Lcom/boehmod/blockfront/unnamed/BF_957;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 configs
+	METHOD method_4172 bulletEject (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4174 getAmmo (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack
 	METHOD method_4175 setHeat (Lnet/minecraft/world/item/ItemStack;F)V
@@ -75,6 +79,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4202 setMaxAmmo (Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 0 itemStack
 		ARG 1 value
+	METHOD method_4204 secondary ()Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4205 weight (F)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 weight
 	METHOD method_4208 getReloadTick (Lnet/minecraft/world/item/ItemStack;)I

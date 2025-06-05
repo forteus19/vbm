@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_897 com/boehmod/blockfront/common/item/base/IHasWeight
+	METHOD method_3727 getWeight (Lnet/minecraft/world/item/ItemStack;)F
+		ARG 1 itemStack

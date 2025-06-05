@@ -124,6 +124,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 6 rotation
 		ARG 7 alpha
 		ARG 8 color
+	METHOD method_213 componentStraight (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDD)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 font
+		ARG 3 graphics
+		ARG 4 component
+		ARG 5 x
+		ARG 7 y
+		ARG 9 z
 	METHOD method_214 texture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDI)V
 	METHOD method_224 tabListEntry (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_476;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_679;Ljava/util/UUID;Lnet/minecraft/network/chat/Style;Ljava/util/Collection;Ljava/util/Set;FFFFI)V
 		ARG 0 poseStack
@@ -365,6 +374,16 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 y
 		ARG 4 width
 		ARG 5 height
+	METHOD method_252 crosshair (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_1124;FFFZZF)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 crosshair
+		ARG 3 x
+		ARG 4 y
+		ARG 5 alpha
+		ARG 6 renderDot
+		ARG 7 renderLines
+		ARG 8 spread
 	METHOD method_256 textureSquare (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;FFF)V
 		ARG 0 poseStack
 		ARG 1 graphics

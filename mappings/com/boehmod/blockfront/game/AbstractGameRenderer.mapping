@@ -3,8 +3,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	FIELD field_2870 PLAYER_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2871 FRIENDS_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2874 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD method_2677 getScoreboard ()Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
 	METHOD method_2694 renderDebugInfo (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;)V
 		ARG 1 poseStack
 		ARG 2 graphics
 		ARG 3 font
 		ARG 4 camera
+	CLASS BF_680 Scoreboard
+		FIELD field_2905 entries Ljava/util/Map;
+		METHOD method_2746 column (Ljava/lang/String;Lorg/apache/commons/lang3/function/TriFunction;)Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
+			ARG 1 name
+			ARG 2 func
+		METHOD method_2747 getColumns ()Ljava/util/Set;

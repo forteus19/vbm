@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_961 com/boehmod/blockfront/client/sound/BFMusicSet
+	FIELD field_3917 sounds Ljava/util/EnumMap;
+	METHOD method_4027 get (Lcom/boehmod/blockfront/unnamed/BF_960;)Lnet/minecraft/sounds/SoundEvent;
+		ARG 1 type
+	METHOD method_4028 register (Lcom/boehmod/blockfront/unnamed/BF_960;Lnet/minecraft/sounds/SoundEvent;)Lcom/boehmod/blockfront/unnamed/BF_961;
+		ARG 1 type
+		ARG 2 sound

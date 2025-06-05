@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_719 com/boehmod/blockfront/cloud/client/ClientCloudAuth
+	FIELD field_3034 ERROR_TITLE Lnet/minecraft/network/chat/Component;
+	FIELD field_3035 password Ljava/lang/String;
+	FIELD field_3036 ERROR_CREDENTIALS Lnet/minecraft/network/chat/Component;
+	FIELD field_3037 ERROR_UNKNOWN Lnet/minecraft/network/chat/Component;
+	METHOD method_3063 getPassword ()Ljava/lang/String;
+	METHOD method_3065 generatePassword ()Ljava/lang/String;

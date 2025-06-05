@@ -1,8 +1,14 @@
 CLASS com/boehmod/blockfront/unnamed/BF_475 com/boehmod/blockfront/cloud/connection/IConnectionDetails
 	METHOD getHardwareId getHardwareId ()[B
+	METHOD getType getType ()Lcom/boehmod/bflib/cloud/common/ConnectionType;
 	METHOD getUsername getUsername ()Ljava/lang/String;
 	METHOD getVersion getVersion ()Ljava/lang/String;
 	METHOD getVersionHash getVersionHash ()Ljava/lang/String;
 	METHOD method_1701 getLocation ()Ljava/lang/String;
 	METHOD method_1702 getUUID ()Ljava/util/UUID;
-	METHOD method_1707 getPort ()I
+	METHOD method_1703 isMatchMakingEnabled ()Z
+	METHOD method_1704 disconnect (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD method_1705 getMinecraftPort ()I
+	METHOD method_1706 getMatchMakingPassword ()Ljava/lang/String;
+	METHOD method_1707 getCloudPort ()I

@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_555 com/boehmod/blockfront/util/ExplosionUtils
+	METHOD method_1921 explode (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_676;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 type
+		ARG 4 position

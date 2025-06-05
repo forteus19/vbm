@@ -8,16 +8,22 @@ CLASS com/boehmod/blockfront/unnamed/BF_941 com/boehmod/blockfront/common/stat/B
 		ARG 1 manager
 		ARG 2 game
 		ARG 3 uuid
+		ARG 4 change
+		ARG 5 newValue
 	METHOD method_3920 (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;II)V
 		ARG 1 manager
 		ARG 2 stat
 		ARG 3 game
 		ARG 4 uuid
+		ARG 5 change
+		ARG 6 newValue
 	METHOD method_3921 setTrigger (Lcom/boehmod/blockfront/unnamed/BF_941$BF_942;)Lcom/boehmod/blockfront/unnamed/BF_941;
 		ARG 1 trigger
 	CLASS BF_942 Trigger
-		METHOD onGlobalStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;II)V
+		METHOD onGlobalStat onGlobalStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;II)V
 			ARG 1 manager
 			ARG 2 stat
 			ARG 3 game
 			ARG 4 uuid
+			ARG 5 change
+			ARG 6 newValue

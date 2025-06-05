@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_662 com/boehmod/blockfront/common/event/BFPlayerLoggedInSubscriber
+	METHOD method_2565 onPlayerLoggedIn (Lnet/neoforged/neoforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent;)V
+		ARG 0 event

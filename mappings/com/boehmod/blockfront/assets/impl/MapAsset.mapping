@@ -6,9 +6,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	FIELD field_3706 musicSet Ljava/lang/String;
 	FIELD field_3707 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_927;
 	FIELD field_3708 particleEffects Ljava/util/EnumSet;
+	FIELD field_3709 mapEffects Ljava/util/List;
 	FIELD field_3710 alliesDivision Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3711 axisDivision Lcom/boehmod/blockfront/unnamed/BF_929;
-	FIELD field_3712 shaderResource Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3712 clientShader Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_3713 hasCustomLightColor Z
 	FIELD field_3714 hasCustomSky Z
 	FIELD field_3715 hasCustomWater Z
@@ -23,9 +24,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	FIELD field_3725 fogColor I
 	FIELD field_3726 waterColor I
 	FIELD field_3727 mapTime I
+	FIELD field_3729 soundIndoors Ljava/util/function/Supplier;
 	FIELD field_3730 name Ljava/lang/String;
+	FIELD field_3731 soundOutdoors Ljava/util/function/Supplier;
 	METHOD getName getName ()Ljava/lang/String;
 	METHOD method_3840 getAuthor ()Ljava/lang/String;
+	METHOD method_3842 getMusicSet ()Lcom/boehmod/blockfront/unnamed/BF_961;
 	METHOD method_3843 setCustomFog (FF)Lcom/boehmod/blockfront/unnamed/BF_927;
 		ARG 1 densityNear
 		ARG 2 densityFar
@@ -34,6 +38,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	METHOD method_3845 setCustomSky (II)Lcom/boehmod/blockfront/unnamed/BF_927;
 		ARG 1 skyColor
 		ARG 2 fogColor
+	METHOD method_3847 addMapEffect (Lcom/boehmod/blockfront/unnamed/BF_731;)Lcom/boehmod/blockfront/unnamed/BF_927;
+		ARG 1 mapEffect
+	METHOD method_3848 addParticleEffect (Lcom/boehmod/blockfront/unnamed/BF_766;)Lcom/boehmod/blockfront/unnamed/BF_927;
+		ARG 1 effect
+	METHOD method_3851 setAmbientSounds (Ljava/util/function/Supplier;Ljava/util/function/Supplier;)Lcom/boehmod/blockfront/unnamed/BF_927;
+		ARG 1 indoors
+		ARG 2 outdoors
 	METHOD method_3860 setMapTime (I)Lcom/boehmod/blockfront/unnamed/BF_927;
 		ARG 1 mapTime
 	METHOD method_3861 removeShader ()V
@@ -43,6 +54,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 		ARG 1 buf
 	METHOD method_3872 readBuf (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
+	METHOD method_3878 setMusicSet (Ljava/lang/String;)V
+		ARG 1 musicSet
 	METHOD method_3879 setShader (Ljava/lang/String;)V
 		ARG 1 shaderName
 	METHOD method_3880 getShaderResource ()Lnet/minecraft/resources/ResourceLocation;

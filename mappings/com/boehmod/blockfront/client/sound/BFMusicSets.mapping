@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_962 com/boehmod/blockfront/client/sound/BFMusicSets
+	FIELD field_3918 ENTRIES Ljava/util/Map;
+	METHOD method_5605 getIds ()[Ljava/lang/String;

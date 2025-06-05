@@ -1,3 +1,100 @@
 CLASS com/boehmod/blockfront/unnamed/BF_956 com/boehmod/blockfront/common/item/gun/GunSoundConfig
+	FIELD field_3875 fire Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3876 pre Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3877 flamethrowerPost Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3878 impactMono Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3879 impactStereo Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_3880 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_956;
+	FIELD field_3881 reload Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3882 reloadEmpty Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3883 lastRound Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3884 corebassClose Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3885 corebassDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3886 echoDistantMono Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3887 echoDistantStereo Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3888 echoDistantIndoors Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3891 echoCloseIndoors Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3892 echoCloseIndoorsSelf Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3893 lowFreq Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3894 arm Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3895 towards Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3896 rattle Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3897 add Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3898 reloadBolt Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3904 zoomIn Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3905 zoomOut Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3906 equip Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD clone clone ()Ljava/lang/Object;
+	METHOD method_3956 getEchoDistantIndoors ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3959 getEchoCloseIndoors ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3960 getEchoCloseIndoorsSelf ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3961 getLowFreq ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3962 getArm ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3963 getTowards ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3964 getRattle ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3965 getAdd ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3966 getReloadBolt ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3970 getZoomIn ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3971 getZoomOut ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3972 getImpactMono ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3973 getImpactStereo ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3974 getEquip ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3977 fire (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 fire
+	METHOD method_3978 reload (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 reload
+		ARG 2 reloadEmpty
+	METHOD method_3979 impact (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;F)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 impactMono
+		ARG 2 impactStereo
+	METHOD method_3980 bulletLand (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
 	METHOD method_3981 pre (Lnet/neoforged/neoforge/registries/DeferredHolder;Z)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 pre
+	METHOD method_3987 reload (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 reload
+	METHOD method_3988 echoDistant (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 echoDistantMono
+		ARG 2 echoDistantStereo
+	METHOD method_3992 reloadEmpty (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 reloadEmpty
+	METHOD method_3994 lastRound (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 lastRound
+	METHOD method_3995 echoCloseIndoors (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 echoCloseIndoors
+		ARG 2 echoCloseIndoorsSelf
+	METHOD method_3996 flamethrowerPost (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 flamethrowerPost
+	METHOD method_3997 corebassClose (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 corebassClose
+	METHOD method_3998 corebassDistant (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 corebassDistant
+	METHOD method_3999 echoDistantIndoors (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 echoDistantIndoors
+	METHOD method_4000 lowFreq (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 lowFreq
+	METHOD method_4001 arm (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 arm
+	METHOD method_4002 towards (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 towards
+	METHOD method_4003 rattle (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 rattle
+	METHOD method_4004 add (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 add
+	METHOD method_4005 reloadBolt (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 reloadBolt
+	METHOD method_4008 getFire ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4010 getReload ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4011 zoomIn (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 zoomIn
+	METHOD method_4012 getReloadEmpty ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4013 zoomOut (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 zoomOut
+	METHOD method_4014 getLastRound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4015 equip (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 equip
+	METHOD method_4016 getPre ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4017 getFlamethrowerPost ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4018 getCorebassClose ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4019 getCorebassDistant ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4020 getEchoDistantMono ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4021 getEchoDistantStereo ()Lnet/neoforged/neoforge/registries/DeferredHolder;

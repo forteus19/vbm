@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_496 com/boehmod/blockfront/util/BFLinks
+	FIELD field_2142 MC_HEADS Ljava/lang/String;
+	FIELD field_2143 HOME Ljava/lang/String;
+	FIELD field_2144 DISCORD Ljava/lang/String;
+	FIELD field_2145 RPC_LOGO Ljava/lang/String;
+	FIELD field_2146 RULES Ljava/lang/String;
+	FIELD field_2147 PRIVACY Ljava/lang/String;
+	FIELD field_6327 DOWNLOAD Ljava/lang/String;

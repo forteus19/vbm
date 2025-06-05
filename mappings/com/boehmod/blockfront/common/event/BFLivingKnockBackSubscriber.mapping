@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_661 com/boehmod/blockfront/common/event/BFLivingKnockBackSubscriber
+	METHOD method_2564 onLivingKnockBack (Lnet/neoforged/neoforge/event/entity/living/LivingKnockBackEvent;)V
+		ARG 0 event

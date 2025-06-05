@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_732 com/boehmod/blockfront/game/map/effect/MapEffectRegistry
+	FIELD field_3102 TYPE_TO_EFFECT Lit/unimi/dsi/fastutil/bytes/Byte2ObjectMap;
+	FIELD field_3103 EFFECT_TO_TYPE Lit/unimi/dsi/fastutil/objects/Object2ByteMap;
+	METHOD method_3092 getEffect (B)Ljava/lang/Class;
+		ARG 0 type
+	METHOD method_3093 registerEffect (BLjava/lang/Class;)V
+		ARG 0 type
+		ARG 1 effectClass
+	METHOD method_3094 getType (Ljava/lang/Class;)B
+		ARG 0 effectClass

@@ -4,7 +4,6 @@ plugins {
 
 repositories {
     mavenLocal()
-    maven("https://maven.jaxonpow.com/snapshots")
     maven("https://maven.fabricmc.net")
     mavenCentral()
 }

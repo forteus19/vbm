@@ -1,4 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_104
-	FIELD field_470 ALLIES_ICON Lnet/minecraft/resources/ResourceLocation;
-	FIELD field_471 AXIS_ICON Lnet/minecraft/resources/ResourceLocation;
-	FIELD field_472 NO_TEAM_COMPONENT Lnet/minecraft/network/chat/Component;

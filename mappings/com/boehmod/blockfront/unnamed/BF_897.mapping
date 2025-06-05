@@ -1,3 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_897
-	METHOD method_3727 getWeight (Lnet/minecraft/world/item/ItemStack;)F
-		ARG 1 itemStack

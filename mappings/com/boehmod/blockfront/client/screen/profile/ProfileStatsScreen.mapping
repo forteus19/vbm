@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_243 com/boehmod/blockfront/client/screen/profile/ProfileStatsScreen
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lcom/boehmod/blockfront/unnamed/BF_476;)V
+		ARG 1 screen
+		ARG 2 profile

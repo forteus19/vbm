@@ -1,1 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_523 com/boehmod/blockfront/common/block/entity/BFBlockEntity
+	FIELD field_2225 vehicleEntity Lcom/boehmod/blockfront/unnamed/BF_617;
+	FIELD field_2228 queuedAnimations Ljava/util/List;
+	METHOD method_1883 getVehicleEntity ()Lcom/boehmod/blockfront/unnamed/BF_617;
+	METHOD method_1884 setVehicleEntity (Lcom/boehmod/blockfront/unnamed/BF_617;)V
+		ARG 1 entity
+	METHOD method_1889 queueAnimation (Ljava/lang/String;)V
+		ARG 1 id

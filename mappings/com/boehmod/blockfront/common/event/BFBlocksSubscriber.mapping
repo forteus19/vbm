@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_709 com/boehmod/blockfront/common/event/BFBlocksSubscriber
+	METHOD method_3047 onBreak (Lnet/neoforged/neoforge/event/level/BlockEvent$BreakEvent;)V
+		ARG 0 event
+	METHOD method_3048 onEntityPlace (Lnet/neoforged/neoforge/event/level/BlockEvent$EntityPlaceEvent;)V
+		ARG 0 event
+	METHOD method_3049 onRightClickBlock (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent$RightClickBlock;)V
+		ARG 0 event

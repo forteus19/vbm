@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_738 com/boehmod/blockfront/game/map/effect/LoopingSoundPointMapEffect
+	FIELD field_3156 time I
+	FIELD field_3157 sound Ljava/util/function/Supplier;
+	FIELD field_3158 pitch F
+	FIELD field_3159 DEBUG_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3160 DEBUG_HEADER Lnet/minecraft/network/chat/Component;
+	FIELD field_3161 volume F
+	FIELD field_3162 activationDistance F
+	FIELD field_3163 maxTime I
+	METHOD method_3106 setVolume (F)Lcom/boehmod/blockfront/unnamed/BF_738;
+		ARG 1 volume
+	METHOD method_3107 setTime (I)Lcom/boehmod/blockfront/unnamed/BF_738;
+		ARG 1 time
+	METHOD method_3108 setActivationDistance (F)Lcom/boehmod/blockfront/unnamed/BF_738;
+		ARG 1 activationDistance
+	METHOD method_3109 setPitch (F)Lcom/boehmod/blockfront/unnamed/BF_738;
+		ARG 1 pitch

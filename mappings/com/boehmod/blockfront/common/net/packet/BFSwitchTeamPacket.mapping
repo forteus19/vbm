@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1031 com/boehmod/blockfront/common/net/packet/BFSwitchTeamPacket
+	FIELD field_4224 ERROR_DISABLED Lnet/minecraft/network/chat/Component;
+	FIELD field_4225 ERROR_TIME Lnet/minecraft/network/chat/Component;

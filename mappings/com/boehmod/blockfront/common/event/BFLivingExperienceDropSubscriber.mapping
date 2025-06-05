@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_713 com/boehmod/blockfront/common/event/BFLivingExperienceDropSubscriber
+	METHOD method_3056 onLivingExperienceDrop (Lnet/neoforged/neoforge/event/entity/living/LivingExperienceDropEvent;)V
+		ARG 0 event
