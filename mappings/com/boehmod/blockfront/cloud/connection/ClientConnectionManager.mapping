@@ -5,3 +5,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_388 com/boehmod/blockfront/cloud/connect
 	METHOD method_1386 getConnectionMode ()Lcom/boehmod/blockfront/unnamed/BF_442;
 	METHOD method_1391 setConnectionMode (Lcom/boehmod/blockfront/unnamed/BF_442;)V
 		ARG 1 connectionMode
+	METHOD method_1398 update (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_273;)V

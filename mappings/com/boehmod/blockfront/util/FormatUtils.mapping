@@ -1,0 +1,15 @@
+CLASS com/boehmod/blockfront/unnamed/BF_409 com/boehmod/blockfront/util/FormatUtils
+	METHOD method_1446 joinWithSpaces (Ljava/util/List;)Ljava/lang/String;
+		ARG 0 strings
+	METHOD method_1448 sortEntriesDescending (Ljava/util/Map;)Ljava/util/List;
+		ARG 0 map
+	METHOD method_1449 parseMarkup (Lnet/minecraft/client/gui/Font;Ljava/lang/String;I)Ljava/util/List;
+		ARG 0 font
+		ARG 1 text
+		ARG 2 maxWidth
+	METHOD method_1450 proseStrings (Ljava/util/List;)Ljava/lang/String;
+		ARG 0 strings
+	METHOD method_1451 convertFormatting (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 text
+	METHOD method_1452 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 string

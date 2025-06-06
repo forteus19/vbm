@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_16 com/boehmod/blockfront/client/corpse/render/IRagdollEntityRenderer
+	METHOD method_122 createParts (Lcom/boehmod/blockfront/unnamed/BF_3;Lcom/boehmod/blockfront/unnamed/BF_1049$BF_1050;Lnet/minecraft/world/entity/Entity;Lcom/boehmod/blockfront/unnamed/BF_15;)Ljava/util/Collection;

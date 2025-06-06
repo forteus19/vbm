@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_287 com/boehmod/blockfront/client/render/model/BakedVehicleMesh
+	FIELD field_1656 buffer Lcom/mojang/blaze3d/vertex/VertexBuffer;
+	FIELD field_1657 lastUpdated J
+	METHOD <init> (Lcom/mojang/blaze3d/vertex/VertexBuffer;J)V
+		ARG 1 buffer
+		ARG 2 lastUpdated
+	METHOD method_1192 getBuffer ()Lcom/mojang/blaze3d/vertex/VertexBuffer;
+	METHOD method_1193 setLastUpdated (J)V
+		ARG 1 lastUpdated
+	METHOD method_1194 close ()V
+	METHOD method_1195 getLastUpdated ()J

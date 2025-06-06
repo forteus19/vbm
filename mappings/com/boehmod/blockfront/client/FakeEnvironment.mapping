@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_95 com/boehmod/blockfront/client/FakeEnvironment
+	METHOD method_476 getFakePlayer (Lnet/minecraft/client/Minecraft;Lcom/mojang/authlib/GameProfile;)Lcom/boehmod/blockfront/unnamed/BF_94;
+	METHOD method_477 update (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_478 initFakeEnvironment (Lnet/minecraft/client/Minecraft;)V
+	METHOD method_479 checkEnvironment (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft

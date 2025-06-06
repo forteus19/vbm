@@ -11,6 +11,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1093 com/boehmod/blockfront/client/BFKey
 	METHOD method_5115 register (Lcom/boehmod/blockfront/unnamed/BF_1093$BF_1095;)Lcom/boehmod/blockfront/unnamed/BF_1093$BF_1095;
 	METHOD method_5116 register (Lnet/neoforged/neoforge/client/event/RegisterKeyMappingsEvent;)V
 		ARG 0 event
+	METHOD method_5117 update (Lnet/minecraft/client/Minecraft;)V
 	CLASS BF_1094 WithConsumer
 	CLASS BF_1095 Basic
 	CLASS BF_1096 Updatable

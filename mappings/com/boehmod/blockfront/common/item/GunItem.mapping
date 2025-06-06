@@ -32,6 +32,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4133 sound (Lcom/boehmod/blockfront/unnamed/BF_956;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4135 setClipTextRenderer (Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;)V
 		ARG 1 renderer
+	METHOD method_4136 bipod (Lcom/boehmod/blockfront/unnamed/BF_996;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4138 barrel (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_988;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4139 mag (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_994;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4146 getAmmoLoaded (Lnet/minecraft/world/item/ItemStack;)I

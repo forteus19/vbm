@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_94 com/boehmod/blockfront/client/player/FakePlayer
+	METHOD tick tick ()V

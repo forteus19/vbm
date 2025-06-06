@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_8
+	METHOD method_51 shouldRemove (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_4;Lorg/joml/Vector3dc;)Z

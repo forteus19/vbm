@@ -1,0 +1,22 @@
+CLASS com/boehmod/blockfront/unnamed/BF_121 com/boehmod/blockfront/client/gui/widget/BFWidget
+	FIELD field_563 screen Lnet/minecraft/client/gui/screens/Screen;
+	FIELD field_567 height I
+	FIELD field_568 bfWidgets Ljava/util/List;
+	FIELD field_569 mcWidgets Ljava/util/List;
+	METHOD <init> (IIIILnet/minecraft/client/gui/screens/Screen;)V
+		ARG 4 height
+		ARG 5 screen
+	METHOD height height ()I
+	METHOD method_532 getScreen ()Lnet/minecraft/client/gui/screens/Screen;
+	METHOD method_533 addBfWidget (Lcom/boehmod/blockfront/unnamed/BF_121;)Z
+		ARG 1 widget
+	METHOD method_536 onPress (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;DDI)Z
+	METHOD method_540 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_476;IIFF)V
+	METHOD method_543 addMcWidget (Lnet/minecraft/client/gui/components/AbstractWidget;)Z
+		ARG 1 widget
+	METHOD method_545 setScreen (Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 screen
+	METHOD method_548 removeBfWidget (Lcom/boehmod/blockfront/unnamed/BF_121;)Z
+		ARG 1 widget
+	METHOD method_561 clearAll ()V
+	METHOD method_562 clearBfWidgets ()V

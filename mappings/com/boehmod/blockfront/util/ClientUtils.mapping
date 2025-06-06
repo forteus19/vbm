@@ -1,0 +1,67 @@
+CLASS com/boehmod/blockfront/unnamed/BF_408 com/boehmod/blockfront/util/ClientUtils
+	FIELD field_1857 NEXT_ENTITY_ID Ljava/util/concurrent/atomic/AtomicInteger;
+	METHOD method_1437 spawnBlockParticles (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;F)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 blockPos
+		ARG 4 origin
+		ARG 5 direction
+		ARG 6 blockState
+		ARG 7 speedMagnitude
+	METHOD method_1438 spawnParticle (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 options
+		ARG 4 posX
+		ARG 6 posY
+		ARG 8 posZ
+		ARG 10 velX
+		ARG 12 velY
+		ARG 14 velZ
+	METHOD method_1439 spawnParticleCircle (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/world/phys/Vec3;FFIF)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 options
+		ARG 4 center
+		ARG 5 minDist
+		ARG 6 maxDist
+		ARG 7 numParticles
+		ARG 8 speedMagnitude
+	METHOD method_1440 spawnParticleDirection (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/Direction;Lnet/minecraft/core/particles/ParticleOptions;F)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 origin
+		ARG 4 direction
+		ARG 5 options
+		ARG 6 speedMagnitude
+	METHOD method_1441 spawnParticleDirection (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/Direction;Lnet/minecraft/core/particles/ParticleOptions;FF)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 origin
+		ARG 4 direction
+		ARG 5 options
+		ARG 6 speedMagnitude
+		ARG 7 offsetMagnitude
+	METHOD method_1442 setCameraEntity (Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/entity/Entity;)V
+		ARG 0 minecraft
+		ARG 1 entity
+	METHOD method_1443 isBfEntity (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 0 entity
+	METHOD method_1444 spawnEntity (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 0 entity
+		ARG 1 level
+	METHOD method_1445 spawnParticleDome (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/world/phys/Vec3;FFIF)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 options
+		ARG 4 center
+		ARG 5 minDist
+		ARG 6 maxDist
+		ARG 7 numParticles
+		ARG 8 speedMagnitude

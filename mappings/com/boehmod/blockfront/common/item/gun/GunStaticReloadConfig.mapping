@@ -1,6 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_955 com/boehmod/blockfront/common/item/gun/GunStaticReloadConfig
-	FIELD field_3873 seconds F
-	METHOD <init> (F)V
-		ARG 1 seconds
-	METHOD <init> (FFZ)V
-		ARG 1 seconds

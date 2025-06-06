@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_900 com/boehmod/blockfront/common/gun/GunMiscConfig
+	FIELD field_3591 recoil F
+	METHOD <init> (FFFFFFFFFFF)V
+		ARG 1 recoil
+	METHOD method_3733 multiply (FFFFFFFFFFF)Lcom/boehmod/blockfront/unnamed/BF_900;
+		ARG 1 recoil
+	METHOD method_3734 recoil ()F

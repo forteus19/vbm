@@ -5,6 +5,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 	FIELD field_218 GAMEMODE_CORNER_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_219 RED_CHAT_COLOR I
 	FIELD field_222 TRANSLUCENT_BLACK_COLOR I
+	FIELD field_228 ENVIRONMENT Lcom/boehmod/blockfront/unnamed/BF_95;
 	FIELD field_231 BYTE_TO_FLOAT_RATIO F
 	FIELD field_236 PARTY_LEADER_COMPONENT Lnet/minecraft/network/chat/Component;
 	FIELD field_237 PARTY_LEADER_PREFIX Lnet/minecraft/network/chat/Component;
@@ -16,6 +17,31 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 	METHOD method_194 shaderColor (IF)V
 		ARG 0 color
 		ARG 1 alpha
+	METHOD method_195 entity (Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/entity/LivingEntity;FFFFFFF)V
+		ARG 0 dataHandler
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 minecraft
+		ARG 4 entity
+		ARG 5 x
+		ARG 6 y
+		ARG 7 scale
+		ARG 8 pitch
+		ARG 9 yaw
+		ARG 10 headYaw
+		ARG 11 delta
+	METHOD method_196 entity (Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/entity/LivingEntity;IIFFFF)V
+		ARG 0 dataHandler
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 minecraft
+		ARG 4 entity
+		ARG 5 x
+		ARG 6 y
+		ARG 7 scale
+		ARG 8 pitch
+		ARG 9 yaw
+		ARG 10 headYaw
 	METHOD method_200 rectangle (Lcom/mojang/blaze3d/vertex/PoseStack;FFFFII)V
 		ARG 0 poseStack
 		ARG 1 x

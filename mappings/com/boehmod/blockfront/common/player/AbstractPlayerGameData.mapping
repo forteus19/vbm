@@ -2,5 +2,7 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 	FIELD field_1155 previousMessages Ljava/util/List;
 	FIELD field_1175 calloutCooldown I
 	METHOD method_829 getPreviousMessages ()Ljava/util/List;
+	METHOD method_830 setIngame (Z)V
+	METHOD method_848 isIngame ()Z
 	METHOD method_859 addMessage (Ljava/lang/String;)V
 		ARG 1 message

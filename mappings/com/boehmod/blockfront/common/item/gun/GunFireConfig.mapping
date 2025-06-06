@@ -1,8 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_957 com/boehmod/blockfront/common/item/gun/GunFireConfig
-	FIELD field_3912 mode Lcom/boehmod/blockfront/unnamed/BF_958;
-	FIELD field_3914 fireRate I
-	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_958;II)V
-		ARG 1 mode
-		ARG 2 fireRate
-	METHOD method_4022 getMode ()Lcom/boehmod/blockfront/unnamed/BF_958;
-	METHOD method_4025 getFireRate ()I

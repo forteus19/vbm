@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_952 com/boehmod/blockfront/common/gun/GunDamageConfigs
+	FIELD field_3859 LT_RIFLE Lcom/boehmod/blockfront/unnamed/BF_951;
+	FIELD field_3865 ATR Lcom/boehmod/blockfront/unnamed/BF_951;

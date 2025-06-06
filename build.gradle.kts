@@ -42,6 +42,7 @@ val enigmaRuntime: Configuration by configurations.creating {
 val decompileRuntime: Configuration by configurations.creating
 
 dependencies {
+    enigmaRuntime("org.vineflower:vineflower:1.11.1")
     enigmaRuntime("cuchaz:enigma-swing:2.5.2-NRC-SNAPSHOT")
     decompileRuntime("org.vineflower:vineflower:1.11.1")
 }

@@ -12,6 +12,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_432 com/boehmod/blockfront/client/settin
 	FIELD field_1998 NOTIFICATIONS_FRIENDS_PRESTIGE Lcom/boehmod/blockfront/unnamed/BF_431;
 	FIELD field_1999 NOTIFICATIONS_RANK_UPS Lcom/boehmod/blockfront/unnamed/BF_431;
 	FIELD field_2000 NOTIFICATIONS_ACHIEVEMENTS Lcom/boehmod/blockfront/unnamed/BF_431;
+	METHOD method_1514 shouldSendNotifications (Lcom/boehmod/bflib/cloud/common/NotificationType;)Z
+		ARG 0 type
 	METHOD method_1515 addNotification (Lcom/boehmod/bflib/cloud/common/NotificationType;Lcom/boehmod/blockfront/unnamed/BF_431;)Lcom/boehmod/blockfront/unnamed/BF_431;
 		ARG 0 notificationType
 		ARG 1 setting
