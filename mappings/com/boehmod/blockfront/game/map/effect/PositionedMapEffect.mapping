@@ -1,5 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_739 com/boehmod/blockfront/game/map/effect/PositionedMapEffect
-	FIELD field_3164 position Lnet/minecraft/world/phys/Vec3;
-	METHOD <init> (Lnet/minecraft/world/phys/Vec3;)V
-		ARG 1 position
-	METHOD method_3110 getPosition ()Lnet/minecraft/world/phys/Vec3;

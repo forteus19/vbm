@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1145 com/boehmod/blockfront/client/particle/InstancedParticleManager
+	FIELD field_6481 instances Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
+	METHOD method_5568 count ()I
+	METHOD method_5576 clearAll ()V

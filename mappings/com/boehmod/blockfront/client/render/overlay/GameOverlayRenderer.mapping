@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_418 com/boehmod/blockfront/client/render/overlay/GameOverlayRenderer
+	METHOD method_1471 render (Lnet/neoforged/neoforge/client/event/RenderFrameEvent$Post;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_271;Lcom/boehmod/blockfront/unnamed/BF_677;IIZFF)V
+		ARG 1 event
+		ARG 2 minecraft
+		ARG 3 player
+		ARG 4 level
+		ARG 5 poseStack
+		ARG 6 font
+		ARG 7 graphics
+		ARG 8 manager
+		ARG 9 cloudData
+		ARG 10 gameData
+		ARG 11 game
+		ARG 12 width
+		ARG 13 height
+		ARG 15 renderTime
+		ARG 16 delta

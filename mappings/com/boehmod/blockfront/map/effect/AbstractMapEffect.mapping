@@ -1,0 +1,33 @@
+CLASS com/boehmod/blockfront/unnamed/BF_731 com/boehmod/blockfront/map/effect/AbstractMapEffect
+	METHOD method_3086 getRenderStage ()Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent$Stage;
+	METHOD method_3087 renderUpdate (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Ljava/util/Random;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;F)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 random
+		ARG 4 player
+		ARG 5 level
+	METHOD method_3088 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Ljava/util/Random;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;FF)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 player
+		ARG 4 level
+		ARG 5 dispatcher
+		ARG 6 buffer
+		ARG 7 random
+		ARG 8 renderEvent
+		ARG 9 graphics
+		ARG 10 poseStack
+		ARG 11 camera
+	METHOD method_3089 renderDebug (Lnet/minecraft/client/Minecraft;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;)V
+		ARG 1 minecraft
+		ARG 2 renderEvent
+		ARG 3 buffer
+		ARG 4 poseStack
+		ARG 5 graphics
+		ARG 6 font
+		ARG 7 camera
+	METHOD method_3090 mapUpdate (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Random;Ljava/util/Set;)V
+	METHOD readFromFDS readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD writeToFDS writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

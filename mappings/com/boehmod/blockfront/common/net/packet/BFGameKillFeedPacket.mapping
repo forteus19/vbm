@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1015 com/boehmod/blockfront/common/net/packet/BFGameKillFeedPacket
+	FIELD field_4165 entry Lcom/boehmod/blockfront/unnamed/BF_774;
+	METHOD method_4325 getEntry ()Lcom/boehmod/blockfront/unnamed/BF_774;

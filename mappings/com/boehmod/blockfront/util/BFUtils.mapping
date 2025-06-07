@@ -29,6 +29,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 1 uuid
 		ARG 2 stat
 		ARG 3 value
+	METHOD method_2906 spawnBot (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_686;Lorg/apache/commons/lang3/tuple/Pair;Z)V
+		ARG 0 game
+		ARG 1 level
+		ARG 2 team
+		ARG 3 loadout
+	METHOD method_2907 spawnBot (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_686;Lorg/apache/commons/lang3/tuple/Pair;ZF)V
+		ARG 0 game
+		ARG 1 level
+		ARG 2 team
+		ARG 3 loadout
+		ARG 5 maxHealth
 	METHOD method_2913 sendTeamFancyMessage (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 team
 		ARG 1 prefix
@@ -43,12 +54,44 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 players
 		ARG 1 prefix
 		ARG 2 message
+	METHOD method_2922 playSound (Ljava/util/Set;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
+		ARG 0 uuids
+		ARG 1 sound
+		ARG 2 source
+	METHOD method_2923 playSound (Ljava/util/Set;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;F)V
+		ARG 0 uuids
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 pitch
+	METHOD method_2924 playSound (Ljava/util/Set;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+		ARG 0 uuids
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+		ARG 4 pitch
 	METHOD method_2926 getPlayerByUUID (Ljava/util/UUID;)Lnet/minecraft/server/level/ServerPlayer;
 		ARG 0 uuid
+	METHOD method_2927 queueMusic (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_439;)V
+		ARG 0 player
 	METHOD method_2930 sendFancyMessage (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 playerUUID
 		ARG 1 header
 		ARG 2 message
+	METHOD method_2932 playSound (Ljava/util/UUID;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
+		ARG 0 uuid
+		ARG 1 sound
+		ARG 2 source
+	METHOD method_2933 playSound (Ljava/util/UUID;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;F)V
+		ARG 0 uuid
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+	METHOD method_2934 playSound (Ljava/util/UUID;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+		ARG 0 uuid
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+		ARG 4 pitch
 	METHOD method_2940 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
 		ARG 2 uuid
 	METHOD method_2941 discardMatchEntities (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;)V
@@ -67,6 +110,25 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 player
 		ARG 1 header
 		ARG 2 message
+	METHOD method_2956 playSound (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
+		ARG 0 player
+		ARG 1 sound
+		ARG 2 source
+	METHOD method_2957 playSound (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;F)V
+		ARG 0 player
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+	METHOD method_2958 playSound (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+		ARG 0 player
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+		ARG 4 pitch
+	METHOD method_2960 (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFLjava/util/UUID;)V
+		ARG 4 uuid
+	METHOD method_2962 (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;Ljava/util/UUID;)V
+		ARG 2 uuid
 	METHOD method_2966 isPlayerUnavailable (Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/common/player/b;)Z
 		ARG 0 player
 		ARG 1 data

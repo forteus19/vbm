@@ -1,0 +1,74 @@
+CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/common/net/PacketAppliers
+	FIELD field_2796 SCREENSHOT_REQUEST_ERROR Lnet/minecraft/network/chat/Component;
+	METHOD method_2525 screenshotDisplay (Lcom/boehmod/blockfront/unnamed/BF_453;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2526 screenshotRequest (Lcom/boehmod/blockfront/unnamed/BF_454;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2527 calloutWaypoint (Lcom/boehmod/blockfront/unnamed/BF_964;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2528 chatGraphic (Lcom/boehmod/blockfront/unnamed/BF_965;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2529 clearRagdolls (Lcom/boehmod/blockfront/unnamed/BF_966;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2530 clientNotification (Lcom/boehmod/blockfront/unnamed/BF_967;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2531 crateEntity (Lcom/boehmod/blockfront/unnamed/BF_968;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2532 damageIndicator (Lcom/boehmod/blockfront/unnamed/BF_969;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2533 debugLine (Lcom/boehmod/blockfront/unnamed/BF_970;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2534 entitySound (Lcom/boehmod/blockfront/unnamed/BF_972;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2535 victory (Lcom/boehmod/blockfront/unnamed/BF_1003;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2536 worldFlash (Lcom/boehmod/blockfront/unnamed/BF_1004;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2537 bulletCollisionBlockClient (Lcom/boehmod/blockfront/unnamed/BF_1006;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2538 bulletCollisionLivingClient (Lcom/boehmod/blockfront/unnamed/BF_1008;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2539 bulletDamageEffects (Lcom/boehmod/blockfront/unnamed/BF_1009;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2540 bulletTracerToClient (Lcom/boehmod/blockfront/unnamed/BF_1011;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2541 capturePointSpawnError (Lcom/boehmod/blockfront/unnamed/BF_1012;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2542 game (Lcom/boehmod/blockfront/unnamed/BF_1013;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2543 gameKillFeed (Lcom/boehmod/blockfront/unnamed/BF_1015;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2544 gameKilledMessage (Lcom/boehmod/blockfront/unnamed/BF_1016;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2545 gameLastKiller (Lcom/boehmod/blockfront/unnamed/BF_1017;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2546 grenadeFlash (Lcom/boehmod/blockfront/unnamed/BF_1022;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2547 gunReloadClient (Lcom/boehmod/blockfront/unnamed/BF_1025;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2548 gunSound (Lcom/boehmod/blockfront/unnamed/BF_1026;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2549 explosion (Lcom/boehmod/blockfront/unnamed/BF_1029;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2550 frozen (Lcom/boehmod/blockfront/unnamed/BF_1030;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2551 hitMarker (Lcom/boehmod/blockfront/unnamed/BF_1033;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2552 playerData (Lcom/boehmod/blockfront/unnamed/BF_1036;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2553 popupMessage (Lcom/boehmod/blockfront/unnamed/BF_1037;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2554 positionedShakeNode (Lcom/boehmod/blockfront/unnamed/BF_1038;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2555 queueMusic (Lcom/boehmod/blockfront/unnamed/BF_1039;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2556 radioPoint (Lcom/boehmod/blockfront/unnamed/BF_1041;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2557 sequence (Lcom/boehmod/blockfront/unnamed/BF_1043;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2558 sequencePositionUpdated (Lcom/boehmod/blockfront/unnamed/BF_1045;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2559 shakeNode (Lcom/boehmod/blockfront/unnamed/BF_1046;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_2560 sound (Lcom/boehmod/blockfront/unnamed/BF_1047;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2561 soundPosition (Lcom/boehmod/blockfront/unnamed/BF_1048;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2562 spawnCorpse (Lcom/boehmod/blockfront/unnamed/BF_1049;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context
+	METHOD method_2563 vehicleFireEffect (Lcom/boehmod/blockfront/unnamed/BF_1054;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_5536 gameMapVoteInfo (Lcom/boehmod/blockfront/unnamed/BF_1138;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V

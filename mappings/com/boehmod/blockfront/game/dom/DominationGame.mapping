@@ -1,7 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_802 com/boehmod/blockfront/game/dom/DominationGame
 	FIELD field_3388 capturePoints Ljava/util/List;
+	FIELD field_3389 ammoPoints Ljava/util/List;
 	FIELD field_3390 introSequence Lcom/boehmod/blockfront/unnamed/BF_597;
 	FIELD field_3391 outroSequence Lcom/boehmod/blockfront/unnamed/BF_597;
 	FIELD field_3392 command Lcom/boehmod/blockfront/unnamed/BF_462;
+	FIELD field_3394 MESSAGE_CPOINT_DEFENDED Lnet/minecraft/network/chat/Component;
+	FIELD field_3395 MESSAGE_CRATE Lnet/minecraft/network/chat/Component;
 	FIELD field_3396 SWITCHTEAMS_ERROR_SCORES_AXIS Lnet/minecraft/network/chat/Component;
 	FIELD field_3397 SWITCHTEAMS_ERROR_SCORES_ALLIES Lnet/minecraft/network/chat/Component;

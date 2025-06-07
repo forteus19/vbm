@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1011 com/boehmod/blockfront/common/net/packet/BFBulletTracerToClientPacket
+	METHOD method_4308 getBullet ()Lcom/boehmod/blockfront/unnamed/BF_277;
+	METHOD method_4310 getPlayerId ()I

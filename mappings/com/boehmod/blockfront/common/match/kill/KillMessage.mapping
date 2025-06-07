@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_922 com/boehmod/blockfront/common/match/kill/KillMessage
+	FIELD field_3662 health F
+	FIELD field_3669 itemUsing Lnet/minecraft/world/item/ItemStack;
+	FIELD field_3670 uuid Ljava/util/UUID;
+	METHOD getUUID getUUID ()Ljava/util/UUID;
+	METHOD method_3813 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;IIF)V
+	METHOD method_3815 getHealth ()F
+	METHOD method_3816 getItemUsing ()Lnet/minecraft/world/item/ItemStack;
+	METHOD onUpdate onUpdate ()V

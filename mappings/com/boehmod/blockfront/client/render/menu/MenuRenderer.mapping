@@ -1,0 +1,28 @@
+CLASS com/boehmod/blockfront/unnamed/BF_172 com/boehmod/blockfront/client/render/menu/MenuRenderer
+	METHOD method_732 renderBackground (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_186;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;IIIIFF)V
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 minecraft
+		ARG 4 screen
+		ARG 5 poseStack
+		ARG 6 font
+		ARG 7 graphics
+		ARG 8 width
+		ARG 9 height
+		ARG 10 mouseX
+		ARG 11 mouseY
+		ARG 12 renderTime
+		ARG 13 delta
+	METHOD method_734 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_186;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;IIIIFF)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 screen
+		ARG 4 poseStack
+		ARG 5 graphics
+		ARG 6 font
+		ARG 7 width
+		ARG 8 height
+		ARG 9 mouseX
+		ARG 10 mouseY
+		ARG 11 renderTime
+		ARG 12 delta

@@ -1,5 +1,12 @@
 CLASS com/boehmod/blockfront/unnamed/BF_458 com/boehmod/blockfront/assets/AssetRegistry
+	FIELD field_2075 basePath Ljava/lang/String;
 	FIELD field_2079 entries Ljava/util/Map;
 	METHOD method_1608 getByName (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_460;
+	METHOD method_1612 testAll (Lnet/minecraft/commands/CommandSource;)V
+		ARG 1 source
+	METHOD method_1613 (Lnet/minecraft/commands/CommandSource;Lcom/boehmod/blockfront/unnamed/BF_460;)V
+		ARG 1 entry
 	METHOD method_1614 loadFromDisk ()V
+	METHOD method_1615 createDir ()V
 	METHOD method_1621 getEntries ()Ljava/util/Map;
+	METHOD method_1625 getBasePath ()Ljava/lang/String;

@@ -1,6 +1,13 @@
 CLASS com/boehmod/blockfront/unnamed/BF_955 com/boehmod/blockfront/common/gun/GunStaticReloadConfig
+	FIELD field_3872 hasEmptyDuration Z
 	FIELD field_3873 seconds F
+	FIELD field_3874 secondsEmpty F
 	METHOD <init> (F)V
 		ARG 1 seconds
+	METHOD <init> (FF)V
+		ARG 1 seconds
+		ARG 2 secondsEmpty
 	METHOD <init> (FFZ)V
 		ARG 1 seconds
+		ARG 2 secondsEmpty
+		ARG 3 hasEmptyDuration

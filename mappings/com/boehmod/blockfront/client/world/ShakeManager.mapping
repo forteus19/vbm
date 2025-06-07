@@ -1,0 +1,29 @@
+CLASS com/boehmod/blockfront/unnamed/BF_425 com/boehmod/blockfront/client/world/ShakeManager
+	FIELD field_1877 ACTIVE_SHAKES Ljava/util/List;
+	FIELD field_1879 shakeX F
+	FIELD field_1880 shakeY F
+	FIELD field_1881 shakeZ F
+	FIELD field_1882 prevShakeX F
+	FIELD field_1883 prevShakeY F
+	FIELD field_1884 prevShakeZ F
+	METHOD method_1478 getCumulativeShake ()Lorg/joml/Vector3f;
+	METHOD method_1479 getDelta (F)Lorg/joml/Vector3f;
+		ARG 0 t
+	METHOD method_1480 update (F)V
+		ARG 0 t
+	METHOD method_1481 (FLcom/boehmod/blockfront/unnamed/BF_426;)Z
+		ARG 1 applier
+	METHOD method_1482 applyShake (Lcom/boehmod/blockfront/unnamed/BF_426;)V
+		ARG 0 applier
+	METHOD method_1483 applyShake (Lcom/boehmod/blockfront/unnamed/BF_427;)V
+		ARG 0 data
+	METHOD method_1484 applyShake (Lcom/boehmod/blockfront/unnamed/BF_427;F)V
+		ARG 0 data
+		ARG 1 amplitude
+	METHOD method_1485 applyShake (Lcom/boehmod/blockfront/unnamed/BF_427;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/phys/Vec3;F)V
+		ARG 0 data
+		ARG 1 player
+		ARG 2 center
+		ARG 3 radius
+	METHOD method_1486 applyInstruction (Ljava/lang/String;)V
+		ARG 0 instr

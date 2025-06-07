@@ -1,0 +1,32 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1060 com/boehmod/blockfront/util/SerializationUtils
+	FIELD field_6396 ITEM_CODEC Lnet/minecraft/network/codec/StreamCodec;
+	METHOD method_4516 readPlayerGameData (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/common/player/b;
+		ARG 0 buf
+	METHOD method_4517 readBlockBulletCollisions (Lnet/minecraft/network/FriendlyByteBuf;)Lit/unimi/dsi/fastutil/objects/ObjectList;
+		ARG 0 buf
+	METHOD method_4518 writePlayerGameData (Lnet/minecraft/network/FriendlyByteBuf;Lcom/boehmod/blockfront/common/player/b;)V
+		ARG 0 buf
+		ARG 1 data
+	METHOD method_4519 writeBlockBulletCollisions (Lnet/minecraft/network/FriendlyByteBuf;Ljava/util/List;)V
+		ARG 0 buf
+		ARG 1 collisions
+	METHOD method_4520 readSoundEvent (Lnet/minecraft/network/RegistryFriendlyByteBuf;)Lnet/minecraft/core/Holder;
+		ARG 0 buf
+	METHOD method_4521 readItemStack (Lnet/minecraft/network/RegistryFriendlyByteBuf;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 buf
+	METHOD method_4522 writeSoundEvent (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/core/Holder;)V
+		ARG 0 buf
+		ARG 1 holder
+	METHOD method_4523 writeItemStack (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 buf
+		ARG 1 itemStack
+	METHOD method_4524 readLivingBulletCollisions (Lnet/minecraft/network/FriendlyByteBuf;)Lit/unimi/dsi/fastutil/objects/ObjectList;
+		ARG 0 buf
+	METHOD method_4525 writeLivingBulletCollisions (Lnet/minecraft/network/FriendlyByteBuf;Ljava/util/List;)V
+		ARG 0 buf
+		ARG 1 collisions
+	METHOD method_5533 readItem (Lnet/minecraft/network/RegistryFriendlyByteBuf;)Lnet/minecraft/core/Holder;
+		ARG 0 buf
+	METHOD method_5534 writeItem (Lnet/minecraft/network/RegistryFriendlyByteBuf;Lnet/minecraft/core/Holder;)V
+		ARG 0 buf
+		ARG 1 holder

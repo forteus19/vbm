@@ -1,1 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_953 com/boehmod/blockfront/common/gun/GunReloadConfig
+	METHOD method_3952 getReloadTime (Lcom/boehmod/blockfront/unnamed/BF_993;Lnet/minecraft/world/item/ItemStack;)F
+		ARG 1 item
+		ARG 2 itemStack
+	METHOD method_3953 addReloadAnimations (Lcom/boehmod/blockfront/unnamed/BF_993;Lnet/minecraft/world/item/ItemStack;Ljava/util/List;)V
+		ARG 1 item
+		ARG 2 itemStack
+		ARG 3 animations
+	METHOD method_3954 hasEmptyDuration ()Z

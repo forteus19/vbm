@@ -1,3 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1151 com/boehmod/blockfront/client/particle/BFParticleManager
 	FIELD field_6500 instance Lcom/boehmod/blockfront/unnamed/BF_1151;
+	METHOD method_5584 clearAll ()V
 	METHOD method_5586 getInstance ()Lcom/boehmod/blockfront/unnamed/BF_1151;
+	METHOD tick tick ()V

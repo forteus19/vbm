@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_779 com/boehmod/blockfront/common/match/kill/KillSectionRegistry
+	FIELD field_3318 ID_TO_CLASS Lit/unimi/dsi/fastutil/bytes/Byte2ObjectMap;
+	FIELD field_3319 CLASS_TO_ID Lit/unimi/dsi/fastutil/objects/Object2ByteMap;
+	METHOD method_3227 registerSection (BLjava/lang/Class;)V

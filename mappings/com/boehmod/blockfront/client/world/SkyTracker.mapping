@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_437 com/boehmod/blockfront/client/world/SkyTracker
+	FIELD field_2016 percentage F
+	FIELD field_2017 timer I
+	METHOD method_1526 update (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;)V
+		ARG 1 minecraft
+		ARG 2 level
+		ARG 3 player
+	METHOD method_1527 getPercentage ()F

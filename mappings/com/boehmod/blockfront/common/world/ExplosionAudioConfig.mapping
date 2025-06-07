@@ -1,1 +1,17 @@
 CLASS com/boehmod/blockfront/unnamed/BF_674 com/boehmod/blockfront/common/world/ExplosionAudioConfig
+	FIELD field_2808 ambienceIndoors Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2809 ambienceIndoorsDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2810 explodeClose Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2811 explodeCloseIndoors Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2812 explodeCloseStereo Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2813 explodeDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2814 explodeDistantIndoors Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2815 bass Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2816 ambience Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2817 ambienceDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2818 nose Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2819 noseDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_2578 bass (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_674;
+	METHOD method_2579 nose (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_674;
+	METHOD method_2580 ambience (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_674;
+	METHOD method_2581 explode (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_674;

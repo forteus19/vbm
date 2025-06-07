@@ -2,9 +2,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2544 corpseManager Lcom/boehmod/blockfront/unnamed/BF_3;
 	FIELD field_2545 discordManager Lcom/boehmod/blockfront/unnamed/BF_19;
 	FIELD field_2547 particleManager Lcom/boehmod/blockfront/unnamed/BF_1151;
+	FIELD field_2548 playerRendererChecker Lcom/boehmod/blockfront/unnamed/BF_406;
 	FIELD field_2549 skinFetcher Lcom/boehmod/blockfront/unnamed/BF_410;
+	FIELD field_2550 skyTracker Lcom/boehmod/blockfront/unnamed/BF_437;
 	FIELD field_2551 musicManager Lcom/boehmod/blockfront/unnamed/BF_438;
 	FIELD field_2552 versionChecker Lcom/boehmod/blockfront/unnamed/BF_449;
+	FIELD field_2553 matchMaking Lcom/boehmod/blockfront/unnamed/BF_550;
 	FIELD field_2554 cinematics Lcom/boehmod/blockfront/unnamed/BF_599;
 	FIELD field_2555 currentGame Lcom/boehmod/blockfront/unnamed/BF_677;
 	FIELD field_2556 gameRenderer Lcom/boehmod/blockfront/unnamed/BF_679;
@@ -15,13 +18,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2562 CONNECTION_LOST_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2563 SAVING_LEVEL_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2565 dataPath Ljava/lang/String;
+	FIELD field_6419 environmentManager Lcom/boehmod/blockfront/unnamed/BF_760;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_2224 getCorpseManager ()Lcom/boehmod/blockfront/unnamed/BF_3;
 	METHOD method_2226 getParticleManager ()Lcom/boehmod/blockfront/unnamed/BF_1151;
+	METHOD method_2228 getPlayerRendererChecker ()Lcom/boehmod/blockfront/unnamed/BF_406;
 	METHOD method_2229 getSkinFetcher ()Lcom/boehmod/blockfront/unnamed/BF_410;
+	METHOD method_2230 getSkyTracker ()Lcom/boehmod/blockfront/unnamed/BF_437;
 	METHOD method_2231 getMusicManager ()Lcom/boehmod/blockfront/unnamed/BF_438;
 	METHOD method_2232 getVersionChecker ()Lcom/boehmod/blockfront/unnamed/BF_449;
+	METHOD method_2233 getMatchMaking ()Lcom/boehmod/blockfront/unnamed/BF_550;
 	METHOD method_2234 getCinematics ()Lcom/boehmod/blockfront/unnamed/BF_599;
 	METHOD method_2235 getCurrentGame ()Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD method_2236 getGameRenderer ()Lcom/boehmod/blockfront/unnamed/BF_679;
@@ -31,6 +38,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_2242 showConnectionToast (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;)V
 		ARG 1 fromStatus
 		ARG 2 toStatus
+	METHOD method_2249 disconnect (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 minecraft
+		ARG 2 level
+	METHOD method_2250 updateLevel (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;)V
+		ARG 1 minecraft
+		ARG 2 level
+		ARG 3 player
 	METHOD method_2251 update (Lnet/minecraft/client/Minecraft;Ljava/util/Random;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_271;F)V
 		ARG 1 minecraft
 		ARG 2 random

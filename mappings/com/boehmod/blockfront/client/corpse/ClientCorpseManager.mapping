@@ -10,11 +10,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_3 com/boehmod/blockfront/client/corpse/C
 		ARG 5 player
 		ARG 6 poseStack
 		ARG 7 deltaTick
+	METHOD method_20 update (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 	METHOD method_21 ragdollEntity (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_1049$BF_1050;Lnet/minecraft/world/entity/LivingEntity;F)Lcom/boehmod/blockfront/unnamed/BF_2;
 		ARG 1 minecraft
 		ARG 2 data
 		ARG 3 entity
 		ARG 4 delta
+	METHOD method_22 spawnCorpse (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_1049$BF_1050;Ljava/util/Random;)V
+		ARG 1 minecraft
+		ARG 2 level
+		ARG 3 player
+		ARG 4 entity
+		ARG 5 data
+		ARG 6 random
 	METHOD method_23 addChunkSection (Lnet/minecraft/world/level/chunk/LevelChunkSection;III)V
 		ARG 1 section
 	METHOD method_26 instantiateCollider (Lnet/minecraft/client/multiplayer/ClientLevel;)V

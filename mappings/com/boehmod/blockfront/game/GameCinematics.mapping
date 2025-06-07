@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_599 com/boehmod/blockfront/game/GameCinematics
+	FIELD field_2510 isSequencePlaying Z
+	FIELD field_2518 manager Lcom/boehmod/blockfront/unnamed/BF_606;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;)V
+		ARG 1 manager
+	METHOD method_2194 isSequencePlaying ()Z
+	METHOD method_2208 update (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V

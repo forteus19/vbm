@@ -1,4 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_746 com/boehmod/blockfront/game/map/effect/ConditionedMapEffect
-	FIELD field_3198 effectId Ljava/lang/String;
-	FIELD field_3199 conditionType Lcom/boehmod/blockfront/unnamed/BF_748;
-	METHOD method_3122 onConditionMet (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_677;)V

@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1037 com/boehmod/blockfront/common/net/packet/BFPopupMessagePacket
+	FIELD field_4242 popup Lcom/boehmod/blockfront/unnamed/BF_921;
+	METHOD method_4394 getPopup ()Lcom/boehmod/blockfront/unnamed/BF_921;

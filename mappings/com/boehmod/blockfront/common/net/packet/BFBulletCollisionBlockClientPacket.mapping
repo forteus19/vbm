@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1006 com/boehmod/blockfront/common/net/packet/BFBulletCollisionBlockClientPacket
+	METHOD method_4293 getCollisions ()Ljava/util/List;

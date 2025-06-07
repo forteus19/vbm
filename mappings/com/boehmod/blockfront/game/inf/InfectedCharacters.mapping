@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_836 com/boehmod/blockfront/game/inf/InfectedCharacters
+	FIELD field_3446 ENTRIES Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+	METHOD method_3461 get (I)Lcom/boehmod/blockfront/unnamed/BF_835;
+		ARG 0 id
+	METHOD method_3462 (Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;)V
+		ARG 0 map

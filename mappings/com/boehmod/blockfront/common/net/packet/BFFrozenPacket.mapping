@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1030 com/boehmod/blockfront/common/net/packet/BFFrozenPacket
+	FIELD field_4220 pose Lcom/boehmod/blockfront/unnamed/BF_692;
+	METHOD method_4379 getPose ()Lcom/boehmod/blockfront/unnamed/BF_692;

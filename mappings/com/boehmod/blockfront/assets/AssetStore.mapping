@@ -18,5 +18,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_459 com/boehmod/blockfront/assets/AssetS
 		ARG 1 assetClass
 		ARG 2 name
 		ARG 3 factory
+	METHOD method_1636 testAll (Lnet/minecraft/commands/CommandSource;)V
+		ARG 1 source
 	METHOD method_1637 loadFromDisk ()V
 	METHOD method_1639 getInstance ()Lcom/boehmod/blockfront/unnamed/BF_459;

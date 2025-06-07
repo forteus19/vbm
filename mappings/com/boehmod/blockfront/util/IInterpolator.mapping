@@ -1,2 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_601 com/boehmod/blockfront/util/IInterpolator
-	METHOD interpolate interpolate (F)F

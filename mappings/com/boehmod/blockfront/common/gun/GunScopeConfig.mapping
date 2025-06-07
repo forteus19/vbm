@@ -1,2 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_949 com/boehmod/blockfront/common/gun/GunScopeConfig
+	FIELD field_3842 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_949;
 	CLASS BF_950 Type

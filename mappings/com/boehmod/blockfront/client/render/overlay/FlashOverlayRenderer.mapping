@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_421 com/boehmod/blockfront/client/render/overlay/FlashOverlayRenderer
+	METHOD method_1473 renderFlash (Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+		ARG 0 graphiics
+		ARG 1 width
+		ARG 2 height
+		ARG 3 time

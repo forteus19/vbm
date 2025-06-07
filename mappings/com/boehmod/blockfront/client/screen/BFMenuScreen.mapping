@@ -1,5 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen/BFMenuScreen
 	FIELD field_1044 splashText Ljava/lang/String;
+	FIELD field_1045 renderers Ljava/util/List;
 	FIELD field_1049 RETURN_ICON Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1050 LOGO Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1051 BACKSHADOW Lnet/minecraft/resources/ResourceLocation;

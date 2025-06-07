@@ -1,14 +1,26 @@
 CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/AbstractGameRenderer
+	FIELD field_2862 killMessage Lcom/boehmod/blockfront/unnamed/BF_922;
+	FIELD field_2863 scoreboardHeader Lcom/boehmod/blockfront/unnamed/BF_933;
+	FIELD field_2865 killFeedEntries Ljava/util/List;
+	FIELD field_2867 popups Ljava/util/List;
 	FIELD field_2869 STOPWATCH_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2870 PLAYER_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2871 FRIENDS_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2874 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD method_2677 getScoreboard ()Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
+	METHOD method_2680 getKillMessage ()Lcom/boehmod/blockfront/unnamed/BF_922;
+	METHOD method_2689 addPopup (Lcom/boehmod/blockfront/unnamed/BF_921;)V
+		ARG 1 popup
+	METHOD method_2690 setKillMessage (Lcom/boehmod/blockfront/unnamed/BF_922;)V
+		ARG 1 killMessage
 	METHOD method_2694 renderDebugInfo (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;)V
 		ARG 1 poseStack
 		ARG 2 graphics
 		ARG 3 font
 		ARG 4 camera
+	METHOD method_2700 addKillFeedEntry (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_774;)V
+		ARG 1 minecraft
+		ARG 2 entry
 	CLASS BF_680 Scoreboard
 		FIELD field_2905 entries Ljava/util/Map;
 		METHOD method_2746 column (Ljava/lang/String;Lorg/apache/commons/lang3/function/TriFunction;)Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;

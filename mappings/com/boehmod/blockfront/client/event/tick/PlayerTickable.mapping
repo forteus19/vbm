@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_35 com/boehmod/blockfront/client/event/tick/PlayerTickable
+	FIELD field_145 FLASH_TIMER F
+	FIELD field_146 FLASH_TIMER_PREV F

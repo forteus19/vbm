@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_774 com/boehmod/blockfront/common/match/kill/KillFeedEntry
+	METHOD method_3219 detectType (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft

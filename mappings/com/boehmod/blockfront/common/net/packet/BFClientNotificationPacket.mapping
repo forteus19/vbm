@@ -1,1 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_967 com/boehmod/blockfront/common/net/packet/BFClientNotificationPacket
+	METHOD method_4042 getType ()Lcom/boehmod/blockfront/unnamed/BF_220;
+	METHOD method_4045 getTitle ()Lnet/minecraft/network/chat/Component;
+	METHOD method_4046 getMessage ()Lnet/minecraft/network/chat/Component;

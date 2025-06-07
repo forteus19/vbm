@@ -9,6 +9,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2830 stageManager Lcom/boehmod/blockfront/unnamed/BF_939;
 	FIELD field_2831 name Ljava/lang/String;
 	FIELD field_2832 type Ljava/lang/String;
+	FIELD field_2834 dataHandler Lcom/boehmod/blockfront/common/player/c;
 	FIELD field_2836 playerStatData Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
 	FIELD field_2837 hasPlayerLimit Z
 	FIELD field_2838 shouldRestart Z
@@ -24,11 +25,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2583 getName ()Ljava/lang/String;
 	METHOD method_2584 getType ()Ljava/lang/String;
 	METHOD method_2588 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
+	METHOD method_2589 createGameManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
 	METHOD method_2591 getPlayerStatus ()Lcom/boehmod/blockfront/unnamed/BF_685;
 	METHOD method_2592 getDominatingManager ()Lcom/boehmod/blockfront/unnamed/BF_767;
 	METHOD method_2594 getMapVoteManager ()Lcom/boehmod/blockfront/unnamed/BF_892;
 	METHOD method_2595 getMap ()Lcom/boehmod/blockfront/unnamed/BF_927;
 	METHOD method_2596 getAlliesDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
+	METHOD method_2597 createStaging ()Lcom/boehmod/blockfront/unnamed/BF_938;
 	METHOD method_2598 getStageManager ()Lcom/boehmod/blockfront/unnamed/BF_939;
 	METHOD method_2602 requestSupplyDrops (Lcom/boehmod/blockfront/unnamed/BF_445;ILjava/util/Set;)V
 		ARG 1 manager
@@ -49,6 +52,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 4 uuid
 	METHOD method_2618 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_457;)V
 		ARG 1 mapInstance
+	METHOD method_2619 createGameRenderer (Lcom/boehmod/blockfront/unnamed/BF_606;)Lcom/boehmod/blockfront/unnamed/BF_679;
+		ARG 1 manager
 	METHOD method_2621 setPlayerStatus (Lcom/boehmod/blockfront/unnamed/BF_685;)V
 		ARG 1 playerStatus
 	METHOD method_2623 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_927;)V

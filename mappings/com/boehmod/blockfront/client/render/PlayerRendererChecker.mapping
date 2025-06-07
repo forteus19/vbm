@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_406 com/boehmod/blockfront/client/render/PlayerRendererChecker
+	FIELD field_1854 checked Z
+	METHOD method_1429 update (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/renderer/ItemInHandRenderer;)V
+		ARG 1 minecraft
+		ARG 2 font
+		ARG 3 itemRenderer
+	METHOD method_1430 queueCheck ()V

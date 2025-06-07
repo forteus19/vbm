@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_430 com/boehmod/blockfront/client/settings/BFClientSettingSlider
+	FIELD field_1934 value F
+	METHOD method_1505 getValue ()F

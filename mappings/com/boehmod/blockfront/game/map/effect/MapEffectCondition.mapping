@@ -1,6 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_748 com/boehmod/blockfront/game/map/effect/MapEffectCondition
-	FIELD condition condition Ljava/util/function/Function;
-	METHOD <init> (Ljava/lang/String;ILjava/util/function/Function;)V
-		ARG 3 condition
-	METHOD lambda$static$0 (Lcom/boehmod/blockfront/unnamed/BF_677;)Ljava/lang/Boolean;
-		ARG 0 game
