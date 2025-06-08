@@ -1,0 +1,15 @@
+CLASS com/boehmod/blockfront/unnamed/BF_63 com/boehmod/blockfront/client/event/BFInteractionSubscriber
+	METHOD method_406 onEntityInteract (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent$EntityInteract;)V
+		ARG 0 event
+	METHOD method_407 onLeftClickBlock (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent$LeftClickBlock;)V
+		ARG 0 event
+	METHOD method_408 onLeftClickEmpty (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent$LeftClickEmpty;)V
+		ARG 0 event
+	METHOD method_409 onRightClickBlock (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent$RightClickBlock;)V
+		ARG 0 event
+	METHOD method_410 onRightClickEmpty (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent$RightClickEmpty;)V
+		ARG 0 event
+	METHOD method_411 onRightClickItem (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent$RightClickItem;)V
+		ARG 0 event
+	METHOD method_412 onPlayerInteract (Lnet/neoforged/neoforge/event/entity/player/PlayerInteractEvent;)V
+		ARG 0 event

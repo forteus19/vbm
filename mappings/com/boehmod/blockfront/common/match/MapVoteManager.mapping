@@ -1,4 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_892 com/boehmod/blockfront/common/match/MapVoteManager
+	FIELD field_3578 entries Ljava/util/List;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
 		ARG 1 game
+	METHOD method_3715 getEntries ()Ljava/util/List;
 	METHOD method_3719 startVoteSequence (Lcom/boehmod/blockfront/unnamed/BF_445;)V

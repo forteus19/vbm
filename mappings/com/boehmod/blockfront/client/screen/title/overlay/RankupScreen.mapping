@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_188 com/boehmod/blockfront/client/screen/title/overlay/RankupScreen
+	FIELD field_1072 newRank Z

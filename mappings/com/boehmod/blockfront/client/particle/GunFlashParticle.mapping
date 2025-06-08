@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_301 com/boehmod/blockfront/client/particle/GunFlashParticle
+	CLASS BF_302 Provider

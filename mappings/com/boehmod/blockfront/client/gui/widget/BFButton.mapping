@@ -2,6 +2,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_53 com/boehmod/blockfront/client/gui/wid
 	FIELD field_288 texture Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_291 displayType Lcom/boehmod/blockfront/unnamed/BF_53$BF_54;
 	FIELD field_292 alignment Lcom/boehmod/blockfront/unnamed/BF_53$BF_55;
+	FIELD field_293 textStyle Lcom/boehmod/blockfront/unnamed/BF_53$BF_56;
 	FIELD field_297 width I
 	FIELD field_298 height I
 	METHOD method_370 size (II)Lcom/boehmod/blockfront/unnamed/BF_53;
@@ -9,9 +10,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_53 com/boehmod/blockfront/client/gui/wid
 		ARG 2 height
 	METHOD method_372 displayType (Lcom/boehmod/blockfront/unnamed/BF_53$BF_54;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 displayType
+	METHOD method_373 alignment (Lcom/boehmod/blockfront/unnamed/BF_53$BF_55;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 alignment
+	METHOD method_374 textStyle (Lcom/boehmod/blockfront/unnamed/BF_53$BF_56;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 textStyle
 	METHOD method_384 texture (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 texture
 	METHOD method_394 size (I)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 size
 	CLASS BF_54 DisplayType
 	CLASS BF_55 Alignment
+	CLASS BF_56 TextStyle

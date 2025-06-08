@@ -1,3 +1,27 @@
 CLASS com/boehmod/blockfront/unnamed/BF_849 com/boehmod/blockfront/game/ttt/TroubleTownGame
+	FIELD field_3464 weaponSpawns Ljava/util/List;
 	FIELD field_3465 ITEM_DROPS Ljava/util/List;
+	FIELD field_3466 LOADOUT Lcom/boehmod/blockfront/unnamed/BF_759;
 	FIELD field_3467 command Lcom/boehmod/blockfront/unnamed/BF_462;
+	FIELD field_3470 activeRandomatEvents Lit/unimi/dsi/fastutil/objects/ObjectList;
+	METHOD method_3517 getPlayerRole (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_859;
+		ARG 1 player
+	METHOD method_3518 setRoleStat (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_859;)V
+		ARG 1 player
+		ARG 2 role
+	METHOD method_3519 playerRoleEquals (Ljava/util/UUID;Ljava/lang/String;)Z
+		ARG 1 player
+		ARG 2 roleKey
+	METHOD method_3520 activateRandomat (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 player
+		ARG 2 level
+		ARG 3 players
+	METHOD method_3522 assignRoles (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 level
+		ARG 2 players
+	METHOD method_3528 isPlayerInnocent (Ljava/util/UUID;)Z
+		ARG 1 palyer
+	METHOD method_3529 isPlayerTraitor (Ljava/util/UUID;)Z
+		ARG 1 player
+	METHOD method_3530 isPlayerDetective (Ljava/util/UUID;)Z
+		ARG 1 player

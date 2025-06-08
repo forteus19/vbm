@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_230 com/boehmod/blockfront/client/geo/model/GenericGeoModel
+	METHOD getAnimationResource (Lsoftware/bernie/geckolib/animatable/GeoAnimatable;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 1 item
+	METHOD getModelResource (Lsoftware/bernie/geckolib/animatable/GeoAnimatable;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 1 item
+	METHOD getTextureResource (Lsoftware/bernie/geckolib/animatable/GeoAnimatable;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 1 item

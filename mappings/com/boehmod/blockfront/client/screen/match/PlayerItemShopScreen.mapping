@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_158 com/boehmod/blockfront/client/screen/match/PlayerItemShopScreen
+	FIELD field_819 game Lcom/boehmod/blockfront/unnamed/BF_818;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_818;)V
+		ARG 1 game
+	METHOD method_652 buyItem (I)V
+		ARG 1 index

@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_69 com/boehmod/blockfront/client/event/BFViewportSubscriber
+	METHOD method_420 onComputeFogColor (Lnet/neoforged/neoforge/client/event/ViewportEvent$ComputeFogColor;)V
+		ARG 0 event
+	METHOD method_421 onRenderFog (Lnet/neoforged/neoforge/client/event/ViewportEvent$RenderFog;)V
+		ARG 0 event

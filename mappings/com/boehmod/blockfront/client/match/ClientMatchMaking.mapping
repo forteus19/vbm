@@ -1,5 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_550 com/boehmod/blockfront/client/match/ClientMatchMaking
 	FIELD field_2275 address Ljava/net/InetSocketAddress;
+	FIELD field_2279 searching Z
 	FIELD field_2280 inMatch Z
 	METHOD method_1904 (Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/Minecraft;Lcom/boehmod/bflib/cloud/common/mm/MatchParty;)V
 		ARG 2 party
@@ -8,8 +9,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_550 com/boehmod/blockfront/client/match/
 		ARG 2 manager
 		ARG 3 address
 	METHOD method_1906 update (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;)V
+	METHOD method_1907 setSearching (Z)V
+		ARG 1 searching
+	METHOD method_1908 isSearching ()Z
 	METHOD method_1909 getFadeAlpha (F)F
 		ARG 1 delta
+	METHOD method_1911 reset ()V
 	METHOD method_1913 search (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;)V
 		ARG 1 minecraft
 		ARG 2 manager

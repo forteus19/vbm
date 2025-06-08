@@ -1,14 +1,22 @@
 CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/AbstractGameRenderer
+	FIELD field_2858 scoreboard Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
+	FIELD field_2861 summaryManager Lcom/boehmod/blockfront/unnamed/BF_890;
 	FIELD field_2862 killMessage Lcom/boehmod/blockfront/unnamed/BF_922;
 	FIELD field_2863 scoreboardHeader Lcom/boehmod/blockfront/unnamed/BF_933;
 	FIELD field_2865 killFeedEntries Ljava/util/List;
+	FIELD field_2866 gameElements Ljava/util/List;
 	FIELD field_2867 popups Ljava/util/List;
+	FIELD field_2868 dataHandler Lcom/boehmod/blockfront/unnamed/BF_273;
 	FIELD field_2869 STOPWATCH_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2870 PLAYER_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2871 FRIENDS_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2874 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD method_2677 getScoreboard ()Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
+	METHOD method_2679 getSummaryManager ()Lcom/boehmod/blockfront/unnamed/BF_890;
 	METHOD method_2680 getKillMessage ()Lcom/boehmod/blockfront/unnamed/BF_922;
+	METHOD method_2683 getSummaryScreens (Lcom/boehmod/blockfront/unnamed/BF_677;Z)Ljava/util/Collection;
+		ARG 1 game
+		ARG 2 onlyVote
 	METHOD method_2689 addPopup (Lcom/boehmod/blockfront/unnamed/BF_921;)V
 		ARG 1 popup
 	METHOD method_2690 setKillMessage (Lcom/boehmod/blockfront/unnamed/BF_922;)V
@@ -21,6 +29,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	METHOD method_2700 addKillFeedEntry (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_774;)V
 		ARG 1 minecraft
 		ARG 2 entry
+	METHOD method_2702 update (Lnet/minecraft/client/Minecraft;Ljava/util/Random;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_271;Ljava/util/Set;F)V
+	METHOD method_2716 getSummaryScreens (Z)Ljava/util/Collection;
+	METHOD method_2721 getScoreStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
+	METHOD method_2741 advanceSummary (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD stop stop ()V
 	CLASS BF_680 Scoreboard
 		FIELD field_2905 entries Ljava/util/Map;
 		METHOD method_2746 column (Ljava/lang/String;Lorg/apache/commons/lang3/function/TriFunction;)Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;

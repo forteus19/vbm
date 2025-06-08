@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_77 com/boehmod/blockfront/client/event/BFRenderLivingSubscriber
+	METHOD method_431 onRenderLivingPre (Lnet/neoforged/neoforge/client/event/RenderLivingEvent$Pre;)V
+		ARG 0 event

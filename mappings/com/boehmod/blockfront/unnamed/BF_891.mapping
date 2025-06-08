@@ -1,5 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_891
-	METHOD read read (Lio/netty/buffer/ByteBuf;)V
-	METHOD readFromFDS readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-	METHOD write write (Lio/netty/buffer/ByteBuf;)V
-	METHOD writeToFDS writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V

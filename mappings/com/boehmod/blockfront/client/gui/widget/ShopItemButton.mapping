@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_157 com/boehmod/blockfront/client/gui/widget/ShopItemButton
+	FIELD field_818 shopItem Lcom/boehmod/blockfront/unnamed/BF_755;

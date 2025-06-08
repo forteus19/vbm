@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_224 com/boehmod/blockfront/client/render/model/BotModel
+	METHOD method_1012 createMesh (Lnet/minecraft/client/model/geom/builders/CubeDeformation;ZF)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+		ARG 0 deformation
+		ARG 1 hasRightArm
+		ARG 2 yOffset

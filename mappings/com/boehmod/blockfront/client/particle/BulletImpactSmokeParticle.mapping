@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_303 com/boehmod/blockfront/client/particle/BulletImpactSmokeParticle
+	CLASS BF_304 Provider

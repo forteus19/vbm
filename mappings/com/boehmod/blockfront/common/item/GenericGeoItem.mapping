@@ -1,1 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_895 com/boehmod/blockfront/common/item/GenericGeoItem
+	FIELD field_3585 id Ljava/lang/String;
+	FIELD field_3586 texture Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3587 animation Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3588 model Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_3724 getTexture ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_3725 getAnimation ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_3726 getModel ()Lnet/minecraft/resources/ResourceLocation;

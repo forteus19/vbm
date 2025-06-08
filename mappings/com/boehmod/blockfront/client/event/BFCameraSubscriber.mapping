@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_86 com/boehmod/blockfront/client/event/BFCameraSubscriber
+	METHOD method_454 onComputeFovModifier (Lnet/neoforged/neoforge/client/event/ComputeFovModifierEvent;)V
+		ARG 0 event
+	METHOD method_455 onComputeCameraAngles (Lnet/neoforged/neoforge/client/event/ViewportEvent$ComputeCameraAngles;)V
+		ARG 0 event

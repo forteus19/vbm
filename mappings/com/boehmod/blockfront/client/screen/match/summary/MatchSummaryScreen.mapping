@@ -1,1 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_153 com/boehmod/blockfront/client/screen/match/summary/MatchSummaryScreen
+	FIELD field_789 isLastSummary Z
+	FIELD field_792 timer I
+	FIELD field_795 endTime I
+	METHOD method_644 setIsLastSummary (Z)Lcom/boehmod/blockfront/unnamed/BF_153;
+		ARG 1 isLastSummaru
+	METHOD method_648 isFinished ()Z

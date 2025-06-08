@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_85 com/boehmod/blockfront/client/event/BFToastSubscriber
+	FIELD field_406 UNSECURE_SERVER_TITLE Ljava/lang/String;
+	METHOD method_453 onToastAdd (Lnet/neoforged/neoforge/client/event/ToastAddEvent;)V
+		ARG 0 event

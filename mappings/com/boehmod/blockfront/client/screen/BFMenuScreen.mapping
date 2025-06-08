@@ -17,4 +17,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen
 	FIELD field_1062 BACKSHADOW_WHITE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1063 CORNERSHADOW Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1064 SPLASHES Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_770 openUrl (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
+		ARG 0 minecraft
+		ARG 1 url
 	METHOD method_773 getSplashText ()Ljava/lang/String;

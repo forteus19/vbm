@@ -45,6 +45,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2607 onUpdate (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 manager
 		ARG 2 level
+	METHOD method_2608 moveLobby (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 game
+	METHOD method_2610 moveLobby (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Ljava/util/UUID;)Z
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 otherGame
 	METHOD method_2612 playerSwitchTeamInternal (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
 		ARG 1 manager
 		ARG 2 level
@@ -80,8 +88,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 uuid
 	METHOD method_2657 writeAllFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
+	METHOD method_2661 getBannedClasses ()Ljava/util/Set;
 	METHOD method_2662 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
+	METHOD method_2665 getErrorTypes ()Ljava/util/Set;
 	METHOD method_2666 getUUID ()Ljava/util/UUID;
 	METHOD method_2667 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
@@ -98,3 +108,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD stop stop ()V
 	METHOD write write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
+	CLASS BF_678 ErrorType

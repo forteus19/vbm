@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_890 com/boehmod/blockfront/game/GameSummaryManager
+	FIELD field_3568 screens Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_3569 renderer Lcom/boehmod/blockfront/unnamed/BF_679;
+	FIELD field_3570 hasScreens Z
+	FIELD field_3571 playerExp I
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_679;)V
+		ARG 1 manager
+		ARG 2 renderer
+	METHOD method_3702 addScreens (Z)V
+		ARG 1 onlyVote
+	METHOD method_3703 updateScreens (Z)V
+		ARG 1 onlyVote
+	METHOD method_3704 getPlayerExp ()I
+	METHOD method_3705 hasScreens ()Z
+	METHOD method_3706 advanceScreen (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft

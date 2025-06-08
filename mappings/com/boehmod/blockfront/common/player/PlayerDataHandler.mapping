@@ -21,6 +21,8 @@ CLASS com/boehmod/blockfront/common/player/c com/boehmod/blockfront/common/playe
 	METHOD method_872 isPlayerInGame (Ljava/util/UUID;)Z
 		ARG 1 uuid
 	METHOD method_873 invalidateCache ()V
+	METHOD method_874 dataCacheSize ()I
+	METHOD method_875 profileCacheSize ()I
 	METHOD method_877 removeData (Ljava/util/UUID;)V
 		ARG 1 playerUUID
 	METHOD method_878 removeCloudData (Ljava/util/UUID;)V

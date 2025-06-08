@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_40 com/boehmod/blockfront/client/event/tick/MenuMusicTickable
+	FIELD field_189 MUSIC Lcom/boehmod/blockfront/unnamed/BF_395;
+	FIELD field_190 MUSIC_SEARCHING Lcom/boehmod/blockfront/unnamed/BF_396;
+	FIELD field_191 play Z

@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_64 com/boehmod/blockfront/client/event/BFInputSubscriber
+	METHOD method_413 onInputKey (Lnet/neoforged/neoforge/client/event/InputEvent$Key;)V
+		ARG 0 event

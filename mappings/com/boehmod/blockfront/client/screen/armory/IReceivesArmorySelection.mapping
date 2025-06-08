@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_244 com/boehmod/blockfront/client/screen/armory/IReceivesArmorySelection
+	METHOD method_1072 acceptSelected (Ljava/util/List;)V
+		ARG 1 items

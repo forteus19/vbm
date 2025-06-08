@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_319 com/boehmod/blockfront/client/particle/GrenadeFlashParticle
+	CLASS BF_320 Provider

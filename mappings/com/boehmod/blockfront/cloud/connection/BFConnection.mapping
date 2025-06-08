@@ -18,32 +18,16 @@ CLASS com/boehmod/blockfront/cloud/connection/ModConnection com/boehmod/blockfro
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_475;Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 details
 		ARG 2 manager
-	METHOD addIncomingPacket addIncomingPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)V
+	METHOD addIncomingPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)V
 		ARG 1 packet
-	METHOD attemptConnection attemptConnection ()V
-	METHOD bumpReconnectTick bumpReconnectTick ()V
-	METHOD disconnect disconnect (Ljava/lang/String;Z)V
-	METHOD getHardwareId getHardwareId ()[B
-	METHOD getLoginSendTimer getLoginSendTimer ()I
 	METHOD getPlayerCloudData getPlayerCloudData ()Lcom/boehmod/bflib/cloud/common/player/AbstractPlayerCloudData;
-	METHOD getReconnectTickCount getReconnectTickCount ()I
-	METHOD getUsername getUsername ()Ljava/lang/String;
-	METHOD getUUID getUUID ()Ljava/util/UUID;
-	METHOD getVersion getVersion ()Ljava/lang/String;
-	METHOD getVersionHash getVersionHash ()Ljava/lang/String;
 	METHOD lambda$new$0 (Ljava/lang/Runnable;)Ljava/lang/Thread;
 		ARG 0 runnable
-	METHOD onConnectionStatusChanged onConnectionStatusChanged (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatusContext;)V
-	METHOD onIllegalPacket onIllegalPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;Lcom/boehmod/bflib/cloud/common/ConnectionType;Lcom/boehmod/bflib/cloud/common/ConnectionType;)V
+	METHOD onIllegalPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;Lcom/boehmod/bflib/cloud/common/ConnectionType;Lcom/boehmod/bflib/cloud/common/ConnectionType;)V
 		ARG 1 packet
 		ARG 2 typeActual
 		ARG 3 typeExpected
-	METHOD onUpdate onUpdate ()V
-	METHOD sendCredentials sendCredentials ()V
-	METHOD sendLogin sendLogin ()V
-	METHOD sendPacket sendPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)V
+	METHOD sendPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)V
 		ARG 1 packet
-	METHOD setStatus setStatus (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatusContext;)V
-	METHOD shouldHandlePacket shouldHandlePacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)Z
+	METHOD shouldHandlePacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)Z
 		ARG 1 packet
-	METHOD shutdown shutdown ()V

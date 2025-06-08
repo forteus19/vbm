@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_315 com/boehmod/blockfront/client/particle/FallingSnowParticle
+	CLASS BF_316 Provider

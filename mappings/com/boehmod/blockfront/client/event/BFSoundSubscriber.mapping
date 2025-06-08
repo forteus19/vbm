@@ -1,0 +1,20 @@
+CLASS com/boehmod/blockfront/unnamed/BF_82 com/boehmod/blockfront/client/event/BFSoundSubscriber
+	METHOD method_438 (Lnet/minecraft/resources/ResourceKey;)Ljava/lang/String;
+		ARG 0 key
+	METHOD method_439 (Lnet/minecraft/sounds/SoundEvent;)Ljava/lang/String;
+		ARG 0 sound
+	METHOD method_440 onPlaySoundSource (Lnet/neoforged/neoforge/client/event/sound/PlaySoundSourceEvent;)V
+		ARG 0 event
+	METHOD method_441 onPlayStreamingSource (Lnet/neoforged/neoforge/client/event/sound/PlayStreamingSourceEvent;)V
+		ARG 0 event
+	METHOD method_442 onPlaySoundAtEntity (Lnet/neoforged/neoforge/event/PlayLevelSoundEvent$AtEntity;)V
+		ARG 0 event
+	METHOD method_443 onPlaySoundAtPosition (Lnet/neoforged/neoforge/event/PlayLevelSoundEvent$AtPosition;)V
+		ARG 0 event
+	METHOD method_444 setStepVolume (Lnet/neoforged/neoforge/event/PlayLevelSoundEvent;Ljava/lang/String;)V
+		ARG 0 event
+		ARG 1 soundId
+	METHOD method_445 (Lnet/minecraft/resources/ResourceKey;)Ljava/lang/String;
+		ARG 0 key
+	METHOD method_446 (Lnet/minecraft/sounds/SoundEvent;)Ljava/lang/String;
+		ARG 0 sound

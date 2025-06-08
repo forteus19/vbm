@@ -1,2 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_2 com/boehmod/blockfront/client/corpse/render/RagdollRenderer
 	FIELD field_9 parts Ljava/util/List;
+	METHOD method_13 reset ()V

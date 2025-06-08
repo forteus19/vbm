@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_75 com/boehmod/blockfront/client/event/BFRenderHighlightSubscriber
+	METHOD method_427 onRenderBlockHighlight (Lnet/neoforged/neoforge/client/event/RenderHighlightEvent$Block;)V
+		ARG 0 event

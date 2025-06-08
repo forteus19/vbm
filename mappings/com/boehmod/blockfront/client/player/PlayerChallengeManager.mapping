@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_203 com/boehmod/blockfront/client/player/PlayerChallengeManager
+	METHOD method_929 update (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_388;)V

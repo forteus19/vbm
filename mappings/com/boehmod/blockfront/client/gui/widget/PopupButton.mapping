@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_48 com/boehmod/blockfront/client/gui/widget/PopupButton
+	FIELD field_243 onPress Lnet/minecraft/client/gui/components/Button$OnPress;
+	FIELD field_244 label Lnet/minecraft/network/chat/Component;
+	FIELD field_245 tip Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)V
+		ARG 1 label
+		ARG 2 tip
+		ARG 3 onPress
+	METHOD method_348 getOnPress ()Lnet/minecraft/client/gui/components/Button$OnPress;
+	METHOD method_349 getLabel ()Lnet/minecraft/network/chat/Component;
+	METHOD method_350 getTip ()Lnet/minecraft/network/chat/Component;

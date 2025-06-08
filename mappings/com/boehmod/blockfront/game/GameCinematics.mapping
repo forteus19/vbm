@@ -1,7 +1,15 @@
 CLASS com/boehmod/blockfront/unnamed/BF_599 com/boehmod/blockfront/game/GameCinematics
+	FIELD field_2505 sequence Lcom/boehmod/blockfront/unnamed/BF_597;
+	FIELD field_2509 camera Lcom/boehmod/blockfront/unnamed/BF_642;
 	FIELD field_2510 isSequencePlaying Z
 	FIELD field_2518 manager Lcom/boehmod/blockfront/unnamed/BF_606;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;)V
 		ARG 1 manager
 	METHOD method_2194 isSequencePlaying ()Z
+	METHOD method_2196 getCamera ()Lcom/boehmod/blockfront/unnamed/BF_642;
+	METHOD method_2204 getSequence ()Lcom/boehmod/blockfront/unnamed/BF_597;
 	METHOD method_2208 update (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+	METHOD method_2213 getCurrentRoll (F)F
+		ARG 1 delta
+	METHOD method_2214 stop (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft

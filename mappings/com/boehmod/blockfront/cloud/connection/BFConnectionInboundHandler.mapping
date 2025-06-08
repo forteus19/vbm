@@ -3,6 +3,3 @@ CLASS com/boehmod/blockfront/cloud/connection/ModConnectionInboundHandler com/bo
 	FIELD cumulativeBuffer cumulativeBuffer Lio/netty/buffer/ByteBuf;
 	METHOD <init> (Lcom/boehmod/blockfront/cloud/connection/ModConnection;)V
 		ARG 1 modConnection
-	METHOD channelInactive channelInactive (Lio/netty/channel/ChannelHandlerContext;)V
-	METHOD channelRead channelRead (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
-	METHOD exceptionCaught exceptionCaught (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Throwable;)V

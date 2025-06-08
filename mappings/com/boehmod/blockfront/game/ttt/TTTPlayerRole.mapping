@@ -20,6 +20,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_859 com/boehmod/blockfront/game/ttt/TTTP
 		ARG 10 displayOnNameplate
 		ARG 11 hideRank
 	METHOD addRoleItem addRoleItem (Lcom/boehmod/blockfront/unnamed/BF_755;)V
+		ARG 1 shopItem
 	METHOD displayOnNameplate displayOnNameplate ()Z
 	METHOD fromKey fromKey (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_859;
 		ARG 0 key

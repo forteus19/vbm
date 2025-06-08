@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_755 com/boehmod/blockfront/game/GameShopItem
+	FIELD field_3240 item Lnet/minecraft/world/item/Item;
+	FIELD field_3241 price I
+	FIELD field_3242 count I
+	FIELD field_3243 buttonPos Lnet/minecraft/world/phys/Vec2;
+	METHOD <init> (Lnet/minecraft/world/item/Item;I)V
+		ARG 1 item
+		ARG 2 price
+	METHOD <init> (Lnet/minecraft/world/item/Item;ILnet/minecraft/world/phys/Vec2;)V
+		ARG 1 item
+		ARG 2 price
+		ARG 3 buttonPos
+	METHOD method_3147 getItemStack ()Lnet/minecraft/world/item/ItemStack;
+	METHOD method_3148 setCount (I)Lcom/boehmod/blockfront/unnamed/BF_755;
+		ARG 1 count
+	METHOD method_3149 getPrice ()I
+	METHOD method_3150 getButtonPos ()Lnet/minecraft/world/phys/Vec2;

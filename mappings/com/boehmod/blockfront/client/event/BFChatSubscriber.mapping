@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_60 com/boehmod/blockfront/client/event/BFChatSubscriber
+	METHOD method_403 onChatReceived (Lnet/neoforged/neoforge/client/event/ClientChatReceivedEvent$Player;)V
+		ARG 0 event

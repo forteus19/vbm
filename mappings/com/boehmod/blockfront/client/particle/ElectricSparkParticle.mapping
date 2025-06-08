@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_311 com/boehmod/blockfront/client/particle/ElectricSparkParticle
+	CLASS BF_312 Provider

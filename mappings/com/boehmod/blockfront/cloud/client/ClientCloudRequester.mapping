@@ -1,13 +1,18 @@
 CLASS com/boehmod/blockfront/unnamed/BF_471 com/boehmod/blockfront/cloud/client/ClientCloudRequester
+	FIELD field_2104 featureFlagManager Lcom/boehmod/blockfront/unnamed/BF_414;
 	FIELD field_2105 queue Ljava/util/Deque;
 	FIELD field_2106 manager Lcom/boehmod/blockfront/unnamed/BF_445;
+	FIELD field_2110 updateRequestTimer I
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
+	METHOD method_1682 getFeatureFlagManager ()Lcom/boehmod/blockfront/unnamed/BF_414;
 	METHOD method_1683 push (Lcom/boehmod/bflib/cloud/common/RequestType;)V
 		ARG 1 requestType
 	METHOD method_1684 push (Lcom/boehmod/bflib/cloud/common/RequestType;Ljava/util/UUID;)V
 		ARG 1 requestType
 		ARG 2 playerUUID
+	METHOD method_1687 updateRequests ()V
+	METHOD method_1688 updateRequestsNow ()V
 	METHOD onUpdate onUpdate ()V
 	CLASS BF_472 Entry
 		FIELD field_2111 requestType Lcom/boehmod/bflib/cloud/common/RequestType;

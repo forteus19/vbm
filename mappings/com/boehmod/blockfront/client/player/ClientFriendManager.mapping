@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_780 com/boehmod/blockfront/client/player/ClientFriendManager
+	METHOD method_3230 update (Lcom/boehmod/blockfront/unnamed/BF_388;Lcom/boehmod/blockfront/unnamed/BF_476;)V

@@ -3,12 +3,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/common/match/
 	FIELD field_3251 primary Lnet/minecraft/world/item/ItemStack;
 	FIELD field_3252 secondary Lnet/minecraft/world/item/ItemStack;
 	FIELD field_3253 melee Lnet/minecraft/world/item/ItemStack;
-	FIELD field_3254 equipment1 Lnet/minecraft/world/item/ItemStack;
+	FIELD field_3254 offHand Lnet/minecraft/world/item/ItemStack;
 	FIELD field_3257 minimumXp I
-	FIELD field_3258 equipment2 Lnet/minecraft/world/item/ItemStack;
-	FIELD field_3259 equipment3 Lnet/minecraft/world/item/ItemStack;
-	FIELD field_3260 equipment4 Lnet/minecraft/world/item/ItemStack;
-	FIELD field_3261 equipment5 Lnet/minecraft/world/item/ItemStack;
+	FIELD field_3258 head Lnet/minecraft/world/item/ItemStack;
+	FIELD field_3259 chest Lnet/minecraft/world/item/ItemStack;
+	FIELD field_3260 legs Lnet/minecraft/world/item/ItemStack;
+	FIELD field_3261 feet Lnet/minecraft/world/item/ItemStack;
 	METHOD <init> (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 primary
 		ARG 2 secondary
@@ -17,11 +17,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/common/match/
 		ARG 1 primary
 		ARG 2 secondary
 		ARG 3 melee
-		ARG 4 equipment1
-		ARG 5 equipment2
-		ARG 6 equipment3
-		ARG 7 equipment4
-		ARG 8 equipment5
+		ARG 4 offHand
+		ARG 5 head
+		ARG 6 chest
+		ARG 7 legs
+		ARG 8 feet
 	METHOD method_3155 readFDS (Ljava/lang/String;Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_759;
 		ARG 0 tagName
 		ARG 1 root
@@ -39,7 +39,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/common/match/
 	METHOD method_3163 organize ()Lcom/boehmod/blockfront/unnamed/BF_759;
 	METHOD method_3164 setMinimumXp (I)Lcom/boehmod/blockfront/unnamed/BF_759;
 		ARG 1 minimumXp
-	METHOD method_3165 setEquipment3 (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_759;
+	METHOD method_3165 setChest (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_759;
 		ARG 1 itemStack
 	METHOD method_3166 getPrimary ()Lnet/minecraft/world/item/ItemStack;
 	METHOD method_3167 addAutoSlot (Lnet/minecraft/world/item/ItemStack;)V
@@ -49,10 +49,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/common/match/
 		COMMENT Use {@link #createFromInventory(ServerPlayer)} instead.
 		ARG 1 player
 	METHOD method_3170 getMelee ()Lnet/minecraft/world/item/ItemStack;
-	METHOD method_3171 getEquipment1 ()Lnet/minecraft/world/item/ItemStack;
-	METHOD method_3172 getEquipment2 ()Lnet/minecraft/world/item/ItemStack;
-	METHOD method_3173 getEquipment3 ()Lnet/minecraft/world/item/ItemStack;
-	METHOD method_3174 getEquipment4 ()Lnet/minecraft/world/item/ItemStack;
-	METHOD method_3175 getEquipment5 ()Lnet/minecraft/world/item/ItemStack;
+	METHOD method_3171 getOffHand ()Lnet/minecraft/world/item/ItemStack;
+	METHOD method_3172 getHead ()Lnet/minecraft/world/item/ItemStack;
+	METHOD method_3173 getChest ()Lnet/minecraft/world/item/ItemStack;
+	METHOD method_3174 getLegs ()Lnet/minecraft/world/item/ItemStack;
+	METHOD method_3175 getFeet ()Lnet/minecraft/world/item/ItemStack;
 	METHOD method_3176 getExtra ()Ljava/util/List;
 	METHOD method_3177 getItemStackList ()Ljava/util/List;

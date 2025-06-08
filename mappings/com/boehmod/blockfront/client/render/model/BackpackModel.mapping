@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_223 com/boehmod/blockfront/client/render/model/BackpackModel
+	FIELD field_1371 backpackTop Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1372 backpackTopStraps Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1374 backpack Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1376 backpackStraps Lnet/minecraft/client/model/geom/ModelPart;
+	METHOD method_1007 createMesh (Lnet/minecraft/client/model/geom/builders/CubeDeformation;)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+		ARG 0 deformation

@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/player/AbstractPlayerGameData
+CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/player/BFAbstractPlayerData
 	FIELD field_1150 uuid Ljava/util/UUID;
 	FIELD field_1155 previousMessages Ljava/util/List;
 	FIELD field_1169 pose Lcom/boehmod/blockfront/unnamed/BF_692;

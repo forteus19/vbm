@@ -17,7 +17,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1551 createAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
 	METHOD method_1552 createAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;
 	METHOD method_1553 getGames ()Ljava/util/Map;
-	METHOD method_1554 logConnectionStatus (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatusContext;)V
+	METHOD method_1554 connectionStatusChanged (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatusContext;)V
 		ARG 1 fromStatus
 		ARG 2 toStatus
 		ARG 3 context
@@ -26,6 +26,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 2 level
 		ARG 3 player
 		ARG 4 game
+	METHOD method_1559 mapIsOccupied (Lcom/boehmod/blockfront/unnamed/BF_927;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
+		ARG 1 map
+		ARG 2 game
+	METHOD method_1561 mapIsOccupied (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
+		ARG 1 mapName
+		ARG 2 game
 	METHOD method_1562 getGameWithPlayer (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_677;
 		ARG 1 uuid
 	METHOD method_1565 onUpdate (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
@@ -42,6 +48,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1570 getAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
 	METHOD method_1571 getAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;
 	METHOD method_1572 getGamesInRotation ()Ljava/util/Map;
+	METHOD method_1573 retrieveGame (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_677;
+		ARG 1 uuid
 	METHOD method_1574 updateGames (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 server
 		ARG 2 level

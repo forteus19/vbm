@@ -24,6 +24,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	FIELD field_3725 fogColor I
 	FIELD field_3726 waterColor I
 	FIELD field_3727 mapTime I
+	FIELD field_3728 ENTRIES Ljava/util/Map;
 	FIELD field_3729 soundIndoors Ljava/util/function/Supplier;
 	FIELD field_3730 name Ljava/lang/String;
 	FIELD field_3731 soundOutdoors Ljava/util/function/Supplier;
@@ -58,4 +59,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 		ARG 1 musicSet
 	METHOD method_3879 setShader (Ljava/lang/String;)V
 		ARG 1 shaderName
-	METHOD method_3880 getShaderResource ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_3880 getShader ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_3883 reset (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft

@@ -1,0 +1,25 @@
+CLASS com/boehmod/blockfront/unnamed/BF_891 com/boehmod/blockfront/common/match/MapVoteEntry
+	FIELD field_3572 gameUUID Ljava/util/UUID;
+	FIELD field_3574 gameType Ljava/lang/String;
+	FIELD field_3576 playerVotes Ljava/util/Set;
+	FIELD field_3577 mapName Ljava/lang/String;
+	FIELD field_6405 countries Ljava/util/List;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 game
+	METHOD method_3707 getGameType ()Ljava/lang/String;
+	METHOD method_3708 getGameUUID ()Ljava/util/UUID;
+	METHOD method_3709 readNewFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_891;
+		ARG 0 root
+	METHOD method_3712 getPlayerVotes ()Ljava/util/Set;
+	METHOD method_3713 addPlayerVote (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_3714 getName ()Ljava/lang/String;
+	METHOD method_5537 getCountries ()Ljava/util/List;
+	METHOD read read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD readFromFDS readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 buf
+	METHOD write write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 root
+	METHOD writeToFDS writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
