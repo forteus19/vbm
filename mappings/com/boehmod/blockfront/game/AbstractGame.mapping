@@ -103,9 +103,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 name
 	METHOD method_2674 setType (Ljava/lang/String;)V
 		ARG 1 type
-	METHOD read read (Lio/netty/buffer/ByteBuf;)V
+	METHOD read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD stop stop ()V
-	METHOD write write (Lio/netty/buffer/ByteBuf;)V
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	CLASS BF_678 ErrorType

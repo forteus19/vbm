@@ -9,6 +9,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
+import red.vuis.vbm.proposal.visitor.AllClassesVisitor;
 import red.vuis.vbm.proposal.visitor.BFBlocksVisitor;
 import red.vuis.vbm.proposal.visitor.EnumVisitor;
 import red.vuis.vbm.proposal.visitor.LdcStringForInvokeVisitor;
@@ -18,6 +19,10 @@ import red.vuis.vbm.util.VbmUtils;
 
 public final class ProposalRegistry {
     private static final List<VisitorEntry> ENTRIES = List.of(
+            new VisitorEntry(
+                    AllClassesVisitor::new,
+                    node -> true
+            ),
             new VisitorEntry(
                     EnumVisitor::new,
                     node -> (node.access & Opcodes.ACC_ENUM) != 0

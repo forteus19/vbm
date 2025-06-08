@@ -1,5 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_855 com/boehmod/blockfront/game/ttt/randomat/RandomatEvent
-	METHOD getName getName ()Ljava/lang/String;
 	METHOD method_3546 activate (Lcom/boehmod/blockfront/unnamed/BF_849;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/Level;Ljava/util/Set;)V
 		ARG 1 game
 		ARG 2 activator

@@ -32,7 +32,7 @@ abstract class InsertProposedMappingsTask : DefaultTask() {
         tree.reset()
         tree.visitNamespaces("intermediary", listOf("named"))
 
-        val collector = MappingIoProposalCollector(tree, tree.getNamespaceId("named"));
+        val collector = MappingIoProposalCollector(tree, tree.getNamespaceId("named"))
         ProposalRegistry.collect(collector, classes)
 
         tree.accept(MappingWriter.create(output.get().asPath, format.get()))

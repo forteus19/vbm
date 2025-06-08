@@ -4,5 +4,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_463 com/boehmod/blockfront/assets/AssetC
 	METHOD <init> (Ljava/util/function/BiPredicate;Lnet/minecraft/network/chat/Component;)V
 		ARG 1 predicate
 		ARG 2 message
-	METHOD getMessage getMessage ()Lnet/minecraft/network/chat/Component;
 	METHOD method_1662 getPredicate ()Ljava/util/function/BiPredicate;

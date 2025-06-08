@@ -1,2 +1,1 @@
 CLASS com/boehmod/blockfront/unnamed/BF_242 com/boehmod/blockfront/client/screen/profile/ProfileScreen
-	FIELD playerCloudData playerProfile Lcom/boehmod/blockfront/unnamed/BF_476;

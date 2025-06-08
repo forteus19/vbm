@@ -2,13 +2,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_411 com/boehmod/blockfront/cloud/connect
 	FIELD field_1861 connection Lcom/boehmod/blockfront/cloud/connection/ModConnection;
 	FIELD field_1862 requester Lcom/boehmod/blockfront/unnamed/BF_471;
 	FIELD field_1863 manager Lcom/boehmod/blockfront/unnamed/BF_445;
-	METHOD disconnect disconnect (Ljava/lang/String;Z)V
 	METHOD method_1459 getStatus ()Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;
 	METHOD method_1460 getConnection ()Lcom/boehmod/blockfront/cloud/connection/ModConnection;
 	METHOD method_1461 getRequester ()Lcom/boehmod/blockfront/unnamed/BF_471;
 	METHOD method_1462 createRequester (Lcom/boehmod/blockfront/unnamed/BF_445;)Lcom/boehmod/blockfront/unnamed/BF_471;
 		ARG 1 manager
 	METHOD method_1463 shutdown ()V
-	METHOD onUpdate onUpdate ()V
-	METHOD sendPacket sendPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)V
+	METHOD sendPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)V
 		ARG 1 packet

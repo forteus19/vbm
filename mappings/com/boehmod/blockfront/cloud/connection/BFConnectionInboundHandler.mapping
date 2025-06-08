@@ -1,5 +1,3 @@
 CLASS com/boehmod/blockfront/cloud/connection/ModConnectionInboundHandler com/boehmod/blockfront/cloud/connection/BFConnectionInboundHandler
-	FIELD connectionHandler connectionHandler Lcom/boehmod/blockfront/cloud/connection/ModConnection;
-	FIELD cumulativeBuffer cumulativeBuffer Lio/netty/buffer/ByteBuf;
 	METHOD <init> (Lcom/boehmod/blockfront/cloud/connection/ModConnection;)V
 		ARG 1 modConnection

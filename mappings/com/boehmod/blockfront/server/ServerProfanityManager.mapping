@@ -3,13 +3,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_1120 com/boehmod/blockfront/server/Serve
 	FIELD field_6275 LIST_PATH Ljava/lang/String;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1067;)V
 		ARG 1 manager
-	METHOD handleProfanityImmediately handleProfanityImmediately (Ljava/util/UUID;Lcom/boehmod/bflib/cloud/common/profanity/Profanity;Ljava/lang/String;)V
+	METHOD handleProfanityImmediately (Ljava/util/UUID;Lcom/boehmod/bflib/cloud/common/profanity/Profanity;Ljava/lang/String;)V
 		ARG 1 playerUUID
 		ARG 2 profanity
 		ARG 3 content
-	METHOD log log (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD log (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 1 fmt
 		ARG 2 args
-	METHOD logError logError (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD logError (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 1 fmt
 		ARG 2 args

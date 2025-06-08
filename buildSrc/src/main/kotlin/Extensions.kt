@@ -2,6 +2,9 @@ import org.gradle.api.file.Directory
 import org.gradle.api.file.RegularFile
 import java.nio.file.Path
 
+fun errorln(msg: String?) =
+    System.err.println(msg)
+
 val RegularFile.asPath: Path
     get() = this.asFile.toPath()
 

@@ -13,7 +13,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_471 com/boehmod/blockfront/cloud/client/
 		ARG 2 playerUUID
 	METHOD method_1687 updateRequests ()V
 	METHOD method_1688 updateRequestsNow ()V
-	METHOD onUpdate onUpdate ()V
 	CLASS BF_472 Entry
 		FIELD field_2111 requestType Lcom/boehmod/bflib/cloud/common/RequestType;
 		FIELD field_2112 playerUUID Ljava/util/UUID;

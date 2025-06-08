@@ -49,11 +49,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDS
 	METHOD method_3030 getX ()D
 	METHOD method_3031 getY ()D
 	METHOD method_3032 getZ ()D
-	METHOD read read (Lio/netty/buffer/ByteBuf;)V
+	METHOD read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD readFromFDS readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
-	METHOD write write (Lio/netty/buffer/ByteBuf;)V
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD writeToFDS writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root

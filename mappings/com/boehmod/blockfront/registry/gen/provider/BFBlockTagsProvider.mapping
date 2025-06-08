@@ -3,5 +3,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_593 com/boehmod/blockfront/registry/gen/
 		ARG 1 packOutput
 		ARG 2 completableFuture
 		ARG 3 existingFileHelper
-	METHOD addTags addTags (Lnet/minecraft/core/HolderLookup$Provider;)V
+	METHOD addTags (Lnet/minecraft/core/HolderLookup$Provider;)V
 		ARG 1 provider

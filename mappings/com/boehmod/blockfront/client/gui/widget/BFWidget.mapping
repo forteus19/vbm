@@ -6,7 +6,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_121 com/boehmod/blockfront/client/gui/wi
 	METHOD <init> (IIIILnet/minecraft/client/gui/screens/Screen;)V
 		ARG 4 height
 		ARG 5 screen
-	METHOD height height ()I
 	METHOD method_532 getScreen ()Lnet/minecraft/client/gui/screens/Screen;
 	METHOD method_533 addBfWidget (Lcom/boehmod/blockfront/unnamed/BF_121;)Z
 		ARG 1 widget

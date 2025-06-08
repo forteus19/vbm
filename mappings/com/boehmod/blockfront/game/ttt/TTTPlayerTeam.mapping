@@ -1,11 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_860 com/boehmod/blockfront/game/ttt/TTTPlayerTeam
-	FIELD color color I
-	FIELD name name Ljava/lang/String;
-	FIELD winSound winSound Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;ILnet/neoforged/neoforge/registries/DeferredHolder;)V
 		ARG 3 name
 		ARG 4 color
 		ARG 5 winSound
-	METHOD getColor getColor ()I
-	METHOD getName getName ()Ljava/lang/String;
-	METHOD getWinSound getWinSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;

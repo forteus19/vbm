@@ -1,17 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_476 com/boehmod/blockfront/common/player/PlayerCloudData
 	FIELD field_2115 playerDataType Lcom/boehmod/bflib/cloud/common/player/PlayerDataType;
 	FIELD field_2116 playerGroup Lcom/boehmod/bflib/cloud/common/player/PlayerGroup;
-	METHOD createInventory createInventory ()Lcom/boehmod/bflib/cloud/common/player/AbstractCloudInventory;
-	METHOD getClanData getClanData ()Lcom/boehmod/bflib/cloud/common/AbstractClanData;
-	METHOD getGroup getGroup ()Ljava/util/Optional;
-	METHOD getPunishmentCount getPunishmentCount (Lcom/boehmod/bflib/cloud/common/player/PunishmentType;)I
-	METHOD hasActivePunishment hasActivePunishment (Lcom/boehmod/bflib/cloud/common/player/PunishmentType;)Z
 	METHOD method_1709 getPlayerDataType ()Lcom/boehmod/bflib/cloud/common/player/PlayerDataType;
 	METHOD method_1711 getMcProfile ()Lcom/mojang/authlib/GameProfile;
 	METHOD method_1712 setPlayerDataType (Lcom/boehmod/bflib/cloud/common/player/PlayerDataType;)V
 		ARG 1 playerDataType
 	METHOD method_1717 hasPermission (Ljava/lang/String;)Z
 		ARG 1 id
-	METHOD setGroup setGroup (Lcom/boehmod/bflib/cloud/common/player/PlayerGroup;)V
+	METHOD setGroup (Lcom/boehmod/bflib/cloud/common/player/PlayerGroup;)V
 		ARG 1 playerGroup
-	METHOD setStatus setStatus (Lcom/boehmod/bflib/cloud/common/player/status/PlayerStatus;)V

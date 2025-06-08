@@ -1,6 +1,6 @@
 CLASS com/boehmod/blockfront/server/net/PacketListenerUtils com/boehmod/blockfront/util/NettyUtils
-	METHOD findPlayerByAddress findPlayer (Lnet/minecraft/server/players/PlayerList;Ljava/net/SocketAddress;)Lnet/minecraft/server/level/ServerPlayer;
+	METHOD findPlayerByAddress (Lnet/minecraft/server/players/PlayerList;Ljava/net/SocketAddress;)Lnet/minecraft/server/level/ServerPlayer;
 		ARG 0 playerList
 		ARG 1 address
-	METHOD getServerPlayerFromConnection getChannelPlayer (Lio/netty/channel/Channel;)Lnet/minecraft/server/level/ServerPlayer;
+	METHOD getServerPlayerFromConnection (Lio/netty/channel/Channel;)Lnet/minecraft/server/level/ServerPlayer;
 		ARG 0 channel

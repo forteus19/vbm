@@ -1019,4 +1019,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 8 repeats
 	METHOD method_346 translucentBlack ()I
 	METHOD method_347 resetShaderColor ()V
-	METHOD onUpdate onUpdate ()V

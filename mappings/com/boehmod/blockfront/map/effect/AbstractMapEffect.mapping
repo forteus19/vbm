@@ -27,7 +27,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_731 com/boehmod/blockfront/map/effect/Ab
 		ARG 6 font
 		ARG 7 camera
 	METHOD method_3090 mapUpdate (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Random;Ljava/util/Set;)V
-	METHOD readFromFDS readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
-	METHOD writeToFDS writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root

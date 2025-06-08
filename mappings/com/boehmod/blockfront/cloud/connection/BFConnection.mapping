@@ -1,26 +1,9 @@
 CLASS com/boehmod/blockfront/cloud/connection/ModConnection com/boehmod/blockfront/cloud/connection/BFConnection
-	FIELD ATTEMPTING_CONNECTION ATTEMPTING_CONNECTION Ljava/util/concurrent/atomic/AtomicBoolean;
-	FIELD channel channel Lio/netty/channel/Channel;
-	FIELD clientConnection clientConnection Lcom/boehmod/blockfront/unnamed/BF_475;
-	FIELD CONNECT_TIME_MAX_TICKS CONNECT_TIME_MAX_TICKS I
-	FIELD connectionExecutor connectionExecutor Ljava/util/concurrent/ExecutorService;
-	FIELD connectionHeartBeat connectionHeartBeat I
-	FIELD connectionTick connectionTick I
-	FIELD eventLoopGroup eventLoopGroup Lio/netty/channel/EventLoopGroup;
-	FIELD HEARTBEAT_INTERVAL_TICKS HEARTBEAT_INTERVAL_TICKS I
-	FIELD incomingPackets incomingPackets Ljava/util/Queue;
-	FIELD LOGIN_TIME_MAX_TICKS LOGIN_TIME_MAX_TICKS I
-	FIELD loginSendTimer loginSendTimer I
-	FIELD MAX_IDLE_TICKS MAX_IDLE_TICKS I
-	FIELD modManager modManager Lcom/boehmod/blockfront/unnamed/BF_445;
-	FIELD playerCloudData playerCloudData Lcom/boehmod/blockfront/unnamed/BF_476;
-	FIELD running running Z
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_475;Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 details
 		ARG 2 manager
 	METHOD addIncomingPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)V
 		ARG 1 packet
-	METHOD getPlayerCloudData getPlayerCloudData ()Lcom/boehmod/bflib/cloud/common/player/AbstractPlayerCloudData;
 	METHOD lambda$new$0 (Ljava/lang/Runnable;)Ljava/lang/Thread;
 		ARG 0 runnable
 	METHOD onIllegalPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;Lcom/boehmod/bflib/cloud/common/ConnectionType;Lcom/boehmod/bflib/cloud/common/ConnectionType;)V

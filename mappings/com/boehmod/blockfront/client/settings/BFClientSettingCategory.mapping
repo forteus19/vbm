@@ -2,4 +2,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_434 com/boehmod/blockfront/client/settin
 	FIELD field_2009 name Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;Z)V
 		ARG 1 name
-	METHOD getName getName ()Ljava/lang/String;

@@ -91,8 +91,6 @@ public final class VbmUtils {
         return node;
     }
 
-
-
     public static String javaName(String rawName) {
         StringBuilder result = new StringBuilder(rawName.length());
         for (int i = 0; i < rawName.length(); i++) {

@@ -1,10 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_753 com/boehmod/blockfront/common/match/MatchCallout
-	FIELD buttonPosition buttonPosition Lorg/joml/Vector2i;
-	FIELD soundEvent soundEvent Lnet/minecraft/core/Holder$Reference;
-	FIELD texture texture Lnet/minecraft/resources/ResourceLocation;
-	FIELD translation translation Ljava/lang/String;
-	FIELD waypoint waypoint Ljava/lang/String;
-	FIELD waypointTexture waypointTexture Lnet/minecraft/resources/ResourceLocation;
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/core/Holder$Reference;Lorg/joml/Vector2i;)V
 		ARG 3 textureName
 		ARG 4 translation
@@ -15,9 +9,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_753 com/boehmod/blockfront/common/match/
 		ARG 3 textureName
 		ARG 4 translation
 		ARG 5 buttonPosition
-	METHOD getButtonPosition getButtonPosition ()Lorg/joml/Vector2i;
-	METHOD getSoundEvent getSoundEvent ()Lnet/minecraft/core/Holder$Reference;
-	METHOD getTexture getTexture ()Lnet/minecraft/resources/ResourceLocation;
-	METHOD getTranslation getTranslation ()Ljava/lang/String;
-	METHOD getWaypoint getWaypoint ()Ljava/lang/String;
-	METHOD getWaypointTexture getWaypointTexture ()Lnet/minecraft/resources/ResourceLocation;

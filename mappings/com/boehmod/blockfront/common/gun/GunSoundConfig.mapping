@@ -24,7 +24,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_956 com/boehmod/blockfront/common/gun/Gu
 	FIELD field_3904 zoomIn Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_3905 zoomOut Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_3906 equip Lnet/neoforged/neoforge/registries/DeferredHolder;
-	METHOD clone clone ()Ljava/lang/Object;
 	METHOD method_3956 getEchoDistantIndoors ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3959 getEchoCloseIndoors ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3960 getEchoCloseIndoorsSelf ()Lnet/neoforged/neoforge/registries/DeferredHolder;

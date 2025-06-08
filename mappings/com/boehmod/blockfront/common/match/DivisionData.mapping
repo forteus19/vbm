@@ -33,7 +33,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 		ARG 1 id
 		ARG 2 country
 		ARG 3 skin
-	METHOD getSkin getSkin ()Ljava/lang/String;
 	METHOD method_3884 getRandomRace ()Lcom/boehmod/blockfront/unnamed/BF_567;
 	METHOD method_3885 getCountry ()Lcom/boehmod/blockfront/unnamed/BF_928;
 	METHOD method_3886 fromId (I)Lcom/boehmod/blockfront/unnamed/BF_929;

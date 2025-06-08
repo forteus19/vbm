@@ -28,7 +28,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	FIELD field_3729 soundIndoors Ljava/util/function/Supplier;
 	FIELD field_3730 name Ljava/lang/String;
 	FIELD field_3731 soundOutdoors Ljava/util/function/Supplier;
-	METHOD getName getName ()Ljava/lang/String;
 	METHOD method_3840 getAuthor ()Ljava/lang/String;
 	METHOD method_3842 getMusicSet ()Lcom/boehmod/blockfront/unnamed/BF_961;
 	METHOD method_3843 setCustomFog (FF)Lcom/boehmod/blockfront/unnamed/BF_927;

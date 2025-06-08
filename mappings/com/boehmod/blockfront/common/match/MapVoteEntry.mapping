@@ -15,11 +15,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_891 com/boehmod/blockfront/common/match/
 		ARG 1 uuid
 	METHOD method_3714 getName ()Ljava/lang/String;
 	METHOD method_5537 getCountries ()Ljava/util/List;
-	METHOD read read (Lio/netty/buffer/ByteBuf;)V
+	METHOD read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD readFromFDS readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 buf
-	METHOD write write (Lio/netty/buffer/ByteBuf;)V
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 root
-	METHOD writeToFDS writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root

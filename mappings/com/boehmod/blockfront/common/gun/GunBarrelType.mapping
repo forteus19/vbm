@@ -5,7 +5,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_988 com/boehmod/blockfront/common/gun/Gu
 	FIELD field_3986 displayName Lnet/minecraft/network/chat/Component;
 	METHOD <init> (Lnet/minecraft/network/chat/Component;)V
 		ARG 1 displayName
-	METHOD getDisplayName getDisplayName ()Lnet/minecraft/network/chat/Component;
 	METHOD method_4097 getSoundConfig ()Lcom/boehmod/blockfront/unnamed/BF_956;
 	METHOD method_4098 setSoundConfig (Lcom/boehmod/blockfront/unnamed/BF_956;)Lcom/boehmod/blockfront/unnamed/BF_988;
 		ARG 1 config

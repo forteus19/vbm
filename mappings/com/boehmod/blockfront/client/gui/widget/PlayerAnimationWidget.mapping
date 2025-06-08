@@ -1,2 +1,1 @@
 CLASS com/boehmod/blockfront/unnamed/BF_128 com/boehmod/blockfront/client/gui/widget/PlayerAnimationWidget
-	FIELD playerCloudData playerCloudData Lcom/boehmod/blockfront/unnamed/BF_476;

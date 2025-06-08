@@ -40,4 +40,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 	METHOD method_2797 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
 	METHOD method_2798 getTeams ()Ljava/util/List;
-	METHOD onUpdate onUpdate ()V

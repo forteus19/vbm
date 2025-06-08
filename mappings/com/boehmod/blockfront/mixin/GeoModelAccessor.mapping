@@ -1,4 +1,3 @@
 CLASS com/boehmod/blockfront/mixin/GeoModelAccessor
-	METHOD getCurrentModel getCurrentModel ()Lsoftware/bernie/geckolib/cache/object/BakedGeoModel;
-	METHOD setCurrentModel setCurrentModel (Lsoftware/bernie/geckolib/cache/object/BakedGeoModel;)V
+	METHOD setCurrentModel (Lsoftware/bernie/geckolib/cache/object/BakedGeoModel;)V
 		ARG 1 bakedGeoModel

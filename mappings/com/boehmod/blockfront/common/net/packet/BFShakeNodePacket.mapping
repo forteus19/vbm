@@ -8,4 +8,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_1046 com/boehmod/blockfront/common/net/p
 	METHOD method_4429 shakeData ()Lcom/boehmod/blockfront/unnamed/BF_427;
 	METHOD method_4431 write (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
-	METHOD type type ()Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload$Type;

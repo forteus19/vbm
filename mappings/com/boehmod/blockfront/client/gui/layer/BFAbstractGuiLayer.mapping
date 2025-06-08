@@ -3,6 +3,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_177 com/boehmod/blockfront/client/gui/la
 		ARG 1 graphics
 		ARG 2 delta
 		ARG 3 manager
-	METHOD render render (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/DeltaTracker;)V
+	METHOD render (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/DeltaTracker;)V
 		ARG 1 graphics
 		ARG 2 delta

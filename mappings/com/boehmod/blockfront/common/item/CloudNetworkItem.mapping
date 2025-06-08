@@ -1,6 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_903 com/boehmod/blockfront/common/item/CloudNetworkItem
 	FIELD field_3627 DISCLAIMER Lnet/minecraft/network/chat/Component;
-	METHOD appendHoverText appendHoverText (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item$TooltipContext;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V
+	METHOD appendHoverText (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item$TooltipContext;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V
 		ARG 1 itemStack
 		ARG 2 tooltipContext
 		ARG 3 components

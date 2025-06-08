@@ -2,4 +2,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_592 com/boehmod/blockfront/registry/gen/
 	METHOD <init> (Lnet/minecraft/data/PackOutput;Lnet/neoforged/neoforge/common/data/ExistingFileHelper;)V
 		ARG 1 packOutput
 		ARG 2 existingFileHelper
-	METHOD registerStatesAndModels registerStatesAndModels ()V

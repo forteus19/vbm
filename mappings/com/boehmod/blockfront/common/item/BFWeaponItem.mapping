@@ -1,7 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_906 com/boehmod/blockfront/common/item/BFWeaponItem
-	METHOD getName getName (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;
+	METHOD getName (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;
 		ARG 1 itemStack
-	METHOD inventoryTick inventoryTick (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;IZ)V
+	METHOD inventoryTick (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;IZ)V
 		ARG 1 itemStack
 		ARG 2 level
 		ARG 3 entity

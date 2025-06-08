@@ -6,13 +6,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_431 com/boehmod/blockfront/client/settin
 	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_434;Z)V
 		ARG 1 name
 		ARG 2 key
-	METHOD getColor getColor ()I
-	METHOD getDescription getDescription ()Ljava/lang/String;
-	METHOD getKey getKey ()Ljava/lang/String;
-	METHOD getName getName ()Ljava/lang/String;
 	METHOD method_1506 isEnabled ()Z
 	METHOD method_1507 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
 	METHOD method_1511 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
-	METHOD onUpdate onUpdate ()V

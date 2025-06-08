@@ -7,4 +7,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_933 com/boehmod/blockfront/client/render
 		ARG 2 font
 		ARG 3 graphics
 		ARG 4 game
-	METHOD onUpdate onUpdate ()V

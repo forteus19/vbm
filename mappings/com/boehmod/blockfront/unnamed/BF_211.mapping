@@ -1,5 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_211
 	CLASS BF_212 SlotInfo
-	CLASS BF_213
-		FIELD slotInfo slotInfo Lcom/boehmod/blockfront/unnamed/BF_211$BF_212;
-		METHOD getSlotInfo getSlotInfo ()Lcom/boehmod/blockfront/unnamed/BF_211$BF_212;

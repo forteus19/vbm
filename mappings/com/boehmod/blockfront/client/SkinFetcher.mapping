@@ -10,4 +10,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_410 com/boehmod/blockfront/client/SkinFe
 	METHOD method_1457 fetchSkin (Lnet/minecraft/client/Minecraft;Ljava/util/UUID;)Lnet/minecraft/resources/ResourceLocation;
 		ARG 1 minecraft
 		ARG 2 playerId
-	METHOD shutdown shutdown ()V

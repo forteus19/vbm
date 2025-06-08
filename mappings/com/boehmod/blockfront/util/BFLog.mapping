@@ -1,9 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_444 com/boehmod/blockfront/util/BFLog
 	FIELD field_2030 LOGGER Lorg/apache/logging/log4j/Logger;
-	METHOD log info (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD log (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 0 fmt
 		ARG 1 args
-	METHOD logError error (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD logError (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 0 fmt
 		ARG 1 args
 	METHOD method_1548 exception (Ljava/lang/String;Ljava/lang/Throwable;[Ljava/lang/Object;)V

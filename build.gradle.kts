@@ -161,6 +161,19 @@ val mappingsJarTask = tasks.register<Jar>("mappingsJar") {
     }
 }
 
+val checkMappingsTask = tasks.register<CheckMappingsTask>("checkMappings") {
+    dependsOn(mapSpecializedMethodsTask)
+    group = "vbm"
+    jar.set(mapIntermediaryJarTask.get().output)
+    mappings.set(mapSpecializedMethodsTask.get().output)
+}
+
+val formatMappingsTask = tasks.register<FormatMappingsTask>("formatMappings") {
+    group = "vbm"
+    input.set(mappingsFile)
+    output.set(mappingsFile)
+}
+
 tasks.build {
     dependsOn(mappingsJarTask)
 }

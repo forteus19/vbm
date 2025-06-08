@@ -10,7 +10,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_886 com/boehmod/blockfront/game/inf/Zomb
 	METHOD method_3685 readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_886;
 		ARG 0 root
 	METHOD method_3688 location ()Lcom/boehmod/blockfront/unnamed/BF_692;
-	METHOD write write (Lio/netty/buffer/ByteBuf;)V
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD writeToFDS writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root

@@ -6,7 +6,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_459 com/boehmod/blockfront/assets/AssetS
 	FIELD field_2085 registeredAssets Ljava/util/Map;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Z)V
 		ARG 1 manager
-	METHOD init init ()V
 	METHOD method_1628 assetCount ()I
 	METHOD method_1629 numRegistered ()I
 	METHOD method_1630 getTimesLoaded ()I

@@ -3,7 +3,6 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 	FIELD field_1155 previousMessages Ljava/util/List;
 	FIELD field_1169 pose Lcom/boehmod/blockfront/unnamed/BF_692;
 	FIELD field_1175 calloutCooldown I
-	METHOD getUUID getUUID ()Ljava/util/UUID;
 	METHOD method_829 getPreviousMessages ()Ljava/util/List;
 	METHOD method_830 setInGame (Z)V
 	METHOD method_845 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V

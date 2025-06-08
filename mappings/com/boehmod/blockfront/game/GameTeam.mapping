@@ -10,8 +10,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;Lnet/minecraft/network/chat/Style;Lnet/minecraft/network/chat/Style;I)V
 		ARG 1 game
 		ARG 2 name
-	METHOD getColor getColor ()I
-	METHOD getName getName ()Ljava/lang/String;
 	METHOD method_2809 getStyle ()Lnet/minecraft/network/chat/Style;
 	METHOD method_2813 getDivisionData (Lcom/boehmod/blockfront/unnamed/BF_677;)Lcom/boehmod/blockfront/unnamed/BF_929;
 		ARG 1 game

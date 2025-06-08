@@ -34,7 +34,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	METHOD method_2721 getScoreStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
 	METHOD method_2741 advanceSummary (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
-	METHOD stop stop ()V
 	CLASS BF_680 Scoreboard
 		FIELD field_2905 entries Ljava/util/Map;
 		METHOD method_2746 column (Ljava/lang/String;Lorg/apache/commons/lang3/function/TriFunction;)Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;

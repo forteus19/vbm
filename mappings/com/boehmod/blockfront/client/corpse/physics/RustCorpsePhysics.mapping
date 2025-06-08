@@ -4,19 +4,5 @@ CLASS com/boehmod/blockfront/client/corpse/physics/RustCorpsePhysics
 	FIELD field_1089 nativesLoaded Z
 	FIELD field_1090 NAME Ljava/lang/String;
 	FIELD field_1091 TEMP_NAME Ljava/lang/String;
-	METHOD addBox addBox (I[D)V
-	METHOD addChunk addChunk (III[I)V
-	METHOD addLinearAngularVelocities addLinearAngularVelocities (IDDDDDD)V
-	METHOD addRagdollConstraint addRagdollConstraint (IIDDDDDDDDDDDDDDDDDD)V
-	METHOD changeBlock changeBlock (IIII)V
-	METHOD clearLevel clearLevel ()V
-	METHOD createObject createObject (I[DDDDD)V
-	METHOD getPose getPose (I)[D
-	METHOD initialize initialize (DDD)V
 	METHOD method_780 getNativeFilename ()Ljava/lang/String;
 	METHOD method_781 loadNative ()V
-	METHOD multiplyVelocities multiplyVelocities (ID)V
-	METHOD removeChunk removeChunk (III)V
-	METHOD removeObject removeObject (I)V
-	METHOD tick tick (D)V
-	METHOD uploadBlock uploadBlock ()I

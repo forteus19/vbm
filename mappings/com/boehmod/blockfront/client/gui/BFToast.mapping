@@ -8,7 +8,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_221 com/boehmod/blockfront/client/gui/BF
 		ARG 1 type
 		ARG 2 title
 		ARG 3 message
-	METHOD height height ()I
 	METHOD method_1000 show (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;Z)V
 		ARG 0 minecraft
 		ARG 1 title
@@ -43,7 +42,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_221 com/boehmod/blockfront/client/gui/BF
 		ARG 0 minecraft
 		ARG 1 title
 		ARG 2 message
-	METHOD render render (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/components/toasts/ToastComponent;J)Lnet/minecraft/client/gui/components/toasts/Toast$Visibility;
+	METHOD render (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/components/toasts/ToastComponent;J)Lnet/minecraft/client/gui/components/toasts/Toast$Visibility;
 		ARG 1 graphics
 		ARG 2 components
 		ARG 3 millis

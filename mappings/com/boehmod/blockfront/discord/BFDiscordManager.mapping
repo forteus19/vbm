@@ -36,4 +36,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_19 com/boehmod/blockfront/discord/BFDisc
 	METHOD method_139 startCallbackThread ()V
 	METHOD method_140 close ()V
 	METHOD method_141 discordCallback ()V
-	METHOD shutdown shutdown ()V
