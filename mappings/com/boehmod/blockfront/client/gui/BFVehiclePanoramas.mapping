@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_621 com/boehmod/blockfront/client/gui/BFVehiclePanoramas
+	FIELD field_2645 TANK_DRIVER Lnet/minecraft/client/renderer/CubeMap;
+	FIELD field_2646 TANK_SHERMAN_GUNNER Lnet/minecraft/client/renderer/CubeMap;
+	FIELD field_2647 TANK_CHIHA_GUNNER Lnet/minecraft/client/renderer/CubeMap;
+	FIELD field_2648 TANK_PANZERIV_GUNNER Lnet/minecraft/client/renderer/CubeMap;
+	METHOD method_2366 getCubeMap (Ljava/lang/String;)Lnet/minecraft/client/renderer/CubeMap;
+		ARG 0 name

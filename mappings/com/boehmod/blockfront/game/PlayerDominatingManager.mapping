@@ -1,4 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_767 com/boehmod/blockfront/game/PlayerDominatingManager
 	FIELD field_3288 entries Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+	METHOD method_3198 playerIsDominated (Ljava/util/UUID;Ljava/util/UUID;)Z
+		ARG 1 dominated
+		ARG 2 dominator
 	METHOD method_3199 clear ()V
 	CLASS BF_768 Entry

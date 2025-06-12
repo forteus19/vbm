@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_684 com/boehmod/blockfront/game/GameCombatManager
+	FIELD field_2924 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 game
+	METHOD method_2806 addKillFeedEntry (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/damagesource/DamageSource;ZZ)V
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 entity
+		ARG 4 source
+		ARG 5 broadcast
+		ARG 6 sendKilledMessage

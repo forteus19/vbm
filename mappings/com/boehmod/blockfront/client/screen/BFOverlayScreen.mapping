@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_185 com/boehmod/blockfront/client/screen/BFOverlayScreen
+	FIELD field_1043 parentScreen Lnet/minecraft/client/gui/screens/Screen;
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 parentScreen
+		ARG 2 title
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 2 title
+	METHOD method_757 renderOverlay (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+		ARG 1 poseStack
+		ARG 2 graphics

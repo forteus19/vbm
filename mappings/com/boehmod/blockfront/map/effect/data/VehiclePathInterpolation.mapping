@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_749 com/boehmod/blockfront/map/effect/data/VehiclePathInterpolation
+	METHOD interpolate (Lcom/boehmod/blockfront/unnamed/BF_807;F)Lnet/minecraft/world/phys/Vec3;
+		ARG 1 path
+		ARG 2 t
+	METHOD linearInterpolation (Lcom/boehmod/blockfront/unnamed/BF_807;F)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 path
+		ARG 1 t
+	CLASS BF_750 Interpolator
+		METHOD interpolate (Lcom/boehmod/blockfront/unnamed/BF_807;F)Lnet/minecraft/world/phys/Vec3;
+			ARG 1 path
+			ARG 2 t

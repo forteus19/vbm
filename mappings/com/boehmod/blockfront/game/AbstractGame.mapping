@@ -2,7 +2,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2822 mapInstance Lcom/boehmod/blockfront/unnamed/BF_457;
 	FIELD field_2823 baseCommand Lcom/boehmod/blockfront/unnamed/BF_462;
 	FIELD field_2824 gameManager Lcom/boehmod/blockfront/unnamed/BF_682;
-	FIELD field_2826 playerStatus Lcom/boehmod/blockfront/unnamed/BF_685;
+	FIELD field_2825 combatManager Lcom/boehmod/blockfront/unnamed/BF_684;
+	FIELD field_2826 status Lcom/boehmod/blockfront/unnamed/BF_685;
 	FIELD field_2827 dominatingManager Lcom/boehmod/blockfront/unnamed/BF_767;
 	FIELD field_2828 mapVoteManager Lcom/boehmod/blockfront/unnamed/BF_892;
 	FIELD field_2829 map Lcom/boehmod/blockfront/unnamed/BF_927;
@@ -14,19 +15,27 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2837 hasPlayerLimit Z
 	FIELD field_2838 shouldRestart Z
 	FIELD field_2840 FIRST_BLOOD_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_2843 typeDisplayName Lnet/minecraft/network/chat/Component;
 	FIELD field_2848 SWITCHTEAMS_ERROR_NOTEAM Lnet/minecraft/network/chat/Component;
 	FIELD field_2849 SWITCHTEAMS_ERROR_UNBALANCED Lnet/minecraft/network/chat/Component;
 	FIELD field_2850 SWITCHTEAMS_ERROR_POSTGAME Lnet/minecraft/network/chat/Component;
+	FIELD field_2851 GAMES_TP_FAIL Lnet/minecraft/network/chat/Component;
+	FIELD field_2852 GAMES_LOBBY_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2854 uuid Ljava/util/UUID;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;Ljava/lang/String;)V
-		ARG 2 name
+		ARG 1 manager
+		ARG 2 type
+		ARG 3 typeDisplayName
+	METHOD compareTo (Ljava/lang/Object;)I
+		ARG 1 other
 	METHOD method_2583 getName ()Ljava/lang/String;
 	METHOD method_2584 getType ()Ljava/lang/String;
 	METHOD method_2588 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
-	METHOD method_2589 createGameManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
-	METHOD method_2591 getPlayerStatus ()Lcom/boehmod/blockfront/unnamed/BF_685;
+	METHOD method_2589 createPlayerManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
+	METHOD method_2590 getCombatManager ()Lcom/boehmod/blockfront/unnamed/BF_684;
+	METHOD method_2591 getStatus ()Lcom/boehmod/blockfront/unnamed/BF_685;
 	METHOD method_2592 getDominatingManager ()Lcom/boehmod/blockfront/unnamed/BF_767;
 	METHOD method_2594 getMapVoteManager ()Lcom/boehmod/blockfront/unnamed/BF_892;
 	METHOD method_2595 getMap ()Lcom/boehmod/blockfront/unnamed/BF_927;
@@ -37,18 +46,30 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 manager
 		ARG 2 randomMax
 		ARG 3 players
+	METHOD method_2603 changeStage (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 level
+		ARG 4 players
+	METHOD method_2604 sendBattleReport (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_686;Lcom/boehmod/blockfront/unnamed/BF_941;)V
+		ARG 1 manager
+		ARG 2 team
 	METHOD method_2605 playerJoinTeam (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)Z
 		ARG 1 manager
 		ARG 2 joinType
 		ARG 3 level
 		ARG 4 player
-	METHOD method_2607 onUpdate (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;)V
+	METHOD method_2607 update (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 manager
 		ARG 2 level
 	METHOD method_2608 moveLobby (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
 		ARG 1 manager
 		ARG 2 level
 		ARG 3 game
+	METHOD method_2609 changeMap (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Ljava/lang/String;)Z
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 gameName
 	METHOD method_2610 moveLobby (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Ljava/util/UUID;)Z
 		ARG 1 manager
 		ARG 2 level
@@ -60,10 +81,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 4 uuid
 	METHOD method_2618 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_457;)V
 		ARG 1 mapInstance
-	METHOD method_2619 createGameRenderer (Lcom/boehmod/blockfront/unnamed/BF_606;)Lcom/boehmod/blockfront/unnamed/BF_679;
+	METHOD method_2619 createController (Lcom/boehmod/blockfront/unnamed/BF_606;)Lcom/boehmod/blockfront/unnamed/BF_679;
 		ARG 1 manager
-	METHOD method_2621 setPlayerStatus (Lcom/boehmod/blockfront/unnamed/BF_685;)V
-		ARG 1 playerStatus
+	METHOD method_2621 setStatus (Lcom/boehmod/blockfront/unnamed/BF_685;)V
+		ARG 1 status
 	METHOD method_2623 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_927;)V
 		ARG 1 mapAsset
 	METHOD method_2629 getPlayerStatData (Ljava/util/UUID;)Lcom/boehmod/bflib/fds/tag/FDSTagCompound;

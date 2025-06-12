@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_439 com/boehmod/blockfront/game/GameMusic
+	METHOD method_1535 create ()Lcom/boehmod/blockfront/unnamed/BF_439;

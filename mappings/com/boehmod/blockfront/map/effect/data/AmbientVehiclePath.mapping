@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_807 com/boehmod/blockfront/map/effect/data/AmbientVehiclePath
+	FIELD field_3420 speed F
+	FIELD field_3422 reverseOnEnd Z
+	FIELD field_3427 startTime I
+	FIELD field_3428 finishTime I
+	METHOD method_3364 setReverseOnEnd (Z)V
+	METHOD method_3367 getStartTime ()I
+	METHOD method_3368 getFinishTime ()I
+	METHOD method_3369 getReverseOnEnd ()Z
+	METHOD method_3370 getSpeed ()F
+	METHOD method_3377 setSpeed (F)V
+	METHOD method_3379 setStartTime (I)V
+	METHOD method_3380 setFinishTime (I)V

@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_590 com/boehmod/blockfront/common/world/damage/GrenadeDamageSource
+	FIELD field_2479 sourcePosition Lnet/minecraft/world/phys/Vec3;
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 level
+		ARG 2 entity
+		ARG 3 itemUsing
+		ARG 4 sourcePosition
+	METHOD getLocalizedDeathMessage (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/network/chat/Component;
+		ARG 1 entity

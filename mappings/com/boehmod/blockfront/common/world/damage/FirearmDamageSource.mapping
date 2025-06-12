@@ -1,0 +1,19 @@
+CLASS com/boehmod/blockfront/unnamed/BF_589 com/boehmod/blockfront/common/world/damage/FirearmDamageSource
+	FIELD field_2475 isHeadshot Z
+	FIELD field_2476 isWallbang Z
+	FIELD field_2477 isCollateral Z
+	FIELD field_2478 isNoScope Z
+	METHOD <init> (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/ItemStack;ZZZZ)V
+		ARG 1 level
+		ARG 2 entity
+		ARG 3 itemUsing
+		ARG 4 isHeadshot
+		ARG 5 isWallbang
+		ARG 6 isCollateral
+		ARG 7 isNoScope
+	METHOD getLocalizedDeathMessage (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/network/chat/Component;
+		ARG 1 entity
+	METHOD method_2141 isHeadshot ()Z
+	METHOD method_2142 isWallbang ()Z
+	METHOD method_2143 isNoScope ()Z
+	METHOD method_2144 isCollateral ()Z

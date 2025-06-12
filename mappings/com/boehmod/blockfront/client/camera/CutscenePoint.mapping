@@ -1,1 +1,67 @@
 CLASS com/boehmod/blockfront/unnamed/BF_596 com/boehmod/blockfront/client/camera/CutscenePoint
+	FIELD field_2481 interpolationType Lcom/boehmod/blockfront/unnamed/BF_600;
+	FIELD field_2482 startRelativeMode Lcom/boehmod/blockfront/unnamed/BF_602;
+	FIELD field_2483 start Lcom/boehmod/blockfront/unnamed/BF_692;
+	FIELD field_2484 instructions Ljava/util/List;
+	FIELD field_2485 textElements Ljava/util/List;
+	FIELD field_2486 endRelativeMode Lcom/boehmod/blockfront/unnamed/BF_602;
+	FIELD field_2487 end Lcom/boehmod/blockfront/unnamed/BF_692;
+	FIELD field_2490 fadeFromDuration F
+	FIELD field_2491 fadeToDuration F
+	FIELD field_2492 startRoll F
+	FIELD field_2493 endRoll F
+	FIELD field_2495 durationSeconds F
+	FIELD field_2496 fov I
+	METHOD method_2146 getFadeToDuration ()F
+	METHOD method_2147 getDurationSeconds ()F
+	METHOD method_2149 getFOV ()I
+	METHOD method_2150 getInterpolationType ()Lcom/boehmod/blockfront/unnamed/BF_600;
+	METHOD method_2151 getStart ()Lcom/boehmod/blockfront/unnamed/BF_692;
+	METHOD method_2152 startRoll (F)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 startRoll
+	METHOD method_2155 fov (I)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 fov
+	METHOD method_2156 textElement (Lcom/boehmod/blockfront/unnamed/BF_554;)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 textElement
+	METHOD method_2157 interpolationType (Lcom/boehmod/blockfront/unnamed/BF_600;)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 interpolationType
+	METHOD method_2158 startRelativeMode (Lcom/boehmod/blockfront/unnamed/BF_602;)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 startRelativeMode
+	METHOD method_2159 start (Lcom/boehmod/blockfront/unnamed/BF_692;)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 start
+	METHOD method_2161 renderTextElements (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;)V
+		ARG 1 poseStack
+		ARG 2 font
+		ARG 3 graphics
+		ARG 4 camera
+	METHOD method_2162 instruction (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 instruction
+	METHOD method_2163 readWithRegistry (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD method_2164 getEnd ()Lcom/boehmod/blockfront/unnamed/BF_692;
+	METHOD method_2165 endRoll (F)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 endRoll
+	METHOD method_2166 endRelativeMode (Lcom/boehmod/blockfront/unnamed/BF_602;)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 endRelativeMode
+	METHOD method_2167 end (Lcom/boehmod/blockfront/unnamed/BF_692;)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 end
+	METHOD method_2168 writeWithRegistry (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD method_2169 durationSeconds (F)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 durationSeconds
+	METHOD method_2170 fadeFromDuration (F)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 fadeFromDuration
+	METHOD method_2171 fadeToDuration (F)Lcom/boehmod/blockfront/unnamed/BF_596;
+		ARG 1 fadeToDuration
+	METHOD method_2173 getInstructions ()Ljava/util/List;
+	METHOD method_2174 getStartRoll ()F
+	METHOD method_2175 getEndRoll ()F
+	METHOD method_2176 getFadeFromDuration ()F
+	METHOD read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

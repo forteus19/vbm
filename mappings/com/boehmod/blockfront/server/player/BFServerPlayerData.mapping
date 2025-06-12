@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1117 com/boehmod/blockfront/server/player/BFServerPlayerData
+	FIELD field_6272 sequenceManager Lcom/boehmod/blockfront/unnamed/BF_1115;
+	METHOD method_5457 getSequenceManager ()Lcom/boehmod/blockfront/unnamed/BF_1115;

@@ -4,3 +4,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_892 com/boehmod/blockfront/common/match/
 		ARG 1 game
 	METHOD method_3715 getEntries ()Ljava/util/List;
 	METHOD method_3719 startVoteSequence (Lcom/boehmod/blockfront/unnamed/BF_445;)V
+	METHOD method_3720 isEntry (Ljava/lang/String;)Z

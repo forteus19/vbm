@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1054 com/boehmod/blockfront/common/net/packet/BFVehicleFireEffectPacket
+	FIELD field_4319 vehicleId I
+	METHOD method_4469 vehicleId ()I

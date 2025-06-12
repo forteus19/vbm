@@ -1,0 +1,25 @@
+CLASS com/boehmod/blockfront/unnamed/BF_554 com/boehmod/blockfront/client/camera/CutsceneTextElement
+	FIELD field_2318 scale F
+	FIELD field_2319 component Lnet/minecraft/network/chat/Component;
+	FIELD field_2320 position Lnet/minecraft/world/phys/Vec3;
+	METHOD <init> (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD <init> (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/phys/Vec3;F)V
+		ARG 1 component
+		ARG 2 position
+		ARG 3 scale
+	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD method_1919 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;)V
+		ARG 1 poseStack
+		ARG 2 font
+		ARG 3 graphics
+		ARG 4 camera
+	METHOD method_1920 writeWithRegistry (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

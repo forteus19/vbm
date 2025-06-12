@@ -1,7 +1,15 @@
 CLASS com/boehmod/blockfront/unnamed/BF_550 com/boehmod/blockfront/client/match/ClientMatchMaking
+	FIELD field_2273 searchGame Lcom/boehmod/bflib/cloud/common/mm/SearchGame;
+	FIELD field_2274 searchRegion Lcom/boehmod/bflib/cloud/common/mm/SearchRegion;
 	FIELD field_2275 address Ljava/net/InetSocketAddress;
 	FIELD field_2279 searching Z
 	FIELD field_2280 inMatch Z
+	METHOD method_1900 getSearchGame ()Lcom/boehmod/bflib/cloud/common/mm/SearchGame;
+	METHOD method_1901 getSearchRegion ()Lcom/boehmod/bflib/cloud/common/mm/SearchRegion;
+	METHOD method_1902 setSearchGame (Lcom/boehmod/bflib/cloud/common/mm/SearchGame;)V
+		ARG 1 searchGame
+	METHOD method_1903 setSearchRegion (Lcom/boehmod/bflib/cloud/common/mm/SearchRegion;)V
+		ARG 1 searchRegion
 	METHOD method_1904 (Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/Minecraft;Lcom/boehmod/bflib/cloud/common/mm/MatchParty;)V
 		ARG 2 party
 	METHOD method_1905 join (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Ljava/net/InetSocketAddress;)V

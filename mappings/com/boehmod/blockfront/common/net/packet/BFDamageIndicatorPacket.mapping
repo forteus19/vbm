@@ -1,1 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_969 com/boehmod/blockfront/common/net/packet/BFDamageIndicatorPacket
+	FIELD field_3942 origin Lnet/minecraft/world/phys/Vec3;
+	FIELD field_3943 intensity F
+	METHOD method_4051 intensity ()F
+	METHOD method_4054 origin ()Lnet/minecraft/world/phys/Vec3;

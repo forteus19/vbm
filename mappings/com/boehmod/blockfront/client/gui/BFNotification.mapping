@@ -1,0 +1,48 @@
+CLASS com/boehmod/blockfront/unnamed/BF_221 com/boehmod/blockfront/client/gui/BFNotification
+	FIELD field_1364 type Lcom/boehmod/blockfront/unnamed/BF_220;
+	FIELD field_1365 updated Z
+	FIELD field_1366 displayTime J
+	FIELD field_1369 message Lnet/minecraft/network/chat/Component;
+	FIELD field_1370 title Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_220;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 type
+		ARG 2 title
+		ARG 3 message
+	METHOD method_996 getToastType ()Lcom/boehmod/blockfront/unnamed/BF_220;
+	METHOD method_997 show (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 minecraft
+		ARG 1 message
+	METHOD method_998 show (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
+		ARG 0 minecraft
+		ARG 1 message
+		ARG 2 type
+	METHOD method_999 show (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 minecraft
+		ARG 1 title
+		ARG 2 message
+	METHOD method_1000 show (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;Z)V
+		ARG 0 minecraft
+		ARG 1 title
+		ARG 2 message
+		ARG 3 type
+		ARG 4 narrator
+	METHOD method_1001 show (Lnet/minecraft/client/Minecraft;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Z)V
+		ARG 0 minecraft
+		ARG 1 title
+		ARG 2 message
+		ARG 3 narrator
+	METHOD method_1002 addToast (Lnet/minecraft/client/gui/components/toasts/ToastComponent;Lcom/boehmod/blockfront/unnamed/BF_220;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 component
+		ARG 1 type
+		ARG 2 title
+		ARG 3 message
+	METHOD method_1003 update (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 title
+		ARG 2 message
+	METHOD method_1004 renderBackground (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;)V
+		ARG 1 pose
+		ARG 2 graphics
+	METHOD render (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/components/toasts/ToastComponent;J)Lnet/minecraft/client/gui/components/toasts/Toast$Visibility;
+		ARG 1 graphics
+		ARG 2 components
+		ARG 3 millis

@@ -1,1 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_195 com/boehmod/blockfront/client/screen/match/AbstractMatchSelectClassScreen
+	FIELD field_1228 errorTimer I
+	FIELD field_1237 errorMessage Lnet/minecraft/network/chat/Component;
+	METHOD method_901 showErrorMessage (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 message

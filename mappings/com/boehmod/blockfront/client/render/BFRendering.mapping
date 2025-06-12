@@ -2,10 +2,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 	FIELD field_215 RANK_BG_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_216 DEFAULT_CALLINGCARD_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_217 RUNNING_TEXTURE Lnet/minecraft/resources/ResourceLocation;
-	FIELD field_218 GAMEMODE_CORNER_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_218 CORNER_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_219 RED_CHAT_COLOR I
 	FIELD field_222 TRANSLUCENT_BLACK_COLOR I
 	FIELD field_228 ENVIRONMENT Lcom/boehmod/blockfront/unnamed/BF_95;
+	FIELD field_229 GUI_LIGHTING_1 Lorg/joml/Vector3f;
+	FIELD field_230 GUI_LIGHTING_2 Lorg/joml/Vector3f;
 	FIELD field_231 BYTE_TO_FLOAT_RATIO F
 	FIELD field_236 PARTY_LEADER_COMPONENT Lnet/minecraft/network/chat/Component;
 	FIELD field_237 PARTY_LEADER_PREFIX Lnet/minecraft/network/chat/Component;
@@ -393,7 +395,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 4 size
 		ARG 5 color
 		ARG 6 time
-	METHOD method_250 gamemodeSelection (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;IIII)V
+	METHOD method_250 promptBackground (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;IIII)V
 		ARG 0 poseStack
 		ARG 1 graphics
 		ARG 2 x
@@ -524,6 +526,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 7 rotation
 		ARG 8 alpha
 		ARG 9 color
+	METHOD method_268 item (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/world/item/ItemStack;FF)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 itemStack
+		ARG 3 x
+		ARG 4 y
+	METHOD method_269 item (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/world/item/ItemStack;FFF)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 itemStack
+		ARG 3 x
+		ARG 4 y
+		ARG 5 scale
 	METHOD method_270 quad (Lcom/mojang/blaze3d/vertex/PoseStack;[Lnet/minecraft/world/phys/Vec3;FFFF)V
 		ARG 0 poseStack
 		ARG 1 points

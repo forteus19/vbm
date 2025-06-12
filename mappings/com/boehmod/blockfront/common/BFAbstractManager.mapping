@@ -8,6 +8,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	FIELD field_2034 assetStore Lcom/boehmod/blockfront/unnamed/BF_459;
 	FIELD field_2035 isGameRulesSet Z
 	FIELD field_2037 pingUpdateTimer I
+	FIELD field_2038 LOGIN_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2039 instanceUUID Ljava/util/UUID;
 	FIELD field_6328 cloudRegistry Lcom/boehmod/bflib/cloud/common/CloudRegistry;
 	METHOD <init> (Lcom/boehmod/blockfront/common/player/c;)V
@@ -26,14 +27,22 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 2 level
 		ARG 3 player
 		ARG 4 game
+	METHOD method_1558 getAvailableGames (Lcom/boehmod/blockfront/unnamed/BF_925;Lcom/boehmod/blockfront/unnamed/BF_677;)Ljava/util/List;
+		ARG 1 gameEntry
+		ARG 2 game
 	METHOD method_1559 mapIsOccupied (Lcom/boehmod/blockfront/unnamed/BF_927;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
 		ARG 1 map
 		ARG 2 game
+	METHOD method_1560 retrieveGame (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_677;
+		ARG 1 name
 	METHOD method_1561 mapIsOccupied (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
 		ARG 1 mapName
 		ARG 2 game
 	METHOD method_1562 getGameWithPlayer (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_677;
 		ARG 1 uuid
+	METHOD method_1564 getNearestActiveGame (Lnet/minecraft/core/BlockPos;D)Lcom/boehmod/blockfront/unnamed/BF_677;
+		ARG 1 blockPos
+		ARG 2 maxDistance
 	METHOD method_1565 onUpdate (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 server
 		ARG 2 level
@@ -54,6 +63,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 1 server
 		ARG 2 level
 	METHOD method_1575 isMatchMakingEnabled ()Z
+	METHOD method_1576 isPlayerInGame (Ljava/util/UUID;)Z
+		ARG 1 uuid
 	METHOD method_1577 getInstanceUUID ()Ljava/util/UUID;
 	METHOD method_1578 isConnectionVerified ()Z
 	METHOD method_5487 getCloudRegistry ()Lcom/boehmod/bflib/cloud/common/CloudRegistry;

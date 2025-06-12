@@ -1,3 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_465 com/boehmod/blockfront/assets/AssetFactory
 	METHOD method_1668 create (ZLcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_460;
 		ARG 2 manager
+		ARG 3 name
+		ARG 4 type

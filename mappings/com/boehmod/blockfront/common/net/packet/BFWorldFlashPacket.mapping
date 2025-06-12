@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1004 com/boehmod/blockfront/common/net/packet/BFWorldFlashPacket
+	FIELD field_4123 flashTime I
+	METHOD method_4288 flashTime ()I

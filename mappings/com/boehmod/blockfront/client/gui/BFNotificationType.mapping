@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_220 com/boehmod/blockfront/client/gui/BFNotificationType
+	METHOD <init> (Ljava/lang/String;II)V
+		ARG 3 color
+	METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
+		ARG 3 color
+		ARG 4 icon

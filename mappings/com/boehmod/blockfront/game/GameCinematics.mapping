@@ -1,5 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_599 com/boehmod/blockfront/game/GameCinematics
 	FIELD field_2505 sequence Lcom/boehmod/blockfront/unnamed/BF_597;
+	FIELD field_2506 musicData Lcom/boehmod/blockfront/unnamed/BF_603;
 	FIELD field_2509 camera Lcom/boehmod/blockfront/unnamed/BF_642;
 	FIELD field_2510 isSequencePlaying Z
 	FIELD field_2518 manager Lcom/boehmod/blockfront/unnamed/BF_606;

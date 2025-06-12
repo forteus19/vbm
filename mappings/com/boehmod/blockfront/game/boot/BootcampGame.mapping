@@ -1,1 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_788 com/boehmod/blockfront/game/boot/BootcampGame
+	FIELD field_3344 npcSpawns Ljava/util/List;
+	FIELD field_3345 soundPoints Ljava/util/List;
+	FIELD field_3346 weaponPoints Ljava/util/List;
+	FIELD field_3347 texturePoints Ljava/util/List;
+	FIELD field_3348 introSequence Lcom/boehmod/blockfront/unnamed/BF_597;
+	FIELD field_3350 finishPoint Lcom/boehmod/blockfront/unnamed/BF_692;
+	METHOD method_3246 setIntroSequence (Lcom/boehmod/blockfront/unnamed/BF_597;)V
+		ARG 1 sequence
+	METHOD method_3249 getIntroSequence ()Lcom/boehmod/blockfront/unnamed/BF_597;
+	METHOD method_3251 getFinishPoint ()Lcom/boehmod/blockfront/unnamed/BF_692;

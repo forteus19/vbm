@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_591 com/boehmod/blockfront/common/world/damage/BFDamageSource
+	FIELD field_2480 itemUsing Lnet/minecraft/world/item/ItemStack;
+	METHOD <init> (Lnet/minecraft/core/Holder;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 damageType
+		ARG 2 entity
+		ARG 3 itemUsing
+	METHOD method_2145 getItemUsing ()Lnet/minecraft/world/item/ItemStack;

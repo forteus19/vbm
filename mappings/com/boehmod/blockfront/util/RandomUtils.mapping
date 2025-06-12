@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1113 com/boehmod/blockfront/util/RandomUtils
+	METHOD method_5447 randomFromList (Ljava/util/List;)Ljava/lang/Object;
+		ARG 0 list
+	METHOD method_5448 randomFromList (Ljava/util/List;J)Ljava/lang/Object;
+		ARG 0 list
+		ARG 1 seed
+	METHOD method_5449 randomFromSet (Ljava/util/Set;)Ljava/lang/Object;
+		ARG 0 set

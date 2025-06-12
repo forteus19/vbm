@@ -27,5 +27,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_3 com/boehmod/blockfront/client/corpse/C
 		ARG 1 section
 	METHOD method_26 instantiateCollider (Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 level
-	METHOD method_27 reset ()V
+	METHOD method_27 clear ()V
 	METHOD method_28 freeCollider ()V

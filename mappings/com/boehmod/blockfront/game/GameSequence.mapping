@@ -1,1 +1,24 @@
 CLASS com/boehmod/blockfront/unnamed/BF_597 com/boehmod/blockfront/game/GameSequence
+	FIELD field_2497 cutscenePoints Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_2498 loop Z
+	FIELD field_2499 showUI Z
+	FIELD field_2500 allowSkip Z
+	FIELD field_2501 fadeWhenFinished Z
+	METHOD method_2181 builder ()Lcom/boehmod/blockfront/unnamed/BF_597$BF_598;
+	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	CLASS BF_598 Builder
+		FIELD field_2502 sequence Lcom/boehmod/blockfront/unnamed/BF_597;
+		METHOD method_2186 build ()Lcom/boehmod/blockfront/unnamed/BF_597;
+		METHOD method_2187 cutscenePoint (Lcom/boehmod/blockfront/unnamed/BF_596;)Lcom/boehmod/blockfront/unnamed/BF_597$BF_598;
+			ARG 1 cutscenePoint
+		METHOD method_2188 showUI (Z)Lcom/boehmod/blockfront/unnamed/BF_597$BF_598;
+			ARG 1 showUI
+		METHOD method_2189 allowSkip (Z)Lcom/boehmod/blockfront/unnamed/BF_597$BF_598;
+			ARG 1 allowSkip
+		METHOD method_2190 loop (Z)Lcom/boehmod/blockfront/unnamed/BF_597$BF_598;
+			ARG 1 loop
+		METHOD method_2191 fadeWhenFinished (Z)Lcom/boehmod/blockfront/unnamed/BF_597$BF_598;
+			ARG 1 fadeWhenFinished

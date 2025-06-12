@@ -1,3 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_878 com/boehmod/blockfront/game/inf/InfectedGame
+	FIELD field_3524 zombieZones Ljava/util/List;
+	FIELD field_3525 doors Ljava/util/List;
 	FIELD field_3527 shopItems Ljava/util/List;
 	FIELD field_3530 command Lcom/boehmod/blockfront/unnamed/BF_462;
+	METHOD method_3634 getZone (Ljava/lang/String;)Ljava/util/Optional;
+		ARG 1 id
+	METHOD method_3635 (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_887;)Z
+		ARG 1 zone

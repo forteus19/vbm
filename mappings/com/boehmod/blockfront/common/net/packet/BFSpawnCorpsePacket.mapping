@@ -1,4 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1049 com/boehmod/blockfront/common/net/packet/BFSpawnCorpsePacket
-	METHOD method_4445 getData ()Lcom/boehmod/blockfront/unnamed/BF_1049$BF_1050;
-	METHOD method_4447 getEntityId ()I
+	FIELD field_4297 data Lcom/boehmod/blockfront/unnamed/BF_1049$BF_1050;
+	FIELD field_4298 entityId I
+	METHOD method_4445 data ()Lcom/boehmod/blockfront/unnamed/BF_1049$BF_1050;
+	METHOD method_4447 entityId ()I
 	CLASS BF_1050 Data

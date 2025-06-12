@@ -1,0 +1,15 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1120 com/boehmod/blockfront/server/player/ServerProfanityManager
+	FIELD field_6274 manager Lcom/boehmod/blockfront/unnamed/BF_1067;
+	FIELD field_6275 LIST_PATH Ljava/lang/String;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1067;)V
+		ARG 1 manager
+	METHOD handleProfanityImmediately (Ljava/util/UUID;Lcom/boehmod/bflib/cloud/common/profanity/Profanity;Ljava/lang/String;)V
+		ARG 1 playerUUID
+		ARG 2 profanity
+		ARG 3 content
+	METHOD log (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 fmt
+		ARG 2 args
+	METHOD logError (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 fmt
+		ARG 2 args

@@ -1,1 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1038 com/boehmod/blockfront/common/net/packet/BFPositionedShakeNodePacket
+	FIELD field_4245 shakeData Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_4246 position Lorg/joml/Vector3f;
+	FIELD field_4247 radius F
+	METHOD method_4397 shakeData ()Lcom/boehmod/blockfront/unnamed/BF_427;
+	METHOD method_4398 radius ()F
+	METHOD method_4401 position ()Lorg/joml/Vector3f;

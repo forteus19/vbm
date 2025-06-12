@@ -1,1 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1029 com/boehmod/blockfront/common/net/packet/BFExplosionPacket
+	FIELD field_4216 position Lnet/minecraft/world/phys/Vec3;
+	FIELD field_4217 explosionType Lcom/boehmod/blockfront/unnamed/BF_676;
+	METHOD method_4373 explosionType ()Lcom/boehmod/blockfront/unnamed/BF_676;
+	METHOD method_4376 position ()Lnet/minecraft/world/phys/Vec3;

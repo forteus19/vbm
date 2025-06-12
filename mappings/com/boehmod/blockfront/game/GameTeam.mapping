@@ -3,14 +3,28 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	FIELD field_2930 teamObjects Lcom/boehmod/bflib/fds/tag/FDSTagCompound;
 	FIELD field_2931 players Lit/unimi/dsi/fastutil/objects/ObjectOpenHashSet;
 	FIELD field_2932 name Ljava/lang/String;
-	FIELD field_2933 style Lnet/minecraft/network/chat/Style;
+	FIELD field_2933 styleText Lnet/minecraft/network/chat/Style;
+	FIELD field_2934 styleIcon Lnet/minecraft/network/chat/Style;
 	FIELD field_2935 color I
+	FIELD field_2936 iconColor I
 	FIELD field_2937 maxPlayers I
 	FIELD field_2938 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;Lnet/minecraft/network/chat/Style;Lnet/minecraft/network/chat/Style;I)V
 		ARG 1 game
 		ARG 2 name
-	METHOD method_2809 getStyle ()Lnet/minecraft/network/chat/Style;
+		ARG 3 styleText
+		ARG 4 styleIcon
+		ARG 5 maxPlayers
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
+	METHOD method_2809 getStyleText ()Lnet/minecraft/network/chat/Style;
+	METHOD method_2810 teleportPlayersToSpawns (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 dataHandler
+		ARG 2 game
+	METHOD method_2811 (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;)V
+		ARG 3 uuid
+	METHOD method_2812 randomSpawn (Lcom/boehmod/blockfront/unnamed/BF_677;)Lcom/boehmod/blockfront/unnamed/BF_692;
+		ARG 1 game
 	METHOD method_2813 getDivisionData (Lcom/boehmod/blockfront/unnamed/BF_677;)Lcom/boehmod/blockfront/unnamed/BF_929;
 		ARG 1 game
 	METHOD method_2814 getObjectInt (Lcom/boehmod/blockfront/unnamed/BF_941;)I
@@ -29,10 +43,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	METHOD method_2819 addPlayers (Ljava/util/Set;)V
 		ARG 1 uuids
 	METHOD method_2820 getMaxPlayers ()I
+	METHOD method_2821 getIconColor ()I
 	METHOD method_2822 numPlayers ()I
 	METHOD method_2823 isAllies ()Z
 	METHOD method_2824 isAxis ()Z
 	METHOD method_2825 isAcceptingPlayers ()Z
+	METHOD method_2826 getStyleIcon ()Lnet/minecraft/network/chat/Style;
 	METHOD method_2827 addPlayerSpawn (Lcom/boehmod/blockfront/unnamed/BF_692;)V
 		ARG 1 pose
 	METHOD method_2828 addPlayer (Lnet/minecraft/server/level/ServerPlayer;)Z
@@ -46,7 +62,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 		ARG 1 uuid
 	METHOD method_2834 hasPlayer (Ljava/util/UUID;)Z
 		ARG 1 uuid
+	METHOD method_2835 randomPlayer ()Ljava/util/UUID;
+	METHOD method_2836 writeBuf (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
 	METHOD method_2837 getPlayers ()Ljava/util/Set;
+	METHOD method_2838 readBuf (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
 	METHOD method_2839 getObjectString (Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 key
 	METHOD method_2840 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V

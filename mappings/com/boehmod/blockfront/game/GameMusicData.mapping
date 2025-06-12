@@ -1,0 +1,19 @@
+CLASS com/boehmod/blockfront/unnamed/BF_603 com/boehmod/blockfront/game/GameMusicData
+	FIELD field_2536 stopMusicOnFinish Z
+	METHOD method_2217 setStopMusicOnFinish (Z)V
+		ARG 1 stopMusicOnFinish
+	METHOD method_2218 getStopMusicOnFinish ()Z
+	METHOD method_2219 readNewWithRegistry (Lnet/minecraft/network/RegistryFriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_603;
+		ARG 0 buf
+	METHOD method_2220 readWithRegistry (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD method_2221 writeWithRegistry (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

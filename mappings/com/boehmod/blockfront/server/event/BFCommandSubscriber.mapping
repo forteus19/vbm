@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1077 com/boehmod/blockfront/server/event/BFCommandSubscriber
+	METHOD method_4596 onCommand (Lnet/neoforged/neoforge/event/CommandEvent;)V
+		ARG 0 event

@@ -47,6 +47,12 @@ dependencies {
     decompileRuntime("org.vineflower:vineflower:1.11.1")
 }
 
+val formatMappingsTask = tasks.register<FormatMappingsTask>("formatMappings") {
+    group = "vbm"
+    input.set(mappingsFile)
+    output.set(mappingsFile)
+}
+
 val downloadBaseJarTask = tasks.register<Download>("downloadBaseJar") {
     group = "vbm"
     src(bfDownloadUrl)
@@ -134,10 +140,18 @@ val mapNamedJarFullTask = tasks.register<TinyRemapperTask>("mapNamedJarFull") {
 
 val enigmaTask = tasks.register<JavaExec>("enigma") {
     dependsOn(mapIntermediaryJarTask, project(":specialist").tasks["build"])
+    finalizedBy(formatMappingsTask)
     group = "vbm"
     classpath = files(enigmaRuntime, project(":specialist").tasks["jar"].outputs)
     mainClass = "cuchaz.enigma.gui.Main"
     args("-jar", intermediaryJarFile.absolutePath, "-mappings", mappingsFile.absolutePath, "-profile", file("enigma.json").absolutePath)
+}
+
+val checkMappingsTask = tasks.register<CheckMappingsTask>("checkMappings") {
+    dependsOn(mapSpecializedMethodsTask)
+    group = "vbm"
+    jar.set(mapIntermediaryJarTask.get().output)
+    mappings.set(mapSpecializedMethodsTask.get().output)
 }
 
 val decompileVineflowerTask = tasks.register<JavaExec>("decompileVineflower") {
@@ -159,19 +173,6 @@ val mappingsJarTask = tasks.register<Jar>("mappingsJar") {
         attributes["BlockFront-Version"] = bfVersion
         attributes["BlockFront-Origin"] = bfDownloadUrl
     }
-}
-
-val checkMappingsTask = tasks.register<CheckMappingsTask>("checkMappings") {
-    dependsOn(mapSpecializedMethodsTask)
-    group = "vbm"
-    jar.set(mapIntermediaryJarTask.get().output)
-    mappings.set(mapSpecializedMethodsTask.get().output)
-}
-
-val formatMappingsTask = tasks.register<FormatMappingsTask>("formatMappings") {
-    group = "vbm"
-    input.set(mappingsFile)
-    output.set(mappingsFile)
 }
 
 tasks.build {

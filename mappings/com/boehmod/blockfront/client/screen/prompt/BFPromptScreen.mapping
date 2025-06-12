@@ -1,1 +1,2 @@
-CLASS com/boehmod/blockfront/unnamed/BF_251 com/boehmod/blockfront/client/screen/prompt/BFPromptScreen
+CLASS com/boehmod/blockfront/unnamed/BF_249 com/boehmod/blockfront/client/screen/prompt/BFPromptScreen
+	FIELD field_1523 CORNERSHADOW Lnet/minecraft/resources/ResourceLocation;

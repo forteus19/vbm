@@ -1,4 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_4 com/boehmod/blockfront/client/corpse/physics/CorpsePartPhysics
 	FIELD field_34 body Lcom/boehmod/blockfront/client/corpse/physics/d;
 	FIELD field_35 camera Lcom/boehmod/blockfront/unnamed/BF_642;
-	METHOD method_45 reset ()V
+	METHOD method_45 clear ()V

@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_775 com/boehmod/blockfront/common/match/kill/AbstractKillSection
+	METHOD method_3224 read (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD method_3225 write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 buf

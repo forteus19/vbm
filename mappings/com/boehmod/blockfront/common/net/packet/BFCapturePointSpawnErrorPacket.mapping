@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1012 com/boehmod/blockfront/common/net/packet/BFCapturePointSpawnErrorPacket
+	FIELD field_4151 message Lnet/minecraft/network/chat/Component;
+	METHOD method_4314 message ()Lnet/minecraft/network/chat/Component;

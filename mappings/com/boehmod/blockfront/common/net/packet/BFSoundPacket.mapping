@@ -1,5 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1047 com/boehmod/blockfront/common/net/packet/BFSoundPacket
-	METHOD method_4432 getSource ()Lnet/minecraft/sounds/SoundSource;
-	METHOD method_4433 getPitch ()F
-	METHOD method_4434 getVolume ()F
-	METHOD method_4436 getSound ()Lnet/minecraft/core/Holder;
+	FIELD field_4284 sound Lnet/minecraft/core/Holder;
+	FIELD field_4285 source Lnet/minecraft/sounds/SoundSource;
+	FIELD field_4286 volume F
+	FIELD field_4287 pitch F
+	METHOD method_4432 source ()Lnet/minecraft/sounds/SoundSource;
+	METHOD method_4433 pitch ()F
+	METHOD method_4434 volume ()F
+	METHOD method_4436 sound ()Lnet/minecraft/core/Holder;

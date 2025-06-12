@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_970 com/boehmod/blockfront/common/net/packet/BFDebugLinePacket
+	FIELD field_3946 debugLine Lcom/boehmod/blockfront/unnamed/BF_17;
+	METHOD method_4055 debugLine ()Lcom/boehmod/blockfront/unnamed/BF_17;

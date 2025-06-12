@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_486 com/boehmod/blockfront/client/render/item/CloudItemRenderers
+	FIELD field_2136 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_485;
+	FIELD field_2137 RENDERERS Ljava/util/Map;
+	METHOD method_1750 getRenderer (Lcom/boehmod/bflib/cloud/common/item/CloudItem;)Lcom/boehmod/blockfront/unnamed/BF_485;
+		ARG 0 cloudItem
+	METHOD method_1751 registerRenderer (Ljava/lang/Class;Lcom/boehmod/blockfront/unnamed/BF_485;)V
+		ARG 0 cloudItemClass
+		ARG 1 renderer

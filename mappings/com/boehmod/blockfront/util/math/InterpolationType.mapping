@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_600 com/boehmod/blockfront/util/math/InterpolationType
+	METHOD <init> (Ljava/lang/String;ILcom/boehmod/blockfront/unnamed/BF_601;)V
+		ARG 3 interpolator
+	METHOD apply (F)F
+		ARG 1 t
+	METHOD lambda$static$0 (F)F
+		ARG 0 t
+	METHOD lambda$static$1 (F)F
+		ARG 0 t
+	METHOD lambda$static$2 (F)F
+		ARG 0 t
+	METHOD lambda$static$3 (F)F
+		ARG 0 t

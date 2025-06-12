@@ -1,15 +1,34 @@
 CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/player/BFAbstractPlayerData
 	FIELD field_1150 uuid Ljava/util/UUID;
 	FIELD field_1155 previousMessages Ljava/util/List;
+	FIELD field_1156 lastMessage Ljava/lang/String;
+	FIELD field_1159 lastChatTime J
+	FIELD field_1161 outOfGame Z
+	FIELD field_1163 isMuted Z
 	FIELD field_1169 pose Lcom/boehmod/blockfront/unnamed/BF_692;
+	FIELD field_1174 playTimer I
 	FIELD field_1175 calloutCooldown I
+	FIELD field_1176 respawnTimer I
+	METHOD method_827 setRespawnTimer (I)V
+		ARG 1 respawnTimer
 	METHOD method_829 getPreviousMessages ()Ljava/util/List;
-	METHOD method_830 setInGame (Z)V
+	METHOD method_830 setOutOfGame (Z)V
+		ARG 1 outOfGame
+	METHOD method_831 getLastMessage ()Ljava/lang/String;
+	METHOD method_834 setMuted (Z)V
+		ARG 1 isMuted
 	METHOD method_845 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
-	METHOD method_848 isInGame ()Z
+	METHOD method_848 isOutOfGame ()Z
+	METHOD method_850 isMuted ()Z
+	METHOD method_851 getRespawnTimer ()I
+	METHOD method_853 setLastChatTime (J)V
+		ARG 1 time
+	METHOD method_854 getLastChatTime ()J
 	METHOD method_855 setPose (Lcom/boehmod/blockfront/unnamed/BF_692;)V
+		ARG 1 pose
 	METHOD method_856 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
+	METHOD method_858 getPose ()Lcom/boehmod/blockfront/unnamed/BF_692;
 	METHOD method_859 addMessage (Ljava/lang/String;)V
 		ARG 1 message

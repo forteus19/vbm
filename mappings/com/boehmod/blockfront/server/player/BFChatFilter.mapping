@@ -1,0 +1,26 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1069 com/boehmod/blockfront/server/player/BFChatFilter
+	FIELD field_4342 FILTERS Ljava/util/List;
+	FIELD field_4343 MESSAGE_MUTED Lnet/minecraft/network/chat/Component;
+	FIELD field_4344 MESSAGE_CAPS Lnet/minecraft/network/chat/Component;
+	FIELD field_4345 MESSAGE_LINK Lnet/minecraft/network/chat/Component;
+	FIELD field_4346 MESSAGE_PROFANITY Lnet/minecraft/network/chat/Component;
+	METHOD method_4581 (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/common/player/b;Lcom/boehmod/blockfront/unnamed/BF_476;Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_1069$BF_1070;)Lnet/minecraft/network/chat/Component;
+		ARG 6 filter
+	METHOD method_4582 checkMessage (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/common/player/b;Lcom/boehmod/blockfront/unnamed/BF_476;Ljava/lang/String;)Lnet/minecraft/network/chat/Component;
+		ARG 0 manager
+		ARG 1 player
+		ARG 2 level
+		ARG 3 playerData
+		ARG 4 cloudData
+		ARG 5 message
+	METHOD method_4583 getUppercasePercent (Lnet/minecraft/server/level/ServerLevel;Ljava/lang/String;)D
+		ARG 0 level
+		ARG 1 message
+	CLASS BF_1070 Filter
+		METHOD getMessage (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/common/player/b;Lcom/boehmod/blockfront/unnamed/BF_476;Ljava/lang/String;)Lnet/minecraft/network/chat/Component;
+			ARG 1 manager
+			ARG 2 level
+			ARG 3 player
+			ARG 4 playerData
+			ARG 5 cloudData
+			ARG 6 message

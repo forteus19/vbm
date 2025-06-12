@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_581 com/boehmod/blockfront/common/block/entity/AbstractCrateGunBlockEntity
+	FIELD field_2463 itemStack Lnet/minecraft/world/item/ItemStack;
+	METHOD method_2081 getHeldItem ()Lnet/minecraft/world/item/ItemStack;
+	METHOD method_2082 putItem (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 itemStack
+	METHOD method_2083 sync (Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 game

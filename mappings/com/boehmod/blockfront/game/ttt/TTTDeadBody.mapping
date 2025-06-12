@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_848 com/boehmod/blockfront/game/ttt/TTTDeadBody
+	FIELD field_3459 username Ljava/lang/String;
+	FIELD field_3460 item Ljava/lang/String;
+	FIELD field_3461 uuid Ljava/util/UUID;
+	FIELD field_3462 identified Z
+	METHOD method_3509 getItem ()Ljava/lang/String;
+	METHOD method_3512 isIdentified ()Z

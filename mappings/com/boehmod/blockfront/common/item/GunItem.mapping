@@ -13,9 +13,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	FIELD field_4051 weight F
 	FIELD field_4061 maxHitDist I
 	FIELD field_4062 currentFireConfig I
-	FIELD field_4068 ID_TO_MAG_TYPE Ljava/util/Map;
-	FIELD field_4069 ID_TO_BARREL_TYPE Ljava/util/Map;
+	FIELD field_4068 magIdMap Ljava/util/Map;
+	FIELD field_4069 barrelIdMap Ljava/util/Map;
 	FIELD field_4070 scopes Ljava/util/Map;
+	FIELD field_6381 bulletParticles Lcom/boehmod/blockfront/unnamed/BF_1136;
 	METHOD appendHoverText (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item$TooltipContext;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V
 		ARG 1 itemStack
 		ARG 2 context
@@ -24,9 +25,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4118 getDamageConfig ()Lcom/boehmod/blockfront/unnamed/BF_951;
 	METHOD method_4119 getDefaultFireConfig ()Lcom/boehmod/blockfront/unnamed/BF_957;
 	METHOD method_4120 getClipTextRenderer ()Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
+	METHOD method_4121 getBipod ()Lcom/boehmod/blockfront/unnamed/BF_996;
 	METHOD method_4122 getChestArmor ()Lnet/neoforged/neoforge/registries/DeferredItem;
 	METHOD method_4123 getFireConfigs ()[Lcom/boehmod/blockfront/unnamed/BF_957;
-	METHOD method_4126 ammo (II)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4126 defaultMag (II)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 clip
+		ARG 2 reserve
 	METHOD method_4129 shake (Lcom/boehmod/blockfront/unnamed/BF_427;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4130 scope (Lcom/boehmod/blockfront/unnamed/BF_949$BF_950;Lcom/boehmod/blockfront/unnamed/BF_949;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 type
@@ -41,7 +45,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 1 bipod
 	METHOD method_4138 barrel (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_988;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4139 mag (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_994;)Lcom/boehmod/blockfront/unnamed/BF_993;
-	METHOD method_4145 reload (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)V
+	METHOD method_4145 startReload (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)V
 	METHOD method_4146 getAmmoLoaded (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack
 	METHOD method_4147 getScopeConfig (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_949;
@@ -123,4 +127,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 0 itemStack
 	METHOD method_4225 hasMuzzleFlash (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 itemStack
+	METHOD method_4227 finishReload (Lnet/minecraft/world/item/ItemStack;)V
 	METHOD method_5532 particles (Lcom/boehmod/blockfront/unnamed/BF_1136;)Lcom/boehmod/blockfront/unnamed/BF_993;

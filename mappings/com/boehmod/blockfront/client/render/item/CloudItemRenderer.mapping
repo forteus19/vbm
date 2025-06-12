@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_485 com/boehmod/blockfront/client/render/item/CloudItemRenderer
+	METHOD method_1746 renderInTabList (Lcom/boehmod/bflib/cloud/common/item/CloudItem;Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;FFFFF)V
+		ARG 1 cloudItem
+		ARG 2 minecraft
+		ARG 3 poseStack
+		ARG 4 graphics
+	METHOD method_1747 renderInspect (Lcom/boehmod/bflib/cloud/common/item/CloudItem;Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;IIIIF)V
+		ARG 1 cloudItem
+		ARG 2 minecraft
+		ARG 3 poseStack
+		ARG 4 graphics

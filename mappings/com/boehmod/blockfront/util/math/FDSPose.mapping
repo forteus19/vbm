@@ -39,6 +39,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDS
 	METHOD method_3014 writeNamedFDS (Ljava/lang/String;Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 nameTag
 		ARG 2 root
+	METHOD method_3017 distance (Lnet/minecraft/core/BlockPos;)D
+		ARG 1 blockPos
 	METHOD method_3018 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_692;
 		ARG 0 buf
 	METHOD method_3026 distanceSqr (Lcom/boehmod/blockfront/unnamed/BF_692;)D
@@ -46,6 +48,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDS
 	METHOD method_3027 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
 	METHOD method_3028 asBlockPos ()Lnet/minecraft/core/BlockPos;
+	METHOD method_3029 copy ()Lcom/boehmod/blockfront/unnamed/BF_692;
 	METHOD method_3030 getX ()D
 	METHOD method_3031 getY ()D
 	METHOD method_3032 getZ ()D

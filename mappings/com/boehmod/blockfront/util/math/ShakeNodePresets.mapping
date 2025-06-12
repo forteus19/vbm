@@ -1,5 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_428 com/boehmod/blockfront/util/math/ShakeNodePresets
+	FIELD field_1906 BULLET_DAMAGE Lcom/boehmod/blockfront/unnamed/BF_427;
 	FIELD field_1907 GUN_RIFLE Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_1908 GUN_SEMI_RIFLE Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_1909 GUN_LMG Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_1910 GUN_HEAVY Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_1911 GUN_WEBLEY Lcom/boehmod/blockfront/unnamed/BF_427;
 	FIELD field_1912 GUN_ATR Lcom/boehmod/blockfront/unnamed/BF_427;
 	FIELD field_1913 EXPLOSION Lcom/boehmod/blockfront/unnamed/BF_427;
 	FIELD field_1914 EXPLOSION_FAINT Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_1917 EXPLOSION_SMALL Lcom/boehmod/blockfront/unnamed/BF_427;

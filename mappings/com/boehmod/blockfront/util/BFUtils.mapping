@@ -6,24 +6,129 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 	FIELD field_2954 ADMIN_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2955 DEAD_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2956 TEAM_PREFIX Lnet/minecraft/network/chat/Component;
+	METHOD method_2863 sendChatGraphic (Lcom/boehmod/bflib/cloud/common/ChatGraphic;Ljava/util/Set;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 chatGraphic
+		ARG 1 players
+		ARG 2 message
+	METHOD method_2864 sendChatGraphic (Lcom/boehmod/bflib/cloud/common/ChatGraphic;Ljava/util/UUID;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 chatGraphic
+		ARG 1 player
+		ARG 2 message
+	METHOD method_2865 (Lcom/boehmod/bflib/cloud/common/ChatGraphic;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+		ARG 2 uuid
+	METHOD method_2866 sendChatGraphic (Lcom/boehmod/bflib/cloud/common/ChatGraphic;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 chatGraphic
+		ARG 1 player
+		ARG 2 message
+	METHOD method_2869 sortBySkillLevel (Lcom/boehmod/blockfront/common/player/c;Ljava/util/Set;)Ljava/util/Set;
+		ARG 0 dataHandler
+		ARG 1 players
+	METHOD method_2872 teleportPlayerAndSync (Lcom/boehmod/blockfront/common/player/c;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_692;)V
+		ARG 0 dataHandler
+		ARG 1 uuid
+		ARG 2 pose
+	METHOD method_2873 teleportToRandomPose (Lcom/boehmod/blockfront/common/player/c;Ljava/util/UUID;Ljava/util/List;)V
+		ARG 0 dataHandler
+		ARG 1 player
+		ARG 2 poses
+	METHOD method_2874 (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/UUID;)V
+		ARG 2 uuid
+	METHOD method_2875 initPlayerForGame (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 dataHandler
+		ARG 1 level
+		ARG 2 player
 	METHOD method_2877 teleportPlayer (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_692;)V
 		ARG 0 dataHandler
 		ARG 1 player
 		ARG 2 pose
-	METHOD method_2890 triggerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
+	METHOD method_2879 (Lcom/boehmod/blockfront/unnamed/BF_439;Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_2883 sendSequencePacket (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_597;Lcom/boehmod/blockfront/unnamed/BF_603;Ljava/util/Set;)V
+		ARG 0 manager
+		ARG 1 sequence
+		ARG 2 musicData
+		ARG 3 players
+	METHOD method_2884 sendSequencePacket (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_597;Lcom/boehmod/blockfront/unnamed/BF_603;Ljava/util/UUID;)V
+		ARG 0 manager
+		ARG 1 sequence
+		ARG 2 musicData
+		ARG 3 player
+	METHOD method_2885 sendSequencePacket (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_597;Lcom/boehmod/blockfront/unnamed/BF_603;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 manager
+		ARG 1 sequence
+		ARG 2 musicData
+		ARG 3 player
+	METHOD method_2886 (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_941;ILjava/util/UUID;)V
+		ARG 4 uuid
+	METHOD method_2887 incrementPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_941;)V
 		ARG 0 manager
 		ARG 1 game
-		ARG 2 playerUUID
+		ARG 2 players
+		ARG 3 stat
+	METHOD method_2888 triggerPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
+		ARG 0 manager
+		ARG 1 game
+		ARG 2 players
+		ARG 3 stat
+		ARG 4 change
+	METHOD method_2889 incrementPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;)V
+		ARG 0 manager
+		ARG 1 game
+		ARG 2 player
+		ARG 3 stat
+	METHOD method_2890 triggerPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
+		ARG 0 manager
+		ARG 1 game
+		ARG 2 player
 		ARG 3 stat
 		ARG 4 change
 	METHOD method_2892 awardAchievement (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/util/UUID;Lcom/boehmod/bflib/cloud/common/player/achievement/CloudAchievement;)V
 		ARG 0 manager
 		ARG 1 uuid
 		ARG 2 achievement
-	METHOD method_2902 getStat (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;)I
+	METHOD method_2894 filterMessage (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/lang/String;Lcom/boehmod/blockfront/common/player/b;Lcom/boehmod/blockfront/unnamed/BF_476;)Z
+		ARG 0 manager
+		ARG 1 level
+		ARG 2 player
+		ARG 3 message
+		ARG 4 playerData
+		ARG 5 cloudData
+	METHOD method_2895 topPlayers (Lcom/boehmod/blockfront/unnamed/BF_677;ILcom/boehmod/blockfront/unnamed/BF_941;Lcom/boehmod/blockfront/unnamed/BF_686;)Ljava/util/Set;
 		ARG 0 game
-		ARG 1 playerUuid
+		ARG 1 max
 		ARG 2 stat
+		ARG 3 team
+	METHOD method_2896 topPlayers (Lcom/boehmod/blockfront/unnamed/BF_677;ILcom/boehmod/blockfront/unnamed/BF_941;Ljava/util/Set;)Ljava/util/SortedSet;
+		ARG 0 game
+		ARG 1 max
+		ARG 2 stat
+		ARG 3 players
+	METHOD method_2897 topPlayers (Lcom/boehmod/blockfront/unnamed/BF_677;ILjava/lang/String;Ljava/util/Set;)Ljava/util/SortedSet;
+		ARG 0 game
+		ARG 1 max
+		ARG 2 key
+		ARG 3 players
+	METHOD method_2900 sortStatData (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_941;)Ljava/util/SortedSet;
+		ARG 0 game
+		ARG 1 players
+		ARG 2 stat
+	METHOD method_2901 sortStatData (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;Ljava/lang/String;)Ljava/util/SortedSet;
+		ARG 0 game
+		ARG 1 players
+		ARG 2 key
+	METHOD method_2902 getPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;)I
+		ARG 0 game
+		ARG 1 player
+		ARG 2 stat
+	METHOD method_2903 decrementPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;)V
+		ARG 0 game
+		ARG 1 player
+		ARG 2 stat
+	METHOD method_2904 getPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;I)I
+		ARG 0 game
+		ARG 1 player
+		ARG 2 stat
+		ARG 3 defaultValue
 	METHOD method_2905 setPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
 		ARG 0 game
 		ARG 1 uuid
@@ -40,16 +145,36 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 2 team
 		ARG 3 loadout
 		ARG 5 maxHealth
-	METHOD method_2913 sendTeamFancyMessage (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+	METHOD method_2910 broadcastKillFeedEntry (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_774;)V
+		ARG 0 manager
+		ARG 1 entry
+	METHOD method_2912 sendNoticeMessage (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 team
+		ARG 1 message
+	METHOD method_2913 sendFancyMessage (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 team
 		ARG 1 prefix
 		ARG 2 message
+	METHOD method_2914 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
+		ARG 0 team
+		ARG 1 title
+		ARG 2 message
+		ARG 3 type
+	METHOD method_2915 (Lcom/boehmod/blockfront/unnamed/BF_1015;Ljava/util/UUID;)V
+		ARG 1 uuid
 	METHOD method_2916 randomUUIDs (Ljava/util/Set;I)Ljava/util/Set;
 		ARG 0 uuids
 		ARG 1 amount
+	METHOD method_2917 queueMusic (Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_439;)V
+		ARG 0 players
+		ARG 1 music
 	METHOD method_2918 sendNoticeMessage (Ljava/util/Set;Ljava/lang/String;)V
 		ARG 0 players
 		ARG 1 message
+	METHOD method_2920 sendFancyMessage (Ljava/util/Set;Lnet/minecraft/network/chat/Component;Ljava/lang/String;)V
+		ARG 0 players
+		ARG 1 prefix
+		ARG 2 message
 	METHOD method_2921 sendFancyMessage (Ljava/util/Set;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 players
 		ARG 1 prefix
@@ -69,14 +194,29 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 2 source
 		ARG 3 volume
 		ARG 4 pitch
+	METHOD method_2925 playPositionedSound (Ljava/util/Set;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FLnet/minecraft/world/phys/Vec3;)V
+		ARG 0 players
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+		ARG 4 position
 	METHOD method_2926 getPlayerByUUID (Ljava/util/UUID;)Lnet/minecraft/server/level/ServerPlayer;
 		ARG 0 uuid
 	METHOD method_2927 queueMusic (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_439;)V
 		ARG 0 player
+		ARG 1 music
+	METHOD method_2928 sendPopupMessage (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_921;)V
+		ARG 0 player
+		ARG 1 popup
 	METHOD method_2930 sendFancyMessage (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 playerUUID
 		ARG 1 header
 		ARG 2 message
+	METHOD method_2931 sendNotification (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
+		ARG 0 uuid
+		ARG 1 title
+		ARG 2 message
+		ARG 3 type
 	METHOD method_2932 playSound (Ljava/util/UUID;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
 		ARG 0 uuid
 		ARG 1 sound
@@ -92,6 +232,18 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 2 source
 		ARG 3 volume
 		ARG 4 pitch
+	METHOD method_2935 playPositionedSound (Ljava/util/UUID;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FLnet/minecraft/world/phys/Vec3;)V
+		ARG 0 player
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+		ARG 4 position
+	METHOD method_2937 (Lnet/minecraft/network/chat/Component;Ljava/lang/String;Ljava/util/UUID;)V
+		ARG 2 uuid
+	METHOD method_2938 (Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_2939 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;Ljava/util/UUID;)V
+		ARG 3 uuid
 	METHOD method_2940 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
 		ARG 2 uuid
 	METHOD method_2941 discardMatchEntities (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;)V
@@ -103,6 +255,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 1 game
 		ARG 2 manager
 		ARG 3 player
+	METHOD method_2946 initPlayersForGame (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;Lcom/boehmod/blockfront/common/player/c;)V
+		ARG 0 level
+		ARG 1 players
+		ARG 2 dataHandler
 	METHOD method_2947 giveLoadout (Lnet/minecraft/server/level/ServerLevel;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_759;)V
 		ARG 0 level
 		ARG 1 player
@@ -124,6 +280,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 	METHOD method_2953 sendPopupMessage (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_921;)V
 		ARG 0 player
 		ARG 1 popup
+	METHOD method_2954 sendKilledMessagePacket (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_922;)V
+		ARG 0 player
+		ARG 1 message
 	METHOD method_2955 sendFancyMessage (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 player
 		ARG 1 header
@@ -143,13 +302,37 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 2 source
 		ARG 3 volume
 		ARG 4 pitch
+	METHOD method_2959 playPositionedSound (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FLnet/minecraft/world/phys/Vec3;)V
+		ARG 0 player
+		ARG 1 sound
+		ARG 2 source
+		ARG 3 volume
+		ARG 4 position
 	METHOD method_2960 (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFLjava/util/UUID;)V
+		ARG 4 uuid
+	METHOD method_2961 (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FLnet/minecraft/world/phys/Vec3;Ljava/util/UUID;)V
 		ARG 4 uuid
 	METHOD method_2962 (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;Ljava/util/UUID;)V
 		ARG 2 uuid
 	METHOD method_2966 isPlayerUnavailable (Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/common/player/b;)Z
 		ARG 0 player
 		ARG 1 data
+	METHOD method_2968 canSeeSky (Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;)Z
+		ARG 0 view
+		ARG 1 blockPos
+	METHOD method_2969 playSound (Lnet/minecraft/world/level/Level;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
+		ARG 0 level
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 sound
+		ARG 8 source
+		ARG 9 volume
+		ARG 10 pitch
+	METHOD method_2974 setInventoryFromLoadout (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_759;)V
+		ARG 0 level
+		ARG 1 entity
+		ARG 2 loadout
 	METHOD method_2975 playSound (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
 		ARG 0 level
 		ARG 1 pos
@@ -157,8 +340,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 3 category
 		ARG 4 volume
 		ARG 5 pitch
+	METHOD method_2980 (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_597;Lcom/boehmod/blockfront/unnamed/BF_603;Ljava/util/UUID;)V
+		ARG 3 uuid
 	METHOD method_2981 createPlayerStatsComponent (Lcom/boehmod/blockfront/unnamed/BF_476;)Lnet/minecraft/network/chat/MutableComponent;
 		ARG 0 cloudData
+	METHOD method_2982 decreasePlayerStat (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
+		ARG 0 game
+		ARG 1 player
+		ARG 2 stat
+		ARG 3 change
 	METHOD method_2983 sendNoticeMessage (Ljava/util/Set;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 players
 		ARG 1 message
@@ -167,10 +357,20 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 1 message
 	METHOD method_2986 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
 		ARG 2 uuid
+	METHOD method_2988 disconnectServerPlayer (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 player
+		ARG 1 reason
+	METHOD method_2990 clearInventories (Ljava/util/Set;)V
+		ARG 0 players
 	METHOD method_2992 sendNoticeMessage (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 player
 		ARG 1 message
+	METHOD method_2994 spawnLightningBolt (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 0 level
+		ARG 1 pos
 	METHOD method_2995 sendNoticeIcon (Ljava/util/Set;)V
 		ARG 0 players
 	METHOD method_2997 broadcastPlayerPing (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 player
+	METHOD method_3000 clearInventory (Ljava/util/UUID;)V
 		ARG 0 player

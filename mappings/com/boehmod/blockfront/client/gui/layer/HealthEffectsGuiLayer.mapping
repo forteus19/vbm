@@ -1,1 +1,15 @@
 CLASS com/boehmod/blockfront/unnamed/BF_118 com/boehmod/blockfront/client/gui/layer/HealthEffectsGuiLayer
+	FIELD field_535 DAMAGE_INDICATORS Ljava/util/List;
+	CLASS BF_119 DamageIndicator
+		FIELD field_543 alpha F
+		FIELD field_544 prevAlpha F
+		FIELD field_545 origin Lnet/minecraft/world/phys/Vec3;
+		METHOD <init> (FLnet/minecraft/world/phys/Vec3;)V
+			ARG 1 intensity
+			ARG 2 origin
+		METHOD method_518 getAngle (Lnet/minecraft/client/player/LocalPlayer;F)F
+			ARG 1 player
+			ARG 2 delta
+		METHOD method_519 getIntensity (F)F
+			ARG 1 delta
+		METHOD method_520 update ()Z

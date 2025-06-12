@@ -1,0 +1,15 @@
+CLASS com/boehmod/blockfront/unnamed/BF_251 com/boehmod/blockfront/client/screen/prompt/text/BFTextPromptScreen
+	FIELD field_1543 CLOSE_LABEL Lnet/minecraft/network/chat/Component;
+	FIELD field_1544 CONFIRM_LABEL Lnet/minecraft/network/chat/Component;
+	FIELD field_1545 EMPTY Lnet/minecraft/network/chat/Component;
+	FIELD field_1546 ERROR_ANYTHING Lnet/minecraft/network/chat/Component;
+	FIELD field_1547 ERROR_ALPHANUMERIC Lnet/minecraft/network/chat/Component;
+	FIELD field_1548 ERROR_NUMERIC Lnet/minecraft/network/chat/Component;
+	FIELD field_1549 ERROR_COMMON Lnet/minecraft/network/chat/Component;
+	FIELD field_1550 ERROR_MC_UUID Lnet/minecraft/network/chat/Component;
+	FIELD field_1551 ERROR_MC_USERNAME Lnet/minecraft/network/chat/Component;
+	FIELD field_1552 ERROR_UPPERCASE Lnet/minecraft/network/chat/Component;
+	FIELD field_1553 ERROR_LOWERCASE Lnet/minecraft/network/chat/Component;
+	FIELD field_1554 ERROR_MC_RESOURCE Lnet/minecraft/network/chat/Component;
+	FIELD field_1555 ERROR_IP_ADDRESS Lnet/minecraft/network/chat/Component;
+	FIELD field_1556 ERROR_CLAN_NAME Lnet/minecraft/network/chat/Component;

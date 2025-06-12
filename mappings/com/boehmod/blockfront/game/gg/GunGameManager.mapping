@@ -1,7 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_873 com/boehmod/blockfront/game/gg/GunGameManager
-	FIELD field_3514 DEGRADE_MESSAGE Lnet/minecraft/network/chat/Component;
-	FIELD field_3515 UPGRADE_MESSAGE Lnet/minecraft/network/chat/Component;
-	FIELD field_3516 KNIFE_MESSAGE Lnet/minecraft/network/chat/Component;
-	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_870;Lcom/boehmod/blockfront/common/player/c;)V
-		ARG 1 game
-		ARG 2 playerData
