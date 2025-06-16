@@ -9,6 +9,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_599 com/boehmod/blockfront/game/GameCine
 	METHOD method_2194 isSequencePlaying ()Z
 	METHOD method_2196 getCamera ()Lcom/boehmod/blockfront/unnamed/BF_642;
 	METHOD method_2204 getSequence ()Lcom/boehmod/blockfront/unnamed/BF_597;
+	METHOD method_2206 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;)V
 	METHOD method_2208 update (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 	METHOD method_2213 getCurrentRoll (F)F
 		ARG 1 delta

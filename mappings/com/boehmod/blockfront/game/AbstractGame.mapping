@@ -15,7 +15,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2837 hasPlayerLimit Z
 	FIELD field_2838 shouldRestart Z
 	FIELD field_2840 FIRST_BLOOD_MESSAGE Lnet/minecraft/network/chat/Component;
-	FIELD field_2843 typeDisplayName Lnet/minecraft/network/chat/Component;
+	FIELD field_2843 displayName Lnet/minecraft/network/chat/Component;
 	FIELD field_2848 SWITCHTEAMS_ERROR_NOTEAM Lnet/minecraft/network/chat/Component;
 	FIELD field_2849 SWITCHTEAMS_ERROR_UNBALANCED Lnet/minecraft/network/chat/Component;
 	FIELD field_2850 SWITCHTEAMS_ERROR_POSTGAME Lnet/minecraft/network/chat/Component;
@@ -40,13 +40,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2594 getMapVoteManager ()Lcom/boehmod/blockfront/unnamed/BF_892;
 	METHOD method_2595 getMap ()Lcom/boehmod/blockfront/unnamed/BF_927;
 	METHOD method_2596 getAlliesDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
-	METHOD method_2597 createStaging ()Lcom/boehmod/blockfront/unnamed/BF_938;
+	METHOD method_2597 createFirstStage ()Lcom/boehmod/blockfront/unnamed/BF_938;
 	METHOD method_2598 getStageManager ()Lcom/boehmod/blockfront/unnamed/BF_939;
 	METHOD method_2602 requestSupplyDrops (Lcom/boehmod/blockfront/unnamed/BF_445;ILjava/util/Set;)V
 		ARG 1 manager
 		ARG 2 randomMax
 		ARG 3 players
-	METHOD method_2603 changeStage (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+	METHOD method_2603 updateStageManager (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
 		ARG 1 manager
 		ARG 2 dataHandler
 		ARG 3 level
@@ -87,6 +87,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 status
 	METHOD method_2623 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_927;)V
 		ARG 1 mapAsset
+	METHOD method_2628 hasMinimumPlayers (Ljava/util/Set;)Z
+		ARG 1 players
 	METHOD method_2629 getPlayerStatData (Ljava/util/UUID;)Lcom/boehmod/bflib/fds/tag/FDSTagCompound;
 		ARG 1 uuid
 	METHOD method_2632 hasPlayers (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)Z
@@ -95,6 +97,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2634 getSwitchTeamMessage (Lnet/minecraft/world/entity/player/Player;II)Lnet/minecraft/network/chat/Component;
 	METHOD method_2635 hasPlayerLimit ()Z
 	METHOD method_2640 entityBoundSize ()I
+	METHOD method_2642 getMinimumPlayers ()I
 	METHOD method_2644 getGameManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
 	METHOD method_2645 getAxisDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
 	METHOD method_2648 init (Lnet/minecraft/server/level/ServerLevel;)V

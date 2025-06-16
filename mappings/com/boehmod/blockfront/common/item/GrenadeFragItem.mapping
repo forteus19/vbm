@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_983 com/boehmod/blockfront/common/item/GrenadeFragItem
+	CLASS BF_984 Type

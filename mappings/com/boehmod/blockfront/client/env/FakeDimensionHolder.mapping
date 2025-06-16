@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_91 com/boehmod/blockfront/client/env/FakeDimensionHolder
+	METHOD canSerializeIn (Lnet/minecraft/core/HolderOwner;)Z
+		ARG 1 holderOwner
+	METHOD method_460 is (Ljava/util/function/Predicate;)Z
+		ARG 1 resourceKeyPredicate
+	METHOD method_461 is (Lnet/minecraft/core/Holder;)Z
+		ARG 1 holder
+	METHOD method_462 is (Lnet/minecraft/resources/ResourceKey;)Z
+		ARG 1 resourceKey
+	METHOD method_463 is (Lnet/minecraft/resources/ResourceLocation;)Z
+		ARG 1 resourceLocation
+	METHOD method_464 is (Lnet/minecraft/tags/TagKey;)Z
+		ARG 1 tagKey

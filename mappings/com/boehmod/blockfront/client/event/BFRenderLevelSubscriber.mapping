@@ -1,3 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_76 com/boehmod/blockfront/client/event/BFRenderLevelSubscriber
+	FIELD field_390 TOP_RENDERERS Ljava/util/List;
+	METHOD method_428 renderAfterLevel (Lnet/minecraft/client/Minecraft;F)V
 	METHOD method_429 onRenderLevelStage (Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;)V
 		ARG 0 event
+	METHOD method_430 renderForGame (Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/culling/Frustum;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;ZFF)V

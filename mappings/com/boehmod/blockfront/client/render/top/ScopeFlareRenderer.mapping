@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_417 com/boehmod/blockfront/client/render/top/ScopeFlareRenderer
+	METHOD method_1470 renderScopeFlare (Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;Lnet/minecraft/client/player/AbstractClientPlayer;F)V

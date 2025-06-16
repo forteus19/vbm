@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_480 com/boehmod/blockfront/util/armory/ArmoryDropdownUtils
+	METHOD method_1729 getScreenFromItem (Lnet/minecraft/client/gui/screens/Screen;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/bflib/cloud/common/item/CloudItemStack;II)Lnet/minecraft/client/gui/screens/Screen;
+		ARG 0 parent
+		ARG 1 manager
+		ARG 2 itemStack
+		ARG 3 x
+		ARG 4 y

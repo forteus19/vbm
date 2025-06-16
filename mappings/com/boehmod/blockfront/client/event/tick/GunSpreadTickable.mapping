@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_42 com/boehmod/blockfront/client/event/tick/GunSpreadTickable
+	METHOD method_172 updateSpread (Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_900;)V
+		ARG 1 player
+		ARG 2 config

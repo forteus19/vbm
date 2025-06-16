@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_560 com/boehmod/blockfront/common/entity/IntegratedGameEntity
+	FIELD field_2336 game Lcom/boehmod/blockfront/unnamed/BF_677;

@@ -1,0 +1,20 @@
+CLASS com/boehmod/blockfront/unnamed/BF_95 com/boehmod/blockfront/client/env/FakeEnvironment
+	FIELD field_449 level Lcom/boehmod/blockfront/unnamed/BF_92;
+	FIELD field_450 player Lcom/boehmod/blockfront/unnamed/BF_94;
+	FIELD field_451 profile Lcom/mojang/authlib/GameProfile;
+	FIELD field_452 playerCache Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
+	METHOD <init> (Lcom/mojang/authlib/GameProfile;)V
+		ARG 1 profile
+	METHOD method_474 (Lcom/mojang/authlib/GameProfile;Ljava/lang/Object;)Lcom/boehmod/blockfront/unnamed/BF_94;
+		ARG 2 id
+	METHOD method_475 getPlayer (Lnet/minecraft/client/Minecraft;)Lcom/boehmod/blockfront/unnamed/BF_94;
+		ARG 1 minecraft
+	METHOD method_476 getPlayerCached (Lnet/minecraft/client/Minecraft;Lcom/mojang/authlib/GameProfile;)Lcom/boehmod/blockfront/unnamed/BF_94;
+		ARG 1 minecraft
+		ARG 2 profile
+	METHOD method_477 update (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_478 init (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_479 checkEnvironment (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft

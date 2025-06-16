@@ -1,0 +1,32 @@
+CLASS com/boehmod/blockfront/unnamed/BF_687 com/boehmod/blockfront/game/GameStageTimer
+	FIELD field_2939 playWarningSounds Z
+	FIELD field_2940 nextSoundIsTock Z
+	FIELD field_2941 startSeconds I
+	FIELD field_2942 startMaxSeconds I
+	FIELD field_2943 secondsRemaining I
+	FIELD field_2944 maxSeconds I
+	FIELD field_2945 warningThreshold I
+	METHOD <init> (II)V
+		ARG 1 minutes
+		ARG 2 seconds
+	METHOD method_2843 warningTime (I)Lcom/boehmod/blockfront/unnamed/BF_687;
+		ARG 1 seconds
+	METHOD method_2844 secondsPassed ()I
+	METHOD method_2845 getSecondsRemaining ()I
+	METHOD method_2846 isRunning ()Z
+	METHOD method_2847 update (Ljava/util/Set;)V
+		ARG 1 players
+	METHOD method_2848 restart ()V
+	METHOD method_2849 getComponent ()Lnet/minecraft/network/chat/MutableComponent;
+	METHOD method_2850 normalizedTime ()D
+	METHOD method_2851 setSecondsRemaining (I)V
+		ARG 1 seconds
+	METHOD method_2852 isDone ()Z
+	METHOD read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

@@ -1,6 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_536 com/boehmod/blockfront/common/block/base/IShootAction
+	COMMENT Implemented by blocks that perform a special action when hit by a bullet tracer.
 	METHOD method_1894 showParticle ()Z
 	METHOD method_1895 onShoot (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/world/level/Level;ILnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V
 		ARG 1 minecraft
 		ARG 2 manager
 		ARG 3 level
+		ARG 5 blockPos
+		ARG 6 blockState

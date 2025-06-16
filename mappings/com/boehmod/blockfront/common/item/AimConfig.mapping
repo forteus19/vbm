@@ -1,0 +1,45 @@
+CLASS com/boehmod/blockfront/unnamed/BF_900 com/boehmod/blockfront/common/item/AimConfig
+	FIELD field_3591 recoil F
+	FIELD field_3592 minimumSpread F
+	FIELD field_3593 fireSpread F
+	FIELD field_3594 airborneSpreadRate F
+	FIELD field_3595 walkingSpreadRate F
+	FIELD field_3597 sprintingSpreadRate F
+	FIELD field_3598 focus F
+	FIELD field_3599 crouchingFocus F
+	FIELD field_3600 randomFactor F
+	FIELD field_3601 spreadDisplayIntensity F
+	FIELD field_3602 currentSpread F
+	FIELD field_3603 prevSpread F
+	METHOD <init> (FFFFFFFFFFF)V
+		ARG 1 recoil
+		ARG 2 minimumSpread
+		ARG 3 fireSpread
+		ARG 4 airborneSpreadRate
+		ARG 5 walkingSpreadRate
+		ARG 7 sprintingSpreadRate
+		ARG 8 focus
+		ARG 9 crouchingFocus
+		ARG 10 randomFactor
+		ARG 11 spreadDisplayIntensity
+	METHOD method_3733 multiply (FFFFFFFFFFF)Lcom/boehmod/blockfront/unnamed/BF_900;
+		ARG 1 recoil
+		ARG 2 minimumSpread
+		ARG 3 fireSpread
+		ARG 4 airborneSpreadRate
+		ARG 5 walkingSpreadRate
+		ARG 7 sprintingSpreadRate
+		ARG 8 focus
+		ARG 9 crouchingFocus
+		ARG 10 randomFactor
+		ARG 11 spreadDisplayIntensity
+	METHOD method_3734 recoil ()F
+	METHOD method_3735 minimumSpread ()F
+	METHOD method_3736 fireSpread ()F
+	METHOD method_3737 airborneSpreadRate ()F
+	METHOD method_3738 walkingSpreadRate ()F
+	METHOD method_3740 sprintingSpreadRate ()F
+	METHOD method_3741 focusRate ()F
+	METHOD method_3742 crouchingFocusRate ()F
+	METHOD method_3743 randomFactor ()F
+	METHOD method_3744 spreadDisplayIntensity ()F

@@ -50,6 +50,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 		ARG 1 team
 	METHOD method_2768 (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_686;)Z
 		ARG 1 team
+	METHOD method_2769 getWinningTeam (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_687;)Lcom/boehmod/blockfront/unnamed/BF_756;
+		ARG 1 level
+		ARG 2 players
+		ARG 3 timer
 	METHOD method_2773 checkPlayerPunishments (Lnet/minecraft/server/level/ServerPlayer;Ljava/lang/String;Lcom/boehmod/blockfront/common/player/b;Lcom/boehmod/blockfront/unnamed/BF_476;)V
 		ARG 1 player
 		ARG 2 playerName

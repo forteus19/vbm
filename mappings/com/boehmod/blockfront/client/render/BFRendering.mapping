@@ -6,14 +6,21 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 	FIELD field_219 RED_CHAT_COLOR I
 	FIELD field_222 TRANSLUCENT_BLACK_COLOR I
 	FIELD field_228 ENVIRONMENT Lcom/boehmod/blockfront/unnamed/BF_95;
-	FIELD field_229 GUI_LIGHTING_1 Lorg/joml/Vector3f;
-	FIELD field_230 GUI_LIGHTING_2 Lorg/joml/Vector3f;
+	FIELD field_229 GUI_LIGHTS_1 Lorg/joml/Vector3f;
+	FIELD field_230 GUI_LIGHTS_2 Lorg/joml/Vector3f;
 	FIELD field_231 BYTE_TO_FLOAT_RATIO F
+	FIELD field_234 ENTITY_LIGHTS_1 Lorg/joml/Vector3f;
+	FIELD field_235 ENTITY_LIGHTS_2 Lorg/joml/Vector3f;
 	FIELD field_236 PARTY_LEADER_COMPONENT Lnet/minecraft/network/chat/Component;
 	FIELD field_237 PARTY_LEADER_PREFIX Lnet/minecraft/network/chat/Component;
+	FIELD field_238 MESSAGE_USERNAME Lnet/minecraft/network/chat/Component;
+	FIELD field_239 CROSSHAIR_BACKGROUND Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_240 CROSSHAIR_PROGRESS Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_241 EMBER_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_242 DEBUG_SKIN_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_6299 SHADOWEFFECT_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_192 formatTime (I)Ljava/lang/String;
+		ARG 0 seconds
 	METHOD method_193 shaderColor (I)V
 		ARG 0 color
 	METHOD method_194 shaderColor (IF)V
@@ -44,6 +51,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 8 pitch
 		ARG 9 yaw
 		ARG 10 headYaw
+	METHOD method_198 bulletTracer (Lcom/boehmod/blockfront/unnamed/BF_277;Lcom/mojang/blaze3d/vertex/PoseStack;FLnet/minecraft/client/Camera;)V
+		ARG 0 tracer
+		ARG 1 poseStack
 	METHOD method_200 rectangle (Lcom/mojang/blaze3d/vertex/PoseStack;FFFFII)V
 		ARG 0 poseStack
 		ARG 1 x
@@ -152,7 +162,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 6 rotation
 		ARG 7 alpha
 		ARG 8 color
-	METHOD method_213 componentStraight (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDD)V
+	METHOD method_213 billboardComponent (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDD)V
 		ARG 0 poseStack
 		ARG 1 camera
 		ARG 2 font
@@ -161,7 +171,109 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 5 x
 		ARG 7 y
 		ARG 9 z
-	METHOD method_214 texture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDI)V
+	METHOD method_214 billboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDI)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 scale
+	METHOD method_215 billboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDII)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 width
+		ARG 11 height
+	METHOD method_216 billboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDIIF)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 width
+		ARG 11 height
+		ARG 12 alpha
+	METHOD method_217 tintedBillboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDIIFIZ)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 width
+		ARG 11 height
+		ARG 12 alpha
+		ARG 13 color
+		ARG 14 depthTest
+	METHOD method_218 billboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDIIFZ)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 width
+		ARG 11 height
+		ARG 12 alpha
+		ARG 13 depthTest
+	METHOD method_219 billboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDIIZ)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 width
+		ARG 11 height
+		ARG 12 depthTest
+	METHOD method_220 billboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDIZ)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 scale
+		ARG 11 depthTest
+	METHOD method_221 billboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/core/BlockPos;IZ)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 blockPos
+		ARG 5 scale
+		ARG 6 depthTest
+	METHOD method_222 tintedBillboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/phys/Vec3;IIFIZ)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 position
+		ARG 5 width
+		ARG 6 height
+		ARG 7 alpha
+		ARG 8 color
+		ARG 9 depthTest
+	METHOD method_223 billboardTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/phys/Vec3;IZ)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 position
+		ARG 5 scale
+		ARG 6 depthTest
 	METHOD method_224 tabListEntry (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_476;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_679;Ljava/util/UUID;Lnet/minecraft/network/chat/Style;Ljava/util/Collection;Ljava/util/Set;FFFFI)V
 		ARG 0 poseStack
 		ARG 1 minecraft
@@ -174,13 +286,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 8 gameRenderer
 		ARG 9 playerId
 		ARG 10 style
-	METHOD method_225 smallRank (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_476;FFZ)V
+		ARG 13 x
+		ARG 14 y
+	METHOD method_225 playerInfoTag (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_476;FFZ)V
 		ARG 0 minecraft
 		ARG 1 manager
 		ARG 2 poseStack
 		ARG 3 font
 		ARG 4 graphics
-		ARG 5 partOwnerProfile
+		ARG 5 partyOwnerProfile
 		ARG 6 profile
 		ARG 7 x
 		ARG 8 y
@@ -402,6 +516,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 y
 		ARG 4 width
 		ARG 5 height
+	METHOD method_251 staticEffect (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;IIIIFF)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
+		ARG 6 alpha
+		ARG 7 time
 	METHOD method_252 crosshair (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_1124;FFFZZF)V
 		ARG 0 poseStack
 		ARG 1 graphics
@@ -412,6 +535,32 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 6 renderDot
 		ARG 7 renderLines
 		ARG 8 spread
+	METHOD method_253 worldTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDFFFFF)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 texture
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 width
+		ARG 10 height
+		ARG 11 alpha
+		ARG 12 rotationX
+		ARG 13 rotationY
+	METHOD method_255 tintedWorldTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDFFFIZFF)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 texture
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 width
+		ARG 10 height
+		ARG 11 alpha
+		ARG 12 color
+		ARG 13 depthTest
+		ARG 14 rotationX
+		ARG 15 rotationY
 	METHOD method_256 textureSquare (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;FFF)V
 		ARG 0 poseStack
 		ARG 1 graphics
@@ -566,6 +715,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 4 thickness
 		ARG 5 color
 		ARG 6 alpha
+	METHOD method_276 backgroundBlur (Lnet/minecraft/client/Minecraft;FI)V
+		ARG 0 minecraft
+		ARG 1 delta
+		ARG 2 blurriness
 	METHOD method_277 getSkinTexture (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/mojang/authlib/GameProfile;)Lnet/minecraft/resources/ResourceLocation;
 		ARG 0 minecraft
 		ARG 1 manager
@@ -583,6 +736,24 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 0 minecraft
 		ARG 1 manager
 		ARG 2 playerId
+	METHOD method_280 vanillaCrosshair (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/player/LocalPlayer;FF)V
+		ARG 0 minecraft
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 player
+		ARG 4 x
+		ARG 5 y
+	METHOD method_281 blockEntity (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/level/block/entity/BlockEntity;DDDFFF)V
+		ARG 0 minecraft
+		ARG 1 level
+		ARG 2 poseStack
+		ARG 3 blockEntity
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 rotationX
+		ARG 11 rotationY
+		ARG 12 delta
 	METHOD method_282 drawString (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;II)V
 		ARG 0 font
 		ARG 1 graphics
@@ -596,6 +767,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 x
 		ARG 4 y
 		ARG 5 color
+	METHOD method_284 enableScissor (Lnet/minecraft/client/gui/GuiGraphics;IIII)V
+		ARG 0 graphics
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
 	METHOD method_285 runningTexture (Lnet/minecraft/client/gui/GuiGraphics;IIIIF)V
 		ARG 0 graphics
 		ARG 1 x
@@ -636,6 +813,27 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 6 color2
 		ARG 7 alpha1
 		ARG 8 alpha2
+	METHOD method_290 block (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lnet/minecraft/world/level/block/state/BlockState;Lcom/mojang/blaze3d/vertex/PoseStack;DDD)V
+		ARG 0 level
+		ARG 1 dispatcher
+		ARG 2 buffer
+		ARG 3 blockState
+		ARG 4 poseStack
+		ARG 5 x
+		ARG 7 y
+		ARG 9 z
+	METHOD method_291 block (Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lnet/minecraft/world/level/block/state/BlockState;Lcom/mojang/blaze3d/vertex/PoseStack;DDDFFF)V
+		ARG 0 level
+		ARG 1 dispatcher
+		ARG 2 buffer
+		ARG 3 blockState
+		ARG 4 poseStack
+		ARG 5 x
+		ARG 7 y
+		ARG 9 z
+		ARG 11 rotationX
+		ARG 12 rotationY
+		ARG 13 rotationZ
 	METHOD method_292 isPointInRectangle (DDDDDD)Z
 		ARG 0 rectX
 		ARG 2 rectY
@@ -684,6 +882,37 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 y
 		ARG 4 width
 		ARG 5 height
+	METHOD method_298 billboardComponentWithShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDD)V
+		ARG 0 poseStack
+		ARG 1 font
+		ARG 2 camera
+		ARG 3 graphics
+		ARG 4 component
+		ARG 5 x
+		ARG 7 y
+		ARG 9 z
+	METHOD method_299 billboardComponentWithShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDDF)V
+		ARG 0 poseStack
+		ARG 1 font
+		ARG 2 camera
+		ARG 3 graphics
+		ARG 4 component
+		ARG 5 x
+		ARG 7 y
+		ARG 9 z
+		ARG 11 scale
+	METHOD method_300 billboardComponentWithShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDDFIZ)V
+		ARG 0 poseStack
+		ARG 1 font
+		ARG 2 camera
+		ARG 3 graphics
+		ARG 4 component
+		ARG 5 x
+		ARG 7 y
+		ARG 9 z
+		ARG 11 scale
+		ARG 12 color
+		ARG 13 depthTest
 	METHOD method_301 component2dShadow (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;FF)V
 		ARG 0 poseStack
 		ARG 1 font
@@ -840,6 +1069,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 7 rotation
 		ARG 8 alpha
 		ARG 9 color
+	METHOD method_320 backgroundBlur (Lnet/minecraft/client/Minecraft;F)V
+		ARG 0 minecraft
+		ARG 1 delta
 	METHOD method_321 drawStringWithShadow (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;II)V
 		ARG 0 font
 		ARG 1 graphics
@@ -1032,5 +1264,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 6 height
 		ARG 7 gap
 		ARG 8 repeats
+	METHOD method_345 backgroundBlur (Lnet/minecraft/client/Minecraft;)V
+		ARG 0 minecraft
 	METHOD method_346 translucentBlack ()I
 	METHOD method_347 resetShaderColor ()V

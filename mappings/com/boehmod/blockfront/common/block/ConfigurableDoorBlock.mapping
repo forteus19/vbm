@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1105 com/boehmod/blockfront/common/block/ConfigurableDoorBlock
+	FIELD field_4947 isStrong Z
+	METHOD <init> (Lnet/minecraft/world/level/block/state/properties/BlockSetType;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Z)V
+		ARG 1 blockSetType
+		ARG 2 properties
+		ARG 3 isStrong
+	METHOD method_5178 isStrong ()Z

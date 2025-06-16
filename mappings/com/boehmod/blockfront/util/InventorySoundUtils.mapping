@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_479 com/boehmod/blockfront/util/InventorySoundUtils
+	METHOD method_1726 playInspect (Lnet/minecraft/client/sounds/SoundManager;)V
+		ARG 0 soundManager
+	METHOD method_1727 playInventory (Lnet/minecraft/client/sounds/SoundManager;Lcom/boehmod/bflib/cloud/common/item/CloudItem;)V
+		ARG 0 soundManager
+		ARG 1 item
+	METHOD method_1728 playInspectFull (Lnet/minecraft/client/Minecraft;Lcom/boehmod/bflib/cloud/common/CloudRegistry;Lcom/boehmod/bflib/cloud/common/item/CloudItemStack;)V
+		ARG 0 minecraft
+		ARG 1 cloudRegistry
+		ARG 2 itemStack

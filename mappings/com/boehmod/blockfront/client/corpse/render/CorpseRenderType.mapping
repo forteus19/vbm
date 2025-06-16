@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_424 com/boehmod/blockfront/client/corpse/render/CorpseRenderType
+	FIELD field_1872 NAME Ljava/lang/String;
+	FIELD field_1873 STATE Lnet/minecraft/client/renderer/RenderStateShard$ShaderStateShard;
+	FIELD field_1874 RENDER_TYPE_CONSTRUCTOR Ljava/util/function/Function;
+	FIELD field_1875 ID Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1876 instance Lnet/minecraft/client/renderer/ShaderInstance;
+	METHOD method_1474 createRenderType (Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/client/renderer/RenderType;
+		ARG 0 id
+	METHOD method_1475 onRegisterShaders (Lnet/neoforged/neoforge/client/event/RegisterShadersEvent;)V
+		ARG 0 event
+	METHOD method_1477 setInstance (Lnet/minecraft/client/renderer/ShaderInstance;)V
+		ARG 0 instance

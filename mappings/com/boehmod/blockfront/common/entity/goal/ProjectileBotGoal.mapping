@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_568 com/boehmod/blockfront/common/entity/goal/ProjectileBotGoal
+	METHOD method_2037 getEntityClass ()Ljava/lang/Class;

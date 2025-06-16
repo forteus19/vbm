@@ -9,6 +9,8 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 	FIELD field_1174 playTimer I
 	FIELD field_1175 calloutCooldown I
 	FIELD field_1176 respawnTimer I
+	METHOD <init> (Ljava/util/UUID;)V
+		ARG 1 uuid
 	METHOD method_827 setRespawnTimer (I)V
 		ARG 1 respawnTimer
 	METHOD method_829 getPreviousMessages ()Ljava/util/List;
@@ -17,6 +19,11 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 	METHOD method_831 getLastMessage ()Ljava/lang/String;
 	METHOD method_834 setMuted (Z)V
 		ARG 1 isMuted
+	METHOD method_838 update (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+		ARG 4 game
 	METHOD method_845 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
 	METHOD method_848 isOutOfGame ()Z

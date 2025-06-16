@@ -1,0 +1,64 @@
+CLASS com/boehmod/blockfront/unnamed/BF_497 com/boehmod/blockfront/cloud/client/BFClientCloudPacketHandlers
+	FIELD field_2148 MESSAGE_OKAY Lnet/minecraft/network/chat/Component;
+	FIELD field_2149 DISCORD_BUTTON Lnet/minecraft/network/chat/Component;
+	FIELD field_2150 DISCORD_BUTTON_TIP Lnet/minecraft/network/chat/Component;
+	FIELD field_2151 VERIFY_CHANNEL Lnet/minecraft/network/chat/Component;
+	FIELD field_2152 VERIFY_COMMAND Lnet/minecraft/network/chat/Component;
+	FIELD field_2153 DISCORD_TITLE Lnet/minecraft/network/chat/Component;
+	FIELD field_2154 DISCORD_MESSAGE Lnet/minecraft/network/chat/Component;
+	METHOD method_1785 chatMessageFromCloud (Lcom/boehmod/bflib/cloud/packet/common/PacketChatMessageFromCloud;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1786 clientMessagePopup (Lcom/boehmod/bflib/cloud/packet/common/PacketClientMessagePopup;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1787 clientSound (Lcom/boehmod/bflib/cloud/packet/common/PacketClientSound;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1788 notificationFromCloud (Lcom/boehmod/bflib/cloud/packet/common/PacketNotificationFromCloud;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1789 triggerNewRank (Lcom/boehmod/bflib/cloud/packet/common/PacketTriggerNewRank;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1790 discordLinkResponse (Lcom/boehmod/bflib/cloud/packet/common/discord/PacketDiscordLinkResponse;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1791 inventoryCaseResults (Lcom/boehmod/bflib/cloud/packet/common/inventory/PacketInventoryCaseResults;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1792 inventoryItemAdded (Lcom/boehmod/bflib/cloud/packet/common/inventory/PacketInventoryItemAdded;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1793 inventoryItemRemoved (Lcom/boehmod/bflib/cloud/packet/common/inventory/PacketInventoryItemRemoved;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1794 mmJoinServer (Lcom/boehmod/bflib/cloud/packet/common/mm/PacketMMJoinServer;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1795 mmSearchCloudCanceled (Lcom/boehmod/bflib/cloud/packet/common/mm/PacketMMSearchCloudCanceled;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1796 partyJoined (Lcom/boehmod/bflib/cloud/packet/common/party/PacketPartyJoined;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1797 requestedChallenges (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedChallenges;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1798 requestedClanData (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedClanData;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1799 requestedCloudData (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedCloudData;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1800 requestedEvents (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedEvents;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1801 requestedFriends (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedFriends;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_1802 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button
+	METHOD method_1804 register ()V
+	METHOD method_1805 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/components/Button;)V
+		ARG 1 button

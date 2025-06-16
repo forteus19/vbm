@@ -1,2 +1,17 @@
 CLASS com/boehmod/blockfront/unnamed/BF_780 com/boehmod/blockfront/client/player/ClientFriendManager
+	FIELD field_3320 friends Ljava/util/Set;
+	FIELD field_3321 friendRequests Ljava/util/Set;
+	FIELD field_3322 clanRequests Ljava/util/Set;
+	FIELD field_3324 requestTimer I
+	METHOD method_3229 getFriends ()Ljava/util/Set;
 	METHOD method_3230 update (Lcom/boehmod/blockfront/unnamed/BF_388;Lcom/boehmod/blockfront/unnamed/BF_476;)V
+		ARG 1 connectionManager
+		ARG 2 cloudData
+	METHOD method_3231 replaceAll (Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;)V
+		ARG 1 friends
+		ARG 2 friendRequests
+		ARG 3 clanRequests
+	METHOD method_3232 hasFriend (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_3233 getFriendRequests ()Ljava/util/Set;
+	METHOD method_3234 getClanRequests ()Ljava/util/Set;

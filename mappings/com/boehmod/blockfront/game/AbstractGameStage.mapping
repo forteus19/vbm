@@ -1,0 +1,47 @@
+CLASS com/boehmod/blockfront/unnamed/BF_938 com/boehmod/blockfront/game/AbstractGameStage
+	FIELD field_3776 ticks I
+	METHOD method_3905 getStatus ()Lcom/boehmod/blockfront/unnamed/BF_685;
+	METHOD method_3906 onPlayerJoin (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;)V
+		ARG 1 dataHandler
+		ARG 2 manager
+		ARG 3 joinType
+		ARG 4 level
+		ARG 5 player
+		ARG 6 game
+		ARG 7 gameId
+	METHOD method_3907 createNextStage (Lcom/boehmod/blockfront/unnamed/BF_677;)Lcom/boehmod/blockfront/unnamed/BF_938;
+		ARG 1 game
+	METHOD method_3908 stageEnded (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 game
+		ARG 2 playerManager
+		ARG 3 modManager
+		ARG 4 dataHandler
+		ARG 5 level
+		ARG 6 players
+	METHOD method_3909 isStageOver (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)Z
+		ARG 1 game
+		ARG 2 playerManager
+		ARG 3 modManager
+		ARG 4 level
+		ARG 5 players
+	METHOD method_3910 onSecondPassed (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 game
+		ARG 2 playerManager
+		ARG 3 modManager
+		ARG 4 dataHandler
+		ARG 5 level
+		ARG 6 players
+	METHOD method_3912 stageStarted (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 game
+		ARG 2 playerManager
+		ARG 3 modManager
+		ARG 4 dataHandler
+		ARG 5 level
+		ARG 6 players
+	METHOD method_3913 update (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 game
+		ARG 2 playerManager
+		ARG 3 manager
+		ARG 4 dataHandler
+		ARG 5 level
+		ARG 6 players

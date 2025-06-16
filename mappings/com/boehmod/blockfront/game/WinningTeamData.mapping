@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_756 com/boehmod/blockfront/game/WinningTeamData
+	FIELD field_3244 team Lcom/boehmod/blockfront/unnamed/BF_686;
+	FIELD field_3245 topPlayers Ljava/util/Set;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_686;Ljava/util/Set;)V
+		ARG 1 team
+		ARG 2 topPlayers

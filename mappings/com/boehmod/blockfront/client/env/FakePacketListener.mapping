@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_93 com/boehmod/blockfront/client/env/FakePacketListener
+	FIELD field_438 registryAccess Lnet/minecraft/core/RegistryAccess$Frozen;
+	FIELD field_439 REPORT_DETAILS Ljava/util/Map;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_467 getServerData ()Lnet/minecraft/client/multiplayer/ServerData;
+	METHOD method_468 getRegistryAccess ()Lnet/minecraft/core/RegistryAccess$Frozen;
+	METHOD method_469 createCookie (Lnet/minecraft/client/Minecraft;)Lnet/minecraft/client/multiplayer/CommonListenerCookie;
+		ARG 0 minecraft
+	METHOD method_470 getTelemetryManager (Lnet/minecraft/client/Minecraft;)Lnet/minecraft/client/telemetry/WorldSessionTelemetryManager;
+		ARG 0 minecraft

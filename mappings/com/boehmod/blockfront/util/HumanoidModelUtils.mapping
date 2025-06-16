@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_222 com/boehmod/blockfront/util/HumanoidModelUtils
+	METHOD method_1005 match (Lnet/minecraft/client/model/HumanoidModel;Lnet/minecraft/client/model/HumanoidModel;)V
+		ARG 0 model1
+		ARG 1 model2

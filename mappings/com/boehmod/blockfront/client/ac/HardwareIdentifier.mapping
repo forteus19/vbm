@@ -1,7 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_474 com/boehmod/blockfront/client/ac/HardwareIdentifier
 	FIELD field_2113 EMPTY [B
-	FIELD field_2114 THIS_ID [B
-	METHOD method_1692 getThisId ()[B
+	FIELD field_2114 INSTANCE_ID [B
+	METHOD method_1692 get ()[B
 	METHOD method_1693 (Ljava/lang/StringBuilder;Ljava/lang/String;)V
 		ARG 1 string
 	METHOD method_1694 bytesToHexString ([B)Ljava/lang/String;

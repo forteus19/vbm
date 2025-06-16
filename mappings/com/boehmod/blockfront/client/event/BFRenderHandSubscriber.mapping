@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_70 com/boehmod/blockfront/client/event/BFRenderHandSubscriber
+	FIELD field_356 SCOPEFLARE_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	METHOD method_423 update (Lnet/minecraft/client/player/LocalPlayer;)V
 		ARG 0 player
 	METHOD method_424 onRenderHand (Lnet/neoforged/neoforge/client/event/RenderHandEvent;)V

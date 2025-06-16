@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_92 com/boehmod/blockfront/client/env/FakeLevel
+	FIELD field_437 DIMENSION_TYPE Lnet/minecraft/world/level/dimension/DimensionType;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_465 getLevelData ()Lnet/minecraft/client/multiplayer/ClientLevel$ClientLevelData;

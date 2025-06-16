@@ -1,9 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_95 com/boehmod/blockfront/client/FakeEnvironment
-	FIELD field_450 player Lcom/boehmod/blockfront/unnamed/BF_94;
-	FIELD field_452 playerCache Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
-	METHOD method_476 getFakePlayer (Lnet/minecraft/client/Minecraft;Lcom/mojang/authlib/GameProfile;)Lcom/boehmod/blockfront/unnamed/BF_94;
-	METHOD method_477 update (Lnet/minecraft/client/Minecraft;)V
-		ARG 1 minecraft
-	METHOD method_478 initFakeEnvironment (Lnet/minecraft/client/Minecraft;)V
-	METHOD method_479 checkEnvironment (Lnet/minecraft/client/Minecraft;)V
-		ARG 1 minecraft

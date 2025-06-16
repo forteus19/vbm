@@ -1,9 +1,15 @@
 CLASS com/boehmod/blockfront/unnamed/BF_939 com/boehmod/blockfront/game/GameStageManager
+	FIELD field_3778 currentStage Lcom/boehmod/blockfront/unnamed/BF_938;
+	FIELD field_3779 canChangeStage Z
 	FIELD field_3780 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
 		ARG 1 game
-	METHOD method_3914 changeStage (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_682;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+	METHOD method_3914 update (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_682;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
 		ARG 1 manager
 		ARG 2 playerData
 		ARG 3 playerHandler
 		ARG 4 level
+		ARG 5 players
+	METHOD method_3915 getCurrentStage ()Lcom/boehmod/blockfront/unnamed/BF_938;
+	METHOD method_3916 setCanChangeStage ()V
+	METHOD method_3917 initFirstStage ()V

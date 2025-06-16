@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1083 com/boehmod/blockfront/server/player/PlayerAfkTracker
+	FIELD field_4361 playerData Lcom/boehmod/blockfront/unnamed/BF_1117;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1117;)V
+		ARG 1 palyerData
+	METHOD method_4607 update (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;)V

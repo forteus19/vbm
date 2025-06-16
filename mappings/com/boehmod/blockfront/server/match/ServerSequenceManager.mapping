@@ -1,3 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1115 com/boehmod/blockfront/server/match/ServerSequenceManager
+	FIELD field_6268 chunkLoader Lcom/boehmod/blockfront/unnamed/BF_1084;
+	METHOD method_5451 getChunkLoader ()Lcom/boehmod/blockfront/unnamed/BF_1084;
 	METHOD method_5453 setCurrentSequence (Lcom/boehmod/blockfront/unnamed/BF_597;)V
 		ARG 1 sequence

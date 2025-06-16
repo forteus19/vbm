@@ -23,6 +23,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_956 com/boehmod/blockfront/common/gun/Gu
 	FIELD field_3896 rattle Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_3897 add Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_3898 reloadBolt Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3899 bulletLandDefault Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3900 bulletLandWood Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3901 bulletLandMetal Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3902 bulletLandDirt Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3903 bulletLandWater Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_3904 zoomIn Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_3905 zoomOut Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_3906 equip Lnet/neoforged/neoforge/registries/DeferredHolder;
@@ -38,6 +43,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_956 com/boehmod/blockfront/common/gun/Gu
 	METHOD method_3964 getRattle ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3965 getAdd ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3966 getReloadBolt ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3967 getBulletLandDefault ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3968 getBulletLandWood ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3969 getBulletLandMetal ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3970 getZoomIn ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3971 getZoomOut ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3972 getImpactMono ()Lnet/neoforged/neoforge/registries/DeferredHolder;
@@ -91,7 +99,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_956 com/boehmod/blockfront/common/gun/Gu
 		ARG 1 add
 	METHOD method_4005 reloadBolt (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
 		ARG 1 reloadBolt
+	METHOD method_4006 bulletLandDefault (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+	METHOD method_4007 bulletLandWood (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
 	METHOD method_4008 getFire ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_4009 bulletLandMetal (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
 	METHOD method_4010 getReload ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_4011 zoomIn (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
 		ARG 1 zoomIn
@@ -107,3 +118,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_956 com/boehmod/blockfront/common/gun/Gu
 	METHOD method_4019 getCorebassDistant ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_4020 getEchoDistantMono ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_4021 getEchoDistantStereo ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_5529 getBulletPass ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_5530 bulletPass (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;

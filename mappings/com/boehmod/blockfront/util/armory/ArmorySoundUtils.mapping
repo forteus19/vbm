@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_478 com/boehmod/blockfront/util/armory/ArmorySoundUtils
+	METHOD method_1725 playDefault (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/bflib/cloud/common/item/CloudItemStack;)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 itemStack

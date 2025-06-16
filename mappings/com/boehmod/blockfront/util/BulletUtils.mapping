@@ -1,1 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_28 com/boehmod/blockfront/util/BulletUtils
+	METHOD method_156 doBlockBulletImpact (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/util/RandomSource;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_989;I)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 random
+		ARG 4 player
+		ARG 5 entity
+		ARG 6 collision

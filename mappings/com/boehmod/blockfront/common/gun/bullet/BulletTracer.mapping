@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_277 com/boehmod/blockfront/common/gun/bullet/BulletTracer
+	FIELD field_1641 tracerWidth F
+	FIELD field_1647 startPos Lnet/minecraft/world/phys/Vec3;
+	FIELD field_1648 endPos Lnet/minecraft/world/phys/Vec3;
+	METHOD method_1169 getLerpedPosition (F)Lnet/minecraft/world/phys/Vec3;
+		ARG 1 t
+	METHOD method_1174 getStartPos ()Lnet/minecraft/world/phys/Vec3;
+	METHOD method_1177 getTracerWidth ()F

@@ -16,6 +16,7 @@ public class BFBlocksVisitor extends ClassInitVisitor {
     public static final String BF_BLOCKS = "com/boehmod/blockfront/unnamed/BF_1091";
 
     private final Map<String, String> blockNames = new HashMap<>();
+    private MethodNode clInitBlocks = null;
     private MethodNode clInitBet = null;
     private int matched = 0;
 
@@ -27,40 +28,51 @@ public class BFBlocksVisitor extends ClassInitVisitor {
     public void visitEnd() {
         super.visitEnd();
         matched++;
+
+        if (matched == 2 && clInitBlocks != null && clInitBet != null) {
+            analyzeBET();
+        }
     }
 
     @Override
     protected void analyzeClInit(MethodNode clInit, Frame<SourceValue>[] frames) {
-        if (className.equals(BF_BLOCK_ENTITY_TYPES)) {
-            clInitBet = clInit;
-        }
-        if (className.equals(BF_BLOCKS)) {
-            for (int i = 0; i < clInit.instructions.size() - 1; i++) {
-                var match = LdcStringForInvokeVisitor.matchInvokePutPattern(className, clInit.instructions, i, Opcodes.INVOKEVIRTUAL);
-                if (match == null) {
-                    continue;
-                }
-
-                MethodInsnNode insn1 = match.insn1();
-                FieldInsnNode insn2 = match.insn2();
-
-                if (!insn1.name.equals("register")) {
-                    continue;
-                }
-
-                String ldcValue = getStringLdc(frames[i], 0);
-                if (ldcValue != null) {
-                    String javaName = VbmUtils.javaName(ldcValue);
-                    collector.collectField(className, insn2.name, insn2.desc, javaName);
-                    blockNames.put(insn2.name, javaName);
-                }
+        switch (className) {
+            case BF_BLOCKS -> {
+                clInitBlocks = clInit;
+                analyzeBlocks(frames);
+            }
+            case BF_BLOCK_ENTITY_TYPES -> {
+                clInitBet = clInit;
             }
         }
+    }
 
-        if (matched < 1 || clInitBet == null) {
-            return;
+    private void analyzeBlocks(Frame<SourceValue>[] frames) {
+        System.out.println("analyzeBlocks");
+        for (int i = 0; i < clInitBlocks.instructions.size() - 1; i++) {
+            var match = LdcStringForInvokeVisitor.matchInvokePutPattern(className, clInitBlocks.instructions, i, Opcodes.INVOKEVIRTUAL);
+            if (match == null) {
+                continue;
+            }
+
+            MethodInsnNode insn1 = match.insn1();
+            FieldInsnNode insn2 = match.insn2();
+
+            if (!insn1.name.equals("register")) {
+                continue;
+            }
+
+            String ldcValue = getStringLdc(frames[i], 0);
+            if (ldcValue != null) {
+                String javaName = VbmUtils.javaName(ldcValue);
+                collector.collectField(className, insn2.name, insn2.desc, javaName);
+                blockNames.put(insn2.name, javaName);
+            }
         }
+    }
 
+    private void analyzeBET() {
+        System.out.println("analyzeBET");
         MatchTwoResult<FieldInsnNode, MethodInsnNode> lastBlockGet = null;
 
         for (int i = 0; i < clInitBet.instructions.size() - 1; i++) {
