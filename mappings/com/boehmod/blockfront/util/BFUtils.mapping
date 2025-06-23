@@ -317,9 +317,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 	METHOD method_2966 isPlayerUnavailable (Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/common/player/b;)Z
 		ARG 0 player
 		ARG 1 data
-	METHOD method_2967 refillAmmo (Lnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_993;)Z
-		ARG 0 itemStack
-		ARG 1 item
 	METHOD method_2968 canSeeSky (Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;)Z
 		ARG 0 view
 		ARG 1 blockPos

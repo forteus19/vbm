@@ -8,18 +8,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_891 com/boehmod/blockfront/common/match/
 		ARG 1 game
 	METHOD method_3707 getGameType ()Ljava/lang/String;
 	METHOD method_3708 getGameUUID ()Ljava/util/UUID;
-	METHOD method_3709 readNewFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_891;
-		ARG 0 root
 	METHOD method_3712 getPlayerVotes ()Ljava/util/Set;
 	METHOD method_3713 addPlayerVote (Ljava/util/UUID;)V
 		ARG 1 uuid
-	METHOD method_3714 getName ()Ljava/lang/String;
 	METHOD method_5537 getCountries ()Ljava/util/List;
 	METHOD read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 buf
 	METHOD write (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 root
-	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root

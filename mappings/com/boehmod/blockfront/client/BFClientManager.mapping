@@ -61,8 +61,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 		ARG 3 player
 		ARG 4 level
 		ARG 5 game
-	METHOD method_2248 (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_927;)V
-		ARG 1 map
 	METHOD method_2249 disconnect (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 minecraft
 		ARG 2 level

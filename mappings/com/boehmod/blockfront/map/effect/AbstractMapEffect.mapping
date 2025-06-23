@@ -1,11 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_731 com/boehmod/blockfront/map/effect/AbstractMapEffect
 	METHOD method_3086 getRenderStage ()Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent$Stage;
-	METHOD method_3087 renderUpdate (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Ljava/util/Random;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;F)V
-		ARG 1 minecraft
-		ARG 2 manager
-		ARG 3 random
-		ARG 4 player
-		ARG 5 level
 	METHOD method_3088 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Ljava/util/Random;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;FF)V
 		ARG 1 minecraft
 		ARG 2 manager

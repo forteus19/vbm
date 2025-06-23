@@ -3,9 +3,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_150 com/boehmod/blockfront/client/BFClie
 	METHOD method_619 init (Lcom/boehmod/blockfront/unnamed/BF_27;Lnet/neoforged/fml/event/lifecycle/FMLClientSetupEvent;)V
 		ARG 0 bf
 		ARG 1 event
-	METHOD method_620 setup (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;)V
-		ARG 0 minecraft
-		ARG 1 manager
 	METHOD method_622 (Lnet/minecraft/client/renderer/entity/ItemRenderer;Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;)Lnet/minecraft/client/renderer/entity/EntityRenderer;
 		ARG 1 context
 	METHOD method_623 registerLayerDefinitions (Lnet/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions;)V

@@ -66,8 +66,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1059 com/boehmod/blockfront/util/math/Ma
 	METHOD method_4493 directionVec (Lnet/minecraft/core/Direction;F)Lnet/minecraft/world/phys/Vec3;
 		ARG 0 direction
 		ARG 1 magnitude
-	METHOD method_4494 gaussianRandomSign (Lnet/minecraft/util/RandomSource;)F
-		ARG 0 random
 	METHOD method_4495 stepUpAndDrift (Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/phys/Vec3;I)Lnet/minecraft/world/phys/Vec3;
 		ARG 0 random
 		ARG 1 origin
