@@ -10,6 +10,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	FIELD field_3722 command Lcom/boehmod/blockfront/unnamed/BF_462;
 	FIELD field_3728 ENTRIES Ljava/util/Map;
 	FIELD field_3730 name Ljava/lang/String;
+	FIELD field_6723 environments Ljava/util/Map;
 	METHOD method_3840 getAuthor ()Ljava/lang/String;
 	METHOD method_3842 getMusicSet ()Lcom/boehmod/blockfront/unnamed/BF_961;
 	METHOD method_3862 getAlliesDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
