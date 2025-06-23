@@ -1,7 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/AbstractGame
 	FIELD field_2822 mapInstance Lcom/boehmod/blockfront/unnamed/BF_457;
 	FIELD field_2823 baseCommand Lcom/boehmod/blockfront/unnamed/BF_462;
-	FIELD field_2824 gameManager Lcom/boehmod/blockfront/unnamed/BF_682;
+	FIELD field_2824 playerManager Lcom/boehmod/blockfront/unnamed/BF_682;
 	FIELD field_2825 combatManager Lcom/boehmod/blockfront/unnamed/BF_684;
 	FIELD field_2826 status Lcom/boehmod/blockfront/unnamed/BF_685;
 	FIELD field_2827 dominatingManager Lcom/boehmod/blockfront/unnamed/BF_767;
@@ -81,7 +81,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 4 uuid
 	METHOD method_2618 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_457;)V
 		ARG 1 mapInstance
-	METHOD method_2619 createController (Lcom/boehmod/blockfront/unnamed/BF_606;)Lcom/boehmod/blockfront/unnamed/BF_679;
+	METHOD method_2619 createClientHandler (Lcom/boehmod/blockfront/unnamed/BF_606;)Lcom/boehmod/blockfront/unnamed/BF_679;
 		ARG 1 manager
 	METHOD method_2621 setStatus (Lcom/boehmod/blockfront/unnamed/BF_685;)V
 		ARG 1 status
@@ -91,7 +91,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 players
 	METHOD method_2629 getPlayerStatData (Ljava/util/UUID;)Lcom/boehmod/bflib/fds/tag/FDSTagCompound;
 		ARG 1 uuid
-	METHOD method_2632 hasPlayers (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)Z
+	METHOD method_2632 updateIdleStatus (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)Z
 		ARG 1 level
 		ARG 2 playerUUIDs
 	METHOD method_2634 getSwitchTeamMessage (Lnet/minecraft/world/entity/player/Player;II)Lnet/minecraft/network/chat/Component;

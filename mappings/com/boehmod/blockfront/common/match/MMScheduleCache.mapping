@@ -1,6 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1064 com/boehmod/blockfront/common/match/MMScheduleCache
 	FIELD field_4332 cache Lcom/google/common/cache/Cache;
-	METHOD method_4552 consume (Ljava/util/UUID;)Ljava/util/UUID;
+	METHOD method_4552 assignPlayer (Ljava/util/UUID;)Ljava/util/UUID;
 		ARG 1 player
 	METHOD method_4553 put (Ljava/util/UUID;Ljava/util/UUID;)V
 		ARG 1 player

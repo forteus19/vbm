@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_50 com/boehmod/blockfront/client/render/minimap/MinimapWaypoint
+	FIELD field_257 TEXTURE_PLAYER Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_258 TEXTURE_ENEMY Lnet/minecraft/resources/ResourceLocation;

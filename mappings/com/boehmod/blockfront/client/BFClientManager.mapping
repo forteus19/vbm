@@ -11,7 +11,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2553 matchMaking Lcom/boehmod/blockfront/unnamed/BF_550;
 	FIELD field_2554 cinematics Lcom/boehmod/blockfront/unnamed/BF_599;
 	FIELD field_2555 game Lcom/boehmod/blockfront/unnamed/BF_677;
-	FIELD field_2556 gameController Lcom/boehmod/blockfront/unnamed/BF_679;
+	FIELD field_2556 gameClient Lcom/boehmod/blockfront/unnamed/BF_679;
 	FIELD field_2557 friendManager Lcom/boehmod/blockfront/unnamed/BF_780;
 	FIELD field_2558 crosshairResource Lcom/boehmod/blockfront/unnamed/BF_1124$BF_1125;
 	FIELD field_2559 creditsEntryResource Lcom/boehmod/blockfront/unnamed/BF_1126$BF_1127;
@@ -36,7 +36,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_2233 getMatchMaking ()Lcom/boehmod/blockfront/unnamed/BF_550;
 	METHOD method_2234 getCinematics ()Lcom/boehmod/blockfront/unnamed/BF_599;
 	METHOD method_2235 getGame ()Lcom/boehmod/blockfront/unnamed/BF_677;
-	METHOD method_2236 getGameController ()Lcom/boehmod/blockfront/unnamed/BF_679;
+	METHOD method_2236 getGameClient ()Lcom/boehmod/blockfront/unnamed/BF_679;
 	METHOD method_2237 getFriendManager ()Lcom/boehmod/blockfront/unnamed/BF_780;
 	METHOD method_2239 getCrosshairResource ()Lcom/boehmod/blockfront/unnamed/BF_1124$BF_1125;
 	METHOD method_2240 getCreditsEntryResource ()Lcom/boehmod/blockfront/unnamed/BF_1126$BF_1127;
