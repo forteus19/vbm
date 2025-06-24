@@ -1,7 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvironment
 	FIELD field_6724 time I
-	FIELD field_6725 defaultName Ljava/lang/String;
-	FIELD field_6726 particleEffects Ljava/util/EnumSet;
+	FIELD field_6725 DEFAULT_NAME Ljava/lang/String;
+	FIELD field_6726 weatherEffects Ljava/util/EnumSet;
 	FIELD field_6727 name Ljava/lang/String;
 	FIELD field_6728 mapEffects Ljava/util/List;
 	FIELD field_6729 shader Lnet/minecraft/resources/ResourceLocation;
@@ -20,19 +20,126 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 	FIELD field_6742 customLightColor I
 	FIELD field_6743 exteriorSound Ljava/util/function/Supplier;
 	FIELD field_6744 interiorSound Ljava/util/function/Supplier;
-	METHOD method_5658 getMapEffect ()Ljava/util/List;
+	METHOD <init> (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD <init> (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD method_5658 getMapEffects ()Ljava/util/List;
 	METHOD method_5659 getParticleEffects ()Ljava/util/EnumSet;
+	METHOD method_5660 setCustomFogDensity (FF)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 near
+		ARG 2 far
+	METHOD method_5661 setTime (I)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 time
 	METHOD method_5662 addParticleEffect (Lcom/boehmod/blockfront/unnamed/BF_766;)Lcom/boehmod/blockfront/unnamed/BF_1182;
 		ARG 1 type
 	METHOD method_5663 hasParticleEffect (Lcom/boehmod/blockfront/unnamed/BF_766;)Z
 		ARG 1 type
+	METHOD method_5664 updateGame (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 game
+		ARG 2 manager
+		ARG 3 level
+		ARG 4 players
 	METHOD method_5665 addMapEffect (Lcom/boehmod/blockfront/unnamed/BF_731;)Lcom/boehmod/blockfront/unnamed/BF_1182;
 		ARG 1 mapEffect
 	METHOD method_5666 hasMapEffect (Lcom/boehmod/blockfront/unnamed/BF_731;)Z
 		ARG 1 mapEffect
+	METHOD method_5667 setExteriorSound (Ljava/util/function/Supplier;)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 exteriorSound
+	METHOD method_5668 updateGameClient (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Ljava/util/Random;F)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 game
+		ARG 4 player
+		ARG 5 level
+		ARG 6 random
+		ARG 7 delta
+	METHOD method_5669 (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Ljava/util/concurrent/ThreadLocalRandom;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;FFLcom/boehmod/blockfront/unnamed/BF_731;)V
+		ARG 13 mapEffect
+	METHOD method_5670 triggerCondition (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;)V
+		ARG 1 minecraft
+		ARG 2 level
+		ARG 3 game
+		ARG 4 effectId
+	METHOD method_5671 (Lnet/minecraft/client/Minecraft;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lcom/boehmod/blockfront/unnamed/BF_731;)V
+		ARG 7 mapEffect
+	METHOD method_5672 setShader (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 shader
+	METHOD method_5673 render (Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;FF)V
+		ARG 1 event
+		ARG 2 minecraft
+		ARG 3 manager
+		ARG 4 player
+		ARG 5 level
+		ARG 6 blockDispatcher
+		ARG 7 buffer
+		ARG 8 poseStack
+		ARG 9 graphics
+		ARG 10 font
+		ARG 11 camera
+		ARG 12 renderTime
+		ARG 13 delta
+	METHOD method_5674 renderDebug (Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;F)V
+		ARG 1 event
+		ARG 2 minecraft
+		ARG 3 player
+		ARG 4 level
+		ARG 5 buffer
+		ARG 6 poseStack
+		ARG 7 graphics
+		ARG 8 font
+		ARG 9 camera
+		ARG 10 delta
+	METHOD method_5675 setDisableClouds (Z)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 disableClouds
+	METHOD method_5676 (ZLnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lcom/boehmod/blockfront/unnamed/BF_731;)Z
+		ARG 2 mapEffect
+	METHOD method_5677 getTime ()I
+	METHOD method_5678 getCustomSkyColor ()I
+	METHOD method_5679 getCustomWaterColor ()I
+	METHOD method_5680 getCustomFogColor ()I
+	METHOD method_5681 getCustomLightColor ()I
+	METHOD method_5682 getNearFogDensity ()F
+	METHOD method_5683 getFarFogDensity ()F
+	METHOD method_5684 clearCustomFogDensity ()Lcom/boehmod/blockfront/unnamed/BF_1182;
+	METHOD method_5685 getExteriorSound ()Ljava/util/function/Supplier;
+	METHOD method_5686 setCustomSkyColor (I)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 color
 	METHOD method_5687 removeParticleEffect (Lcom/boehmod/blockfront/unnamed/BF_766;)Lcom/boehmod/blockfront/unnamed/BF_1182;
 		ARG 1 type
 	METHOD method_5688 removeMapEffect (Lcom/boehmod/blockfront/unnamed/BF_731;)Lcom/boehmod/blockfront/unnamed/BF_1182;
 		ARG 1 mapEffect
+	METHOD method_5689 setInteriorSound (Ljava/util/function/Supplier;)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 interiorSound
+	METHOD method_5690 setDisableSky (Z)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 disableSky
 	METHOD method_5691 clearMapEffects ()V
 	METHOD method_5692 clearParticleEffects ()V
+	METHOD method_5693 clearCustomSkyColor ()V
+	METHOD method_5694 clearCustomWaterColor ()V
+	METHOD method_5695 clearCustomFogColor ()V
+	METHOD method_5696 clearCustomLightColor ()V
+	METHOD method_5697 clearShader ()V
+	METHOD method_5698 hasCustomSkyColor ()Z
+	METHOD method_5699 hasCustomWaterColor ()Z
+	METHOD method_5700 hasCustomFogColor ()Z
+	METHOD method_5701 hasCustomLightColor ()Z
+	METHOD method_5702 getDisableClouds ()Z
+	METHOD method_5703 hasCustomFogDensity ()Z
+	METHOD method_5704 getDisableSky ()Z
+	METHOD method_5705 getInteriorSound ()Ljava/util/function/Supplier;
+	METHOD method_5706 setCustomWaterColor (I)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 color
+	METHOD method_5707 setCustomFogColor (I)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 color
+	METHOD method_5708 setCustomLightColor (I)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 color
+	METHOD method_5709 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD method_5710 getShader ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_5711 reset (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf

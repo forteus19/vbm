@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_766 com/boehmod/blockfront/client/render/effect/ParticleEffectType
+CLASS com/boehmod/blockfront/unnamed/BF_766 com/boehmod/blockfront/client/render/effect/WeatherEffectType
 	FIELD field_3287 id Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;)V
 		ARG 3 id

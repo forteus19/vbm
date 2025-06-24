@@ -128,6 +128,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 name
 	METHOD method_2674 setType (Ljava/lang/String;)V
 		ARG 1 type
+	METHOD method_5652 getMapEnvironment ()Lcom/boehmod/blockfront/unnamed/BF_1182;
 	METHOD read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD write (Lio/netty/buffer/ByteBuf;)V
