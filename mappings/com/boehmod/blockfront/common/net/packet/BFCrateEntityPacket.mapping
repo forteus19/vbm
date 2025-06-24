@@ -1,5 +1,1 @@
 CLASS com/boehmod/blockfront/unnamed/BF_968 com/boehmod/blockfront/common/net/packet/BFCrateEntityPacket
-	FIELD field_3938 blockPos Lnet/minecraft/core/BlockPos;
-	FIELD field_3941 itemStack Lnet/minecraft/world/item/ItemStack;
-	METHOD method_4047 blockPos ()Lnet/minecraft/core/BlockPos;
-	METHOD method_4050 itemStack ()Lnet/minecraft/world/item/ItemStack;

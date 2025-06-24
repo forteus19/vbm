@@ -1,18 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1126 com/boehmod/blockfront/client/data/BFCreditsEntry
 	FIELD field_6294 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_1126;
 	FIELD field_6295 CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_6296 name Ljava/lang/String;
-	FIELD field_6297 uuid Ljava/lang/String;
-	FIELD field_6298 translation Ljava/lang/String;
-	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-		ARG 1 name
-		ARG 2 uuid
-		ARG 3 translation
 	METHOD method_5479 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
-	METHOD method_5480 name ()Ljava/lang/String;
-	METHOD method_5481 uuid ()Ljava/lang/String;
-	METHOD method_5482 translation ()Ljava/lang/String;
 	CLASS BF_1127 Resource
 		METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 			ARG 1 minecraft

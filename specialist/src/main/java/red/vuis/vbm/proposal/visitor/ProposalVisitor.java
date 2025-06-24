@@ -10,7 +10,7 @@ import org.objectweb.asm.tree.LdcInsnNode;
 import org.objectweb.asm.tree.analysis.Frame;
 import org.objectweb.asm.tree.analysis.SourceValue;
 import red.vuis.vbm.proposal.ProposalCollector;
-import red.vuis.vbm.util.FieldId;
+import red.vuis.vbm.util.DoubleId;
 
 public abstract class ProposalVisitor extends ClassVisitor {
     protected final ProposalCollector collector;
@@ -54,9 +54,9 @@ public abstract class ProposalVisitor extends ClassVisitor {
     }
 
     public record MatchTwoResult<A extends AbstractInsnNode, B extends AbstractInsnNode>(A insn1, B insn2) {
-        public FieldId fieldId2() {
+        public DoubleId fieldId2() {
             if (insn2 instanceof FieldInsnNode fieldInsn2) {
-                return new FieldId(fieldInsn2.name, fieldInsn2.desc);
+                return new DoubleId(fieldInsn2.name, fieldInsn2.desc);
             } else {
                 throw new RuntimeException("Not a FieldInsnNode");
             }

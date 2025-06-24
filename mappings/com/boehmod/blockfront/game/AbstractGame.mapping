@@ -22,6 +22,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2851 GAMES_TP_FAIL Lnet/minecraft/network/chat/Component;
 	FIELD field_2852 GAMES_LOBBY_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2854 uuid Ljava/util/UUID;
+	FIELD field_6713 mapEnvironment Lcom/boehmod/blockfront/unnamed/BF_1182;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;Ljava/lang/String;)V

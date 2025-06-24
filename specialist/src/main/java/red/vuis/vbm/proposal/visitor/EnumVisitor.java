@@ -10,11 +10,11 @@ import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.tree.analysis.Frame;
 import org.objectweb.asm.tree.analysis.SourceValue;
 import red.vuis.vbm.proposal.ProposalCollector;
-import red.vuis.vbm.util.FieldId;
+import red.vuis.vbm.util.DoubleId;
 import red.vuis.vbm.util.VbmUtils;
 
 public final class EnumVisitor extends ClassInitVisitor {
-    private final Set<FieldId> enumFields = new HashSet<>();
+    private final Set<DoubleId> enumFields = new HashSet<>();
 
     public EnumVisitor(ProposalCollector collector) {
         super(collector);
@@ -29,7 +29,7 @@ public final class EnumVisitor extends ClassInitVisitor {
     @Override
     public FieldVisitor visitField(int access, String name, String descriptor, String signature, Object value) {
         if ((access & Opcodes.ACC_ENUM) != 0) {
-            enumFields.add(new FieldId(name, descriptor));
+            enumFields.add(new DoubleId(name, descriptor));
         }
         return super.visitField(access, name, descriptor, signature, value);
     }

@@ -1,7 +1,1 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1016 com/boehmod/blockfront/common/net/packet/BFGameKilledMessagePacket
-	FIELD field_4166 uuid Ljava/util/UUID;
-	FIELD field_4169 health F
-	FIELD field_4170 itemUsing Lnet/minecraft/world/item/ItemStack;
-	METHOD method_4328 health ()F
-	METHOD method_4329 uuid ()Ljava/util/UUID;
-	METHOD method_4332 itemUsing ()Lnet/minecraft/world/item/ItemStack;

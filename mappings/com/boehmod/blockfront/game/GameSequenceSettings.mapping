@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_603 com/boehmod/blockfront/game/GameMusicData
+CLASS com/boehmod/blockfront/unnamed/BF_603 com/boehmod/blockfront/game/GameSequenceSettings
 	FIELD field_2536 stopMusicOnFinish Z
 	METHOD method_2217 setStopMusicOnFinish (Z)V
 		ARG 1 stopMusicOnFinish

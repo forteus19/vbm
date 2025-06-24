@@ -1,5 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_339 com/boehmod/blockfront/client/render/geo/BFWeaponItemRenderer
 	FIELD field_1703 parts Ljava/util/List;
+	FIELD field_6505 graphics Lnet/minecraft/client/gui/GuiGraphics;
 	METHOD <init> (Lnet/minecraft/client/renderer/blockentity/BlockEntityRenderDispatcher;Lnet/minecraft/client/model/geom/EntityModelSet;Lcom/boehmod/blockfront/unnamed/BF_231;)V
 		ARG 1 dispatcher
 		ARG 2 modelSet

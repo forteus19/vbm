@@ -1,9 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_900 com/boehmod/blockfront/common/item/AimConfig
-	FIELD field_3592 minimumSpread F
-	FIELD field_3594 airborneSpreadRate F
-	FIELD field_3595 walkingSpreadRate F
 	FIELD field_3602 currentSpread F
 	FIELD field_3603 prevSpread F
-	METHOD method_3735 minimumSpread ()F
-	METHOD method_3737 airborneSpreadRate ()F
-	METHOD method_3738 walkingSpreadRate ()F

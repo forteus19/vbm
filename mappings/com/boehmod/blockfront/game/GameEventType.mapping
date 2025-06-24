@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_786 com/boehmod/blockfront/game/CommanderAction
+CLASS com/boehmod/blockfront/unnamed/BF_786 com/boehmod/blockfront/game/GameEventType
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;ZZLjava/lang/String;)V
 		ARG 3 iconName
 		ARG 4 hasTimeLimit

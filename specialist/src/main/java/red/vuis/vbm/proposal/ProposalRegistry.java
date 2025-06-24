@@ -15,6 +15,7 @@ import red.vuis.vbm.proposal.visitor.EnumVisitor;
 import red.vuis.vbm.proposal.visitor.LdcStringForInvokeVisitor;
 import red.vuis.vbm.proposal.visitor.PacketVisitor;
 import red.vuis.vbm.proposal.visitor.ProposalVisitor;
+import red.vuis.vbm.proposal.visitor.RecordVisitor;
 import red.vuis.vbm.util.VbmUtils;
 
 public final class ProposalRegistry {
@@ -22,6 +23,10 @@ public final class ProposalRegistry {
             new VisitorEntry(
                     AllClassesVisitor::new,
                     node -> true
+            ),
+            new VisitorEntry(
+                    RecordVisitor::new,
+                    node -> RecordVisitor.RECORD.equals(node.superName)
             ),
             new VisitorEntry(
                     EnumVisitor::new,

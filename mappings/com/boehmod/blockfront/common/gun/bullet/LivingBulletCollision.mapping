@@ -1,9 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_990 com/boehmod/blockfront/common/gun/bullet/LivingBulletCollision
-	FIELD field_3997 entityId I
-	METHOD <init> (IFZZZZLnet/minecraft/core/Direction;Lnet/minecraft/world/phys/Vec3;)V
-		ARG 1 entityId
 	METHOD method_4107 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_990;
 		ARG 0 buf
 	METHOD method_4108 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
-	METHOD method_4110 entityId ()I

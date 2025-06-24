@@ -20,3 +20,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 	FIELD field_6742 customLightColor I
 	FIELD field_6743 exteriorSound Ljava/util/function/Supplier;
 	FIELD field_6744 interiorSound Ljava/util/function/Supplier;
+	METHOD method_5658 getMapEffect ()Ljava/util/List;
+	METHOD method_5659 getParticleEffects ()Ljava/util/EnumSet;
+	METHOD method_5662 addParticleEffect (Lcom/boehmod/blockfront/unnamed/BF_766;)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 type
+	METHOD method_5663 hasParticleEffect (Lcom/boehmod/blockfront/unnamed/BF_766;)Z
+		ARG 1 type
+	METHOD method_5665 addMapEffect (Lcom/boehmod/blockfront/unnamed/BF_731;)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 mapEffect
+	METHOD method_5666 hasMapEffect (Lcom/boehmod/blockfront/unnamed/BF_731;)Z
+		ARG 1 mapEffect
+	METHOD method_5687 removeParticleEffect (Lcom/boehmod/blockfront/unnamed/BF_766;)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 type
+	METHOD method_5688 removeMapEffect (Lcom/boehmod/blockfront/unnamed/BF_731;)Lcom/boehmod/blockfront/unnamed/BF_1182;
+		ARG 1 mapEffect
+	METHOD method_5691 clearMapEffects ()V
+	METHOD method_5692 clearParticleEffects ()V

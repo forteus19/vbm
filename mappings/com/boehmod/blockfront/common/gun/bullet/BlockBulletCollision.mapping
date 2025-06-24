@@ -1,15 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_989 com/boehmod/blockfront/common/gun/bullet/BlockBulletCollision
-	FIELD field_3987 location Lnet/minecraft/world/phys/Vec3;
-	FIELD field_3988 direction Lnet/minecraft/core/Direction;
-	FIELD field_3989 blockPos Lnet/minecraft/core/BlockPos;
-	METHOD <init> (Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/world/phys/Vec3;)V
-		ARG 1 blockPos
-		ARG 2 direction
-		ARG 3 location
-	METHOD method_4101 getBlockPos ()Lnet/minecraft/core/BlockPos;
-	METHOD method_4102 getDirection ()Lnet/minecraft/core/Direction;
 	METHOD method_4103 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_989;
 		ARG 0 buf
 	METHOD method_4104 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
-	METHOD method_4105 getLocation ()Lnet/minecraft/world/phys/Vec3;

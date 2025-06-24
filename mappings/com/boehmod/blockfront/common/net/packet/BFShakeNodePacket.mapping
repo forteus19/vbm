@@ -1,10 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1046 com/boehmod/blockfront/common/net/packet/BFShakeNodePacket
 	FIELD field_4279 CODEC Lnet/minecraft/network/codec/StreamCodec;
-	FIELD field_4281 shakeData Lcom/boehmod/blockfront/unnamed/BF_427;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_427;)V
 		ARG 1 shakeData
 	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
-	METHOD method_4429 shakeData ()Lcom/boehmod/blockfront/unnamed/BF_427;
 	METHOD method_4431 write (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
