@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_46 com/boehmod/blockfront/client/net/HttpTextureManager
+	FIELD field_212 LOADED Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
+	FIELD field_213 IN_PROGRESS Ljava/util/List;
+	FIELD field_214 TEMP_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_190 getOrLoad (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 minecraft
+		ARG 1 url
+	METHOD method_191 putFromUrl (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
+		ARG 0 minecraft
+		ARG 1 url

@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_99 com/boehmod/blockfront/client/render/game/element/TextWithIconGameElement
+	METHOD method_483 setIconTexture (Lnet/minecraft/resources/ResourceLocation;)V

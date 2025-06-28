@@ -1,1 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_108 com/boehmod/blockfront/client/render/game/element/ClientGameElement
+	METHOD method_489 update (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_679;Lnet/minecraft/client/player/LocalPlayer;)V
+		ARG 1 minecraft
+		ARG 2 game
+		ARG 3 playerManager
+		ARG 4 gameClient
+		ARG 5 player

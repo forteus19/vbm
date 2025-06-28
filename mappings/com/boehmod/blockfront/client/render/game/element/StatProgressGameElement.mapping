@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1165 com/boehmod/blockfront/client/render/game/element/StatProgressGameElement
+	FIELD field_6623 stat Lcom/boehmod/blockfront/unnamed/BF_941;
+	FIELD field_6624 max I
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
+		ARG 1 iconTexture
+		ARG 2 stat
+		ARG 3 max

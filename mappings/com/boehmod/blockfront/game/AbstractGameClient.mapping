@@ -49,6 +49,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 2 players
 		ARG 3 player
 		ARG 4 level
+	METHOD method_2724 updateGameElements (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;)V
 	METHOD method_2735 getTips ()Ljava/util/List;
 	METHOD method_2736 getGameElements ()Ljava/util/List;
 	METHOD method_2737 getRadioPoints ()Ljava/util/List;
