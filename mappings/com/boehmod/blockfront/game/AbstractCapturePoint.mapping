@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_754 com/boehmod/blockfront/game/AbstractCapturePoint
+	FIELD field_3222 isBeingCaptured Z
 	FIELD field_3223 captureArea Lnet/minecraft/world/phys/AABB;
 	FIELD field_3224 name Ljava/lang/String;
 	FIELD field_3236 captureTimer I

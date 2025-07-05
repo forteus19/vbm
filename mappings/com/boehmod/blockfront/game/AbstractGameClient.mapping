@@ -42,6 +42,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 4 playerData
 		ARG 5 delta
 	METHOD method_2706 updateMapEnv (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_606;Ljava/util/Random;F)V
+	METHOD method_2712 renderGameElements (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;IF)V
 	METHOD method_2716 getSummaryScreens (Z)Ljava/util/Collection;
 	METHOD method_2721 getScoreStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
 	METHOD method_2723 getMinimapWaypoints (Lnet/minecraft/client/Minecraft;Ljava/util/Set;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)Ljava/util/List;
@@ -53,8 +54,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	METHOD method_2735 getTips ()Ljava/util/List;
 	METHOD method_2736 getGameElements ()Ljava/util/List;
 	METHOD method_2737 getRadioPoints ()Ljava/util/List;
+	METHOD method_2740 getKillFeedEntries ()Ljava/util/List;
 	METHOD method_2741 advanceSummary (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD method_2742 getPopups ()Ljava/util/List;
 	METHOD method_2745 setLastKiller (I)V
 		ARG 1 entityId
 	CLASS BF_680 Scoreboard

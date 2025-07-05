@@ -1,4 +1,12 @@
 CLASS com/boehmod/blockfront/unnamed/BF_112 com/boehmod/blockfront/client/gui/layer/MatchGuiLayer
+	METHOD method_495 renderKillFeed (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_679;ZIF)V
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 font
+		ARG 4 game
+		ARG 5 gameClient
+		ARG 6 debug
+		ARG 8 delta
 	METHOD method_496 renderWarCryText (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_271;II)V
 		ARG 0 poseStack
 		ARG 1 graphics

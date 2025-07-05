@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_826 com/boehmod/blockfront/game/base/IAllowsSoundboard
+	METHOD method_3431 getSoundboardCooldown ()I
+	METHOD method_3432 getMaximumPlayerSounds (Lnet/minecraft/server/level/ServerPlayer;)I

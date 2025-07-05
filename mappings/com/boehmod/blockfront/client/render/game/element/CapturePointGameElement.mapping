@@ -2,5 +2,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_97 com/boehmod/blockfront/client/render/
 	FIELD field_453 CP_AXIS Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_454 CP_NEUTRAL Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_455 CP_FLICKER Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_456 shouldFlicker Z
 	FIELD field_457 CP_ALLIES Lnet/minecraft/resources/ResourceLocation;
-	CLASS BF_98 CpEntry
+	METHOD method_480 renderEntry (Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;III)V
+		ARG 6 index
+	CLASS BF_98 Entry
+		FIELD field_462 texture Lnet/minecraft/resources/ResourceLocation;
+		FIELD field_463 isBeingCaptured Z
+		FIELD field_464 component Lnet/minecraft/network/chat/Component;
+		METHOD method_481 getComponent ()Lnet/minecraft/network/chat/Component;
+		METHOD method_482 isBeingCaptured ()Z

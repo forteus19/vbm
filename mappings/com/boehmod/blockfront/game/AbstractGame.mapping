@@ -16,6 +16,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2838 shouldRestart Z
 	FIELD field_2840 FIRST_BLOOD_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2843 displayName Lnet/minecraft/network/chat/Component;
+	FIELD field_2847 soundboardCooldown I
 	FIELD field_2848 SWITCHTEAMS_ERROR_NOTEAM Lnet/minecraft/network/chat/Component;
 	FIELD field_2849 SWITCHTEAMS_ERROR_UNBALANCED Lnet/minecraft/network/chat/Component;
 	FIELD field_2850 SWITCHTEAMS_ERROR_POSTGAME Lnet/minecraft/network/chat/Component;

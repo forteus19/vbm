@@ -43,7 +43,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1564 getNearestActiveGame (Lnet/minecraft/core/BlockPos;D)Lcom/boehmod/blockfront/unnamed/BF_677;
 		ARG 1 blockPos
 		ARG 2 maxDistance
-	METHOD method_1565 onUpdate (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
+	METHOD method_1565 updateAssets (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 server
 		ARG 2 level
 	METHOD method_1566 (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_683;)V

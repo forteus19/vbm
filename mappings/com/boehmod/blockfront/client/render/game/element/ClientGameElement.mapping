@@ -5,3 +5,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_108 com/boehmod/blockfront/client/render
 		ARG 3 playerManager
 		ARG 4 gameClient
 		ARG 5 player
+	METHOD method_491 render (Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;IIF)V
+		ARG 1 graphics
+		ARG 2 poseStack
+		ARG 3 font

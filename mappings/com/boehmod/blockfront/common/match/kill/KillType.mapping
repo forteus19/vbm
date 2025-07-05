@@ -1,4 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_721 com/boehmod/blockfront/common/match/kill/KillType
-	METHOD <init> (Ljava/lang/String;III)V
-		ARG 3 outlineColorTop
-		ARG 4 outlineColorBottom
