@@ -1,12 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_289 com/boehmod/blockfront/client/geo/model/EventDecorationModel
 	FIELD field_1660 NUM_DECORATIONS I
-	METHOD applyMolangQueries (Lsoftware/bernie/geckolib/animation/AnimationState;D)V
-		ARG 1 animationState
-	METHOD getAnimationResource (Lsoftware/bernie/geckolib/animatable/GeoAnimatable;)Lnet/minecraft/resources/ResourceLocation;
-		ARG 1 block
-	METHOD getModelResource (Lsoftware/bernie/geckolib/animatable/GeoAnimatable;)Lnet/minecraft/resources/ResourceLocation;
-		ARG 1 block
-	METHOD getTextureResource (Lsoftware/bernie/geckolib/animatable/GeoAnimatable;)Lnet/minecraft/resources/ResourceLocation;
-		ARG 1 block
 	METHOD method_1199 randomFromBlockPos (Lnet/minecraft/core/BlockPos;)I
 		ARG 0 pos
