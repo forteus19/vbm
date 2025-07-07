@@ -1,10 +1,20 @@
 {
   "services": {
-    "name_proposal": {
-      "id": "vbm:name_proposal"
-    },
-    "jar_indexer": {
-      "id": "vbm:jar_indexer"
-    }
+    "name_proposal": [
+      {
+        "id": "enigma:specialized_method_name_proposer"
+      },
+      {
+        "id": "vbm:name_proposal"
+      }
+    ],
+    "jar_indexer": [
+      {
+        "id": "enigma:specialized_bridge_method_indexer"
+      },
+      {
+        "id": "vbm:jar_indexer"
+      }
+    ]
   }
 }

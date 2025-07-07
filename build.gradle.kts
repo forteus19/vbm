@@ -14,6 +14,7 @@ version = "${bfVersion}-SNAPSHOT"
 
 repositories {
     maven("https://maven.jaxonpow.com/snapshots")
+    maven("https://maven.quiltmc.org/repository/release")
     mavenCentral()
 }
 
@@ -42,8 +43,7 @@ val enigmaRuntime: Configuration by configurations.creating {
 val decompileRuntime: Configuration by configurations.creating
 
 dependencies {
-    enigmaRuntime("org.vineflower:vineflower:1.11.1")
-    enigmaRuntime("cuchaz:enigma-swing:2.5.2-NRC-SNAPSHOT")
+    enigmaRuntime("org.quiltmc:enigma-swing:2.6.2")
     decompileRuntime("org.vineflower:vineflower:1.11.1")
 }
 
@@ -95,8 +95,6 @@ val mapSpecializedMethodsTask = tasks.register<MapSpecializedMethodsTask>("mapSp
     jar.set(mapIntermediaryJarTask.get().output)
     input.set(mappingsFile)
     output.set(specializedMappingsFile)
-    inputFormat.set("enigma")
-    outputFormat.set("tinyv2:intermediary:named")
 }
 
 val insertProposedMappingsTask = tasks.register<InsertProposedMappingsTask>("insertProposedMappings") {
@@ -143,7 +141,7 @@ val enigmaTask = tasks.register<JavaExec>("enigma") {
     finalizedBy(formatMappingsTask)
     group = "vbm"
     classpath = files(enigmaRuntime, project(":specialist").tasks["jar"].outputs)
-    mainClass = "cuchaz.enigma.gui.Main"
+    mainClass = "org.quiltmc.enigma.gui.Main"
     args("-jar", intermediaryJarFile.absolutePath, "-mappings", mappingsFile.absolutePath, "-profile", file("enigma.json").absolutePath)
 }
 
