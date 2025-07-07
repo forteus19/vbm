@@ -42,6 +42,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 	FIELD field_4865 WINDOW_SHUTTERS_JUNGLE Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4867 CRATE_WARPED Lcom/boehmod/blockfront/unnamed/BF_520;
 	FIELD field_4868 WINDOW_SHUTTERS_MANGROVE Lcom/boehmod/blockfront/unnamed/BF_522;
+	FIELD field_4869 MAX_LIGHT I
 	FIELD field_4871 CRATE_PALE Lcom/boehmod/blockfront/unnamed/BF_520;
 	FIELD field_4872 WINDOW_SHUTTERS_OAK Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4874 WINDOW_SHUTTERS_PALE Lcom/boehmod/blockfront/unnamed/BF_522;
@@ -73,6 +74,18 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 	FIELD field_6465 SOAPSTONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	FIELD field_6466 STONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	FIELD field_6467 TUFF_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	METHOD method_4817 (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 0 state
+	METHOD method_4889 (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 0 state
+	METHOD method_4956 (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 0 state
+	METHOD method_5014 (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 0 state
+	METHOD method_5023 (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 0 state
+	METHOD method_5031 (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 0 state
 	METHOD method_5066 (Lnet/minecraft/world/entity/Entity;)Z
 		ARG 0 entity
 	METHOD method_5071 (Lnet/minecraft/world/entity/Entity;)Z
@@ -81,3 +94,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 		ARG 0 entity
 	METHOD method_5077 (Lnet/minecraft/world/entity/Entity;)Z
 		ARG 0 entity
+	METHOD method_5618 (Lnet/minecraft/world/level/block/state/BlockState;)I
+		ARG 0 state

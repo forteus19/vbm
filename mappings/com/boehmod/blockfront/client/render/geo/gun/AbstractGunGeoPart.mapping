@@ -1,2 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_353 com/boehmod/blockfront/client/render/geo/gun/AbstractGunGeoPart
-	METHOD method_1264 shouldRender (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lsoftware/bernie/geckolib/cache/object/GeoBone;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/boehmod/blockfront/unnamed/BF_906;ZIIIFFF)Z
+	METHOD method_1264 shouldSkipRendering (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lsoftware/bernie/geckolib/cache/object/GeoBone;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/boehmod/blockfront/unnamed/BF_906;ZIIIFFF)Z

@@ -1,1 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_355 com/boehmod/blockfront/client/render/model/BotRenderLayer
+	FIELD field_1743 EYES Lnet/minecraft/client/model/geom/ModelLayerLocation;
+	FIELD field_1745 GAME_ARMOR Lnet/minecraft/client/model/geom/ModelLayerLocation;
+	FIELD field_1748 GAME_ARMOR_SLIM Lnet/minecraft/client/model/geom/ModelLayerLocation;
+	FIELD field_1754 GAME_BACKPACK Lnet/minecraft/client/model/geom/ModelLayerLocation;

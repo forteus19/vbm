@@ -44,6 +44,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2596 getAlliesDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
 	METHOD method_2597 createFirstStage ()Lcom/boehmod/blockfront/unnamed/BF_938;
 	METHOD method_2598 getStageManager ()Lcom/boehmod/blockfront/unnamed/BF_939;
+	METHOD method_2599 getPrimaryStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
 	METHOD method_2602 requestSupplyDrops (Lcom/boehmod/blockfront/unnamed/BF_445;ILjava/util/Set;)V
 		ARG 1 manager
 		ARG 2 randomMax
@@ -100,7 +101,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2635 hasPlayerLimit ()Z
 	METHOD method_2640 entityBoundSize ()I
 	METHOD method_2642 getMinimumPlayers ()I
-	METHOD method_2644 getGameManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
+	METHOD method_2643 canPlayersSwapItems ()Z
+	METHOD method_2644 getPlayerManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
 	METHOD method_2645 getAxisDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
 	METHOD method_2648 init (Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 level

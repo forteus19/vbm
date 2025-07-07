@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_356 com/boehmod/blockfront/client/render/model/InfectedEyesRenderLayer
+	FIELD field_1756 EYES Lnet/minecraft/client/model/geom/ModelLayerLocation;

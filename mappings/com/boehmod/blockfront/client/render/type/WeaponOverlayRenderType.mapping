@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1170 com/boehmod/blockfront/client/render/type/WeaponOverlayRenderType
+	METHOD method_5633 register (Lnet/neoforged/neoforge/client/event/RegisterShadersEvent;)V
+		ARG 0 event

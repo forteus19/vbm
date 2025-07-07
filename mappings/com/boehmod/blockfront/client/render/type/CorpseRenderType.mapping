@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_424 com/boehmod/blockfront/client/corpse/render/CorpseRenderType
+CLASS com/boehmod/blockfront/unnamed/BF_424 com/boehmod/blockfront/client/render/type/CorpseRenderType
 	FIELD field_1872 NAME Ljava/lang/String;
 	FIELD field_1873 STATE Lnet/minecraft/client/renderer/RenderStateShard$ShaderStateShard;
 	FIELD field_1874 RENDER_TYPE_CONSTRUCTOR Ljava/util/function/Function;

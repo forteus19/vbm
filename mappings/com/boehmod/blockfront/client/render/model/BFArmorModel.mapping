@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_224 com/boehmod/blockfront/client/render/model/BotModel
+CLASS com/boehmod/blockfront/unnamed/BF_224 com/boehmod/blockfront/client/render/model/BFArmorModel
 	METHOD method_1012 createMesh (Lnet/minecraft/client/model/geom/builders/CubeDeformation;ZF)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
 		ARG 0 deformation
 		ARG 1 hasRightArm
