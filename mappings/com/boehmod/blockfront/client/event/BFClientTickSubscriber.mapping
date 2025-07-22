@@ -10,7 +10,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_83 com/boehmod/blockfront/client/event/B
 		ARG 1 player
 	METHOD method_449 onTickPost (Lnet/neoforged/neoforge/client/event/ClientTickEvent$Post;)V
 		ARG 0 event
-	METHOD method_450 (Lnet/neoforged/neoforge/client/event/ClientTickEvent$Post;Ljava/util/concurrent/ThreadLocalRandom;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_271;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_677;ZFLcom/boehmod/blockfront/unnamed/BF_87;)V
-		ARG 12 runner
 	METHOD method_451 onTickPre (Lnet/neoforged/neoforge/client/event/ClientTickEvent$Pre;)V
 		ARG 0 event

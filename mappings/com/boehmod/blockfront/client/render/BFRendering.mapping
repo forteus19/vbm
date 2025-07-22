@@ -51,9 +51,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 8 pitch
 		ARG 9 yaw
 		ARG 10 headYaw
-	METHOD method_198 bulletTracer (Lcom/boehmod/blockfront/unnamed/BF_277;Lcom/mojang/blaze3d/vertex/PoseStack;FLnet/minecraft/client/Camera;)V
-		ARG 0 tracer
-		ARG 1 poseStack
 	METHOD method_199 bootcampTexturePoint (Lcom/boehmod/blockfront/unnamed/BF_763;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;F)V
 	METHOD method_200 orderedRectangle (Lcom/mojang/blaze3d/vertex/PoseStack;FFFFII)V
 		ARG 0 poseStack
@@ -275,20 +272,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 4 position
 		ARG 5 scale
 		ARG 6 depthTest
-	METHOD method_224 tabListEntry (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_476;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_679;Ljava/util/UUID;Lnet/minecraft/network/chat/Style;Ljava/util/Collection;Ljava/util/Set;FFFFI)V
-		ARG 0 poseStack
-		ARG 1 minecraft
-		ARG 2 manager
-		ARG 3 playerDataHandler
-		ARG 4 profile
-		ARG 5 graphics
-		ARG 6 font
-		ARG 7 game
-		ARG 8 gameRenderer
-		ARG 9 playerId
-		ARG 10 style
-		ARG 13 x
-		ARG 14 y
 	METHOD method_225 playerInfoTag (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_476;FFZ)V
 		ARG 0 minecraft
 		ARG 1 manager

@@ -68,14 +68,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 		ARG 1 minecraft
 		ARG 2 level
 		ARG 3 player
-	METHOD method_2251 update (Lnet/minecraft/client/Minecraft;Ljava/util/Random;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_271;F)V
-		ARG 1 minecraft
-		ARG 2 random
-		ARG 3 level
-		ARG 4 player
-		ARG 5 profile
-		ARG 6 data
-		ARG 7 delta
 	METHOD method_2252 updateBiomeColors (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 0 minecraft
 		ARG 1 player

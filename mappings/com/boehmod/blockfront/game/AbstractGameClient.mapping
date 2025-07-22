@@ -33,15 +33,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	METHOD method_2700 addKillFeedEntry (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_774;)V
 		ARG 1 minecraft
 		ARG 2 entry
-	METHOD method_2702 updateClient (Lnet/minecraft/client/Minecraft;Ljava/util/Random;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_271;Ljava/util/Set;F)V
-		ARG 8 delta
 	METHOD method_2704 fixClientState (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_271;F)V
 		ARG 1 minecraft
 		ARG 2 level
 		ARG 3 player
 		ARG 4 playerData
 		ARG 5 delta
-	METHOD method_2706 updateMapEnv (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_606;Ljava/util/Random;F)V
 	METHOD method_2712 renderGameElements (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;IF)V
 	METHOD method_2716 getSummaryScreens (Z)Ljava/util/Collection;
 	METHOD method_2721 getScoreStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
