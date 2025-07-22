@@ -329,6 +329,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 8 source
 		ARG 9 volume
 		ARG 10 pitch
+	METHOD method_2973 explosionFromPlayer (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/item/ItemStack;F)Lnet/minecraft/world/level/Explosion;
+		ARG 0 level
+		ARG 1 entity
+		ARG 2 position
+		ARG 3 itemStack
+		ARG 4 radius
 	METHOD method_2974 setInventoryFromLoadout (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_759;)V
 		ARG 0 level
 		ARG 1 entity
@@ -362,6 +368,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 1 reason
 	METHOD method_2990 clearInventories (Ljava/util/Set;)V
 		ARG 0 players
+	METHOD method_2991 playerHasUsedGuns (Lnet/minecraft/server/level/ServerPlayer;)Z
+		ARG 0 player
 	METHOD method_2992 sendNoticeMessage (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 player
 		ARG 1 message

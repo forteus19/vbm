@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_251 com/boehmod/blockfront/client/screen/prompt/text/BFTextPromptScreen
+	FIELD field_1533 filters Ljava/util/EnumSet;
 	FIELD field_1543 CLOSE_LABEL Lnet/minecraft/network/chat/Component;
 	FIELD field_1544 CONFIRM_LABEL Lnet/minecraft/network/chat/Component;
 	FIELD field_1545 EMPTY Lnet/minecraft/network/chat/Component;
@@ -13,3 +14,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_251 com/boehmod/blockfront/client/screen
 	FIELD field_1554 ERROR_MC_RESOURCE Lnet/minecraft/network/chat/Component;
 	FIELD field_1555 ERROR_IP_ADDRESS Lnet/minecraft/network/chat/Component;
 	FIELD field_1556 ERROR_CLAN_NAME Lnet/minecraft/network/chat/Component;
+	METHOD method_1089 confirm ()V
+	METHOD method_1091 setMaxLength (I)Lcom/boehmod/blockfront/unnamed/BF_251;
+	METHOD method_1092 addFilter (Lcom/boehmod/blockfront/unnamed/BF_251$BF_252;)Lcom/boehmod/blockfront/unnamed/BF_251;
+		ARG 1 filter
+	CLASS BF_252 Filter

@@ -54,6 +54,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 	METHOD method_198 bulletTracer (Lcom/boehmod/blockfront/unnamed/BF_277;Lcom/mojang/blaze3d/vertex/PoseStack;FLnet/minecraft/client/Camera;)V
 		ARG 0 tracer
 		ARG 1 poseStack
+	METHOD method_199 bootcampTexturePoint (Lcom/boehmod/blockfront/unnamed/BF_763;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;F)V
 	METHOD method_200 orderedRectangle (Lcom/mojang/blaze3d/vertex/PoseStack;FFFFII)V
 		ARG 0 poseStack
 		ARG 1 x

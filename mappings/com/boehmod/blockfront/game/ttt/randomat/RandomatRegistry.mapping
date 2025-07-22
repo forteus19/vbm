@@ -1,3 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_856 com/boehmod/blockfront/game/ttt/randomat/RandomatRegistry
-	FIELD field_3483 ENTRIES Ljava/util/List;
-	METHOD method_3548 getRandomEvent ()Lcom/boehmod/blockfront/unnamed/BF_855;

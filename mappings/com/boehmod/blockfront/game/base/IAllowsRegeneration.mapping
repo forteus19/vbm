@@ -1,3 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_820 com/boehmod/blockfront/game/base/IAllowsRegeneration
-	METHOD method_3420 playerCanRegenerate (Lnet/minecraft/world/entity/player/Player;)Z
-		ARG 1 player

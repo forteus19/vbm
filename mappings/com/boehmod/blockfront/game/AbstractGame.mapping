@@ -10,6 +10,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2830 stageManager Lcom/boehmod/blockfront/unnamed/BF_939;
 	FIELD field_2831 name Ljava/lang/String;
 	FIELD field_2832 type Ljava/lang/String;
+	FIELD field_2833 gameEvents Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_2834 dataHandler Lcom/boehmod/blockfront/common/player/c;
 	FIELD field_2836 playerStatData Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
 	FIELD field_2837 hasPlayerLimit Z
@@ -82,6 +83,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 2 level
 		ARG 3 player
 		ARG 4 uuid
+	METHOD method_2613 handleClassChangeRequest (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_924;I)V
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+		ARG 4 uuid
+		ARG 5 matchClass
+		ARG 6 classLevel
 	METHOD method_2618 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_457;)V
 		ARG 1 mapInstance
 	METHOD method_2619 createClientHandler (Lcom/boehmod/blockfront/unnamed/BF_606;)Lcom/boehmod/blockfront/unnamed/BF_679;
@@ -129,6 +137,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 messages
 	METHOD method_2672 setName (Ljava/lang/String;)V
 		ARG 1 name
+	METHOD method_2673 getGameEvents ()Lit/unimi/dsi/fastutil/objects/ObjectList;
 	METHOD method_2674 setType (Ljava/lang/String;)V
 		ARG 1 type
 	METHOD method_5652 getMapEnvironment ()Lcom/boehmod/blockfront/unnamed/BF_1182;

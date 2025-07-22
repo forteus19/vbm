@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_870 com/boehmod/blockfront/game/impl/gg/GunGame
+	FIELD field_3496 GUN_STAGES Ljava/util/List;
+	FIELD field_3498 command Lcom/boehmod/blockfront/unnamed/BF_462;
+	METHOD method_3590 getCurrentGun (I)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 stage
+	METHOD method_3593 getNextGun (I)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 stage
+	METHOD method_3595 getPrevGun (I)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 stage

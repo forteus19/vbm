@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_841 com/boehmod/blockfront/game/impl/tdm/TeamDeathmatchGame
+	FIELD field_3451 command Lcom/boehmod/blockfront/unnamed/BF_462;

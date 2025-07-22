@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_880 com/boehmod/blockfront/game/impl/inf/InfectedPlayerManager
+	FIELD field_3544 LOADOUT Lcom/boehmod/blockfront/unnamed/BF_759;

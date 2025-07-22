@@ -1,4 +1,0 @@
-CLASS com/boehmod/blockfront/common/player/a com/boehmod/blockfront/common/player/PlayerBootstrap
-	FIELD field_1144 playerData Lcom/boehmod/blockfront/common/player/b;
-	METHOD <init> (Lcom/boehmod/blockfront/common/player/b;)V
-		ARG 1 playerData

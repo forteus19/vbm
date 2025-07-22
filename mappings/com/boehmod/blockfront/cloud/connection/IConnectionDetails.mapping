@@ -1,7 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_475 com/boehmod/blockfront/cloud/connection/IConnectionDetails
 	METHOD method_1701 getLocation ()Ljava/lang/String;
 	METHOD method_1702 getUUID ()Ljava/util/UUID;
-	METHOD method_1703 isMatchMakingEnabled ()Z
+	METHOD method_1703 updateMatchMaking ()Z
 	METHOD method_1704 disconnect (Ljava/lang/String;)V
 		ARG 1 reason
 	METHOD method_1705 getMinecraftPort ()I

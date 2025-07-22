@@ -1,9 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_828 com/boehmod/blockfront/game/base/ICanSwitchTeams
-	METHOD method_3436 getSwitchTeamMessage (Lnet/minecraft/server/level/ServerPlayer;)Lnet/minecraft/network/chat/Component;
-		ARG 1 player
-	METHOD method_3437 getTeamSwitchCooldown ()I
-	METHOD method_3438 playerSwitchTeam (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
-		ARG 1 manager
-		ARG 2 level
-		ARG 3 player
-		ARG 4 uuid

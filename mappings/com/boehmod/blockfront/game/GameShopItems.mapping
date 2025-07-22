@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_882 com/boehmod/blockfront/game/GameShopItems
+	FIELD field_3554 ENTRIES Ljava/util/List;

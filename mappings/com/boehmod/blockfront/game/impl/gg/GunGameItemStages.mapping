@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_872 com/boehmod/blockfront/game/impl/gg/GunGameItemStages
+	FIELD field_3513 ENTRIES Ljava/util/List;
+	METHOD method_3604 getRandomList ()Ljava/util/List;

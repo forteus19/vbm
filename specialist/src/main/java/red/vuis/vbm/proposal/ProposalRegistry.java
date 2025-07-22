@@ -1,10 +1,5 @@
 package red.vuis.vbm.proposal;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.function.Function;
-import java.util.function.Predicate;
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.objectweb.asm.Opcodes;
@@ -17,6 +12,11 @@ import red.vuis.vbm.proposal.visitor.PacketVisitor;
 import red.vuis.vbm.proposal.visitor.ProposalVisitor;
 import red.vuis.vbm.proposal.visitor.RecordVisitor;
 import red.vuis.vbm.util.VbmUtils;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
 
 public final class ProposalRegistry {
     private static final List<VisitorEntry> ENTRIES = List.of(

@@ -19,5 +19,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_754 com/boehmod/blockfront/game/Abstract
 	METHOD method_3142 createCaptureArea ()Lnet/minecraft/world/phys/AABB;
 	METHOD method_3145 getCaptureArea ()Lnet/minecraft/world/phys/AABB;
 	METHOD method_5503 reset ()V
+	METHOD method_5504 updateIcon ()V
 	METHOD method_5505 getCbTeam ()Lcom/boehmod/blockfront/unnamed/BF_686;
 	METHOD method_5507 getCpTeam ()Lcom/boehmod/blockfront/unnamed/BF_686;

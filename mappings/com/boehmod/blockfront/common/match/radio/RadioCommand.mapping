@@ -1,2 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_830 com/boehmod/blockfront/common/match/radio/RadioCommand
-	METHOD method_3448 getMessage ()Lnet/minecraft/network/chat/Component;

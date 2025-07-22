@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_751 com/boehmod/blockfront/game/impl/conq/ConquestBoundary
+	FIELD field_3212 wallLines Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_3213 wallPoints Lit/unimi/dsi/fastutil/objects/ObjectList;
+	METHOD method_3129 addWallPoint (Lnet/minecraft/world/phys/Vec2;)V
+		ARG 1 point
+	METHOD method_3130 numWallPoints ()I
+	METHOD method_3131 numWallLines ()I
+	METHOD method_3133 updateWallLines ()V
+	CLASS BF_752 WallLine

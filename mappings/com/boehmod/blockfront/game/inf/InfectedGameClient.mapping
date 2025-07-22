@@ -1,2 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_879 com/boehmod/blockfront/game/inf/InfectedGameClient
-	FIELD field_3538 WAYPOINT_STORE Lnet/minecraft/resources/ResourceLocation;

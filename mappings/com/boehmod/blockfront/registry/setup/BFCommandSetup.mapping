@@ -1,3 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1101 com/boehmod/blockfront/registry/setup/BFCommandSetup
-	METHOD method_5133 register (Lnet/neoforged/neoforge/event/RegisterCommandsEvent;)V
-		ARG 0 event

@@ -1,7 +1,5 @@
 package red.vuis.vbm.proposal.visitor;
 
-import java.util.HashSet;
-import java.util.Set;
 import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.FieldInsnNode;
@@ -12,6 +10,9 @@ import org.objectweb.asm.tree.analysis.SourceValue;
 import red.vuis.vbm.proposal.ProposalCollector;
 import red.vuis.vbm.util.DoubleId;
 import red.vuis.vbm.util.VbmUtils;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public final class EnumVisitor extends ClassInitVisitor {
     private final Set<DoubleId> enumFields = new HashSet<>();

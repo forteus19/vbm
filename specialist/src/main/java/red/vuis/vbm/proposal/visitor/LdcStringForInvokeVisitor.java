@@ -1,6 +1,5 @@
 package red.vuis.vbm.proposal.visitor;
 
-import java.util.Arrays;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.FieldInsnNode;
 import org.objectweb.asm.tree.InsnList;
@@ -10,6 +9,8 @@ import org.objectweb.asm.tree.analysis.Frame;
 import org.objectweb.asm.tree.analysis.SourceValue;
 import red.vuis.vbm.proposal.ProposalCollector;
 import red.vuis.vbm.util.VbmUtils;
+
+import java.util.Arrays;
 
 public class LdcStringForInvokeVisitor extends ClassInitVisitor {
     private final int invokeOpcode;

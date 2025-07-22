@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_412 com/boehmod/blockfront/util/ChallengeUtils
+	FIELD field_6321 MESSAGE_ERROR Lnet/minecraft/network/chat/MutableComponent;
+	METHOD method_1464 getComponent (Lcom/boehmod/bflib/cloud/common/player/challenge/Challenge;)Lnet/minecraft/network/chat/Component;
+		ARG 0 challenge

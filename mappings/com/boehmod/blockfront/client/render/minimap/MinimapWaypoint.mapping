@@ -1,3 +1,13 @@
 CLASS com/boehmod/blockfront/unnamed/BF_50 com/boehmod/blockfront/client/render/minimap/MinimapWaypoint
 	FIELD field_257 TEXTURE_PLAYER Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_258 TEXTURE_ENEMY Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_260 icon Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_263 iconTint I
+	FIELD field_269 component Lnet/minecraft/network/chat/Component;
+	METHOD method_354 renderIcon (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;FFF)V
+	METHOD method_355 renderComponent (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;FF)V
+	METHOD method_356 component (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_50;
+		ARG 1 component
+	METHOD method_357 icon (Lnet/minecraft/resources/ResourceLocation;I)Lcom/boehmod/blockfront/unnamed/BF_50;
+		ARG 1 icon
+		ARG 2 tint

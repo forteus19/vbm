@@ -1,8 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1140 com/boehmod/blockfront/registry/setup/BFOldRegistryMigration
-	METHOD method_5552 addAllForms (Ljava/lang/String;Ljava/lang/String;)V
-		ARG 0 oldId
-		ARG 1 newId
-	METHOD method_5553 add (Ljava/lang/String;Ljava/lang/String;)V
-		ARG 0 oldId
-		ARG 1 newId
-	METHOD method_5554 init ()V

@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_830 com/boehmod/blockfront/game/event/GameEvent
+	METHOD method_3448 getMessage ()Lnet/minecraft/network/chat/Component;

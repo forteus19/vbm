@@ -1,7 +1,5 @@
 package red.vuis.vbm.proposal.visitor;
 
-import java.util.HashMap;
-import java.util.Map;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.FieldInsnNode;
 import org.objectweb.asm.tree.MethodInsnNode;
@@ -10,6 +8,9 @@ import org.objectweb.asm.tree.analysis.Frame;
 import org.objectweb.asm.tree.analysis.SourceValue;
 import red.vuis.vbm.proposal.ProposalCollector;
 import red.vuis.vbm.util.VbmUtils;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class BFBlocksVisitor extends ClassInitVisitor {
     public static final String BF_BLOCK_ENTITY_TYPES = "com/boehmod/blockfront/unnamed/BF_1087";

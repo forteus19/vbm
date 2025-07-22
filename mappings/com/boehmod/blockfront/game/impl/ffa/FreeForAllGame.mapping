@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_863 com/boehmod/blockfront/game/impl/ffa/FreeForAllGame
+	FIELD field_3488 outroSequence Lcom/boehmod/blockfront/unnamed/BF_597;
+	FIELD field_3489 command Lcom/boehmod/blockfront/unnamed/BF_462;
+	METHOD method_3558 setOutroSequence (Lcom/boehmod/blockfront/unnamed/BF_597;)V
+		ARG 1 sequence
+	METHOD method_3559 getOutroSequence ()Lcom/boehmod/blockfront/unnamed/BF_597;

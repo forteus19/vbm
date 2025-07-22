@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_886 com/boehmod/blockfront/game/impl/inf/ZombieSpawn
+	METHOD <init> (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD <init> (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_692;)V
+		ARG 1 id
+		ARG 2 location
+	METHOD method_3685 readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_886;
+		ARG 0 root
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

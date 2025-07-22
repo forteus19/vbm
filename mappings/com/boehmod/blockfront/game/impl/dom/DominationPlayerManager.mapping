@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_804 com/boehmod/blockfront/game/impl/dom/DominationPlayerManager
+	FIELD field_3410 CPOINT_DEFENDED_MESSAGE Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_802;Lcom/boehmod/blockfront/common/player/c;)V
+		ARG 1 game
+		ARG 2 playerData

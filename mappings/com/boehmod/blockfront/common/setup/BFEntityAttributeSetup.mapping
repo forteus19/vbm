@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_712 com/boehmod/blockfront/common/setup/BFEntityAttributeSetup
+	METHOD method_3055 register (Lnet/neoforged/neoforge/event/entity/EntityAttributeCreationEvent;)V
+		ARG 0 event

@@ -1,0 +1,21 @@
+CLASS com/boehmod/blockfront/unnamed/BF_888 com/boehmod/blockfront/game/impl/inf/InfectedDoor
+	FIELD field_3561 zones Ljava/util/List;
+	FIELD field_3562 position Lnet/minecraft/core/BlockPos;
+	FIELD field_3563 open Z
+	FIELD field_3564 id Ljava/lang/String;
+	FIELD field_3565 cost I
+	METHOD method_3695 getZones ()Ljava/util/List;
+	METHOD method_3696 canOpenDoor (Lnet/minecraft/core/BlockPos;)Z
+		ARG 1 playerPos
+	METHOD method_3698 getCost ()I
+	METHOD method_3699 isOpen ()Z
+	METHOD method_3700 close ()V
+	METHOD method_3701 getPosition ()Lnet/minecraft/core/BlockPos;
+	METHOD read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

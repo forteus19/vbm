@@ -1,10 +1,11 @@
 package red.vuis.vbm.mappingio;
 
-import java.io.IOException;
-import java.util.Objects;
 import net.fabricmc.mappingio.MappedElementKind;
 import net.fabricmc.mappingio.MappingVisitor;
 import red.vuis.vbm.proposal.ProposalCollector;
+
+import java.io.IOException;
+import java.util.Objects;
 
 public final class MappingIoProposalCollector implements ProposalCollector {
     private final MappingVisitor visitor;

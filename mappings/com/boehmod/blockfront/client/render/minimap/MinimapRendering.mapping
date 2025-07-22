@@ -1,1 +1,57 @@
 CLASS com/boehmod/blockfront/unnamed/BF_45 com/boehmod/blockfront/client/render/minimap/MinimapRendering
+	FIELD field_196 TERRAIN_TEXTURES Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;
+	FIELD field_197 QUEUED_CHUNKS Lit/unimi/dsi/fastutil/longs/LongList;
+	FIELD field_206 rasterizeTimer I
+	FIELD field_207 queueTimer I
+	FIELD field_211 WAYPOINT_PLAYER Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_175 renderTerrain (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;FFFFF)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 x
+		ARG 3 y
+		ARG 4 playerX
+		ARG 5 playerZ
+		ARG 6 zoom
+	METHOD method_176 renderWaypoints (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Ljava/util/Collection;IIIIFFFFFFF)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 font
+		ARG 3 waypoints
+		ARG 4 x
+		ARG 5 y
+		ARG 6 width
+		ARG 7 height
+	METHOD method_177 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/player/LocalPlayer;Ljava/util/Collection;IIFII)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 font
+		ARG 3 player
+		ARG 4 waypoints
+		ARG 5 x
+		ARG 6 y
+		ARG 7 zoom
+		ARG 8 width
+		ARG 9 height
+	METHOD method_178 refreshTerrainTextures (Lnet/minecraft/client/Minecraft;J)V
+		ARG 0 minecraft
+		ARG 1 chunkPos
+	METHOD method_179 addTerrainTexture (Lnet/minecraft/client/Minecraft;JLcom/mojang/blaze3d/platform/NativeImage;)V
+		ARG 0 minecraft
+		ARG 1 chunkPos
+		ARG 3 image
+	METHOD method_183 getColumnColor (Lnet/minecraft/client/multiplayer/ClientLevel;III)I
+		ARG 0 level
+		ARG 1 x
+		ARG 2 z
+		ARG 3 maxY
+	METHOD method_186 rasterizeQueuedChunk (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 0 minecraft
+		ARG 1 level
+	METHOD method_187 update (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 0 minecraft
+		ARG 1 player
+		ARG 2 level
+	METHOD method_188 clearTerrainTextures (Lnet/minecraft/client/Minecraft;)V
+		ARG 0 minecraft
+	METHOD method_189 queueNearbyChunks (Lnet/minecraft/client/player/LocalPlayer;)V
+		ARG 0 player

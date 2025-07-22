@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_853 com/boehmod/blockfront/game/impl/ttt/randomat/NextbotRandomatEvent
+	FIELD field_3478 spawnPosition Lnet/minecraft/world/phys/Vec3;
+	FIELD field_3479 entity Lcom/boehmod/blockfront/unnamed/BF_639;
+	FIELD field_3480 spawned Z
+	FIELD field_3481 spawnTimer I
+	METHOD method_3542 spawnNextbot (Lcom/boehmod/blockfront/unnamed/BF_849;Lnet/minecraft/world/level/Level;Ljava/util/Set;)V
+		ARG 1 game
+		ARG 2 level
+		ARG 3 players
