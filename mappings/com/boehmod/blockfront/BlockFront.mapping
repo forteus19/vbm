@@ -16,7 +16,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_27 com/boehmod/blockfront/BlockFront
 	METHOD <init> (Lnet/neoforged/bus/api/IEventBus;)V
 		ARG 1 modBus
 	METHOD method_146 getInstance ()Lcom/boehmod/blockfront/unnamed/BF_27;
+		COMMENT Returns the mod instance, which can then be used to retrieve the mod manager.
+		COMMENT
+		COMMENT Note that the instance is only present after BlockFront has been initialized.
 	METHOD method_147 getManager ()Lcom/boehmod/blockfront/unnamed/BF_445;
+		COMMENT Retrieves the mod manager, which is either an instance of {@link com.boehmod.blockfront.client.BFClientManager} or {@link com.boehmod.blockfront.server.BFServerManager} depending on the dist.
 	METHOD method_148 setManager (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
 	METHOD method_149 (Lnet/neoforged/fml/event/lifecycle/FMLClientSetupEvent;)V

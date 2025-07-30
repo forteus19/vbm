@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_898 com/boehmod/blockfront/common/item/IModifyPlayerModel
+	METHOD method_3729 modifyPlayerModel (Lnet/minecraft/client/Minecraft;ZLnet/minecraft/client/model/PlayerModel;Lcom/boehmod/blockfront/unnamed/BF_271;Lnet/minecraft/client/player/AbstractClientPlayer;FF)V
+		ARG 1 minecraft
+		ARG 3 model
+		ARG 4 playerData
+		ARG 5 player

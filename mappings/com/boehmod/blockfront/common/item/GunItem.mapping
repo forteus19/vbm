@@ -49,7 +49,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 1 bipodMode
 	METHOD method_4138 barrel (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_988;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4139 mag (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_994;)Lcom/boehmod/blockfront/unnamed/BF_993;
-	METHOD method_4141 fire (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+	METHOD method_4141 fireClient (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 	METHOD method_4146 getAmmoLoaded (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack
 	METHOD method_4147 getScopeConfig (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_949;

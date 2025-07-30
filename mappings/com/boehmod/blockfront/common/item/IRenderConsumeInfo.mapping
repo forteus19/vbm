@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_899 com/boehmod/blockfront/common/item/IRenderConsumeInfo
+	METHOD method_3730 getTranslation ()Ljava/lang/String;
+	METHOD method_3731 getTicksUntilAction ()I
+	METHOD method_3732 getTotalTicksUntilAction ()I

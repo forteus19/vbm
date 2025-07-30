@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_815 com/boehmod/blockfront/game/tag/IModifiesDamage
+	METHOD method_3409 getDamageMultiplier ()F

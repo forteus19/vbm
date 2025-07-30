@@ -3,5 +3,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_719 com/boehmod/blockfront/cloud/client/
 	FIELD field_3035 PASSWORD Ljava/lang/String;
 	FIELD field_3036 ERROR_CREDENTIALS Lnet/minecraft/network/chat/Component;
 	FIELD field_3037 ERROR_UNKNOWN Lnet/minecraft/network/chat/Component;
+	FIELD field_3038 authenticated Z
+	METHOD method_3062 tryAuthenticate (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
 	METHOD method_3063 getPassword ()Ljava/lang/String;
+	METHOD method_3064 isAuthenticated ()Z
 	METHOD method_3065 generatePassword ()Ljava/lang/String;

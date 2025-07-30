@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_975 com/boehmod/blockfront/common/item/BFConsumableItem
+	FIELD field_3958 ticksUntilAction I

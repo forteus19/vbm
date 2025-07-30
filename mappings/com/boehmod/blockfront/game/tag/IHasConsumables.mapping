@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_822 com/boehmod/blockfront/game/tag/IHasConsumables
+	METHOD method_3428 canUseConsumable (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/unnamed/BF_975;Lnet/minecraft/world/item/ItemStack;)Z

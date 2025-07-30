@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_494 com/boehmod/blockfront/cloud/common/BFCommonCloudPacketHandlers
+	FIELD field_2139 CLOUD_PREFIX Lnet/minecraft/network/chat/Component;
 	METHOD method_1774 featureFlags (Lcom/boehmod/bflib/cloud/packet/common/PacketFeatureFlags;Lcom/boehmod/bflib/cloud/connection/Connection;)V
 	METHOD method_1775 requestedInventory (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedInventory;Lcom/boehmod/bflib/cloud/connection/Connection;)V
 	METHOD method_1776 requestedItemDefault (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedItemDefault;Lcom/boehmod/bflib/cloud/connection/Connection;)V

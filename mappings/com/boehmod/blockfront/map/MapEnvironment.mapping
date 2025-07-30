@@ -20,6 +20,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 	FIELD field_6742 customLightColor I
 	FIELD field_6743 exteriorSound Ljava/util/function/Supplier;
 	FIELD field_6744 interiorSound Ljava/util/function/Supplier;
+	FIELD field_6820 command Lcom/boehmod/blockfront/unnamed/BF_462;
 	METHOD <init> (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
 	METHOD <init> (Lio/netty/buffer/ByteBuf;)V
@@ -133,5 +134,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 	METHOD method_5710 getShader ()Lnet/minecraft/resources/ResourceLocation;
 	METHOD method_5711 reset (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD method_5754 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
 	METHOD write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
