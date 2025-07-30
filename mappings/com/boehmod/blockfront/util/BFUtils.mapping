@@ -41,10 +41,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 dataHandler
 		ARG 1 player
 		ARG 2 pose
-	METHOD method_2878 entityCanAttack (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;)Z
-		ARG 0 dataHandler
-		ARG 1 attacker
-		ARG 2 attacking
 	METHOD method_2879 (Lcom/boehmod/blockfront/unnamed/BF_439;Ljava/util/UUID;)V
 		ARG 1 uuid
 	METHOD method_2883 sendSequencePacket (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_597;Lcom/boehmod/blockfront/unnamed/BF_603;Ljava/util/Set;)V
