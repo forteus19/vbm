@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_88 com/boehmod/blockfront/BFConstants
+	COMMENT A bunch of unknown constants that are probably used for debugging.
+	COMMENT
+	COMMENT It's impossible to know for sure what each field changes because of compiler inlining.

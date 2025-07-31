@@ -1,0 +1,30 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1193 com/boehmod/blockfront/common/gun/bullet/EntityCollisionEntry
+	FIELD field_6868 HEADSHOT_EYE_OFFSET Lnet/minecraft/world/phys/Vec3;
+	FIELD field_6869 BACKPACK_EYE_OFFSET Lnet/minecraft/world/phys/Vec3;
+	FIELD field_6870 BACKPACK_BACK_OFFSET Lnet/minecraft/world/phys/Vec3;
+	FIELD field_6871 HEADSHOT_REGION_SCALE Lnet/minecraft/world/phys/Vec3;
+	FIELD field_6872 BACKPACK_REGION_SCALE Lnet/minecraft/world/phys/Vec3;
+	METHOD <init> (IILnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;Lnet/minecraft/world/phys/Vec3;FFZLnet/minecraft/world/phys/AABB;Lnet/minecraft/world/phys/AABB;)V
+		ARG 1 tickEntry
+		ARG 2 entityId
+		ARG 3 position
+		ARG 4 boundingBox
+		ARG 5 velocity
+		ARG 6 yRot
+		ARG 7 xRot
+		ARG 8 isValid
+		ARG 9 headshotRegion
+		ARG 10 backpackRegion
+	METHOD method_5817 ofEntity (Lcom/boehmod/blockfront/unnamed/BF_445;ILnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/LivingEntity;)Lcom/boehmod/blockfront/unnamed/BF_1193;
+		ARG 0 manager
+		ARG 2 entity
+		ARG 3 livingEntity
+	METHOD method_5818 interpolate (Lcom/boehmod/blockfront/unnamed/BF_1193;F)Lcom/boehmod/blockfront/unnamed/BF_1193;
+		ARG 1 other
+		ARG 2 t
+	METHOD method_5819 createHeadshotRegion (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/phys/AABB;
+		ARG 0 entity
+	METHOD method_5822 createBackpackRegion (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/phys/AABB;
+		ARG 0 entity
+	METHOD method_5826 hasHeadshotRegion (Lnet/minecraft/world/entity/LivingEntity;)Z
+		ARG 0 entity

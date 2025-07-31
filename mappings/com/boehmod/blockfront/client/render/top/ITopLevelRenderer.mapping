@@ -1,1 +1,16 @@
 CLASS com/boehmod/blockfront/unnamed/BF_360 com/boehmod/blockfront/client/render/top/ITopLevelRenderer
+	METHOD method_1280 render (Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/culling/Frustum;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Ljava/lang/Iterable;Ljava/util/Random;F)V
+		ARG 1 event
+		ARG 2 minecraft
+		ARG 3 manager
+		ARG 4 level
+		ARG 5 dataHandler
+		ARG 6 poseStack
+		ARG 7 frustum
+		ARG 8 graphics
+		ARG 9 buffer
+		ARG 10 font
+		ARG 11 camera
+		ARG 12 visibleEntities
+		ARG 13 random
+		ARG 14 delta

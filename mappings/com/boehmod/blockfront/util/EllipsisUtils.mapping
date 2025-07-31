@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_44 com/boehmod/blockfront/util/EllipsisUtils
+	FIELD field_194 SB Ljava/lang/StringBuilder;
+	METHOD method_174 cyclingEllipsis (F)Ljava/lang/String;
+		ARG 0 time

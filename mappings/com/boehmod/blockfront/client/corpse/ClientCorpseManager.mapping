@@ -3,6 +3,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_3 com/boehmod/blockfront/client/corpse/C
 	FIELD field_18 lastUpdates Ljava/util/Map;
 	FIELD field_24 ragdollRenderers Ljava/util/List;
 	METHOD method_17 createPart (Lcom/boehmod/blockfront/unnamed/BF_15;Lcom/boehmod/blockfront/unnamed/BF_6;DLnet/minecraft/client/model/geom/PartPose;[Lcom/boehmod/blockfront/unnamed/BF_5;)Lcom/boehmod/blockfront/unnamed/BF_4;
+		ARG 0 context
+		ARG 1 bodyPart
+		ARG 4 partPose
+		ARG 5 layers
 	METHOD method_18 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_271;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lcom/mojang/blaze3d/vertex/PoseStack;F)V
 		ARG 1 minecraft
 		ARG 2 manager

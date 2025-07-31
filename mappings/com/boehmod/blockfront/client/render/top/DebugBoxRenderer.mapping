@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1189 com/boehmod/blockfront/client/render/top/DebugBoxRenderer
+	METHOD method_5782 renderDebugBox (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/phys/AABB;IF)V
+		ARG 1 camera
+		ARG 2 poseStack
+		ARG 3 box
+		ARG 4 color
+		ARG 5 alpha

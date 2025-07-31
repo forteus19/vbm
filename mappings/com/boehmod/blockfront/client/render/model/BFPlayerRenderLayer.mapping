@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_359 com/boehmod/blockfront/client/render/model/BFPlayerRenderLayer
+	FIELD field_1762 playerModel Lnet/minecraft/client/model/PlayerModel;
+	FIELD field_1763 backpackModel Lcom/boehmod/blockfront/unnamed/BF_223;
