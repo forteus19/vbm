@@ -1,3 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_414 com/boehmod/blockfront/cloud/BFFeatureFlagManager
 	FIELD field_1864 currentEvent Ljava/lang/String;
+	FIELD field_6832 serverShotValidationReport Z
+	FIELD field_6833 serverShotValidation Z
+	FIELD field_6834 serverShotValidationKick Z
 	METHOD method_1469 updateFeatureFlags ()V

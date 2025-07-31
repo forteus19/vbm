@@ -3,6 +3,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_83 com/boehmod/blockfront/client/event/B
 	FIELD field_400 BULLETS Ljava/util/List;
 	FIELD field_401 DEBUG_LINES Ljava/util/List;
 	FIELD field_402 TICK_RUNNERS Ljava/util/List;
+	FIELD field_6827 DEBUG_BOXES Ljava/util/List;
 	METHOD method_447 (Lit/unimi/dsi/fastutil/objects/ObjectArrayList;)V
 		ARG 0 list
 	METHOD method_448 updateVehicleGui (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;)V

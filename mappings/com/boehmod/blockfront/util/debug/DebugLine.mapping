@@ -1,14 +1,23 @@
-CLASS com/boehmod/blockfront/unnamed/BF_17 com/boehmod/blockfront/client/render/DebugLine
+CLASS com/boehmod/blockfront/unnamed/BF_17 com/boehmod/blockfront/util/debug/DebugLine
+	FIELD field_82 fade Z
+	FIELD field_83 maxTime I
 	FIELD field_84 color I
+	FIELD field_85 timer I
 	FIELD field_86 start Lnet/minecraft/world/phys/Vec3;
 	FIELD field_87 end Lnet/minecraft/world/phys/Vec3;
 	METHOD <init> (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;IZI)V
 		ARG 1 start
 		ARG 2 end
+		ARG 3 maxTime
+		ARG 4 fade
 		ARG 5 color
 	METHOD method_124 getStart ()Lnet/minecraft/world/phys/Vec3;
 	METHOD method_125 read (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_17;
 		ARG 0 buf
 	METHOD method_126 write (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
+	METHOD method_127 getAlpha ()F
 	METHOD method_128 getEnd ()Lnet/minecraft/world/phys/Vec3;
+	METHOD method_129 update ()Z
+	METHOD method_5780 withColor (I)Lcom/boehmod/blockfront/unnamed/BF_17;
+		ARG 1 color

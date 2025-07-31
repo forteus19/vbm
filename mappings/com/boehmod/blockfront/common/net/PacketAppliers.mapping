@@ -106,3 +106,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/common/net/Pa
 		ARG 0 packet
 		ARG 1 context
 	METHOD method_5536 gameMapVoteInfo (Lcom/boehmod/blockfront/unnamed/BF_1138;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_5645 cinematicEffectFlash (Lcom/boehmod/blockfront/unnamed/BF_1186;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_5784 debugBox (Lcom/boehmod/blockfront/unnamed/BF_1190;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+		ARG 0 packet
+		ARG 1 context

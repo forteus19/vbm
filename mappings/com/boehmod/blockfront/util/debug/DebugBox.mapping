@@ -1,0 +1,26 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1187 com/boehmod/blockfront/util/debug/DebugBox
+	FIELD field_6822 fade Z
+	FIELD field_6823 maxTime I
+	FIELD field_6824 color I
+	FIELD field_6825 timer I
+	FIELD field_6826 box Lnet/minecraft/world/phys/AABB;
+	METHOD <init> (Lnet/minecraft/world/phys/AABB;IZI)V
+		ARG 1 box
+		ARG 2 maxTime
+		ARG 3 fade
+		ARG 4 color
+	METHOD <init> (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;IZI)V
+		ARG 1 start
+		ARG 2 end
+		ARG 3 maxTime
+		ARG 4 fade
+		ARG 5 color
+	METHOD method_5774 withColor (I)Lcom/boehmod/blockfront/unnamed/BF_1187;
+		ARG 1 color
+	METHOD method_5775 read (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_1187;
+		ARG 0 buf
+	METHOD method_5776 write (Lnet/minecraft/network/FriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD method_5777 getAlpha ()F
+	METHOD method_5778 getBox ()Lnet/minecraft/world/phys/AABB;
+	METHOD method_5779 update ()Z
