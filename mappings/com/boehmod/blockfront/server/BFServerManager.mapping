@@ -18,10 +18,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1067 com/boehmod/blockfront/server/BFSer
 	METHOD method_4571 tickGamesStatus ()V
 	METHOD method_4572 updateGamesStatus ()V
 	METHOD method_4573 getMatchMakingShutdown ()Z
-	METHOD method_4574 requestPlayerInventories (Ljava/util/UUID;)V
-		ARG 1 uuid
-	METHOD method_4575 removePlayer (Ljava/util/UUID;)V
-		ARG 1 uuid
 	METHOD method_4576 shutdown (Ljava/lang/String;)V
 		ARG 1 reason
 	METHOD method_4577 sendSystemMessage (Ljava/lang/String;)V

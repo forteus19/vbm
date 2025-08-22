@@ -22,11 +22,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 1 fromStatus
 		ARG 2 toStatus
 		ARG 3 context
-	METHOD method_1556 playerJoinGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
-		ARG 1 manager
-		ARG 2 level
-		ARG 3 player
-		ARG 4 game
 	METHOD method_1558 getAvailableGames (Lcom/boehmod/blockfront/unnamed/BF_925;Lcom/boehmod/blockfront/unnamed/BF_677;)Ljava/util/List;
 		ARG 1 gameEntry
 		ARG 2 game

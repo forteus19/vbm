@@ -1,7 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1078 com/boehmod/blockfront/server/event/BFPlayerSubscriber
-	FIELD field_4357 ERROR_NO_MATCH Lnet/minecraft/network/chat/Component;
-	FIELD field_4358 ERROR Lnet/minecraft/network/chat/Component;
-	FIELD field_6330 ERROR_ADMIN Lnet/minecraft/network/chat/Component;
 	METHOD method_4598 onPlayerLoggedIn (Lnet/neoforged/neoforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent;)V
 		ARG 0 event
 	METHOD method_4599 onPlayerLoggedOut (Lnet/neoforged/neoforge/event/entity/player/PlayerEvent$PlayerLoggedOutEvent;)V
