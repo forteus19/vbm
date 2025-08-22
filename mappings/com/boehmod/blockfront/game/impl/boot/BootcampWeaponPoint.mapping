@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_765 com/boehmod/blockfront/game/impl/boot/BootcampWeaponPoint
+	METHOD method_3195 update (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;)V

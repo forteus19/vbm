@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_762 com/boehmod/blockfront/game/impl/boot/BootcampSoundPoint
+	METHOD method_3183 update (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V

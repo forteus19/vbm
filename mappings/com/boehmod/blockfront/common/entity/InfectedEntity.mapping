@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_578 com/boehmod/blockfront/common/entity/InfectedEntity
+	METHOD method_2063 getMobAttributes ()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;

@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_791 com/boehmod/blockfront/game/impl/boot/BootcampGameStage
+	METHOD method_3257 onPlayerFinish (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_788;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/Set;)V

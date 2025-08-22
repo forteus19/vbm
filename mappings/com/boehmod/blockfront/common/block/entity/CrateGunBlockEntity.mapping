@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_579 com/boehmod/blockfront/common/block/entity/CrateGunBlockEntity
+	FIELD field_2455 refreshTimer I
 	FIELD field_2457 nearestGame Lcom/boehmod/blockfront/unnamed/BF_677;
 	FIELD field_2459 updateStateTimer I
 	FIELD field_2462 nearestGameTimer I

@@ -2,6 +2,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_476 com/boehmod/blockfront/common/player
 	FIELD field_2115 playerDataType Lcom/boehmod/bflib/cloud/common/player/PlayerDataType;
 	FIELD field_2116 playerGroup Lcom/boehmod/bflib/cloud/common/player/PlayerGroup;
 	FIELD field_2122 punishmentCheckTimer I
+	FIELD field_2123 maxFriends I
 	METHOD method_1709 getPlayerDataType ()Lcom/boehmod/bflib/cloud/common/player/PlayerDataType;
 	METHOD method_1711 getMcProfile ()Lcom/mojang/authlib/GameProfile;
 	METHOD method_1712 setPlayerDataType (Lcom/boehmod/bflib/cloud/common/player/PlayerDataType;)V

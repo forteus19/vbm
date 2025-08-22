@@ -1,3 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_639 com/boehmod/blockfront/common/entity/NextbotEntity
+	FIELD field_2744 funnySoundTimer I
 	METHOD method_2479 getTexture ()Ljava/lang/String;
 	METHOD method_2480 getFunnySound ()Lnet/minecraft/core/Holder;
+	METHOD method_2481 getMobAttributes ()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
+	METHOD method_2482 getFunnySoundInterval ()I

@@ -4,8 +4,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_788 com/boehmod/blockfront/game/impl/boo
 	FIELD field_3346 weaponPoints Ljava/util/List;
 	FIELD field_3347 texturePoints Ljava/util/List;
 	FIELD field_3348 introSequence Lcom/boehmod/blockfront/unnamed/BF_597;
+	FIELD field_3349 spawnedNpcs Z
 	FIELD field_3350 finishPoint Lcom/boehmod/blockfront/unnamed/BF_692;
+	METHOD method_3243 getSoundPoints ()Ljava/util/List;
+	METHOD method_3244 getWeaponPoints ()Ljava/util/List;
 	METHOD method_3246 setIntroSequence (Lcom/boehmod/blockfront/unnamed/BF_597;)V
 		ARG 1 sequence
+	METHOD method_3248 (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_757;)V
+		ARG 2 npcSpawn
 	METHOD method_3249 getIntroSequence ()Lcom/boehmod/blockfront/unnamed/BF_597;
+	METHOD method_3250 spawnNpcs (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level
 	METHOD method_3251 getFinishPoint ()Lcom/boehmod/blockfront/unnamed/BF_692;

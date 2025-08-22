@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_563 com/boehmod/blockfront/common/entity/HumanEntity
+	METHOD method_1968 getMobAttributes ()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
