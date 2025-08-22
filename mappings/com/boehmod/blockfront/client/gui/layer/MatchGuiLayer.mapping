@@ -7,12 +7,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_112 com/boehmod/blockfront/client/gui/la
 		ARG 5 gameClient
 		ARG 6 debug
 		ARG 8 delta
-	METHOD method_496 renderWarCryText (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_271;II)V
-		ARG 0 poseStack
-		ARG 1 graphics
-		ARG 2 font
-		ARG 3 game
-		ARG 4 player
-		ARG 5 playerData
-		ARG 6 x
-		ARG 7 y

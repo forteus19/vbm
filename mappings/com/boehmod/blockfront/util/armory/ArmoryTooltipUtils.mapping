@@ -11,9 +11,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_481 com/boehmod/blockfront/util/armory/A
 	METHOD method_1730 appendSuffix (Lcom/boehmod/bflib/cloud/common/item/CloudItem;Ljava/util/List;)V
 		ARG 0 item
 		ARG 1 target
-	METHOD method_1731 appendArmor (Lcom/boehmod/bflib/cloud/common/item/types/CloudItemArmor;Ljava/util/List;)V
-		ARG 0 item
-		ARG 1 target
 	METHOD method_1732 appendBooster (Lcom/boehmod/bflib/cloud/common/item/types/CloudItemBooster;Ljava/util/List;Lnet/minecraft/client/gui/Font;I)V
 		ARG 0 item
 		ARG 1 target

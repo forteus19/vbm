@@ -54,9 +54,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/common/net/Pa
 	METHOD method_2544 gameKilledMessage (Lcom/boehmod/blockfront/unnamed/BF_1016;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 		ARG 0 packet
 		ARG 1 context
-	METHOD method_2545 gameLastKiller (Lcom/boehmod/blockfront/unnamed/BF_1017;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
-		ARG 0 packet
-		ARG 1 context
 	METHOD method_2546 grenadeFlash (Lcom/boehmod/blockfront/unnamed/BF_1022;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 		ARG 0 packet
 		ARG 1 context

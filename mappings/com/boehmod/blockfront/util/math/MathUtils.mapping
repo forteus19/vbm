@@ -5,9 +5,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1059 com/boehmod/blockfront/util/math/Ma
 	FIELD field_4324 PI F
 	FIELD field_4325 DEG_TO_RAD_RATIO F
 	FIELD field_4326 HALF_PI F
-	METHOD method_4478 degWrapDifference (DD)D
-		ARG 0 val1
-		ARG 2 val2
 	METHOD method_4479 lerpd (DDD)D
 		ARG 0 min
 		ARG 2 max
@@ -35,20 +32,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_1059 com/boehmod/blockfront/util/math/Ma
 		ARG 0 min
 		ARG 1 max
 		ARG 2 t
-	METHOD method_4486 divIntoArray (IIII)[F
-		ARG 0 num1
-		ARG 1 num2
-		ARG 2 den1
-		ARG 3 den2
 	METHOD method_4487 lerpIntoVec3 (Lcom/boehmod/blockfront/unnamed/BF_692;Lcom/boehmod/blockfront/unnamed/BF_692;F)Lnet/minecraft/world/phys/Vec3;
 		ARG 0 max
 		ARG 1 min
 		ARG 2 t
-	METHOD method_4488 moveTowards (Lcom/boehmod/blockfront/unnamed/BF_692;Lcom/boehmod/blockfront/unnamed/BF_692;Lcom/boehmod/blockfront/unnamed/BF_692;D)Lcom/boehmod/blockfront/unnamed/BF_692;
-		ARG 0 from
-		ARG 1 to
-		ARG 2 target
-		ARG 3 amount
 	METHOD method_4489 getScaledBoxTextWidth (Ljava/lang/String;Lnet/minecraft/client/gui/Font;FIF)F
 		ARG 0 text
 		ARG 1 font
@@ -105,10 +92,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1059 com/boehmod/blockfront/util/math/Ma
 		ARG 2 max
 	METHOD method_4503 averageJoml ([Lorg/joml/Vector3f;)Lorg/joml/Vector3f;
 		ARG 0 vecs
-	METHOD method_4504 rotateLerpd (DDD)D
-		ARG 0 min
-		ARG 2 max
-		ARG 4 t
 	METHOD method_4505 snapToMultiple (FF)F
 		ARG 0 value
 		ARG 1 step
@@ -134,10 +117,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1059 com/boehmod/blockfront/util/math/Ma
 		ARG 1 min
 		ARG 2 t
 	METHOD method_4512 lerpf2 (FFF)F
-		ARG 0 min
-		ARG 1 max
-		ARG 2 t
-	METHOD method_4513 midPointDist (FFF)F
 		ARG 0 min
 		ARG 1 max
 		ARG 2 t
