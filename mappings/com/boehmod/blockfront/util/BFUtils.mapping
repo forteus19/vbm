@@ -98,21 +98,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 3 message
 		ARG 4 playerData
 		ARG 5 cloudData
-	METHOD method_2895 topPlayers (Lcom/boehmod/blockfront/unnamed/BF_677;ILcom/boehmod/blockfront/unnamed/BF_941;Lcom/boehmod/blockfront/unnamed/BF_686;)Ljava/util/Set;
-		ARG 0 game
-		ARG 1 max
-		ARG 2 stat
-		ARG 3 team
-	METHOD method_2896 topPlayers (Lcom/boehmod/blockfront/unnamed/BF_677;ILcom/boehmod/blockfront/unnamed/BF_941;Ljava/util/Set;)Ljava/util/SortedSet;
-		ARG 0 game
-		ARG 1 max
-		ARG 2 stat
-		ARG 3 players
-	METHOD method_2897 topPlayers (Lcom/boehmod/blockfront/unnamed/BF_677;ILjava/lang/String;Ljava/util/Set;)Ljava/util/SortedSet;
-		ARG 0 game
-		ARG 1 max
-		ARG 2 key
-		ARG 3 players
 	METHOD method_2900 sortStatData (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_941;)Ljava/util/SortedSet;
 		ARG 0 game
 		ARG 1 players

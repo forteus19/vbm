@@ -22,7 +22,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 	FIELD field_3752 GB_PARACHUTE Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3753 GB_REGULARS Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3754 USSR_INFANTRY Lcom/boehmod/blockfront/unnamed/BF_929;
-	FIELD field_3755 loadouts Ljava/util/Map;
 	FIELD field_3756 POL_INFANTRY Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3757 JPN_INFANTRY Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3758 JPN_TROPICAL Lcom/boehmod/blockfront/unnamed/BF_929;
@@ -37,8 +36,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 	METHOD method_3885 getCountry ()Lcom/boehmod/blockfront/unnamed/BF_928;
 	METHOD method_3886 fromId (I)Lcom/boehmod/blockfront/unnamed/BF_929;
 		ARG 0 id
-	METHOD method_3887 (Lcom/boehmod/blockfront/unnamed/BF_924;)Ljava/util/List;
-		ARG 0 existing
 	METHOD method_3888 getLoadout (Lcom/boehmod/blockfront/unnamed/BF_924;I)Lcom/boehmod/blockfront/unnamed/BF_759;
 		ARG 1 clazz
 		ARG 2 level

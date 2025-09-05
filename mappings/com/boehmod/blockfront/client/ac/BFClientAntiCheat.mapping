@@ -1,5 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_833 com/boehmod/blockfront/client/ac/BFClientAntiCheat
-	FIELD field_3438 checks Ljava/util/List;
 	FIELD field_3440 enabled Z
 	FIELD field_3441 startupChecksShouldRun Z
 	FIELD field_3442 isActive Z

@@ -1,7 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_727 com/boehmod/blockfront/map/effect/BlockEntityPlaneFlyByMapEffect
 	FIELD field_3073 soundDistanceMin D
-	FIELD field_3075 blockEntities Ljava/util/List;
-	FIELD field_3076 blocks Ljava/util/List;
 	FIELD field_3077 speed F
 	FIELD field_3078 soundEvent Ljava/util/function/Supplier;
 	FIELD field_3080 spawnInterval I

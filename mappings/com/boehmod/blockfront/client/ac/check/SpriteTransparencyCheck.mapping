@@ -1,3 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1122 com/boehmod/blockfront/client/ac/check/SpriteTransparencyCheck
-	FIELD field_6280 CHECKED_TEXTURES Ljava/util/List;
 	METHOD method_5469 textureHasTransparency (Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;)Z

@@ -42,7 +42,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_925 com/boehmod/blockfront/game/BFGameTy
 	METHOD method_3834 getGameClass ()Ljava/lang/Class;
 	METHOD method_3835 isExperimental ()Z
 	METHOD method_3838 values ()Ljava/util/Collection;
-	METHOD method_3839 getIconTexture ()Lnet/minecraft/resources/ResourceLocation;
 	CLASS BF_926 Category
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 			ARG 3 title

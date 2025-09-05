@@ -1,5 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_118 com/boehmod/blockfront/client/gui/layer/HealthEffectsGuiLayer
-	FIELD field_535 DAMAGE_INDICATORS Ljava/util/List;
 	CLASS BF_119 DamageIndicator
 		FIELD field_543 alpha F
 		FIELD field_544 prevAlpha F
