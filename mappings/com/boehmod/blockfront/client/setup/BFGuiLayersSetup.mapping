@@ -1,3 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1108 com/boehmod/blockfront/client/setup/BFGuiLayersSetup
-	METHOD method_5411 register (Lnet/neoforged/neoforge/client/event/RegisterGuiLayersEvent;)V
-		ARG 0 event
