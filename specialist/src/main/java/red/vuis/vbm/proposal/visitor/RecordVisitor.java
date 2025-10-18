@@ -15,8 +15,10 @@ import red.vuis.vbm.util.DoubleId;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class RecordVisitor extends ProposalVisitor {
     public static final String RECORD = "java/lang/Record";
@@ -90,6 +92,7 @@ public class RecordVisitor extends ProposalVisitor {
             return;
         }
 
+        Set<DoubleId> matchedTargets = new HashSet<>();
         for (MethodNode pgNode : possibleGetters) {
             List<AbstractInsnNode> pgRealInsns = new ArrayList<>();
             for (AbstractInsnNode insn : pgNode.instructions) {
@@ -109,11 +112,13 @@ public class RecordVisitor extends ProposalVisitor {
             if (!(pgRealInsns.get(1) instanceof FieldInsnNode insn2 &&
                     insn2.getOpcode() == Opcodes.GETFIELD &&
                     components.containsKey(targetField = new DoubleId(insn2.name, insn2.desc)) &&
-                    Type.getReturnType(pgNode.desc).getDescriptor().equals(insn2.desc))) continue;
+                    Type.getReturnType(pgNode.desc).getDescriptor().equals(insn2.desc) &&
+                    !matchedTargets.contains(targetField))) continue;
             int insn3c = pgRealInsns.get(2).getOpcode();
             if (!(insn3c >= Opcodes.IRETURN && insn3c <= Opcodes.RETURN)) continue;
 
             getters.put(pgNode, components.get(targetField));
+            matchedTargets.add(targetField);
         }
 
 //        DoubleId mainInit = null;
