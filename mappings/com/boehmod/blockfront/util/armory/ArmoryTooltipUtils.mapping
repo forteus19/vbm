@@ -11,6 +11,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_481 com/boehmod/blockfront/util/armory/A
 	METHOD method_1730 appendSuffix (Lcom/boehmod/bflib/cloud/common/item/CloudItem;Ljava/util/List;)V
 		ARG 0 item
 		ARG 1 target
+	METHOD method_1731 appendArmour (Lcom/boehmod/bflib/cloud/common/item/types/CloudItemArmour;Ljava/util/List;)V
+		ARG 0 item
+		ARG 1 target
 	METHOD method_1732 appendBooster (Lcom/boehmod/bflib/cloud/common/item/types/CloudItemBooster;Ljava/util/List;Lnet/minecraft/client/gui/Font;I)V
 		ARG 0 item
 		ARG 1 target
@@ -26,6 +29,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_481 com/boehmod/blockfront/util/armory/A
 		ARG 3 item
 		ARG 4 itemStack
 		ARG 5 target
+	METHOD method_1735 append (Lcom/boehmod/bflib/cloud/common/CloudRegistry;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/bflib/cloud/common/item/CloudItemStack;Lit/unimi/dsi/fastutil/objects/ObjectList;Lnet/minecraft/client/gui/Font;I)V
+		ARG 0 registry
+		ARG 1 minecraft
+		ARG 2 dataHandler
+		ARG 3 itemStack
+		ARG 4 target
+		ARG 5 font
+		ARG 6 fontSize
 	METHOD method_1736 appendAuthor (Lcom/boehmod/bflib/cloud/common/item/CloudItem;Ljava/util/List;)V
 		ARG 0 item
 		ARG 1 target

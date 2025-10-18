@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_774 com/boehmod/blockfront/common/match/kill/KillFeedEntry
+	FIELD field_3303 sections Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_3304 type Lcom/boehmod/blockfront/unnamed/BF_721;
 	METHOD method_3206 getType ()Lcom/boehmod/blockfront/unnamed/BF_721;
 	METHOD method_3207 type (Lcom/boehmod/blockfront/unnamed/BF_721;)Lcom/boehmod/blockfront/unnamed/BF_774;

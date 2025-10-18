@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1202 com/boehmod/blockfront/common/event/BFEntityTickSubscriber
+	METHOD method_5867 onEntityTickPost (Lnet/neoforged/neoforge/event/tick/EntityTickEvent$Post;)V
+		ARG 0 event

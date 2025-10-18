@@ -13,7 +13,6 @@ group = "red.vuis.vbm"
 version = "${bfVersion}-SNAPSHOT"
 
 repositories {
-    maven("https://maven.jaxonpow.com/snapshots")
     maven("https://maven.quiltmc.org/repository/release")
     mavenCentral()
 }

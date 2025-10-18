@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1200 com/boehmod/blockfront/common/event/BFMobDespawnSubscriber
+	METHOD method_5864 onMobDespawn (Lnet/neoforged/neoforge/event/entity/living/MobDespawnEvent;)V
+		ARG 0 event

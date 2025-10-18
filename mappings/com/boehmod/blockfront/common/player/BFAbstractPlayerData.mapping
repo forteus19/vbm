@@ -1,5 +1,6 @@
 CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/player/BFAbstractPlayerData
 	FIELD field_1150 uuid Ljava/util/UUID;
+	FIELD field_1155 previousMessages Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_1156 lastMessage Ljava/lang/String;
 	FIELD field_1159 lastChatTime J
 	FIELD field_1161 outOfGame Z
@@ -12,6 +13,7 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 		ARG 1 uuid
 	METHOD method_827 setRespawnTimer (I)V
 		ARG 1 respawnTimer
+	METHOD method_829 getPreviousMessages ()Lit/unimi/dsi/fastutil/objects/ObjectList;
 	METHOD method_830 setOutOfGame (Z)V
 		ARG 1 outOfGame
 	METHOD method_831 getLastMessage ()Ljava/lang/String;

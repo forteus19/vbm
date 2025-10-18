@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1201 com/boehmod/blockfront/common/event/BFEntityMountSubscriber
+	METHOD method_5865 onEntityMount (Lnet/neoforged/neoforge/event/entity/EntityMountEvent;)V
+		ARG 0 event

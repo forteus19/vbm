@@ -6,7 +6,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_585 com/boehmod/blockfront/common/comman
 	FIELD field_2472 IN_GAME_ERROR Lnet/minecraft/network/chat/Component;
 	METHOD method_2108 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/commands/CommandBuildContext;)V
 		ARG 0 dispatcher
-		ARG 1 context
+		ARG 1 buildContext
 	METHOD method_2109 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_2110 runToggleTeamSizes (Lcom/mojang/brigadier/context/CommandContext;)V
@@ -39,4 +39,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_585 com/boehmod/blockfront/common/comman
 	METHOD method_2127 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_2128 (Lcom/mojang/brigadier/context/CommandContext;)I
+		ARG 0 context
+	METHOD method_5845 runToggleSuspicion (Lcom/mojang/brigadier/context/CommandContext;Lnet/minecraft/server/level/ServerPlayer;)V
+	METHOD method_5846 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context

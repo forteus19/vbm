@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_888 com/boehmod/blockfront/game/impl/inf/InfectedDoor
+	FIELD field_3561 zones Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_3562 position Lnet/minecraft/core/BlockPos;
 	FIELD field_3563 open Z
 	FIELD field_3564 id Ljava/lang/String;

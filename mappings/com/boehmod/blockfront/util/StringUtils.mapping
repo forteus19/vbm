@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1062 com/boehmod/blockfront/util/StringUtils
+	FIELD field_4330 FANCY_CHARACTERS Lit/unimi/dsi/fastutil/chars/Char2ObjectMap;
 	FIELD field_4331 FORMAT Ljava/text/NumberFormat;
 	METHOD method_4545 formatLong (J)Ljava/lang/String;
 		ARG 0 value
