@@ -10,5 +10,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_97 com/boehmod/blockfront/client/render/
 		FIELD field_462 texture Lnet/minecraft/resources/ResourceLocation;
 		FIELD field_463 isBeingCaptured Z
 		FIELD field_464 component Lnet/minecraft/network/chat/Component;
-		METHOD method_481 getComponent ()Lnet/minecraft/network/chat/Component;
-		METHOD method_482 isBeingCaptured ()Z
