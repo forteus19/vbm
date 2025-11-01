@@ -378,3 +378,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 player
 	METHOD method_3000 clearInventory (Ljava/util/UUID;)V
 		ARG 0 player
+	METHOD method_5847 (Lcom/boehmod/blockfront/unnamed/BF_1119;Lnet/minecraft/server/level/ServerPlayer;)Z
+		ARG 1 player
+	METHOD method_5848 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player
+	METHOD method_5849 sendAdminMessage (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 level
+		ARG 1 manager
+		ARG 2 message

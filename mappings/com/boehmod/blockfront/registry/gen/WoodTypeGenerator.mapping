@@ -1,0 +1,28 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1220 com/boehmod/blockfront/registry/gen/WoodTypeGenerator
+	FIELD field_7066 INSTANCES Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_7067 planks Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7068 slab Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7069 stair Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7070 fence Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7071 fenceGate Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7072 button Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7073 pressurePlate Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7074 log Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7075 strippedLog Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7076 leaves Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_7077 baseId Ljava/lang/String;
+	FIELD field_7078 doDatagen Z
+	METHOD <init> (Ljava/lang/String;ZLnet/minecraft/world/level/block/state/BlockBehaviour$Properties;Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+		ARG 1 baseId
+		ARG 2 doDatagen
+		ARG 3 blockProperties
+		ARG 4 leavesProperties
+	METHOD method_5972 provideBlock (Lcom/boehmod/blockfront/unnamed/BF_592;)V
+		ARG 1 provider
+	METHOD method_5973 provideItem (Lcom/boehmod/blockfront/unnamed/BF_594;)V
+		ARG 1 provider
+	METHOD method_5974 provideLanguage (Lcom/boehmod/blockfront/unnamed/BF_595;)V
+		ARG 1 provider
+	METHOD method_5985 (Ljava/lang/String;)Ljava/lang/String;
+		ARG 0 word
+	METHOD method_5986 createBaseDisplayName ()Ljava/lang/String;

@@ -74,6 +74,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 	FIELD field_6465 SOAPSTONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	FIELD field_6466 STONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	FIELD field_6467 TUFF_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
+	FIELD field_7079 GREEN_WOOD Lcom/boehmod/blockfront/unnamed/BF_1220;
+	FIELD field_7080 BLUE_WOOD Lcom/boehmod/blockfront/unnamed/BF_1220;
+	FIELD field_7081 WALNUT_WOOD Lcom/boehmod/blockfront/unnamed/BF_1220;
+	FIELD field_7082 REVERSE_HALF_N_HALF_BRICKS Lcom/boehmod/blockfront/unnamed/BF_519;
+	FIELD field_7083 STEEL Lcom/boehmod/blockfront/unnamed/BF_519;
 	METHOD method_4817 (Lnet/minecraft/world/level/block/state/BlockState;)I
 		ARG 0 state
 	METHOD method_4889 (Lnet/minecraft/world/level/block/state/BlockState;)I
