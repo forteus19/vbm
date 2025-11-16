@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/common/player/d com/boehmod/blockfront/common/player/clan/ClanCacheLoader
+	METHOD load (Ljava/lang/Object;)Ljava/lang/Object;
+		ARG 1 uuid

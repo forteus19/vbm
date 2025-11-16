@@ -12,7 +12,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_906 com/boehmod/blockfront/common/item/B
 	METHOD method_3758 getAimConfig ()Lcom/boehmod/blockfront/unnamed/BF_900;
 	METHOD method_3759 wobbleIntensity (F)Lcom/boehmod/blockfront/unnamed/BF_906;
 		ARG 1 wobbleIntensity
-	METHOD method_3760 aim (Lcom/boehmod/blockfront/unnamed/BF_900;)Lcom/boehmod/blockfront/unnamed/BF_906;
+	METHOD method_3760 spread (Lcom/boehmod/blockfront/unnamed/BF_900;)Lcom/boehmod/blockfront/unnamed/BF_906;
 	METHOD method_3763 getStickerIndex (Lnet/minecraft/world/item/ItemStack;I)I
 		ARG 0 itemStack
 		ARG 1 sticker

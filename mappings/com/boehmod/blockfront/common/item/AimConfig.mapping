@@ -1,3 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_900 com/boehmod/blockfront/common/item/AimConfig
-	FIELD field_3602 currentSpread F
-	FIELD field_3603 prevSpread F

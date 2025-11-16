@@ -18,7 +18,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_1067 com/boehmod/blockfront/server/BFSer
 	METHOD method_4571 tickGamesStatus ()V
 	METHOD method_4572 updateGamesStatus ()V
 	METHOD method_4573 getMatchMakingShutdown ()Z
+	METHOD method_4574 handlePlayerJoin (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 player
 	METHOD method_4576 shutdown (Ljava/lang/String;)V
 		ARG 1 reason
 	METHOD method_4577 sendSystemMessage (Ljava/lang/String;)V
 		ARG 1 message
+	METHOD method_5899 assignPlayerToMatch (Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)Z
+		ARG 1 player

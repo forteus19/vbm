@@ -15,6 +15,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	FIELD field_4030 hasEquipSound Z
 	FIELD field_4048 muzzleFlashSize F
 	FIELD field_4051 weight F
+	FIELD field_4053 triggerTimer I
 	FIELD field_4061 maxHitDist I
 	FIELD field_4062 currentFireConfig I
 	FIELD field_4068 magIdMap Ljava/util/Map;

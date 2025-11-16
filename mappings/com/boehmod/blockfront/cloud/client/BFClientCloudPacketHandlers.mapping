@@ -62,3 +62,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_497 com/boehmod/blockfront/cloud/client/
 	METHOD method_1804 register ()V
 	METHOD method_1805 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
+	METHOD method_5911 patreonLinkResponse (Lcom/boehmod/bflib/cloud/packet/common/patreon/PacketPatreonLinkResponse;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
