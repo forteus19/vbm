@@ -1,0 +1,22 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1192 com/boehmod/blockfront/server/ac/bullet/ShotValidationManager
+	METHOD method_5855 checkClientAll (Lcom/boehmod/blockfront/unnamed/BF_1067;Lcom/boehmod/blockfront/unnamed/BF_1119;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/List;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;FFJJ)Z
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 level
+		ARG 4 player
+		ARG 5 hits
+		ARG 6 position
+		ARG 7 direction
+		ARG 8 spread
+		ARG 9 backPitch
+		ARG 10 tick
+		ARG 12 seed
+	METHOD method_5856 checkClientSpread (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;ZFLcom/boehmod/blockfront/unnamed/BF_993;Lnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_1117;)Z
+	METHOD method_5857 checkClientHits (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;ZLjava/util/List;Lit/unimi/dsi/fastutil/ints/IntList;)Z
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+	METHOD method_5996 runChecks (Lcom/boehmod/blockfront/unnamed/BF_1198;)V
+		ARG 0 serverTracker
+	METHOD method_5997 checkClientFireRate (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;ZLnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_993;JLcom/boehmod/blockfront/unnamed/BF_1117;)Z
+	METHOD method_5998 checkClientFireRate (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;ZLnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_993;JLcom/boehmod/blockfront/unnamed/BF_1117;Z)Z

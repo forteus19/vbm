@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1198 com/boehmod/blockfront/server/ac/bullet/ServerCollisionTracker
+	FIELD field_6894 currentTick J
+	METHOD method_5839 update (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/Iterable;JLnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 manager
+		ARG 2 entities
+		ARG 3 currentTick

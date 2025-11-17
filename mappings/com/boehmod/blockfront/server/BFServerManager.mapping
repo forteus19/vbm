@@ -8,6 +8,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1067 com/boehmod/blockfront/server/BFSer
 	FIELD field_4339 cloudUrl Ljava/lang/String;
 	FIELD field_4340 GAMES_STATUS_UPDATE_INTERVAL I
 	FIELD field_4341 statusUpdateTimer I
+	FIELD field_6856 collisionTracker Lcom/boehmod/blockfront/unnamed/BF_1198;
 	METHOD method_4562 getMatchMakingPassword ()Ljava/lang/String;
 	METHOD method_4563 getMatchMakingCache ()Lcom/boehmod/blockfront/unnamed/BF_1064;
 	METHOD method_4566 getProfanityManager ()Lcom/boehmod/blockfront/unnamed/BF_1120;

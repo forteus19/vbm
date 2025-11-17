@@ -22,6 +22,16 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 1 fromStatus
 		ARG 2 toStatus
 		ARG 3 context
+	METHOD method_1555 initPlayerForGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 level
+		ARG 4 player
+		ARG 5 uuid
+	METHOD method_1556 assignPlayerToGame (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
+		ARG 1 level
+		ARG 2 player
+		ARG 3 game
 	METHOD method_1558 getAvailableGames (Lcom/boehmod/blockfront/unnamed/BF_925;Lcom/boehmod/blockfront/unnamed/BF_677;)Ljava/util/List;
 		ARG 1 gameEntry
 		ARG 2 game
@@ -35,10 +45,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 2 game
 	METHOD method_1562 getGameWithPlayer (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_677;
 		ARG 1 uuid
+	METHOD method_1563 gameHasPlayer (Ljava/util/UUID;Ljava/util/UUID;)Z
+		ARG 1 game
+		ARG 2 player
 	METHOD method_1564 getNearestActiveGame (Lnet/minecraft/core/BlockPos;D)Lcom/boehmod/blockfront/unnamed/BF_677;
 		ARG 1 blockPos
 		ARG 2 maxDistance
-	METHOD method_1565 updateAssets (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
+	METHOD method_1565 update (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 server
 		ARG 2 level
 	METHOD method_1566 (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_683;)V
@@ -63,3 +76,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1577 getInstanceUUID ()Ljava/util/UUID;
 	METHOD method_1578 isConnectionVerified ()Z
 	METHOD method_5487 getCloudRegistry ()Lcom/boehmod/bflib/cloud/common/CloudRegistry;
+	METHOD method_5783 getCollisionTracker ()Lcom/boehmod/blockfront/unnamed/BF_1198;
+	METHOD method_5893 updatePlayerPings (Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 level

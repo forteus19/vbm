@@ -6,3 +6,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_1103 com/boehmod/blockfront/registry/BFC
 	FIELD field_4918 BUILDING_BLOCKS_NAME Lnet/minecraft/network/chat/Component;
 	FIELD field_4919 BLOCKS_NAME Lnet/minecraft/network/chat/Component;
 	FIELD field_4920 ITEMS_NAME Lnet/minecraft/network/chat/Component;
+	FIELD field_7084 WOODSET_NAME Lnet/minecraft/network/chat/Component;

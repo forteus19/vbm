@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_827 com/boehmod/blockfront/game/tag/IAllowsRespawning
+	METHOD method_3433 getSpawnProLength ()I
