@@ -310,6 +310,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 4 uuid
 	METHOD method_2962 (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;Ljava/util/UUID;)V
 		ARG 2 uuid
+	METHOD method_2965 isBehind (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/entity/LivingEntity;F)Z
+		ARG 0 attacker
+		ARG 1 victim
+		ARG 2 lenience
 	METHOD method_2966 isPlayerUnavailable (Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/common/player/b;)Z
 		ARG 0 player
 		ARG 1 data

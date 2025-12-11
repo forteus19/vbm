@@ -1252,3 +1252,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 0 minecraft
 	METHOD method_346 translucentBlack ()I
 	METHOD method_347 resetShaderColor ()V
+	METHOD method_5938 lerpColor (IID)I
+		ARG 0 colorA
+		ARG 1 colorB
+		ARG 2 t

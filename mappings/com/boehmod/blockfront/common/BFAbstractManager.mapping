@@ -74,7 +74,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1576 isPlayerInGame (Ljava/util/UUID;)Z
 		ARG 1 uuid
 	METHOD method_1577 getInstanceUUID ()Ljava/util/UUID;
-	METHOD method_1578 isConnectionVerified ()Z
+	METHOD method_1578 isCloudConnectionVerified ()Z
 	METHOD method_5487 getCloudRegistry ()Lcom/boehmod/bflib/cloud/common/CloudRegistry;
 	METHOD method_5783 getCollisionTracker ()Lcom/boehmod/blockfront/unnamed/BF_1198;
 	METHOD method_5893 updatePlayerPings (Lnet/minecraft/server/level/ServerLevel;)V
