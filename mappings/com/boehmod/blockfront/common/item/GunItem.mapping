@@ -22,6 +22,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	FIELD field_4069 barrelIdMap Ljava/util/Map;
 	FIELD field_4070 scopes Ljava/util/Map;
 	FIELD field_6381 bulletParticles Lcom/boehmod/blockfront/unnamed/BF_1136;
+	FIELD field_6745 cameraConfig Lcom/boehmod/blockfront/unnamed/BF_1183;
 	METHOD appendHoverText (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item$TooltipContext;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V
 		ARG 1 itemStack
 		ARG 2 context
@@ -147,3 +148,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_5531 getBulletParticles ()Lcom/boehmod/blockfront/unnamed/BF_1136;
 	METHOD method_5532 particles (Lcom/boehmod/blockfront/unnamed/BF_1136;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 bulletParticles
+	METHOD method_5712 getCameraConfig ()Lcom/boehmod/blockfront/unnamed/BF_1183;
+	METHOD method_5713 camera (Lcom/boehmod/blockfront/unnamed/BF_1183;)Lcom/boehmod/blockfront/unnamed/BF_993;

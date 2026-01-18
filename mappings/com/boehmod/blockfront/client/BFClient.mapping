@@ -1,8 +1,16 @@
 CLASS com/boehmod/blockfront/unnamed/BF_150 com/boehmod/blockfront/client/BFClient
+	METHOD method_5939 registerClientExtensions (Lnet/neoforged/neoforge/client/extensions/common/RegisterClientExtensionsEvent;)V
+		ARG 0 event
+	METHOD method_5965 registerBlockColorHandlers (Lnet/neoforged/neoforge/client/event/RegisterColorHandlersEvent$Block;)V
+		ARG 0 event
+	METHOD method_5966 registerItemColorHandlers (Lnet/neoforged/neoforge/client/event/RegisterColorHandlersEvent$Item;)V
+		ARG 0 event
 	METHOD method_618 getManager ()Lcom/boehmod/blockfront/unnamed/BF_606;
 	METHOD method_619 init (Lcom/boehmod/blockfront/unnamed/BF_27;Lnet/neoforged/fml/event/lifecycle/FMLClientSetupEvent;)V
 		ARG 0 bf
 		ARG 1 event
+	METHOD method_620 setup (Lcom/boehmod/blockfront/unnamed/BF_606;)V
+		ARG 0 manager
 	METHOD method_622 (Lnet/minecraft/client/renderer/entity/ItemRenderer;Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;)Lnet/minecraft/client/renderer/entity/EntityRenderer;
 		ARG 1 context
 	METHOD method_623 registerLayerDefinitions (Lnet/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions;)V

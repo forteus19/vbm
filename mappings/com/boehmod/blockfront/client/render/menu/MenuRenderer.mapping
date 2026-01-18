@@ -13,7 +13,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_172 com/boehmod/blockfront/client/render
 		ARG 11 mouseY
 		ARG 12 renderTime
 		ARG 13 delta
-	METHOD method_734 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_186;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;IIIIFF)V
+	METHOD method_733 tick (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_186;F)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 screen
+		ARG 4 renderTime
+	METHOD method_734 renderAbove (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_186;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;IIIIFF)V
 		ARG 1 minecraft
 		ARG 2 manager
 		ARG 3 screen
@@ -26,3 +31,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_172 com/boehmod/blockfront/client/render
 		ARG 10 mouseY
 		ARG 11 renderTime
 		ARG 12 delta
+	METHOD method_735 renderBelow (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_186;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;IIIIFF)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 cloudData
+		ARG 4 screen
+		ARG 5 graphics
+		ARG 6 poseStack
+		ARG 7 font
+		ARG 8 width
+		ARG 9 height
+		ARG 10 mouseX
+		ARG 11 mouseY
+		ARG 12 renderTime
+		ARG 13 delta

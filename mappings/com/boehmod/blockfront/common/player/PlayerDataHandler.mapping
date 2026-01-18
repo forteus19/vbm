@@ -18,6 +18,7 @@ CLASS com/boehmod/blockfront/common/player/c com/boehmod/blockfront/common/playe
 		ARG 1 player
 	METHOD method_868 getCloudProfile (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/unnamed/BF_476;
 		ARG 1 player
+	METHOD method_869 createCloudProfileCache ()Lcom/google/common/cache/LoadingCache;
 	METHOD method_871 getPlayerData (Ljava/util/UUID;)Lcom/boehmod/blockfront/common/player/b;
 		ARG 1 uuid
 	METHOD method_872 isPlayerInGame (Ljava/util/UUID;)Z

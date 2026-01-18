@@ -272,6 +272,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 4 position
 		ARG 5 scale
 		ARG 6 depthTest
+	METHOD method_224 renderTabListEntry (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_476;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_679;Ljava/util/UUID;Lnet/minecraft/network/chat/Style;Ljava/util/Collection;FFFFI)V
+		ARG 0 poseStack
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 dataHandler
+		ARG 4 cloudData
+		ARG 5 graphics
+		ARG 6 font
+		ARG 7 game
+		ARG 8 gameClient
+		ARG 9 uuid
 	METHOD method_225 playerInfoTag (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_476;FFZ)V
 		ARG 0 minecraft
 		ARG 1 manager

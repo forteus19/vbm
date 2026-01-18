@@ -49,6 +49,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 		ARG 1 mapEffect
 	METHOD method_5667 setExteriorSound (Ljava/util/function/Supplier;)Lcom/boehmod/blockfront/unnamed/BF_1182;
 		ARG 1 exteriorSound
+	METHOD method_5668 updateClient (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Ljava/util/Random;Lnet/minecraft/util/RandomSource;FLnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 game
+		ARG 4 player
+		ARG 5 level
+		ARG 6 random
+		ARG 7 randomSource
+		ARG 8 delta
+		ARG 9 cameraPos
+		ARG 10 cameraBlockPos
 	METHOD method_5669 (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Ljava/util/concurrent/ThreadLocalRandom;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;FFLcom/boehmod/blockfront/unnamed/BF_731;)V
 		ARG 13 mapEffect
 	METHOD method_5670 triggerCondition (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;)V
@@ -135,5 +146,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 	METHOD method_5711 reset (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_5754 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
+	METHOD method_5873 reset ()V
 	METHOD write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf

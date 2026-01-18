@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_471 com/boehmod/blockfront/cloud/client/ClientCloudRequester
+CLASS com/boehmod/blockfront/unnamed/BF_471 com/boehmod/blockfront/cloud/common/CloudRequestManager
 	FIELD field_2104 featureFlagManager Lcom/boehmod/blockfront/unnamed/BF_414;
 	FIELD field_2105 queue Ljava/util/Deque;
 	FIELD field_2106 manager Lcom/boehmod/blockfront/unnamed/BF_445;
@@ -11,8 +11,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_471 com/boehmod/blockfront/cloud/client/
 	METHOD method_1684 push (Lcom/boehmod/bflib/cloud/common/RequestType;Ljava/util/UUID;)V
 		ARG 1 requestType
 		ARG 2 playerUUID
+	METHOD method_1685 removeUuid (Ljava/util/UUID;)V
+		ARG 1 uuid
 	METHOD method_1687 updateRequests ()V
 	METHOD method_1688 updateRequestsNow ()V
+	METHOD method_5854 pollQueue (I)V
 	CLASS BF_472 Entry
 		FIELD field_2111 requestType Lcom/boehmod/bflib/cloud/common/RequestType;
 		FIELD field_2112 playerUUID Ljava/util/UUID;

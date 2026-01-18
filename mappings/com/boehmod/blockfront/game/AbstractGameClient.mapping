@@ -1,9 +1,12 @@
 CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/AbstractGameClient
+	FIELD field_2855 minimapWaypoints Ljava/util/List;
 	FIELD field_2856 radioPoints Ljava/util/List;
 	FIELD field_2858 scoreboard Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
+	FIELD field_2859 stageTimer Lcom/boehmod/blockfront/unnamed/BF_687;
 	FIELD field_2861 summaryManager Lcom/boehmod/blockfront/unnamed/BF_890;
 	FIELD field_2862 killMessage Lcom/boehmod/blockfront/unnamed/BF_922;
 	FIELD field_2863 scoreboardHeader Lcom/boehmod/blockfront/unnamed/BF_933;
+	FIELD field_2864 tips Ljava/util/List;
 	FIELD field_2865 killFeedEntries Ljava/util/List;
 	FIELD field_2866 gameElements Ljava/util/List;
 	FIELD field_2867 popups Ljava/util/List;
@@ -12,30 +15,125 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	FIELD field_2870 PLAYER_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2871 FRIENDS_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2874 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_273;)V
+		ARG 1 manager
+		ARG 2 game
+		ARG 3 dataHandler
+	METHOD method_2676 getGame ()Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD method_2677 getScoreboard ()Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
 	METHOD method_2679 getSummaryManager ()Lcom/boehmod/blockfront/unnamed/BF_890;
 	METHOD method_2680 getKillMessage ()Lcom/boehmod/blockfront/unnamed/BF_922;
 	METHOD method_2683 getSummaryScreens (Lcom/boehmod/blockfront/unnamed/BF_677;Z)Ljava/util/Collection;
 		ARG 1 game
 		ARG 2 onlyVote
+	METHOD method_2684 renderDebug (Lcom/boehmod/blockfront/unnamed/BF_682;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/culling/Frustum;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;ZFF)V
+		ARG 1 playerManager
+		ARG 2 minecraft
+		ARG 3 level
+		ARG 4 player
+		ARG 5 renderEvent
+		ARG 6 bufferSource
+		ARG 7 poseStack
+		ARG 8 frustum
+		ARG 9 font
+		ARG 10 graphics
+		ARG 11 camera
+		ARG 12 renderGameInfo
 	METHOD method_2687 addRadioPoint (Lcom/boehmod/blockfront/unnamed/BF_761;)V
 		ARG 1 point
 	METHOD method_2689 addPopup (Lcom/boehmod/blockfront/unnamed/BF_921;)V
 		ARG 1 popup
 	METHOD method_2690 setKillMessage (Lcom/boehmod/blockfront/unnamed/BF_922;)V
 		ARG 1 killMessage
-	METHOD method_2694 renderDebugInfo (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;)V
+	METHOD method_2691 renderTabListEntries (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_476;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_686;IILjava/util/Set;)V
+		ARG 1 poseStack
+		ARG 2 minecraft
+		ARG 3 manager
+		ARG 4 player
+		ARG 5 dataHandler
+		ARG 6 cloudProfile
+		ARG 7 graphics
+		ARG 8 font
+		ARG 9 team
+		ARG 12 players
+	METHOD method_2693 renderWaitingText (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Ljava/util/Set;I)V
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 font
+		ARG 4 players
+		ARG 5 midX
+	METHOD method_2694 renderGameDebugInfo (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;)V
 		ARG 1 poseStack
 		ARG 2 graphics
 		ARG 3 font
 		ARG 4 camera
+	METHOD method_2697 (Lnet/minecraft/client/Camera;Lnet/minecraft/client/player/LocalPlayer;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_761;)V
+		ARG 5 radioPoint
+	METHOD method_2699 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_271;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Ljava/util/Set;IIIIFF)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 player
+		ARG 4 level
+		ARG 5 playerData
+		ARG 6 graphics
+		ARG 7 font
+		ARG 8 poseStack
+		ARG 9 bufferSource
+		ARG 10 players
+		ARG 11 width
+		ARG 12 height
+		ARG 13 midX
+		ARG 14 midY
+		ARG 15 renderTime
+		ARG 16 delta
 	METHOD method_2700 addKillFeedEntry (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_774;)V
 		ARG 1 minecraft
 		ARG 2 entry
+	METHOD method_2702 update (Lnet/minecraft/client/Minecraft;Ljava/util/Random;Lnet/minecraft/util/RandomSource;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_271;Ljava/util/Set;FLnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 minecraft
+		ARG 2 random
+		ARG 3 randomSource
+		ARG 4 player
+		ARG 5 level
+		ARG 6 manager
+		ARG 7 playerData
+		ARG 8 players
+	METHOD method_2703 getMinimapWaypoints (Lnet/minecraft/client/Minecraft;Ljava/util/Set;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)Ljava/util/List;
+		ARG 1 minecraft
+		ARG 2 players
+		ARG 3 player
+		ARG 4 level
+	METHOD method_2706 updateMapEnvironment (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_606;Ljava/util/Random;Lnet/minecraft/util/RandomSource;FLnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 minecraft
+		ARG 2 player
+		ARG 3 level
+		ARG 4 manager
+		ARG 5 random
+		ARG 6 randomSource
+		ARG 7 delta
+		ARG 8 cameraPos
+		ARG 9 cameraBlockPos
 	METHOD method_2712 renderGameElements (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;IF)V
 	METHOD method_2716 getSummaryScreens (Z)Ljava/util/Collection;
 	METHOD method_2721 getScoreStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
-	METHOD method_2723 getMinimapWaypoints (Lnet/minecraft/client/Minecraft;Ljava/util/Set;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)Ljava/util/List;
+	METHOD method_2722 renderSpecific (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_271;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Ljava/util/Set;IIIIFF)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 player
+		ARG 4 level
+		ARG 5 playerData
+		ARG 6 graphics
+		ARG 7 font
+		ARG 8 poseStack
+		ARG 9 bufferSource
+		ARG 10 players
+		ARG 11 width
+		ARG 12 height
+		ARG 13 midX
+		ARG 14 midY
+		ARG 15 renderTime
+		ARG 16 delta
+	METHOD method_2723 getSpecificMinimapWaypoints (Lnet/minecraft/client/Minecraft;Ljava/util/Set;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)Ljava/util/List;
 		ARG 1 minecraft
 		ARG 2 players
 		ARG 3 player

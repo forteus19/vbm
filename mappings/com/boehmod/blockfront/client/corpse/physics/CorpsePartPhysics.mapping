@@ -1,4 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_4 com/boehmod/blockfront/client/corpse/physics/CorpsePartPhysics
 	FIELD field_34 body Lcom/boehmod/blockfront/client/corpse/physics/d;
 	FIELD field_35 camera Lcom/boehmod/blockfront/unnamed/BF_642;
+	FIELD field_46 corpseParticles Ljava/util/List;
+	METHOD method_32 getBody ()Lcom/boehmod/blockfront/client/corpse/physics/d;
+	METHOD method_44 applyFluidDrag (Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 level
 	METHOD method_45 clear ()V
+	METHOD method_46 clearCamera ()V

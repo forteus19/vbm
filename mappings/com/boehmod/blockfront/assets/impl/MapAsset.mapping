@@ -27,3 +27,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	METHOD method_3878 setMusicSet (Ljava/lang/String;)V
 		ARG 1 musicSet
 	METHOD method_5657 getEnvironments ()Ljava/util/Map;
+	METHOD method_5872 reset ()V

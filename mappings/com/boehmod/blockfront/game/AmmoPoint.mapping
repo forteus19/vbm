@@ -1,4 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_691 com/boehmod/blockfront/game/AmmoPoint
+	METHOD method_3003 newFromFDS (Ljava/lang/String;Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_691;
+		ARG 0 tagName
+		ARG 1 root
 	METHOD method_3004 update (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
 		ARG 1 level
 		ARG 2 players

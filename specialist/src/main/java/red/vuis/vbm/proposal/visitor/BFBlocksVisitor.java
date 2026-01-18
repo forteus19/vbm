@@ -37,6 +37,7 @@ public class BFBlocksVisitor extends ClassInitVisitor {
 
     @Override
     protected void analyzeClInit(MethodNode clInit, Frame<SourceValue>[] frames) {
+        System.out.println(className);
         switch (className) {
             case BF_BLOCKS -> {
                 clInitBlocks = clInit;

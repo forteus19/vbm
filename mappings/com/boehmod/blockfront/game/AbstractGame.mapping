@@ -12,10 +12,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2832 type Ljava/lang/String;
 	FIELD field_2833 gameEvents Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_2834 dataHandler Lcom/boehmod/blockfront/common/player/c;
+	FIELD field_2835 isPaused Z
 	FIELD field_2836 playerStatData Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
 	FIELD field_2837 hasPlayerLimit Z
 	FIELD field_2838 shouldRestart Z
 	FIELD field_2840 FIRST_BLOOD_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_2841 SOUNDBOARD_FAIL_COUNT_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_2842 MM_RESTARTING_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2843 displayName Lnet/minecraft/network/chat/Component;
 	FIELD field_2847 soundboardCooldown I
 	FIELD field_2848 SWITCHTEAMS_ERROR_NOTEAM Lnet/minecraft/network/chat/Component;
@@ -23,6 +26,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2850 SWITCHTEAMS_ERROR_POSTGAME Lnet/minecraft/network/chat/Component;
 	FIELD field_2851 GAMES_TP_FAIL Lnet/minecraft/network/chat/Component;
 	FIELD field_2852 GAMES_LOBBY_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_2853 firstBloodPlayer Ljava/util/UUID;
 	FIELD field_2854 uuid Ljava/util/UUID;
 	FIELD field_6713 mapEnvironment Lcom/boehmod/blockfront/unnamed/BF_1182;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
@@ -33,8 +37,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 3 typeDisplayName
 	METHOD compareTo (Ljava/lang/Object;)I
 		ARG 1 other
+	METHOD method_2582 setPaused (Z)V
+		ARG 1 paused
 	METHOD method_2583 getName ()Ljava/lang/String;
 	METHOD method_2584 getType ()Ljava/lang/String;
+	METHOD method_2585 getFirearmDamageMultiplier ()F
+	METHOD method_2586 getFireRateMultiplier ()F
+	METHOD method_2587 getVictoryAchievement ()Lcom/boehmod/bflib/cloud/common/player/achievement/CloudAchievement;
 	METHOD method_2588 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
 	METHOD method_2589 createPlayerManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
 	METHOD method_2590 getCombatManager ()Lcom/boehmod/blockfront/unnamed/BF_684;
@@ -46,6 +55,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2597 createFirstStage ()Lcom/boehmod/blockfront/unnamed/BF_938;
 	METHOD method_2598 getStageManager ()Lcom/boehmod/blockfront/unnamed/BF_939;
 	METHOD method_2599 getPrimaryStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
+	METHOD method_2600 incrementTrophies (Lcom/boehmod/blockfront/unnamed/BF_445;ILcom/boehmod/blockfront/unnamed/BF_941;ZLjava/util/Set;)V
+		ARG 1 manager
+		ARG 2 numTopPlayers
+		ARG 3 topStat
+		ARG 5 players
+	METHOD method_2601 incrementTrophies (Lcom/boehmod/blockfront/unnamed/BF_445;ILjava/lang/String;ZLjava/util/Set;)V
+		ARG 1 manager
+		ARG 5 players
 	METHOD method_2602 requestSupplyDrops (Lcom/boehmod/blockfront/unnamed/BF_445;ILjava/util/Set;)V
 		ARG 1 manager
 		ARG 2 randomMax
@@ -58,11 +75,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2604 sendBattleReport (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_686;Lcom/boehmod/blockfront/unnamed/BF_941;)V
 		ARG 1 manager
 		ARG 2 team
+		ARG 3 topStat
 	METHOD method_2605 playerJoinTeam (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)Z
 		ARG 1 manager
 		ARG 2 joinType
 		ARG 3 level
 		ARG 4 player
+	METHOD method_2606 onPlayerSoundboard (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_826;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Ljava/util/Set;)Z
+		ARG 1 manager
+		ARG 2 game
+		ARG 3 player
+		ARG 4 uuid
+		ARG 5 message
+		ARG 6 players
 	METHOD method_2607 update (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 manager
 		ARG 2 level
@@ -78,6 +103,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 manager
 		ARG 2 level
 		ARG 3 otherGame
+	METHOD method_2611 removePlayer (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
 	METHOD method_2612 playerSwitchTeamInternal (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
 		ARG 1 manager
 		ARG 2 level
@@ -90,49 +119,97 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 4 uuid
 		ARG 5 matchClass
 		ARG 6 classLevel
+	METHOD method_2614 onFirstBlood (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
+		ARG 1 manager
+		ARG 2 player
+		ARG 3 uuid
+	METHOD method_2615 shouldAllowPlayerMessage (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/Component;)Z
+		ARG 1 manager
+		ARG 2 player
+		ARG 3 message
+	METHOD method_2616 onPlayerMatchFinished (Lcom/boehmod/blockfront/unnamed/BF_445;ZLjava/util/UUID;Lnet/minecraft/network/chat/Component;Z)V
+		ARG 1 manager
+		ARG 2 awardAchievement
+		ARG 3 uuid
+		ARG 4 subtitle
+		ARG 5 victory
+	METHOD method_2617 (Lcom/boehmod/blockfront/unnamed/BF_445;ZLnet/minecraft/network/chat/Component;Ljava/util/UUID;Ljava/lang/Boolean;)V
+		ARG 4 uuid
 	METHOD method_2618 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_457;)V
 		ARG 1 mapInstance
-	METHOD method_2619 createClientHandler (Lcom/boehmod/blockfront/unnamed/BF_606;)Lcom/boehmod/blockfront/unnamed/BF_679;
+	METHOD method_2619 createGameClient (Lcom/boehmod/blockfront/unnamed/BF_606;)Lcom/boehmod/blockfront/unnamed/BF_679;
 		ARG 1 manager
 	METHOD method_2621 setStatus (Lcom/boehmod/blockfront/unnamed/BF_685;)V
 		ARG 1 status
+	METHOD method_2622 addGameEvent (Lcom/boehmod/blockfront/unnamed/BF_830;)V
+		ARG 1 gameEvent
 	METHOD method_2623 setMapInstance (Lcom/boehmod/blockfront/unnamed/BF_927;)V
 		ARG 1 mapAsset
+	METHOD method_2624 writeAll (Lio/netty/buffer/ByteBuf;Z)V
+		ARG 1 buf
+		ARG 2 writeMap
 	METHOD method_2628 hasMinimumPlayers (Ljava/util/Set;)Z
 		ARG 1 players
 	METHOD method_2629 getPlayerStatData (Ljava/util/UUID;)Lcom/boehmod/bflib/fds/tag/FDSTagCompound;
 		ARG 1 uuid
+	METHOD method_2630 shouldShowPlayerMessage (Ljava/util/UUID;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;ZZ)Z
+	METHOD method_2631 finishMatch (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;ZLcom/boehmod/blockfront/unnamed/BF_756;Ljava/util/Set;)V
+		ARG 1 level
+		ARG 2 manager
+		ARG 3 topStat
+		ARG 5 winningTeam
+		ARG 6 players
 	METHOD method_2632 updateIdleStatus (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)Z
 		ARG 1 level
 		ARG 2 playerUUIDs
 	METHOD method_2634 getSwitchTeamMessage (Lnet/minecraft/world/entity/player/Player;II)Lnet/minecraft/network/chat/Component;
 	METHOD method_2635 hasPlayerLimit ()Z
+	METHOD method_2636 isMatchSuccess ()Z
+	METHOD method_2637 shouldAnnounceRageQuits ()Z
+	METHOD method_2639 isPaused ()Z
 	METHOD method_2640 entityBoundSize ()I
+	METHOD method_2641 shouldShowDeadMessages ()Z
 	METHOD method_2642 getMinimumPlayers ()I
 	METHOD method_2643 canPlayersSwapItems ()Z
 	METHOD method_2644 getPlayerManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
 	METHOD method_2645 getAxisDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
-	METHOD method_2648 init (Lnet/minecraft/server/level/ServerLevel;)V
+	METHOD method_2646 writePlayerStatData (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_2648 reset (Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 level
+	METHOD method_2649 shouldUseStamina (Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 player
 	METHOD method_2650 clearPlayerStatData ()V
 	METHOD method_2651 togglePlayerLimit ()V
 	METHOD method_2652 readAllFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
 	METHOD method_2653 stopMatchMaking (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
+	METHOD method_2654 readPlayerStatData (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
 	METHOD method_2655 removePlayerStatData (Ljava/util/UUID;)V
 		ARG 1 uuid
+	METHOD method_2656 shouldRespawnAutomatically (Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 player
 	METHOD method_2657 writeAllFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
+	METHOD method_2659 writeForGamePacket (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_2660 specificReset (Lnet/minecraft/world/level/Level;)V
+		ARG 1 level
 	METHOD method_2661 getBannedClasses ()Ljava/util/Set;
 	METHOD method_2662 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
+	METHOD method_2664 readAll (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
 	METHOD method_2665 getErrorTypes ()Ljava/util/Set;
 	METHOD method_2666 getUUID ()Ljava/util/UUID;
 	METHOD method_2667 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
 	METHOD method_2669 writeSpecificFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
 	METHOD method_2670 readSpecificFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
 	METHOD method_2671 getErrorMessages (Ljava/util/List;)V
 		ARG 1 messages
 	METHOD method_2672 setName (Ljava/lang/String;)V
@@ -141,6 +218,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2674 setType (Ljava/lang/String;)V
 		ARG 1 type
 	METHOD method_5652 getMapEnvironment ()Lcom/boehmod/blockfront/unnamed/BF_1182;
+	METHOD method_5653 refreshMapEnvironment ()V
 	METHOD read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD write (Lio/netty/buffer/ByteBuf;)V

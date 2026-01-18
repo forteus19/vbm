@@ -1,0 +1,19 @@
+CLASS com/boehmod/blockfront/unnamed/BF_147 com/boehmod/blockfront/client/render/menu/MenuParticle
+	METHOD method_612 getType ()Lcom/boehmod/blockfront/unnamed/BF_147$BF_148;
+	METHOD method_613 shouldRemove (F)Z
+		ARG 1 renderTime
+	METHOD method_614 renderBelow (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;FF)V
+		ARG 1 minecraft
+		ARG 2 graphics
+		ARG 3 poseStack
+		ARG 4 renderTime
+		ARG 5 delta
+	METHOD method_615 renderAbove (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;FF)V
+		ARG 1 minecraft
+		ARG 2 graphics
+		ARG 3 poseStack
+		ARG 4 renderTime
+		ARG 5 delta
+	METHOD method_616 init (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	CLASS BF_148 Type

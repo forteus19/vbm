@@ -1,3 +1,3 @@
-CLASS com/boehmod/blockfront/unnamed/BF_937 com/boehmod/blockfront/game/ITimedStage
+CLASS com/boehmod/blockfront/unnamed/BF_937 com/boehmod/blockfront/game/TimedStage
 	METHOD method_3904 getStageTimer (Lcom/boehmod/blockfront/unnamed/BF_677;)Lcom/boehmod/blockfront/unnamed/BF_687;
 		ARG 1 game

@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_477 com/boehmod/blockfront/cloud/CloudItemCache
+CLASS com/boehmod/blockfront/unnamed/BF_477 com/boehmod/blockfront/common/item/ItemSkinIndex
 	FIELD field_2125 ID_TO_ITEM_STACK Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	FIELD field_2126 ID_TO_ITEM Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
 	METHOD method_1721 getItem (Lcom/boehmod/bflib/cloud/common/item/CloudItem;)Lnet/minecraft/world/item/Item;

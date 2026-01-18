@@ -4,7 +4,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1060 com/boehmod/blockfront/util/Seriali
 		ARG 0 buf
 	METHOD method_4517 readBlockBulletCollisions (Lnet/minecraft/network/FriendlyByteBuf;)Lit/unimi/dsi/fastutil/objects/ObjectList;
 		ARG 0 buf
-	METHOD method_4518 writePlayerGameData (Lnet/minecraft/network/FriendlyByteBuf;Lcom/boehmod/blockfront/common/player/b;)V
+	METHOD method_4518 writePlayerData (Lnet/minecraft/network/FriendlyByteBuf;Lcom/boehmod/blockfront/common/player/b;)V
 		ARG 0 buf
 		ARG 1 data
 	METHOD method_4519 writeBlockBulletCollisions (Lnet/minecraft/network/FriendlyByteBuf;Ljava/util/List;)V

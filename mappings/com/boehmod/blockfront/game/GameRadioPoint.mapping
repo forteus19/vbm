@@ -1,3 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_761 com/boehmod/blockfront/game/GameRadioPoint
 	FIELD field_3269 duration I
 	FIELD field_3270 texture Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_3179 renderDebug (Lnet/minecraft/client/Camera;Lnet/minecraft/client/player/LocalPlayer;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_682;)V

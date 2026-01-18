@@ -1,4 +1,17 @@
 CLASS com/boehmod/blockfront/unnamed/BF_775 com/boehmod/blockfront/common/match/kill/AbstractKillSection
+	METHOD method_3220 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_774;F)V
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 font
+		ARG 4 game
+		ARG 5 entry
+		ARG 6 delta
+	METHOD method_3221 update (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_774;)V
+		ARG 1 minecraft
+		ARG 2 game
+		ARG 3 entry
+	METHOD method_3222 getWidth (Lnet/minecraft/client/gui/Font;)I
+		ARG 1 font
 	METHOD method_3224 read (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
 		ARG 1 buf
 	METHOD method_3225 write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V

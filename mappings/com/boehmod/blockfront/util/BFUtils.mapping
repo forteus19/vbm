@@ -20,6 +20,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 chatGraphic
 		ARG 1 player
 		ARG 2 message
+	METHOD method_2867 getFormattedPlayerMessage (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/common/player/b;)Lnet/minecraft/network/chat/Component;
+		ARG 0 dataHandler
+		ARG 1 game
+		ARG 2 player
+		ARG 3 uuid
+		ARG 4 playerName
+		ARG 5 message
 	METHOD method_2869 sortBySkillLevel (Lcom/boehmod/blockfront/common/player/c;Ljava/util/Set;)Ljava/util/Set;
 		ARG 0 dataHandler
 		ARG 1 players
@@ -48,6 +55,25 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 3 attacking
 	METHOD method_2879 (Lcom/boehmod/blockfront/unnamed/BF_439;Ljava/util/UUID;)V
 		ARG 1 uuid
+	METHOD method_2880 handlePlayerRageQuit (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 manager
+		ARG 1 dataHandler
+		ARG 2 game
+		ARG 3 players
+		ARG 4 player
+	METHOD method_2881 handleGamePlayerChat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+		ARG 0 manager
+		ARG 1 dataHandler
+		ARG 2 game
+		ARG 3 level
+		ARG 4 player
+		ARG 5 message
+		ARG 6 uuid
+	METHOD method_2882 initPlayerForGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 manager
+		ARG 1 dataHandler
+		ARG 2 level
+		ARG 3 player
 	METHOD method_2883 sendSequencePacket (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_597;Lcom/boehmod/blockfront/unnamed/BF_603;Ljava/util/Set;)V
 		ARG 0 manager
 		ARG 1 sequence
@@ -87,10 +113,20 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 2 player
 		ARG 3 stat
 		ARG 4 change
+	METHOD method_2891 handlePostGameKarma (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
+		ARG 0 manager
+		ARG 1 game
+		ARG 2 message
+		ARG 3 player
+		ARG 4 uuid
 	METHOD method_2892 awardAchievement (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/util/UUID;Lcom/boehmod/bflib/cloud/common/player/achievement/CloudAchievement;)V
 		ARG 0 manager
 		ARG 1 uuid
 		ARG 2 achievement
+	METHOD method_2893 isSameTeam (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/util/UUID;Ljava/util/UUID;)Z
+		ARG 0 manager
+		ARG 1 uuid1
+		ARG 2 uuid2
 	METHOD method_2894 filterMessage (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/lang/String;Lcom/boehmod/blockfront/common/player/b;Lcom/boehmod/blockfront/unnamed/BF_476;)Z
 		ARG 0 manager
 		ARG 1 level
@@ -243,6 +279,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 2 source
 		ARG 3 volume
 		ARG 4 position
+	METHOD method_2936 isKarmaMessage (Lnet/minecraft/network/chat/Component;)Z
+		ARG 0 message
 	METHOD method_2937 (Lnet/minecraft/network/chat/Component;Ljava/lang/String;Ljava/util/UUID;)V
 		ARG 2 uuid
 	METHOD method_2938 (Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
@@ -272,7 +310,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 level
 		ARG 1 player
 		ARG 2 loadout
-		ARG 3 clear
+		ARG 3 keepUnset
 	METHOD method_2953 sendPopupMessage (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_921;)V
 		ARG 0 player
 		ARG 1 popup

@@ -1,6 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen/BFMenuScreen
 	FIELD field_1044 splashText Ljava/lang/String;
 	FIELD field_1045 RENDERERS Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_1046 particles Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_1049 RETURN_ICON Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1050 LOGO Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1051 BACKSHADOW Lnet/minecraft/resources/ResourceLocation;
@@ -16,7 +17,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen
 	FIELD field_1062 BACKSHADOW_WHITE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1063 CORNERSHADOW Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1064 SPLASHES Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_767 addParticle (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_147;)V
+		ARG 1 minecraft
+		ARG 2 particle
 	METHOD method_770 openUrl (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
 		ARG 0 minecraft
 		ARG 1 url
+	METHOD method_772 getMenuParticles ()Ljava/util/List;
 	METHOD method_773 getSplashText ()Ljava/lang/String;

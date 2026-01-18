@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_557
+CLASS com/boehmod/blockfront/unnamed/BF_557 com/boehmod/blockfront/game/GameHolder
 	METHOD method_1932 getGame ()Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD method_1933 setGame (Lcom/boehmod/blockfront/unnamed/BF_677;)V
 		ARG 1 game

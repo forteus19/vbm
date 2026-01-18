@@ -1,13 +1,29 @@
 CLASS com/boehmod/blockfront/unnamed/BF_688 com/boehmod/blockfront/game/GameMatchStreakTracker
 	FIELD field_2946 playerStreaks Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+	FIELD field_2947 DEFAULT_STREAK I
 	FIELD field_2948 streak I
 	FIELD field_2949 streakLeader Ljava/util/UUID;
 	METHOD method_2853 merge (Lcom/boehmod/blockfront/unnamed/BF_688;)V
 		ARG 1 otherTracker
+	METHOD method_2854 getPlayerStreak (Ljava/util/UUID;)I
+		ARG 1 uuid
+	METHOD method_2855 (Ljava/util/UUID;Ljava/lang/Integer;)Ljava/lang/Integer;
+		ARG 0 uuid
+		ARG 1 streak
 	METHOD method_2856 getStreak ()I
 	METHOD method_2857 reset ()V
 	METHOD method_2858 incrementStreak ()V
 	METHOD method_2859 updateStreakLeader ()V
-	METHOD method_2860 removePlayer (Ljava/util/UUID;)V
+	METHOD method_2860 removePlayerStreak (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_2861 addPlayerStreak (Ljava/util/UUID;)V
 		ARG 1 uuid
 	METHOD method_2862 getStreakLeader ()Ljava/util/UUID;
+	METHOD read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root
+	METHOD write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
+		ARG 1 root

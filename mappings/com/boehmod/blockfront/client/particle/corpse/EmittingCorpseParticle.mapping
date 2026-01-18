@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_7 com/boehmod/blockfront/client/particle/corpse/EmittingCorpseParticle
+	FIELD field_56 maxTicks I
+	FIELD field_57 spawnInterval I
+	FIELD field_58 instances I
+	FIELD field_59 ticks I
+	FIELD field_60 spawnTimer I
+	FIELD field_61 particleType Lnet/minecraft/core/particles/SimpleParticleType;
+	METHOD <init> (IIILnet/minecraft/core/particles/SimpleParticleType;)V
+		ARG 1 maxTicks
+		ARG 2 spawnInterval
+		ARG 3 instances
+		ARG 4 particleType

@@ -1,2 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1184 com/boehmod/blockfront/common/gun/GunCameraConfigs
-	FIELD field_6758 SMG Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6758 LMG Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6759 SMG Lcom/boehmod/blockfront/unnamed/BF_1183;

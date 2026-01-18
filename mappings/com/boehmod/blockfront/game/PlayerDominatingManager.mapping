@@ -1,5 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_767 com/boehmod/blockfront/game/PlayerDominatingManager
 	FIELD field_3288 entries Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+	METHOD method_3196 handleKill (Lcom/boehmod/blockfront/common/player/c;Ljava/util/UUID;Ljava/util/UUID;Ljava/util/Set;)V
+		ARG 1 dataHandler
+		ARG 2 killer
+		ARG 3 killed
+		ARG 4 players
 	METHOD method_3198 playerIsDominated (Ljava/util/UUID;Ljava/util/UUID;)Z
 		ARG 1 dominated
 		ARG 2 dominator

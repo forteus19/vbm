@@ -1,3 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_260 com/boehmod/blockfront/client/screen/prompt/confirm/BFConfirmPromptScreen
+	FIELD field_1576 callback Lcom/boehmod/blockfront/unnamed/BF_245;
 	FIELD field_1577 MESSAGE_NO Lnet/minecraft/network/chat/Component;
 	FIELD field_1578 MESSAGE_YES Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_245;)V
+		ARG 3 callback

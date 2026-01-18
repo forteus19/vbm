@@ -34,6 +34,7 @@ public abstract class ClassInitVisitor extends ProposalVisitor {
         super.visitEnd();
         if (clInit != null) {
             analyzeClInit(clInit, VbmUtils.getMethodFrames(className, clInit));
+            clInit = null;
         }
     }
 

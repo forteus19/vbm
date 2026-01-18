@@ -1,4 +1,14 @@
 CLASS com/boehmod/blockfront/unnamed/BF_901 com/boehmod/blockfront/common/gun/GunSpreadConfigs
 	FIELD field_3604 PISTOL Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_3605 REVOLVER Lcom/boehmod/blockfront/unnamed/BF_900;
 	FIELD field_3606 RIFLE Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_3607 LIGHT_RIFLE Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_3608 LMG_FAST Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_3609 SMG Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_3610 LMG_SLOW Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_3611 HMG Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_3612 ROCKET Lcom/boehmod/blockfront/unnamed/BF_900;
 	FIELD field_3613 ATR Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_3614 SHOTGUN Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_3615 FLAMETHROWER Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_6807 MG_42 Lcom/boehmod/blockfront/unnamed/BF_900;

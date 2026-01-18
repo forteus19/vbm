@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_8 com/boehmod/blockfront/client/particle/corpse/CorpseParticle
+	METHOD method_51 update (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_4;Lorg/joml/Vector3dc;)Z
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 level
+		ARG 4 partPhysics
+		ARG 5 position

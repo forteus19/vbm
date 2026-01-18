@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/common/net/PacketAppliers
+CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/client/net/BFClientPacketHandlers
 	FIELD field_2796 SCREENSHOT_REQUEST_ERROR Lnet/minecraft/network/chat/Component;
 	METHOD method_2525 screenshotDisplay (Lcom/boehmod/blockfront/unnamed/BF_453;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 	METHOD method_2526 screenshotRequest (Lcom/boehmod/blockfront/unnamed/BF_454;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V

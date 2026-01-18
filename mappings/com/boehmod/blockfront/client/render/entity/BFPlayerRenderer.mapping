@@ -1,2 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_382 com/boehmod/blockfront/client/render/entity/BFPlayerRenderer
 	FIELD field_1789 renderLayer Lcom/boehmod/blockfront/unnamed/BF_359;
+	METHOD getTextureLocation (Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 1 entity

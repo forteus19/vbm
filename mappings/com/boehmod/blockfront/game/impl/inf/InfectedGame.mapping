@@ -18,3 +18,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_878 com/boehmod/blockfront/game/impl/inf
 	METHOD method_3646 advanceRound (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
 		ARG 1 level
 		ARG 2 players
+	METHOD method_3648 refreshShopItems ()V

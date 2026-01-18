@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_120
+	METHOD method_530 updateParticles (Lnet/minecraft/client/Minecraft;Lcom/boehmod/bflib/cloud/common/CloudRegistry;)V
+		ARG 1 minecraft
+		ARG 2 cloudRegistry

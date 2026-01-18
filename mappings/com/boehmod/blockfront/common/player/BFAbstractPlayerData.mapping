@@ -26,6 +26,7 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 		ARG 4 game
 	METHOD method_845 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
+	METHOD method_847 reset ()V
 	METHOD method_848 isOutOfGame ()Z
 	METHOD method_850 isMuted ()Z
 	METHOD method_851 getRespawnTimer ()I
