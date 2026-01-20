@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_155 com/boehmod/blockfront/client/screen/match/summary/MatchSummaryChatScreen
+	FIELD field_803 parent Lcom/boehmod/blockfront/unnamed/BF_153;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_153;)V
+		ARG 1 parent
