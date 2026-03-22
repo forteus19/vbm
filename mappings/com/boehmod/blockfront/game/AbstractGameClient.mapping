@@ -67,8 +67,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 2 graphics
 		ARG 3 font
 		ARG 4 camera
-	METHOD method_2697 (Lnet/minecraft/client/Camera;Lnet/minecraft/client/player/LocalPlayer;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_761;)V
-		ARG 5 radioPoint
 	METHOD method_2699 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_271;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Ljava/util/Set;IIIIFF)V
 		ARG 1 minecraft
 		ARG 2 manager

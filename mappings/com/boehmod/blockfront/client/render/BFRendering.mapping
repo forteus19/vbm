@@ -9,8 +9,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 	FIELD field_229 GUI_LIGHTS_1 Lorg/joml/Vector3f;
 	FIELD field_230 GUI_LIGHTS_2 Lorg/joml/Vector3f;
 	FIELD field_231 BYTE_TO_FLOAT_RATIO F
-	FIELD field_234 ENTITY_LIGHTS_1 Lorg/joml/Vector3f;
-	FIELD field_235 ENTITY_LIGHTS_2 Lorg/joml/Vector3f;
 	FIELD field_236 PARTY_LEADER_COMPONENT Lnet/minecraft/network/chat/Component;
 	FIELD field_237 PARTY_LEADER_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_238 MESSAGE_USERNAME Lnet/minecraft/network/chat/Component;
@@ -702,14 +700,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 vec2
 		ARG 4 thickness
 		ARG 5 color
-	METHOD method_275 billboardLine (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;FIF)V
-		ARG 0 camera
-		ARG 1 poseStack
-		ARG 2 vec1
-		ARG 3 vec2
-		ARG 4 thickness
-		ARG 5 color
-		ARG 6 alpha
 	METHOD method_276 backgroundBlur (Lnet/minecraft/client/Minecraft;FI)V
 		ARG 0 minecraft
 		ARG 1 delta
