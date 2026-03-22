@@ -7,7 +7,7 @@ plugins {
     id("de.undercouch.download") version "5.6.0"
 }
 
-val bfVersion = "0.8.0.3b"
+val bfVersion = "0.8.0.4b"
 
 group = "red.vuis.vbm"
 version = "${bfVersion}-SNAPSHOT"
@@ -17,7 +17,7 @@ repositories {
     mavenCentral()
 }
 
-val bfDownloadUrl = "https://cdn.modrinth.com/data/hTexWmdS/versions/Ni7oFpEX/BlockFront-1.21.1-0.8.0.3b-RELEASE.jar"
+val bfDownloadUrl = "https://cdn.modrinth.com/data/hTexWmdS/versions/9c2dfQ1s/BlockFront-1.21.1-0.8.0.4b-RELEASE.jar"
 val intermediaryDownloadUrl = "https://raw.githubusercontent.com/forteus19/bf-intermediary/main/intermediary/${bfVersion}.tiny"
 
 val vbmBuildFile = layout.buildDirectory.file("vbm").get().asFile
