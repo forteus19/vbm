@@ -14,7 +14,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2834 dataHandler Lcom/boehmod/blockfront/common/player/c;
 	FIELD field_2835 isPaused Z
 	FIELD field_2836 playerStatData Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
-	FIELD field_2837 hasPlayerLimit Z
 	FIELD field_2838 shouldRestart Z
 	FIELD field_2840 FIRST_BLOOD_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2841 SOUNDBOARD_FAIL_COUNT_MESSAGE Lnet/minecraft/network/chat/Component;
@@ -163,7 +162,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 level
 		ARG 2 playerUUIDs
 	METHOD method_2634 getSwitchTeamMessage (Lnet/minecraft/world/entity/player/Player;II)Lnet/minecraft/network/chat/Component;
-	METHOD method_2635 hasPlayerLimit ()Z
 	METHOD method_2636 isMatchSuccess ()Z
 	METHOD method_2637 shouldAnnounceRageQuits ()Z
 	METHOD method_2639 isPaused ()Z
@@ -180,7 +178,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2649 shouldUseStamina (Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 player
 	METHOD method_2650 clearPlayerStatData ()V
-	METHOD method_2651 togglePlayerLimit ()V
 	METHOD method_2652 readAllFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
 	METHOD method_2653 stopMatchMaking (Lcom/boehmod/blockfront/unnamed/BF_445;)V
