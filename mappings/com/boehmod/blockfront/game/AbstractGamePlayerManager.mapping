@@ -87,8 +87,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 		ARG 1 uuid
 	METHOD method_2767 (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_686;)V
 		ARG 1 team
-	METHOD method_2768 (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_686;)Z
-		ARG 1 team
 	METHOD method_2769 getWinningTeam (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_687;)Lcom/boehmod/blockfront/unnamed/BF_756;
 		ARG 1 level
 		ARG 2 players
@@ -99,10 +97,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 		ARG 2 playerName
 		ARG 3 playerData
 		ARG 4 cloudData
-	METHOD method_2774 updateHealTime (Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_820;)V
-		ARG 1 player
-		ARG 2 playerId
-		ARG 3 game
 	METHOD method_2780 canPlayerDropItem (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)Z
 	METHOD method_2782 getMaxPlayers ()I
 	METHOD method_2783 isAcceptingPlayers ()Z

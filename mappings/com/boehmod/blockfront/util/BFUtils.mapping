@@ -416,8 +416,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 1 pos
 	METHOD method_2995 sendNoticeIcon (Ljava/util/Set;)V
 		ARG 0 players
-	METHOD method_2997 broadcastPlayerPing (Lnet/minecraft/server/level/ServerPlayer;)V
-		ARG 0 player
 	METHOD method_3000 clearInventory (Ljava/util/UUID;)V
 		ARG 0 player
 	METHOD method_5847 (Lcom/boehmod/blockfront/unnamed/BF_1119;Lnet/minecraft/server/level/ServerPlayer;)Z
