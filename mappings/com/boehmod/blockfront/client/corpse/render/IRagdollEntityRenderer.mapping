@@ -4,5 +4,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_16 com/boehmod/blockfront/client/corpse/
 		ARG 2 packetContext
 		ARG 3 player
 		ARG 4 corpseContext
-	METHOD method_123 getTextureLocation (Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_123 getCorpseTextureLocation (Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/resources/ResourceLocation;
 		ARG 1 entity
