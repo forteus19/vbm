@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1246 com/boehmod/blockfront/client/gui/reward/RewardRendererRegistry
+	FIELD field_7245 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_1245;
+	FIELD field_7246 REGISTERED Ljava/util/Map;
+	METHOD method_6134 get (Lcom/boehmod/bflib/cloud/common/reward/RewardType;)Lcom/boehmod/blockfront/unnamed/BF_1245;
+		ARG 0 reward
+	METHOD method_6135 register (Ljava/lang/Class;Lcom/boehmod/blockfront/unnamed/BF_1245;)V
+		ARG 0 clazz
+		ARG 1 renderer

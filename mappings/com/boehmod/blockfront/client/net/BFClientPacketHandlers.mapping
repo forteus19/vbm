@@ -107,3 +107,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/client/net/BF
 	METHOD method_5784 debugBox (Lcom/boehmod/blockfront/unnamed/BF_1190;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 		ARG 0 packet
 		ARG 1 context
+	METHOD method_6039 regularPing (Lcom/boehmod/blockfront/unnamed/BF_1231;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_6040 regularPingTrigger (Lcom/boehmod/blockfront/unnamed/BF_1233;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V

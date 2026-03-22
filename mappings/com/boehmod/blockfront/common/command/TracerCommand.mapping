@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1250 com/boehmod/blockfront/common/command/TracerCommand
+	METHOD method_6151 register (Lcom/mojang/brigadier/CommandDispatcher;Lnet/minecraft/commands/CommandBuildContext;)V
+		ARG 0 dispatcher
+		ARG 1 context

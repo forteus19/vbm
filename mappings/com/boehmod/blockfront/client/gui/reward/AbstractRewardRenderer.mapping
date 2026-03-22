@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1245 com/boehmod/blockfront/client/gui/reward/AbstractRewardRenderer
+	METHOD method_6131 getTooltip (Lcom/boehmod/bflib/cloud/common/reward/RewardType;)Lnet/minecraft/network/chat/Component;
+		ARG 1 reward
+	METHOD method_6132 render (Lcom/boehmod/bflib/cloud/common/reward/RewardType;Lnet/minecraft/client/gui/GuiGraphics;IIII)V
+		ARG 1 reward
+		ARG 2 graphics
+		ARG 3 x
+		ARG 4 y
+		ARG 5 width
+		ARG 6 height
+	METHOD method_6133 renderBackground (Lnet/minecraft/client/gui/GuiGraphics;IIIII)V
+		ARG 0 graphics
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 color

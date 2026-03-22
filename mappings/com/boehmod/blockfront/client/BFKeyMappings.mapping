@@ -8,6 +8,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1093 com/boehmod/blockfront/client/BFKey
 	FIELD field_4906 CALLOUT Lnet/minecraft/client/KeyMapping;
 	FIELD field_4907 VEHICLE_HORN Lnet/minecraft/client/KeyMapping;
 	FIELD field_4908 MATCH_CLASS_SELECTION Lnet/minecraft/client/KeyMapping;
+	FIELD field_7178 MATCH_PING Lnet/minecraft/client/KeyMapping;
 	METHOD method_5115 register (Lcom/boehmod/blockfront/unnamed/BF_1093$BF_1095;)Lcom/boehmod/blockfront/unnamed/BF_1093$BF_1095;
 	METHOD method_5116 register (Lnet/neoforged/neoforge/client/event/RegisterKeyMappingsEvent;)V
 		ARG 0 event
