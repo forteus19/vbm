@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_159 com/boehmod/blockfront/client/screen/intro/BFIntroScreen
+	METHOD method_655 getNextIntroScreen ()Lnet/minecraft/client/gui/screens/Screen;

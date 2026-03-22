@@ -1,11 +1,19 @@
 CLASS com/boehmod/blockfront/unnamed/BF_108 com/boehmod/blockfront/client/render/game/element/ClientGameElement
+	FIELD field_483 width I
+	METHOD <init> (I)V
+		ARG 1 width
 	METHOD method_489 update (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_679;Lnet/minecraft/client/player/LocalPlayer;)V
 		ARG 1 minecraft
 		ARG 2 game
 		ARG 3 playerManager
 		ARG 4 gameClient
 		ARG 5 player
+	METHOD method_490 getWidth (Lnet/minecraft/client/gui/Font;)I
+		ARG 1 font
 	METHOD method_491 render (Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;IIF)V
 		ARG 1 graphics
 		ARG 2 poseStack
 		ARG 3 font
+		ARG 4 x
+		ARG 5 y
+		ARG 6 delta
