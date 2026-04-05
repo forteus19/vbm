@@ -20,13 +20,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 0 chatGraphic
 		ARG 1 player
 		ARG 2 message
-	METHOD method_2867 getFormattedPlayerMessage (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/common/player/b;)Lnet/minecraft/network/chat/Component;
-		ARG 0 dataHandler
-		ARG 1 game
-		ARG 2 player
-		ARG 3 uuid
-		ARG 4 playerName
-		ARG 5 message
 	METHOD method_2869 sortBySkillLevel (Lcom/boehmod/blockfront/common/player/c;Ljava/util/Set;)Ljava/util/Set;
 		ARG 0 dataHandler
 		ARG 1 players
@@ -61,14 +54,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 2 game
 		ARG 3 players
 		ARG 4 player
-	METHOD method_2881 handleGamePlayerChat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
-		ARG 0 manager
-		ARG 1 dataHandler
-		ARG 2 game
-		ARG 3 level
-		ARG 4 player
-		ARG 5 message
-		ARG 6 uuid
 	METHOD method_2882 initPlayerForGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 0 manager
 		ARG 1 dataHandler
