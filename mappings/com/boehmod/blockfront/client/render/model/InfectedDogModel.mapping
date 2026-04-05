@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_226 com/boehmod/blockfront/client/render/model/InfectedDogModel
+	FIELD field_1383 head Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1384 realHead Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1385 body Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1386 rightHindLeg Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1387 leftHindLeg Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1388 rightFrontLeg Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1389 leftFrontLeg Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1390 tail Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1391 realTail Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1392 upperBody Lnet/minecraft/client/model/geom/ModelPart;
+	METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;)V
+		ARG 1 modelPart

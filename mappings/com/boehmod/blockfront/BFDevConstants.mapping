@@ -1,5 +1,5 @@
-CLASS com/boehmod/blockfront/unnamed/BF_88 com/boehmod/blockfront/BFConstants
+CLASS com/boehmod/blockfront/unnamed/BF_88 com/boehmod/blockfront/BFDevConstants
 	COMMENT A bunch of unknown constants that are probably used for debugging.
 	COMMENT
 	COMMENT It's impossible to know for sure what each field changes because of compiler inlining.
-	FIELD field_414 DEV_CLOUD_ADDRESS Ljava/lang/String;
+	FIELD field_414 CLOUD_ADDRESS Ljava/lang/String;

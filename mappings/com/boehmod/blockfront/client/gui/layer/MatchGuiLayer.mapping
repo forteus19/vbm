@@ -1,5 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_112 com/boehmod/blockfront/client/gui/layer/MatchGuiLayer
 	FIELD field_487 HEALTH_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_516 heldAmmoLoaded I
+	FIELD field_517 prevHeldAmmoLoaded I
+	FIELD field_518 heldAmmo I
 	FIELD field_6355 HEALTH_BAR_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_6997 HEALTH_VEHICLE_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	METHOD method_494 renderNationIcon (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_929;II)V

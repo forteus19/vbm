@@ -3,3 +3,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_991 com/boehmod/blockfront/client/render
 	FIELD field_3999 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
 	FIELD field_4000 SLASH_COMPONENT Lnet/minecraft/network/chat/Component;
 	CLASS BF_992 Renderer
+		METHOD method_4116 render (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_993;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/network/chat/Style;IFFIIIIF)V
+			ARG 1 minecraft
+			ARG 2 poseStack
+			ARG 3 graphics
+			ARG 4 font
+			ARG 5 heldItem
+			ARG 6 heldStack
+			ARG 7 ammoStyle
+			ARG 8 textShadowColor
+			ARG 9 x
+			ARG 10 y
+			ARG 11 width
+			ARG 12 height
+			ARG 13 guiWidth
+			ARG 14 guiHeight
+			ARG 15 partialTick

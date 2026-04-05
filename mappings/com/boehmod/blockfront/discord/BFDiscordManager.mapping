@@ -1,4 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_19 com/boehmod/blockfront/discord/BFDiscordManager
+	FIELD field_7285 STATE_TRANSLATION_KEY Ljava/lang/String;
+	FIELD field_7286 JOIN_BUTTON_TRANSLATION_KEY Ljava/lang/String;
 	FIELD field_89 POPULATE_INTERVAL I
 	FIELD field_90 INIT_INTERVAL I
 	FIELD field_91 populateTimer I

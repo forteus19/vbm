@@ -1,4 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_224 com/boehmod/blockfront/client/render/model/BFArmorModel
+	FIELD field_1378 leftSleeve Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1379 rightSleeve Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1380 leftPants Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1381 rightPants Lnet/minecraft/client/model/geom/ModelPart;
+	FIELD field_1382 jacket Lnet/minecraft/client/model/geom/ModelPart;
+	METHOD <init> (Lnet/minecraft/client/model/geom/ModelPart;Z)V
+		ARG 1 modelPart
 	METHOD method_1012 createMesh (Lnet/minecraft/client/model/geom/builders/CubeDeformation;ZF)Lnet/minecraft/client/model/geom/builders/MeshDefinition;
 		ARG 0 deformation
 		ARG 1 hasRightArm

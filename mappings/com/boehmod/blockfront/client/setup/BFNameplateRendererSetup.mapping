@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1098 com/boehmod/blockfront/client/setup/BFNameplateRendererSetup
+	METHOD method_5129 register ()V
