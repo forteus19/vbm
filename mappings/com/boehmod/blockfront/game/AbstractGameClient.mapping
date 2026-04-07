@@ -111,8 +111,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 7 delta
 		ARG 8 cameraPos
 		ARG 9 cameraBlockPos
+	METHOD method_2709 shouldRenderNameTag (Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)Z
+		ARG 1 minecraft
+		ARG 2 target
+		ARG 3 localPlayer
+		ARG 4 level
+	METHOD method_2710 setNameTagState (Lnet/minecraft/client/Minecraft;Lnet/neoforged/neoforge/client/event/RenderNameTagEvent;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 	METHOD method_2712 renderGameElements (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;IF)V
 	METHOD method_2716 getSummaryScreens (Z)Ljava/util/Collection;
+	METHOD method_2718 canOpenInventory ()Z
 	METHOD method_2721 getScoreStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
 	METHOD method_2722 renderSpecific (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_271;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Ljava/util/Set;IIIIFF)V
 		ARG 1 minecraft
@@ -137,6 +144,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 3 player
 		ARG 4 level
 	METHOD method_2724 updateGameElements (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;)V
+	METHOD method_2730 canChangePerspective (Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 player
 	METHOD method_2735 getTips ()Ljava/util/List;
 	METHOD method_2736 getGameElements ()Ljava/util/List;
 	METHOD method_2737 getRadioPoints ()Ljava/util/List;

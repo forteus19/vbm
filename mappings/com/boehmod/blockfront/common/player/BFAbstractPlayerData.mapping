@@ -3,9 +3,10 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 	FIELD field_1155 previousMessages Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_1156 lastMessage Ljava/lang/String;
 	FIELD field_1159 lastChatTime J
+	FIELD field_1160 isFrozen Z
 	FIELD field_1161 outOfGame Z
 	FIELD field_1163 isMuted Z
-	FIELD field_1169 pose Lcom/boehmod/blockfront/unnamed/BF_692;
+	FIELD field_1169 freezePose Lcom/boehmod/blockfront/unnamed/BF_692;
 	FIELD field_1174 playTimer I
 	FIELD field_1175 calloutCooldown I
 	FIELD field_1176 respawnTimer I
@@ -17,6 +18,8 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 	METHOD method_830 setOutOfGame (Z)V
 		ARG 1 outOfGame
 	METHOD method_831 getLastMessage ()Ljava/lang/String;
+	METHOD method_832 setFrozen (Z)V
+		ARG 1 frozen
 	METHOD method_834 setMuted (Z)V
 		ARG 1 isMuted
 	METHOD method_838 update (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/unnamed/BF_677;)V
@@ -28,15 +31,16 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 		ARG 1 buf
 	METHOD method_847 reset ()V
 	METHOD method_848 isOutOfGame ()Z
+	METHOD method_849 isFrozen ()Z
 	METHOD method_850 isMuted ()Z
 	METHOD method_851 getRespawnTimer ()I
 	METHOD method_853 setLastChatTime (J)V
 		ARG 1 time
 	METHOD method_854 getLastChatTime ()J
-	METHOD method_855 setPose (Lcom/boehmod/blockfront/unnamed/BF_692;)V
+	METHOD method_855 setFreezePose (Lcom/boehmod/blockfront/unnamed/BF_692;)V
 		ARG 1 pose
 	METHOD method_856 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
-	METHOD method_858 getPose ()Lcom/boehmod/blockfront/unnamed/BF_692;
+	METHOD method_858 getFreezePose ()Lcom/boehmod/blockfront/unnamed/BF_692;
 	METHOD method_859 addMessage (Ljava/lang/String;)V
 		ARG 1 message
