@@ -15,9 +15,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	FIELD field_4030 hasEquipSound Z
 	FIELD field_4048 muzzleFlashSize F
 	FIELD field_4051 weight F
-	FIELD field_4053 triggerTimer I
+	FIELD field_4053 clientTriggerTimer I
 	FIELD field_4061 maxHitDist I
 	FIELD field_4062 currentFireConfig I
+	FIELD field_4065 prevClientTriggerTimer I
 	FIELD field_4068 magIdMap Ljava/util/Map;
 	FIELD field_4069 barrelIdMap Ljava/util/Map;
 	FIELD field_4070 scopes Ljava/util/Map;
@@ -51,6 +52,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 1 bipodMode
 	METHOD method_4138 barrel (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_988;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4139 mag (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_994;)Lcom/boehmod/blockfront/unnamed/BF_993;
+	METHOD method_4140 clientTick (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_271;)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 dataHandler
+		ARG 4 player
+		ARG 5 level
+		ARG 6 stack
+		ARG 7 playerData
 	METHOD method_4141 fireClient (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 	METHOD method_4146 getAmmoLoaded (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack

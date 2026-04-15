@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_786 com/boehmod/blockfront/game/RadioAction
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;ZZZLjava/lang/String;)V
+		ARG 3 iconName
+		ARG 4 hasTimeLimit
+		ARG 5 spawnProtected
+		ARG 6 isWaypoint
+		ARG 7 locale
