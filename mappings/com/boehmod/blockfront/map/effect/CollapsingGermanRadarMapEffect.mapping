@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_722 com/boehmod/blockfront/map/effect/CollapsingGermanRadarMapEffect
+	FIELD field_7375 CODEC Lcom/mojang/serialization/MapCodec;

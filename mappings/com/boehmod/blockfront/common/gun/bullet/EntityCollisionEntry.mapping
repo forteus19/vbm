@@ -4,6 +4,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_1193 com/boehmod/blockfront/common/gun/b
 	FIELD field_6870 BACKPACK_BACK_OFFSET Lnet/minecraft/world/phys/Vec3;
 	FIELD field_6871 HEADSHOT_REGION_SCALE Lnet/minecraft/world/phys/Vec3;
 	FIELD field_6872 BACKPACK_REGION_SCALE Lnet/minecraft/world/phys/Vec3;
+	METHOD method_5817 create (Lcom/boehmod/blockfront/unnamed/BF_445;JLnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/LivingEntity;)Lcom/boehmod/blockfront/unnamed/BF_1193;
+		ARG 3 targetEntity
+		ARG 4 sourceEntity
 	METHOD method_5818 interpolate (Lcom/boehmod/blockfront/unnamed/BF_1193;F)Lcom/boehmod/blockfront/unnamed/BF_1193;
 		ARG 1 other
 		ARG 2 t

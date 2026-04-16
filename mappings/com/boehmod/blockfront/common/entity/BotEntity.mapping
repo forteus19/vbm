@@ -1,8 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_565 com/boehmod/blockfront/common/entity/BotEntity
 	FIELD field_2359 team Lcom/boehmod/blockfront/unnamed/BF_686;
+	FIELD field_2374 CAN_BE_ATTACKED Lnet/minecraft/network/syncher/EntityDataAccessor;
 	FIELD field_2388 DATA_HUMAN_NAME Lnet/minecraft/network/syncher/EntityDataAccessor;
 	FIELD field_2392 DATA_CURRENT_CLASS Lnet/minecraft/network/syncher/EntityDataAccessor;
 	FIELD field_2395 DATA_RACE Lnet/minecraft/network/syncher/EntityDataAccessor;
+	METHOD method_1974 setCanBeAttacked (Z)V
+		ARG 1 canBeAttacked
 	METHOD method_1978 getTeam ()Lcom/boehmod/blockfront/unnamed/BF_686;
 	METHOD method_1981 getMobAttributes ()Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier$Builder;
 	METHOD method_1985 setTeam (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_686;)V
@@ -10,6 +13,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_565 com/boehmod/blockfront/common/entity
 		ARG 2 team
 	METHOD method_1987 setCurrentClass (Lcom/boehmod/blockfront/unnamed/BF_924;)V
 		ARG 1 matchClass
+	METHOD method_2006 isUnattackable ()Z
 	METHOD method_2010 getCurrentClass ()Lcom/boehmod/blockfront/unnamed/BF_924;
 	METHOD method_2023 setHumanName (Ljava/lang/String;)V
 		ARG 1 humanName

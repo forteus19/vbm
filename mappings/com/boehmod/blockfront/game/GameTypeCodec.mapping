@@ -1,0 +1,22 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1265 com/boehmod/blockfront/game/GameTypeCodec
+	FIELD field_7443 KEY_MAP Ljava/util/Map;
+	FIELD field_7444 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_6505 key ()Ljava/lang/String;
+	METHOD method_6506 (Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 key
+	CLASS BF_1266 Bootcamp
+		FIELD field_7445 CODEC Lcom/mojang/serialization/MapCodec;
+	CLASS BF_1267 Conquest
+		FIELD field_7452 CODEC Lcom/mojang/serialization/MapCodec;
+	CLASS BF_1268 Domination
+		FIELD field_7457 CODEC Lcom/mojang/serialization/MapCodec;
+	CLASS BF_1269 FreeForAll
+		FIELD field_7463 CODEC Lcom/mojang/serialization/MapCodec;
+	CLASS BF_1270 GunGame
+		FIELD field_7466 CODEC Lcom/mojang/serialization/MapCodec;
+	CLASS BF_1271 Infected
+		FIELD field_7468 CODEC Lcom/mojang/serialization/MapCodec;
+	CLASS BF_1272 TeamDeathmatch
+		FIELD field_7473 CODEC Lcom/mojang/serialization/MapCodec;
+	CLASS BF_1273 TroubleTown
+		FIELD field_7475 CODEC Lcom/mojang/serialization/MapCodec;

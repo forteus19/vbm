@@ -23,6 +23,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2566 chunkReloadTimer I
 	FIELD field_2567 corpsePhysicsShutdown Z
 	FIELD field_6419 environmentManager Lcom/boehmod/blockfront/unnamed/BF_760;
+	FIELD field_6706 timedWorldObjectManager Lcom/boehmod/blockfront/unnamed/BF_1177;
+	FIELD field_6835 potentialBulletCollisionManager Lcom/boehmod/blockfront/unnamed/BF_1198;
+	FIELD field_7247 dailyReward Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_2224 getCorpseManager ()Lcom/boehmod/blockfront/unnamed/BF_3;
@@ -95,3 +98,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_2261 closeCorpsePhysics (Lcom/boehmod/blockfront/unnamed/BF_271;)V
 		ARG 1 data
 	METHOD method_2262 queueChunkReload ()V
+	METHOD method_5643 getTimedWorldObjectManager ()Lcom/boehmod/blockfront/unnamed/BF_1177;
+	METHOD method_6136 getDailyReward ()Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;
+	METHOD method_6137 setDailyReward (Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;)V
+		ARG 1 dailyReward
+	METHOD method_6138 getAndClearDailyReward ()Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;

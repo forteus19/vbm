@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_736 com/boehmod/blockfront/map/effect/PositionedBombingFlashMapEffect
+	FIELD field_3141 scale F
+	FIELD field_3142 color I
+	FIELD field_3144 rotation F
+	FIELD field_3149 sound Ljava/util/function/Supplier;
+	FIELD field_7392 CODEC Lcom/mojang/serialization/MapCodec;

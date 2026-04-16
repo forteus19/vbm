@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1203 com/boehmod/blockfront/map/effect/PositionedEntityMapEffect
+	FIELD field_6936 entity Ljava/util/function/Supplier;
+	FIELD field_6937 leashPosition Lnet/minecraft/core/BlockPos;
+	FIELD field_6939 count I
+	FIELD field_7394 CODEC Lcom/mojang/serialization/MapCodec;

@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_948 com/boehmod/blockfront/server/gun/bullet/ServerBulletSpawner
+	FIELD field_6839 level Lnet/minecraft/server/level/ServerLevel;

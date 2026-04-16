@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_747 com/boehmod/blockfront/map/effect/WatchlightMapEffect
+	FIELD field_7507 CODEC Lcom/mojang/serialization/MapCodec;

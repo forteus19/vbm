@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_735 com/boehmod/blockfront/map/effect/PositionedArtilleryGunMapEffect
+	FIELD field_3127 animation Ljava/lang/String;
+	FIELD field_3129 rotation F
+	FIELD field_3137 maxYaw I
+	FIELD field_3138 entityType Ljava/util/function/Supplier;
+	FIELD field_3139 blockType Ljava/util/function/Supplier;
+	FIELD field_3140 commanderSound Ljava/util/function/Supplier;
+	FIELD field_7391 CODEC Lcom/mojang/serialization/MapCodec;

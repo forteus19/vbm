@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_691 com/boehmod/blockfront/game/AmmoPoint
+	FIELD field_7397 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_3003 newFromFDS (Ljava/lang/String;Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_691;
 		ARG 0 tagName
 		ARG 1 root

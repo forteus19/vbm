@@ -1,1 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_730 com/boehmod/blockfront/map/effect/LightningMapEffect
+	FIELD field_3100 startPos Lnet/minecraft/world/phys/Vec2;
+	FIELD field_3101 endPos Lnet/minecraft/world/phys/Vec2;
+	FIELD field_7382 CODEC Lcom/mojang/serialization/MapCodec;

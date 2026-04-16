@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_742 com/boehmod/blockfront/map/effect/PositionedRocketMapEffect
+	FIELD field_3183 pitch F
+	FIELD field_3184 yaw F
+	FIELD field_3185 pitchWidth F
+	FIELD field_3186 yawWidth F
+	FIELD field_3187 interval I
+	FIELD field_7502 CODEC Lcom/mojang/serialization/MapCodec;

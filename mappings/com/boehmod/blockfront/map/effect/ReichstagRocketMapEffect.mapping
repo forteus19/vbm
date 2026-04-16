@@ -1,9 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_741 com/boehmod/blockfront/map/effect/ReichstagRocketMapEffect
-	FIELD field_3171 pitch F
-	FIELD field_3172 yaw F
-	FIELD field_3173 pitchWitch F
-	FIELD field_3174 yawWitch F
-	FIELD field_3175 interval I
-	FIELD field_3176 fireRate I
-	FIELD field_3180 amount I
-	FIELD field_3181 fireSound Ljava/util/function/Supplier;

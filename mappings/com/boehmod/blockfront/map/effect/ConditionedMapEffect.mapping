@@ -8,3 +8,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_746 com/boehmod/blockfront/map/effect/Co
 	METHOD method_3125 resetInternal (Lnet/minecraft/client/Minecraft;)V
 	METHOD method_3126 reset (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
+	METHOD method_6613 getConditionType ()Lcom/boehmod/blockfront/unnamed/BF_748;

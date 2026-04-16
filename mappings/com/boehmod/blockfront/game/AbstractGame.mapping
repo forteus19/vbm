@@ -216,6 +216,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 type
 	METHOD method_5652 getMapEnvironment ()Lcom/boehmod/blockfront/unnamed/BF_1182;
 	METHOD method_5653 refreshMapEnvironment ()V
+	METHOD method_6415 getCodecData ()Lcom/boehmod/blockfront/unnamed/BF_1265;
+	METHOD method_6416 readCodecData (Lcom/boehmod/blockfront/unnamed/BF_1265;)V
+		ARG 1 data
 	METHOD read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD write (Lio/netty/buffer/ByteBuf;)V

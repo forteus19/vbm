@@ -15,6 +15,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	FIELD field_2870 PLAYER_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2871 FRIENDS_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_2874 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	FIELD field_7215 hasRatedMap Z
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_273;)V
 		ARG 1 manager
 		ARG 2 game
@@ -153,6 +154,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	METHOD method_2741 advanceSummary (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_2742 getPopups ()Ljava/util/List;
+	METHOD method_6106 setRatedMap (Z)V
+		ARG 1 hasRatedMap
+	METHOD method_6108 hasRatedMap ()Z
 	CLASS BF_680 Scoreboard
 		FIELD field_2905 entries Ljava/util/Map;
 		METHOD method_2746 column (Ljava/lang/String;Lorg/apache/commons/lang3/function/TriFunction;)Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;

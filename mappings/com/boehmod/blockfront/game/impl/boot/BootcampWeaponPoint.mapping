@@ -1,2 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_765 com/boehmod/blockfront/game/impl/boot/BootcampWeaponPoint
+	FIELD field_7374 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_3195 update (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;)V

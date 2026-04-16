@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_745 com/boehmod/blockfront/map/effect/SurrenderPaperMapEffect
+	FIELD field_3196 positions Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_7506 CODEC Lcom/mojang/serialization/MapCodec;

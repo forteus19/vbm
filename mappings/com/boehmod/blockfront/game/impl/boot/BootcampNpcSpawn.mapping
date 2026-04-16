@@ -1,5 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_757 com/boehmod/blockfront/game/impl/boot/BootcampNpcSpawn
 	FIELD field_3247 loadout Lcom/boehmod/blockfront/unnamed/BF_759;
+	FIELD field_7400 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (DDDFFFLjava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_759;)V
 		ARG 11 loadout
 	METHOD <init> (Lnet/minecraft/world/entity/player/Player;Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_759;)V

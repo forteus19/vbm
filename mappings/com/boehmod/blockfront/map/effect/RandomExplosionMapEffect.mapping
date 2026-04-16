@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_743 com/boehmod/blockfront/map/effect/RandomExplosionMapEffect
+	FIELD field_3191 startPos Lnet/minecraft/world/phys/Vec2;
+	FIELD field_3192 endPos Lnet/minecraft/world/phys/Vec2;
+	FIELD field_7504 CODEC Lcom/mojang/serialization/MapCodec;

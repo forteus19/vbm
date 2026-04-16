@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1261 com/boehmod/blockfront/game/CapturePointCodec
+	FIELD field_7419 CODEC Lcom/mojang/serialization/Codec;

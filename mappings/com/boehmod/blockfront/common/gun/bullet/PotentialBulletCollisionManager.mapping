@@ -1,0 +1,26 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1198 com/boehmod/blockfront/common/gun/bullet/PotentialBulletCollisionManager
+	FIELD field_6894 currentTick J
+	FIELD field_6895 ROTATION_SIZE I
+	FIELD field_7175 rotatingTickValues [J
+	FIELD field_7176 rotatingPotentialCollisions [Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+	FIELD field_7177 SERVER_ENTITY_BOX_SIZE I
+	FIELD field_7224 tempServerEntities Lit/unimi/dsi/fastutil/objects/ObjectSet;
+	METHOD method_5837 getPotentialCollision (JI)Lcom/boehmod/blockfront/unnamed/BF_1193;
+		ARG 1 tick
+		ARG 3 entityId
+	METHOD method_5839 update (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/Iterable;JLnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 manager
+		ARG 2 entities
+		ARG 3 currentTick
+		ARG 5 centralPlayer
+	METHOD method_6087 populateTickServer (Lcom/boehmod/blockfront/unnamed/BF_445;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 manager
+		ARG 2 tickMap
+		ARG 3 centralPlayer
+	METHOD method_6088 populateTickClient (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/Iterable;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 1 manager
+		ARG 2 entities
+		ARG 3 tickMap
+		ARG 4 centralPlayer
+	METHOD method_6089 shouldTrackEntity (Lnet/minecraft/world/entity/Entity;)Z
+		ARG 1 entity

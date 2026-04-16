@@ -1,0 +1,14 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1177 com/boehmod/blockfront/client/world/TimedWorldObjectManager
+	FIELD field_6693 manager Lcom/boehmod/blockfront/unnamed/BF_606;
+	FIELD field_6694 objects Lit/unimi/dsi/fastutil/objects/ObjectList;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;)V
+		ARG 1 manager
+	METHOD method_5637 add (Lcom/boehmod/blockfront/unnamed/BF_1161;)V
+		ARG 1 object
+	METHOD method_5638 clear (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_5639 update (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 minecraft
+		ARG 2 level
+	METHOD method_5640 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_1161;)Z
+		ARG 3 object

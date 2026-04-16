@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_740 com/boehmod/blockfront/map/effect/PositionedParticleMapEffect
+	FIELD field_3165 particleType Lnet/minecraft/core/particles/SimpleParticleType;
+	FIELD field_3166 soundVolume F
+	FIELD field_3167 sound Ljava/util/function/Supplier;
+	FIELD field_3168 maxTick I
+	FIELD field_7500 CODEC Lcom/mojang/serialization/MapCodec;

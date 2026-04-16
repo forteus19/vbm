@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_737 com/boehmod/blockfront/map/effect/PositionedBulletTracerMapEffect
+	FIELD field_3151 spread Lnet/minecraft/world/phys/Vec3;
+	FIELD field_3152 endPos Lnet/minecraft/world/phys/Vec3;
+	FIELD field_3153 playSound Z
+	FIELD field_3154 chance F
+	FIELD field_7393 CODEC Lcom/mojang/serialization/MapCodec;

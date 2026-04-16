@@ -1,1 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_723 com/boehmod/blockfront/map/effect/FallingArtilleryMapEffect
+	FIELD field_3050 startPos Lnet/minecraft/world/phys/Vec2;
+	FIELD field_3051 endPos Lnet/minecraft/world/phys/Vec2;
+	FIELD field_7376 CODEC Lcom/mojang/serialization/MapCodec;

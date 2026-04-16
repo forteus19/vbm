@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_744 com/boehmod/blockfront/map/effect/SkyPlanesMapEffect
+	FIELD field_3193 radius I
+	FIELD field_3194 repeat I
+	FIELD field_3195 block Ljava/util/function/Supplier;
+	FIELD field_7505 CODEC Lcom/mojang/serialization/MapCodec;

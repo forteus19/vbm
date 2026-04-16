@@ -1,6 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_764 com/boehmod/blockfront/game/impl/conq/VehicleSpawn
 	FIELD field_3280 entityType Ljava/util/function/Supplier;
 	FIELD field_3281 isAllies Z
+	FIELD field_7373 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (DDDFFZLjava/util/function/Supplier;)V
 		ARG 1 x
 		ARG 3 y

@@ -4,6 +4,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_597 com/boehmod/blockfront/game/GameSequ
 	FIELD field_2499 showUI Z
 	FIELD field_2500 allowSkip Z
 	FIELD field_2501 fadeWhenFinished Z
+	FIELD field_7371 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_2181 builder ()Lcom/boehmod/blockfront/unnamed/BF_597$BF_598;
 	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root

@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_724 com/boehmod/blockfront/map/effect/FlyByMapEffect
+	FIELD field_3052 blocks Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_3054 speed F
+	FIELD field_3055 soundEvent Ljava/util/function/Supplier;
+	FIELD field_3056 spawnInterval I
+	FIELD field_3057 soundDistanceMin I
+	FIELD field_3059 min0 Lnet/minecraft/world/phys/Vec3;
+	FIELD field_3060 min1 Lnet/minecraft/world/phys/Vec3;
+	FIELD field_3061 max0 Lnet/minecraft/world/phys/Vec3;
+	FIELD field_3062 max1 Lnet/minecraft/world/phys/Vec3;
+	FIELD field_7377 CODEC Lcom/mojang/serialization/MapCodec;

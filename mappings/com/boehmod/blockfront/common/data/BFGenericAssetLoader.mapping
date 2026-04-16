@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_461 com/boehmod/blockfront/common/data/BFGenericAssetLoader
+	FIELD field_2086 name Ljava/lang/String;
+	FIELD field_2087 filename Ljava/lang/String;
+	FIELD field_2088 fallback Ljava/lang/Object;
+	FIELD field_2089 codec Lcom/mojang/serialization/Codec;
+	FIELD field_2091 entries Ljava/util/Map;
+	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/lang/String;Ljava/lang/String;Lcom/mojang/serialization/Codec;Ljava/lang/Object;Ljava/util/function/Function;)V
+		ARG 1 resourceManager
+		ARG 2 name
+		ARG 3 filename
+		ARG 4 codec
+		ARG 5 fallback
+	METHOD method_1646 loadExisting (Lcom/google/gson/Gson;Ljava/util/Map;Lnet/minecraft/server/packs/resources/Resource;)V
+		ARG 1 gson
+		ARG 2 target
+	METHOD method_1647 getAsset (Ljava/lang/String;)Ljava/lang/Object;

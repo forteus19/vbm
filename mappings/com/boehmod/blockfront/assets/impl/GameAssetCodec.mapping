@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1264 com/boehmod/blockfront/assets/impl/GameAssetCodec
+	FIELD field_7436 CODEC Lcom/mojang/serialization/Codec;

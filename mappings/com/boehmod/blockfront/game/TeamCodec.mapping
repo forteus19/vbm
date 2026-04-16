@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1275 com/boehmod/blockfront/game/TeamCodec
+	FIELD field_7489 CODEC Lcom/mojang/serialization/Codec;

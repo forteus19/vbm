@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_466 com/boehmod/blockfront/assets/impl/GameAssetFactory
+	METHOD method_6275 (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_1264;)Lcom/boehmod/blockfront/unnamed/BF_683;
+		ARG 1 data

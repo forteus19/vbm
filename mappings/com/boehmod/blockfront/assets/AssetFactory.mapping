@@ -3,3 +3,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_465 com/boehmod/blockfront/assets/AssetF
 		ARG 2 manager
 		ARG 3 name
 		ARG 4 type
+	METHOD method_6274 getCodec (Lcom/boehmod/blockfront/unnamed/BF_445;)Lcom/mojang/serialization/Codec;
+		ARG 1 manager

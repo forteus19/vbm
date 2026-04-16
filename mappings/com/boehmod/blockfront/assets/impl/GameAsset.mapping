@@ -13,3 +13,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_683 com/boehmod/blockfront/assets/impl/G
 		ARG 1 manager
 		ARG 2 name
 	METHOD method_2801 isInRotation ()Z
+	METHOD method_6417 getCodecData ()Lcom/boehmod/blockfront/unnamed/BF_1264;
+	METHOD method_6418 (Lcom/boehmod/blockfront/unnamed/BF_686;)Lcom/boehmod/blockfront/unnamed/BF_1275;
+		ARG 0 team
+	METHOD method_6419 createFromCodecData (Lcom/boehmod/blockfront/unnamed/BF_1264;Lcom/boehmod/blockfront/unnamed/BF_445;)Lcom/boehmod/blockfront/unnamed/BF_683;
+		ARG 0 data
+		ARG 1 manager

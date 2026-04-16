@@ -4,6 +4,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_888 com/boehmod/blockfront/game/impl/inf
 	FIELD field_3563 open Z
 	FIELD field_3564 id Ljava/lang/String;
 	FIELD field_3565 cost I
+	FIELD field_7512 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_3695 getZones ()Ljava/util/List;
 	METHOD method_3696 canOpenDoor (Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 playerPos

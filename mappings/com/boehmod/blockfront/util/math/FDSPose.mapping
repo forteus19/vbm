@@ -2,6 +2,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDS
 	FIELD field_2960 position Lnet/minecraft/world/phys/Vec3;
 	FIELD field_2961 rotation Lnet/minecraft/world/phys/Vec2;
 		COMMENT x = pitch, y = yaw
+	FIELD field_7398 BASE_CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (DDD)V
 		ARG 1 x
 		ARG 3 y
@@ -32,6 +33,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDS
 	METHOD method_3006 getYaw ()F
 	METHOD method_3007 getSurroundingArea (I)Lnet/minecraft/world/phys/AABB;
 		ARG 1 size
+	METHOD method_3008 readListFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;Ljava/lang/String;)Ljava/util/List;
+		ARG 0 root
+		ARG 1 baseName
+	METHOD method_3009 writeListToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;Ljava/lang/String;Ljava/util/List;)V
+		ARG 0 root
+		ARG 1 baseName
+		ARG 2 poses
 	METHOD method_3010 (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_565;)Z
 		ARG 1 bot
 	METHOD method_3011 getGameBotsInArea (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;I)Ljava/util/List;
@@ -80,6 +88,18 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/FDS
 	METHOD method_3032 getZ ()D
 	METHOD method_6011 setFrom (Lcom/boehmod/blockfront/unnamed/BF_692;)V
 		ARG 1 other
+	METHOD method_6424 (Lcom/boehmod/blockfront/unnamed/BF_692;)Ljava/lang/Double;
+		ARG 0 pose
+	METHOD method_6425 (Lcom/boehmod/blockfront/unnamed/BF_692;)Ljava/lang/Float;
+		ARG 0 pose
+	METHOD method_6426 (Lcom/boehmod/blockfront/unnamed/BF_692;)Ljava/lang/Double;
+		ARG 0 pose
+	METHOD method_6427 (Lcom/boehmod/blockfront/unnamed/BF_692;)Ljava/lang/Float;
+		ARG 0 pose
+	METHOD method_6428 (Lcom/boehmod/blockfront/unnamed/BF_692;)Ljava/lang/Double;
+		ARG 0 pose
+	METHOD method_6429 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
 	METHOD read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V

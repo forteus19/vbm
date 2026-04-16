@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_733 com/boehmod/blockfront/map/effect/MistMapEffect
+	FIELD field_3105 yPos I
+	FIELD field_3106 radius I
+	FIELD field_7389 CODEC Lcom/mojang/serialization/MapCodec;

@@ -6,3 +6,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_460 com/boehmod/blockfront/assets/IAsset
 		ARG 1 source
 	METHOD method_1645 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
 		ARG 1 root
+	METHOD method_6100 onRemove ()V

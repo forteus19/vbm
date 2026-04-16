@@ -1,0 +1,23 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1229 com/boehmod/blockfront/client/match/ping/AbstractPing
+	FIELD field_7135 playerUuid Ljava/util/UUID;
+	FIELD field_7136 uuid Ljava/util/UUID;
+	FIELD field_7137 position Lnet/minecraft/world/phys/Vec3;
+	FIELD field_7138 FADE_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	METHOD <init> (Ljava/util/UUID;Ljava/util/UUID;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 playerUuid
+		ARG 2 uuid
+		ARG 3 position
+	METHOD method_6054 getFadeColor (Lcom/boehmod/blockfront/unnamed/BF_679;F)I
+		ARG 1 gameClient
+	METHOD method_6055 render (Lcom/boehmod/blockfront/unnamed/BF_679;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;IIF)V
+		ARG 1 gameClient
+		ARG 2 poseStack
+		ARG 3 graphics
+		ARG 4 camera
+		ARG 7 delta
+	METHOD method_6059 getTextureScale ()I
+	METHOD method_6063 getPosition ()Lnet/minecraft/world/phys/Vec3;
+	METHOD method_6064 setPosition (Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 position
+	METHOD method_6065 getPlayerUuid ()Ljava/util/UUID;
+	METHOD method_6066 getUuid ()Ljava/util/UUID;

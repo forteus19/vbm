@@ -1,0 +1,23 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1259 com/boehmod/blockfront/map/effect/MapEffectCodecs
+	FIELD field_7383 VEC3_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_7384 VEC2_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_7385 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_7386 CODECS Ljava/util/Map;
+	METHOD method_6350 (Lcom/boehmod/blockfront/unnamed/BF_731;)Ljava/lang/String;
+		ARG 0 mapEffect
+	METHOD method_6351 (Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 key
+	METHOD method_6352 (Lnet/minecraft/world/phys/Vec2;)Ljava/lang/Float;
+		ARG 0 vec
+	METHOD method_6353 (Lnet/minecraft/world/phys/Vec3;)Ljava/lang/Double;
+		ARG 0 vec
+	METHOD method_6354 (Lnet/minecraft/world/phys/Vec2;)Ljava/lang/Float;
+		ARG 0 vec
+	METHOD method_6355 (Lnet/minecraft/world/phys/Vec3;)Ljava/lang/Double;
+		ARG 0 vec
+	METHOD method_6356 (Lnet/minecraft/world/phys/Vec3;)Ljava/lang/Double;
+		ARG 0 vec
+	METHOD method_6357 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_6358 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
