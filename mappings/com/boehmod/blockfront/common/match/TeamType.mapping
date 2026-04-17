@@ -1,6 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/TeamType
 	FIELD field_3732 id B
-	FIELD field_3733 country Lcom/boehmod/blockfront/unnamed/BF_928;
+	FIELD field_3733 nationType Lcom/boehmod/blockfront/unnamed/BF_928;
 	FIELD field_3734 skin Ljava/lang/String;
 	FIELD field_3735 INSTANCES Ljava/util/List;
 	FIELD field_3736 races Ljava/util/List;
@@ -9,7 +9,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 	FIELD field_7555 location Lnet/minecraft/resources/ResourceLocation;
 	METHOD <init> (ILcom/boehmod/blockfront/unnamed/BF_928;Ljava/lang/String;)V
 		ARG 1 id
-		ARG 2 country
+		ARG 2 nationType
 		ARG 3 skin
 	METHOD method_3884 getRandomRace ()Lcom/boehmod/blockfront/unnamed/BF_567;
 	METHOD method_3885 getCountry ()Lcom/boehmod/blockfront/unnamed/BF_928;
@@ -19,7 +19,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 		ARG 1 clazz
 		ARG 2 level
 	METHOD method_3890 getByCountryAndSkin (Lcom/boehmod/blockfront/unnamed/BF_928;Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_929;
-		ARG 0 country
+		ARG 0 nationType
 		ARG 1 skin
 	METHOD method_3891 races (Ljava/util/List;)Lcom/boehmod/blockfront/unnamed/BF_929;
 		ARG 1 races
@@ -38,4 +38,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 		ARG 0 key
 	METHOD method_6701 getByResourceLocation (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_929;
 		ARG 0 location
-	METHOD method_6702 clearMaps ()V
+	METHOD method_6702 clearInstances ()V
+	METHOD method_6703 setLoadouts (Ljava/util/Map;)V
+		ARG 1 loadouts

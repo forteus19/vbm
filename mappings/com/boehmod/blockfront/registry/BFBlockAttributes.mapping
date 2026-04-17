@@ -1,2 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1086 com/boehmod/blockfront/registry/BFBlockAttributes
+	FIELD field_4370 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_997;
 	FIELD field_4371 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
+	METHOD method_4614 get (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)Lcom/boehmod/blockfront/unnamed/BF_997;
+		ARG 0 level
+		ARG 1 state
+		ARG 2 pos
+	METHOD method_4616 get (Lnet/minecraft/world/level/block/Block;)Lcom/boehmod/blockfront/unnamed/BF_997;
+		ARG 0 block
+	METHOD method_4617 get (Lnet/minecraft/world/level/block/SoundType;)Lcom/boehmod/blockfront/unnamed/BF_997;
+		ARG 0 soundType

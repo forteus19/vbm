@@ -1,4 +1,10 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1192 com/boehmod/blockfront/server/ac/bullet/ShotValidationManager
+CLASS com/boehmod/blockfront/unnamed/BF_1192 com/boehmod/blockfront/server/ac/bullet/BulletValidationManager
+	FIELD field_6863 potentialCollisionManager Lcom/boehmod/blockfront/unnamed/BF_1198;
+	FIELD field_7092 pendingValidations Lit/unimi/dsi/fastutil/longs/Long2ObjectMap;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1198;)V
+		ARG 1 potentialCollisionManager
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1198;I)V
+		ARG 1 potentialCollisionManager
 	METHOD method_5855 checkClientAll (Lcom/boehmod/blockfront/unnamed/BF_1067;Lcom/boehmod/blockfront/unnamed/BF_1119;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/List;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;FFJJ)Z
 		ARG 1 manager
 		ARG 2 dataHandler
@@ -17,6 +23,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1192 com/boehmod/blockfront/server/ac/bu
 		ARG 2 level
 		ARG 3 player
 	METHOD method_5996 runChecks (Lcom/boehmod/blockfront/unnamed/BF_1198;)V
-		ARG 0 serverTracker
+		ARG 0 potentialCollisionManager
 	METHOD method_5997 checkClientFireRate (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;ZLnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_993;JLcom/boehmod/blockfront/unnamed/BF_1117;)Z
 	METHOD method_5998 checkClientFireRate (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;ZLnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_993;JLcom/boehmod/blockfront/unnamed/BF_1117;Z)Z

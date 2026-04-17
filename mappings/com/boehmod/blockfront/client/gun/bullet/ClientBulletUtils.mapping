@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_28 com/boehmod/blockfront/util/BulletUtils
+CLASS com/boehmod/blockfront/unnamed/BF_28 com/boehmod/blockfront/client/gun/bullet/ClientBulletUtils
 	METHOD method_156 doBlockBulletImpact (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/util/RandomSource;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_989;I)V
 		ARG 0 minecraft
 		ARG 1 manager

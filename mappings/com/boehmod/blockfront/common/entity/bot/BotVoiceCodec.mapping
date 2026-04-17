@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1260 com/boehmod/blockfront/common/entity/bot/BotVoiceCodec
+	FIELD field_7412 CODEC Lcom/mojang/serialization/Codec;

@@ -1,1 +1,33 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1256 com/boehmod/blockfront/common/data/NationTypeLoader
+	FIELD field_7366 NAMESPACE Ljava/lang/String;
+	FIELD field_7367 data Ljava/util/Map;
+	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;)V
+		ARG 1 resourceManager
+	METHOD apply (Ljava/lang/Object;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V
+		ARG 1 data
+		ARG 2 resourceManager
+		ARG 3 profiler
+	METHOD method_6251 parse (Lcom/google/gson/Gson;Ljava/util/Map;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/packs/resources/Resource;)V
+		ARG 0 gson
+		ARG 1 data
+		ARG 2 resourceLocation
+		ARG 3 resource
+	METHOD method_6253 (Lnet/minecraft/resources/ResourceLocation;)Z
+		ARG 0 rl
+	METHOD method_6254 (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Ljava/lang/RuntimeException;
+		ARG 1 error
+	METHOD method_6256 boostrap ()V
+	METHOD method_6257 (Lcom/google/gson/Gson;Ljava/util/Map;Ljava/nio/file/Path;)V
+		ARG 2 path
+	METHOD method_6258 (Ljava/util/Map$Entry;)I
+		ARG 0 entry
+	METHOD method_6259 (Ljava/nio/file/Path;Ljava/lang/String;)Ljava/lang/RuntimeException;
+		ARG 1 error
+	METHOD method_6260 populate (Ljava/util/Map;)V
+		ARG 0 data
+	METHOD method_6261 (Ljava/nio/file/Path;)Z
+		ARG 0 path
+	METHOD method_6262 getData ()Ljava/util/Map;
+	METHOD prepare (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)Ljava/lang/Object;
+		ARG 1 resourceManager
+		ARG 2 profiler

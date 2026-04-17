@@ -1,1 +1,63 @@
 CLASS com/boehmod/blockfront/unnamed/BF_924 com/boehmod/blockfront/common/match/MatchClass
+	FIELD field_7517 RESOURCE_LOCATION_MAP Ljava/util/Map;
+	FIELD field_7518 KEY_MAP Ljava/util/Map;
+	FIELD field_7519 key Ljava/lang/String;
+	FIELD field_7520 displayTitle Ljava/lang/String;
+	FIELD field_7521 description Ljava/lang/String;
+	FIELD field_7522 minRankRequired Lcom/boehmod/bflib/cloud/common/player/PlayerRank;
+	FIELD field_7523 INSTANCES Ljava/util/List;
+	FIELD field_7524 resourceLocation Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_7525 icon Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_7526 isDefault Z
+	FIELD field_7527 seeMedicCallouts Z
+	FIELD field_7528 canWarCry Z
+	FIELD field_7529 highlightInScoreboard Z
+	FIELD field_7530 botFriendly Z
+	FIELD field_7531 index I
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLnet/minecraft/resources/ResourceLocation;ZZZZ)V
+		ARG 1 key
+		ARG 2 displayTitle
+		ARG 3 description
+		ARG 4 botFriendly
+		ARG 5 icon
+		ARG 6 isDefault
+		ARG 7 seeMedicCallouts
+		ARG 8 canWarCry
+		ARG 9 highlightInScoreboard
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLnet/minecraft/resources/ResourceLocation;ZZZZLcom/boehmod/bflib/cloud/common/player/PlayerRank;)V
+		ARG 1 key
+		ARG 2 displayTitle
+		ARG 3 description
+		ARG 4 botFriendly
+		ARG 5 icon
+		ARG 6 isDefault
+		ARG 7 seeMedicCallouts
+		ARG 8 canWayCry
+		ARG 9 highlightInScoreboard
+		ARG 10 minRankRequired
+	METHOD method_6644 getResourceLocation ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_6645 getDisplayTitle ()Ljava/lang/String;
+	METHOD method_6646 getMinRankRequired ()Lcom/boehmod/bflib/cloud/common/player/PlayerRank;
+	METHOD method_6647 getByIndex (I)Lcom/boehmod/blockfront/unnamed/BF_924;
+		ARG 0 index
+	METHOD method_6648 canUse (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 dataHandler
+		ARG 2 player
+	METHOD method_6649 isAllowed (Lcom/boehmod/blockfront/unnamed/BF_677;)Z
+		ARG 1 game
+	METHOD method_6650 getByKey (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_924;
+		ARG 0 key
+	METHOD method_6651 getByResourceLocation (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_924;
+		ARG 0 resourceLocation
+	METHOD method_6652 getInstances ()Ljava/util/List;
+	METHOD method_6654 clearInstances ()V
+	METHOD method_6655 getIndex ()I
+	METHOD method_6656 isDefault ()Z
+	METHOD method_6657 canWarCry ()Z
+	METHOD method_6658 isBotFriendly ()Z
+	METHOD method_6659 seeMedicCallouts ()Z
+	METHOD method_6660 highlightInScoreboard ()Z
+	METHOD method_6661 getDefault ()Lcom/boehmod/blockfront/unnamed/BF_924;
+	METHOD method_6662 keyEquals (Ljava/lang/String;)Z
+		ARG 1 key
+	METHOD method_6663 getDescription ()Ljava/lang/String;

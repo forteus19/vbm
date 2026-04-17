@@ -3,7 +3,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1061 com/boehmod/blockfront/util/Registr
 	METHOD method_4526 retrieveBlockEntity (Ljava/lang/String;)Ljava/util/function/Supplier;
 		ARG 0 id
 	METHOD method_4533 getBlockEntityTypeId (Ljava/util/function/Supplier;)Ljava/lang/String;
-		ARG 0 supplier
+		ARG 0 blockEntityType
 	METHOD method_4534 getParticleTypeId (Lnet/minecraft/core/particles/ParticleType;)Ljava/lang/String;
 		ARG 0 particleType
 	METHOD method_4535 getItemId (Lnet/minecraft/world/item/Item;)Ljava/lang/String;
@@ -13,7 +13,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1061 com/boehmod/blockfront/util/Registr
 	METHOD method_4537 retrieveEntityType (Ljava/lang/String;)Ljava/util/function/Supplier;
 		ARG 0 id
 	METHOD method_4539 getEntityTypeId (Ljava/util/function/Supplier;)Ljava/lang/String;
-		ARG 0 supplier
+		ARG 0 entityType
 	METHOD method_4540 retrieveBlock (Ljava/lang/String;)Ljava/util/function/Supplier;
 		ARG 0 id
 	METHOD method_4541 retrieveSoundEvent (Ljava/lang/String;)Ljava/util/function/Supplier;
@@ -24,3 +24,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_1061 com/boehmod/blockfront/util/Registr
 		ARG 0 id
 	METHOD method_4544 retrieveItem (Ljava/lang/String;)Ljava/util/function/Supplier;
 		ARG 0 id
+	METHOD method_6707 getEntityTypeResourceLocation (Ljava/util/function/Supplier;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 entityType
+	METHOD method_6708 retrieveEntityType (Lnet/minecraft/resources/ResourceLocation;)Ljava/util/function/Supplier;
+		ARG 0 rl
+	METHOD method_6711 getSoundEventResourceLocation (Lnet/minecraft/sounds/SoundEvent;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 soundEvent
+	METHOD method_6713 getBlockResourceLocation (Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 block
+	METHOD method_6715 getBlockEntityTypeResourceLocation (Ljava/util/function/Supplier;)Lnet/minecraft/resources/ResourceLocation;
+		ARG 0 blockEntityType
+	METHOD method_6716 retrieveBlock (Lnet/minecraft/resources/ResourceLocation;)Ljava/util/function/Supplier;
+		ARG 0 rl
+	METHOD method_6717 retrieveBlockEntityType (Lnet/minecraft/resources/ResourceLocation;)Ljava/util/function/Supplier;
+		ARG 0 rl
+	METHOD method_6718 retrieveSoundEvent (Lnet/minecraft/resources/ResourceLocation;)Ljava/util/function/Supplier;
+		ARG 0 rl

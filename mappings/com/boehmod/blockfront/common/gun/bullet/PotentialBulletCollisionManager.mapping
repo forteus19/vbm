@@ -13,6 +13,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1198 com/boehmod/blockfront/common/gun/b
 		ARG 2 entities
 		ARG 3 currentTick
 		ARG 5 centralPlayer
+	METHOD method_5842 getCurrentTick ()J
 	METHOD method_6087 populateTickServer (Lcom/boehmod/blockfront/unnamed/BF_445;Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;Lnet/minecraft/world/entity/LivingEntity;)V
 		ARG 1 manager
 		ARG 2 tickMap

@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1180 com/boehmod/blockfront/util/BFWeaponComponentUtils
+	FIELD field_6712 MIN_INCREASE_AMOUNT I
+	METHOD method_5650 increase (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/component/DataComponentType;I)V
+		ARG 0 stack
+		ARG 1 component
+		ARG 2 amount
+	METHOD method_5651 increaseNearPosition (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/phys/Vec3;DLnet/minecraft/core/component/DataComponentType;D)V
+		ARG 0 level
+		ARG 1 position
+		ARG 2 radius
+		ARG 4 component
+		ARG 5 chance

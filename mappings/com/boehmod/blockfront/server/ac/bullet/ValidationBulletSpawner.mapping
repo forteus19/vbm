@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1191 com/boehmod/blockfront/server/ac/bullet/ValidationBulletSpawner
+	FIELD field_6841 potentialCollisionManager Lcom/boehmod/blockfront/unnamed/BF_1198;

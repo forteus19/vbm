@@ -1,1 +1,35 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1254 com/boehmod/blockfront/common/data/ClassTypeLoader
+	FIELD field_7363 NAMESPACE Ljava/lang/String;
+	FIELD field_7364 data Ljava/util/Map;
+	METHOD <init> (Lnet/minecraft/server/packs/resources/ResourceManager;)V
+		ARG 1 resourceManager
+	METHOD apply (Ljava/lang/Object;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V
+		ARG 1 data
+		ARG 2 resourceManager
+		ARG 3 profiler
+	METHOD method_6235 parse (Lcom/google/gson/Gson;Ljava/util/Map;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/packs/resources/Resource;)V
+		ARG 0 gson
+		ARG 1 data
+		ARG 2 resourceLocation
+		ARG 3 resource
+	METHOD method_6236 parsePlayerRank (Ljava/lang/String;)Lcom/boehmod/bflib/cloud/common/player/PlayerRank;
+		ARG 0 rankKey
+	METHOD method_6237 (Ljava/util/Map$Entry;)I
+		ARG 0 entry
+	METHOD method_6239 (Lnet/minecraft/resources/ResourceLocation;)Z
+		ARG 0 rl
+	METHOD method_6240 (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Ljava/lang/RuntimeException;
+		ARG 1 error
+	METHOD method_6242 bootstrap ()V
+	METHOD method_6243 (Lcom/google/gson/Gson;Ljava/util/Map;Ljava/nio/file/Path;)V
+		ARG 2 path
+	METHOD method_6244 populate (Ljava/util/Map;)V
+		ARG 0 data
+	METHOD method_6245 (Ljava/nio/file/Path;Ljava/lang/String;)Ljava/lang/RuntimeException;
+		ARG 1 error
+	METHOD method_6246 getData ()Ljava/util/Map;
+	METHOD method_6247 (Ljava/nio/file/Path;)Z
+		ARG 0 path
+	METHOD prepare (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)Ljava/lang/Object;
+		ARG 1 resourceManager
+		ARG 2 profiler

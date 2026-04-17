@@ -1,0 +1,37 @@
+CLASS com/boehmod/blockfront/unnamed/BF_923 com/boehmod/blockfront/common/entity/bot/BotVoice
+	FIELD field_3671 goSound Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3672 grenadeSound Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3673 hurtSound Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3674 reloadingSound Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3677 spottedSound Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3678 tauntSound Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3679 introSound Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_7513 RESOURCE_LOCATION_MAP Ljava/util/Map;
+	FIELD field_7514 INSTANCES Ljava/util/List;
+	FIELD field_7515 key Ljava/lang/String;
+	FIELD field_7516 resourceLocation Lnet/minecraft/resources/ResourceLocation;
+	METHOD <init> (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 key
+		ARG 2 goSound
+		ARG 3 grenadeSound
+		ARG 4 hurtSound
+		ARG 5 reloadingSound
+		ARG 6 spottedSound
+		ARG 7 tauntSound
+		ARG 8 introSound
+	METHOD method_3817 getGoSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3818 getGrenadeSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3819 getHurtSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3820 getReloadingSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3821 getSpottedSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3822 getTauntSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3823 getIntroSound ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_6638 getResourceLocation ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_6639 getByKey (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_923;
+		ARG 0 key
+	METHOD method_6640 getByResourceLocation (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_923;
+		ARG 0 location
+	METHOD method_6641 getSound (Lnet/minecraft/resources/ResourceLocation;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+		ARG 0 resourceLocation
+	METHOD method_6642 getInstances ()Ljava/util/List;
+	METHOD method_6643 clearInstances ()V
