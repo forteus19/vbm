@@ -8,6 +8,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	FIELD field_2936 iconColor I
 	FIELD field_2937 maxPlayers I
 	FIELD field_2938 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	FIELD field_7219 playersView Ljava/util/Set;
+	FIELD field_7565 statData Lcom/boehmod/blockfront/unnamed/BF_1279;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;Lnet/minecraft/network/chat/Style;Lnet/minecraft/network/chat/Style;I)V
 		ARG 1 game
 		ARG 2 name
@@ -26,12 +28,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 		ARG 1 game
 	METHOD method_2813 getDivisionData (Lcom/boehmod/blockfront/unnamed/BF_677;)Lcom/boehmod/blockfront/unnamed/BF_929;
 		ARG 1 game
-	METHOD method_2814 getObjectInt (Lcom/boehmod/blockfront/unnamed/BF_941;)I
+	METHOD method_2814 getStatInt (Lcom/boehmod/blockfront/unnamed/BF_941;)I
 		ARG 1 stat
-	METHOD method_2815 getObjectInt (Lcom/boehmod/blockfront/unnamed/BF_941;I)I
+	METHOD method_2815 getStatInt (Lcom/boehmod/blockfront/unnamed/BF_941;I)I
 		ARG 1 stat
 		ARG 2 defaultValue
-	METHOD method_2816 decreaseObjectInt (Lcom/boehmod/blockfront/unnamed/BF_941;I)V
+	METHOD method_2816 decreaseStatInt (Lcom/boehmod/blockfront/unnamed/BF_941;I)V
 		ARG 1 stat
 		ARG 2 amount
 	METHOD method_2819 addPlayers (Ljava/util/Set;)V
@@ -47,7 +49,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 		ARG 1 pose
 	METHOD method_2828 addPlayer (Lnet/minecraft/server/level/ServerPlayer;)Z
 		ARG 1 player
-	METHOD method_2829 clearTeamObjects ()V
+	METHOD method_2829 clearStatData ()V
 	METHOD method_2830 clearPlayers ()V
 	METHOD method_2831 clearPlayerSpawns ()V
 	METHOD method_2832 removePlayer (Ljava/util/UUID;)V
@@ -59,7 +61,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	METHOD method_2835 randomPlayer ()Ljava/util/UUID;
 	METHOD method_2836 writeBuf (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD method_2837 getPlayers ()Ljava/util/Set;
+	METHOD method_2837 getPlayersView ()Ljava/util/Set;
 	METHOD method_2838 readBuf (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD method_2842 getPlayerSpawns ()Ljava/util/List;
+	METHOD method_6746 putStatInt (Lcom/boehmod/blockfront/unnamed/BF_941;I)V
+		ARG 1 stat
+		ARG 2 value

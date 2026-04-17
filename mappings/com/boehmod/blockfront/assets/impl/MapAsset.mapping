@@ -5,8 +5,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	FIELD field_3705 author Ljava/lang/String;
 	FIELD field_3706 musicSet Ljava/lang/String;
 	FIELD field_3707 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_927;
-	FIELD field_3710 alliesDivision Lcom/boehmod/blockfront/unnamed/BF_929;
-	FIELD field_3711 axisDivision Lcom/boehmod/blockfront/unnamed/BF_929;
+	FIELD field_3710 alliesTeam Lcom/boehmod/blockfront/unnamed/BF_929;
+	FIELD field_3711 axisTeam Lcom/boehmod/blockfront/unnamed/BF_929;
 	FIELD field_3718 isMatchMaking Z
 	FIELD field_3722 command Lcom/boehmod/blockfront/unnamed/BF_462;
 	FIELD field_3728 ENTRIES Ljava/util/Map;
@@ -14,15 +14,24 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 	FIELD field_6723 environments Ljava/util/Map;
 	FIELD field_7532 TEAM_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_7533 CODEC Lcom/mojang/serialization/Codec;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
+		ARG 1 manager
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 name
+		ARG 2 author
 	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_929;Lcom/boehmod/blockfront/unnamed/BF_929;)V
 		ARG 1 name
 		ARG 2 author
-		ARG 3 alliesDivision
-		ARG 4 axisDivision
+		ARG 3 alliesTeam
+		ARG 4 axisTeam
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 other
 	METHOD method_3840 getAuthor ()Ljava/lang/String;
 	METHOD method_3842 getMusicSet ()Lcom/boehmod/blockfront/unnamed/BF_961;
-	METHOD method_3862 getAlliesDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
-	METHOD method_3863 getAxisDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
+	METHOD method_3858 setMatchMaking (Z)Lcom/boehmod/blockfront/unnamed/BF_927;
+		ARG 1 isMatchMaking
+	METHOD method_3862 getAlliesTeam ()Lcom/boehmod/blockfront/unnamed/BF_929;
+	METHOD method_3863 getAxisTeam ()Lcom/boehmod/blockfront/unnamed/BF_929;
 	METHOD method_3870 writeBuf (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD method_3872 readBuf (Lio/netty/buffer/ByteBuf;)V
@@ -31,5 +40,21 @@ CLASS com/boehmod/blockfront/unnamed/BF_927 com/boehmod/blockfront/assets/impl/M
 		ARG 1 musicSet
 	METHOD method_5657 getEnvironments ()Ljava/util/Map;
 	METHOD method_5872 reset ()V
+	METHOD method_6664 (Lcom/boehmod/blockfront/unnamed/BF_927;)Ljava/lang/Boolean;
+		ARG 0 map
+	METHOD method_6665 (Lcom/boehmod/blockfront/unnamed/BF_927;)Ljava/lang/String;
+		ARG 0 map
+	METHOD method_6666 (Lcom/boehmod/blockfront/unnamed/BF_927;)Ljava/util/Map;
+		ARG 0 map
+	METHOD method_6667 of (Ljava/lang/String;Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_929;Lcom/boehmod/blockfront/unnamed/BF_929;Ljava/lang/String;ZLjava/util/Map;)Lcom/boehmod/blockfront/unnamed/BF_927;
+		ARG 0 name
+		ARG 1 author
+		ARG 2 alliesTeam
+		ARG 3 axisTeam
+		ARG 4 musicSet
+		ARG 5 isMatchMaking
+		ARG 6 environments
 	METHOD method_6668 (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_929;
 		ARG 0 location
+	METHOD method_6669 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

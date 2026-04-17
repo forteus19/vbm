@@ -1,0 +1,14 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1280 com/boehmod/blockfront/server/BFServerConfig
+	FIELD field_7566 GSON Lcom/google/gson/Gson;
+	METHOD <init> (Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Z)V
+		ARG 1 cloudIp
+		ARG 2 matchmaking
+		ARG 3 matchmakingPassword
+		ARG 4 matchmakingRegion
+		ARG 5 restartAfterMatch
+	METHOD method_6767 createDefault ()Lcom/boehmod/blockfront/unnamed/BF_1280;
+	METHOD method_6768 read (Ljava/io/File;)Lcom/boehmod/blockfront/unnamed/BF_1280;
+		ARG 0 file
+	METHOD method_6769 write (Ljava/io/File;)V
+		ARG 1 file
+	METHOD method_6773 getSearchRegion ()Lcom/boehmod/bflib/cloud/common/mm/SearchRegion;

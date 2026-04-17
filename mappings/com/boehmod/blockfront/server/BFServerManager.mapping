@@ -5,10 +5,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_1067 com/boehmod/blockfront/server/BFSer
 	FIELD field_4340 GAMES_STATUS_UPDATE_INTERVAL I
 	FIELD field_4341 statusUpdateTimer I
 	FIELD field_6856 collisionTracker Lcom/boehmod/blockfront/unnamed/BF_1198;
+	FIELD field_6952 ERROR_NO_MATCH_INNER Lnet/minecraft/network/chat/Component;
+	FIELD field_6953 ERROR_NO_MATCH Lnet/minecraft/network/chat/Component;
+	FIELD field_6954 ERROR_ADMIN Lnet/minecraft/network/chat/Component;
+	FIELD field_7572 config Lcom/boehmod/blockfront/unnamed/BF_1280;
 	METHOD method_4563 getMatchMakingCache ()Lcom/boehmod/blockfront/unnamed/BF_1064;
 	METHOD method_4566 getProfanityManager ()Lcom/boehmod/blockfront/unnamed/BF_1120;
 	METHOD method_4567 getCloudUrl ()Ljava/lang/String;
-	METHOD method_4569 readMatchMakingSettings ()V
+	METHOD method_4569 readConfig ()V
 	METHOD method_4570 shutdown ()V
 	METHOD method_4571 tickGamesStatus ()V
 	METHOD method_4572 updateGamesStatus ()V
@@ -22,3 +26,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_1067 com/boehmod/blockfront/server/BFSer
 		ARG 1 message
 	METHOD method_5899 assignPlayerToMatch (Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)Z
 		ARG 1 player
+		ARG 2 uuid
+	METHOD method_6776 getConfig ()Lcom/boehmod/blockfront/unnamed/BF_1280;

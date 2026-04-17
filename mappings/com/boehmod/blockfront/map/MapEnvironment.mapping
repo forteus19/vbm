@@ -21,6 +21,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 	FIELD field_6743 exteriorSound Ljava/util/function/Supplier;
 	FIELD field_6744 interiorSound Ljava/util/function/Supplier;
 	FIELD field_6820 command Lcom/boehmod/blockfront/unnamed/BF_462;
+	FIELD field_7534 SOUND_EVENT_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_7535 WEATHER_EFFECT_SET_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_7536 CODEC Lcom/mojang/serialization/Codec;
 	METHOD <init> (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
@@ -144,6 +146,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 		ARG 1 minecraft
 	METHOD method_5754 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
 	METHOD method_5873 reset ()V
+	METHOD method_6673 of (Ljava/lang/String;ILjava/util/function/Supplier;Ljava/util/function/Supplier;ZFFLcom/boehmod/blockfront/unnamed/BF_1182$BF_1277;Lcom/boehmod/blockfront/unnamed/BF_1182$BF_1277;Lcom/boehmod/blockfront/unnamed/BF_1182$BF_1277;Lcom/boehmod/blockfront/unnamed/BF_1182$BF_1277;ZZLjava/util/Optional;Ljava/util/EnumSet;Ljava/util/List;)Lcom/boehmod/blockfront/unnamed/BF_1182;
+	METHOD method_6762 write (Lio/netty/buffer/ByteBuf;)V
 	CLASS BF_1277 CodecData
 		FIELD field_7537 CODEC Lcom/mojang/serialization/Codec;
 		FIELD field_7538 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_1182$BF_1277;

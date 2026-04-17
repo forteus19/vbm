@@ -7,3 +7,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_431 com/boehmod/blockfront/client/settin
 		ARG 1 name
 		ARG 2 key
 	METHOD method_1506 isEnabled ()Z
+	METHOD method_6216 getDescription ()Ljava/lang/String;
+	METHOD method_6719 read (Lcom/google/gson/JsonObject;)V
+		ARG 1 root
+	METHOD method_6720 write (Lcom/google/gson/JsonObject;)V
+		ARG 1 root

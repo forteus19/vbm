@@ -38,3 +38,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_731 com/boehmod/blockfront/map/effect/Ab
 		ARG 5 players
 	METHOD method_3091 requiresFancyGraphics ()Z
 	METHOD method_5868 reset ()V
+	METHOD method_6733 read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_6734 write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf

@@ -1,0 +1,19 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1279 com/boehmod/blockfront/util/CompoundTagWrapper
+	METHOD <init> (Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 tag
+	METHOD method_6739 getInt (Ljava/lang/String;)I
+		ARG 1 key
+	METHOD method_6740 getInt (Ljava/lang/String;I)I
+		ARG 1 key
+		ARG 2 defaultValue
+	METHOD method_6741 putInt (Ljava/lang/String;I)V
+		ARG 1 key
+		ARG 2 value
+	METHOD method_6742 putString (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 key
+		ARG 2 value
+	METHOD method_6743 clear ()V
+	METHOD method_6744 contains (Ljava/lang/String;)Z
+		ARG 1 key
+	METHOD method_6745 getString (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 key
