@@ -19,11 +19,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_688 com/boehmod/blockfront/game/GameMatc
 	METHOD method_2861 addPlayerStreak (Ljava/util/UUID;)V
 		ARG 1 uuid
 	METHOD method_2862 getStreakLeader ()Ljava/util/UUID;
-	METHOD read (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
-	METHOD write (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root

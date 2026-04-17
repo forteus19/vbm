@@ -12,7 +12,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_891 com/boehmod/blockfront/common/match/
 	METHOD method_3713 addPlayerVote (Ljava/util/UUID;)V
 		ARG 1 uuid
 	METHOD method_5537 getCountries ()Ljava/util/List;
-	METHOD read (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD write (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 root

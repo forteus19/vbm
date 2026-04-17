@@ -57,11 +57,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_596 com/boehmod/blockfront/client/camera
 	METHOD method_2174 getStartRoll ()F
 	METHOD method_2175 getEndRoll ()F
 	METHOD method_2176 getFadeFromDuration ()F
-	METHOD read (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
-	METHOD write (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root

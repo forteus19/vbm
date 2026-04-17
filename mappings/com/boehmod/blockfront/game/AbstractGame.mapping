@@ -149,8 +149,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 2 writeMap
 	METHOD method_2628 hasMinimumPlayers (Ljava/util/Set;)Z
 		ARG 1 players
-	METHOD method_2629 getPlayerStatData (Ljava/util/UUID;)Lcom/boehmod/bflib/fds/tag/FDSTagCompound;
-		ARG 1 uuid
 	METHOD method_2630 shouldShowPlayerMessage (Ljava/util/UUID;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;ZZ)Z
 	METHOD method_2631 finishMatch (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;ZLcom/boehmod/blockfront/unnamed/BF_756;Ljava/util/Set;)V
 		ARG 1 level
@@ -178,8 +176,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2649 shouldUseStamina (Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 player
 	METHOD method_2650 clearPlayerStatData ()V
-	METHOD method_2652 readAllFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
 	METHOD method_2653 stopMatchMaking (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
 	METHOD method_2654 readPlayerStatData (Lio/netty/buffer/ByteBuf;)V
@@ -188,25 +184,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 uuid
 	METHOD method_2656 shouldRespawnAutomatically (Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 player
-	METHOD method_2657 writeAllFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
 	METHOD method_2659 writeForGamePacket (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD method_2660 specificReset (Lnet/minecraft/world/level/Level;)V
 		ARG 1 level
 	METHOD method_2661 getBannedClasses ()Ljava/util/Set;
-	METHOD method_2662 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
 	METHOD method_2664 readAll (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD method_2665 getErrorTypes ()Ljava/util/Set;
 	METHOD method_2666 getUUID ()Ljava/util/UUID;
-	METHOD method_2667 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
-	METHOD method_2669 writeSpecificFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
-	METHOD method_2670 readSpecificFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
 	METHOD method_2671 getErrorMessages (Ljava/util/List;)V
 		ARG 1 messages
 	METHOD method_2672 setName (Ljava/lang/String;)V
@@ -219,8 +205,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_6415 getCodecData ()Lcom/boehmod/blockfront/unnamed/BF_1265;
 	METHOD method_6416 readCodecData (Lcom/boehmod/blockfront/unnamed/BF_1265;)V
 		ARG 1 data
-	METHOD read (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD write (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
 	CLASS BF_678 ErrorType

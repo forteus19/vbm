@@ -1,6 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	FIELD field_2929 playerSpawns Ljava/util/List;
-	FIELD field_2930 teamObjects Lcom/boehmod/bflib/fds/tag/FDSTagCompound;
 	FIELD field_2931 players Lit/unimi/dsi/fastutil/objects/ObjectOpenHashSet;
 	FIELD field_2932 name Ljava/lang/String;
 	FIELD field_2933 styleText Lnet/minecraft/network/chat/Style;
@@ -35,11 +34,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	METHOD method_2816 decreaseObjectInt (Lcom/boehmod/blockfront/unnamed/BF_941;I)V
 		ARG 1 stat
 		ARG 2 amount
-	METHOD method_2817 setObject (Lcom/boehmod/blockfront/unnamed/BF_941;Ljava/lang/Object;)V
-		ARG 1 stat
-		ARG 2 value
-	METHOD method_2818 getObjectBoolean (Ljava/lang/String;)Ljava/lang/Boolean;
-		ARG 1 key
 	METHOD method_2819 addPlayers (Ljava/util/Set;)V
 		ARG 1 uuids
 	METHOD method_2820 getMaxPlayers ()I
@@ -68,10 +62,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	METHOD method_2837 getPlayers ()Ljava/util/Set;
 	METHOD method_2838 readBuf (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD method_2839 getObjectString (Ljava/lang/String;)Ljava/lang/String;
-		ARG 1 key
-	METHOD method_2840 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
-	METHOD method_2841 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
 	METHOD method_2842 getPlayerSpawns ()Ljava/util/List;

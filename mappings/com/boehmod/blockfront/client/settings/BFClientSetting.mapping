@@ -7,7 +7,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_431 com/boehmod/blockfront/client/settin
 		ARG 1 name
 		ARG 2 key
 	METHOD method_1506 isEnabled ()Z
-	METHOD method_1507 readFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
-	METHOD method_1511 writeFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root

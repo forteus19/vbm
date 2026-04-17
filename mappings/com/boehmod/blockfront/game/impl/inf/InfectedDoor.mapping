@@ -12,11 +12,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_888 com/boehmod/blockfront/game/impl/inf
 	METHOD method_3699 isOpen ()Z
 	METHOD method_3700 close ()V
 	METHOD method_3701 getPosition ()Lnet/minecraft/core/BlockPos;
-	METHOD read (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
-	METHOD write (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root

@@ -1,8 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_435 com/boehmod/blockfront/client/settings/BFClientSettingsDisk
-	METHOD method_1520 (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;Lcom/boehmod/blockfront/unnamed/BF_431;)V
-		ARG 1 setting
-	METHOD method_1521 (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;Lcom/boehmod/blockfront/unnamed/BF_431;)V
-		ARG 1 setting
 	METHOD method_1522 write (Lcom/boehmod/blockfront/unnamed/BF_606;)V
 		ARG 0 manager
 	METHOD method_1523 read (Lcom/boehmod/blockfront/unnamed/BF_606;)V

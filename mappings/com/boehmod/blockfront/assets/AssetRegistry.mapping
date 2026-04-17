@@ -3,17 +3,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_458 com/boehmod/blockfront/assets/AssetR
 	FIELD field_2074 type Ljava/lang/String;
 	FIELD field_2075 basePath Ljava/lang/String;
 	FIELD field_2076 assetsToRemove Ljava/util/List;
-	FIELD field_2077 assetClass Ljava/lang/Class;
-	FIELD field_2078 manager Lcom/boehmod/blockfront/unnamed/BF_445;
 	FIELD field_2079 entries Ljava/util/Map;
 	FIELD field_7359 GSON Lcom/google/gson/Gson;
 	FIELD field_7360 codec Lcom/mojang/serialization/Codec;
-	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_459;Ljava/lang/Class;Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_465;)V
-		ARG 1 manager
-		ARG 2 assetStore
-		ARG 3 assetClass
-		ARG 4 type
-		ARG 5 factory
 	METHOD method_1607 getFactory ()Lcom/boehmod/blockfront/unnamed/BF_465;
 	METHOD method_1608 getByName (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_460;
 		ARG 1 name
@@ -22,8 +14,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_458 com/boehmod/blockfront/assets/AssetR
 		ARG 2 asset
 	METHOD method_1610 baseFilename (Ljava/nio/file/Path;)Ljava/lang/String;
 		ARG 1 path
-	METHOD method_1611 readAssetSafe (Ljava/nio/file/Path;)V
-		ARG 1 path
 	METHOD method_1612 testAll (Lnet/minecraft/commands/CommandSource;)V
 		ARG 1 source
 	METHOD method_1613 (Lnet/minecraft/commands/CommandSource;Lcom/boehmod/blockfront/unnamed/BF_460;)V
@@ -31,9 +21,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_458 com/boehmod/blockfront/assets/AssetR
 	METHOD method_1614 loadFromDisk ()V
 	METHOD method_1615 createDir ()V
 	METHOD method_1616 deleteAll ()V
-	METHOD method_1617 writeFDS (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_460;)V
-		ARG 1 name
-		ARG 2 entry
 	METHOD method_1618 readAsset (Ljava/nio/file/Path;)V
 		ARG 1 path
 	METHOD method_1619 (Ljava/nio/file/Path;)Z
@@ -51,15 +38,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_458 com/boehmod/blockfront/assets/AssetR
 	METHOD method_1626 getType ()Ljava/lang/String;
 	METHOD method_6217 (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/RuntimeException;
 		ARG 1 error
-	METHOD method_6218 readFDS (Ljava/nio/file/Path;)Lcom/boehmod/blockfront/unnamed/BF_460;
-		ARG 1 path
 	METHOD method_6219 (Ljava/nio/file/Path;Ljava/lang/String;)Ljava/lang/RuntimeException;
 		ARG 1 error
-	METHOD method_6220 write (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_460;)V
-		ARG 1 filename
-		ARG 2 data
-	METHOD method_6221 read (Ljava/nio/file/Path;)Lcom/boehmod/blockfront/unnamed/BF_460;
-		ARG 1 path
 	METHOD method_6222 parseFromJson (Ljava/nio/file/Path;)Lcom/boehmod/blockfront/unnamed/BF_460;
 		ARG 1 path
 	METHOD method_6223 encodeToJson (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_460;)V

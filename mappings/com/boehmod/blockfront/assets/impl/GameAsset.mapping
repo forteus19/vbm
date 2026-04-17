@@ -3,15 +3,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_683 com/boehmod/blockfront/assets/impl/G
 	FIELD field_2920 command Lcom/boehmod/blockfront/unnamed/BF_462;
 	FIELD field_2921 isInRotation Z
 	FIELD field_2922 manager Lcom/boehmod/blockfront/unnamed/BF_445;
-	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
-		ARG 1 manager
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 game
 		ARG 2 manager
 	METHOD method_2799 getGame ()Lcom/boehmod/blockfront/unnamed/BF_677;
-	METHOD method_2800 getOrCreateGame (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_677;
-		ARG 1 manager
-		ARG 2 name
 	METHOD method_2801 isInRotation ()Z
 	METHOD method_6417 getCodecData ()Lcom/boehmod/blockfront/unnamed/BF_1264;
 	METHOD method_6418 (Lcom/boehmod/blockfront/unnamed/BF_686;)Lcom/boehmod/blockfront/unnamed/BF_1275;

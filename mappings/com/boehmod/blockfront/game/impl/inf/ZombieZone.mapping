@@ -12,11 +12,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_887 com/boehmod/blockfront/game/impl/inf
 	METHOD method_3692 getRandomSpawn ()Lcom/boehmod/blockfront/unnamed/BF_886;
 	METHOD method_3693 isActive ()Z
 	METHOD method_3694 setInactive ()V
-	METHOD read (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
-	METHOD write (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root

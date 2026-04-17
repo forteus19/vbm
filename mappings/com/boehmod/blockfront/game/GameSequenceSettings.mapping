@@ -9,11 +9,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_603 com/boehmod/blockfront/game/GameSequ
 		ARG 1 buf
 	METHOD method_2221 writeWithRegistry (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
 		ARG 1 buf
-	METHOD read (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD readFromFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root
-	METHOD write (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 buf
-	METHOD writeToFDS (Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 root

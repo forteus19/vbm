@@ -22,12 +22,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/common/match/
 		ARG 6 chest
 		ARG 7 legs
 		ARG 8 feet
-	METHOD method_3155 readFDS (Ljava/lang/String;Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)Lcom/boehmod/blockfront/unnamed/BF_759;
-		ARG 0 tagName
-		ARG 1 root
-	METHOD method_3156 writeFDS (Ljava/lang/String;Lcom/boehmod/bflib/fds/tag/FDSTagCompound;)V
-		ARG 1 tagName
-		ARG 2 root
 	METHOD method_3157 addExtra (Ljava/util/Collection;)Lcom/boehmod/blockfront/unnamed/BF_759;
 		ARG 1 itemStacks
 	METHOD method_3158 createFromInventory (Lnet/minecraft/server/level/ServerPlayer;)Lcom/boehmod/blockfront/unnamed/BF_759;
