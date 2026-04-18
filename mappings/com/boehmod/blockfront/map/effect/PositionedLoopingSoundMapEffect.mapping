@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1181 com/boehmod/blockfront/map/effect/PositionedLoopingSoundMapEffect
+	FIELD field_6715 soundInstance Lcom/boehmod/blockfront/unnamed/BF_1171;
 	FIELD field_6716 sound Ljava/util/function/Supplier;
 	FIELD field_6717 pitch F
 	FIELD field_6718 volume F

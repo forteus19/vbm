@@ -7,10 +7,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	FIELD field_2033 antiCheat Lcom/boehmod/blockfront/unnamed/BF_451;
 	FIELD field_2034 assetStore Lcom/boehmod/blockfront/unnamed/BF_459;
 	FIELD field_2035 isGameRulesSet Z
+	FIELD field_2036 PING_UPDATE_INTERVAL I
 	FIELD field_2037 pingUpdateTimer I
 	FIELD field_2038 LOGIN_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2039 instanceUUID Ljava/util/UUID;
 	FIELD field_6328 cloudRegistry Lcom/boehmod/bflib/cloud/common/CloudRegistry;
+	FIELD field_7212 playerGames Ljava/util/Map;
 	METHOD <init> (Lcom/boehmod/blockfront/common/player/c;)V
 		ARG 1 playerDataHandler
 	METHOD method_1549 getPlayerDataHandler ()Lcom/boehmod/blockfront/common/player/c;
@@ -43,7 +45,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1561 mapIsOccupied (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
 		ARG 1 mapName
 		ARG 2 game
-	METHOD method_1562 getGameWithPlayer (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD method_1562 getPlayerGame (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_677;
 		ARG 1 uuid
 	METHOD method_1563 gameHasPlayer (Ljava/util/UUID;Ljava/util/UUID;)Z
 		ARG 1 game
@@ -56,7 +58,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 2 level
 	METHOD method_1566 (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_683;)V
 		ARG 2 game
-	METHOD method_1567 getGameWithPlayer (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD method_1567 getPlayerGame (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/unnamed/BF_677;
 		ARG 1 player
 	METHOD method_1568 setGameRules (Lnet/minecraft/world/level/Level;Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 level
@@ -79,3 +81,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_5783 getCollisionTracker ()Lcom/boehmod/blockfront/unnamed/BF_1198;
 	METHOD method_5893 updatePlayerPings (Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 level
+	METHOD method_6101 setPlayerGame (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 uuid
+		ARG 2 game
+	METHOD method_6102 clearPlayerGame (Ljava/util/UUID;)V
+		ARG 1 uuid

@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1171 com/boehmod/blockfront/client/sound/GameSoundInstance
+	FIELD field_6677 gameUuid Ljava/util/UUID;
+	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/world/phys/Vec3;FFLjava/util/UUID;)V
+		ARG 1 soundEvent
+		ARG 2 position
+		ARG 3 pitch
+		ARG 4 volume
+		ARG 5 gameUuid
