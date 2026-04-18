@@ -1,4 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_711 com/boehmod/blockfront/common/event/BFLivingDeathSubscriber
 	FIELD field_3029 SCOOTER_UUID Ljava/util/UUID;
+	METHOD method_3052 spawnCorpse (Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/world/entity/LivingEntity;)V
+		ARG 0 damageSource
+		ARG 1 entity
 	METHOD method_3054 onLivingDeath (Lnet/neoforged/neoforge/event/entity/living/LivingDeathEvent;)V
 		ARG 0 event

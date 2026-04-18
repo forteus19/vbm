@@ -1,5 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_989 com/boehmod/blockfront/common/gun/bullet/BlockBulletCollision
-	METHOD method_4103 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_989;
+	METHOD method_4103 ofBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_989;
 		ARG 0 buf
 	METHOD method_4104 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf

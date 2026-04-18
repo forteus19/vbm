@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1060 com/boehmod/blockfront/util/SerializationUtils
+CLASS com/boehmod/blockfront/unnamed/BF_1060 com/boehmod/blockfront/util/ByteBufUtils
 	FIELD field_6396 ITEM_CODEC Lnet/minecraft/network/codec/StreamCodec;
 	METHOD method_4516 readPlayerGameData (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/common/player/b;
 		ARG 0 buf

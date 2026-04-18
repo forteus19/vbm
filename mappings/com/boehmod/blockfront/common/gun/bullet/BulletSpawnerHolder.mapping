@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1237 com/boehmod/blockfront/common/gun/bullet/BulletSpawnerHolder
+	FIELD field_7221 spawner Lcom/boehmod/blockfront/unnamed/BF_1001;
+	METHOD method_6116 createOrInitSpawner (Lcom/boehmod/blockfront/unnamed/BF_951;Ljava/util/function/Function;)Lcom/boehmod/blockfront/unnamed/BF_1001;
+		ARG 1 damage
+		ARG 2 constructor

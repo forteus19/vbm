@@ -18,6 +18,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_943 com/boehmod/blockfront/common/stat/B
 	FIELD field_3804 INFECTED_MATCHES_WON Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3805 CHAR Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3806 TROPHIES Lcom/boehmod/blockfront/unnamed/BF_941;
+	FIELD field_3807 ALLIES_TEAM_NAME Ljava/lang/String;
+	FIELD field_3808 AXIS_TEAM_NAME Ljava/lang/String;
 	FIELD field_3809 GAMES Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3810 PLAYED_INTRO Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3811 SAID_GG Lcom/boehmod/blockfront/unnamed/BF_941;
@@ -41,3 +43,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_943 com/boehmod/blockfront/common/stat/B
 	FIELD field_3831 RADIO_DELAY Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3832 TEAM_SWITCH Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3833 WAR_CRY Lcom/boehmod/blockfront/unnamed/BF_941;
+	METHOD method_3924 extraListener (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;I)V
+		ARG 0 manager
+		ARG 1 stat
+		ARG 2 game
+		ARG 3 uuid
+		ARG 4 amount

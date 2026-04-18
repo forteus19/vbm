@@ -19,12 +19,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2561 CONNECTION_ESTABLISHED_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2562 CONNECTION_LOST_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2563 SAVING_LEVEL_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_2564 CHUNK_RELOAD_INTERVAL I
 	FIELD field_2565 dataPath Ljava/lang/String;
 	FIELD field_2566 chunkReloadTimer I
 	FIELD field_2567 corpsePhysicsShutdown Z
 	FIELD field_6419 environmentManager Lcom/boehmod/blockfront/unnamed/BF_760;
 	FIELD field_6706 timedWorldObjectManager Lcom/boehmod/blockfront/unnamed/BF_1177;
 	FIELD field_6835 potentialBulletCollisionManager Lcom/boehmod/blockfront/unnamed/BF_1198;
+	FIELD field_7214 bulletSpawnerHolder Lcom/boehmod/blockfront/unnamed/BF_1237;
 	FIELD field_7247 dailyReward Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
@@ -72,6 +74,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 		ARG 2 level
 		ARG 3 player
 	METHOD method_2251 update (Lnet/minecraft/client/Minecraft;Ljava/util/Random;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lcom/boehmod/blockfront/unnamed/BF_476;Lcom/boehmod/blockfront/unnamed/BF_271;FLnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/BlockPos;)V
+		ARG 1 minecraft
+		ARG 2 random
+		ARG 3 level
+		ARG 4 player
+		ARG 5 cloudData
+		ARG 6 playerData
+		ARG 7 renderTime
+		ARG 8 pos
+		ARG 9 blockPos
 	METHOD method_2252 updateBiomeColors (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 0 minecraft
 		ARG 1 player
@@ -99,6 +110,16 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 		ARG 1 data
 	METHOD method_2262 queueChunkReload ()V
 	METHOD method_5643 getTimedWorldObjectManager ()Lcom/boehmod/blockfront/unnamed/BF_1177;
+	METHOD method_5926 renderDebug (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;)V
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 camera
+	METHOD method_6104 getBulletSpawner (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_951;)Lcom/boehmod/blockfront/unnamed/BF_946;
+		ARG 1 minecraft
+		ARG 2 dataHandler
+		ARG 3 damage
+	METHOD method_6105 (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_951;)Lcom/boehmod/blockfront/unnamed/BF_946;
+		ARG 2 dmg
 	METHOD method_6136 getDailyReward ()Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;
 	METHOD method_6137 setDailyReward (Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;)V
 		ARG 1 dailyReward

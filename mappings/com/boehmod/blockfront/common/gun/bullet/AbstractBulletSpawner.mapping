@@ -1,1 +1,22 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1001 com/boehmod/blockfront/common/gun/bullet/AbstractBulletSpawner
+	FIELD field_4108 damage Lcom/boehmod/blockfront/unnamed/BF_951;
+	FIELD field_4109 blockCollisions Ljava/util/List;
+	FIELD field_4110 entityIds Lit/unimi/dsi/fastutil/ints/IntSet;
+	FIELD field_4111 livingCollisions Ljava/util/List;
+	FIELD field_4112 dataHandler Lcom/boehmod/blockfront/common/player/c;
+	METHOD <init> (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_951;)V
+		ARG 1 dataHandler
+		ARG 2 damage
+	METHOD method_4261 addDebugLine (Lcom/boehmod/blockfront/unnamed/BF_17;)V
+		ARG 1 debugLine
+	METHOD method_5788 addDebugBox (Lcom/boehmod/blockfront/unnamed/BF_1187;)V
+		ARG 1 debugBox
+	METHOD method_5791 getOrigin (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/phys/Vec3;
+		ARG 1 entity
+	METHOD method_5792 registerLivingCollisions (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_1193;)V
+	METHOD method_5793 registerLivingCollisionsInternal (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_1193;)V
+	METHOD method_6113 init (Lcom/boehmod/blockfront/unnamed/BF_951;)Lcom/boehmod/blockfront/unnamed/BF_1001;
+		ARG 1 damage
+	METHOD method_6114 setDamage (Lcom/boehmod/blockfront/unnamed/BF_951;)V
+		ARG 1 damage
+	METHOD method_6115 reset ()V

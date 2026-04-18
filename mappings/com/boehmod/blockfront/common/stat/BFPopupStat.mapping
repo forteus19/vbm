@@ -1,0 +1,19 @@
+CLASS com/boehmod/blockfront/unnamed/BF_940 com/boehmod/blockfront/common/stat/BFPopupStat
+	FIELD field_3781 formatting Lnet/minecraft/ChatFormatting;
+	FIELD field_3782 sound Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_3783 message Ljava/lang/String;
+	FIELD field_3784 duration I
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;ILnet/minecraft/ChatFormatting;)V
+		ARG 1 key
+		ARG 2 message
+		ARG 3 duration
+		ARG 4 formatting
+	METHOD <init> (Ljava/lang/String;Ljava/lang/String;ILnet/minecraft/ChatFormatting;Lnet/neoforged/neoforge/registries/DeferredHolder;)V
+		ARG 1 key
+		ARG 2 message
+		ARG 3 duration
+		ARG 4 formatting
+		ARG 5 sound
+	METHOD method_3918 doPopup (Ljava/util/UUID;I)V
+		ARG 1 uuid
+		ARG 2 amount

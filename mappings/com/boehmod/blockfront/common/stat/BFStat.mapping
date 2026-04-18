@@ -1,9 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_941 com/boehmod/blockfront/common/stat/BFStat
-	FIELD field_3785 trigger Lcom/boehmod/blockfront/unnamed/BF_941$BF_942;
+	FIELD field_3785 listener Lcom/boehmod/blockfront/unnamed/BF_941$BF_942;
 	FIELD field_3786 key Ljava/lang/String;
+	FIELD field_3787 listenerEnabled Z
 	METHOD <init> (Ljava/lang/String;)V
 		ARG 1 key
-	METHOD method_3919 trigger (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;II)V
+	METHOD method_3919 runListener (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;II)V
 		ARG 1 manager
 		ARG 2 game
 		ARG 3 uuid
@@ -16,9 +17,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_941 com/boehmod/blockfront/common/stat/B
 		ARG 4 uuid
 		ARG 5 change
 		ARG 6 newValue
-	METHOD method_3921 setTrigger (Lcom/boehmod/blockfront/unnamed/BF_941$BF_942;)Lcom/boehmod/blockfront/unnamed/BF_941;
+	METHOD method_3921 setListener (Lcom/boehmod/blockfront/unnamed/BF_941$BF_942;)Lcom/boehmod/blockfront/unnamed/BF_941;
 		ARG 1 trigger
-	CLASS BF_942 Trigger
+	METHOD method_3922 listenerEnabled (Z)Lcom/boehmod/blockfront/unnamed/BF_941;
+		ARG 1 requiresCloudConnection
+	METHOD method_3923 isListenerEnabled ()Z
+	CLASS BF_942 Listener
 		METHOD onGlobalStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;II)V
 			ARG 1 manager
 			ARG 2 stat

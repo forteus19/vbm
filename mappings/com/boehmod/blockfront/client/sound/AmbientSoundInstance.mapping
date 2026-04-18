@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_399 com/boehmod/blockfront/client/sound/AmbientSoundInstance
+	FIELD field_6987 DEBUG_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_5925 renderDebug (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;)V
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 camera

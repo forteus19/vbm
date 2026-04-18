@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_821 com/boehmod/blockfront/game/tag/IHasInfectedEntities
+	METHOD method_3422 onInfectedDeath (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_578;Lnet/minecraft/world/damagesource/DamageSource;)V

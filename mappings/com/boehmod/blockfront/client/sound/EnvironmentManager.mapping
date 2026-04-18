@@ -1,1 +1,13 @@
 CLASS com/boehmod/blockfront/unnamed/BF_760 com/boehmod/blockfront/client/sound/EnvironmentManager
+	FIELD field_3263 exteriorInstances [Lcom/boehmod/blockfront/unnamed/BF_399;
+	FIELD field_3265 interiorInstances [Lcom/boehmod/blockfront/unnamed/BF_399;
+	FIELD field_6420 isStopped Z
+	METHOD method_3178 update (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 minecraft
+		ARG 2 game
+	METHOD method_5866 stop (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_5927 renderDebug (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;)V
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 camera

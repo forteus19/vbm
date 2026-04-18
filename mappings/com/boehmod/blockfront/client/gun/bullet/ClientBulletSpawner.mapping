@@ -1,1 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_946 com/boehmod/blockfront/client/gun/bullet/ClientBulletSpawner
+	FIELD field_6406 minecraft Lnet/minecraft/client/Minecraft;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_951;)V
+		ARG 1 minecraft

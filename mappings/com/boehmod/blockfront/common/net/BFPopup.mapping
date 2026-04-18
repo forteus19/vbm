@@ -1,1 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_921 com/boehmod/blockfront/common/net/BFPopup
+	FIELD field_3656 duration I
+	FIELD field_3657 message Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;I)V
+		ARG 1 message
+		ARG 2 duration
+	METHOD method_3809 render (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;IIF)V
+		ARG 1 graphics
+		ARG 2 font
+	METHOD method_3810 getDuration ()I

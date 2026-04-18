@@ -1,2 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1191 com/boehmod/blockfront/server/ac/bullet/ValidationBulletSpawner
 	FIELD field_6841 potentialCollisionManager Lcom/boehmod/blockfront/unnamed/BF_1198;
+	FIELD field_6842 player Lnet/minecraft/server/level/ServerPlayer;
+	METHOD <init> (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_1119;Lcom/boehmod/blockfront/unnamed/BF_951;Lcom/boehmod/blockfront/unnamed/BF_1198;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;FFJI)V
+		ARG 1 player

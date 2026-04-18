@@ -1,3 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_851 com/boehmod/blockfront/game/impl/ttt/TroubleTownPlayerManager
 	FIELD field_3474 playerSpawns Ljava/util/List;
 	FIELD field_3475 DETECTIVE_LOADOUT Lcom/boehmod/blockfront/unnamed/BF_759;
+	METHOD method_3539 teleportPlayersToRandomSpawns (Lcom/boehmod/blockfront/common/player/c;)V
+		ARG 1 dataHandler
+	METHOD method_3541 getRandomPlayerSpawn ()Lcom/boehmod/blockfront/unnamed/BF_692;

@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
+CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtils
 	FIELD field_2950 TEAM_TYPING_PREFIX Ljava/lang/String;
 	FIELD field_2951 OBJECTIVE_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2952 OBJECTIVE_UP_PREFIX Lnet/minecraft/network/chat/Component;
@@ -89,7 +89,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 1 game
 		ARG 2 players
 		ARG 3 stat
-	METHOD method_2888 triggerPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
+	METHOD method_2888 changePlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
 		ARG 0 manager
 		ARG 1 game
 		ARG 2 players
@@ -100,7 +100,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/util/BFUtils
 		ARG 1 game
 		ARG 2 player
 		ARG 3 stat
-	METHOD method_2890 triggerPlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
+	METHOD method_2890 changePlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;I)V
 		ARG 0 manager
 		ARG 1 game
 		ARG 2 player
