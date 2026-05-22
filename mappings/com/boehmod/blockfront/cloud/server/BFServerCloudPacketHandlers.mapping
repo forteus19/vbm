@@ -15,3 +15,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_1066 com/boehmod/blockfront/cloud/server
 		ARG 2 connection
 	METHOD method_4561 register (Lcom/boehmod/blockfront/unnamed/BF_1067;)V
 		ARG 0 manager
+	METHOD method_6194 discordVcPlayers (Lcom/boehmod/blockfront/unnamed/BF_1067;Lcom/boehmod/bflib/cloud/packet/common/discord/PacketDiscordVCPlayers;Lcom/boehmod/blockfront/cloud/connection/ModConnection;)V
+		ARG 0 manager
+		ARG 1 packet
+		ARG 2 connection
+	METHOD method_6195 (Lcom/boehmod/blockfront/unnamed/BF_1067;Lcom/boehmod/bflib/cloud/packet/common/discord/PacketDiscordVCPlayers;Lcom/boehmod/blockfront/cloud/connection/ModConnection;)V
+		ARG 1 packet
+		ARG 2 connection

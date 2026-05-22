@@ -1,5 +1,18 @@
 CLASS com/boehmod/blockfront/client/corpse/physics/b com/boehmod/blockfront/client/corpse/physics/BlockPhysicsBakery
+	FIELD field_1093 BLOCK_SHAPES_MEMO Ljava/util/function/Function;
 	FIELD field_1094 level Lnet/minecraft/client/multiplayer/ClientLevel;
+	FIELD field_6956 LOGGER Lorg/apache/logging/log4j/Logger;
 	METHOD <init> (Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 level
 	METHOD method_784 getLevel ()Lnet/minecraft/world/level/Level;
+	METHOD method_785 (Lcom/boehmod/blockfront/client/corpse/physics/a;DDDDDD)V
+		ARG 1 minX
+		ARG 3 minY
+		ARG 5 minZ
+		ARG 7 maxX
+		ARG 9 maxY
+		ARG 11 maxZ
+	METHOD method_786 uploadBlockShapeInternal (Lnet/minecraft/world/level/block/state/BlockState;)Lcom/boehmod/blockfront/client/corpse/physics/a;
+		ARG 1 state
+	METHOD method_787 uploadBlockShape (Lnet/minecraft/world/level/block/state/BlockState;)Lcom/boehmod/blockfront/client/corpse/physics/a;
+		ARG 1 state

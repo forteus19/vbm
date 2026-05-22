@@ -2,6 +2,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen
 	FIELD field_1044 splashText Ljava/lang/String;
 	FIELD field_1045 RENDERERS Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_1046 particles Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_1047 widgets Ljava/util/List;
 	FIELD field_1049 RETURN_ICON Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1050 LOGO Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1051 BACKSHADOW Lnet/minecraft/resources/ResourceLocation;
@@ -17,6 +18,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen
 	FIELD field_1062 BACKSHADOW_WHITE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1063 CORNERSHADOW Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1064 SPLASHES Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_759 clearWidgets ()V
+	METHOD method_764 addWidget (Lcom/boehmod/blockfront/unnamed/BF_121;)V
+		ARG 1 widget
 	METHOD method_767 addParticle (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_147;)V
 		ARG 1 minecraft
 		ARG 2 particle
@@ -25,3 +29,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen
 		ARG 1 url
 	METHOD method_772 getMenuParticles ()Ljava/util/List;
 	METHOD method_773 getSplashText ()Ljava/lang/String;
+	METHOD method_774 menuInit ()V

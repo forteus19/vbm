@@ -22,6 +22,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_53 com/boehmod/blockfront/client/gui/wid
 		ARG 1 texture
 	METHOD method_394 size (I)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 size
+	METHOD method_395 color (I)Lcom/boehmod/blockfront/unnamed/BF_53;
+	METHOD method_397 hoverColor (I)Lcom/boehmod/blockfront/unnamed/BF_53;
 	CLASS BF_54 DisplayType
 	CLASS BF_55 Alignment
 	CLASS BF_56 TextStyle

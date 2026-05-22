@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/client/corpse/physics/a com/boehmod/blockfront/client/corpse/physics/RustBlockShape
+	METHOD <init> (I)V
+		ARG 1 handle
+	METHOD method_782 addBox (Lorg/joml/Vector3dc;Lorg/joml/Vector3dc;)V
+		ARG 1 min
+		ARG 2 max

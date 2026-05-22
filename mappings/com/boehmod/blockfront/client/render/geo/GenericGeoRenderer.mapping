@@ -1,3 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_338 com/boehmod/blockfront/client/render/geo/GenericGeoRenderer
 	FIELD field_1701 model Lcom/boehmod/blockfront/unnamed/BF_230;
-	FIELD field_1702 animatable Lcom/boehmod/blockfront/unnamed/BF_895;
+	FIELD field_1702 item Lcom/boehmod/blockfront/unnamed/BF_895;

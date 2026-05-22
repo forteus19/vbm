@@ -1,4 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_166 com/boehmod/blockfront/client/screen/title/LobbyTitleScreen
+	FIELD field_6963 PATREON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_6964 PATREON_TIP Lnet/minecraft/network/chat/Component;
+	FIELD field_919 BACKPACK_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	METHOD method_6125 setQueuedScreen ()V
 	METHOD method_702 updateDisplayTextures (Lcom/boehmod/blockfront/unnamed/BF_273;)V
 		ARG 0 dataHandler

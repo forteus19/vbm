@@ -2,11 +2,16 @@ CLASS com/boehmod/blockfront/unnamed/BF_431 com/boehmod/blockfront/client/settin
 	FIELD field_1937 name Ljava/lang/String;
 	FIELD field_1938 description Ljava/lang/String;
 	FIELD field_1939 key Ljava/lang/String;
+	FIELD field_1940 listener Ljava/util/function/Consumer;
 	FIELD field_1942 isEnabled Z
 	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_434;Z)V
 		ARG 1 name
 		ARG 2 key
 	METHOD method_1506 isEnabled ()Z
+	METHOD method_1508 listener (Ljava/util/function/Consumer;)Lcom/boehmod/blockfront/unnamed/BF_431;
+		ARG 1 listener
+	METHOD method_1513 setEnabled (Z)V
+		ARG 1 enabled
 	METHOD method_6216 getDescription ()Ljava/lang/String;
 	METHOD method_6719 read (Lcom/google/gson/JsonObject;)V
 		ARG 1 root

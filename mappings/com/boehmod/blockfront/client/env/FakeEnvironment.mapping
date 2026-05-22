@@ -7,9 +7,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_95 com/boehmod/blockfront/client/env/Fak
 		ARG 1 profile
 	METHOD method_474 (Lcom/mojang/authlib/GameProfile;Ljava/lang/Object;)Lcom/boehmod/blockfront/unnamed/BF_94;
 		ARG 2 id
-	METHOD method_475 getPlayer (Lnet/minecraft/client/Minecraft;)Lcom/boehmod/blockfront/unnamed/BF_94;
+	METHOD method_475 getLocalPlayer (Lnet/minecraft/client/Minecraft;)Lcom/boehmod/blockfront/unnamed/BF_94;
 		ARG 1 minecraft
-	METHOD method_476 getPlayerCached (Lnet/minecraft/client/Minecraft;Lcom/mojang/authlib/GameProfile;)Lcom/boehmod/blockfront/unnamed/BF_94;
+	METHOD method_476 getPlayer (Lnet/minecraft/client/Minecraft;Lcom/mojang/authlib/GameProfile;)Lcom/boehmod/blockfront/unnamed/BF_94;
 		ARG 1 minecraft
 		ARG 2 profile
 	METHOD method_477 update (Lnet/minecraft/client/Minecraft;)V

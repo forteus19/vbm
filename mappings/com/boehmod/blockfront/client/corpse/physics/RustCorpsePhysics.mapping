@@ -4,5 +4,6 @@ CLASS com/boehmod/blockfront/client/corpse/physics/RustCorpsePhysics
 	FIELD field_1089 nativesLoaded Z
 	FIELD field_1090 NAME Ljava/lang/String;
 	FIELD field_1091 TEMP_NAME Ljava/lang/String;
+	METHOD method_778 uploadBlockWrapper ()Lcom/boehmod/blockfront/client/corpse/physics/a;
 	METHOD method_780 getNativeFilename ()Ljava/lang/String;
 	METHOD method_781 loadNative ()V

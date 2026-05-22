@@ -1,14 +1,47 @@
 CLASS com/boehmod/blockfront/unnamed/BF_476 com/boehmod/blockfront/common/player/PlayerCloudData
 	FIELD field_2115 playerDataType Lcom/boehmod/bflib/cloud/common/player/PlayerDataType;
 	FIELD field_2116 playerGroup Lcom/boehmod/bflib/cloud/common/player/PlayerGroup;
+	FIELD field_2117 pastPunishments Ljava/util/EnumMap;
+	FIELD field_2118 activePunishments Ljava/util/EnumMap;
+	FIELD field_2119 isPopulated Z
+	FIELD field_2121 requestTimer I
 	FIELD field_2122 punishmentCheckTimer I
 	FIELD field_2123 maxFriends I
+	FIELD field_2124 statusComponent Lnet/minecraft/network/chat/Component;
+	FIELD field_6324 STATUS_MATCH_COMPONENT Lnet/minecraft/network/chat/Component;
+	FIELD field_6325 STATUS_PARTY_HOST_COMPONENT Lnet/minecraft/network/chat/Component;
+	FIELD field_6326 STATUS_PARTY_COMPONENT Lnet/minecraft/network/chat/Component;
+	FIELD field_6679 isDiscordLinked Z
+	FIELD field_6973 isPatreonLinked Z
+	METHOD <init> (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD getPunishmentCount (Lcom/boehmod/bflib/cloud/common/player/PunishmentType;)I
+		ARG 1 type
+	METHOD hasActivePunishment (Lcom/boehmod/bflib/cloud/common/player/PunishmentType;)Z
+		ARG 1 type
 	METHOD method_1708 getMaxFriends ()I
 	METHOD method_1709 getPlayerDataType ()Lcom/boehmod/bflib/cloud/common/player/PlayerDataType;
-	METHOD method_1711 getMcProfile ()Lcom/mojang/authlib/GameProfile;
+	METHOD method_1711 getGameProfile ()Lcom/mojang/authlib/GameProfile;
 	METHOD method_1712 setPlayerDataType (Lcom/boehmod/bflib/cloud/common/player/PlayerDataType;)V
 		ARG 1 playerDataType
+	METHOD method_1713 update (Lcom/boehmod/blockfront/unnamed/BF_1067;)V
+		ARG 1 manager
+	METHOD method_1714 readPunishments (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_1715 getDisplayTitle ()Lnet/minecraft/network/chat/MutableComponent;
+	METHOD method_1716 setUsernameFromPlayer (Lnet/minecraft/world/entity/player/Player;)V
+		ARG 1 player
 	METHOD method_1717 hasPermission (Ljava/lang/String;)Z
 		ARG 1 id
+	METHOD method_1718 getStatusComponent ()Lnet/minecraft/network/chat/Component;
+	METHOD method_1719 getDetailedStatusComponent ()Lit/unimi/dsi/fastutil/objects/ObjectList;
+	METHOD method_1720 isPopulated ()Z
+	METHOD method_5636 isDiscordLinked ()Z
+	METHOD method_5909 isPatreonLinked ()Z
+	METHOD read (Lcom/boehmod/bflib/cloud/common/player/PlayerDataContext;Lio/netty/buffer/ByteBuf;)V
+		ARG 1 context
+		ARG 2 buf
 	METHOD setGroup (Lcom/boehmod/bflib/cloud/common/player/PlayerGroup;)V
 		ARG 1 playerGroup
+	METHOD setStatus (Lcom/boehmod/bflib/cloud/common/player/status/PlayerStatus;)V
+		ARG 1 status

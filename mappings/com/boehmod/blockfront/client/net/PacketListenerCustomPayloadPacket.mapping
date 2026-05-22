@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/client/net/PacketListenerCustomPayloadPacket
+	METHOD channelRead0 (Lio/netty/channel/ChannelHandlerContext;Ljava/lang/Object;)V
+		ARG 1 context
+		ARG 2 packet
+	METHOD onReadTimePayload (Lio/netty/channel/ChannelHandlerContext;Lnet/neoforged/neoforge/network/payload/ClientboundCustomSetTimePayload;)Z
+		ARG 1 context
+		ARG 2 payload

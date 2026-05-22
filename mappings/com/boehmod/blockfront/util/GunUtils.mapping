@@ -1,1 +1,19 @@
 CLASS com/boehmod/blockfront/unnamed/BF_405 com/boehmod/blockfront/util/GunUtils
+	METHOD method_1422 playGunSound (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_993;Lnet/minecraft/world/phys/Vec3;ZZZI)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 localPlayer
+		ARG 4 level
+		ARG 5 stack
+		ARG 6 item
+		ARG 7 position
+		ARG 9 lastRound
+		ARG 10 decoy
+		ARG 11 entityId
+	METHOD method_1423 spawnSmokeTrail (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/entity/Entity;)V
+		ARG 0 minecraft
+		ARG 1 manager
+		ARG 2 localPlayer
+		ARG 3 level
+		ARG 4 entity

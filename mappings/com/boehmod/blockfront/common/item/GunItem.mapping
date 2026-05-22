@@ -13,6 +13,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	FIELD field_4024 isSecondary Z
 	FIELD field_4028 canRefillCammo Z
 	FIELD field_4030 hasEquipSound Z
+	FIELD field_4039 smokeTrailEnabled Z
 	FIELD field_4048 muzzleFlashSize F
 	FIELD field_4051 weight F
 	FIELD field_4053 clientTriggerTimer I
@@ -112,6 +113,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4185 canRefillAmmo ()Z
 	METHOD method_4186 isSecondary ()Z
 	METHOD method_4187 hasBipod ()Z
+	METHOD method_4191 isSmokeTrailEnabled ()Z
 	METHOD method_4194 holdCloser ()Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4198 getHeat (Lnet/minecraft/world/item/ItemStack;)F
 		ARG 0 itemStack
@@ -147,6 +149,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4220 setMuzzleFlash (Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 0 itemStack
 		ARG 1 value
+	METHOD method_4221 smokeTrail ()Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4222 muzzleFlashSize (F)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 muzzleFlashSize
 	METHOD method_4224 updateMuzzleFlash (Lnet/minecraft/world/item/ItemStack;)V

@@ -1,0 +1,25 @@
+CLASS com/boehmod/blockfront/unnamed/BF_694 com/boehmod/blockfront/common/entity/VehicleSoundConfig
+	FIELD field_2979 alarm Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2980 alarmInternal Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2981 hatch Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2982 damage Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2983 damageDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2984 damageInternal Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2985 engineStart Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2986 engineStop Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2987 engineIdle Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2988 engineForward Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2989 engineForwardStart Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2990 engineForwardStop Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2991 engineStartDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2992 engineStopDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2993 engineIdleDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2994 engineForwardDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2995 engineForwardStartDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2996 engineForwardStopDistant Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_2997 destroyedFire Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_3037 hatch (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_694;
+	METHOD method_3040 engineIdle (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_694;
+	METHOD method_3041 alarm (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_694;
+	METHOD method_3042 engineStartStop (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_694;
+	METHOD method_3043 engineIdle (Lnet/neoforged/neoforge/registries/DeferredHolder;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_694;

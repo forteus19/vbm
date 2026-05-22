@@ -6,3 +6,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_277 com/boehmod/blockfront/common/gun/bu
 		ARG 1 t
 	METHOD method_1174 getStartPos ()Lnet/minecraft/world/phys/Vec3;
 	METHOD method_1177 getTracerWidth ()F
+	METHOD method_6033 getEndPos ()Lnet/minecraft/world/phys/Vec3;

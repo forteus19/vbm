@@ -1,7 +1,12 @@
 CLASS com/boehmod/blockfront/unnamed/BF_271 com/boehmod/blockfront/client/player/BFClientPlayerData
 	FIELD field_1611 waypointTexture Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1612 skinTexture Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_1613 backpackTexture Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1618 calloutTimer I
 	METHOD method_1133 getCalloutTimer ()I
+	METHOD method_1143 setTextures (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 skinTexture
+		ARG 2 backpackTexture
 	METHOD method_1148 setCurrentCallout (Lcom/boehmod/blockfront/unnamed/BF_753;)V
 		ARG 1 callout
 	METHOD method_1153 getWaypointTexture ()Lnet/minecraft/resources/ResourceLocation;

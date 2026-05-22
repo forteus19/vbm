@@ -3,5 +3,11 @@ CLASS com/boehmod/blockfront/client/corpse/physics/d com/boehmod/blockfront/clie
 		ARG 1 handle
 	METHOD method_794 multiplyVelocities (D)V
 	METHOD method_796 addRagdollConstraint (Lcom/boehmod/blockfront/client/corpse/physics/d;Lorg/joml/Vector3dc;Lorg/joml/Vector3dc;Lorg/joml/Quaterniondc;Lorg/joml/Quaterniondc;Lorg/joml/Vector3dc;D)V
+		ARG 1 body
+		ARG 2 pivotA
+		ARG 3 pivotB
+		ARG 4 rotationA
+		ARG 5 rotationB
+		ARG 6 rotationLimits
 	METHOD method_797 addLinearAngularVelocities (Lorg/joml/Vector3dc;Lorg/joml/Vector3dc;)V
 	METHOD method_799 removeObject ()V

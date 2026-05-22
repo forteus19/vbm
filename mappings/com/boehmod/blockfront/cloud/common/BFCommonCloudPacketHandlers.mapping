@@ -9,3 +9,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_494 com/boehmod/blockfront/cloud/common/
 	METHOD method_1780 requestedPlayerStatusSet (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedPlayerStatusSet;Lcom/boehmod/bflib/cloud/connection/Connection;)V
 	METHOD method_1781 serverNotification (Lcom/boehmod/bflib/cloud/packet/common/server/PacketServerNotification;Lcom/boehmod/bflib/cloud/connection/Connection;)V
 	METHOD method_1782 register ()V
+	METHOD method_6150 profanitySync (Lcom/boehmod/bflib/cloud/packet/common/PacketProfanitySync;Lcom/boehmod/bflib/cloud/connection/Connection;)V
