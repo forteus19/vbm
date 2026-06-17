@@ -6,6 +6,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_1257 com/boehmod/blockfront/common/data/
 		ARG 2 resourceManager
 		ARG 3 profiler
 	METHOD method_6269 bootstrap ()V
-	METHOD method_6272 populate (Ljava/util/Map;)V
-		ARG 0 data
 	METHOD method_6273 getData ()Ljava/util/Map;
