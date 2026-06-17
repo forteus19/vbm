@@ -166,6 +166,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2632 updateIdleStatus (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)Z
 		ARG 1 level
 		ARG 2 playerUUIDs
+	METHOD method_2633 (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;Lcom/boehmod/blockfront/unnamed/BF_830;)Z
+		ARG 3 event
 	METHOD method_2634 getSwitchTeamMessage (Lnet/minecraft/world/entity/player/Player;II)Lnet/minecraft/network/chat/Component;
 	METHOD method_2636 isMatchSuccess ()Z
 	METHOD method_2637 shouldAnnounceRageQuits ()Z

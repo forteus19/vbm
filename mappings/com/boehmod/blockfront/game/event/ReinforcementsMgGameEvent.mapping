@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_785 com/boehmod/blockfront/game/event/ReinforcementsMgGameEvent
+	METHOD method_3242 spawnBot (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_924;IF)V
+		ARG 1 level
+		ARG 2 game
+		ARG 3 matchClass
+		ARG 4 matchClassLevel
+		ARG 5 health

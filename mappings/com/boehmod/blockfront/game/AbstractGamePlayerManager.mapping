@@ -112,3 +112,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 		ARG 1 buf
 	METHOD method_2794 getPlayerUUIDs ()Ljava/util/Set;
 	METHOD method_2798 getTeams ()Ljava/util/List;
+	METHOD method_5993 update (Ljava/util/Set;)V
+		ARG 1 players

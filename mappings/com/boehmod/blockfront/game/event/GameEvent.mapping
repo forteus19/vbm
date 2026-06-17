@@ -1,2 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_830 com/boehmod/blockfront/game/event/GameEvent
+	METHOD method_3444 update (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/Set;)Z
+		ARG 1 level
+		ARG 2 game
+		ARG 3 players
 	METHOD method_3448 getMessage ()Lnet/minecraft/network/chat/Component;

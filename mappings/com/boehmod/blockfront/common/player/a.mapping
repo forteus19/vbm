@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/common/player/a
+	FIELD field_1144 playerData Lcom/boehmod/blockfront/common/player/b;
+	METHOD <init> (Lcom/boehmod/blockfront/common/player/b;)V
+		ARG 1 playerData
+	METHOD method_822 update (Lnet/minecraft/world/level/Level;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 level
+		ARG 2 player

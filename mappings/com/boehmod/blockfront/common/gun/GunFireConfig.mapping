@@ -2,8 +2,21 @@ CLASS com/boehmod/blockfront/unnamed/BF_957 com/boehmod/blockfront/common/gun/Gu
 	FIELD field_3912 mode Lcom/boehmod/blockfront/unnamed/BF_958;
 	FIELD field_3913 type Lcom/boehmod/blockfront/unnamed/BF_959;
 	FIELD field_3914 fireRate I
+	FIELD field_3915 instanceCount I
+	FIELD field_3916 entity Ljava/util/function/Supplier;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_958;I)V
+		ARG 1 mode
+		ARG 2 fireRate
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_958;II)V
 		ARG 1 mode
 		ARG 2 fireRate
+		ARG 3 instanceCount
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_958;ILjava/util/function/Supplier;)V
+		ARG 1 mode
+		ARG 2 fireRate
+		ARG 3 entity
 	METHOD method_4022 getMode ()Lcom/boehmod/blockfront/unnamed/BF_958;
+	METHOD method_4023 getSpawnType ()Lcom/boehmod/blockfront/unnamed/BF_959;
+	METHOD method_4024 getEntity ()Ljava/util/function/Supplier;
 	METHOD method_4025 getFireRate ()I
+	METHOD method_4026 getInstanceCount ()I

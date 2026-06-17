@@ -6,6 +6,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 	FIELD field_2954 ADMIN_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2955 DEAD_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2956 TEAM_PREFIX Lnet/minecraft/network/chat/Component;
+	FIELD field_7327 DISCORD_REMINDER Lnet/minecraft/network/chat/MutableComponent;
+	FIELD field_7328 VC_PREFIX Lnet/minecraft/network/chat/MutableComponent;
+	FIELD field_7395 DEFAULT_PLAYER_ATTRIBUTES Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
+	FIELD field_7396 ATTRIBUTES_TO_RESET Ljava/util/List;
 	METHOD method_2863 sendChatGraphic (Lcom/boehmod/bflib/cloud/common/ChatGraphic;Ljava/util/Set;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 chatGraphic
 		ARG 1 players
@@ -20,6 +24,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 0 chatGraphic
 		ARG 1 player
 		ARG 2 message
+	METHOD method_2867 formatChatMessage (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_1117;)Lnet/minecraft/network/chat/Component;
+		ARG 0 dataHandler
+		ARG 1 game
+		ARG 2 player
+		ARG 3 uuid
+		ARG 4 playerName
+		ARG 5 message
+		ARG 6 playerData
 	METHOD method_2869 sortBySkillLevel (Lcom/boehmod/blockfront/common/player/c;Ljava/util/Set;)Ljava/util/Set;
 		ARG 0 dataHandler
 		ARG 1 players
@@ -62,6 +74,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 2 game
 		ARG 3 players
 		ARG 4 player
+	METHOD method_2881 handlePlayerChat (Lcom/boehmod/blockfront/unnamed/BF_1067;Lcom/boehmod/blockfront/unnamed/BF_1119;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
+		ARG 0 manager
+		ARG 1 dataHandler
+		ARG 2 game
+		ARG 3 level
+		ARG 4 player
+		ARG 5 message
+		ARG 6 uuid
 	METHOD method_2882 initPlayerForGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 0 manager
 		ARG 1 dataHandler
@@ -173,12 +193,21 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 1 level
 		ARG 2 team
 		ARG 3 loadout
+		ARG 4 respawnOnDeath
 	METHOD method_2907 spawnBot (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_686;Lorg/apache/commons/lang3/tuple/Pair;ZF)V
 		ARG 0 game
 		ARG 1 level
 		ARG 2 team
 		ARG 3 loadout
+		ARG 4 respawnOnDeath
 		ARG 5 maxHealth
+	METHOD method_2908 spawnBot (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_686;Z)V
+		ARG 0 game
+		ARG 1 level
+		ARG 2 team
+		ARG 3 respawnOnDeath
+	METHOD method_2909 (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_686;ZLorg/apache/commons/lang3/tuple/Pair;)V
+		ARG 4 pair
 	METHOD method_2910 broadcastKillFeedEntry (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_774;)V
 		ARG 0 manager
 		ARG 1 entry
@@ -366,6 +395,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 8 source
 		ARG 9 volume
 		ARG 10 pitch
+	METHOD method_2972 getNearestEntityOfType (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Ljava/lang/Class;F)Lnet/minecraft/world/entity/Entity;
+		ARG 0 level
+		ARG 1 originEntity
+		ARG 2 entityClass
+		ARG 3 inflateSize
 	METHOD method_2973 explosionFromPlayer (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/item/ItemStack;F)Lnet/minecraft/world/level/Explosion;
 		ARG 0 level
 		ARG 1 entity
@@ -383,6 +417,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 3 category
 		ARG 4 volume
 		ARG 5 pitch
+	METHOD method_2976 botLoadoutPredicate (Lorg/apache/commons/lang3/tuple/Pair;)Z
+		ARG 0 pair
 	METHOD method_2977 unfreezePlayers (Lcom/boehmod/blockfront/common/player/c;Ljava/util/Set;)V
 		ARG 0 dataHandler
 		ARG 1 players
@@ -439,3 +475,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 0 level
 		ARG 1 manager
 		ARG 2 message
+	METHOD method_6048 (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;Ljava/util/UUID;Ljava/util/UUID;)I
+		ARG 2 uuid1
+		ARG 3 uuid2
+	METHOD method_6421 resetPlayerAttributes (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 player

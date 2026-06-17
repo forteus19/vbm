@@ -13,7 +13,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_906 com/boehmod/blockfront/common/item/B
 	METHOD method_3759 wobbleIntensity (F)Lcom/boehmod/blockfront/unnamed/BF_906;
 		ARG 1 wobbleIntensity
 	METHOD method_3760 spread (Lcom/boehmod/blockfront/unnamed/BF_900;)Lcom/boehmod/blockfront/unnamed/BF_906;
+	METHOD method_3761 getOriginalOwner (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
+	METHOD method_3762 setSkinId (Lnet/minecraft/world/item/ItemStack;F)V
 	METHOD method_3763 getStickerIndex (Lnet/minecraft/world/item/ItemStack;I)I
 		ARG 0 itemStack
 		ARG 1 sticker
+	METHOD method_3764 setSticker (Lnet/minecraft/world/item/ItemStack;II)V
+	METHOD method_3765 setOriginalOwner (Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)V
+	METHOD method_3767 loadComponents (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/Entity;)V
+		ARG 1 stack
+		ARG 2 entity
 	METHOD method_3770 getWobbleIntensity ()F
+	METHOD method_3774 setNameTag (Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)V

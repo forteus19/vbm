@@ -38,7 +38,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4122 getChestArmor ()Lnet/neoforged/neoforge/registries/DeferredItem;
 	METHOD method_4123 getFireConfigs ()[Lcom/boehmod/blockfront/unnamed/BF_957;
 	METHOD method_4126 defaultMag (II)Lcom/boehmod/blockfront/unnamed/BF_993;
-		ARG 1 clip
+		ARG 1 maxAmmo
 		ARG 2 reserve
 	METHOD method_4129 shake (Lcom/boehmod/blockfront/unnamed/BF_427;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4130 scope (Lcom/boehmod/blockfront/unnamed/BF_949$BF_950;Lcom/boehmod/blockfront/unnamed/BF_949;)Lcom/boehmod/blockfront/unnamed/BF_993;
@@ -109,6 +109,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4177 setBarrelType (Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)Lnet/minecraft/world/item/ItemStack;
 		ARG 0 itemStack
 		ARG 1 value
+	METHOD method_4179 toggleFireConfig ()V
 	METHOD method_4182 getMaxHitDist ()I
 	METHOD method_4185 canRefillAmmo ()Z
 	METHOD method_4186 isSecondary ()Z
@@ -129,6 +130,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4204 secondary ()Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4205 weight (F)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 weight
+	METHOD method_4206 maxHitDist (I)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4208 getReloadTick (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack
 	METHOD method_4209 getBarrelType (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;

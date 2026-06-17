@@ -1,1 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_810 com/boehmod/blockfront/game/tag/IHasBots
+	METHOD method_3387 onBotDeath (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_565;Lnet/minecraft/world/damagesource/DamageSource;)V
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 entity
+		ARG 4 source
+	METHOD method_3392 onBotSpawn (Lcom/boehmod/blockfront/unnamed/BF_565;Lnet/minecraft/world/level/Level;)V
+		ARG 1 entity
+		ARG 2 level
