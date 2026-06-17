@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1386 com/boehmod/blockfront/map/effect/PositionedVehicleMapEffect
+	FIELD field_8215 CODEC Lcom/mojang/serialization/MapCodec;

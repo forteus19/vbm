@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1416 com/boehmod/blockfront/map/effect/WeatherMapEffect
+	FIELD field_8291 CODEC Lcom/mojang/serialization/MapCodec;

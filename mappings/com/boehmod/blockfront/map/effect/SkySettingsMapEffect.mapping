@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1388 com/boehmod/blockfront/map/effect/SkySettingsMapEffect
+	FIELD field_8235 CODEC Lcom/mojang/serialization/MapCodec;

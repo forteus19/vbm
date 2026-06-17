@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1415 com/boehmod/blockfront/map/effect/WaterColorMapEffect
+	FIELD field_8288 CODEC Lcom/mojang/serialization/MapCodec;

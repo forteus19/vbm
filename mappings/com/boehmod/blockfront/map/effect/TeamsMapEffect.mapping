@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1413 com/boehmod/blockfront/map/effect/TeamsMapEffect
+	FIELD field_8280 CODEC Lcom/mojang/serialization/MapCodec;

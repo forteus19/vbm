@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1414 com/boehmod/blockfront/map/effect/TimeMapEffect
+	FIELD field_8284 CODEC Lcom/mojang/serialization/MapCodec;

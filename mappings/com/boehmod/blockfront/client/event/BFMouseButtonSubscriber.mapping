@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1289 com/boehmod/blockfront/client/event/BFMouseButtonSubscriber
+	METHOD method_6786 onMouseButtonPre (Lnet/neoforged/neoforge/client/event/InputEvent$MouseButton$Pre;)V

@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1384 com/boehmod/blockfront/map/effect/PositionedAreaLightSourceMapEffect
+	FIELD field_8177 CODEC Lcom/mojang/serialization/MapCodec;

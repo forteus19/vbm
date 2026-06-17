@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1288 com/boehmod/blockfront/client/event/BFChatReceivedSubscriber
+	METHOD method_6785 onChatReceived (Lnet/neoforged/neoforge/client/event/ClientChatReceivedEvent$Player;)V

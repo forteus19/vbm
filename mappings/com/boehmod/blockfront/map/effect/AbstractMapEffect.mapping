@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1391 com/boehmod/blockfront/map/effect/AbstractMapEffect
+	FIELD field_8245 uuid Ljava/util/UUID;
+	FIELD field_8247 effectId Ljava/lang/String;
+	FIELD field_8248 position Lnet/minecraft/world/phys/Vec3;
+	FIELD field_8251 startsEnabled Z
+	FIELD field_8252 enabled Z

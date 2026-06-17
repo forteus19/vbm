@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1282 com/boehmod/blockfront/client/event/BFMouseScrollingSubscriber
+	METHOD method_6781 onMouseScrolling (Lnet/neoforged/neoforge/client/event/InputEvent$MouseScrollingEvent;)V

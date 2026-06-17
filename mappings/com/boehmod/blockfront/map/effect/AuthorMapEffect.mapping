@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1381 com/boehmod/blockfront/map/effect/AuthorMapEffect
+	FIELD field_8142 CODEC Lcom/mojang/serialization/MapCodec;

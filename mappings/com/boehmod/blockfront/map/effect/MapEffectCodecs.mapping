@@ -19,3 +19,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_1259 com/boehmod/blockfront/map/effect/M
 		ARG 0 instance
 	METHOD method_6358 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
+	METHOD method_7585 wrapCodec (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
+		ARG 0 codec
