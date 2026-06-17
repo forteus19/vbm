@@ -15,9 +15,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 	FIELD field_4482 WINDOW_SHUTTERS_WHITE Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4495 MAP_BARRIERS_PLAYERS Lcom/boehmod/blockfront/unnamed/BF_515;
 	FIELD field_4497 CRATE_BIRCH Lcom/boehmod/blockfront/unnamed/BF_520;
-	FIELD field_4498 PLANK_CHERRY Lcom/boehmod/blockfront/unnamed/BF_521;
 	FIELD field_4499 WINDOW_SHUTTERS_GREEN Lcom/boehmod/blockfront/unnamed/BF_522;
-	FIELD field_4550 CRATE_CHERRY Lcom/boehmod/blockfront/unnamed/BF_520;
 	FIELD field_4551 PLANK_CRIMSON Lcom/boehmod/blockfront/unnamed/BF_521;
 	FIELD field_4552 WINDOW_SHUTTERS_BLUE Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4553 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
@@ -30,7 +28,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 	FIELD field_4666 WINDOW_SHUTTERS_BIRCH Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4720 CRATE_JUNGLE Lcom/boehmod/blockfront/unnamed/BF_520;
 	FIELD field_4721 PLANK_MANGROVE Lcom/boehmod/blockfront/unnamed/BF_521;
-	FIELD field_4722 WINDOW_SHUTTERS_CHERRY Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4776 CRATE_MANGROVE Lcom/boehmod/blockfront/unnamed/BF_520;
 	FIELD field_4777 PLANK_SPRUCE Lcom/boehmod/blockfront/unnamed/BF_521;
 	FIELD field_4778 WINDOW_SHUTTERS_CRIMSON Lcom/boehmod/blockfront/unnamed/BF_522;
@@ -43,9 +40,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 	FIELD field_4867 CRATE_WARPED Lcom/boehmod/blockfront/unnamed/BF_520;
 	FIELD field_4868 WINDOW_SHUTTERS_MANGROVE Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4869 MAX_LIGHT I
-	FIELD field_4871 CRATE_PALE Lcom/boehmod/blockfront/unnamed/BF_520;
 	FIELD field_4872 WINDOW_SHUTTERS_OAK Lcom/boehmod/blockfront/unnamed/BF_522;
-	FIELD field_4874 WINDOW_SHUTTERS_PALE Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4876 WINDOW_SHUTTERS_SPRUCE Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4878 WINDOW_SHUTTERS_WALNUT Lcom/boehmod/blockfront/unnamed/BF_522;
 	FIELD field_4880 WINDOW_SHUTTERS_WARPED Lcom/boehmod/blockfront/unnamed/BF_522;
@@ -64,7 +59,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 	FIELD field_6455 OZARK_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	FIELD field_6456 PUMICE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	FIELD field_6457 QUARTZITE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
-	FIELD field_6458 RED_SANDSTONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	FIELD field_6459 SANDSTONE_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	FIELD field_6460 SCORIA_SET Lcom/boehmod/blockfront/unnamed/BF_1139;
 	FIELD field_6461 ASSORTED_BRICKS Lcom/boehmod/blockfront/unnamed/BF_519;
@@ -79,10 +73,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFB
 	FIELD field_7081 WALNUT_WOOD Lcom/boehmod/blockfront/unnamed/BF_1220;
 	FIELD field_7082 REVERSE_HALF_N_HALF_BRICKS Lcom/boehmod/blockfront/unnamed/BF_519;
 	FIELD field_7083 STEEL Lcom/boehmod/blockfront/unnamed/BF_519;
-	METHOD method_4817 (Lnet/minecraft/world/level/block/state/BlockState;)I
-		ARG 0 state
-	METHOD method_4889 (Lnet/minecraft/world/level/block/state/BlockState;)I
-		ARG 0 state
 	METHOD method_4956 (Lnet/minecraft/world/level/block/state/BlockState;)I
 		ARG 0 state
 	METHOD method_5014 (Lnet/minecraft/world/level/block/state/BlockState;)I

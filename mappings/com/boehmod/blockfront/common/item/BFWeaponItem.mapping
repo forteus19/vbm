@@ -1,6 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_906 com/boehmod/blockfront/common/item/BFWeaponItem
 	FIELD field_3633 wobbleIntensity F
-	FIELD field_3637 aimConfig Lcom/boehmod/blockfront/unnamed/BF_900;
 	METHOD getName (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/network/chat/Component;
 		ARG 1 itemStack
 	METHOD inventoryTick (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;IZ)V
@@ -12,7 +11,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_906 com/boehmod/blockfront/common/item/B
 	METHOD method_3758 getAimConfig ()Lcom/boehmod/blockfront/unnamed/BF_900;
 	METHOD method_3759 wobbleIntensity (F)Lcom/boehmod/blockfront/unnamed/BF_906;
 		ARG 1 wobbleIntensity
-	METHOD method_3760 spread (Lcom/boehmod/blockfront/unnamed/BF_900;)Lcom/boehmod/blockfront/unnamed/BF_906;
 	METHOD method_3761 getOriginalOwner (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
 	METHOD method_3762 setSkinId (Lnet/minecraft/world/item/ItemStack;F)V
 	METHOD method_3763 getStickerIndex (Lnet/minecraft/world/item/ItemStack;I)I

@@ -1,5 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_998 com/boehmod/blockfront/registry/custom/BlockSoundAttribute
-	FIELD field_4090 dirtyType Lcom/boehmod/blockfront/unnamed/BF_112$BF_114$BF_115;
-	FIELD field_4093 REGISTRY Lnet/minecraft/core/Registry;
-	FIELD field_4094 KEY Lnet/minecraft/resources/ResourceKey;
-	METHOD method_4248 getDirtyType ()Lcom/boehmod/blockfront/unnamed/BF_112$BF_114$BF_115;

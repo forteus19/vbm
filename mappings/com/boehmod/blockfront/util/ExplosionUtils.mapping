@@ -17,7 +17,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_555 com/boehmod/blockfront/util/Explosio
 		ARG 1 pos
 		ARG 2 random
 	CLASS BF_556 DebrisSound
-		FIELD field_2332 sound Lnet/neoforged/neoforge/registries/DeferredHolder;
 		FIELD field_2333 pos Lnet/minecraft/core/BlockPos;
 		METHOD method_1930 pos ()Lnet/minecraft/core/BlockPos;
-		METHOD method_1931 sound ()Lnet/neoforged/neoforge/registries/DeferredHolder;

@@ -1,5 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/GunItem
-	FIELD field_4003 damageConfig Lcom/boehmod/blockfront/unnamed/BF_951;
 	FIELD field_4004 reloadConfig Lcom/boehmod/blockfront/unnamed/BF_953;
 	FIELD field_4005 soundConfig Lcom/boehmod/blockfront/unnamed/BF_956;
 	FIELD field_4006 defaultFireConfig Lcom/boehmod/blockfront/unnamed/BF_957;
@@ -31,7 +30,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 2 context
 		ARG 3 entries
 		ARG 4 flag
-	METHOD method_4118 getDamageConfig ()Lcom/boehmod/blockfront/unnamed/BF_951;
 	METHOD method_4119 getDefaultFireConfig ()Lcom/boehmod/blockfront/unnamed/BF_957;
 	METHOD method_4120 getClipTextRenderer ()Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
 	METHOD method_4121 getBipod ()Lcom/boehmod/blockfront/unnamed/BF_996;
@@ -44,7 +42,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4130 scope (Lcom/boehmod/blockfront/unnamed/BF_949$BF_950;Lcom/boehmod/blockfront/unnamed/BF_949;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 type
 		ARG 2 config
-	METHOD method_4131 damage (Lcom/boehmod/blockfront/unnamed/BF_951;)Lcom/boehmod/blockfront/unnamed/BF_993;
 	METHOD method_4132 reload (Lcom/boehmod/blockfront/unnamed/BF_953;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 config
 	METHOD method_4133 sound (Lcom/boehmod/blockfront/unnamed/BF_956;)Lcom/boehmod/blockfront/unnamed/BF_993;

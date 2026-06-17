@@ -10,5 +10,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_734 com/boehmod/blockfront/map/effect/Pa
 	FIELD field_3125 entityType Ljava/util/function/Supplier;
 	FIELD field_3126 blockType Ljava/util/function/Supplier;
 	FIELD field_7390 CODEC Lcom/mojang/serialization/MapCodec;
-	METHOD method_3098 setAnimation (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_734;
-		ARG 1 animation

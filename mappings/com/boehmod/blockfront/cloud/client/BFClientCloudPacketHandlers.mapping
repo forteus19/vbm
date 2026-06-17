@@ -59,8 +59,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_497 com/boehmod/blockfront/cloud/client/
 		ARG 1 connection
 	METHOD method_1802 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button
-	METHOD method_1803 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/screens/Screen;Lnet/minecraft/client/gui/components/Button;)V
-		ARG 2 button
 	METHOD method_1804 register ()V
 	METHOD method_1805 (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/components/Button;)V
 		ARG 1 button

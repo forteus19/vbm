@@ -49,23 +49,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_2242 showConnectionToast (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;)V
 		ARG 1 fromStatus
 		ARG 2 toStatus
-	METHOD method_2245 resetGameState (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_271;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
-		ARG 1 minecraft
-		ARG 2 data
-		ARG 3 dataHandler
-		ARG 4 player
-		ARG 5 level
-	METHOD method_2246 initNewGame (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
-		ARG 1 minecraft
-		ARG 2 dataHandler
-		ARG 3 player
-		ARG 4 level
-	METHOD method_2247 setCurrentGame (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_677;)V
-		ARG 1 minecraft
-		ARG 2 dataHandler
-		ARG 3 player
-		ARG 4 level
-		ARG 5 game
 	METHOD method_2249 disconnect (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 minecraft
 		ARG 2 level
@@ -83,15 +66,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 		ARG 7 renderTime
 		ARG 8 pos
 		ARG 9 blockPos
-	METHOD method_2252 updateBiomeColors (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
-		ARG 0 minecraft
-		ARG 1 player
-		ARG 2 level
-	METHOD method_2253 setBiomeColors (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_677;)V
-		ARG 0 minecraft
-		ARG 1 player
-		ARG 2 level
-		ARG 3 game
 	METHOD method_2254 initCorpsePhysics (Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 level
 	METHOD method_2255 showPopup (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/bflib/cloud/common/PopupType;[Lcom/boehmod/blockfront/unnamed/BF_48;)V
@@ -110,10 +84,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 		ARG 1 data
 	METHOD method_2262 queueChunkReload ()V
 	METHOD method_5643 getTimedWorldObjectManager ()Lcom/boehmod/blockfront/unnamed/BF_1177;
-	METHOD method_5926 renderDebug (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;)V
-		ARG 1 poseStack
-		ARG 2 graphics
-		ARG 3 camera
 	METHOD method_6104 getBulletSpawner (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/boehmod/blockfront/unnamed/BF_951;)Lcom/boehmod/blockfront/unnamed/BF_946;
 		ARG 1 minecraft
 		ARG 2 dataHandler

@@ -57,12 +57,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 8 font
 		ARG 9 team
 		ARG 12 players
-	METHOD method_2693 renderWaitingText (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Ljava/util/Set;I)V
-		ARG 1 poseStack
-		ARG 2 graphics
-		ARG 3 font
-		ARG 4 players
-		ARG 5 midX
 	METHOD method_2694 renderGameDebugInfo (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;)V
 		ARG 1 poseStack
 		ARG 2 graphics
@@ -102,16 +96,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 2 players
 		ARG 3 player
 		ARG 4 level
-	METHOD method_2706 updateMapEnvironment (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_606;Ljava/util/Random;Lnet/minecraft/util/RandomSource;FLnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/BlockPos;)V
-		ARG 1 minecraft
-		ARG 2 player
-		ARG 3 level
-		ARG 4 manager
-		ARG 5 random
-		ARG 6 randomSource
-		ARG 7 delta
-		ARG 8 cameraPos
-		ARG 9 cameraBlockPos
 	METHOD method_2709 shouldRenderNameTag (Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)Z
 		ARG 1 minecraft
 		ARG 2 target

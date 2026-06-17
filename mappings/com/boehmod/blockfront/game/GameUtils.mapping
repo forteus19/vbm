@@ -1,7 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtils
 	FIELD field_2950 TEAM_TYPING_PREFIX Ljava/lang/String;
 	FIELD field_2951 OBJECTIVE_PREFIX Lnet/minecraft/network/chat/Component;
-	FIELD field_2952 OBJECTIVE_UP_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2953 COMMAND_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2954 ADMIN_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2955 DEAD_PREFIX Lnet/minecraft/network/chat/Component;

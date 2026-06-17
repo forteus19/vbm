@@ -1,5 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1112 com/boehmod/blockfront/registry/BFSounds
-	FIELD field_5596 MEMES Ljava/util/HashMap;
 	FIELD field_5597 BULLET_SNAPS Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_5598 BY_ID Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
 	FIELD field_5599 DR Lnet/neoforged/neoforge/registries/DeferredRegister;

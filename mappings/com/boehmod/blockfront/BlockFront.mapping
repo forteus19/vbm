@@ -33,5 +33,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_27 com/boehmod/blockfront/BlockFront
 		ARG 1 event
 	METHOD method_153 registerCommands (Lnet/neoforged/neoforge/event/RegisterCommandsEvent;)V
 		ARG 1 event
-	METHOD method_154 addNewRegistries (Lnet/neoforged/neoforge/registries/NewRegistryEvent;)V
-		ARG 1 event

@@ -7,9 +7,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_97 com/boehmod/blockfront/client/render/
 	METHOD method_480 renderEntry (Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;III)V
 		ARG 6 index
 	CLASS BF_98 Entry
-		METHOD <init> (Lnet/minecraft/network/chat/Component;Lnet/minecraft/resources/ResourceLocation;Z)V
-			ARG 1 name
-			ARG 2 texture
-			ARG 3 flicker
 		METHOD method_5922 flickerDoNotCall ()Z
 			COMMENT Weird unused duplicate method

@@ -1183,16 +1183,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 7 scale
 		ARG 8 alpha
 		ARG 9 color
-	METHOD method_338 centeredGhostedTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;IIIIFF)V
-		ARG 0 poseStack
-		ARG 1 graphics
-		ARG 2 texture
-		ARG 3 x
-		ARG 4 y
-		ARG 5 width
-		ARG 6 height
-		ARG 7 gap
-		ARG 8 repeats
 	METHOD method_339 centeredString (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;II)V
 		ARG 0 font
 		ARG 1 guiGraphics

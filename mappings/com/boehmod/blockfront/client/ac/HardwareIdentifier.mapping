@@ -4,8 +4,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_474 com/boehmod/blockfront/client/ac/Har
 	METHOD method_1692 get ()[B
 	METHOD method_1693 (Ljava/lang/StringBuilder;Ljava/lang/String;)V
 		ARG 1 string
-	METHOD method_1694 bytesToHexString ([B)Ljava/lang/String;
-		ARG 0 bytes
 	METHOD method_1695 generateHardwareID ()[B
 	METHOD method_1696 (Ljava/lang/String;)Z
 		ARG 0 string

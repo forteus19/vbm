@@ -15,8 +15,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1001 com/boehmod/blockfront/common/gun/b
 		ARG 1 entity
 	METHOD method_5792 registerLivingCollisions (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_1193;)V
 	METHOD method_5793 registerLivingCollisionsInternal (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_1193;)V
-	METHOD method_6113 init (Lcom/boehmod/blockfront/unnamed/BF_951;)Lcom/boehmod/blockfront/unnamed/BF_1001;
-		ARG 1 damage
 	METHOD method_6114 setDamage (Lcom/boehmod/blockfront/unnamed/BF_951;)V
 		ARG 1 damage
 	METHOD method_6115 reset ()V

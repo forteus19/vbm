@@ -1,16 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_732 com/boehmod/blockfront/map/effect/MapEffectRegistry
-	FIELD field_3102 BYTE_TO_EFFECT Lit/unimi/dsi/fastutil/bytes/Byte2ObjectMap;
-	FIELD field_3103 EFFECT_TO_BYTE Lit/unimi/dsi/fastutil/objects/Object2ByteMap;
-	FIELD field_7387 KEY_TO_EFFECT Ljava/util/Map;
 	FIELD field_7388 EFFECT_TO_KEY Ljava/util/Map;
-	METHOD method_3092 getEffect (B)Ljava/lang/Class;
-		ARG 0 byteId
-	METHOD method_3093 register (BLjava/lang/String;Ljava/lang/Class;)V
-		ARG 0 byteId
-		ARG 1 key
-		ARG 2 effectClass
-	METHOD method_3094 getByteId (Ljava/lang/Class;)B
-		ARG 0 effectClass
 	METHOD method_6359 getKey (Ljava/lang/Class;)Ljava/lang/String;
 		ARG 0 effectClass
 	METHOD method_6360 getEffect (Ljava/lang/String;)Ljava/lang/Class;

@@ -1,12 +1,1 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1223 com/boehmod/blockfront/server/ac/bullet/BulletValidationEntry
-	METHOD <init> (JLnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_1067;Lcom/boehmod/blockfront/unnamed/BF_1119;Ljava/util/List;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec2;FFJ)V
-		ARG 1 shootTick
-		ARG 3 serverPlayer
-		ARG 4 serverModManager
-		ARG 5 playerDataHandler
-		ARG 6 clientHits
-		ARG 7 position
-		ARG 8 direction
-		ARG 9 reportedItemSpread
-		ARG 10 shootBackPitch
-		ARG 11 randomSeed

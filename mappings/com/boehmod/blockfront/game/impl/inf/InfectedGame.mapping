@@ -10,8 +10,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_878 com/boehmod/blockfront/game/impl/inf
 	FIELD field_3536 numInfectedToSpawn I
 	METHOD method_3634 getZone (Ljava/lang/String;)Ljava/util/Optional;
 		ARG 1 id
-	METHOD method_3635 (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_887;)Z
-		ARG 1 zone
 	METHOD method_3640 relocateVendor (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_692;)V
 		ARG 1 level
 		ARG 2 pose

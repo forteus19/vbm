@@ -36,8 +36,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	METHOD method_2816 decreaseStatInt (Lcom/boehmod/blockfront/unnamed/BF_941;I)V
 		ARG 1 stat
 		ARG 2 amount
-	METHOD method_2819 addPlayers (Ljava/util/Set;)V
-		ARG 1 uuids
 	METHOD method_2820 getMaxPlayers ()I
 	METHOD method_2821 getIconColor ()I
 	METHOD method_2822 numPlayers ()I
