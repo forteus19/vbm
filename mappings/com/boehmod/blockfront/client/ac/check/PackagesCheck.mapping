@@ -1,2 +1,1 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1114 com/boehmod/blockfront/client/ac/check/PackagesCheck
-	FIELD field_6265 ALLOWED_PACKAGES Ljava/util/Set;

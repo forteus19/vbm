@@ -57,10 +57,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1059 com/boehmod/blockfront/util/math/Ma
 		ARG 0 random
 		ARG 1 origin
 		ARG 2 magnitude
-	METHOD method_4496 lookingVec (Lnet/minecraft/world/entity/Entity;FF)Lnet/minecraft/world/phys/Vec3;
-		ARG 0 entity
-		ARG 1 xRotOffset
-		ARG 2 yRotOffset
 	METHOD method_4497 lerp (Lnet/minecraft/world/phys/Vec2;Lnet/minecraft/world/phys/Vec2;F)Lnet/minecraft/world/phys/Vec2;
 		ARG 0 max
 		ARG 1 min
