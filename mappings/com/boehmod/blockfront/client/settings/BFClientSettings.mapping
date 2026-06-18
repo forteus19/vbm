@@ -8,7 +8,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_432 com/boehmod/blockfront/client/settin
 	FIELD field_1975 GAME_PLAYER_COUNT Lit/unimi/dsi/fastutil/objects/Object2IntMap;
 	FIELD field_1977 NOTIFICATION_MAP Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
 	FIELD field_1979 SCOREBOARD_RESET_TIME J
-	FIELD field_1994 NOTIFICATIONS_FRIENDS_POKE Lcom/boehmod/blockfront/unnamed/BF_431;
 	FIELD field_1995 NOTIFICATIONS_FRIENDS_REQUESTS Lcom/boehmod/blockfront/unnamed/BF_431;
 	FIELD field_1996 NOTIFICATIONS_FRIENDS_LOGINS Lcom/boehmod/blockfront/unnamed/BF_431;
 	FIELD field_1997 NOTIFICATIONS_FRIENDS_RANK_UPS Lcom/boehmod/blockfront/unnamed/BF_431;

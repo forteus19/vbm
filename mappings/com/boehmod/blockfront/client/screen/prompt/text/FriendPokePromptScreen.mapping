@@ -1,2 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_259 com/boehmod/blockfront/client/screen/prompt/text/FriendPokePromptScreen
-	FIELD field_1573 target Ljava/util/UUID;
