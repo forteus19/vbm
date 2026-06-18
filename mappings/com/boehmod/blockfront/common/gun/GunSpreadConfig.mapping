@@ -1,3 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_900 com/boehmod/blockfront/common/gun/GunSpreadConfig
 	FIELD field_3602 currentSpread F
 	FIELD field_3603 prevSpread F
+	FIELD field_8422 NONE Lcom/boehmod/blockfront/unnamed/BF_900;
+	FIELD field_8423 CODEC Lcom/mojang/serialization/Codec;

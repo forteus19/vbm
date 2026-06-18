@@ -1,2 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1385 com/boehmod/blockfront/map/effect/PositionedLightSourceMapEffect
+	FIELD field_8197 color I
+	FIELD field_8198 application Lcom/boehmod/blockfront/unnamed/BF_1390;
+	FIELD field_8201 occlude Z
+	FIELD field_8202 radius F
+	FIELD field_8203 brightness F
 	FIELD field_8207 CODEC Lcom/mojang/serialization/MapCodec;

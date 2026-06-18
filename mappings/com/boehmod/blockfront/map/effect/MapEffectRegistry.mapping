@@ -1,6 +1,11 @@
 CLASS com/boehmod/blockfront/unnamed/BF_732 com/boehmod/blockfront/map/effect/MapEffectRegistry
 	FIELD field_7388 EFFECT_TO_KEY Ljava/util/Map;
+	FIELD field_8256 KEY_TO_EFFECT Ljava/util/Map;
 	METHOD method_6359 getKey (Ljava/lang/Class;)Ljava/lang/String;
 		ARG 0 effectClass
 	METHOD method_6360 getEffect (Ljava/lang/String;)Ljava/lang/Class;
 		ARG 0 key
+	METHOD method_7595 register (Ljava/lang/String;Ljava/lang/Class;)V
+		ARG 0 key
+		ARG 1 mapEffectClass
+	METHOD method_7596 getKeys ()Ljava/util/Set;

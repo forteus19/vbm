@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1349
+	METHOD method_7118 getCodec ()Lcom/mojang/serialization/Codec;
+	METHOD method_7128 getDirectory ()Ljava/lang/String;

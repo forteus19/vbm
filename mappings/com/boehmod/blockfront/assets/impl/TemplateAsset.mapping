@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1352 com/boehmod/blockfront/assets/impl/TemplateAsset
+	FIELD field_7972 assetCommand Lcom/boehmod/blockfront/unnamed/BF_462;
+	FIELD field_7973 mapEffect Lcom/boehmod/blockfront/unnamed/BF_1391;
+	FIELD field_7974 CODEC Lcom/mojang/serialization/Codec;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1391;)V
+		ARG 1 mapEffect
+	METHOD method_7143 getMapEffect ()Lcom/boehmod/blockfront/unnamed/BF_1391;
