@@ -4,3 +4,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_1391 com/boehmod/blockfront/map/effect/A
 	FIELD field_8248 position Lnet/minecraft/world/phys/Vec3;
 	FIELD field_8251 startsEnabled Z
 	FIELD field_8252 enabled Z
+	METHOD method_7575 getPosition ()Lnet/minecraft/world/phys/Vec3;
