@@ -14,9 +14,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/client/net/BF
 	METHOD method_2530 clientNotification (Lcom/boehmod/blockfront/unnamed/BF_967;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 		ARG 0 packet
 		ARG 1 context
-	METHOD method_2531 crateEntity (Lcom/boehmod/blockfront/unnamed/BF_968;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
-		ARG 0 packet
-		ARG 1 context
 	METHOD method_2532 damageIndicator (Lcom/boehmod/blockfront/unnamed/BF_969;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 		ARG 0 packet
 		ARG 1 context

@@ -6,8 +6,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1265 com/boehmod/blockfront/game/GameTyp
 		ARG 0 key
 	CLASS BF_1266 Bootcamp
 		FIELD field_7445 CODEC Lcom/mojang/serialization/MapCodec;
-	CLASS BF_1267 Conquest
-		FIELD field_7452 CODEC Lcom/mojang/serialization/MapCodec;
 	CLASS BF_1268 Domination
 		FIELD field_7457 CODEC Lcom/mojang/serialization/MapCodec;
 	CLASS BF_1269 FreeForAll

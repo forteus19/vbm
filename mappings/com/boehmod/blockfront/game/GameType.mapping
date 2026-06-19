@@ -6,7 +6,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_925 com/boehmod/blockfront/game/GameType
 	FIELD field_3684 alternativeTypes Ljava/util/List;
 	FIELD field_3685 DOMINATION Lcom/boehmod/blockfront/unnamed/BF_925;
 	FIELD field_3686 gameClass Ljava/lang/Class;
-	FIELD field_3687 CONQUEST Lcom/boehmod/blockfront/unnamed/BF_925;
 	FIELD field_3688 texture Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_3689 iconTexture Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_3690 TEAM_DEATHMATCH Lcom/boehmod/blockfront/unnamed/BF_925;

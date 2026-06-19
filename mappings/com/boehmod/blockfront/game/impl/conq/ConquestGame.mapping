@@ -1,5 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_793 com/boehmod/blockfront/game/impl/conq/ConquestGame
-	FIELD field_3357 command Lcom/boehmod/blockfront/unnamed/BF_462;
-	FIELD field_3359 capturePoints Lit/unimi/dsi/fastutil/objects/ObjectList;
-	FIELD field_3363 vehicleSpawns Lit/unimi/dsi/fastutil/objects/ObjectList;
-	METHOD method_3274 getVehicleSpawns ()Lit/unimi/dsi/fastutil/objects/ObjectList;
