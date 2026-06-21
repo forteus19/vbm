@@ -12,16 +12,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_928 com/boehmod/blockfront/common/match/
 	FIELD field_7551 warCryCrowdSound Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_7552 warCrySoundCommander Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_7553 index I
-	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)V
-		ARG 1 tag
-		ARG 2 name
-		ARG 3 botVoices
-		ARG 4 miscItems
-		ARG 5 usernames
-		ARG 6 warCrySound
-		ARG 7 warCrySoundDistant
-		ARG 8 warCryCrowdSound
-		ARG 9 warCrySoundCommander
 	METHOD method_6684 getFlagTexture ()Lnet/minecraft/resources/ResourceLocation;
 	METHOD method_6685 getRandomBotVoice ()Lcom/boehmod/blockfront/unnamed/BF_923;
 	METHOD method_6686 getByIndex (I)Lcom/boehmod/blockfront/unnamed/BF_928;

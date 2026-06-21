@@ -1,7 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_388 com/boehmod/blockfront/cloud/client/ClientConnectionManager
 	FIELD field_1797 connectionMode Lcom/boehmod/blockfront/unnamed/BF_442;
 	FIELD field_1798 auth Lcom/boehmod/blockfront/unnamed/BF_719;
-	FIELD field_1799 discordEvents Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_1803 usersOnline I
 	FIELD field_1807 location Ljava/lang/String;
 	METHOD method_1386 getConnectionMode ()Lcom/boehmod/blockfront/unnamed/BF_442;

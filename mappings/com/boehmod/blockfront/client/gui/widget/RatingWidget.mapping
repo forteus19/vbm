@@ -1,6 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1236 com/boehmod/blockfront/client/gui/widget/RatingWidget
 	FIELD field_7198 STAR_EMPTY_TEXTURE Lnet/minecraft/resources/ResourceLocation;
-	FIELD field_7199 STAR_HALF_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_7200 STAR_FULL_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	METHOD method_6094 onRate (F)V
 		ARG 1 rating

@@ -51,9 +51,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_497 com/boehmod/blockfront/cloud/client/
 	METHOD method_1799 requestedCloudData (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedCloudData;Lcom/boehmod/bflib/cloud/connection/Connection;)V
 		ARG 0 packet
 		ARG 1 connection
-	METHOD method_1800 requestedEvents (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedEvents;Lcom/boehmod/bflib/cloud/connection/Connection;)V
-		ARG 0 packet
-		ARG 1 connection
 	METHOD method_1801 requestedFriends (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedFriends;Lcom/boehmod/bflib/cloud/connection/Connection;)V
 		ARG 0 packet
 		ARG 1 connection
