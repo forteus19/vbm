@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1407 com/boehmod/blockfront/map/effect/edit/BoundedIntegerPromptField
+	FIELD field_8269 minValue I
+	FIELD field_8270 maxValue I
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier;Ljava/util/function/Consumer;II)V
+		ARG 1 displayName
+		ARG 2 getter
+		ARG 3 setter
+		ARG 4 minValue
+		ARG 5 maxValue

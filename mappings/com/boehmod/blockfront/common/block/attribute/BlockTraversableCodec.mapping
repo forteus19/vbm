@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1431 com/boehmod/blockfront/common/block/attribute/BlockTraversableCodec
+	FIELD field_8418 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_8419 INSTANCES Ljava/util/Map;
+	METHOD <init> (F)V
+		ARG 1 reduction
+	METHOD method_7907 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance
+	METHOD method_7908 getByResourceLocation (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_1431;
+		ARG 0 location
+	METHOD method_7909 putInstance (Lnet/minecraft/resources/ResourceLocation;Lcom/boehmod/blockfront/unnamed/BF_1431;)V
+		ARG 0 location
+		ARG 1 data
+	METHOD method_7910 clearInstances ()V

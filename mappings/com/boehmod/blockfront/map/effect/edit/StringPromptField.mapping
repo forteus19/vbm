@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1410 com/boehmod/blockfront/map/effect/edit/StringPromptField
+	FIELD field_8275 DEFAULT_MAX_LENGTH I
+	FIELD field_8276 maxLength I
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier;Ljava/util/function/Consumer;I)V
+		ARG 1 displayName
+		ARG 2 getter
+		ARG 3 setter
+		ARG 4 maxLength

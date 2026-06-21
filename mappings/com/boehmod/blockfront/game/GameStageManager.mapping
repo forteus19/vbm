@@ -2,8 +2,25 @@ CLASS com/boehmod/blockfront/unnamed/BF_939 com/boehmod/blockfront/game/GameStag
 	FIELD field_3778 currentStage Lcom/boehmod/blockfront/unnamed/BF_938;
 	FIELD field_3779 canChangeStage Z
 	FIELD field_3780 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	FIELD field_8356 currentContext Lcom/boehmod/blockfront/unnamed/BF_1426;
+	FIELD field_8357 secondTimer I
+	FIELD field_8358 TICKS_PER_SECOND I
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
 		ARG 1 game
+	METHOD method_3914 update (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 level
 	METHOD method_3915 getCurrentStage ()Lcom/boehmod/blockfront/unnamed/BF_938;
 	METHOD method_3916 setCanChangeStage ()V
 	METHOD method_3917 initFirstStage ()V
+	METHOD method_7773 onPlayerInit (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 joinType
+		ARG 4 level
+		ARG 5 player
+	METHOD method_7774 getOrCreateContext (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;)Lcom/boehmod/blockfront/unnamed/BF_1426;
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 level

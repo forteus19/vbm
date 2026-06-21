@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1408 com/boehmod/blockfront/map/effect/edit/SelectPromptField
+	FIELD field_8271 options Ljava/util/function/Supplier;
+	FIELD field_8272 stringSupplier Ljava/util/function/Function;
+	FIELD field_8273 componentSupplier Ljava/util/function/Function;
+	FIELD field_8274 selectTitle Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier;Ljava/util/function/Consumer;Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier;Ljava/util/function/Function;Ljava/util/function/Function;)V
+		ARG 1 displayName
+		ARG 2 getter
+		ARG 3 setter
+		ARG 4 selectTitle
+		ARG 5 options
+		ARG 6 stringSupplier
+		ARG 7 componentSupplier

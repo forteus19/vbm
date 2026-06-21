@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1404 com/boehmod/blockfront/map/effect/edit/AbstractPromptField
+	FIELD field_8259 setter Ljava/util/function/Consumer;
+	FIELD field_8260 getter Ljava/util/function/Supplier;
+	FIELD field_8261 displayName Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier;Ljava/util/function/Consumer;)V
+		ARG 1 displayName
+		ARG 2 getter
+		ARG 3 setter

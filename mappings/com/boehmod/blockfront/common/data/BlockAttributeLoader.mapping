@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1358 com/boehmod/blockfront/common/data/BlockAttributeLoader
+	FIELD field_7998 TRAVERSABLE_DIRECTORY Ljava/lang/String;
+	FIELD field_7999 IMPACT_DIRECTORY Ljava/lang/String;
+	FIELD field_8000 ATTRIBUTE_DIRECTORY Ljava/lang/String;
+	METHOD method_7177 populate (Lcom/boehmod/blockfront/unnamed/BF_1358$BF_1359;)V
+		ARG 0 codec
+	METHOD method_7185 (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_1429;
+		ARG 1 location
+	METHOD method_7186 (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_1431;
+		ARG 1 location
+	METHOD method_7188 bootstrap ()V
+	CLASS BF_1359 Codec
+		METHOD <init> (Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)V
+			ARG 1 traversable
+			ARG 2 impact
+			ARG 3 attributes

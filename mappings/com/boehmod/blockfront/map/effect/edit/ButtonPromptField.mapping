@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1400 com/boehmod/blockfront/map/effect/edit/ButtonPromptField
+	FIELD field_8257 action Ljava/lang/Runnable;
+	FIELD field_8258 name Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)V
+		ARG 1 name
+		ARG 2 action

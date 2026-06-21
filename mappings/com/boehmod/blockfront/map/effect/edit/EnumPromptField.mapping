@@ -1,0 +1,14 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1405 com/boehmod/blockfront/map/effect/edit/EnumPromptField
+	FIELD field_8265 enumClass Ljava/lang/Class;
+	FIELD field_8266 enumDisplayNameSupplier Ljava/util/function/Function;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/lang/Class;Ljava/util/function/Supplier;Ljava/util/function/Consumer;)V
+		ARG 1 displayName
+		ARG 2 enumClass
+		ARG 3 getter
+		ARG 4 setter
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/lang/Class;Ljava/util/function/Supplier;Ljava/util/function/Consumer;Ljava/util/function/Function;)V
+		ARG 1 displayName
+		ARG 2 enumClass
+		ARG 3 getter
+		ARG 4 setter
+		ARG 5 enumDisplayNameSupplier

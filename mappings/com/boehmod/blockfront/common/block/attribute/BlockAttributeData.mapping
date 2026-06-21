@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1427 com/boehmod/blockfront/common/block/attribute/BlockAttributeData
+	FIELD field_8391 BY_LOCATION Ljava/util/Map;
+	FIELD field_8392 BY_BLOCK Ljava/util/Map;
+	FIELD field_8393 BY_SOUND_TYPE Ljava/util/Map;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1431;Lcom/boehmod/blockfront/unnamed/BF_1429;ZZ)V
+		ARG 1 traversable
+		ARG 2 impact
+		ARG 3 preventsWeaponClipping
+		ARG 4 seeThrough
+	METHOD method_7867 putByResourceLocation (Lnet/minecraft/resources/ResourceLocation;Lcom/boehmod/blockfront/unnamed/BF_1427;)V
+		ARG 0 location
+		ARG 1 data
+	METHOD method_7868 putBySoundType (Lnet/minecraft/world/level/block/SoundType;)V
+		ARG 1 soundType
+	METHOD method_7869 clearInstances ()V
+	METHOD method_7872 putByBlock (Lnet/minecraft/world/level/block/Block;)V
+		ARG 1 block

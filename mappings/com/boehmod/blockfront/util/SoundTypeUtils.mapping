@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1452 com/boehmod/blockfront/util/SoundTypeUtils
+	FIELD field_8502 BY_NAME Ljava/util/Map;
+	METHOD method_8010 getByName (Ljava/lang/String;)Lnet/minecraft/world/level/block/SoundType;
+		ARG 0 name

@@ -1,6 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_849 com/boehmod/blockfront/game/impl/ttt/TroubleTownGame
 	FIELD field_3464 weaponSpawns Ljava/util/List;
-	FIELD field_3465 ITEM_DROPS Ljava/util/List;
+	FIELD field_3465 itemDrops Ljava/util/List;
 	FIELD field_3466 LOADOUT Lcom/boehmod/blockfront/unnamed/BF_759;
 	FIELD field_3467 command Lcom/boehmod/blockfront/unnamed/BF_462;
 	FIELD field_3470 activeRandomatEvents Lit/unimi/dsi/fastutil/objects/ObjectList;
@@ -19,6 +19,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_849 com/boehmod/blockfront/game/impl/ttt
 	METHOD method_3522 assignRoles (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
 		ARG 1 level
 		ARG 2 players
+	METHOD method_3526 spawnRandomDrop (Lnet/minecraft/server/level/ServerLevel;)V
 	METHOD method_3528 isPlayerInnocent (Ljava/util/UUID;)Z
 		ARG 1 palyer
 	METHOD method_3529 isPlayerTraitor (Ljava/util/UUID;)Z

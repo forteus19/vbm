@@ -1,7 +1,51 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1391 com/boehmod/blockfront/map/effect/AbstractMapEffect
 	FIELD field_8245 uuid Ljava/util/UUID;
+	FIELD field_8246 prevPosition Lnet/minecraft/world/phys/Vec3;
 	FIELD field_8247 effectId Ljava/lang/String;
 	FIELD field_8248 position Lnet/minecraft/world/phys/Vec3;
+	FIELD field_8249 DEBUG_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_8250 bounds Lnet/minecraft/world/phys/AABB;
 	FIELD field_8251 startsEnabled Z
 	FIELD field_8252 enabled Z
+	METHOD <init> (Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 position
+	METHOD method_3087 updateClient (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/util/RandomSource;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;F)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 random
+		ARG 4 game
+		ARG 5 player
+		ARG 6 level
+		ARG 7 renderTime
+	METHOD method_3089 renderDebug (Lnet/minecraft/client/Minecraft;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Z)V
+		ARG 1 minecraft
+		ARG 2 renderEvent
+		ARG 3 bufferSource
+		ARG 4 poseStack
+		ARG 5 graphics
+		ARG 6 font
+		ARG 7 camera
+	METHOD method_3090 updateServer (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/util/RandomSource;Ljava/util/Set;)V
+		ARG 1 level
+		ARG 2 manager
+		ARG 3 game
+		ARG 4 random
+		ARG 5 players
+	METHOD method_3091 requiresFancyGraphics ()Z
+	METHOD method_6411 getDebugTexture ()Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_7566 getEditableFields ()Ljava/util/List;
+	METHOD method_7570 getInfoLines (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Ljava/util/List;)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 player
+		ARG 4 level
+		ARG 5 lineList
+	METHOD method_7571 onInitEnvironment (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_1182;)V
+		ARG 1 minecraft
+		ARG 2 environment
+	METHOD method_7572 onStop (Lnet/minecraft/client/Minecraft;Lnet/minecraft/util/RandomSource;)V
+	METHOD method_7573 onInitMap (Lcom/boehmod/blockfront/unnamed/BF_927;)V
+		ARG 1 map
+	METHOD method_7574 onEdited ()V
 	METHOD method_7575 getPosition ()Lnet/minecraft/world/phys/Vec3;
+	METHOD method_7577 getBounds ()Lnet/minecraft/world/phys/AABB;

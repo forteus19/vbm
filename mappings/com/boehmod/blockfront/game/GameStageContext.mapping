@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1426 com/boehmod/blockfront/game/GameStageContext
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
+		ARG 1 game
+		ARG 2 playerHandler
+		ARG 3 manager
+		ARG 4 playerDataHandler
+		ARG 5 serverLevel
+		ARG 6 players

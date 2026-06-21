@@ -19,5 +19,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_112 com/boehmod/blockfront/client/gui/la
 		ARG 3 font
 		ARG 4 player
 		ARG 5 waypoints
-	CLASS BF_114 DirtyOverlay
+	CLASS BF_114 EffectOverlay
 		CLASS BF_115 Type

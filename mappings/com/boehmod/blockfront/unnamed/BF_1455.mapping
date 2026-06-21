@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1455
+	FIELD field_8526 color I
+	METHOD method_8024 setColor (I)Lcom/boehmod/blockfront/unnamed/BF_1455;
+		ARG 1 color

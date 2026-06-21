@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1412 com/boehmod/blockfront/game/tag/IHasTargets
+	METHOD method_7615 onHitTarget (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 manager
+		ARG 2 player

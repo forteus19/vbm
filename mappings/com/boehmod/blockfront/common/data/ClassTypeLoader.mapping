@@ -1,5 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1254 com/boehmod/blockfront/common/data/ClassTypeLoader
 	FIELD field_7364 data Ljava/util/Map;
+	FIELD field_7966 DIRECTORY Ljava/lang/String;
 	METHOD apply (Ljava/lang/Object;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V
 		ARG 1 data
 		ARG 2 resourceManager

@@ -8,6 +8,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_802 com/boehmod/blockfront/game/impl/dom
 	FIELD field_3395 MESSAGE_CRATE Lnet/minecraft/network/chat/Component;
 	FIELD field_3396 SWITCHTEAMS_ERROR_SCORES_AXIS Lnet/minecraft/network/chat/Component;
 	FIELD field_3397 SWITCHTEAMS_ERROR_SCORES_ALLIES Lnet/minecraft/network/chat/Component;
+	FIELD field_7329 vehiclePoints Ljava/util/List;
 	METHOD method_3328 setIntroSequence (Lcom/boehmod/blockfront/unnamed/BF_597;)V
 		ARG 1 sequence
 	METHOD method_3334 setOutroSequence (Lcom/boehmod/blockfront/unnamed/BF_597;)V

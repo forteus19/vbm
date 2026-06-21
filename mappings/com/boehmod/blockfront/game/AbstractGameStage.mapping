@@ -1,4 +1,16 @@
 CLASS com/boehmod/blockfront/unnamed/BF_938 com/boehmod/blockfront/game/AbstractGameStage
+	METHOD method_3313 canAdvanceStage (Lcom/boehmod/blockfront/unnamed/BF_1426;)Z
+		ARG 1 context
+	METHOD method_3317 onSecond (Lcom/boehmod/blockfront/unnamed/BF_1426;)V
+		ARG 1 context
+	METHOD method_3575 onPlayerInit (Lcom/boehmod/blockfront/unnamed/BF_1426;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 context
+		ARG 2 joinTyoe
+		ARG 3 player
+	METHOD method_3588 onStageEnd (Lcom/boehmod/blockfront/unnamed/BF_1426;)V
+		ARG 1 context
 	METHOD method_3905 getStatus ()Lcom/boehmod/blockfront/unnamed/BF_685;
 	METHOD method_3907 createNextStage (Lcom/boehmod/blockfront/unnamed/BF_677;)Lcom/boehmod/blockfront/unnamed/BF_938;
 		ARG 1 game
+	METHOD method_7766 onStageStart (Lcom/boehmod/blockfront/unnamed/BF_1426;)V
+		ARG 1 context

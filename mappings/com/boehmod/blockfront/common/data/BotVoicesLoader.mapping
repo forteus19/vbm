@@ -1,5 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1253 com/boehmod/blockfront/common/data/BotVoicesLoader
-	FIELD field_7361 NAMESPACE Ljava/lang/String;
+	FIELD field_7361 DIRECTORY Ljava/lang/String;
 	FIELD field_7362 data Ljava/util/Map;
 	METHOD apply (Ljava/lang/Object;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/util/profiling/ProfilerFiller;)V
 		ARG 1 data
