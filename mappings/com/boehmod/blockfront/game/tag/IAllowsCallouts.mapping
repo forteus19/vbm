@@ -1,1 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_811 com/boehmod/blockfront/game/tag/IAllowsCallouts
+	METHOD method_3395 handleCallout (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_753;)V
+		ARG 1 game
+		ARG 2 uuid
+		ARG 3 callout
+	METHOD method_3396 onCallout (Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_753;)V
+		ARG 1 player
+		ARG 2 uuid
+		ARG 3 callout

@@ -1,1 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1228 com/boehmod/blockfront/game/tag/IAllowsPings
+	METHOD method_6052 onPingTriggerRequest (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 manager
+		ARG 2 player
+		ARG 3 pingUuid
+		ARG 4 position
+	METHOD method_6053 onPingRequest (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 manager
+		ARG 2 player
+		ARG 3 position

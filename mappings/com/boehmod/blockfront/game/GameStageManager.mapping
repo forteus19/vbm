@@ -1,6 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_939 com/boehmod/blockfront/game/GameStageManager
 	FIELD field_3778 currentStage Lcom/boehmod/blockfront/unnamed/BF_938;
-	FIELD field_3779 canChangeStage Z
+	FIELD field_3779 forceAdvance Z
 	FIELD field_3780 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	FIELD field_8356 currentContext Lcom/boehmod/blockfront/unnamed/BF_1426;
 	FIELD field_8357 secondTimer I
@@ -12,7 +12,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_939 com/boehmod/blockfront/game/GameStag
 		ARG 2 dataHandler
 		ARG 3 level
 	METHOD method_3915 getCurrentStage ()Lcom/boehmod/blockfront/unnamed/BF_938;
-	METHOD method_3916 setCanChangeStage ()V
+	METHOD method_3916 forceAdvance ()V
 	METHOD method_3917 initFirstStage ()V
 	METHOD method_7773 onPlayerInit (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 manager

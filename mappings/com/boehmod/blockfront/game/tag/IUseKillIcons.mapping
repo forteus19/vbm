@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_824 com/boehmod/blockfront/game/tag/IUseKillIcons
+	METHOD method_3430 shouldAddKillFeedEntries ()Z

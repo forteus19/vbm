@@ -325,10 +325,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 1 game
 		ARG 2 manager
 		ARG 3 player
+	METHOD method_2943 giveClassLoadout (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_686;)V
+		ARG 0 level
+		ARG 1 game
+		ARG 2 team
 	METHOD method_2946 initPlayersForGame (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;Lcom/boehmod/blockfront/common/player/c;)V
 		ARG 0 level
 		ARG 1 players
 		ARG 2 dataHandler
+	METHOD method_2950 giveClassLoadout (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_686;)V
+		ARG 0 level
+		ARG 1 player
+		ARG 2 game
+		ARG 3 team
 	METHOD method_2951 giveLoadout (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_759;)V
 		ARG 0 level
 		ARG 1 player
@@ -462,6 +471,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 0 players
 	METHOD method_2996 clearClientRagdolls (Ljava/util/Set;)V
 		ARG 0 players
+	METHOD method_2999 restockAndSyncInventory (Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 player
 	METHOD method_3000 clearInventory (Ljava/util/UUID;)V
 		ARG 0 player
 	METHOD method_3001 (Ljava/util/UUID;)V
@@ -477,5 +488,41 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 	METHOD method_6048 (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;Ljava/util/UUID;Ljava/util/UUID;)I
 		ARG 2 uuid1
 		ARG 3 uuid2
+	METHOD method_6109 isBelowHeightmap (Lnet/minecraft/world/level/Level;III)Z
+		ARG 0 level
+		ARG 1 x
+		ARG 2 z
+		ARG 3 y
 	METHOD method_6421 resetPlayerAttributes (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 0 player
+	METHOD method_7281 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;I)V
+		ARG 0 team
+		ARG 1 message
+		ARG 2 time
+	METHOD method_7282 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
+		ARG 0 team
+		ARG 1 message
+		ARG 2 time
+		ARG 3 key
+	METHOD method_7283 sendNotification (Ljava/util/Set;Lnet/minecraft/network/chat/Component;I)V
+		ARG 0 players
+		ARG 1 message
+		ARG 2 time
+	METHOD method_7284 sendNotification (Ljava/util/Set;Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
+		ARG 0 players
+		ARG 1 message
+		ARG 2 time
+		ARG 3 key
+	METHOD method_7285 sendNotification (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;I)V
+		ARG 0 playerUuid
+		ARG 1 message
+		ARG 2 time
+	METHOD method_7286 sendNotification (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
+		ARG 0 playerUuid
+		ARG 1 message
+		ARG 2 time
+		ARG 3 key
+	METHOD method_7287 (Lnet/minecraft/network/chat/Component;ILjava/lang/String;Ljava/util/UUID;)V
+		ARG 3 uuid
+	METHOD method_7289 (Lnet/minecraft/network/chat/Component;ILjava/lang/String;Ljava/util/UUID;)V
+		ARG 3 uuid

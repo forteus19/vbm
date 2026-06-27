@@ -8,7 +8,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	FIELD field_2936 iconColor I
 	FIELD field_2937 maxPlayers I
 	FIELD field_2938 game Lcom/boehmod/blockfront/unnamed/BF_677;
-	FIELD field_7219 playersView Ljava/util/Set;
+	FIELD field_7219 unmodifiablePlayers Ljava/util/Set;
 	FIELD field_7565 statData Lcom/boehmod/blockfront/unnamed/BF_1279;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;Lnet/minecraft/network/chat/Style;Lnet/minecraft/network/chat/Style;I)V
 		ARG 1 game
@@ -59,10 +59,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_686 com/boehmod/blockfront/game/GameTeam
 	METHOD method_2835 randomPlayer ()Ljava/util/UUID;
 	METHOD method_2836 writeBuf (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
-	METHOD method_2837 getPlayersView ()Ljava/util/Set;
+	METHOD method_2837 getPlayers ()Ljava/util/Set;
 	METHOD method_2838 readBuf (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD method_2842 getPlayerSpawns ()Ljava/util/List;
+	METHOD method_6047 sendPacket (Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;)V
+		ARG 1 payload
 	METHOD method_6746 putStatInt (Lcom/boehmod/blockfront/unnamed/BF_941;I)V
 		ARG 1 stat
 		ARG 2 value

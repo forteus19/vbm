@@ -27,7 +27,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	METHOD method_2683 getSummaryScreens (Lcom/boehmod/blockfront/unnamed/BF_677;Z)Ljava/util/Collection;
 		ARG 1 game
 		ARG 2 onlyVote
-	METHOD method_2684 renderDebug (Lcom/boehmod/blockfront/unnamed/BF_682;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/culling/Frustum;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;ZFF)V
+	METHOD method_2684 render (Lcom/boehmod/blockfront/unnamed/BF_682;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/player/LocalPlayer;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/culling/Frustum;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;ZFF)V
 		ARG 1 playerManager
 		ARG 2 minecraft
 		ARG 3 level
@@ -40,6 +40,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 10 graphics
 		ARG 11 camera
 		ARG 12 renderGameInfo
+		ARG 13 renderTime
+		ARG 14 partialTick
 	METHOD method_2687 addRadioPoint (Lcom/boehmod/blockfront/unnamed/BF_761;)V
 		ARG 1 point
 	METHOD method_2689 addPopup (Lcom/boehmod/blockfront/unnamed/BF_921;)V
@@ -104,9 +106,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 4 level
 	METHOD method_2710 setNameTagState (Lnet/minecraft/client/Minecraft;Lnet/neoforged/neoforge/client/event/RenderNameTagEvent;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 	METHOD method_2712 renderGameElements (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;IF)V
+	METHOD method_2713 shouldRenderBackpack (Lnet/minecraft/client/player/AbstractClientPlayer;)Z
+		ARG 1 player
 	METHOD method_2716 getSummaryScreens (Z)Ljava/util/Collection;
+		ARG 1 onlyVote
 	METHOD method_2718 canOpenInventory ()Z
-	METHOD method_2721 getScoreStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
+	METHOD method_2719 canSwitchItem ()Z
+	METHOD method_2721 getTopPlayersStat ()Lcom/boehmod/blockfront/unnamed/BF_941;
 	METHOD method_2722 renderSpecific (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_271;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Ljava/util/Set;IIIIFF)V
 		ARG 1 minecraft
 		ARG 2 manager
@@ -139,9 +145,20 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	METHOD method_2741 advanceSummary (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_2742 getPopups ()Ljava/util/List;
+	METHOD method_6046 getNearestPing (Lnet/minecraft/world/phys/Vec3;D)Lcom/boehmod/blockfront/unnamed/BF_1229;
+		ARG 1 position
+		ARG 2 maxDistance
 	METHOD method_6106 setRatedMap (Z)V
 		ARG 1 hasRatedMap
 	METHOD method_6108 hasRatedMap ()Z
+	METHOD method_7268 addNotification (Lnet/minecraft/network/chat/Component;I)V
+		ARG 1 message
+		ARG 2 time
+	METHOD method_7269 addNotification (Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
+		ARG 1 message
+		ARG 2 time
+		ARG 3 key
+	METHOD method_7270 renderFpsDisplay (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;)V
 	CLASS BF_680 Scoreboard
 		FIELD field_2905 entries Ljava/util/Map;
 		METHOD method_2746 column (Ljava/lang/String;Lorg/apache/commons/lang3/function/TriFunction;)Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;

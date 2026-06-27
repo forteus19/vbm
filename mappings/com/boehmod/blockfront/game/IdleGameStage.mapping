@@ -1,1 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_935 com/boehmod/blockfront/game/IdleGameStage
+	FIELD field_8349 nextStageSupplier Ljava/util/function/Supplier;
+	METHOD <init> (Ljava/util/function/Supplier;)V
+		ARG 1 nextStageSupplier

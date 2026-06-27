@@ -2,3 +2,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_733 com/boehmod/blockfront/map/effect/Mi
 	FIELD field_3105 yPos I
 	FIELD field_3106 radius I
 	FIELD field_7389 CODEC Lcom/mojang/serialization/MapCodec;
+	METHOD method_3096 (ILnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;DD)V
+		ARG 1 fogColor
+		ARG 2 player
+		ARG 3 level
+		ARG 4 graphics
+		ARG 5 poseStack
+		ARG 6 x
+		ARG 8 z

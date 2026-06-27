@@ -531,6 +531,18 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 11 alpha
 		ARG 12 rotationX
 		ARG 13 rotationY
+	METHOD method_254 tintedWorldTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDFFFIZ)V
+		ARG 0 poseStack
+		ARG 1 graphics
+		ARG 2 texture
+		ARG 3 x
+		ARG 5 y
+		ARG 7 z
+		ARG 9 width
+		ARG 10 height
+		ARG 11 rotation
+		ARG 12 color
+		ARG 13 depthTest
 	METHOD method_255 tintedWorldTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDFFFIZFF)V
 		ARG 0 poseStack
 		ARG 1 graphics

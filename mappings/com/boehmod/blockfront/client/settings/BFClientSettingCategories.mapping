@@ -8,5 +8,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_433 com/boehmod/blockfront/client/settin
 	FIELD field_2007 DEBUG Lcom/boehmod/blockfront/unnamed/BF_434;
 	FIELD field_2008 RULES Lcom/boehmod/blockfront/unnamed/BF_434;
 	FIELD field_6900 CONTENT Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_7928 INTERNAL Lcom/boehmod/blockfront/unnamed/BF_434;
 	METHOD method_1516 register (Lcom/boehmod/blockfront/unnamed/BF_434;)Lcom/boehmod/blockfront/unnamed/BF_434;
 		ARG 0 category

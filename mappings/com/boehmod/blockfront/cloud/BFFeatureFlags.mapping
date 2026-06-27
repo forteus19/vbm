@@ -6,4 +6,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_414 com/boehmod/blockfront/cloud/BFFeatu
 	FIELD field_6924 serverShotValidationSpread Z
 	FIELD field_7091 clientFancyBulletEffects Z
 	FIELD field_7131 serverMatchFeaturePing Z
+	FIELD field_7964 clientVeilFancyGunLight Z
+	FIELD field_8759 serverGrenadeCookDropOnDeath Z
 	METHOD method_1469 updateFeatureFlags ()V

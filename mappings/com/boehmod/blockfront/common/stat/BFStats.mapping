@@ -43,3 +43,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_943 com/boehmod/blockfront/common/stat/B
 	FIELD field_3831 RADIO_DELAY Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3832 TEAM_SWITCH Lcom/boehmod/blockfront/unnamed/BF_941;
 	FIELD field_3833 WAR_CRY Lcom/boehmod/blockfront/unnamed/BF_941;
+	FIELD field_8360 WAYPOINT_DELAY Lcom/boehmod/blockfront/unnamed/BF_941;

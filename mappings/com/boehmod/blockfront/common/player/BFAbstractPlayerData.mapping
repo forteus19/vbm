@@ -1,5 +1,6 @@
 CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/player/BFAbstractPlayerData
 	FIELD field_1150 uuid Ljava/util/UUID;
+	FIELD field_1153 playerDamage Lit/unimi/dsi/fastutil/objects/Object2FloatMap;
 	FIELD field_1155 previousMessages Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_1156 lastMessage Ljava/lang/String;
 	FIELD field_1159 lastChatTime J
@@ -32,7 +33,7 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 		ARG 2 player
 	METHOD method_845 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
-	METHOD method_847 reset ()V
+	METHOD method_847 clearPlayerDamage ()V
 	METHOD method_848 isOutOfGame ()Z
 	METHOD method_849 isFrozen ()Z
 	METHOD method_850 isMuted ()Z
@@ -44,6 +45,7 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 		ARG 1 pose
 	METHOD method_856 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
+	METHOD method_857 getPlayerDamage ()Ljava/util/Map;
 	METHOD method_858 getFreezePose ()Lcom/boehmod/blockfront/unnamed/BF_692;
 	METHOD method_859 addMessage (Ljava/lang/String;)V
 		ARG 1 message
