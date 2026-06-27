@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_905 com/boehmod/blockfront/util/CollisionUtils
+	METHOD method_3753 hitBlock (Lnet/minecraft/world/entity/Entity;DF)Lnet/minecraft/world/phys/HitResult;
+		ARG 0 entity
+		ARG 1 maxDistance
+		ARG 3 partialTick

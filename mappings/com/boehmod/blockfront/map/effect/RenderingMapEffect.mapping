@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1396 com/boehmod/blockfront/map/effect/RenderingMapEffect
+	METHOD method_3086 getRenderStage ()Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent$Stage;
+	METHOD method_3088 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/renderer/block/BlockRenderDispatcher;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;Ljava/util/Random;Lnet/neoforged/neoforge/client/event/RenderLevelStageEvent;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;FF)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 player
+		ARG 4 level
+		ARG 5 dispatcher
+		ARG 6 bufferSource
+		ARG 7 random
+		ARG 8 event
+		ARG 9 graphics
+		ARG 10 poseStack
+		ARG 11 camera
+		ARG 12 renderTime
+		ARG 13 delta

@@ -1,0 +1,19 @@
+CLASS com/boehmod/blockfront/unnamed/BF_809 com/boehmod/blockfront/game/tag/IHasBombs
+	METHOD method_3381 onBombDefused (Lcom/boehmod/blockfront/unnamed/BF_562;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
+		ARG 1 bomb
+		ARG 2 player
+		ARG 3 playerUuid
+	METHOD method_3382 onBombExplode (Lcom/boehmod/blockfront/unnamed/BF_562;Lnet/minecraft/world/level/Level;)V
+		ARG 1 bomb
+		ARG 2 level
+	METHOD method_3383 canPlantBomb (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;)Z
+		ARG 1 level
+		ARG 2 player
+	METHOD method_3384 canDefuseBomb (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/unnamed/BF_562;)Z
+		ARG 1 level
+		ARG 2 player
+		ARG 3 bomb
+	METHOD method_3385 onBombPlanted (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 1 level
+		ARG 2 player
+		ARG 3 heldStack

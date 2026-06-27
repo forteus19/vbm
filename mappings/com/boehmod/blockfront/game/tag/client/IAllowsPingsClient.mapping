@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1227 com/boehmod/blockfront/game/tag/client/IAllowsPingsClient
+	METHOD method_6050 shouldMovePing (Lcom/boehmod/blockfront/unnamed/BF_1229;Ljava/util/UUID;Lnet/minecraft/world/phys/Vec3;)Z
+		ARG 1 ping
+		ARG 2 playerUuid
+		ARG 3 newPosition
+	METHOD method_6051 onPing (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;)V
+		ARG 1 minecraft
+		ARG 2 manager

@@ -22,4 +22,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_906 com/boehmod/blockfront/common/item/B
 		ARG 1 stack
 		ARG 2 entity
 	METHOD method_3770 getWobbleIntensity ()F
-	METHOD method_3774 setNameTag (Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)V
