@@ -74,10 +74,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 2 dataHandler
 		ARG 3 level
 		ARG 4 players
-	METHOD method_2604 sendBattleReport (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_686;Lcom/boehmod/blockfront/unnamed/BF_941;)V
-		ARG 1 manager
-		ARG 2 team
-		ARG 3 topStat
 	METHOD method_2605 playerJoinTeam (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)Z
 		ARG 1 manager
 		ARG 2 joinType
