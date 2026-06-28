@@ -99,12 +99,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 3 player
 		ARG 4 level
 	METHOD method_2706 updateMapEnvironment (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/util/RandomSource;F)V
-	METHOD method_2709 shouldRenderNameTag (Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)Z
-		ARG 1 minecraft
-		ARG 2 target
-		ARG 3 localPlayer
-		ARG 4 level
-	METHOD method_2710 setNameTagState (Lnet/minecraft/client/Minecraft;Lnet/neoforged/neoforge/client/event/RenderNameTagEvent;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 	METHOD method_2712 renderGameElements (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;IF)V
 	METHOD method_2713 shouldRenderBackpack (Lnet/minecraft/client/player/AbstractClientPlayer;)Z
 		ARG 1 player

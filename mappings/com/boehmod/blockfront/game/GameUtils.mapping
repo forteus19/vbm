@@ -222,8 +222,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 1 title
 		ARG 2 message
 		ARG 3 type
-	METHOD method_2915 (Lcom/boehmod/blockfront/unnamed/BF_1015;Ljava/util/UUID;)V
-		ARG 1 uuid
 	METHOD method_2916 randomUUIDs (Ljava/util/Set;I)Ljava/util/Set;
 		ARG 0 uuids
 		ARG 1 amount

@@ -83,7 +83,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/client/net/BF
 		ARG 0 packet
 		ARG 1 context
 	METHOD method_2557 sequence (Lcom/boehmod/blockfront/unnamed/BF_1043;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
-	METHOD method_2558 sequencePositionUpdated (Lcom/boehmod/blockfront/unnamed/BF_1045;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 	METHOD method_2559 shakeNode (Lcom/boehmod/blockfront/unnamed/BF_1046;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 		ARG 0 packet
 		ARG 1 context
