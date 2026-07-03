@@ -1,8 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_5 com/boehmod/blockfront/client/corpse/render/CorpsePartLayer
-	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lcom/boehmod/blockfront/unnamed/BF_1128;[Lnet/minecraft/client/model/geom/ModelPart$Cube;)V
-		ARG 1 texture
-		ARG 2 layerType
-		ARG 3 cubes
 	METHOD method_49 of (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/model/geom/ModelPart;Lcom/boehmod/blockfront/unnamed/BF_1128;)Lcom/boehmod/blockfront/unnamed/BF_5;
 		ARG 0 texture
 		ARG 1 modelPart
