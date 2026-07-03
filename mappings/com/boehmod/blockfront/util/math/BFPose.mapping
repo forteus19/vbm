@@ -37,10 +37,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/BFP
 		ARG 1 size
 	METHOD method_3010 (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_565;)Z
 		ARG 1 bot
-	METHOD method_3011 getGameBotsInArea (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;I)Ljava/util/List;
-		ARG 1 game
-		ARG 2 level
-		ARG 3 radius
 	METHOD method_3012 distance (Lcom/boehmod/blockfront/unnamed/BF_692;)D
 		ARG 1 other
 	METHOD method_3015 (Ljava/util/Set;Lnet/minecraft/server/level/ServerPlayer;)Z
@@ -66,10 +62,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_692 com/boehmod/blockfront/util/math/BFP
 	METHOD method_3023 getNearestPlayer (Lnet/minecraft/world/level/Level;I)Lnet/minecraft/world/entity/player/Player;
 		ARG 1 level
 		ARG 2 maxRadius
-	METHOD method_3024 getSurroundingAlivePlayers (Lnet/minecraft/world/level/Level;ILjava/util/Set;)Ljava/util/List;
-		ARG 1 level
-		ARG 2 size
-		ARG 3 allowedUuids
 	METHOD method_3025 distanceTo (Lnet/minecraft/world/phys/Vec3;)D
 		ARG 1 vec
 	METHOD method_3026 distanceSqr (Lcom/boehmod/blockfront/unnamed/BF_692;)D
