@@ -1,6 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtils
 	FIELD field_2950 TEAM_TYPING_PREFIX Ljava/lang/String;
-	FIELD field_2951 OBJECTIVE_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2953 COMMAND_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2954 ADMIN_PREFIX Lnet/minecraft/network/chat/Component;
 	FIELD field_2955 DEAD_PREFIX Lnet/minecraft/network/chat/Component;
@@ -24,14 +23,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 0 chatGraphic
 		ARG 1 player
 		ARG 2 message
-	METHOD method_2867 formatChatMessage (Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_1117;)Lnet/minecraft/network/chat/Component;
-		ARG 0 dataHandler
-		ARG 1 game
-		ARG 2 player
-		ARG 3 uuid
-		ARG 4 playerName
-		ARG 5 message
-		ARG 6 playerData
 	METHOD method_2869 sortBySkillLevel (Lcom/boehmod/blockfront/common/player/c;Ljava/util/Set;)Ljava/util/Set;
 		ARG 0 dataHandler
 		ARG 1 players
@@ -211,18 +202,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 	METHOD method_2910 broadcastKillFeedEntry (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_774;)V
 		ARG 0 manager
 		ARG 1 entry
-	METHOD method_2912 sendNoticeMessage (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;)V
-		ARG 0 team
-		ARG 1 message
-	METHOD method_2913 sendFancyMessage (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
-		ARG 0 team
-		ARG 1 prefix
-		ARG 2 message
-	METHOD method_2914 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
-		ARG 0 team
-		ARG 1 title
-		ARG 2 message
-		ARG 3 type
 	METHOD method_2916 randomUUIDs (Ljava/util/Set;I)Ljava/util/Set;
 		ARG 0 uuids
 		ARG 1 amount
@@ -494,15 +473,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 3 y
 	METHOD method_6421 resetPlayerAttributes (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 0 player
-	METHOD method_7281 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;I)V
-		ARG 0 team
-		ARG 1 message
-		ARG 2 time
-	METHOD method_7282 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
-		ARG 0 team
-		ARG 1 message
-		ARG 2 time
-		ARG 3 key
 	METHOD method_7283 sendNotification (Ljava/util/Set;Lnet/minecraft/network/chat/Component;I)V
 		ARG 0 players
 		ARG 1 message

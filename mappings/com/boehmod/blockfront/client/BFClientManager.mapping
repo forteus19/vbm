@@ -7,7 +7,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2549 skinFetcher Lcom/boehmod/blockfront/unnamed/BF_410;
 	FIELD field_2550 skyTracker Lcom/boehmod/blockfront/unnamed/BF_437;
 	FIELD field_2551 musicManager Lcom/boehmod/blockfront/unnamed/BF_438;
-	FIELD field_2552 versionChecker Lcom/boehmod/blockfront/unnamed/BF_449;
 	FIELD field_2553 matchMaking Lcom/boehmod/blockfront/unnamed/BF_550;
 	FIELD field_2554 cinematics Lcom/boehmod/blockfront/unnamed/BF_599;
 	FIELD field_2555 game Lcom/boehmod/blockfront/unnamed/BF_677;
@@ -37,7 +36,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_2229 getSkinFetcher ()Lcom/boehmod/blockfront/unnamed/BF_410;
 	METHOD method_2230 getSkyTracker ()Lcom/boehmod/blockfront/unnamed/BF_437;
 	METHOD method_2231 getMusicManager ()Lcom/boehmod/blockfront/unnamed/BF_438;
-	METHOD method_2232 getVersionChecker ()Lcom/boehmod/blockfront/unnamed/BF_449;
 	METHOD method_2233 getMatchMaking ()Lcom/boehmod/blockfront/unnamed/BF_550;
 	METHOD method_2234 getCinematics ()Lcom/boehmod/blockfront/unnamed/BF_599;
 	METHOD method_2235 getGame ()Lcom/boehmod/blockfront/unnamed/BF_677;

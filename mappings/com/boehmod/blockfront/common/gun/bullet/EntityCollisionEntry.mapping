@@ -7,19 +7,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_1193 com/boehmod/blockfront/common/gun/b
 	FIELD field_6874 headshotRegion Lnet/minecraft/world/phys/AABB;
 	FIELD field_6875 backpackRegion Lnet/minecraft/world/phys/AABB;
 	FIELD field_6880 entityId I
-	FIELD field_7132 livingEntity Lnet/minecraft/world/entity/LivingEntity;
 	METHOD method_5817 create (Lcom/boehmod/blockfront/unnamed/BF_445;JLnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/LivingEntity;)Lcom/boehmod/blockfront/unnamed/BF_1193;
 		ARG 3 targetEntity
 		ARG 4 sourceEntity
 	METHOD method_5818 interpolate (Lcom/boehmod/blockfront/unnamed/BF_1193;F)Lcom/boehmod/blockfront/unnamed/BF_1193;
 		ARG 1 other
 		ARG 2 t
-	METHOD method_5819 createHeadshotRegion (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/phys/AABB;
-		ARG 0 entity
-	METHOD method_5822 createBackpackRegion (Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/phys/AABB;
-		ARG 0 entity
 	METHOD method_5824 getEntityId ()I
-	METHOD method_5826 hasHeadshotRegion (Lnet/minecraft/world/entity/LivingEntity;)Z
-		ARG 0 entity
 	METHOD method_5828 getHeadshotRegion ()Lnet/minecraft/world/phys/AABB;
 	METHOD method_5829 getBackpackRegion ()Lnet/minecraft/world/phys/AABB;
