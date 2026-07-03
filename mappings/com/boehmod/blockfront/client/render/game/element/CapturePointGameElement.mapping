@@ -4,8 +4,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_97 com/boehmod/blockfront/client/render/
 	FIELD field_455 CP_FLICKER Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_456 shouldFlicker Z
 	FIELD field_457 CP_ALLIES Lnet/minecraft/resources/ResourceLocation;
-	METHOD method_480 renderEntry (Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;III)V
-		ARG 6 index
 	CLASS BF_98 Entry
-		METHOD method_5922 flickerDoNotCall ()Z
-			COMMENT Weird unused duplicate method
