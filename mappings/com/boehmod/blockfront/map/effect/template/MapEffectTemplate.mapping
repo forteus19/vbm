@@ -1,0 +1,15 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1353 com/boehmod/blockfront/map/effect/template/MapEffectTemplate
+	FIELD field_7975 position Lnet/minecraft/world/phys/Vec3;
+	FIELD field_7976 overrides Lcom/google/gson/JsonObject;
+	FIELD field_7977 name Ljava/lang/String;
+	FIELD field_7979 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_7150 createMapEffect (Lcom/boehmod/blockfront/unnamed/BF_459;I)Lcom/boehmod/blockfront/unnamed/BF_1391;
+		ARG 1 store
+		ARG 2 hashIndex
+	METHOD method_7152 getOverrides ()Lcom/google/gson/JsonObject;
+	METHOD method_7153 setPosition (Lnet/minecraft/world/phys/Vec3;)V
+		ARG 1 position
+	METHOD method_7154 setOverrides (Lcom/google/gson/JsonObject;)V
+		ARG 1 overrides
+	METHOD method_7155 getPosition ()Lnet/minecraft/world/phys/Vec3;
+	METHOD method_7156 getName ()Ljava/lang/String;

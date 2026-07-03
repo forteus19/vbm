@@ -3,6 +3,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_1259 com/boehmod/blockfront/map/effect/M
 	FIELD field_7384 VEC2_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_7385 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_7386 CODECS Ljava/util/Map;
+	FIELD field_8253 SOUND_EVENT_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_8254 COLOR_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_6351 (Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 key
 	METHOD method_6352 (Lnet/minecraft/world/phys/Vec2;)Ljava/lang/Float;
@@ -21,3 +23,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_1259 com/boehmod/blockfront/map/effect/M
 		ARG 0 instance
 	METHOD method_7585 wrapCodec (Lcom/mojang/serialization/MapCodec;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 codec
+	METHOD method_7592 parseHexColor (Ljava/lang/String;)I
+		ARG 0 hexColor

@@ -94,3 +94,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_6137 setDailyReward (Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;)V
 		ARG 1 dailyReward
 	METHOD method_6138 getAndClearDailyReward ()Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;
+	METHOD method_8382 isGameSpectating ()Z
+	METHOD method_8383 isSpectating ()Z

@@ -3,6 +3,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1229 com/boehmod/blockfront/client/match
 	FIELD field_7136 uuid Ljava/util/UUID;
 	FIELD field_7137 position Lnet/minecraft/world/phys/Vec3;
 	FIELD field_7138 FADE_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_7139 isTriggered Z
 	METHOD <init> (Ljava/util/UUID;Ljava/util/UUID;Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 playerUuid
 		ARG 2 uuid
@@ -16,6 +17,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_1229 com/boehmod/blockfront/client/match
 		ARG 4 camera
 		ARG 7 delta
 	METHOD method_6059 getTextureScale ()I
+	METHOD method_6060 isTriggered ()Z
+	METHOD method_6061 trigger ()V
+	METHOD method_6062 onTrigger ()V
 	METHOD method_6063 getPosition ()Lnet/minecraft/world/phys/Vec3;
 	METHOD method_6064 setPosition (Lnet/minecraft/world/phys/Vec3;)V
 		ARG 1 position

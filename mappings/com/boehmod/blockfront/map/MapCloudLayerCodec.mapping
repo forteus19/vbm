@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1332 com/boehmod/blockfront/map/MapCloudLayerCodec
+	FIELD field_7913 CODEC Lcom/mojang/serialization/Codec;

@@ -1,0 +1,21 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1417 com/boehmod/blockfront/map/MapWeatherCodec
+	FIELD field_8314 weight D
+	FIELD field_8315 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_8316 fx Lcom/boehmod/blockfront/unnamed/BF_1420;
+	FIELD field_8317 ambientSounds Ljava/util/List;
+	FIELD field_8318 hasFogColor Z
+	FIELD field_8319 hasFogDensity Z
+	FIELD field_8320 hasSkyColor Z
+	FIELD field_8321 hasLightColor Z
+	FIELD field_8322 nearFogDensity F
+	FIELD field_8323 farFogDensity F
+	FIELD field_8324 minDurationTicks I
+	FIELD field_8325 maxDurationTicks I
+	FIELD field_8326 fogColor I
+	FIELD field_8327 skyColor I
+	FIELD field_8328 lightColor I
+	FIELD field_8329 interiorSound Ljava/util/function/Supplier;
+	FIELD field_8330 exteriorSound Ljava/util/function/Supplier;
+	METHOD method_7716 of (DIILjava/util/Optional;Ljava/util/Optional;ZIZFFZIZILjava/util/List;Lcom/boehmod/blockfront/unnamed/BF_1420;)Lcom/boehmod/blockfront/unnamed/BF_1417;
+	CLASS BF_1418 AmbientSound
+	CLASS BF_1419 PlaybackEnvironment

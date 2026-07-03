@@ -1,14 +1,17 @@
 CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/AbstractGamePlayerManager
 	FIELD field_2911 teams Ljava/util/List;
 	FIELD field_2912 matchStreakTracker Lcom/boehmod/blockfront/unnamed/BF_688;
-	FIELD field_2913 playerData Lcom/boehmod/blockfront/common/player/c;
+	FIELD field_2913 dataHandler Lcom/boehmod/blockfront/common/player/c;
 	FIELD field_2914 lobbySpawn Lcom/boehmod/blockfront/unnamed/BF_692;
 	FIELD field_2916 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	FIELD field_7217 internalPlayers Ljava/util/Set;
 	FIELD field_7218 unmodifiablePlayers Ljava/util/Set;
+	FIELD field_7251 SETTINGS_RESET_MESSAGE Lnet/minecraft/network/chat/MutableComponent;
+	FIELD field_8996 spectators Ljava/util/Set;
+	FIELD field_8997 unmodifiableSpectators Ljava/util/Set;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/common/player/c;)V
 		ARG 1 game
-		ARG 2 playerData
+		ARG 2 dataHandler
 	METHOD method_2749 getMatchStreakTracker ()Lcom/boehmod/blockfront/unnamed/BF_688;
 	METHOD method_2750 canInteractWithBlock (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Ljava/util/UUID;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/core/BlockPos;)Z
 		ARG 1 dataHandler
@@ -23,20 +26,20 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 		ARG 3 player
 		ARG 4 block
 		ARG 5 blockPos
-	METHOD method_2752 initPlayer (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
+	METHOD method_2752 onPlayerRespawn (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
 		ARG 1 manager
 		ARG 2 dataHandler
 		ARG 3 level
 		ARG 4 player
 		ARG 5 uuid
-	METHOD method_2753 onInitPlayer (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_686;)V
+	METHOD method_2753 onPlayerJoin (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_686;)V
 		ARG 1 manager
 		ARG 2 dataHandler
 		ARG 3 level
 		ARG 4 player
 		ARG 5 uuid
 		ARG 6 team
-	METHOD method_2754 initPlayerForGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_686;)V
+	METHOD method_2754 playerJoin (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_686;)V
 		ARG 1 manager
 		ARG 2 joinType
 		ARG 3 level
@@ -106,7 +109,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 		ARG 1 level
 		ARG 2 players
 		ARG 3 timer
-	METHOD method_2771 shouldPlayerRespawnInGame (Lnet/minecraft/server/level/ServerPlayer;)Z
+	METHOD method_2770 getRespawnTime (Lnet/minecraft/server/level/ServerPlayer;)I
+		ARG 1 player
+	METHOD method_2771 shouldPlayerJoinInGame (Lnet/minecraft/server/level/ServerPlayer;)Z
 		ARG 1 player
 	METHOD method_2772 onTickPlayer (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/common/player/b;)V
 		ARG 1 player
@@ -131,7 +136,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 		ARG 1 player
 		ARG 2 itemEntity
 		ARG 3 stack
-	METHOD method_2780 canPlayerDropItem (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)Z
+	METHOD method_2780 canDropItem (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 1 player
 		ARG 2 stack
 	METHOD method_2781 canBreakBlock (Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/level/block/Block;)Z
@@ -170,3 +175,23 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 		ARG 2 source
 	METHOD method_5993 update (Ljava/util/Set;)V
 		ARG 1 players
+	METHOD method_6141 resetSettingsOnAdminsLeave ()V
+	METHOD method_8398 getDataHandler ()Lcom/boehmod/blockfront/common/player/c;
+	METHOD method_8399 getSpectatablePlayers (Ljava/util/UUID;Z)Ljava/util/List;
+		ARG 1 uuid
+		ARG 2 checkTeam
+	METHOD method_8400 tickSpectator (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/common/player/b;)V
+		ARG 1 player
+		ARG 2 playerData
+	METHOD method_8402 addSpectator (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+	METHOD method_8404 removeSpectator (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+	METHOD method_8405 isSpectator (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_8406 getSpectators ()Ljava/util/Set;
+	METHOD method_8407 getPlayersAndSpectators ()Ljava/util/Set;

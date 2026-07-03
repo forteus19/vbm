@@ -1,0 +1,21 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1467 com/boehmod/blockfront/server/player/PlayerGrenadeState
+	FIELD field_8749 item Lcom/boehmod/blockfront/unnamed/BF_983;
+	FIELD field_8750 playerData Lcom/boehmod/blockfront/unnamed/BF_1117;
+	FIELD field_8751 isCooking Z
+	FIELD field_8752 near Z
+	FIELD field_8753 startTicks J
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1117;)V
+		ARG 1 playerData
+	METHOD method_8149 isCooking ()Z
+	METHOD method_8150 getItem ()Lcom/boehmod/blockfront/unnamed/BF_983;
+	METHOD method_8151 getTicksSinceStart (J)I
+		ARG 1 ticksNow
+	METHOD method_8152 startCook (Lcom/boehmod/blockfront/unnamed/BF_983;ZJ)V
+		ARG 1 item
+		ARG 2 near
+		ARG 3 startTicks
+	METHOD method_8153 update (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+	METHOD method_8154 endCook ()V

@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1504 com/boehmod/blockfront/client/sound/ReverbPresets
+	FIELD field_9047 LARGE_AREA Lcom/boehmod/blockfront/unnamed/BF_1503;

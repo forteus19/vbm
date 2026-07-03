@@ -6,15 +6,19 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 	FIELD field_1159 lastChatTime J
 	FIELD field_1160 isFrozen Z
 	FIELD field_1161 outOfGame Z
+	FIELD field_1162 hasChanged Z
 	FIELD field_1163 isMuted Z
 	FIELD field_1169 freezePose Lcom/boehmod/blockfront/unnamed/BF_692;
 	FIELD field_1174 playTimer I
 	FIELD field_1175 calloutCooldown I
 	FIELD field_1176 respawnTimer I
+	FIELD field_8985 spectatingPlayer Ljava/util/UUID;
 	METHOD <init> (Ljava/util/UUID;)V
 		ARG 1 uuid
 	METHOD method_827 setRespawnTimer (I)V
 		ARG 1 respawnTimer
+	METHOD method_828 decreaseRespawnTimer (I)V
+		ARG 1 amount
 	METHOD method_829 getPreviousMessages ()Lit/unimi/dsi/fastutil/objects/ObjectList;
 	METHOD method_830 setOutOfGame (Z)V
 		ARG 1 outOfGame
@@ -23,6 +27,9 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 		ARG 1 frozen
 	METHOD method_834 setMuted (Z)V
 		ARG 1 isMuted
+	METHOD method_8377 setSpectatingPlayer (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_8378 getSpectatingPlayer ()Ljava/util/UUID;
 	METHOD method_838 update (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/unnamed/BF_677;)V
 		ARG 1 manager
 		ARG 2 level
@@ -33,6 +40,7 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 		ARG 2 player
 	METHOD method_845 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
+	METHOD method_846 onChanged ()V
 	METHOD method_847 clearPlayerDamage ()V
 	METHOD method_848 isOutOfGame ()Z
 	METHOD method_849 isFrozen ()Z

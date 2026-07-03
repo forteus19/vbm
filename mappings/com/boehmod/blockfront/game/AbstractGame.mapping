@@ -153,6 +153,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2629 getPlayerStatData (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_1279;
 		ARG 1 uuid
 	METHOD method_2630 shouldShowPlayerMessage (Ljava/util/UUID;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;ZZ)Z
+		ARG 1 senderUuid
+		ARG 2 receivingPlayer
+		ARG 3 receivingUuid
+		ARG 4 isTeamMessage
+		ARG 5 isUnavailable
 	METHOD method_2631 finishMatch (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;ZLcom/boehmod/blockfront/unnamed/BF_756;Ljava/util/Set;)V
 		ARG 1 level
 		ARG 2 manager
@@ -189,7 +194,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 uuid
 	METHOD method_2656 shouldRespawnAutomatically (Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 player
-	METHOD method_2659 writeForGamePacket (Lio/netty/buffer/ByteBuf;)V
+	METHOD method_2659 writeForClient (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD method_2660 specificReset (Lnet/minecraft/world/level/Level;)V
 		ARG 1 level
@@ -215,4 +220,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 buf
 	METHOD method_6736 write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
+	METHOD method_8394 getSpectatorScope ()Lcom/boehmod/blockfront/unnamed/BF_1491;
+	METHOD method_8396 shouldSpectateOnRespawn ()Z
+	METHOD method_8397 allowsSpectators ()Z
 	CLASS BF_678 ErrorType

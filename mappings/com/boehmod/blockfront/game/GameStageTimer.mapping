@@ -22,3 +22,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_687 com/boehmod/blockfront/game/GameStag
 	METHOD method_2851 setSecondsRemaining (I)V
 		ARG 1 seconds
 	METHOD method_2852 isDone ()Z
+	METHOD method_6747 read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_6748 write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf

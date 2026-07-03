@@ -108,3 +108,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/client/net/BF
 	METHOD method_7233 gameNotification (Lcom/boehmod/blockfront/unnamed/BF_1451;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 		ARG 0 packet
 		ARG 1 context
+	METHOD method_7234 weatherTransition (Lcom/boehmod/blockfront/unnamed/BF_1458;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_7235 mapEffectSync (Lcom/boehmod/blockfront/unnamed/BF_1460;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
+	METHOD method_7236 syncTemplates (Lcom/boehmod/blockfront/unnamed/BF_1463;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V

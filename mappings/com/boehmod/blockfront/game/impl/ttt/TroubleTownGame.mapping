@@ -3,6 +3,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_849 com/boehmod/blockfront/game/impl/ttt
 	FIELD field_3465 itemDrops Ljava/util/List;
 	FIELD field_3466 LOADOUT Lcom/boehmod/blockfront/unnamed/BF_759;
 	FIELD field_3467 command Lcom/boehmod/blockfront/unnamed/BF_462;
+	FIELD field_3468 deadBodies Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_3470 activeRandomatEvents Lit/unimi/dsi/fastutil/objects/ObjectList;
 	METHOD method_3517 getPlayerRole (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_859;
 		ARG 1 player

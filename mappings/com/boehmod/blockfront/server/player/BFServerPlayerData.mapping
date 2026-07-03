@@ -2,8 +2,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_1117 com/boehmod/blockfront/server/playe
 	FIELD field_6271 afkTracker Lcom/boehmod/blockfront/unnamed/BF_1083;
 	FIELD field_6857 suspiciousShotManager Lcom/boehmod/blockfront/unnamed/BF_1197;
 	FIELD field_7345 inDiscordVc Z
+	FIELD field_8754 grenadeState Lcom/boehmod/blockfront/unnamed/BF_1467;
 	METHOD method_5456 getAfkTracker ()Lcom/boehmod/blockfront/unnamed/BF_1083;
 	METHOD method_5813 getSuspiciousShotManager ()Lcom/boehmod/blockfront/unnamed/BF_1197;
 	METHOD method_6192 setInDiscordVc (Z)V
 		ARG 1 inDiscordVc
 	METHOD method_6193 isInDiscordVc ()Z
+	METHOD method_8155 getGrenadeState ()Lcom/boehmod/blockfront/unnamed/BF_1467;

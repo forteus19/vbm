@@ -13,6 +13,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	FIELD field_2039 instanceUUID Ljava/util/UUID;
 	FIELD field_6328 cloudRegistry Lcom/boehmod/bflib/cloud/common/CloudRegistry;
 	FIELD field_7212 playerGames Ljava/util/Map;
+	FIELD field_7990 gamesByName Ljava/util/Map;
+	FIELD field_7991 gamesByUuid Ljava/util/Map;
 	METHOD <init> (Lcom/boehmod/blockfront/common/player/c;)V
 		ARG 1 playerDataHandler
 	METHOD method_1549 getPlayerDataHandler ()Lcom/boehmod/blockfront/common/player/c;
@@ -24,7 +26,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 1 fromStatus
 		ARG 2 toStatus
 		ARG 3 context
-	METHOD method_1555 initPlayerForGame (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
+	METHOD method_1555 respawnPlayer (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
 		ARG 1 manager
 		ARG 2 dataHandler
 		ARG 3 level
@@ -40,7 +42,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1559 mapIsOccupied (Lcom/boehmod/blockfront/unnamed/BF_927;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
 		ARG 1 map
 		ARG 2 game
-	METHOD method_1560 retrieveGame (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD method_1560 getGameByName (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_677;
 		ARG 1 name
 	METHOD method_1561 mapIsOccupied (Ljava/lang/String;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
 		ARG 1 mapName
@@ -67,7 +69,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	METHOD method_1570 getAntiCheat ()Lcom/boehmod/blockfront/unnamed/BF_451;
 	METHOD method_1571 getAssetStore ()Lcom/boehmod/blockfront/unnamed/BF_459;
 	METHOD method_1572 getGamesInRotation ()Ljava/util/Map;
-	METHOD method_1573 retrieveGame (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD method_1573 getGameByUuid (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_677;
 		ARG 1 uuid
 	METHOD method_1574 updateGames (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;)V
 		ARG 1 server
@@ -86,3 +88,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 2 game
 	METHOD method_6102 clearPlayerGame (Ljava/util/UUID;)V
 		ARG 1 uuid
+	METHOD method_7162 switchGameUuid (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Ljava/util/UUID;)V
+		ARG 1 game
+		ARG 2 oldUuid
+		ARG 3 newUuid
+	METHOD method_7163 putGame (Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 game
+	METHOD method_7164 removeGame (Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 game
+	METHOD method_8380 assignSpectatorToGame (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;)Z
+		ARG 1 level
+		ARG 2 player
+		ARG 3 game

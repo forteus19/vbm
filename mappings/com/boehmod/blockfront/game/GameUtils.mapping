@@ -9,6 +9,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 	FIELD field_7328 VC_PREFIX Lnet/minecraft/network/chat/MutableComponent;
 	FIELD field_7395 DEFAULT_PLAYER_ATTRIBUTES Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;
 	FIELD field_7396 ATTRIBUTES_TO_RESET Ljava/util/List;
+	FIELD field_8994 SPECTATOR_PREFIX Lnet/minecraft/network/chat/Component;
 	METHOD method_2863 sendChatGraphic (Lcom/boehmod/bflib/cloud/common/ChatGraphic;Ljava/util/Set;Lnet/minecraft/network/chat/Component;)V
 		ARG 0 chatGraphic
 		ARG 1 players
@@ -49,7 +50,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 2 poses
 	METHOD method_2874 (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Ljava/util/UUID;)V
 		ARG 2 uuid
-	METHOD method_2875 initPlayerForGame (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
+	METHOD method_2875 resetPlayer (Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 0 dataHandler
 		ARG 1 level
 		ARG 2 player
@@ -327,7 +328,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 0 level
 		ARG 1 game
 		ARG 2 team
-	METHOD method_2946 initPlayersForGame (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;Lcom/boehmod/blockfront/common/player/c;)V
+	METHOD method_2946 resetPlayers (Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;Lcom/boehmod/blockfront/common/player/c;)V
 		ARG 0 level
 		ARG 1 players
 		ARG 2 dataHandler

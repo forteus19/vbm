@@ -1,2 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_438 com/boehmod/blockfront/client/sound/BFMusicManager
 	METHOD method_1529 update (Lcom/boehmod/blockfront/unnamed/BF_606;)V
+	METHOD method_1532 stopCurrent ()V

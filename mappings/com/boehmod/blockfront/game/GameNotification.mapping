@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1379 com/boehmod/blockfront/game/GameNotification
+	METHOD method_7249 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;IIF)V
