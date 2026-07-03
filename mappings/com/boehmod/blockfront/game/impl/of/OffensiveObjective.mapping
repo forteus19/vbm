@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1514 com/boehmod/blockfront/game/impl/of/OffensiveObjective
+	FIELD field_9138 attackerBoundary Lcom/boehmod/blockfront/unnamed/BF_751;
+	FIELD field_9139 capturePoint Lcom/boehmod/blockfront/unnamed/BF_1512;
+	FIELD field_9140 defenderBoundary Lcom/boehmod/blockfront/unnamed/BF_751;
+	FIELD field_9141 attackerSpawns Ljava/util/List;
+	FIELD field_9142 defenderSpawns Ljava/util/List;
+	FIELD field_9143 regroupPoint Lcom/boehmod/blockfront/unnamed/BF_692;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1512;)V
+		ARG 1 capturePoint

@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1513 com/boehmod/blockfront/game/impl/of/OffensiveGameClient
+	FIELD field_9280 regroupCageSettings Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+	METHOD method_8766 renderRegroupCage (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/culling/Frustum;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/world/phys/AABB;)V
+		ARG 1 camera
+		ARG 2 poseStack
+		ARG 3 frustum
+		ARG 5 aabb

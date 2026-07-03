@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1511 com/boehmod/blockfront/game/impl/of/OffensiveGame
+	FIELD field_9088 objectives Ljava/util/List;
+	FIELD field_9089 capturePoints Ljava/util/List;

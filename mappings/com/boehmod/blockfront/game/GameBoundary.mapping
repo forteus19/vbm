@@ -1,0 +1,20 @@
+CLASS com/boehmod/blockfront/unnamed/BF_751 com/boehmod/blockfront/game/GameBoundary
+	FIELD field_3212 lines Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_3213 points Lit/unimi/dsi/fastutil/objects/ObjectList;
+	FIELD field_7399 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_3127 getLines ()Lit/unimi/dsi/fastutil/objects/ObjectList;
+	METHOD method_3129 addWallPoint (Lnet/minecraft/world/phys/Vec2;)V
+		ARG 1 point
+	METHOD method_3130 numPoints ()I
+	METHOD method_3131 numLines ()I
+	METHOD method_3132 isEmpty ()Z
+	METHOD method_3133 updateWallLines ()V
+	METHOD method_6753 read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_6754 write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	CLASS BF_752 Line
+		FIELD field_3216 from Lnet/minecraft/world/phys/Vec2;
+		FIELD field_3217 to Lnet/minecraft/world/phys/Vec2;
+		METHOD method_3134 getFrom ()Lnet/minecraft/world/phys/Vec2;
+		METHOD method_3135 getTo ()Lnet/minecraft/world/phys/Vec2;

@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/common/player/e com/boehmod/blockfront/common/player/PlayerHurtSounds
+	METHOD method_8444 playHurt (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;)V
+	METHOD method_8445 playEntitySound (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/core/Holder;FI)V
+	METHOD method_8446 playDeath (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/world/damagesource/DamageSource;)V

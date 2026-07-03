@@ -29,6 +29,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2854 uuid Ljava/util/UUID;
 	FIELD field_6713 mapEnvironment Lcom/boehmod/blockfront/unnamed/BF_1182;
 	FIELD field_7250 matchSettings Lcom/boehmod/bflib/cloud/common/MatchSettings;
+	FIELD field_8111 REBALANCE_NOTIFICATION Lnet/minecraft/network/chat/Component;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;Ljava/lang/String;)V
@@ -223,4 +224,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_8394 getSpectatorScope ()Lcom/boehmod/blockfront/unnamed/BF_1491;
 	METHOD method_8396 shouldSpectateOnRespawn ()Z
 	METHOD method_8397 allowsSpectators ()Z
+	METHOD method_8600 getDeadScope ()Lcom/boehmod/blockfront/unnamed/BF_1523;
 	CLASS BF_678 ErrorType

@@ -6,6 +6,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_754 com/boehmod/blockfront/game/Abstract
 	FIELD field_6358 gameManager Lcom/boehmod/blockfront/unnamed/BF_682;
 	FIELD field_6359 cbTeam Lcom/boehmod/blockfront/unnamed/BF_686;
 	FIELD field_6360 cpTeam Lcom/boehmod/blockfront/unnamed/BF_686;
+	FIELD field_9257 captureBox Lnet/minecraft/world/phys/AABB;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_682;Lnet/minecraft/world/entity/player/Player;Ljava/lang/String;)V
 		ARG 1 gameManager
 		ARG 2 player

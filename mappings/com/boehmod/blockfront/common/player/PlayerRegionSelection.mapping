@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/common/player/f com/boehmod/blockfront/common/player/PlayerRegionSelection
+	FIELD field_9245 currentMode Lcom/boehmod/blockfront/common/player/f$a;
+	METHOD method_8654 setMode (Lcom/boehmod/blockfront/common/player/f$a;)V
+		ARG 1 mode
+	METHOD method_8666 resetState ()V
+	CLASS a Mode

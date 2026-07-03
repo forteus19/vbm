@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1531 com/boehmod/blockfront/server/ac/bullet/BulletValidation
+	FIELD field_9253 INVALID Lcom/boehmod/blockfront/unnamed/BF_1531;
+	FIELD field_9254 QUEUED Lcom/boehmod/blockfront/unnamed/BF_1531;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1531$BF_1532;Ljava/util/List;)V
+		ARG 1 status
+		ARG 2 validatedHits
+	METHOD method_8673 createValid (Ljava/util/List;)Lcom/boehmod/blockfront/unnamed/BF_1531;
+		ARG 0 livingCollisions
+	METHOD method_8674 isValid ()Z
+	CLASS BF_1532 Status

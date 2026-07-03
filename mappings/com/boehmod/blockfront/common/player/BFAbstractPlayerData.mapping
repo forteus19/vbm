@@ -1,5 +1,6 @@
 CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/player/BFAbstractPlayerData
 	FIELD field_1150 uuid Ljava/util/UUID;
+	FIELD field_1152 backpackManager Lcom/boehmod/blockfront/common/player/a;
 	FIELD field_1153 playerDamage Lit/unimi/dsi/fastutil/objects/Object2FloatMap;
 	FIELD field_1155 previousMessages Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_1156 lastMessage Ljava/lang/String;
@@ -38,6 +39,7 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 	METHOD method_841 updateServer (Lnet/minecraft/world/level/Level;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 level
 		ARG 2 player
+	METHOD method_843 getBackpackManager ()Lcom/boehmod/blockfront/common/player/a;
 	METHOD method_845 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf
 	METHOD method_846 onChanged ()V

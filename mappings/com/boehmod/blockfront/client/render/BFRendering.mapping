@@ -703,6 +703,18 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 vec2
 		ARG 4 thickness
 		ARG 5 color
+	METHOD method_275 billboardLine (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;DDDDDDFIF)V
+		ARG 0 camera
+		ARG 1 poseStack
+		ARG 2 x1
+		ARG 4 y1
+		ARG 6 z1
+		ARG 8 x2
+		ARG 10 y2
+		ARG 12 z2
+		ARG 14 thickness
+		ARG 15 color
+		ARG 16 alpha
 	METHOD method_276 backgroundBlur (Lnet/minecraft/client/Minecraft;FI)V
 		ARG 0 minecraft
 		ARG 1 delta
@@ -1250,6 +1262,18 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 0 colorA
 		ARG 1 colorB
 		ARG 2 t
+	METHOD method_6014 screenClampedTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/client/Camera;IIIF)V
+	METHOD method_6015 screenClampedTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/client/Camera;IIIFF)V
+	METHOD method_6016 screenClampedTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/client/Camera;IIIIFIF)V
+	METHOD method_6018 screenClampedTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/client/Camera;IIIIFIIZF)V
+	METHOD method_6020 billboardLine (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;FIF)V
+		ARG 0 camera
+		ARG 1 poseStack
+		ARG 2 vec1
+		ARG 3 vec2
+		ARG 4 thickness
+		ARG 5 color
+		ARG 6 alpha
 	METHOD method_6023 screenClamp (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/client/Camera;II)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1225;
 		ARG 0 position
 		ARG 1 camera
@@ -1268,4 +1292,82 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 height
 		ARG 4 margin
 		ARG 5 partialTick
+	METHOD method_8489 cageGameBoundary (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/boehmod/blockfront/unnamed/BF_751;DDLcom/boehmod/blockfront/unnamed/BF_47$BF_1528;)V
+		ARG 0 camera
+		ARG 1 poseStack
+		ARG 2 boundary
+		ARG 3 minY
+		ARG 5 maxY
+		ARG 7 settings
+	METHOD method_8612 cageAABB (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/phys/AABB;Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;)V
+		ARG 0 camera
+		ARG 1 poseStack
+		ARG 2 aabb
+		ARG 3 settings
 	CLASS BF_1225 ScreenClampData
+	CLASS BF_1525 GameBoundaryCageRenderer
+		FIELD field_9202 minY D
+		FIELD field_9203 maxY D
+		FIELD field_9204 gameBoundary Lcom/boehmod/blockfront/unnamed/BF_751;
+		METHOD method_8615 addLine (Lcom/boehmod/blockfront/unnamed/BF_751$BF_752;)V
+			ARG 1 line
+	CLASS BF_1526 BoundaryFadeDirection
+	CLASS BF_1527 AABBCageRenderer
+		FIELD field_9205 aabb Lnet/minecraft/world/phys/AABB;
+		METHOD <init> (Lnet/minecraft/client/Camera;Lnet/minecraft/world/phys/AABB;Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;)V
+			ARG 1 camera
+			ARG 2 aabb
+			ARG 3 settings
+	CLASS BF_1528 CageSettings
+		FIELD field_9206 gridSpacing D
+		FIELD field_9207 verticalFadeHeight D
+		FIELD field_9208 distanceFadeRadius D
+		FIELD field_9209 fadeDirection Lcom/boehmod/blockfront/unnamed/BF_47$BF_1526;
+		FIELD field_9210 distanceFade Z
+		FIELD field_9211 renderAound Z
+		FIELD field_9212 renderBottom Z
+		FIELD field_9213 renderTop Z
+		FIELD field_9214 fillColor I
+		FIELD field_9215 lineColor I
+		FIELD field_9216 fillAlpha F
+		FIELD field_9217 lineAlpha F
+		FIELD field_9218 lineWidth F
+		FIELD field_9219 occludedAlpha F
+		FIELD field_9220 alhpaMultiplier F
+		FIELD field_9221 distanceFadeOrigin Lnet/minecraft/world/phys/Vec3;
+		METHOD method_8627 create ()Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+		METHOD method_8628 gridSpacing (D)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+			ARG 1 gridSpacing
+		METHOD method_8629 occludedAlpha (F)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+			ARG 1 occludedAlpha
+		METHOD method_8630 fill (IF)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+			ARG 1 color
+			ARG 2 alpha
+		METHOD method_8631 line (IFF)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+			ARG 1 color
+			ARG 2 alpha
+			ARG 3 width
+		METHOD method_8632 verticalFade (Lcom/boehmod/blockfront/unnamed/BF_47$BF_1526;)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+			ARG 1 direction
+		METHOD method_8633 verticalFade (Lcom/boehmod/blockfront/unnamed/BF_47$BF_1526;D)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+			ARG 1 direction
+			ARG 2 height
+		METHOD method_8634 distanceFade (Lnet/minecraft/world/phys/Vec3;D)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+			ARG 1 origin
+			ARG 2 distance
+		METHOD method_8635 sides (ZZZ)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+			ARG 1 around
+			ARG 2 bottom
+			ARG 3 top
+		METHOD method_8636 clearLineAlpha ()Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+		METHOD method_8637 alphaMultiplier (F)Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+			ARG 1 alphaMultiplier
+	CLASS BF_1529 CageRenderer
+		FIELD field_9234 vertexData Lit/unimi/dsi/fastutil/floats/FloatArrayList;
+		FIELD field_9236 fade Z
+		FIELD field_9237 settings Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;
+		METHOD <init> (Lnet/minecraft/client/Camera;Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;DD)V
+			ARG 2 settings
+		METHOD method_8642 render (Lcom/mojang/blaze3d/vertex/PoseStack;)V
+			ARG 1 poseStack
+		METHOD method_8646 init ()V
