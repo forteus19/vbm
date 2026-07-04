@@ -1,4 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1543 com/boehmod/blockfront/main/UpdateInstaller
-	METHOD method_8854 log (Ljava/lang/String;)V
-	METHOD method_8855 main ([Ljava/lang/String;)V
-		ARG 0 args
