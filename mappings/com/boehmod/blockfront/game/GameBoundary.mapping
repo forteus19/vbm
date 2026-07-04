@@ -3,12 +3,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_751 com/boehmod/blockfront/game/GameBoun
 	FIELD field_3213 points Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_7399 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_3127 getLines ()Lit/unimi/dsi/fastutil/objects/ObjectList;
-	METHOD method_3129 addWallPoint (Lnet/minecraft/world/phys/Vec2;)V
+	METHOD method_3129 addPoint (Lnet/minecraft/world/phys/Vec2;)V
 		ARG 1 point
 	METHOD method_3130 numPoints ()I
 	METHOD method_3131 numLines ()I
 	METHOD method_3132 isEmpty ()Z
-	METHOD method_3133 updateWallLines ()V
+	METHOD method_3133 updateLines ()V
 	METHOD method_6753 read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD method_6754 write (Lio/netty/buffer/ByteBuf;)V

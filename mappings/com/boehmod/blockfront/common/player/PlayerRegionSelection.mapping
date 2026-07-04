@@ -2,5 +2,7 @@ CLASS com/boehmod/blockfront/common/player/f com/boehmod/blockfront/common/playe
 	FIELD field_9245 currentMode Lcom/boehmod/blockfront/common/player/f$a;
 	METHOD method_8654 setMode (Lcom/boehmod/blockfront/common/player/f$a;)V
 		ARG 1 mode
+	METHOD method_8663 getBoundary ()Lcom/boehmod/blockfront/unnamed/BF_751;
 	METHOD method_8666 resetState ()V
+	METHOD method_8669 getAABB ()Lnet/minecraft/world/phys/AABB;
 	CLASS a Mode

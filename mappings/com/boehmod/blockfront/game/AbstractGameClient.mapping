@@ -63,6 +63,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 8 font
 		ARG 9 team
 		ARG 12 players
+	METHOD method_2693 addLocalNotifications (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Ljava/util/List;)V
+		ARG 1 minecraft
+		ARG 2 player
+		ARG 3 target
 	METHOD method_2694 renderGameDebugInfo (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;)V
 		ARG 1 poseStack
 		ARG 2 graphics
@@ -170,6 +174,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	METHOD method_6108 hasRatedMap ()Z
 	METHOD method_6737 read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
+	METHOD method_7265 addNotification (Ljava/util/List;Ljava/lang/String;Lnet/minecraft/network/chat/Component;)V
+		ARG 1 target
+		ARG 2 key
+		ARG 3 message
 	METHOD method_7266 renderEnvironmentEdit (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;II)V
 	METHOD method_7268 addNotification (Lnet/minecraft/network/chat/Component;I)V
 		ARG 1 message
@@ -187,6 +195,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 1 lines
 		ARG 2 time
 		ARG 3 key
+	METHOD method_8683 addNotification (Ljava/util/List;Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/phys/Vec3;II)V
+		ARG 1 target
+		ARG 2 key
+		ARG 3 message
+		ARG 4 position
+		ARG 5 compassColor
+		ARG 6 pointerColor
 	CLASS BF_680 Scoreboard
 		FIELD field_2905 entries Ljava/util/Map;
 		METHOD method_2746 column (Ljava/lang/String;Lorg/apache/commons/lang3/function/TriFunction;)Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;

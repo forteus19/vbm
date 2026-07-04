@@ -9,4 +9,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_414 com/boehmod/blockfront/cloud/BFFeatu
 	FIELD field_7964 clientVeilFancyGunLight Z
 	FIELD field_8759 serverGrenadeCookDropOnDeath Z
 	FIELD field_9029 serverPlayerVoiceSounds Z
+	FIELD field_9333 serverChatMarkdown Z
 	METHOD method_1469 updateFeatureFlags ()V

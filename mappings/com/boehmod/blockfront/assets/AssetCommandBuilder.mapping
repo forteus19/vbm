@@ -2,6 +2,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_462 com/boehmod/blockfront/assets/AssetC
 	FIELD field_2092 runner Ljava/util/function/BiConsumer;
 	FIELD field_2093 validators Ljava/util/List;
 	FIELD field_2094 subCommands Ljava/util/Map;
+	FIELD field_9255 suggestionAdder Ljava/util/function/BiFunction;
 	METHOD <init> (Ljava/util/function/BiConsumer;)V
 		ARG 1 runner
 	METHOD method_1653 inherit (Lcom/boehmod/blockfront/unnamed/BF_462;)Lcom/boehmod/blockfront/unnamed/BF_462;
@@ -26,3 +27,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_462 com/boehmod/blockfront/assets/AssetC
 	METHOD method_1661 runThis (Lcom/mojang/brigadier/context/CommandContext;[Ljava/lang/String;)V
 		ARG 1 context
 		ARG 2 args
+	METHOD method_8678 suggest (Ljava/util/function/BiFunction;)Lcom/boehmod/blockfront/unnamed/BF_462;
+		ARG 1 suggestionAdder
