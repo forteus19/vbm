@@ -1,0 +1,18 @@
+CLASS com/boehmod/blockfront/unnamed/BF_477 com/boehmod/blockfront/util/CloudItemUtils
+	FIELD field_2125 ID_TO_ITEM_STACK Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+	FIELD field_2126 ID_TO_ITEM Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+	METHOD method_1721 getItem (Lcom/boehmod/bflib/cloud/common/item/CloudItem;)Lnet/minecraft/world/item/Item;
+		ARG 0 cloudItem
+	METHOD method_1722 convertStack (Lcom/boehmod/bflib/cloud/common/item/CloudItem;Lcom/boehmod/bflib/cloud/common/item/CloudItemStack;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 cloudItem
+		ARG 1 stack
+	METHOD method_1723 (Lcom/boehmod/bflib/cloud/common/item/CloudItem;I)Lnet/minecraft/world/item/Item;
+		ARG 1 itemId
+	METHOD method_1724 (Lcom/boehmod/bflib/cloud/common/item/CloudItem;I)Lnet/minecraft/world/item/ItemStack;
+		ARG 1 itemId
+	METHOD method_5941 setItemComponents (Lcom/boehmod/bflib/cloud/common/item/CloudItem;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 cloudItem
+		ARG 1 targetStack
+	METHOD method_5942 setStackComponents (Lcom/boehmod/bflib/cloud/common/item/CloudItemStack;Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 cloudItemStack
+		ARG 1 targetStack

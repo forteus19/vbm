@@ -37,6 +37,9 @@ CLASS com/boehmod/blockfront/common/player/b com/boehmod/blockfront/common/playe
 		ARG 2 level
 		ARG 3 player
 		ARG 4 game
+	METHOD method_840 addPlayerDamage (Ljava/util/UUID;F)V
+		ARG 1 player
+		ARG 2 damage
 	METHOD method_841 updateServer (Lnet/minecraft/world/level/Level;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 level
 		ARG 2 player

@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_22 com/boehmod/blockfront/client/world/weather/WeatherEffectRegistry
+	FIELD field_100 BY_TYPE Ljava/util/Map;
+	METHOD method_144 get (Lcom/boehmod/blockfront/unnamed/BF_766;)Lcom/boehmod/blockfront/unnamed/BF_21;
+		ARG 0 type
+	METHOD method_145 register (Lcom/boehmod/blockfront/unnamed/BF_766;Ljava/util/function/Supplier;)V

@@ -34,12 +34,12 @@ val decompVineflowerFile = vbmBuildFile.resolve("decompVineflower").resolve(bfVe
 
 val mappingsFile = layout.projectDirectory.file("mappings").asFile
 
-val enigmaRuntime: Configuration by configurations.creating {
+val enigmaRuntime: Configuration = configurations.create("enigmaRuntime") {
     attributes {
         attribute(Bundling.BUNDLING_ATTRIBUTE, objects.named(Bundling.SHADOWED))
     }
 }
-val decompileRuntime: Configuration by configurations.creating
+val decompileRuntime: Configuration = configurations.create("decompileRuntime")
 
 dependencies {
     enigmaRuntime("org.vineflower:vineflower:1.11.1")

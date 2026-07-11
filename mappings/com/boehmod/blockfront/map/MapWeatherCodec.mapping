@@ -18,4 +18,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_1417 com/boehmod/blockfront/map/MapWeath
 	FIELD field_8330 exteriorSound Ljava/util/function/Supplier;
 	METHOD method_7716 of (DIILjava/util/Optional;Ljava/util/Optional;ZIZFFZIZILjava/util/List;Lcom/boehmod/blockfront/unnamed/BF_1420;)Lcom/boehmod/blockfront/unnamed/BF_1417;
 	CLASS BF_1418 AmbientSound
+		FIELD field_8331 CODEC Lcom/mojang/serialization/Codec;
 	CLASS BF_1419 PlaybackEnvironment

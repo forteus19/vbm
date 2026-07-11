@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_449 com/boehmod/blockfront/client/BFVersionChecker
+CLASS com/boehmod/blockfront/unnamed/BF_449 com/boehmod/blockfront/common/update/BFUpdater
 	FIELD field_2044 isThreadRunning Ljava/util/concurrent/atomic/AtomicBoolean;
 	FIELD field_2045 cloudUrl Ljava/lang/String;
 	FIELD field_2046 currentVersion Ljava/lang/String;
@@ -7,12 +7,23 @@ CLASS com/boehmod/blockfront/unnamed/BF_449 com/boehmod/blockfront/client/BFVers
 	FIELD field_2049 QUERY_PORT I
 	FIELD field_2050 QUERY_INTERVAL I
 	FIELD field_2051 ticksUntilQuery I
+	FIELD field_9338 failedMessage Ljava/lang/String;
+	FIELD field_9340 status Lcom/boehmod/blockfront/unnamed/BF_449$BF_1540;
+	FIELD field_9342 VERIFIED_VENDORS Ljava/util/Set;
 	METHOD <init> (Ljava/lang/String;)V
 		ARG 1 cloudUrl
 	METHOD method_1582 hasUpdate ()Z
 	METHOD method_1583 getCurrentVersion ()Ljava/lang/String;
 	METHOD method_1584 getVersionHash ()Ljava/lang/String;
 	METHOD method_1585 calculateJarHash ()Ljava/lang/String;
+	METHOD method_8814 onStatusChanged (Lcom/boehmod/blockfront/unnamed/BF_449$BF_1540;)V
+		ARG 1 status
+	METHOD method_8819 setStatus (Lcom/boehmod/blockfront/unnamed/BF_449$BF_1540;)V
+		ARG 1 status
+	METHOD method_8822 startInstaller ()V
+	METHOD method_8828 setFailed (Ljava/lang/String;)V
+		ARG 1 message
+	CLASS BF_1540 Status
 	CLASS BF_450 APIThread
 		FIELD field_2052 versionChecker Lcom/boehmod/blockfront/unnamed/BF_449;
 		METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_449;Lcom/boehmod/blockfront/unnamed/BF_449;)V
