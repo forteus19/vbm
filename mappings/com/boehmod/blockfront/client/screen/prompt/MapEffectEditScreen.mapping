@@ -1,0 +1,18 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1296 com/boehmod/blockfront/client/screen/prompt/MapEffectEditScreen
+	FIELD field_7757 fields Ljava/util/List;
+	METHOD <init> (Lnet/minecraft/client/gui/screens/Screen;Lcom/boehmod/blockfront/unnamed/BF_1391;Lcom/boehmod/blockfront/unnamed/BF_1391;Ljava/lang/String;)V
+		ARG 1 parent
+	METHOD method_6905 addVec3Field (Lcom/boehmod/blockfront/unnamed/BF_1380;II)V
+	METHOD method_6906 encodeMapEffect (Lcom/boehmod/blockfront/unnamed/BF_1391;)[B
+		ARG 0 mapEffect
+	METHOD method_6907 addButtonField (Lcom/boehmod/blockfront/unnamed/BF_1400;II)V
+	METHOD method_6910 addBlockPosField (Lcom/boehmod/blockfront/unnamed/BF_1401;II)V
+	METHOD method_6911 addBooleanField (Lcom/boehmod/blockfront/unnamed/BF_1402;II)V
+	METHOD method_6914 addIntegerField (Lcom/boehmod/blockfront/unnamed/BF_1403;II)V
+	METHOD method_6918 addEnumField (Lcom/boehmod/blockfront/unnamed/BF_1405;II)V
+	METHOD method_6920 addBoundedFloatField (Lcom/boehmod/blockfront/unnamed/BF_1406;II)V
+	METHOD method_6921 addBoundedIntegerField (Lcom/boehmod/blockfront/unnamed/BF_1407;II)V
+	METHOD method_6924 addSelectField (Lcom/boehmod/blockfront/unnamed/BF_1408;II)V
+	METHOD method_6927 addSoundField (Lcom/boehmod/blockfront/unnamed/BF_1409;II)V
+	METHOD method_6929 addStringField (Lcom/boehmod/blockfront/unnamed/BF_1410;II)V
+	METHOD method_6931 addVec2Field (Lcom/boehmod/blockfront/unnamed/BF_1411;II)V

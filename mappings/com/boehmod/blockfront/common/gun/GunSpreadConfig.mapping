@@ -3,3 +3,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_900 com/boehmod/blockfront/common/gun/Gu
 	FIELD field_3603 prevSpread F
 	FIELD field_8422 NONE Lcom/boehmod/blockfront/unnamed/BF_900;
 	FIELD field_8423 CODEC Lcom/mojang/serialization/Codec;
+	METHOD method_7917 getByResourceLocation (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_900;
+		ARG 0 rl

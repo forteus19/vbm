@@ -25,6 +25,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1391 com/boehmod/blockfront/map/effect/A
 		ARG 5 graphics
 		ARG 6 font
 		ARG 7 camera
+		ARG 8 isVisible
 	METHOD method_3090 updateServer (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/util/RandomSource;Ljava/util/Set;)V
 		ARG 1 level
 		ARG 2 manager
@@ -46,6 +47,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1391 com/boehmod/blockfront/map/effect/A
 	METHOD method_7572 onStop (Lnet/minecraft/client/Minecraft;Lnet/minecraft/util/RandomSource;)V
 	METHOD method_7573 onInitMap (Lcom/boehmod/blockfront/unnamed/BF_927;)V
 		ARG 1 map
-	METHOD method_7574 onEdited ()V
+	METHOD method_7574 reset ()V
 	METHOD method_7575 getPosition ()Lnet/minecraft/world/phys/Vec3;
 	METHOD method_7577 getBounds ()Lnet/minecraft/world/phys/AABB;

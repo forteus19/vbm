@@ -47,6 +47,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_2242 showConnectionToast (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;)V
 		ARG 1 fromStatus
 		ARG 2 toStatus
+	METHOD method_2246 onLeaveGame (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 minecraft
+		ARG 2 dataHandler
+		ARG 3 level
 	METHOD method_2249 disconnect (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;)V
 		ARG 1 minecraft
 		ARG 2 level
@@ -92,5 +96,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_6137 setDailyReward (Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;)V
 		ARG 1 dailyReward
 	METHOD method_6138 getAndClearDailyReward ()Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;
+	METHOD method_7200 onGamePacket (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 minecraft
+		ARG 2 dataHandler
+		ARG 3 level
+		ARG 4 game
 	METHOD method_8382 isGameSpectating ()Z
 	METHOD method_8383 isSpectating ()Z

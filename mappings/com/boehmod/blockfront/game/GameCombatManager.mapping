@@ -2,6 +2,20 @@ CLASS com/boehmod/blockfront/unnamed/BF_684 com/boehmod/blockfront/game/GameComb
 	FIELD field_2924 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
 		ARG 1 game
+	METHOD method_2803 handlePlayerDeath (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/entity/Entity;Ljava/util/Set;)V
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 player
+		ARG 4 sourceEntity
+		ARG 5 players
+	METHOD method_2804 handlePlayerKill (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/world/damagesource/DamageSource;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Lnet/minecraft/world/entity/LivingEntity;Ljava/util/Set;)V
+		ARG 1 manager
+		ARG 2 dataHandler
+		ARG 3 source
+		ARG 4 player
+		ARG 5 uuid
+		ARG 6 killedEntity
+		ARG 7 players
 	METHOD method_2805 addAssistSections (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_774;Lnet/minecraft/world/entity/Entity;)V
 		ARG 1 manager
 		ARG 2 dataHandler
@@ -12,3 +26,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_684 com/boehmod/blockfront/game/GameComb
 		ARG 4 source
 		ARG 5 broadcast
 		ARG 6 sendKilledMessage
+	METHOD method_2807 incrementKillStreak (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Ljava/util/Set;)V
+		ARG 1 manager
+		ARG 2 killedPlayer
+		ARG 3 player
+		ARG 4 uuid
+		ARG 5 players
+	METHOD method_2808 onPlayerDeath (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/neoforged/neoforge/event/entity/living/LivingDeathEvent;Ljava/util/Set;)V
+		ARG 1 manager
+		ARG 2 event
+		ARG 3 players
+	METHOD method_5492 handleStreakLost (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Ljava/util/Set;)V
+		ARG 1 manager
+		ARG 2 sourceEntity
+		ARG 3 killedPlayer
+		ARG 4 killedUuid
+		ARG 5 players

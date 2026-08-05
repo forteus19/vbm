@@ -34,6 +34,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_956 com/boehmod/blockfront/common/gun/Gu
 	FIELD field_3911 triggerDelay I
 	FIELD field_6380 bulletPass Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_6849 echoCloseIndoorsOpen Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_9391 dryFire Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3956 getEchoDistantIndoors ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3957 getEchoClose ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_3958 getEchoCloseSelf ()Lnet/neoforged/neoforge/registries/DeferredHolder;
@@ -127,3 +128,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_956 com/boehmod/blockfront/common/gun/Gu
 	METHOD method_5804 getEchoCloseIndoorsOpen ()Lnet/neoforged/neoforge/registries/DeferredHolder;
 	METHOD method_5805 echoCloseIndoorsOpen (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
 		ARG 1 echoCloseIndoorsOpen
+	METHOD method_8882 dryFire (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_956;
+		ARG 1 dryFire
+	METHOD method_8883 getDryFire ()Lnet/neoforged/neoforge/registries/DeferredHolder;

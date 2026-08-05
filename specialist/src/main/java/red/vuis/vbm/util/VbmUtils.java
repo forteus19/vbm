@@ -22,7 +22,8 @@ import java.util.Set;
 import java.util.stream.Stream;
 
 public final class VbmUtils {
-    private VbmUtils() {}
+    private VbmUtils() {
+    }
 
     public static boolean all(boolean... values) {
         for (boolean value : values) {
@@ -32,7 +33,7 @@ public final class VbmUtils {
         }
         return true;
     }
-    
+
     public static boolean any(boolean... values) {
         for (boolean value : values) {
             if (value) {

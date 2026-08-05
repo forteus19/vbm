@@ -25,6 +25,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	FIELD field_6381 bulletParticles Lcom/boehmod/blockfront/unnamed/BF_1136;
 	FIELD field_6745 cameraConfig Lcom/boehmod/blockfront/unnamed/BF_1183;
 	FIELD field_7304 gunType Lcom/boehmod/bflib/cloud/common/player/challenge/GunType;
+	FIELD field_8380 damageConfig Lnet/minecraft/resources/ResourceLocation;
 	METHOD appendHoverText (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item$TooltipContext;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V
 		ARG 1 itemStack
 		ARG 2 context
@@ -166,3 +167,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_6159 getGunType ()Lcom/boehmod/bflib/cloud/common/player/challenge/GunType;
 	METHOD method_6160 gunType (Lcom/boehmod/bflib/cloud/common/player/challenge/GunType;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 gunType
+	METHOD method_7860 damage (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 damage

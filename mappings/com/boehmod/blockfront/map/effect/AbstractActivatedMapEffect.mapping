@@ -1,1 +1,26 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1389 com/boehmod/blockfront/map/effect/AbstractActivatedMapEffect
+	FIELD field_8239 isActivated Z
+	FIELD field_8240 activationDistance F
+	FIELD field_8243 checkTimer I
+	METHOD method_7563 onActivated (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 game
+		ARG 4 player
+		ARG 5 level
+	METHOD method_7564 onDeactivated (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 game
+		ARG 4 player
+		ARG 5 level
+	METHOD method_7565 isWithinActivationDistance (Lnet/minecraft/client/player/LocalPlayer;)Z
+		ARG 1 player
+	METHOD method_8156 updateClientActive (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/util/RandomSource;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;F)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 randomSource
+		ARG 4 game
+		ARG 5 player
+		ARG 6 level
+		ARG 7 renderTime

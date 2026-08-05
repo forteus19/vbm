@@ -43,7 +43,7 @@ val decompileRuntime: Configuration = configurations.create("decompileRuntime")
 
 dependencies {
     enigmaRuntime("org.vineflower:vineflower:1.11.1")
-    enigmaRuntime("org.quiltmc:enigma-swing:2.6.2")
+    enigmaRuntime("org.quiltmc:enigma-swing:2.7.2")
     decompileRuntime("org.vineflower:vineflower:1.11.1")
 }
 

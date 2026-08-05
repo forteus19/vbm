@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1357 com/boehmod/blockfront/assets/AssetReloadUtils
+	METHOD method_7170 syncToClient (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)V
+		ARG 0 game
+		ARG 1 level
+		ARG 2 player
+	METHOD method_7171 reload (Ljava/lang/String;Ljava/lang/String;)Z
+		ARG 0 registryName
+		ARG 1 assetName
+	METHOD method_7172 discardStaleMatchEntities (Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 0 game
+	METHOD method_7173 reloadMap (Ljava/lang/String;)V
+		ARG 0 name
+	METHOD method_7174 reloadTemplate (Ljava/lang/String;)V
+		ARG 0 name
+	METHOD method_7175 reloadGame (Ljava/lang/String;)V
+		ARG 0 game

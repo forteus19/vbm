@@ -2,19 +2,27 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 	FIELD field_6725 DEFAULT_NAME Ljava/lang/String;
 	FIELD field_6727 name Ljava/lang/String;
 	FIELD field_6729 shader Lnet/minecraft/resources/ResourceLocation;
-	FIELD field_6732 hasCustomWaterColor Z
+	FIELD field_6732 hasWaterColor Z
 	FIELD field_6735 disableClouds Z
 	FIELD field_6736 disableSky Z
 	FIELD field_6737 nearFogDensity F
 	FIELD field_6738 farFogDensity F
-	FIELD field_6739 customSkyColor I
-	FIELD field_6740 customWaterColor I
-	FIELD field_6741 customFogColor I
-	FIELD field_6742 customLightColor I
+	FIELD field_6739 skyColor I
+	FIELD field_6740 waterColor I
+	FIELD field_6741 fogColor I
+	FIELD field_6742 lightColor I
 	FIELD field_6820 command Lcom/boehmod/blockfront/unnamed/BF_462;
 	FIELD field_7536 CODEC Lcom/mojang/serialization/Codec;
-	FIELD field_8371 mapEffects Ljava/util/List;
+	FIELD field_8364 usedMapEffectTemplates Ljava/util/Map;
+	FIELD field_8365 time I
+	FIELD field_8366 renderingMapEffects Lit/unimi/dsi/fastutil/objects/Reference2ObjectMap;
+	FIELD field_8367 usedMapEffects Ljava/util/List;
+	FIELD field_8371 baseMapEffects Ljava/util/List;
 	FIELD field_8372 mapEffectTemplates Ljava/util/List;
+	FIELD field_8373 fogDensityAmount F
+	FIELD field_8374 skyColorAmount F
+	FIELD field_8375 fogColorAmount F
+	FIELD field_8376 lightColorAmount F
 	METHOD <init> (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD <init> (Ljava/lang/String;)V
@@ -55,25 +63,64 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 		ARG 9 camera
 		ARG 10 delta
 	METHOD method_5677 getTime ()I
-	METHOD method_5678 getCustomSkyColor ()I
-	METHOD method_5679 getCustomWaterColor ()I
-	METHOD method_5680 getCustomFogColor ()I
-	METHOD method_5681 getCustomLightColor ()I
+	METHOD method_5678 getSkyColor ()I
+	METHOD method_5679 getWaterColor ()I
+	METHOD method_5680 getFogColor ()I
+	METHOD method_5681 getLightColor ()I
 	METHOD method_5682 getNearFogDensity ()F
 	METHOD method_5683 getFarFogDensity ()F
-	METHOD method_5699 hasCustomWaterColor ()Z
+	METHOD method_5699 hasWaterColor ()Z
 	METHOD method_5702 getDisableClouds ()Z
 	METHOD method_5704 getDisableSky ()Z
 	METHOD method_5710 getShader ()Lnet/minecraft/resources/ResourceLocation;
 	METHOD method_5754 getCommand ()Lcom/boehmod/blockfront/unnamed/BF_462;
-	METHOD method_5873 reset ()V
+	METHOD method_5873 onReload ()V
 	METHOD method_6762 write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_7791 reInit (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_7792 setCustomWaterColor (I)V
+		ARG 1 color
 	METHOD method_7793 setDisableClouds (Z)V
 		ARG 1 disableClouds
 	METHOD method_7794 setDisableSky (Z)V
 		ARG 1 disableSky
 	METHOD method_7795 addMapEffectTemplate (Lcom/boehmod/blockfront/unnamed/BF_1353;)V
 		ARG 1 template
+	METHOD method_7805 getUsedMapEffectTemplate (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_1353;
+		ARG 1 uuid
 	METHOD method_7807 renderEdit (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;II)V
+	METHOD method_7808 reset (Lnet/minecraft/client/Minecraft;Lnet/minecraft/util/RandomSource;)V
+	METHOD method_7810 getSkyColorAmount ()F
+	METHOD method_7811 getFogColorAmount ()F
+	METHOD method_7812 getLightColorAmount ()F
+	METHOD method_7814 getFogDensityAmount ()F
+	METHOD method_7815 getUsedMapEffects ()Ljava/util/List;
 	METHOD method_7819 getMapEffectTemplates ()Ljava/util/List;
-	METHOD method_7820 getMapEffects ()Ljava/util/List;
+	METHOD method_7820 getBaseMapEffects ()Ljava/util/List;
+	METHOD method_7821 setFogDensity (FFF)V
+		ARG 1 near
+		ARG 2 far
+		ARG 3 amount
+	METHOD method_7822 setSkyColor (IF)V
+		ARG 1 color
+		ARG 2 amount
+	METHOD method_7825 removeMapEffect (Lcom/boehmod/blockfront/unnamed/BF_1391;)V
+		ARG 1 mapEffect
+	METHOD method_7826 affectsSkyColor ()Z
+	METHOD method_7827 affectsFogColor ()Z
+	METHOD method_7828 affectsLightColor ()Z
+	METHOD method_7830 affectsFogDensity ()Z
+	METHOD method_7831 setFogColor (IF)V
+		ARG 1 color
+		ARG 2 amount
+	METHOD method_7835 resetSkyColor ()V
+	METHOD method_7836 resetFogColor ()V
+	METHOD method_7837 resetLightColor ()V
+	METHOD method_7839 resetFogDensity ()V
+	METHOD method_7840 setLightColor (IF)V
+		ARG 1 color
+		ARG 2 amount
+	METHOD method_7843 mapEffectUsesTemplate (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_7844 getUsedMapEffectTemplates ()Ljava/util/Map;

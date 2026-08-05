@@ -202,6 +202,22 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 	METHOD method_2910 broadcastKillFeedEntry (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_774;)V
 		ARG 0 manager
 		ARG 1 entry
+	METHOD method_2912 sendNoticeMessage (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 playerManager
+		ARG 1 team
+		ARG 2 message
+	METHOD method_2913 sendFancyMessage (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lcom/boehmod/blockfront/unnamed/BF_1541;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 playerManager
+		ARG 1 team
+		ARG 2 scope
+		ARG 3 prefix
+		ARG 4 message
+	METHOD method_2914 sendToast (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
+		ARG 0 playerManager
+		ARG 1 team
+		ARG 2 title
+		ARG 3 message
+		ARG 4 type
 	METHOD method_2916 randomUUIDs (Ljava/util/Set;I)Ljava/util/Set;
 		ARG 0 uuids
 		ARG 1 amount
@@ -258,7 +274,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 0 playerUUID
 		ARG 1 header
 		ARG 2 message
-	METHOD method_2931 sendNotification (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
+	METHOD method_2931 sendToast (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
 		ARG 0 uuid
 		ARG 1 title
 		ARG 2 message
@@ -473,6 +489,21 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 3 y
 	METHOD method_6421 resetPlayerAttributes (Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 0 player
+	METHOD method_7279 changePlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;ILnet/minecraft/world/item/ItemStack;)V
+		ARG 0 manager
+		ARG 1 game
+		ARG 2 uuid
+		ARG 3 stat
+		ARG 4 amount
+		ARG 5 heldStack
+	METHOD method_7280 changePlayerStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_941;ILnet/minecraft/world/item/ItemStack;I)V
+		ARG 0 manager
+		ARG 1 game
+		ARG 2 uuid
+		ARG 3 stat
+		ARG 4 amount
+		ARG 5 heldStack
+		ARG 6 classIndex
 	METHOD method_7283 sendNotification (Ljava/util/Set;Lnet/minecraft/network/chat/Component;I)V
 		ARG 0 players
 		ARG 1 message
@@ -483,11 +514,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 2 time
 		ARG 3 key
 	METHOD method_7285 sendNotification (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;I)V
-		ARG 0 playerUuid
+		ARG 0 uuid
 		ARG 1 message
 		ARG 2 time
 	METHOD method_7286 sendNotification (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
-		ARG 0 playerUuid
+		ARG 0 uuid
 		ARG 1 message
 		ARG 2 time
 		ARG 3 key
@@ -495,3 +526,133 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 3 uuid
 	METHOD method_7289 (Lnet/minecraft/network/chat/Component;ILjava/lang/String;Ljava/util/UUID;)V
 		ARG 3 uuid
+	METHOD method_8345 (Ljava/util/List;ILjava/lang/String;Ljava/util/UUID;)V
+		ARG 3 uuid
+	METHOD method_8346 sendNotification (Ljava/util/Set;Ljava/util/List;I)V
+		ARG 0 players
+		ARG 1 lines
+		ARG 2 time
+	METHOD method_8347 sendNotification (Ljava/util/Set;Ljava/util/List;ILjava/lang/String;)V
+		ARG 0 players
+		ARG 1 lines
+		ARG 2 time
+		ARG 3 key
+	METHOD method_8348 sendNotification (Ljava/util/UUID;Ljava/util/List;I)V
+		ARG 0 uuid
+		ARG 1 lines
+		ARG 2 time
+	METHOD method_8349 sendNotification (Ljava/util/UUID;Ljava/util/List;ILjava/lang/String;)V
+		ARG 0 uuid
+		ARG 1 lines
+		ARG 2 time
+		ARG 3 key
+	METHOD method_8690 sendNotification (Ljava/util/Set;Lnet/minecraft/network/chat/Component;ILjava/lang/String;Lnet/minecraft/world/phys/Vec3;II)V
+		ARG 0 players
+		ARG 1 message
+		ARG 2 time
+		ARG 3 key
+		ARG 4 position
+		ARG 5 pointerColor
+		ARG 6 backgroundColor
+	METHOD method_8691 sendNotification (Ljava/util/UUID;Ljava/util/List;ILjava/lang/String;Lnet/minecraft/world/phys/Vec3;II)V
+		ARG 0 uuid
+		ARG 1 lines
+		ARG 2 time
+		ARG 3 key
+		ARG 4 position
+		ARG 5 pointerColor
+		ARG 6 backgroundColor
+	METHOD method_8692 sendNotification (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;ILjava/lang/String;Lnet/minecraft/world/phys/Vec3;II)V
+		ARG 0 uuid
+		ARG 1 message
+		ARG 2 time
+		ARG 3 key
+		ARG 4 position
+		ARG 5 pointerColor
+		ARG 6 backgroundColor
+	METHOD method_8693 (Lnet/minecraft/network/chat/Component;ILjava/lang/String;Lnet/minecraft/world/phys/Vec3;IILjava/util/UUID;)V
+		ARG 6 uuid
+	METHOD method_8694 (Lnet/minecraft/network/chat/Component;ILjava/lang/String;Lnet/minecraft/world/phys/Vec3;IILjava/util/UUID;)V
+		ARG 6 uuid
+	METHOD method_8831 sendNoticeMessage (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/lang/String;)V
+		ARG 0 game
+		ARG 1 message
+	METHOD method_8832 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/List;ILjava/lang/String;)V
+		ARG 0 game
+		ARG 1 lines
+		ARG 2 time
+		ARG 3 key
+	METHOD method_8833 sendNoticeMessage (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 game
+		ARG 1 message
+	METHOD method_8834 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/network/chat/Component;I)V
+		ARG 0 game
+		ARG 1 message
+		ARG 2 time
+	METHOD method_8835 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
+		ARG 0 game
+		ARG 1 message
+		ARG 2 time
+		ARG 3 key
+	METHOD method_8836 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/network/chat/Component;ILjava/lang/String;Lnet/minecraft/world/phys/Vec3;II)V
+		ARG 0 game
+		ARG 1 message
+		ARG 2 time
+		ARG 3 key
+		ARG 4 position
+		ARG 5 pointerColor
+		ARG 6 backgroundColor
+	METHOD method_8837 sendFancyMessage (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/network/chat/Component;Ljava/lang/String;)V
+		ARG 0 game
+		ARG 1 prefix
+		ARG 2 message
+	METHOD method_8838 sendFancyMessage (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 game
+		ARG 1 prefix
+		ARG 2 message
+	METHOD method_8839 playSound (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
+		ARG 0 game
+		ARG 1 event
+		ARG 2 source
+	METHOD method_8840 playPositionedSound (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FLnet/minecraft/world/phys/Vec3;)V
+		ARG 0 game
+		ARG 1 event
+		ARG 2 source
+		ARG 3 volume
+		ARG 4 position
+	METHOD method_8841 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lcom/boehmod/blockfront/unnamed/BF_1541;Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
+		ARG 0 playerManager
+		ARG 1 team
+		ARG 2 scope
+		ARG 3 message
+		ARG 4 time
+		ARG 5 key
+	METHOD method_8842 sendToast (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lcom/boehmod/blockfront/unnamed/BF_1541;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
+		ARG 0 playerManager
+		ARG 1 team
+		ARG 2 scope
+		ARG 3 title
+		ARG 4 message
+		ARG 5 type
+	METHOD method_8843 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
+		ARG 0 playerManager
+		ARG 1 team
+		ARG 2 message
+		ARG 3 time
+		ARG 4 key
+	METHOD method_8844 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;ILjava/lang/String;Lnet/minecraft/world/phys/Vec3;II)V
+		ARG 0 playerManager
+		ARG 1 team
+		ARG 2 message
+		ARG 3 time
+		ARG 4 key
+		ARG 5 position
+		ARG 6 pointerColor
+		ARG 7 backgroundColor
+	METHOD method_8845 sendFancyMessage (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 playerManager
+		ARG 1 team
+		ARG 2 prefix
+		ARG 3 message
+	METHOD method_8846 sendNoticeIcon (Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 0 game

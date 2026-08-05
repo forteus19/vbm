@@ -65,6 +65,11 @@ public final class ProposalRegistry {
             new VisitorEntry(
                     collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKESPECIAL, 1, "<init>"),
                     /* BFClientSettings */ "com/boehmod/blockfront/unnamed/BF_432"
+            ),
+            new VisitorEntry(
+                    collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKESTATIC, 0, "method_1581"),
+                    /* GunDamageConfigs */ "com/boehmod/blockfront/unnamed/BF_1454",
+                    /* GunSpreadConfigs */ "com/boehmod/blockfront/unnamed/BF_1433"
             )
     );
 

@@ -5,6 +5,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_1259 com/boehmod/blockfront/map/effect/M
 	FIELD field_7386 CODECS Ljava/util/Map;
 	FIELD field_8253 SOUND_EVENT_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_8254 COLOR_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_8255 STREAM_CODEC Lnet/minecraft/network/codec/StreamCodec;
+	FIELD field_9267 AABB_CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_6351 (Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;
 		ARG 0 key
 	METHOD method_6352 (Lnet/minecraft/world/phys/Vec2;)Ljava/lang/Float;
@@ -25,3 +27,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_1259 com/boehmod/blockfront/map/effect/M
 		ARG 0 codec
 	METHOD method_7592 parseHexColor (Ljava/lang/String;)I
 		ARG 0 hexColor
+	METHOD method_8708 (Lnet/minecraft/world/phys/AABB;)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 aabb
+	METHOD method_8709 (Lnet/minecraft/world/phys/AABB;)Lnet/minecraft/world/phys/Vec3;
+		ARG 0 aabb
+	METHOD method_8710 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
+		ARG 0 instance

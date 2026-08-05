@@ -29,7 +29,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2854 uuid Ljava/util/UUID;
 	FIELD field_6713 mapEnvironment Lcom/boehmod/blockfront/unnamed/BF_1182;
 	FIELD field_7250 matchSettings Lcom/boehmod/bflib/cloud/common/MatchSettings;
+	FIELD field_8110 manager Lcom/boehmod/blockfront/unnamed/BF_445;
 	FIELD field_8111 REBALANCE_NOTIFICATION Lnet/minecraft/network/chat/Component;
+	FIELD field_8113 envVersion I
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;Ljava/lang/String;)V
@@ -212,7 +214,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2674 setType (Ljava/lang/String;)V
 		ARG 1 type
 	METHOD method_5652 getMapEnvironment ()Lcom/boehmod/blockfront/unnamed/BF_1182;
-	METHOD method_5653 refreshMapEnvironment ()V
+	METHOD method_5653 randomizeMapEnvironment ()V
 	METHOD method_6140 getMatchSettings ()Lcom/boehmod/bflib/cloud/common/MatchSettings;
 	METHOD method_6415 getCodecData ()Lcom/boehmod/blockfront/unnamed/BF_1265;
 	METHOD method_6416 readCodecData (Lcom/boehmod/blockfront/unnamed/BF_1265;)V
@@ -221,6 +223,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 buf
 	METHOD method_6736 write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
+	METHOD method_7257 getMedicAssistTime ()I
+	METHOD method_7258 getEnvVersion ()I
+	METHOD method_7260 refreshMapEnvironment ()V
 	METHOD method_8394 getSpectatorScope ()Lcom/boehmod/blockfront/unnamed/BF_1491;
 	METHOD method_8396 shouldSpectateOnRespawn ()Z
 	METHOD method_8397 allowsSpectators ()Z

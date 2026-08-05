@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1395 com/boehmod/blockfront/map/effect/MapEffectSyncListener
+	METHOD method_7600 onSync (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/util/RandomSource;)V
+		ARG 1 level
+		ARG 2 randomSource

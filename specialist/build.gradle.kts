@@ -14,11 +14,11 @@ repositories {
 
 dependencies {
     compileOnlyApi("org.jetbrains:annotations:26.0.2")
-    api("net.fabricmc:mapping-io:0.7.1")
-    api("org.quiltmc:enigma:2.6.2")
-    api("org.ow2.asm:asm:9.7.1")
-    api("org.ow2.asm:asm-analysis:9.7.1")
-    api("org.ow2.asm:asm-tree:9.7.1")
+    api("net.fabricmc:mapping-io:0.8.0")
+    api("org.quiltmc:enigma:2.7.2")
+    api("org.ow2.asm:asm:9.10.1")
+    api("org.ow2.asm:asm-analysis:9.10.1")
+    api("org.ow2.asm:asm-tree:9.10.1")
 }
 
 java {

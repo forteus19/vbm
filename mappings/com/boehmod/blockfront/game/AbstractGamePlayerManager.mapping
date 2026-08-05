@@ -195,3 +195,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 		ARG 1 uuid
 	METHOD method_8406 getSpectators ()Ljava/util/Set;
 	METHOD method_8407 getPlayersAndSpectators ()Ljava/util/Set;
+	METHOD method_8830 getPlayers (Lcom/boehmod/blockfront/unnamed/BF_686;Lcom/boehmod/blockfront/unnamed/BF_1541;)Ljava/util/Set;
+		ARG 1 team
+		ARG 2 scope
