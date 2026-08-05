@@ -1,6 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_833 com/boehmod/blockfront/client/ac/BFClientAntiCheat
 	FIELD field_3438 checks Lit/unimi/dsi/fastutil/objects/ObjectList;
-	FIELD field_3440 enabled Z
 	FIELD field_3441 startupChecksShouldRun Z
 	FIELD field_3442 isActive Z
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;)V
@@ -10,8 +9,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_833 com/boehmod/blockfront/client/ac/BFC
 		ARG 2 minecraft
 	METHOD method_3452 addCheck (Lcom/boehmod/blockfront/unnamed/BF_1123;)V
 		ARG 1 check
-	METHOD method_3454 setActive (Z)V
-		ARG 1 isActive
 	METHOD method_3455 doRuntimeChecks (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_3456 startupChecksShouldRun ()V

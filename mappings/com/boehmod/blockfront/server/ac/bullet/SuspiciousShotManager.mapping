@@ -1,7 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1197 com/boehmod/blockfront/server/ac/bullet/SuspiciousShotManager
 	FIELD field_6886 KICK_REASON Lnet/minecraft/network/chat/Component;
 	FIELD field_6887 RESET_TICKS I
-	FIELD field_6888 MAX_SUSPICIOUS_SHOTS I
 	FIELD field_6890 suspiciousShots I
 	FIELD field_6891 timer I
 	METHOD method_5834 update (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerPlayer;)V
