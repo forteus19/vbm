@@ -7,4 +7,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_1197 com/boehmod/blockfront/server/ac/bu
 	METHOD method_5834 update (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerPlayer;)V
 		ARG 1 manager
 		ARG 2 player
-	METHOD method_5835 addSuspiciousShot ()V

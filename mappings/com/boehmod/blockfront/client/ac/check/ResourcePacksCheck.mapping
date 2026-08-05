@@ -1,3 +1,1 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1121 com/boehmod/blockfront/client/ac/check/ResourcePacksCheck
-	METHOD method_5462 checkResourcePacks (Ljava/nio/file/Path;)Z
-	METHOD method_5463 checkShaders (Ljava/nio/file/Path;Ljava/lang/String;)Z
