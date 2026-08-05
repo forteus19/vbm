@@ -1,3 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1007 com/boehmod/blockfront/common/net/packet/BFBulletCollisionLivingPacket
-	METHOD <init> (Lnet/minecraft/network/FriendlyByteBuf;)V
-		ARG 1 buf

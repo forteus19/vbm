@@ -5,7 +5,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1192 com/boehmod/blockfront/server/ac/bu
 		ARG 1 potentialCollisionManager
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1198;I)V
 		ARG 1 potentialCollisionManager
-	METHOD method_5856 checkClientSpread (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;ZFLcom/boehmod/blockfront/unnamed/BF_993;Lnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_1117;)Z
 	METHOD method_5996 runChecks (Lcom/boehmod/blockfront/unnamed/BF_1198;)V
 		ARG 0 potentialCollisionManager
 	METHOD method_5998 checkClientFireRate (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;ZLnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_993;JLcom/boehmod/blockfront/unnamed/BF_1117;Z)Z
