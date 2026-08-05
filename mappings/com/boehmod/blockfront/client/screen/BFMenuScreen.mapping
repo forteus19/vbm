@@ -10,9 +10,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen
 	FIELD field_1053 FADE_YELLOW Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1054 STARBURST Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1056 SHADOWEFFECT_STRONG Lnet/minecraft/resources/ResourceLocation;
-	FIELD field_1057 SHADOWEFFECT Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1058 BG_US Lnet/minecraft/resources/ResourceLocation;
-	FIELD field_1059 CREDITS_LINE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1060 TROPHY Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1061 FLARE_WHITE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1062 BACKSHADOW_WHITE Lnet/minecraft/resources/ResourceLocation;

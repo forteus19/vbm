@@ -8,15 +8,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_426 com/boehmod/blockfront/client/world/
 	FIELD field_1891 idleTimer F
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_427;)V
 		ARG 1 data
-	METHOD method_1487 setAmplitude (F)Lcom/boehmod/blockfront/unnamed/BF_426;
-		ARG 1 amplitude
-	METHOD method_1488 update (F)Z
-		ARG 1 t
 	METHOD method_1489 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_426;
 		ARG 0 buf
 	METHOD method_1490 updateLerps ()V
-	METHOD method_1491 getCurrentShake ()Lorg/joml/Vector3f;
-	METHOD method_1492 setSineValues (F)V
-		ARG 1 t
 	METHOD method_1493 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V
 		ARG 1 buf

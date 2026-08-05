@@ -2,8 +2,6 @@ CLASS com/boehmod/blockfront/cloud/connection/ModConnection com/boehmod/blockfro
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_475;Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 details
 		ARG 2 manager
-	METHOD addIncomingPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;)V
-		ARG 1 packet
 	METHOD lambda$new$0 (Ljava/lang/Runnable;)Ljava/lang/Thread;
 		ARG 0 runnable
 	METHOD onIllegalPacket (Lcom/boehmod/bflib/cloud/packet/IPacket;Lcom/boehmod/bflib/cloud/common/ConnectionType;Lcom/boehmod/bflib/cloud/common/ConnectionType;)V
