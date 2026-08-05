@@ -14,7 +14,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2557 friendManager Lcom/boehmod/blockfront/unnamed/BF_780;
 	FIELD field_2558 crosshairResource Lcom/boehmod/blockfront/unnamed/BF_1124$BF_1125;
 	FIELD field_2559 creditsEntryResource Lcom/boehmod/blockfront/unnamed/BF_1126$BF_1127;
-	FIELD field_2560 minecraft Lnet/minecraft/client/Minecraft;
 	FIELD field_2561 CONNECTION_ESTABLISHED_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2562 CONNECTION_LOST_MESSAGE Lnet/minecraft/network/chat/Component;
 	FIELD field_2563 SAVING_LEVEL_MESSAGE Lnet/minecraft/network/chat/Component;
