@@ -1,2 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1123 com/boehmod/blockfront/client/ac/check/IAntiCheatCheck
 	METHOD method_5470 getStage ()Lcom/boehmod/blockfront/unnamed/BF_833$BF_834;
+	METHOD method_5471 run (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_451;)Ljava/lang/String;
+		ARG 1 minecraft
+		ARG 2 ac
+	METHOD method_8986 getDiscreteness ()Lcom/boehmod/blockfront/unnamed/BF_833$BF_1565;
+	METHOD method_8987 getLayerId ()I

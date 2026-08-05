@@ -10,4 +10,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_414 com/boehmod/blockfront/cloud/BFFeatu
 	FIELD field_8759 serverGrenadeCookDropOnDeath Z
 	FIELD field_9029 serverPlayerVoiceSounds Z
 	FIELD field_9333 serverChatMarkdown Z
+	FIELD field_9620 clientAcLayers Lit/unimi/dsi/fastutil/ints/IntSet;
+	FIELD field_9694 serverShotValidationAim Z
 	METHOD method_1469 updateFeatureFlags ()V
