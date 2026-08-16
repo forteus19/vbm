@@ -3,6 +3,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_1197 com/boehmod/blockfront/server/ac/bu
 	FIELD field_6887 RESET_TICKS I
 	FIELD field_6890 suspiciousShots I
 	FIELD field_6891 timer I
-	METHOD method_5834 update (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerPlayer;)V
-		ARG 1 manager
-		ARG 2 player

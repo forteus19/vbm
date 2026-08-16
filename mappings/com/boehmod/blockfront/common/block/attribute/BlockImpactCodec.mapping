@@ -2,16 +2,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1429 com/boehmod/blockfront/common/block
 	FIELD field_8404 OVERLAY_EFFECT_TYPE_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_8405 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_8406 INSTANCES Ljava/util/Map;
-	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lcom/boehmod/blockfront/unnamed/BF_112$BF_114$BF_115;ZZZLjava/util/List;Ljava/util/List;)V
-		ARG 1 impactSound
-		ARG 2 impactDebrisSound
-		ARG 3 explosionDebrisSound
-		ARG 4 overlayEffectType
-		ARG 5 hardMaterial
-		ARG 6 displayImpactEffects
-		ARG 7 displayBulletHole
-		ARG 8 impactParticles
-		ARG 9 directionalImpactParticles
 	METHOD method_7886 (Lcom/boehmod/blockfront/unnamed/BF_112$BF_114$BF_115;)Ljava/lang/String;
 		ARG 0 type
 	METHOD method_7887 (Lcom/boehmod/blockfront/unnamed/BF_1429;)Ljava/util/Optional;
@@ -23,16 +13,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1429 com/boehmod/blockfront/common/block
 	METHOD method_7890 putInstance (Lnet/minecraft/resources/ResourceLocation;Lcom/boehmod/blockfront/unnamed/BF_1429;)V
 		ARG 0 location
 		ARG 1 data
-	METHOD method_7891 of (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Ljava/util/Optional;Ljava/util/Optional;ZZZLjava/util/List;Ljava/util/List;)Lcom/boehmod/blockfront/unnamed/BF_1429;
-		ARG 0 impactSound
-		ARG 1 impactDebrisSound
-		ARG 2 explosionDebrisSound
-		ARG 3 overlayEffectType
-		ARG 4 hardMaterial
-		ARG 5 displayImpactEffects
-		ARG 6 displayBulletHole
-		ARG 7 impactParticles
-		ARG 8 directionalImpactParticles
 	METHOD method_7894 clearInstances ()V
 	METHOD method_7895 (Lcom/boehmod/blockfront/unnamed/BF_1429;)Ljava/util/Optional;
 		ARG 0 data
