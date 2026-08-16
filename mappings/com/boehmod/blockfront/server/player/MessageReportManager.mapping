@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1584 com/boehmod/blockfront/server/player/MessageReportManager
+	METHOD method_9164 report (Lcom/boehmod/blockfront/unnamed/BF_1067;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;)V
+		ARG 1 manager
+		ARG 2 player
+		ARG 3 messageUuid
+	METHOD method_9166 formatMessage (Lcom/boehmod/blockfront/unnamed/BF_1584$BF_1585;)Ljava/lang/String;
+		ARG 0 message
+	CLASS BF_1585 Message

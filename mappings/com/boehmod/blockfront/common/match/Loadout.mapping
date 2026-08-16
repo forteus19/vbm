@@ -4,11 +4,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/common/match/
 	FIELD field_3252 secondary Lnet/minecraft/world/item/ItemStack;
 	FIELD field_3253 melee Lnet/minecraft/world/item/ItemStack;
 	FIELD field_3254 offHand Lnet/minecraft/world/item/ItemStack;
+	FIELD field_3255 cost I
 	FIELD field_3257 minimumXp I
 	FIELD field_3258 head Lnet/minecraft/world/item/ItemStack;
 	FIELD field_3259 chest Lnet/minecraft/world/item/ItemStack;
 	FIELD field_3260 legs Lnet/minecraft/world/item/ItemStack;
 	FIELD field_3261 feet Lnet/minecraft/world/item/ItemStack;
+	FIELD field_7401 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_8761 referencedTemplate Ljava/lang/String;
 	METHOD <init> (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)V
 		ARG 1 primary
 		ARG 2 secondary
@@ -22,12 +25,15 @@ CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/common/match/
 		ARG 6 chest
 		ARG 7 legs
 		ARG 8 feet
+	METHOD method_3154 setCost (I)Lcom/boehmod/blockfront/unnamed/BF_759;
+		ARG 1 cost
 	METHOD method_3157 addExtra (Ljava/util/Collection;)Lcom/boehmod/blockfront/unnamed/BF_759;
 		ARG 1 itemStacks
 	METHOD method_3158 createFromInventory (Lnet/minecraft/server/level/ServerPlayer;)Lcom/boehmod/blockfront/unnamed/BF_759;
 		ARG 0 player
 	METHOD method_3159 addExtra (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_759;
 		ARG 1 itemStack
+	METHOD method_3160 getCost ()I
 	METHOD method_3161 getMinimumXp ()I
 	METHOD method_3162 isInitialized ()Z
 	METHOD method_3163 organize ()Lcom/boehmod/blockfront/unnamed/BF_759;
@@ -50,3 +56,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/common/match/
 	METHOD method_3175 getFeet ()Lnet/minecraft/world/item/ItemStack;
 	METHOD method_3176 getExtra ()Ljava/util/List;
 	METHOD method_3177 getItemStackList ()Ljava/util/List;
+	METHOD method_8164 setReferencedTemplate (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_759;
+		ARG 1 template
+	METHOD method_8165 getReferencedTemplate ()Ljava/lang/String;

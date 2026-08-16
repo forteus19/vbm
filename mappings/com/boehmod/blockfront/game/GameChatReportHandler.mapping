@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1580 com/boehmod/blockfront/game/GameChatReportHandler
+	FIELD field_9696 PROMPT_TITLE Lnet/minecraft/network/chat/Component;
+	FIELD field_9697 PROMPT_MESSAGE Lnet/minecraft/network/chat/Component;
+	METHOD method_9146 report (Lnet/minecraft/network/chat/Style;)Z
+		ARG 0 clickedStyle

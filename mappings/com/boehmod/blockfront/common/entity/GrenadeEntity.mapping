@@ -1,1 +1,17 @@
 CLASS com/boehmod/blockfront/unnamed/BF_612 com/boehmod/blockfront/common/entity/GrenadeEntity
+	FIELD field_2581 bounceCount I
+	FIELD field_2582 fuseTimer Lnet/minecraft/network/syncher/EntityDataAccessor;
+	FIELD field_2583 fuseDuration Lnet/minecraft/network/syncher/EntityDataAccessor;
+	METHOD method_2277 getBounceMultiplier ()F
+	METHOD method_2278 getFuseTimer ()I
+	METHOD method_2279 getBounceSound (Lnet/minecraft/world/level/block/SoundType;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+		ARG 1 soundType
+	METHOD method_2281 tickClient ()V
+	METHOD method_2282 onStoppedMoving ()V
+	METHOD method_2283 getMaxBounces ()I
+	METHOD method_2285 incrementFuseTimer ()I
+	METHOD method_2286 getFuseDuration ()I
+	METHOD method_2288 setFuseTimer (I)V
+		ARG 1 ticks
+	METHOD method_2289 setFuseDuration (I)V
+		ARG 1 ticks

@@ -17,3 +17,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_1279 com/boehmod/blockfront/util/Compoun
 		ARG 1 key
 	METHOD method_6745 getString (Ljava/lang/String;)Ljava/lang/String;
 		ARG 1 key
+	METHOD method_8686 remove (Ljava/lang/String;)V
+		ARG 1 key

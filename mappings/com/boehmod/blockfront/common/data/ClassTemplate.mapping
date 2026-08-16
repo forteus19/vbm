@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1475 com/boehmod/blockfront/common/data/ClassTemplate
+	FIELD field_8831 CODEC Lcom/mojang/serialization/Codec;

@@ -7,4 +7,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_1257 com/boehmod/blockfront/common/data/
 		ARG 2 resourceManager
 		ARG 3 profiler
 	METHOD method_6269 bootstrap ()V
+	METHOD method_6272 apply (Ljava/util/Map;Ljava/util/Map;)V
+		ARG 0 data
+		ARG 1 templateData
 	METHOD method_6273 getData ()Ljava/util/Map;
+	METHOD method_8159 applyTemplates (Lcom/boehmod/blockfront/unnamed/BF_759;Ljava/util/Map;Lcom/boehmod/blockfront/unnamed/BF_928;)Lcom/boehmod/blockfront/unnamed/BF_759;
+		ARG 0 loadout
+		ARG 1 templateData
+		ARG 2 nationType
+	METHOD method_8161 applyTemplates (Ljava/util/Map;Ljava/util/Map;Lcom/boehmod/blockfront/unnamed/BF_928;)Ljava/util/Map;
+		ARG 0 data
+		ARG 1 templateData
+		ARG 2 nationType
+	METHOD method_8234 checkTemplates (Ljava/util/Map;)V
+		ARG 0 templateData

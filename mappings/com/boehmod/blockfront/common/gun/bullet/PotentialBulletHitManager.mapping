@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1198 com/boehmod/blockfront/common/gun/bullet/PotentialBulletCollisionManager
+CLASS com/boehmod/blockfront/unnamed/BF_1198 com/boehmod/blockfront/common/gun/bullet/PotentialBulletHitManager
 	FIELD field_6894 currentTick J
 	FIELD field_6895 ROTATION_SIZE I
 	FIELD field_7175 rotatingTickValues [J

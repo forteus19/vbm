@@ -223,9 +223,20 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 buf
 	METHOD method_6736 write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
+	METHOD method_7256 forceSwitchTeam (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_686;)Z
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+		ARG 4 playerUuid
+		ARG 5 team
 	METHOD method_7257 getMedicAssistTime ()I
 	METHOD method_7258 getEnvVersion ()I
+	METHOD method_7259 rebalanceTeams (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/server/level/ServerLevel;)V
+		ARG 1 manager
+		ARG 2 level
 	METHOD method_7260 refreshMapEnvironment ()V
+	METHOD method_7262 clearClass (Ljava/util/UUID;)V
+		ARG 1 playerUuid
 	METHOD method_8394 getSpectatorScope ()Lcom/boehmod/blockfront/unnamed/BF_1491;
 	METHOD method_8396 shouldSpectateOnRespawn ()Z
 	METHOD method_8397 allowsSpectators ()Z

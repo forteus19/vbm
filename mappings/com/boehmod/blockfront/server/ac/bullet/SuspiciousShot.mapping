@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1563 com/boehmod/blockfront/server/ac/bullet/SuspiciousShot
+	METHOD <init> (Lcom/boehmod/bflib/cloud/common/ac/SuspiciousShotReason;Ljava/lang/String;)V
+		ARG 1 reason
+		ARG 2 detail
+	METHOD method_8998 create (Lcom/boehmod/bflib/cloud/common/ac/SuspiciousShotReason;Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_1563;
+		ARG 0 reason
+		ARG 1 detail
+	METHOD method_8999 create (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_1563;
+		ARG 0 detail

@@ -1,3 +1,13 @@
 CLASS com/boehmod/blockfront/unnamed/BF_561 com/boehmod/blockfront/common/entity/BFProjectileEntity
 	FIELD field_2339 owner Lnet/minecraft/world/entity/player/Player;
+	METHOD addAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 tag
+	METHOD method_1942 getExplosionRadius ()F
 	METHOD method_1947 getOwner ()Lnet/minecraft/world/entity/player/Player;
+	METHOD method_1950 explode (Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/phys/Vec3;F)V
+		ARG 1 owner
+		ARG 2 position
+		ARG 3 radius
+	METHOD method_1957 trigger ()V
+	METHOD readAdditionalSaveData (Lnet/minecraft/nbt/CompoundTag;)V
+		ARG 1 tag

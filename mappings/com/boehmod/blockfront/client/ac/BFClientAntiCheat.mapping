@@ -2,7 +2,18 @@ CLASS com/boehmod/blockfront/unnamed/BF_833 com/boehmod/blockfront/client/ac/BFC
 	FIELD field_3438 checks Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_3441 startupChecksShouldRun Z
 	FIELD field_3442 isActive Z
+	FIELD field_9547 PACKAGES_ID I
+	FIELD field_9548 JAVA_AGENT_ID I
+	FIELD field_9549 NATIVE_LIBRARIES_ID I
 	FIELD field_9551 manager Lcom/boehmod/blockfront/unnamed/BF_606;
+	FIELD field_9552 MODS_COUNT_ID I
+	FIELD field_9553 MODS_DIRECTORY_ID I
+	FIELD field_9554 RESOURCE_PACKS_ID I
+	FIELD field_9555 SPRITE_TRANSPARENCY_ID I
+	FIELD field_9608 THREAD_ID I
+	FIELD field_9636 AIM_HACK_ID I
+	FIELD field_9680 INTEGRITY_ID I
+	FIELD field_9681 ID_MAX I
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;)V
 		ARG 1 manager
 	METHOD method_3451 anyActiveForStage (Lcom/boehmod/blockfront/unnamed/BF_833$BF_834;Lnet/minecraft/client/Minecraft;)Z

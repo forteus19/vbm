@@ -63,3 +63,18 @@ CLASS com/boehmod/blockfront/unnamed/BF_497 com/boehmod/blockfront/cloud/client/
 	METHOD method_6126 dailyReward (Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;Lcom/boehmod/bflib/cloud/connection/Connection;)V
 		ARG 0 packet
 		ARG 1 connection
+	METHOD method_8172 screenshotRequest (Lcom/boehmod/bflib/cloud/packet/common/PacketScreenshotRequest;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_8332 requestedRecentMatches (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedRecentMatches;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_8942 newsArticleResponse (Lcom/boehmod/bflib/cloud/packet/common/news/PacketNewsArticleResponse;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_8943 newsImageResponse (Lcom/boehmod/bflib/cloud/packet/common/news/PacketNewsImageResponse;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection
+	METHOD method_8944 newsListResponse (Lcom/boehmod/bflib/cloud/packet/common/news/PacketNewsListResponse;Lcom/boehmod/bflib/cloud/connection/Connection;)V
+		ARG 0 packet
+		ARG 1 connection

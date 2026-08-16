@@ -26,3 +26,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_1067 com/boehmod/blockfront/server/BFSer
 		ARG 1 player
 		ARG 2 uuid
 	METHOD method_6776 getConfig ()Lcom/boehmod/blockfront/unnamed/BF_1280;
+	METHOD method_9163 getMessageReportManager ()Lcom/boehmod/blockfront/unnamed/BF_1584;

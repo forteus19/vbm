@@ -12,11 +12,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/
 		ARG 2 nationType
 		ARG 3 skin
 	METHOD method_3884 getRandomRace ()Lcom/boehmod/blockfront/unnamed/BF_567;
-	METHOD method_3885 getCountry ()Lcom/boehmod/blockfront/unnamed/BF_928;
+	METHOD method_3885 getNationType ()Lcom/boehmod/blockfront/unnamed/BF_928;
 	METHOD method_3888 getLoadout (Lcom/boehmod/blockfront/unnamed/BF_924;I)Lcom/boehmod/blockfront/unnamed/BF_759;
 		ARG 1 clazz
 		ARG 2 level
-	METHOD method_3890 getByCountryAndSkin (Lcom/boehmod/blockfront/unnamed/BF_928;Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_929;
+	METHOD method_3890 get (Lcom/boehmod/blockfront/unnamed/BF_928;Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_929;
 		ARG 0 nationType
 		ARG 1 skin
 	METHOD method_3891 races (Ljava/util/List;)Lcom/boehmod/blockfront/unnamed/BF_929;

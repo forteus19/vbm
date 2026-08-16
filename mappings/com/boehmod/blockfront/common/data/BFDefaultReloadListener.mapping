@@ -1,3 +1,9 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1349 com/boehmod/blockfront/common/data/BFDefaultReloadListener
 	METHOD method_7118 getCodec ()Lcom/mojang/serialization/Codec;
+	METHOD method_7119 loadFromResources (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/lang/String;Lcom/mojang/serialization/Codec;Ljava/util/function/BiFunction;)Ljava/util/Map;
+	METHOD method_7121 loadFromClasspath (Ljava/lang/Class;Ljava/lang/String;Lcom/mojang/serialization/Codec;Ljava/util/function/BiFunction;)Ljava/util/Map;
+		ARG 0 resourceClass
+		ARG 1 path
+		ARG 2 codec
+		ARG 3 rlGetter
 	METHOD method_7128 getDirectory ()Ljava/lang/String;

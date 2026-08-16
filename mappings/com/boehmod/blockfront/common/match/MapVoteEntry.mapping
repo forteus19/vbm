@@ -3,7 +3,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_891 com/boehmod/blockfront/common/match/
 	FIELD field_3574 gameType Ljava/lang/String;
 	FIELD field_3576 playerVotes Ljava/util/Set;
 	FIELD field_3577 mapName Ljava/lang/String;
-	FIELD field_6405 countries Ljava/util/List;
+	FIELD field_6405 nationTypes Ljava/util/List;
+	FIELD field_6746 environmentName Ljava/lang/String;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
 		ARG 1 game
 	METHOD method_3707 getGameType ()Ljava/lang/String;
@@ -11,4 +12,9 @@ CLASS com/boehmod/blockfront/unnamed/BF_891 com/boehmod/blockfront/common/match/
 	METHOD method_3712 getPlayerVotes ()Ljava/util/Set;
 	METHOD method_3713 addPlayerVote (Ljava/util/UUID;)V
 		ARG 1 uuid
-	METHOD method_5537 getCountries ()Ljava/util/List;
+	METHOD method_5537 getNationTypes ()Ljava/util/List;
+	METHOD method_5714 getEnvironmentName ()Ljava/lang/String;
+	METHOD method_6763 read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 burf
+	METHOD method_6764 write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
