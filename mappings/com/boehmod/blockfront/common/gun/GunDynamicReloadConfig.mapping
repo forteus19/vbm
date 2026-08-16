@@ -1,4 +1,1 @@
 CLASS com/boehmod/blockfront/unnamed/BF_954 com/boehmod/blockfront/common/gun/GunDynamicReloadConfig
-	METHOD method_3955 getNumReloadAnims (Lcom/boehmod/blockfront/unnamed/BF_993;Lnet/minecraft/world/item/ItemStack;)I
-		ARG 1 item
-		ARG 2 itemStack

@@ -1,7 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/GunItem
 	FIELD field_4004 reloadConfig Lcom/boehmod/blockfront/unnamed/BF_953;
 	FIELD field_4005 soundConfig Lcom/boehmod/blockfront/unnamed/BF_956;
-	FIELD field_4006 defaultFireConfig Lcom/boehmod/blockfront/unnamed/BF_957;
 	FIELD field_4007 bipodMode Lcom/boehmod/blockfront/unnamed/BF_996;
 	FIELD field_4008 chestArmor Lnet/neoforged/neoforge/registries/DeferredItem;
 	FIELD field_4009 equipSound Lnet/neoforged/neoforge/registries/DeferredHolder;
@@ -17,7 +16,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	FIELD field_4051 weight F
 	FIELD field_4053 clientTriggerTimer I
 	FIELD field_4061 maxHitDist I
-	FIELD field_4062 currentFireConfig I
 	FIELD field_4065 prevClientTriggerTimer I
 	FIELD field_4068 magIdMap Ljava/util/Map;
 	FIELD field_4069 barrelIdMap Ljava/util/Map;
@@ -71,8 +69,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 1 itemStack
 	METHOD method_4150 getMagTypeOrDefault (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_994;
 		ARG 1 itemStack
-	METHOD method_4151 getReloadSound (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/sounds/SoundEvent;
-		ARG 1 itemStack
 	METHOD method_4153 setAmmoLoaded (Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 0 itemStack
 		ARG 1 value
@@ -93,29 +89,20 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4167 getMuzzleFlashSize ()F
 	METHOD method_4172 bulletEject (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 bulletEject
-	METHOD method_4173 reloadClient (Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/item/ItemStack;)V
-		ARG 1 minecraft
-		ARG 2 itemStack
 	METHOD method_4174 getAmmo (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack
-	METHOD method_4175 setHeat (Lnet/minecraft/world/item/ItemStack;F)V
-		ARG 0 itemStack
-		ARG 1 value
 	METHOD method_4176 setAmmo (Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 0 itemStack
 		ARG 1 value
 	METHOD method_4177 setBarrelType (Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;)Lnet/minecraft/world/item/ItemStack;
 		ARG 0 itemStack
 		ARG 1 value
-	METHOD method_4179 toggleFireConfig ()V
 	METHOD method_4182 getMaxHitDist ()I
 	METHOD method_4185 canRefillAmmo ()Z
 	METHOD method_4186 isSecondary ()Z
 	METHOD method_4187 hasBipod ()Z
 	METHOD method_4191 isSmokeTrailEnabled ()Z
 	METHOD method_4194 holdCloser ()Lcom/boehmod/blockfront/unnamed/BF_993;
-	METHOD method_4198 getHeat (Lnet/minecraft/world/item/ItemStack;)F
-		ARG 0 itemStack
 	METHOD method_4199 getMaxAmmo (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack
 	METHOD method_4200 getMagType (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
@@ -137,11 +124,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 0 itemStack
 	METHOD method_4211 hasAmmo (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 itemStack
-	METHOD method_4212 setReloadTick (Lnet/minecraft/world/item/ItemStack;I)V
-		ARG 0 itemStack
-		ARG 1 value
-	METHOD method_4217 getReloadTime (Lnet/minecraft/world/item/ItemStack;)I
-		ARG 1 itemStack
 	METHOD method_4218 resetReloadTick (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 0 itemStack
 	METHOD method_4219 isReloading (Lnet/minecraft/world/item/ItemStack;)Z

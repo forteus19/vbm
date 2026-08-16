@@ -54,9 +54,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_660 com/boehmod/blockfront/client/net/BF
 	METHOD method_2546 grenadeFlash (Lcom/boehmod/blockfront/unnamed/BF_1022;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 		ARG 0 packet
 		ARG 1 context
-	METHOD method_2547 gunReloadClient (Lcom/boehmod/blockfront/unnamed/BF_1025;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
-		ARG 0 packet
-		ARG 1 context
 	METHOD method_2548 gunSound (Lcom/boehmod/blockfront/unnamed/BF_1026;Lnet/neoforged/neoforge/network/handling/IPayloadContext;)V
 		ARG 0 packet
 		ARG 1 context
