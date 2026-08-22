@@ -1,4 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_948 com/boehmod/blockfront/server/gun/bullet/ServerBulletSpawner
 	FIELD field_6839 level Lnet/minecraft/server/level/ServerLevel;
-	METHOD method_3944 sendLivingCollisionPacket (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/List;)V
 	METHOD method_3948 sendBlockCollisionPacket (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/List;)V

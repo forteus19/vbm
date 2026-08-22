@@ -9,17 +9,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_408 com/boehmod/blockfront/util/ClientUt
 		ARG 5 direction
 		ARG 6 blockState
 		ARG 7 speedMagnitude
-	METHOD method_1438 spawnParticle (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/particles/ParticleOptions;DDDDDD)V
-		ARG 0 minecraft
-		ARG 1 manager
-		ARG 2 level
-		ARG 3 options
-		ARG 4 posX
-		ARG 6 posY
-		ARG 8 posZ
-		ARG 10 velX
-		ARG 12 velY
-		ARG 14 velZ
 	METHOD method_1439 spawnParticleCircle (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/particles/ParticleOptions;Lnet/minecraft/world/phys/Vec3;FFIF)V
 		ARG 0 minecraft
 		ARG 1 manager
@@ -30,23 +19,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_408 com/boehmod/blockfront/util/ClientUt
 		ARG 6 maxDist
 		ARG 7 numParticles
 		ARG 8 speedMagnitude
-	METHOD method_1440 spawnParticleDirection (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/Direction;Lnet/minecraft/core/particles/ParticleOptions;F)V
-		ARG 0 minecraft
-		ARG 1 manager
-		ARG 2 level
-		ARG 3 origin
-		ARG 4 direction
-		ARG 5 options
-		ARG 6 speedMagnitude
-	METHOD method_1441 spawnParticleDirection (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/core/Direction;Lnet/minecraft/core/particles/ParticleOptions;FF)V
-		ARG 0 minecraft
-		ARG 1 manager
-		ARG 2 level
-		ARG 3 origin
-		ARG 4 direction
-		ARG 5 options
-		ARG 6 speedMagnitude
-		ARG 7 offsetMagnitude
 	METHOD method_1442 setCameraEntity (Lnet/minecraft/client/Minecraft;Lnet/minecraft/world/entity/Entity;)V
 		ARG 0 minecraft
 		ARG 1 entity

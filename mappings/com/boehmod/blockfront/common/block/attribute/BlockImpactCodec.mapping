@@ -19,7 +19,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1429 com/boehmod/blockfront/common/block
 	METHOD method_7899 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 		ARG 0 instance
 	METHOD method_7900 getImpactSound ()Lnet/minecraft/sounds/SoundEvent;
-	METHOD method_7901 getImpactDebrisSound ()Lnet/minecraft/sounds/SoundEvent;
 	METHOD method_7902 getExplosionDebrisSound ()Lnet/minecraft/sounds/SoundEvent;
 	CLASS BF_1430 Particle
 		FIELD field_8415 CODEC Lcom/mojang/serialization/Codec;

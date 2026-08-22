@@ -68,16 +68,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1059 com/boehmod/blockfront/util/math/Ma
 		ARG 0 from
 		ARG 1 to
 		ARG 2 amount
-	METHOD method_4500 intersect (Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/Vec3;Lnet/minecraft/world/phys/AABB;)Ljava/util/Optional;
-		COMMENT Casts a ray in 3D space with a box and checks for any intersections.
-		COMMENT
-		COMMENT @param origin The origin point of the ray.
-		COMMENT @param direction The non-zero direction of the ray.
-		COMMENT @param box The box to collide with.
-		COMMENT @return The first point of intersection, or an empty optional if there are none.
-		ARG 0 origin
-		ARG 1 direction
-		ARG 2 box
 	METHOD method_4501 clampPartsd (Lorg/joml/Vector3d;DD)Lorg/joml/Vector3d;
 		ARG 0 vec
 		ARG 1 min
