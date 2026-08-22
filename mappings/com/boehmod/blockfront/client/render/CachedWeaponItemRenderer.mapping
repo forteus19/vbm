@@ -1,0 +1,25 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1570 com/boehmod/blockfront/client/render/CachedWeaponItemRenderer
+	FIELD field_9615 TEXTURES Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;
+	FIELD field_9618 COPIED_COMPONENTS Ljava/util/List;
+	METHOD method_9090 getTextureSize (F)I
+		ARG 0 scale
+	METHOD method_9091 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/world/item/ItemStack;FFF)V
+		ARG 0 poseStack
+		ARG 1 grpahics
+		ARG 2 stack
+		ARG 3 x
+		ARG 4 y
+		ARG 5 scale
+	METHOD method_9092 copyStack (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;
+		ARG 0 stack
+	METHOD method_9093 renderToTexture (Lnet/minecraft/world/item/ItemStack;I)Lcom/mojang/blaze3d/pipeline/TextureTarget;
+		ARG 0 stack
+		ARG 1 textureSize
+	METHOD method_9094 copyComponent (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/core/component/DataComponentType;)V
+		ARG 0 stackFrom
+		ARG 1 stackTo
+		ARG 2 component
+	METHOD method_9095 getStackHash (Lnet/minecraft/world/item/ItemStack;I)I
+		ARG 0 stack
+		ARG 1 offset
+	METHOD method_9096 clearTextures ()V

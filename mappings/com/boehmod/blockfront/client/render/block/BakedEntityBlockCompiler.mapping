@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1169 com/boehmod/blockfront/client/render/block/BakedEntityBlockCompiler
+	METHOD method_9251 addSectionGeometry (Lnet/neoforged/neoforge/client/event/AddSectionGeometryEvent;)V
+		ARG 0 event
