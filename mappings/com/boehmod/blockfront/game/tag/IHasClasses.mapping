@@ -1,6 +1,4 @@
 CLASS com/boehmod/blockfront/unnamed/BF_813 com/boehmod/blockfront/game/tag/IHasClasses
-	METHOD method_3400 getClassLimit (Lcom/boehmod/blockfront/unnamed/BF_924;)I
-		ARG 1 matchClass
 	METHOD method_3401 hasClassLimits ()Z
 	METHOD method_3402 shouldClassesRequireExp ()Z
 	METHOD method_3403 shouldClassesRequireRank ()Z

@@ -24,17 +24,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_924 com/boehmod/blockfront/game/ClassTyp
 		ARG 7 seeMedicCallouts
 		ARG 8 canWarCry
 		ARG 9 highlightInScoreboard
-	METHOD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLnet/minecraft/resources/ResourceLocation;ZZZZLcom/boehmod/bflib/cloud/common/player/PlayerRank;)V
-		ARG 1 key
-		ARG 2 displayTitle
-		ARG 3 description
-		ARG 4 botFriendly
-		ARG 5 icon
-		ARG 6 isDefault
-		ARG 7 seeMedicCallouts
-		ARG 8 canWayCry
-		ARG 9 highlightInScoreboard
-		ARG 10 minRankRequired
 	METHOD method_6644 getResourceLocation ()Lnet/minecraft/resources/ResourceLocation;
 	METHOD method_6645 getDisplayTitle ()Ljava/lang/String;
 	METHOD method_6646 getMinRankRequired ()Lcom/boehmod/bflib/cloud/common/player/PlayerRank;

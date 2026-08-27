@@ -22,9 +22,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1429 com/boehmod/blockfront/common/block
 	METHOD method_7902 getExplosionDebrisSound ()Lnet/minecraft/sounds/SoundEvent;
 	CLASS BF_1430 Particle
 		FIELD field_8415 CODEC Lcom/mojang/serialization/Codec;
-		METHOD <init> (ILnet/minecraft/resources/ResourceLocation;)V
-			ARG 1 count
-			ARG 2 particleType
 		METHOD method_7904 getParticleOptions ()Lnet/minecraft/core/particles/ParticleOptions;
 		METHOD method_7905 (Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;
 			ARG 0 instance
