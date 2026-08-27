@@ -11,10 +11,28 @@ CLASS com/boehmod/blockfront/unnamed/BF_941 com/boehmod/blockfront/common/stat/B
 		ARG 4 change
 		ARG 5 amount
 		ARG 6 heldStack
-		ARG 7 classInedx
+		ARG 7 classIndex
+	METHOD method_3920 (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;IILnet/minecraft/world/item/ItemStack;I)V
+		ARG 1 manager
+		ARG 2 stat
+		ARG 3 game
+		ARG 4 uuid
+		ARG 5 change
+		ARG 6 amount
+		ARG 7 heldStack
+		ARG 8 classIndex
 	METHOD method_3921 setListener (Lcom/boehmod/blockfront/unnamed/BF_941$BF_942;)Lcom/boehmod/blockfront/unnamed/BF_941;
 		ARG 1 trigger
 	METHOD method_3922 listenerEnabled (Z)Lcom/boehmod/blockfront/unnamed/BF_941;
 		ARG 1 requiresCloudConnection
 	METHOD method_3923 isListenerEnabled ()Z
 	CLASS BF_942 Listener
+		METHOD onGlobalStat (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_941;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/UUID;IILnet/minecraft/world/item/ItemStack;I)V
+			ARG 1 manager
+			ARG 2 stat
+			ARG 3 game
+			ARG 4 uuid
+			ARG 5 change
+			ARG 6 amount
+			ARG 7 heldStack
+			ARG 8 classIndex

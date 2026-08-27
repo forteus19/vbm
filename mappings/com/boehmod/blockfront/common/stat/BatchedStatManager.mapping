@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1591 com/boehmod/blockfront/common/stat/BatchedStatManager
+	FIELD field_9826 queued Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;
+	FIELD field_9828 sendTimer I
+	METHOD method_9238 update (Lcom/boehmod/blockfront/unnamed/BF_411;)V
+		ARG 1 connection
+	METHOD method_9239 enqueue (Ljava/util/UUID;Ljava/lang/String;ILcom/boehmod/bflib/cloud/common/player/PlayerStatExtra;)V
+		ARG 1 uuid
+		ARG 2 value
+		ARG 3 amount
+		ARG 4 extra
+	METHOD method_9240 send (Lcom/boehmod/blockfront/unnamed/BF_411;)V
+		ARG 1 connection
+	CLASS BF_1592 Entry
+		METHOD <init> (Ljava/util/UUID;Ljava/lang/String;Lcom/boehmod/bflib/cloud/common/player/PlayerStatExtra;)V
+			ARG 1 uuid
+			ARG 2 value
+			ARG 3 extra

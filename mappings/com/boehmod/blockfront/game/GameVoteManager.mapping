@@ -1,0 +1,39 @@
+CLASS com/boehmod/blockfront/unnamed/BF_892 com/boehmod/blockfront/game/GameVoteManager
+	FIELD field_3578 entries Ljava/util/List;
+	FIELD field_3579 active Z
+	FIELD field_3581 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	FIELD field_3582 playersVoted Ljava/util/Set;
+	FIELD field_7220 playersRated Ljava/util/Set;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
+		ARG 1 game
+	METHOD method_3715 getEntries ()Ljava/util/List;
+	METHOD method_3716 move (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_682;Lnet/minecraft/server/level/ServerLevel;)Z
+		ARG 1 manager
+		ARG 2 playerManager
+		ARG 3 level
+	METHOD method_3717 vote (Lnet/minecraft/server/level/ServerPlayer;Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 player
+		ARG 2 map
+		ARG 3 gameType
+	METHOD method_3718 reset ()V
+	METHOD method_3719 startVoteSequence (Lcom/boehmod/blockfront/unnamed/BF_445;)V
+		ARG 1 manager
+	METHOD method_3720 isOption (Ljava/lang/String;)Z
+		ARG 1 name
+	METHOD method_3721 removePlayer (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_5610 populateAlternatives (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_925;)V
+		ARG 1 manager
+		ARG 2 gameType
+	METHOD method_5611 populate (Ljava/util/List;Ljava/util/concurrent/ThreadLocalRandom;)V
+		ARG 1 games
+		ARG 2 random
+	METHOD method_6110 isActive ()Z
+	METHOD method_6111 hasPlayerRated (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_6112 addPlayerRate (Ljava/util/UUID;)V
+		ARG 1 uuid
+	METHOD method_6765 read (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf
+	METHOD method_6766 write (Lio/netty/buffer/ByteBuf;)V
+		ARG 1 buf

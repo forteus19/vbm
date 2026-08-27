@@ -18,6 +18,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_925 com/boehmod/blockfront/game/GameType
 	FIELD field_3697 displayName Lnet/minecraft/network/chat/Component;
 	FIELD field_3698 NAME_MAP Ljava/util/Map;
 	FIELD field_3699 selectSound Ljava/util/function/Supplier;
+	FIELD field_9086 OFFENSIVE Lcom/boehmod/blockfront/unnamed/BF_925;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_925$BF_926;Ljava/lang/String;Ljava/lang/String;Lcom/boehmod/bflib/cloud/common/mm/SearchGame;Ljava/lang/Class;)V
 		ARG 1 category
 		ARG 2 componentName
@@ -44,6 +45,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_925 com/boehmod/blockfront/game/GameType
 	METHOD method_3836 isHidden ()Z
 	METHOD method_3837 hidden ()Lcom/boehmod/blockfront/unnamed/BF_925;
 	METHOD method_3838 values ()Ljava/util/Collection;
+	METHOD method_8361 getCategory ()Lcom/boehmod/blockfront/unnamed/BF_925$BF_926;
 	CLASS BF_926 Category
 		METHOD <init> (Ljava/lang/String;ILnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
 			ARG 3 title

@@ -28,6 +28,6 @@ public class VbmJarIndexer implements JarIndexerService {
         ProposalRegistry.collect(collector, scope.stream()
                 .map(classProvider::get)
                 .filter(Objects::nonNull)
-                .iterator());
+                .toList());
     }
 }

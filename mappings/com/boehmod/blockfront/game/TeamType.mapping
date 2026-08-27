@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/common/match/TeamType
+CLASS com/boehmod/blockfront/unnamed/BF_929 com/boehmod/blockfront/game/TeamType
 	FIELD field_3732 id B
 	FIELD field_3733 nationType Lcom/boehmod/blockfront/unnamed/BF_928;
 	FIELD field_3734 skin Ljava/lang/String;

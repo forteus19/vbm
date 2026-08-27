@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1465 com/boehmod/blockfront/util/BlockAttributeUtils
+	METHOD method_8082 createDefault ()Lcom/boehmod/blockfront/unnamed/BF_1427;
+	METHOD method_8083 retrieve (Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;)Lcom/boehmod/blockfront/unnamed/BF_1427;
+		ARG 0 level
+		ARG 1 state
+		ARG 2 pos

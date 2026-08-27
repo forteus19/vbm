@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1600 com/boehmod/blockfront/client/render/model/FlagPoleModelRenderer
+	FIELD field_9887 POLE_BASE_MODEL Lnet/minecraft/client/resources/model/ModelResourceLocation;
+	FIELD field_9889 POLE_MODEL Lnet/minecraft/client/resources/model/ModelResourceLocation;
+	FIELD field_9890 POLE_TOP_MODEL Lnet/minecraft/client/resources/model/ModelResourceLocation;
+	METHOD method_9312 registerModels (Lnet/neoforged/neoforge/client/event/ModelEvent$RegisterAdditional;)V

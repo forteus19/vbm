@@ -17,8 +17,9 @@ public class BFBlocksVisitor extends ClassInitVisitor {
     public static final String BF_BLOCKS = "com/boehmod/blockfront/unnamed/BF_1091";
 
     private final Map<String, String> blockNames = new HashMap<>();
-    private MethodNode clInitBlocks = null;
-    private MethodNode clInitBet = null;
+    private MethodNode blocksClinit = null;
+    private Frame<SourceValue>[] blocksFrames = null;
+    private MethodNode betClinit = null;
     private int matched = 0;
 
     public BFBlocksVisitor(ProposalCollector collector) {
@@ -30,7 +31,10 @@ public class BFBlocksVisitor extends ClassInitVisitor {
         super.visitEnd();
         matched++;
 
-        if (matched == 2 && clInitBlocks != null && clInitBet != null) {
+        if (matched == 2 && blocksClinit != null && blocksFrames != null && betClinit != null) {
+            System.out.println(blocksClinit.name);
+            System.out.println(betClinit.name);
+            analyzeBlocks(blocksFrames);
             analyzeBET();
         }
     }
@@ -40,19 +44,20 @@ public class BFBlocksVisitor extends ClassInitVisitor {
         System.out.println(className);
         switch (className) {
             case BF_BLOCKS -> {
-                clInitBlocks = clInit;
-                analyzeBlocks(frames);
+                blocksClinit = clInit;
+                blocksFrames = frames;
             }
             case BF_BLOCK_ENTITY_TYPES -> {
-                clInitBet = clInit;
+                betClinit = clInit;
             }
         }
     }
 
     private void analyzeBlocks(Frame<SourceValue>[] frames) {
         System.out.println("analyzeBlocks");
-        for (int i = 0; i < clInitBlocks.instructions.size() - 1; i++) {
-            var match = LdcStringForInvokeVisitor.matchInvokePutPattern(className, clInitBlocks.instructions, i, Opcodes.INVOKEVIRTUAL);
+        System.out.println("- instructions: " + blocksClinit.instructions.size());
+        for (int i = 0; i < blocksClinit.instructions.size() - 1; i++) {
+            var match = LdcStringForInvokeVisitor.matchInvokePutPattern(className, blocksClinit.instructions, i, Opcodes.INVOKEVIRTUAL);
             if (match == null) {
                 continue;
             }
@@ -75,11 +80,13 @@ public class BFBlocksVisitor extends ClassInitVisitor {
 
     private void analyzeBET() {
         System.out.println("analyzeBET");
+        System.out.println("- blocks: " + blockNames.size());
+
         MatchTwoResult<FieldInsnNode, MethodInsnNode> lastBlockGet = null;
 
-        for (int i = 0; i < clInitBet.instructions.size() - 1; i++) {
+        for (int i = 0; i < betClinit.instructions.size() - 1; i++) {
             var match1 = matchTwoInsns(
-                    clInitBet.instructions, i,
+                    betClinit.instructions, i,
                     FieldInsnNode.class, MethodInsnNode.class,
                     Opcodes.GETSTATIC, Opcodes.INVOKEVIRTUAL
             );
@@ -91,7 +98,7 @@ public class BFBlocksVisitor extends ClassInitVisitor {
                 continue;
             }
 
-            var match2 = LdcStringForInvokeVisitor.matchInvokePutPattern(className, clInitBet.instructions, i, Opcodes.INVOKEVIRTUAL);
+            var match2 = LdcStringForInvokeVisitor.matchInvokePutPattern(className, betClinit.instructions, i, Opcodes.INVOKEVIRTUAL);
             if (match2 == null || lastBlockGet == null) {
                 continue;
             }
@@ -108,6 +115,8 @@ public class BFBlocksVisitor extends ClassInitVisitor {
 
             if (blockNames.containsKey(lastBlock.name)) {
                 collector.collectField(BF_BLOCK_ENTITY_TYPES, insn2.name, insn2.desc, blockNames.get(lastBlock.name));
+            } else {
+                System.out.println("[BET] unknown block " + lastBlock.name);
             }
         }
     }

@@ -1,8 +1,8 @@
-CLASS com/boehmod/blockfront/unnamed/BF_891 com/boehmod/blockfront/common/match/MapVoteEntry
+CLASS com/boehmod/blockfront/unnamed/BF_891 com/boehmod/blockfront/game/GameVoteOption
 	FIELD field_3572 gameUUID Ljava/util/UUID;
 	FIELD field_3574 gameType Ljava/lang/String;
 	FIELD field_3576 playerVotes Ljava/util/Set;
-	FIELD field_3577 mapName Ljava/lang/String;
+	FIELD field_3577 name Ljava/lang/String;
 	FIELD field_6405 nationTypes Ljava/util/List;
 	FIELD field_6746 environmentName Ljava/lang/String;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_677;)V
@@ -15,6 +15,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_891 com/boehmod/blockfront/common/match/
 	METHOD method_5537 getNationTypes ()Ljava/util/List;
 	METHOD method_5714 getEnvironmentName ()Ljava/lang/String;
 	METHOD method_6763 read (Lio/netty/buffer/ByteBuf;)V
-		ARG 1 burf
+		ARG 1 buf
 	METHOD method_6764 write (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf

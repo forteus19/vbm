@@ -15,6 +15,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 	FIELD field_7212 playerGames Ljava/util/Map;
 	FIELD field_7990 gamesByName Ljava/util/Map;
 	FIELD field_7991 gamesByUuid Ljava/util/Map;
+	FIELD field_9815 batchedStatManager Lcom/boehmod/blockfront/unnamed/BF_1591;
 	METHOD <init> (Lcom/boehmod/blockfront/common/player/c;)V
 		ARG 1 playerDataHandler
 	METHOD method_1549 getPlayerDataHandler ()Lcom/boehmod/blockfront/common/player/c;
@@ -100,3 +101,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 1 level
 		ARG 2 player
 		ARG 3 game
+	METHOD method_9231 getBatchedStatManager ()Lcom/boehmod/blockfront/unnamed/BF_1591;

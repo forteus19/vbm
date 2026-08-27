@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1602 com/boehmod/blockfront/client/event/BFMovementInputSubscriber
+	METHOD method_9319 onMovementInputUpdate (Lnet/neoforged/neoforge/client/event/MovementInputUpdateEvent;)V
+		ARG 0 event

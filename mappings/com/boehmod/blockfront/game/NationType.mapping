@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_928 com/boehmod/blockfront/common/match/NationType
+CLASS com/boehmod/blockfront/unnamed/BF_928 com/boehmod/blockfront/game/NationType
 	FIELD field_7541 KEY_MAP Ljava/util/Map;
 	FIELD field_7542 tag Ljava/lang/String;
 	FIELD field_7543 name Ljava/lang/String;

@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/common/match/Loadout
+CLASS com/boehmod/blockfront/unnamed/BF_759 com/boehmod/blockfront/game/Loadout
 	FIELD field_3250 extra Ljava/util/List;
 	FIELD field_3251 primary Lnet/minecraft/world/item/ItemStack;
 	FIELD field_3252 secondary Lnet/minecraft/world/item/ItemStack;

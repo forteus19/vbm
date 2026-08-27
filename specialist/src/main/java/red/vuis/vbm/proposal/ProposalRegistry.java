@@ -13,7 +13,6 @@ import red.vuis.vbm.proposal.visitor.ProposalVisitor;
 import red.vuis.vbm.proposal.visitor.RecordVisitor;
 import red.vuis.vbm.util.VbmUtils;
 
-import java.util.Iterator;
 import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -76,22 +75,18 @@ public final class ProposalRegistry {
     private ProposalRegistry() {}
 
     public static void collect(ProposalCollector collector, Iterable<ClassNode> classNodes) {
-        collect(collector, classNodes.iterator());
-    }
-
-    public static void collect(ProposalCollector collector, Iterator<ClassNode> classNodes) {
         ProposalVisitor[] visitors = new ProposalVisitor[ENTRIES.size()];
         for (int i = 0; i < visitors.length; i++) {
             visitors[i] = ENTRIES.get(i).constructor().apply(collector);
         }
 
-        classNodes.forEachRemaining(node -> {
+        for (ClassNode node : classNodes) {
             for (int i = 0; i < visitors.length; i++) {
                 if (ENTRIES.get(i).test(node)) {
                     node.accept(visitors[i]);
                 }
             }
-        });
+        }
 
         collector.finished();
     }

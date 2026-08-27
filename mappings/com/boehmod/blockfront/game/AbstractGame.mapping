@@ -5,7 +5,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_2825 combatManager Lcom/boehmod/blockfront/unnamed/BF_684;
 	FIELD field_2826 status Lcom/boehmod/blockfront/unnamed/BF_685;
 	FIELD field_2827 dominatingManager Lcom/boehmod/blockfront/unnamed/BF_767;
-	FIELD field_2828 mapVoteManager Lcom/boehmod/blockfront/unnamed/BF_892;
+	FIELD field_2828 voteManager Lcom/boehmod/blockfront/unnamed/BF_892;
 	FIELD field_2829 map Lcom/boehmod/blockfront/unnamed/BF_927;
 	FIELD field_2830 stageManager Lcom/boehmod/blockfront/unnamed/BF_939;
 	FIELD field_2831 name Ljava/lang/String;
@@ -54,7 +54,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_2590 getCombatManager ()Lcom/boehmod/blockfront/unnamed/BF_684;
 	METHOD method_2591 getStatus ()Lcom/boehmod/blockfront/unnamed/BF_685;
 	METHOD method_2592 getDominatingManager ()Lcom/boehmod/blockfront/unnamed/BF_767;
-	METHOD method_2594 getMapVoteManager ()Lcom/boehmod/blockfront/unnamed/BF_892;
+	METHOD method_2594 getVoteManager ()Lcom/boehmod/blockfront/unnamed/BF_892;
 	METHOD method_2595 getMap ()Lcom/boehmod/blockfront/unnamed/BF_927;
 	METHOD method_2596 getAlliesDivision ()Lcom/boehmod/blockfront/unnamed/BF_929;
 	METHOD method_2597 createFirstStage ()Lcom/boehmod/blockfront/unnamed/BF_938;

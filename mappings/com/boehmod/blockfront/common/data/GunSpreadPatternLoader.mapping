@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1350 com/boehmod/blockfront/common/data/GunSpreadPatternLoader
+	METHOD method_7133 bootstrap ()V

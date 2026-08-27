@@ -4,8 +4,19 @@ CLASS com/boehmod/blockfront/unnamed/BF_53 com/boehmod/blockfront/client/gui/wid
 	FIELD field_292 alignment Lcom/boehmod/blockfront/unnamed/BF_53$BF_55;
 	FIELD field_293 textStyle Lcom/boehmod/blockfront/unnamed/BF_53$BF_56;
 	FIELD field_294 enabledPredicate Ljava/util/function/Predicate;
+	FIELD field_295 downSound Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_296 color I
 	FIELD field_297 width I
 	FIELD field_298 height I
+	FIELD field_307 onHover Lnet/minecraft/client/gui/components/Button$OnPress;
+	FIELD field_314 tip Lnet/minecraft/network/chat/Component;
+	METHOD <init> (IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 message
+		ARG 6 onPress
 	METHOD method_370 size (II)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 width
 		ARG 2 height
@@ -17,12 +28,18 @@ CLASS com/boehmod/blockfront/unnamed/BF_53 com/boehmod/blockfront/client/gui/wid
 		ARG 1 textStyle
 	METHOD method_378 enabled (Ljava/util/function/Predicate;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 predicate
+	METHOD method_382 onHover (Lnet/minecraft/client/gui/components/Button$OnPress;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 onHover
 	METHOD method_383 tip (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 tip
 	METHOD method_384 texture (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 texture
+	METHOD method_386 downSound (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 downSound
 	METHOD method_394 size (I)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 size
 	METHOD method_395 color (I)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 color
 	METHOD method_397 hoverColor (I)Lcom/boehmod/blockfront/unnamed/BF_53;
 	CLASS BF_54 DisplayType
 	CLASS BF_55 Alignment

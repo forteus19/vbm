@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_394 com/boehmod/blockfront/client/sound/GunHeatSound
+CLASS com/boehmod/blockfront/unnamed/BF_394 com/boehmod/blockfront/client/sound/instance/GunHeatSoundInstance
 	METHOD <init> (Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
 		ARG 1 event
 		ARG 2 source

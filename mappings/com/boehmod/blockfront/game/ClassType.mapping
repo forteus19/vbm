@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_924 com/boehmod/blockfront/common/match/MatchClass
+CLASS com/boehmod/blockfront/unnamed/BF_924 com/boehmod/blockfront/game/ClassType
 	FIELD field_7517 RESOURCE_LOCATION_MAP Ljava/util/Map;
 	FIELD field_7518 KEY_MAP Ljava/util/Map;
 	FIELD field_7519 key Ljava/lang/String;
