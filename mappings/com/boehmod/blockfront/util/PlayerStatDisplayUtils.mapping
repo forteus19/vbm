@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1622 com/boehmod/blockfront/util/PlayerStatDisplayUtils
+	METHOD method_9405 getAsString (Lcom/boehmod/bflib/cloud/common/player/display/PlayerStatDisplay;D)Ljava/lang/String;
+		ARG 0 statDisplay
+		ARG 1 value
+	METHOD method_9406 getFormatting (Lcom/boehmod/bflib/cloud/common/player/display/PlayerStatDisplay;D)Lnet/minecraft/ChatFormatting;
+		ARG 0 statDisplay
+		ARG 1 value
+	METHOD method_9407 append (Lnet/minecraft/network/chat/MutableComponent;Lcom/boehmod/bflib/cloud/common/player/AbstractPlayerCloudData;Z)V
+		ARG 0 component
+		ARG 1 data
+		ARG 2 hover

@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1617 com/boehmod/blockfront/client/render/trail/BFTrailRenderer
+	METHOD method_9375 render (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/Camera;Lnet/minecraft/resources/ResourceLocation;Ljava/util/List;F)V
+		ARG 1 minecraft
+		ARG 2 gameRenderer
+		ARG 3 camera
+		ARG 4 key

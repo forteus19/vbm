@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1621 com/boehmod/blockfront/client/render/trail/BFTrailPoint
+	FIELD field_10034 age I

@@ -1,0 +1,21 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1616 com/boehmod/blockfront/client/render/trail/BFTrailManager
+	FIELD field_9982 renderer Lcom/boehmod/blockfront/unnamed/BF_1617;
+	FIELD field_9983 trails Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+	FIELD field_9984 identifiedTrails Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+	FIELD field_9985 trailsByTexture Lit/unimi/dsi/fastutil/objects/Object2ObjectMap;
+	METHOD method_9363 getOrCreate (ILjava/util/function/Supplier;)Lcom/boehmod/blockfront/unnamed/BF_1619;
+		ARG 1 id
+		ARG 2 constructor
+	METHOD method_9364 add (Lcom/boehmod/blockfront/unnamed/BF_1619;)V
+		ARG 1 trail
+	METHOD method_9365 (Lcom/boehmod/blockfront/unnamed/BF_1619;)Z
+		ARG 0 trail
+	METHOD method_9367 render (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/Camera;F)V
+		ARG 1 minecraft
+		ARG 2 gameRenderer
+		ARG 3 camera
+		ARG 4 partialTick
+	METHOD method_9368 clear ()V
+	METHOD method_9369 size ()I
+	METHOD method_9370 (Lcom/boehmod/blockfront/unnamed/BF_1619;)Z
+		ARG 0 trail

@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1564 com/boehmod/blockfront/server/ac/bullet/BulletValidationContext
+	METHOD method_9001 getPotentialCollision ()Lcom/boehmod/blockfront/unnamed/BF_1193;

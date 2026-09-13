@@ -17,6 +17,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	FIELD field_2874 game Lcom/boehmod/blockfront/unnamed/BF_677;
 	FIELD field_7133 pings Ljava/util/Map;
 	FIELD field_7215 hasRatedMap Z
+	FIELD field_8115 serverNotifications Ljava/util/List;
+	FIELD field_8116 clientNotifications Ljava/util/List;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_273;)V
 		ARG 1 manager
 		ARG 2 game
@@ -188,6 +190,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 3 key
 	METHOD method_7270 renderFpsDisplay (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;)V
 	METHOD method_7271 renderGameElements (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/mojang/blaze3d/vertex/PoseStack;IF)V
+	METHOD method_7273 getUnseenTips ()Ljava/util/List;
 	METHOD method_8357 addNotification (Ljava/util/List;I)V
 		ARG 1 lines
 		ARG 2 time
@@ -195,6 +198,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 1 lines
 		ARG 2 time
 		ARG 3 key
+	METHOD method_8682 addNotification (Ljava/util/List;ILjava/lang/String;Lnet/minecraft/world/phys/Vec3;II)V
+		ARG 1 lines
+		ARG 2 time
+		ARG 3 key
+		ARG 4 position
+		ARG 5 pointerColor
+		ARG 6 backgroundColor
 	METHOD method_8683 addNotification (Ljava/util/List;Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/world/phys/Vec3;II)V
 		ARG 1 target
 		ARG 2 key

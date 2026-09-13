@@ -1,3 +1,7 @@
 CLASS com/boehmod/blockfront/unnamed/BF_820 com/boehmod/blockfront/game/tag/IAllowsRegeneration
+	METHOD method_3418 getRegenerationAmount (Lnet/minecraft/world/entity/player/Player;)F
+		ARG 1 player
+	METHOD method_3419 getRegenerationTicks (Lnet/minecraft/world/entity/player/Player;)I
+		ARG 1 player
 	METHOD method_3420 playerCanRegenerate (Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 player

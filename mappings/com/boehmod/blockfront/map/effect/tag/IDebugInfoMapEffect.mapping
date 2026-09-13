@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1393 com/boehmod/blockfront/map/effect/tag/IDebugInfoMapEffect
+	METHOD method_7598 addDebugInfo (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_677;Ljava/util/List;)V
+		ARG 1 manager
+		ARG 2 game
+		ARG 3 lines

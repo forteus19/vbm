@@ -32,6 +32,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	FIELD field_8110 manager Lcom/boehmod/blockfront/unnamed/BF_445;
 	FIELD field_8111 REBALANCE_NOTIFICATION Lnet/minecraft/network/chat/Component;
 	FIELD field_8113 envVersion I
+	FIELD field_9058 CONCLUDED_MESSAGE Lnet/minecraft/network/chat/Component;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;)V
 		ARG 1 manager
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_445;Ljava/lang/String;Ljava/lang/String;)V
@@ -77,6 +78,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 2 dataHandler
 		ARG 3 level
 		ARG 4 players
+	METHOD method_2604 sendMatchReport (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_756;Lcom/boehmod/blockfront/unnamed/BF_941;)V
+		ARG 1 manager
+		ARG 2 winningTeam
+		ARG 3 topPlayersStat
 	METHOD method_2605 playerJoinTeam (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/unnamed/BF_690;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/server/level/ServerPlayer;)Z
 		ARG 1 manager
 		ARG 2 joinType
@@ -237,8 +242,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 	METHOD method_7260 refreshMapEnvironment ()V
 	METHOD method_7262 clearClass (Ljava/util/UUID;)V
 		ARG 1 playerUuid
+	METHOD method_8355 createMatchReportData (Lcom/boehmod/blockfront/unnamed/BF_756;)Lcom/boehmod/bflib/cloud/common/mm/report/IMatchReportData;
+		ARG 1 winningTeam
 	METHOD method_8394 getSpectatorScope ()Lcom/boehmod/blockfront/unnamed/BF_1491;
 	METHOD method_8396 shouldSpectateOnRespawn ()Z
 	METHOD method_8397 allowsSpectators ()Z
 	METHOD method_8600 getDeadScope ()Lcom/boehmod/blockfront/unnamed/BF_1523;
+	METHOD method_8681 getTeamNames ()Ljava/util/Collection;
 	CLASS BF_678 ErrorType

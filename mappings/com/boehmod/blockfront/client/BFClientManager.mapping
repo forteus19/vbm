@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClientManager
+	FIELD field_10042 trailManager Lcom/boehmod/blockfront/unnamed/BF_1616;
 	FIELD field_2544 corpseManager Lcom/boehmod/blockfront/unnamed/BF_3;
 	FIELD field_2545 discordManager Lcom/boehmod/blockfront/unnamed/BF_19;
 	FIELD field_2546 challengeManager Lcom/boehmod/blockfront/unnamed/BF_203;
@@ -7,6 +8,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_2549 skinFetcher Lcom/boehmod/blockfront/unnamed/BF_410;
 	FIELD field_2550 skyTracker Lcom/boehmod/blockfront/unnamed/BF_437;
 	FIELD field_2551 musicManager Lcom/boehmod/blockfront/unnamed/BF_438;
+	FIELD field_2552 updater Lcom/boehmod/blockfront/unnamed/BF_1542;
 	FIELD field_2553 matchMaking Lcom/boehmod/blockfront/unnamed/BF_550;
 	FIELD field_2554 cinematics Lcom/boehmod/blockfront/unnamed/BF_599;
 	FIELD field_2555 game Lcom/boehmod/blockfront/unnamed/BF_677;
@@ -26,6 +28,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	FIELD field_6835 potentialBulletCollisionManager Lcom/boehmod/blockfront/unnamed/BF_1198;
 	FIELD field_7214 bulletSpawnerHolder Lcom/boehmod/blockfront/unnamed/BF_1237;
 	FIELD field_7247 dailyReward Lcom/boehmod/bflib/cloud/packet/common/PacketDailyReward;
+	FIELD field_8031 MESSAGE_OKAY Lnet/minecraft/network/chat/Component;
+	FIELD field_9503 newsManager Lcom/boehmod/blockfront/unnamed/BF_1552;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft
 	METHOD method_2224 getCorpseManager ()Lcom/boehmod/blockfront/unnamed/BF_3;
@@ -35,6 +39,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_2229 getSkinFetcher ()Lcom/boehmod/blockfront/unnamed/BF_410;
 	METHOD method_2230 getSkyTracker ()Lcom/boehmod/blockfront/unnamed/BF_437;
 	METHOD method_2231 getMusicManager ()Lcom/boehmod/blockfront/unnamed/BF_438;
+	METHOD method_2232 getUpdater ()Lcom/boehmod/blockfront/unnamed/BF_1542;
 	METHOD method_2233 getMatchMaking ()Lcom/boehmod/blockfront/unnamed/BF_550;
 	METHOD method_2234 getCinematics ()Lcom/boehmod/blockfront/unnamed/BF_599;
 	METHOD method_2235 getGame ()Lcom/boehmod/blockfront/unnamed/BF_677;
@@ -102,3 +107,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 		ARG 4 game
 	METHOD method_8382 isGameSpectating ()Z
 	METHOD method_8383 isSpectating ()Z
+	METHOD method_8953 getNewsManager ()Lcom/boehmod/blockfront/unnamed/BF_1552;
+	METHOD method_9409 getTrailManager ()Lcom/boehmod/blockfront/unnamed/BF_1616;

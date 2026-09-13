@@ -1,7 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_268 com/boehmod/blockfront/client/event/BFShaderSubscriber
-	FIELD field_1597 INSTANCED_PARTICLE_ID Ljava/lang/String;
-	FIELD field_1598 instancedParticle Lnet/minecraft/client/renderer/ShaderInstance;
-	FIELD field_1599 INSTANCED_PARTICLE_RES Lnet/minecraft/resources/ResourceLocation;
-	METHOD method_1117 getInstancedParticle ()Lnet/minecraft/client/renderer/ShaderInstance;
-	METHOD method_1118 setInstancedParticle (Lnet/minecraft/client/renderer/ShaderInstance;)V
-		ARG 0 shader

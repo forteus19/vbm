@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_268 com/boehmod/blockfront/client/event/BFParticleShaderSubscriber
+	FIELD field_1597 ID Ljava/lang/String;
+	FIELD field_1598 instancedParticle Lnet/minecraft/client/renderer/ShaderInstance;
+	FIELD field_1599 RESOURCE Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_1117 instancedParticle ()Lnet/minecraft/client/renderer/ShaderInstance;
+	METHOD method_1118 setInstancedParticle (Lnet/minecraft/client/renderer/ShaderInstance;)V
+		ARG 0 shader
+	METHOD method_1119 onRegisterShaders (Lnet/neoforged/neoforge/client/event/RegisterShadersEvent;)V
+		ARG 0 event

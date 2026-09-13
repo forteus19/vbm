@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1398 com/boehmod/blockfront/map/effect/SyncedMapEffect
+CLASS com/boehmod/blockfront/unnamed/BF_1398 com/boehmod/blockfront/map/effect/tag/ISyncedMapEffect
 	METHOD method_7607 read (Lio/netty/buffer/ByteBuf;)V
 		ARG 1 buf
 	METHOD method_7608 write (Lio/netty/buffer/ByteBuf;)V

@@ -76,6 +76,7 @@ public class BFBlocksVisitor extends ClassInitVisitor {
                 blockNames.put(insn2.name, javaName);
             }
         }
+        System.out.println("- blocks: " + blockNames.size());
     }
 
     private void analyzeBET() {

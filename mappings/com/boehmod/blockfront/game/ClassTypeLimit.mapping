@@ -1,0 +1,18 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1623 com/boehmod/blockfront/game/ClassTypeLimit
+	FIELD field_10070 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_10071 UNLIMITED Lcom/boehmod/blockfront/unnamed/BF_1623;
+	METHOD <init> (II)V
+		ARG 1 count
+		ARG 2 perPlayers
+	METHOD method_9417 of (I)Lcom/boehmod/blockfront/unnamed/BF_1623;
+		ARG 0 count
+	METHOD method_9418 of (II)Lcom/boehmod/blockfront/unnamed/BF_1623;
+		ARG 0 count
+		ARG 1 perPlayers
+	METHOD method_9419 asString ()Ljava/lang/String;
+	METHOD method_9420 parse (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;
+		ARG 0 str
+	METHOD method_9422 isUnlimited ()Z
+	METHOD method_9424 isRatio ()Z
+	METHOD method_9425 getMaxPlayers (I)I
+		ARG 1 numPlayers

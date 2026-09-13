@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1318 com/boehmod/blockfront/client/world/BFClouds
+	METHOD method_7030 render (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/multiplayer/ClientLevel;ILcom/mojang/blaze3d/vertex/PoseStack;Lorg/joml/Matrix4f;Lorg/joml/Matrix4f;FDDD)Z
+		ARG 0 minecraft
+		ARG 1 level
+		ARG 3 poseStack

@@ -1,5 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_79 com/boehmod/blockfront/client/event/BFGuiSubscriber
-	METHOD method_434 onRenderDebugText (Lnet/neoforged/neoforge/client/event/CustomizeGuiOverlayEvent$DebugText;)V
+	METHOD method_434 onCustomizeDebugText (Lnet/neoforged/neoforge/client/event/CustomizeGuiOverlayEvent$DebugText;)V
 		ARG 0 event
 	METHOD method_435 onRenderGuiLayerPre (Lnet/neoforged/neoforge/client/event/RenderGuiLayerEvent$Pre;)V
 		ARG 0 event

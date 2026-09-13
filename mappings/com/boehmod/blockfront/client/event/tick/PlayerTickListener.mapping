@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_35 com/boehmod/blockfront/client/event/tick/PlayerTickable
+CLASS com/boehmod/blockfront/unnamed/BF_35 com/boehmod/blockfront/client/event/tick/PlayerTickListener
 	FIELD field_145 FLASH_TIMER F
 	FIELD field_146 FLASH_TIMER_PREV F
 	FIELD field_155 inspectionBlurPrev F

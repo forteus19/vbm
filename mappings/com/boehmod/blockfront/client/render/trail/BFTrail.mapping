@@ -1,0 +1,27 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1619 com/boehmod/blockfront/client/render/trail/BFTrail
+	FIELD field_10006 config Lcom/boehmod/blockfront/unnamed/BF_1620;
+	FIELD field_10008 x D
+	FIELD field_10009 y D
+	FIELD field_10010 z D
+	FIELD field_10011 prevX D
+	FIELD field_10012 prevY D
+	FIELD field_10013 prevZ D
+	FIELD field_10014 distance D
+	FIELD field_10015 prevDistance D
+	FIELD field_10016 points Lit/unimi/dsi/fastutil/objects/ObjectArrayList;
+	FIELD field_10017 hasPosition Z
+	FIELD field_10018 active Z
+	FIELD field_10022 ticksSinceUpdate I
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1620;)V
+		ARG 1 config
+	METHOD method_9383 getStartHalfWidth ()F
+	METHOD method_9384 getEndHalfWidth ()F
+	METHOD method_9385 getTextureLengthBlocks ()F
+	METHOD method_9386 shouldRemove ()Z
+	METHOD method_9388 getConfig ()Lcom/boehmod/blockfront/unnamed/BF_1620;
+	METHOD method_9391 (Lcom/boehmod/blockfront/unnamed/BF_1621;)Z
+		ARG 1 point
+	METHOD method_9392 move (Lnet/minecraft/world/phys/Vec3;I)V
+		ARG 1 position
+	METHOD method_9393 getPointLifetimeTicks ()I
+	METHOD method_9398 getPoints ()Ljava/util/List;

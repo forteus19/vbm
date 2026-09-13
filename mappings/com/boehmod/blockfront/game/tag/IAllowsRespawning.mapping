@@ -1,2 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_827 com/boehmod/blockfront/game/tag/IAllowsRespawning
-	METHOD method_3433 getSpawnProLength ()I
+	METHOD method_3433 getSpawnProtectionTicks ()I
+	METHOD method_3434 shouldCancelSpawnProtection (Ljava/util/UUID;)Z
+		ARG 1 uuid
+	METHOD method_3435 shouldCancelSpawnProtectionOnShoot (Ljava/util/UUID;)Z
+		ARG 1 uuid

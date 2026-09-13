@@ -13,6 +13,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_476 com/boehmod/blockfront/common/player
 	FIELD field_6326 STATUS_PARTY_COMPONENT Lnet/minecraft/network/chat/Component;
 	FIELD field_6679 isDiscordLinked Z
 	FIELD field_6973 isPatreonLinked Z
+	FIELD field_9161 STATUS_SPECTATING Lnet/minecraft/network/chat/Component;
 	METHOD <init> (Ljava/util/UUID;)V
 		ARG 1 uuid
 	METHOD getPunishmentCount (Lcom/boehmod/bflib/cloud/common/player/PunishmentType;)I

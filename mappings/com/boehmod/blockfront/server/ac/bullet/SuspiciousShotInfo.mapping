@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1563 com/boehmod/blockfront/server/ac/bullet/SuspiciousShot
+CLASS com/boehmod/blockfront/unnamed/BF_1563 com/boehmod/blockfront/server/ac/bullet/SuspiciousShotInfo
 	METHOD <init> (Lcom/boehmod/bflib/cloud/common/ac/SuspiciousShotReason;Ljava/lang/String;)V
 		ARG 1 reason
 		ARG 2 detail

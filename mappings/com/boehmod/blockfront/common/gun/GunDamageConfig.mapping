@@ -1,5 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_951 com/boehmod/blockfront/common/gun/GunDamageConfig
 	FIELD field_3853 entries Lit/unimi/dsi/fastutil/floats/Float2ObjectMap;
+	FIELD field_8503 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_8504 INSTANCES Ljava/util/Map;
+	FIELD field_8505 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_951;
 	METHOD <init> (FF)V
 		ARG 1 body
 		ARG 2 head
@@ -7,4 +10,16 @@ CLASS com/boehmod/blockfront/unnamed/BF_951 com/boehmod/blockfront/common/gun/Gu
 		ARG 1 distance
 		ARG 2 body
 		ARG 3 head
+	METHOD method_3950 getEntry (F)Lit/unimi/dsi/fastutil/floats/FloatFloatPair;
+		ARG 1 distance
 	METHOD method_3951 getEntries ()Ljava/util/Map;
+	METHOD method_8011 scale (F)Lcom/boehmod/blockfront/unnamed/BF_951;
+		ARG 1 scalar
+	METHOD method_8014 getByResourceLocation (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_951;
+		ARG 0 rl
+	METHOD method_8015 register (Lnet/minecraft/resources/ResourceLocation;Lcom/boehmod/blockfront/unnamed/BF_951;)V
+		ARG 0 rl
+		ARG 1 config
+	METHOD method_8016 clearInstances ()V
+	CLASS BF_1453 EntryCodec
+		FIELD field_8506 CODEC Lcom/mojang/serialization/Codec;

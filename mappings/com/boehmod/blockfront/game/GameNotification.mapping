@@ -17,6 +17,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1379 com/boehmod/blockfront/game/GameNot
 	METHOD method_7249 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;IIF)V
 	METHOD method_7250 resetTime ()V
 	METHOD method_7251 getTime ()I
+	METHOD method_7253 update ()Z
 	METHOD method_8351 getLines ()Ljava/util/List;
 	METHOD method_8352 convertToVisualOrderText (Ljava/util/List;)Ljava/util/List;
 	METHOD method_8704 positioned (Lnet/minecraft/world/phys/Vec3;II)Lcom/boehmod/blockfront/unnamed/BF_1379;

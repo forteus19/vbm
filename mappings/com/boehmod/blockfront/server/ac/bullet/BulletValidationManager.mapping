@@ -7,3 +7,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_1192 com/boehmod/blockfront/server/ac/bu
 		ARG 1 potentialCollisionManager
 	METHOD method_5996 runChecks (Lcom/boehmod/blockfront/unnamed/BF_1198;)V
 		ARG 0 potentialCollisionManager
+	METHOD method_5998 logSuspiciousShot (Lcom/boehmod/blockfront/unnamed/BF_1564;Lcom/boehmod/bflib/cloud/common/ac/SuspiciousShotReason;Ljava/lang/String;)V
+		ARG 0 context
+		ARG 1 reason
+		ARG 2 detail
+	METHOD method_8991 runCheckList (Ljava/util/List;Lcom/boehmod/blockfront/unnamed/BF_1564;)Lcom/boehmod/blockfront/unnamed/BF_1563;
+		ARG 0 checkList
+		ARG 1 context

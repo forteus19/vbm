@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1562 com/boehmod/blockfront/server/ac/bullet/BulletChecker
+	METHOD check (Lcom/boehmod/blockfront/unnamed/BF_1564;)Lcom/boehmod/blockfront/unnamed/BF_1563;
+		ARG 1 context
