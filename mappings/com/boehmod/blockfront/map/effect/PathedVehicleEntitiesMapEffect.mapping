@@ -7,6 +7,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_734 com/boehmod/blockfront/map/effect/Pa
 	FIELD field_3122 sound Ljava/util/function/Supplier;
 	FIELD field_3123 soundPaused Ljava/util/function/Supplier;
 	FIELD field_3124 soundOnFinish Ljava/util/function/Supplier;
-	FIELD field_3125 entityType Ljava/util/function/Supplier;
-	FIELD field_3126 blockType Ljava/util/function/Supplier;
 	FIELD field_7390 CODEC Lcom/mojang/serialization/MapCodec;

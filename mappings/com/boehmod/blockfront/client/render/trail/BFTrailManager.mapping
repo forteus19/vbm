@@ -10,11 +10,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1616 com/boehmod/blockfront/client/rende
 		ARG 1 trail
 	METHOD method_9365 (Lcom/boehmod/blockfront/unnamed/BF_1619;)Z
 		ARG 0 trail
-	METHOD method_9367 render (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/Camera;F)V
-		ARG 1 minecraft
-		ARG 2 gameRenderer
-		ARG 3 camera
-		ARG 4 partialTick
 	METHOD method_9368 clear ()V
 	METHOD method_9369 size ()I
 	METHOD method_9370 (Lcom/boehmod/blockfront/unnamed/BF_1619;)Z

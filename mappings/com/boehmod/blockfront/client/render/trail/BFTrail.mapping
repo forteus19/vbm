@@ -21,7 +21,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_1619 com/boehmod/blockfront/client/rende
 	METHOD method_9388 getConfig ()Lcom/boehmod/blockfront/unnamed/BF_1620;
 	METHOD method_9391 (Lcom/boehmod/blockfront/unnamed/BF_1621;)Z
 		ARG 1 point
-	METHOD method_9392 move (Lnet/minecraft/world/phys/Vec3;I)V
-		ARG 1 position
 	METHOD method_9393 getPointLifetimeTicks ()I
 	METHOD method_9398 getPoints ()Ljava/util/List;

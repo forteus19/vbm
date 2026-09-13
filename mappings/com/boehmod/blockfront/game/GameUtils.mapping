@@ -385,9 +385,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 	METHOD method_2966 isPlayerUnavailable (Lnet/minecraft/world/entity/player/Player;Lcom/boehmod/blockfront/common/player/b;)Z
 		ARG 0 player
 		ARG 1 data
-	METHOD method_2968 canSeeSky (Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;)Z
-		ARG 0 view
-		ARG 1 blockPos
 	METHOD method_2969 playSound (Lnet/minecraft/world/level/Level;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FF)V
 		ARG 0 level
 		ARG 1 x
