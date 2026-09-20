@@ -10,8 +10,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_550 com/boehmod/blockfront/client/match/
 		ARG 1 searchGame
 	METHOD method_1903 setSearchRegion (Lcom/boehmod/bflib/cloud/common/mm/SearchRegion;)V
 		ARG 1 searchRegion
-	METHOD method_1904 (Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/Minecraft;Lcom/boehmod/bflib/cloud/common/mm/MatchParty;)V
-		ARG 2 party
 	METHOD method_1905 join (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Ljava/net/InetSocketAddress;)V
 		ARG 1 minecraft
 		ARG 2 manager

@@ -212,12 +212,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 2 scope
 		ARG 3 prefix
 		ARG 4 message
-	METHOD method_2914 sendToast (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
-		ARG 0 playerManager
-		ARG 1 team
-		ARG 2 title
-		ARG 3 message
-		ARG 4 type
 	METHOD method_2916 randomUUIDs (Ljava/util/Set;I)Ljava/util/Set;
 		ARG 0 uuids
 		ARG 1 amount
@@ -274,11 +268,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 0 playerUUID
 		ARG 1 header
 		ARG 2 message
-	METHOD method_2931 sendToast (Ljava/util/UUID;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
-		ARG 0 uuid
-		ARG 1 title
-		ARG 2 message
-		ARG 3 type
 	METHOD method_2932 playSound (Ljava/util/UUID;Lnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;)V
 		ARG 0 uuid
 		ARG 1 sound
@@ -306,8 +295,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 2 uuid
 	METHOD method_2938 (Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
 		ARG 1 uuid
-	METHOD method_2939 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;Ljava/util/UUID;)V
-		ARG 3 uuid
 	METHOD method_2940 (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;)V
 		ARG 2 uuid
 	METHOD method_2941 discardMatchEntities (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_682;)V
@@ -624,13 +611,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_689 com/boehmod/blockfront/game/GameUtil
 		ARG 3 message
 		ARG 4 time
 		ARG 5 key
-	METHOD method_8842 sendToast (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lcom/boehmod/blockfront/unnamed/BF_1541;Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_220;)V
-		ARG 0 playerManager
-		ARG 1 team
-		ARG 2 scope
-		ARG 3 title
-		ARG 4 message
-		ARG 5 type
 	METHOD method_8843 sendNotification (Lcom/boehmod/blockfront/unnamed/BF_682;Lcom/boehmod/blockfront/unnamed/BF_686;Lnet/minecraft/network/chat/Component;ILjava/lang/String;)V
 		ARG 0 playerManager
 		ARG 1 team

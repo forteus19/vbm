@@ -116,11 +116,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_682 com/boehmod/blockfront/game/Abstract
 	METHOD method_2772 onTickPlayer (Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/common/player/b;)V
 		ARG 1 player
 		ARG 2 playerData
-	METHOD method_2773 checkPlayerPunishments (Lnet/minecraft/server/level/ServerPlayer;Ljava/lang/String;Lcom/boehmod/blockfront/common/player/b;Lcom/boehmod/blockfront/unnamed/BF_476;)V
-		ARG 1 player
-		ARG 2 playerName
-		ARG 3 playerData
-		ARG 4 cloudData
 	METHOD method_2775 shouldAllowPlayerDamage (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/damagesource/DamageSource;)Z
 		ARG 1 entity
 		ARG 2 source
