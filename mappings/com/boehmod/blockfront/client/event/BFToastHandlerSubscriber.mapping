@@ -7,9 +7,5 @@ CLASS com/boehmod/blockfront/unnamed/BF_1652 com/boehmod/blockfront/client/event
 		ARG 0 event
 	METHOD method_9749 onScreenMouseButtonPressedPre (Lnet/neoforged/neoforge/client/event/ScreenEvent$MouseButtonPressed$Pre;)V
 		ARG 0 event
-	METHOD method_9750 onScreenMouseButtonReleasedPre (Lnet/neoforged/neoforge/client/event/ScreenEvent$MouseButtonReleased$Pre;)V
-		ARG 0 event
-	METHOD method_9751 onScreenMouseDraggedPre (Lnet/neoforged/neoforge/client/event/ScreenEvent$MouseDragged$Pre;)V
-		ARG 0 event
 	METHOD method_9752 onScreenRenderPost (Lnet/neoforged/neoforge/client/event/ScreenEvent$Render$Post;)V
 		ARG 0 event

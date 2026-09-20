@@ -9,11 +9,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1660 com/boehmod/blockfront/client/gui/t
 		ARG 0 mouseX
 		ARG 2 mouseY
 		ARG 4 button
-	METHOD method_9853 handleScreenMouseDragged (DI)Z
-		ARG 0 mouseX
-		ARG 2 button
-	METHOD method_9854 handleScreenMouseReleased (I)Z
-		ARG 0 button
 	METHOD method_9855 showToast (Lcom/boehmod/blockfront/unnamed/BF_1653;)V
 		ARG 0 toast
 	METHOD method_9873 handleMouseButton (Lnet/minecraft/client/Minecraft;II)Z
