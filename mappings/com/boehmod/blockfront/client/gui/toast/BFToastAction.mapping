@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1659 com/boehmod/blockfront/client/gui/toast/BFToastAction
+	METHOD <init> (Lnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)V
+		ARG 1 label
+		ARG 2 action

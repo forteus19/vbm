@@ -1,0 +1,66 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/toast/BFToast
+	FIELD field_10392 CHECK_ICON Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_10393 CROSS_ICON Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_10394 icon Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_10395 LOADING_ICON Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;
+	FIELD field_10397 state Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1657;
+	FIELD field_10398 acceptAction Lcom/boehmod/blockfront/unnamed/BF_1659;
+	FIELD field_10399 onResponse Lcom/boehmod/blockfront/unnamed/BF_1662;
+	FIELD field_10400 type Lcom/boehmod/blockfront/unnamed/BF_1663;
+	FIELD field_10402 visibleWhile Ljava/util/function/BooleanSupplier;
+	FIELD field_10405 animatedIcon Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;
+	FIELD field_10407 denyAction Lcom/boehmod/blockfront/unnamed/BF_1659;
+	FIELD field_10410 shouldNarrate Z
+	FIELD field_10457 iconTint I
+	FIELD field_10469 title Lnet/minecraft/network/chat/Component;
+	FIELD field_10470 message Lnet/minecraft/network/chat/Component;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;)V
+		ARG 1 builder
+	METHOD method_9765 shouldNarrate ()Z
+	METHOD method_9768 getAnimatedIcon ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;
+	METHOD method_9769 builder ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+	METHOD method_9770 getState ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1657;
+	METHOD method_9771 getAcceptAction ()Lcom/boehmod/blockfront/unnamed/BF_1659;
+	METHOD method_9772 getType ()Lcom/boehmod/blockfront/unnamed/BF_1663;
+	METHOD method_9784 getDenyAction ()Lcom/boehmod/blockfront/unnamed/BF_1659;
+	CLASS BF_1654 AnimatedIcon
+	CLASS BF_1656 Builder
+		FIELD field_10479 icon Lnet/minecraft/resources/ResourceLocation;
+		FIELD field_10480 acceptAction Lcom/boehmod/blockfront/unnamed/BF_1659;
+		FIELD field_10481 onResponse Lcom/boehmod/blockfront/unnamed/BF_1662;
+		FIELD field_10482 type Lcom/boehmod/blockfront/unnamed/BF_1663;
+		FIELD field_10484 visibleWhile Ljava/util/function/BooleanSupplier;
+		FIELD field_10485 animatedIcon Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;
+		FIELD field_10486 denyAction Lcom/boehmod/blockfront/unnamed/BF_1659;
+		FIELD field_10489 shouldNarrate Z
+		FIELD field_10494 title Lnet/minecraft/network/chat/Component;
+		FIELD field_10495 message Lnet/minecraft/network/chat/Component;
+		METHOD method_9814 build ()Lcom/boehmod/blockfront/unnamed/BF_1653;
+		METHOD method_9817 animatedIcon (Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 animatedIcon
+		METHOD method_9818 onResponse (Lcom/boehmod/blockfront/unnamed/BF_1662;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 onResponse
+		METHOD method_9819 type (Lcom/boehmod/blockfront/unnamed/BF_1663;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 type
+		METHOD method_9823 visibleWhile (Ljava/util/function/BooleanSupplier;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 visibleWhile
+		METHOD method_9824 title (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 title
+		METHOD method_9826 icon (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 icon
+		METHOD method_9827 animatedIcon (Lnet/minecraft/resources/ResourceLocation;III)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 texture
+			ARG 2 frameSize
+			ARG 3 frames
+			ARG 4 ticksPerFrame
+		METHOD method_9828 shouldNarrate (Z)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 shouldNarrate
+		METHOD method_9830 message (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 message
+		METHOD method_9831 acceptAction (Lnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 label
+			ARG 2 action
+		METHOD method_9833 denyAction (Lnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 label
+			ARG 2 action
+	CLASS BF_1657 State

@@ -1,4 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1093 com/boehmod/blockfront/client/BFKeyMappings
+	FIELD field_10615 CINEMATIC_MODE Lnet/minecraft/client/KeyMapping;
+	FIELD field_10618 NOTIFICATION_ACCEPT Lnet/minecraft/client/KeyMapping;
+	FIELD field_10619 NOTIFICATION_DECLINE Lnet/minecraft/client/KeyMapping;
+	FIELD field_10620 NOTIFICATION_CURSOR Lnet/minecraft/client/KeyMapping;
 	FIELD field_4900 GUN_RELOAD Lnet/minecraft/client/KeyMapping;
 	FIELD field_4901 INSTANCES Ljava/util/List;
 	FIELD field_4902 GUN_FIREMODE Lnet/minecraft/client/KeyMapping;

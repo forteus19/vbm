@@ -1,0 +1,61 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1660 com/boehmod/blockfront/client/gui/toast/BFToasts
+	FIELD field_10520 TOOLTIP_LINK Lnet/minecraft/network/chat/Component;
+	FIELD field_10521 TOOLTIP_COPY Lnet/minecraft/network/chat/Component;
+	FIELD field_10522 TOOLTIP_DISMISS Lnet/minecraft/network/chat/Component;
+	FIELD field_10523 COPIED_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_10524 LINK_OPENED Lnet/minecraft/network/chat/Component;
+	METHOD method_9851 playClickSound ()V
+	METHOD method_9852 handleScreenMousePressed (DDI)Z
+		ARG 0 mouseX
+		ARG 2 mouseY
+		ARG 4 button
+	METHOD method_9853 handleScreenMouseDragged (DI)Z
+		ARG 0 mouseX
+		ARG 2 button
+	METHOD method_9854 handleScreenMouseReleased (I)Z
+		ARG 0 button
+	METHOD method_9855 showToast (Lcom/boehmod/blockfront/unnamed/BF_1653;)V
+		ARG 0 toast
+	METHOD method_9873 handleMouseButton (Lnet/minecraft/client/Minecraft;II)Z
+		ARG 0 minecraft
+		ARG 1 button
+		ARG 2 action
+	METHOD method_9876 render (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/GuiGraphics;F)V
+		ARG 0 minecraft
+		ARG 1 graphics
+		ARG 2 partialTick
+	METHOD method_9877 screenRender (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/GuiGraphics;FIIZ)V
+		ARG 0 minecraft
+		ARG 1 graphics
+		ARG 2 partialTick
+		ARG 3 mouseX
+		ARG 4 mouseY
+	METHOD method_9881 showToast (Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_1663;)V
+		ARG 0 message
+		ARG 1 type
+	METHOD method_9882 showToast (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;)V
+		ARG 0 title
+		ARG 1 message
+	METHOD method_9883 showToast (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_1663;)V
+		ARG 0 title
+		ARG 1 message
+		ARG 2 type
+	METHOD method_9884 showToast (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_1663;Z)V
+		ARG 0 title
+		ARG 1 message
+		ARG 2 type
+		ARG 3 shouldNarrate
+	METHOD method_9885 showToast (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Z)V
+		ARG 0 title
+		ARG 1 message
+		ARG 2 shouldNarrate
+	METHOD method_9887 playPitchVaried (Lnet/minecraft/sounds/SoundEvent;)V
+		ARG 0 sound
+	METHOD method_9889 addToast (Lcom/boehmod/blockfront/unnamed/BF_1653;)V
+		ARG 0 toast
+	METHOD method_9892 update (Lnet/minecraft/client/Minecraft;)Z
+		ARG 0 minecraft
+	METHOD method_9894 narrateToast (Lcom/boehmod/blockfront/unnamed/BF_1653;)V
+		ARG 0 toast
+	METHOD method_9895 showToast (Lnet/minecraft/network/chat/Component;)V
+		ARG 0 message

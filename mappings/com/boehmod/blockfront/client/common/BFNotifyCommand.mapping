@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1664 com/boehmod/blockfront/client/common/BFNotifyCommand
+	METHOD method_9916 register (Lnet/neoforged/neoforge/client/event/RegisterClientCommandsEvent;)V
+		ARG 0 event

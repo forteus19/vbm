@@ -1,0 +1,16 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1658 com/boehmod/blockfront/client/gui/toast/CloudToasts
+	FIELD field_10497 TITLE_CLOUD Lnet/minecraft/network/chat/Component;
+	FIELD field_10498 TITLE_FRIEND_REQUEST Lnet/minecraft/network/chat/Component;
+	FIELD field_10499 TITLE_PARTY_INVITE Lnet/minecraft/network/chat/Component;
+	FIELD field_10500 TITLE_CLAN_INVITE Lnet/minecraft/network/chat/Component;
+	FIELD field_10501 TITLE_MATCH_INVITE Lnet/minecraft/network/chat/Component;
+	FIELD field_10502 TITLE_ACHIEVEMENT Lnet/minecraft/network/chat/Component;
+	FIELD field_10503 TITLE_RANK_UP Lnet/minecraft/network/chat/Component;
+	FIELD field_10504 TITLE_DAILY_CHALLENGE Lnet/minecraft/network/chat/Component;
+	FIELD field_10505 TITLE_FRIEND_RANK_UP Lnet/minecraft/network/chat/Component;
+	FIELD field_10506 TITLE_FRIEND_PRESTIGE Lnet/minecraft/network/chat/Component;
+	FIELD field_10507 TITLE_CONNECTION_ESTABLISHED Lnet/minecraft/network/chat/Component;
+	FIELD field_10508 TITLE_CONNECTION_LOST Lnet/minecraft/network/chat/Component;
+	FIELD field_10509 ACCEPT_LABEL Lnet/minecraft/network/chat/Component;
+	FIELD field_10510 DECLINE_LABEL Lnet/minecraft/network/chat/Component;
+	FIELD field_10511 JOIN_LABEL Lnet/minecraft/network/chat/Component;

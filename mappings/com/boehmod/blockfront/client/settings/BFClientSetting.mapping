@@ -17,3 +17,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_431 com/boehmod/blockfront/client/settin
 		ARG 1 root
 	METHOD method_6720 write (Lcom/google/gson/JsonObject;)V
 		ARG 1 root
+	METHOD method_9977 forceSetting (Lcom/boehmod/blockfront/unnamed/BF_431;Z)Lcom/boehmod/blockfront/unnamed/BF_431;
+		ARG 1 target
+		ARG 2 value

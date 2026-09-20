@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1662 com/boehmod/blockfront/client/gui/toast/BFToastResponseListener
+	METHOD onResponse (Lcom/boehmod/bflib/cloud/common/NotificationResponse;Z)V
+		ARG 1 response
+		ARG 2 accepted

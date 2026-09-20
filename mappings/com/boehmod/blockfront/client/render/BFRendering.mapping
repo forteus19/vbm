@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/BFRendering
+	FIELD field_10391 lastRenderTime J
 	FIELD field_215 RANK_BG_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_216 DEFAULT_CALLINGCARD_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_217 RUNNING_TEXTURE Lnet/minecraft/resources/ResourceLocation;
@@ -1430,6 +1431,16 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 12 scale
 		ARG 13 color
 		ARG 14 displayModeNormal
+	METHOD method_9755 resetRealtimePartialTick ()V
+	METHOD method_9756 disableScissor (Lnet/minecraft/client/gui/GuiGraphics;)V
+		ARG 0 graphics
+	METHOD method_9757 enableScissor (Lnet/minecraft/client/gui/GuiGraphics;FFFF)V
+		ARG 0 graphics
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+	METHOD method_9758 getRealtimePartialTick ()F
 	CLASS BF_1225 ScreenClampData
 	CLASS BF_1525 GameBoundaryCageRenderer
 		FIELD field_9202 minY D

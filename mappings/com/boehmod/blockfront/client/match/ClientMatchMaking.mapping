@@ -24,3 +24,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_550 com/boehmod/blockfront/client/match/
 	METHOD method_1913 search (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;)V
 		ARG 1 minecraft
 		ARG 2 manager
+	METHOD method_9990 showSearchingToast (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_476;)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 cloudData
