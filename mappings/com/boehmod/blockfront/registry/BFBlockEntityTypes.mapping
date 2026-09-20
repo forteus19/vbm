@@ -1,3 +1,12 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1087 com/boehmod/blockfront/registry/BFBlockEntityTypes
+	FIELD field_10353 VEHICLE_PUPPET Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_4389 DR Lnet/neoforged/neoforge/registries/DeferredRegister;
+	FIELD field_4390 DECORATION_BLOCK Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4391 CONFIGURABLE_GEO_BLOCK Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4392 SWINGING_LOG Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4408 WALL_FLAG_TALL Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_4413 BICYCLE Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_4435 CRATES Ljava/util/Map;
+	FIELD field_8598 WALL_WIRE_ALARM Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_8599 CEILING_ALARM Lnet/neoforged/neoforge/registries/DeferredHolder;
+	FIELD field_8600 WALL_ALARM Lnet/neoforged/neoforge/registries/DeferredHolder;

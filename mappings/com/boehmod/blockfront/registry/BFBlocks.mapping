@@ -1,4 +1,8 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1091 com/boehmod/blockfront/registry/BFBlocks
+	FIELD field_10354 MAP_BARRIER_ALLIES Lcom/boehmod/blockfront/unnamed/BF_515;
+	FIELD field_10355 MAP_BARRIER_ALLIES_SOLID Lcom/boehmod/blockfront/unnamed/BF_515;
+	FIELD field_10356 MAP_BARRIER_AXIS Lcom/boehmod/blockfront/unnamed/BF_515;
+	FIELD field_10357 MAP_BARRIER_AXIS_SOLID Lcom/boehmod/blockfront/unnamed/BF_515;
 	FIELD field_4466 MUD Lcom/boehmod/blockfront/unnamed/BF_519;
 	FIELD field_4467 MUD_DARK Lcom/boehmod/blockfront/unnamed/BF_519;
 	FIELD field_4468 MAP_BARRIERS Lcom/boehmod/blockfront/unnamed/BF_515;

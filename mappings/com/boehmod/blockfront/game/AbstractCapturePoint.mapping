@@ -2,16 +2,25 @@ CLASS com/boehmod/blockfront/unnamed/BF_754 com/boehmod/blockfront/game/Abstract
 	FIELD field_3222 isBeingCaptured Z
 	FIELD field_3223 captureArea Lnet/minecraft/world/phys/AABB;
 	FIELD field_3224 name Ljava/lang/String;
+	FIELD field_3226 WAYPOINT_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3231 renderProgress F
+	FIELD field_3232 renderProgressPrev F
 	FIELD field_3236 captureTimer I
-	FIELD field_6358 gameManager Lcom/boehmod/blockfront/unnamed/BF_682;
+	FIELD field_6358 playerManager Lcom/boehmod/blockfront/unnamed/BF_682;
 	FIELD field_6359 cbTeam Lcom/boehmod/blockfront/unnamed/BF_686;
 	FIELD field_6360 cpTeam Lcom/boehmod/blockfront/unnamed/BF_686;
+	FIELD field_6362 nameComponent Lnet/minecraft/network/chat/Component;
 	FIELD field_9257 captureBox Lnet/minecraft/world/phys/AABB;
+	FIELD field_9623 distanceText Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_9624 nameRenderComponent Lnet/minecraft/network/chat/Component;
+	FIELD field_9625 nameRenderTextWidth F
+	FIELD field_9626 distanceTextWidth F
+	FIELD field_9627 nameRenderText Lnet/minecraft/util/FormattedCharSequence;
 	FIELD field_9899 flagPosition Lcom/boehmod/blockfront/unnamed/BF_692;
 	FIELD field_9900 flagHasBase Z
 	FIELD field_9902 flagHeight I
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_682;Lnet/minecraft/world/entity/player/Player;Ljava/lang/String;)V
-		ARG 1 gameManager
+		ARG 1 playerManager
 		ARG 2 player
 		ARG 3 name
 	METHOD method_3138 onUpdate (Lcom/boehmod/blockfront/unnamed/BF_445;Lcom/boehmod/blockfront/common/player/c;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
@@ -22,8 +31,34 @@ CLASS com/boehmod/blockfront/unnamed/BF_754 com/boehmod/blockfront/game/Abstract
 		ARG 5 players
 	METHOD method_3142 createCaptureArea ()Lnet/minecraft/world/phys/AABB;
 	METHOD method_3145 getCaptureArea ()Lnet/minecraft/world/phys/AABB;
+	METHOD method_5497 renderWaypoint (Lnet/minecraft/client/renderer/culling/Frustum;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/Camera;F)V
+		ARG 1 frustum
+		ARG 2 graphics
+		ARG 3 camera
+		ARG 4 renderTime
 	METHOD method_5501 updateClient (Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lcom/boehmod/blockfront/unnamed/BF_677;)V
 	METHOD method_5503 reset ()V
 	METHOD method_5504 updateIcon ()V
 	METHOD method_5505 getCbTeam ()Lcom/boehmod/blockfront/unnamed/BF_686;
-	METHOD method_5507 getCpTeam ()Lcom/boehmod/blockfront/unnamed/BF_686;
+	METHOD method_8593 getMaxCaptureProgress ()I
+	METHOD method_8695 getCaptureBox (I)Lnet/minecraft/world/phys/AABB;
+		ARG 1 radius
+	METHOD method_8696 isInRange (Lnet/minecraft/world/entity/Entity;I)Z
+		ARG 1 entity
+		ARG 2 radius
+	METHOD method_8697 getPlayerManager ()Lcom/boehmod/blockfront/unnamed/BF_682;
+	METHOD method_8698 getCpTeam ()Lcom/boehmod/blockfront/unnamed/BF_686;
+	METHOD method_9102 renderDistanceText (Lnet/minecraft/client/renderer/culling/Frustum;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;)V
+		ARG 1 frustum
+		ARG 2 poseStack
+		ARG 3 font
+		ARG 4 camera
+		ARG 5 bufferSource
+	METHOD method_9103 isWaypointVisible (Lnet/minecraft/client/renderer/culling/Frustum;)Z
+		ARG 1 frustum
+	METHOD method_9104 renderNameText (Lnet/minecraft/client/renderer/culling/Frustum;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/MultiBufferSource$BufferSource;)V
+		ARG 1 frustum
+		ARG 2 poseStack
+		ARG 3 font
+		ARG 4 camera
+		ARG 5 bufferSource

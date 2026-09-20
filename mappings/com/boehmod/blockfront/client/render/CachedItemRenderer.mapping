@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1570 com/boehmod/blockfront/client/render/CachedWeaponItemRenderer
+CLASS com/boehmod/blockfront/unnamed/BF_1570 com/boehmod/blockfront/client/render/CachedItemRenderer
 	FIELD field_9615 TEXTURES Lit/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap;
 	FIELD field_9618 COPIED_COMPONENTS Ljava/util/List;
 	METHOD method_9090 getTextureSize (F)I

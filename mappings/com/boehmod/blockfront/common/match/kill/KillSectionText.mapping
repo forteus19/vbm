@@ -1,1 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_778 com/boehmod/blockfront/common/match/kill/KillSectionText
+	FIELD field_3317 component Lnet/minecraft/network/chat/Component;
+	FIELD field_8106 width I
+	FIELD field_8107 text Lnet/minecraft/util/FormattedCharSequence;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;)V
+		ARG 1 component

@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_39 com/boehmod/blockfront/client/event/tick/HealthTickListener
+	FIELD field_183 health F
+	FIELD field_184 healthPrev F

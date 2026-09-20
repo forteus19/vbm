@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1645 com/boehmod/blockfront/common/gun/GunHeatSmokeConfigs
+	FIELD field_10324 NONE Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10325 PISTOL Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10326 REVOLVER Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10327 RIFLE Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10328 CARBINE Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10329 SMG Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10330 LMG Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10331 MG Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10332 SHOTGUN Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10333 ANTI_TANK Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10334 ROCKET Lcom/boehmod/blockfront/unnamed/BF_1644;

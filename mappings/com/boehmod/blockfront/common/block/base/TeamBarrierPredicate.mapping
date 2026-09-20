@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1637 com/boehmod/blockfront/common/block/base/TeamBarrierPredicate
+	FIELD field_10239 allies Z
+	FIELD field_10240 solid Z
+	METHOD <init> (ZZ)V
+		ARG 1 allies
+		ARG 2 solid

@@ -1,2 +1,21 @@
 CLASS com/boehmod/blockfront/unnamed/BF_681 com/boehmod/blockfront/game/CapturePointGameClient
 	FIELD field_2906 currentCapturePoint Lcom/boehmod/blockfront/unnamed/BF_754;
+	FIELD field_2907 CAPTURING_MESSAGE Ljava/lang/String;
+	FIELD field_2908 DEFENDING_MESSAGE Ljava/lang/String;
+	FIELD field_8128 currentStatusMessage Lnet/minecraft/network/chat/Component;
+	FIELD field_8762 PROGRESS_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_8763 PROGRESS_AXIS_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_8764 PROGRESS_ALLIES_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_8765 currentProgressTexture Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_9798 BLOCKING_MESSAGE Ljava/lang/String;
+	FIELD field_9898 flagPoleRenderer Lcom/boehmod/blockfront/unnamed/BF_1600;
+	METHOD method_2748 renderStatus (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;IIF)V
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 font
+		ARG 4 height
+		ARG 5 midX
+		ARG 6 delta
+	METHOD method_7277 updateRenderFields (Lcom/boehmod/blockfront/unnamed/BF_754;Lcom/boehmod/blockfront/unnamed/BF_686;)V
+		ARG 1 capturePoint
+		ARG 2 team

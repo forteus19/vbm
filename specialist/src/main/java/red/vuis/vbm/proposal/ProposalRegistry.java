@@ -5,7 +5,6 @@ import org.jetbrains.annotations.Nullable;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
 import red.vuis.vbm.proposal.visitor.AllClassesVisitor;
-import red.vuis.vbm.proposal.visitor.BFBlocksVisitor;
 import red.vuis.vbm.proposal.visitor.EnumVisitor;
 import red.vuis.vbm.proposal.visitor.LdcStringForInvokeVisitor;
 import red.vuis.vbm.proposal.visitor.PacketVisitor;
@@ -36,13 +35,9 @@ public final class ProposalRegistry {
                     node -> node.interfaces.contains(PacketVisitor.CUSTOM_PACKET_PAYLOAD)
             ),
             new VisitorEntry(
-                    BFBlocksVisitor::new,
-                    BFBlocksVisitor.BF_BLOCK_ENTITY_TYPES,
-                    BFBlocksVisitor.BF_BLOCKS
-            ),
-            new VisitorEntry(
                     collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKEVIRTUAL, 0, "register", "registerItem"),
                     /* BFAttachments */ "com/boehmod/blockfront/unnamed/BF_1110",
+                    /* BFBlocks */ "com/boehmod/blockfront/unnamed/BF_1091",
                     /* BFBlockAttributes */ "com/boehmod/blockfront/unnamed/BF_1086",
                     /* BFBlockSoundAttributes */ "com/boehmod/blockfront/unnamed/BF_1088",
                     /* BFBlockTraversableAttributes */ "com/boehmod/blockfront/unnamed/BF_1090",
@@ -69,6 +64,10 @@ public final class ProposalRegistry {
                     collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKESTATIC, 0, "method_1581"),
                     /* GunDamageConfigs */ "com/boehmod/blockfront/unnamed/BF_1454",
                     /* GunSpreadConfigs */ "com/boehmod/blockfront/unnamed/BF_1433"
+            ),
+            new VisitorEntry(
+                    collector -> new LdcStringForInvokeVisitor(collector, Opcodes.INVOKESTATIC, 0, "method_9648", "method_9649"),
+                    /* GeoBlockPresets */ "com/boehmod/blockfront/unnamed/BF_1638"
             )
     );
 

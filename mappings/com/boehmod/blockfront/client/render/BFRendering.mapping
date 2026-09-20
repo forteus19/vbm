@@ -293,7 +293,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 7 x
 		ARG 8 y
 		ARG 9 highlight
-	METHOD method_226 component (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDD)V
+	METHOD method_226 billboardComponent (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDD)V
 		ARG 0 poseStack
 		ARG 1 font
 		ARG 2 camera
@@ -302,7 +302,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 5 x
 		ARG 7 y
 		ARG 9 z
-	METHOD method_227 component (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDDF)V
+	METHOD method_227 billboardComponent (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDDF)V
 		ARG 0 poseStack
 		ARG 1 font
 		ARG 2 camera
@@ -312,7 +312,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 7 y
 		ARG 9 z
 		ARG 11 scale
-	METHOD method_228 component (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDDFIZ)V
+	METHOD method_228 billboardComponent (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/network/chat/Component;DDDFIZ)V
 		ARG 0 poseStack
 		ARG 1 font
 		ARG 2 camera
@@ -1289,6 +1289,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 charSequence
 		ARG 4 x
 		ARG 5 y
+	METHOD method_6802 centeredCharSequence (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/util/FormattedCharSequence;FFF)V
+		ARG 0 poseStack
+		ARG 1 font
+		ARG 2 graphics
+		ARG 3 charSequence
+		ARG 4 x
+		ARG 5 y
+		ARG 6 scale
 	METHOD method_6803 charSequence (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/util/FormattedCharSequence;FFI)V
 		ARG 0 poseStack
 		ARG 1 font
@@ -1375,11 +1383,53 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 3 minY
 		ARG 5 maxY
 		ARG 7 settings
+	METHOD method_8589 tintedBillboardClippedTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDIIFIZFZ)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 graphics
+		ARG 3 texture
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 width
+		ARG 11 height
+		ARG 12 alpha
+		ARG 13 color
+		ARG 14 depthTest
+		ARG 15 progress
+		ARG 16 reverse
 	METHOD method_8612 cageAABB (Lnet/minecraft/client/Camera;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/phys/AABB;Lcom/boehmod/blockfront/unnamed/BF_47$BF_1528;)V
 		ARG 0 camera
 		ARG 1 poseStack
 		ARG 2 aabb
 		ARG 3 settings
+	METHOD method_9097 tintedBillboardClippedTexture (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Camera;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/resources/ResourceLocation;DDDIIFIZF)V
+		ARG 0 poseStack
+		ARG 1 camera
+		ARG 2 guiGraphics
+		ARG 3 texture
+		ARG 4 x
+		ARG 6 y
+		ARG 8 z
+		ARG 10 width
+		ARG 11 height
+		ARG 12 alpha
+		ARG 13 color
+		ARG 14 depthTest
+		ARG 15 progress
+	METHOD method_9098 billboardCharSequence (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/util/FormattedCharSequence;FDDDFIZ)V
+		ARG 0 poseStack
+		ARG 1 font
+		ARG 2 camera
+		ARG 3 bufferSource
+		ARG 4 charSequence
+		ARG 5 textWidth
+		ARG 6 x
+		ARG 8 y
+		ARG 10 z
+		ARG 12 scale
+		ARG 13 color
+		ARG 14 displayModeNormal
 	CLASS BF_1225 ScreenClampData
 	CLASS BF_1525 GameBoundaryCageRenderer
 		FIELD field_9202 minY D

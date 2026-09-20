@@ -1,10 +1,43 @@
 CLASS com/boehmod/blockfront/unnamed/BF_112 com/boehmod/blockfront/client/gui/layer/MatchGuiLayer
+	FIELD field_486 killStreakEntries Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_487 HEALTH_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_500 RELOADING_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_502 NONE_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_504 RESUPPLYING_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_505 AMMO_LABEL Lnet/minecraft/network/chat/Component;
 	FIELD field_516 heldAmmoLoaded I
 	FIELD field_517 prevHeldAmmoLoaded I
 	FIELD field_518 heldAmmo I
 	FIELD field_6355 HEALTH_BAR_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_6997 HEALTH_VEHICLE_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_7781 MPH_FORMAT Ljava/text/DecimalFormat;
+	FIELD field_7782 INJURED_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_7783 INJURED_CALLOUT_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_7785 utilityLabels [Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_7786 utilityCountLabels [Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_7787 PREPARING_MESSAGE Lnet/minecraft/network/chat/Component;
+	FIELD field_7788 MPH_LABEL Lnet/minecraft/network/chat/Component;
+	FIELD field_7793 utilityCounts [I
+	FIELD field_7798 health I
+	FIELD field_7804 primaryLabel Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_7805 secondaryLabel Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_7806 meleeLabel Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_7807 warCryText Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_7809 formattedMphText Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_7811 healthText Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_9021 SPECTATOR_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_9577 formattedMph Ljava/lang/String;
+	FIELD field_9578 vehiclePassengers [Ljava/lang/String;
+	FIELD field_9579 vehiclePassengerTexts [Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_9582 warCryPrev I
+	FIELD field_9583 MPH_LABEL_TEXT Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_9584 AMMO_LABEL_TEXT Lnet/minecraft/util/FormattedCharSequence;
+	METHOD method_494 renderKillStreak (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+		ARG 1 poseStack
+		ARG 2 guiGraphics
+		ARG 3 x
+		ARG 4 y
+		ARG 5 partialTick
 	METHOD method_495 renderKillFeed (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_679;ZIF)V
 		ARG 1 poseStack
 		ARG 2 graphics
@@ -13,11 +46,71 @@ CLASS com/boehmod/blockfront/unnamed/BF_112 com/boehmod/blockfront/client/gui/la
 		ARG 5 gameClient
 		ARG 6 debug
 		ARG 8 delta
+	METHOD method_497 renderHealth (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_679;Lnet/minecraft/client/player/LocalPlayer;IIIIF)V
+		ARG 1 poseStack
+		ARG 2 graphics
+		ARG 3 font
+		ARG 4 gameClient
+		ARG 5 localPlayer
+		ARG 6 y
+		ARG 7 height
+		ARG 8 width
+		ARG 9 backgroundColor
+		ARG 10 partialTick
+	METHOD method_498 renderVehicleHealth (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/player/LocalPlayer;III)V
 	METHOD method_499 renderMinimap (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/player/LocalPlayer;Ljava/util/Collection;)V
 		ARG 1 poseStack
 		ARG 2 graphics
 		ARG 3 font
 		ARG 4 player
 		ARG 5 waypoints
+	METHOD method_500 updateKillStreakEntries (Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/client/player/LocalPlayer;)V
+		ARG 0 game
+		ARG 1 localPlayer
+	METHOD method_504 renderHeldItemName (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lnet/minecraft/world/entity/player/Inventory;IIIIIIIIFF)V
+		ARG 1 minecraft
+		ARG 2 localPlayer
+		ARG 3 poseStack
+		ARG 4 graphics
+		ARG 5 font
+		ARG 6 game
+		ARG 7 inventory
+		ARG 16 renderTime
+		ARG 17 partialTick
+	METHOD method_505 renderInfo (Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;Lcom/boehmod/blockfront/unnamed/BF_679;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;IIFF)V
+		ARG 1 font
+		ARG 2 game
+		ARG 3 gameClient
+		ARG 4 graphics
+		ARG 5 poseStack
+		ARG 6 minecraft
+		ARG 7 localPlayer
+		ARG 8 width
+		ARG 9 height
+		ARG 10 renderTime
+		ARG 11 partialTick
+	METHOD method_506 renderUtilitySlot (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/world/entity/player/Inventory;IIIIIF)V
+		ARG 0 font
+		ARG 1 graphics
+		ARG 2 poseStack
+		ARG 3 inventory
+		ARG 4 index
+		ARG 5 selectedIndex
+		ARG 6 x
+		ARG 7 y
+		ARG 8 color
+		ARG 9 alpha
+	METHOD method_6973 updateInventoryLabels (Lcom/boehmod/blockfront/unnamed/BF_686;)V
+		ARG 0 team
+	CLASS BF_113 KillStreakEntry
+		FIELD field_519 TEXTURE Lnet/minecraft/resources/ResourceLocation;
+		FIELD field_520 FLASH_TEXTURE Lnet/minecraft/resources/ResourceLocation;
+		METHOD method_508 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;IIIF)V
+			ARG 1 poseStack
+			ARG 2 graphics
+			ARG 3 x
+			ARG 4 y
+			ARG 5 size
+			ARG 6 partialTick
 	CLASS BF_114 EffectOverlay
 		CLASS BF_115 Type

@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_118 com/boehmod/blockfront/client/gui/layer/HealthEffectsGuiLayer
+	FIELD field_534 OVERLAYS Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_535 DAMAGE_INDICATORS Lit/unimi/dsi/fastutil/objects/ObjectList;
 	CLASS BF_119 DamageIndicator
 		FIELD field_543 alpha F

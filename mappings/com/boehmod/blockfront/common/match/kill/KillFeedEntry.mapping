@@ -7,5 +7,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_774 com/boehmod/blockfront/common/match/
 	METHOD method_3208 addSection (Lcom/boehmod/blockfront/unnamed/BF_775;)V
 		ARG 1 section
 	METHOD method_3211 render (Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_677;ZF)V
+	METHOD method_3215 write (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 buf
+	METHOD method_3216 read (Lnet/minecraft/network/RegistryFriendlyByteBuf;)V
+		ARG 1 buf
 	METHOD method_3219 detectType (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD method_7254 initSections (Lnet/minecraft/client/Minecraft;)V
 		ARG 1 minecraft

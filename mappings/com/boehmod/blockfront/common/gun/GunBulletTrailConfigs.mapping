@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1648 com/boehmod/blockfront/common/gun/GunBulletTrailConfigs
+	FIELD field_10350 NONE Lcom/boehmod/blockfront/unnamed/BF_1646;
+	FIELD field_10351 RIFLE Lcom/boehmod/blockfront/unnamed/BF_1646;
+	FIELD field_10352 ANTI_TANK Lcom/boehmod/blockfront/unnamed/BF_1646;

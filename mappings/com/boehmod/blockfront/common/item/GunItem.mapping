@@ -1,4 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/GunItem
+	FIELD field_10340 heatSmokeConfig Lcom/boehmod/blockfront/unnamed/BF_1644;
+	FIELD field_10341 bulletTrailConfig Lcom/boehmod/blockfront/unnamed/BF_1646;
 	FIELD field_4004 reloadConfig Lcom/boehmod/blockfront/unnamed/BF_953;
 	FIELD field_4005 soundConfig Lcom/boehmod/blockfront/unnamed/BF_956;
 	FIELD field_4007 bipodMode Lcom/boehmod/blockfront/unnamed/BF_996;
@@ -151,6 +153,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 1 gunType
 	METHOD method_7860 damage (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_993;
 		ARG 1 damage
+	METHOD method_9274 setReloadTick (Lnet/minecraft/world/item/ItemStack;J)V
+		ARG 0 itemStack
+		ARG 1 value
+	METHOD method_9277 getReloadTick (Lnet/minecraft/world/item/ItemStack;)J
+		ARG 0 itemStack
 	METHOD method_9279 setFireMode (Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 0 itemStack
 		ARG 1 index
+	METHOD method_9704 getHeatSmokeConfig ()Lcom/boehmod/blockfront/unnamed/BF_1644;
+	METHOD method_9705 getBulletTrailConfig ()Lcom/boehmod/blockfront/unnamed/BF_1646;
+	METHOD method_9706 heatSmoke (Lcom/boehmod/blockfront/unnamed/BF_1644;)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 config
+	METHOD method_9707 bulletTrail (Lcom/boehmod/blockfront/unnamed/BF_1646;)Lcom/boehmod/blockfront/unnamed/BF_993;
+		ARG 1 config

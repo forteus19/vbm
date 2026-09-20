@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1638 com/boehmod/blockfront/common/block/entity/GeoBlockPresets
+	FIELD field_10254 INSTANCES Ljava/util/Map;
+	METHOD method_9646 createBlockEntity (Lcom/boehmod/blockfront/unnamed/BF_1636;)Lcom/boehmod/blockfront/unnamed/BF_523;
+		ARG 0 preset
+	METHOD method_9647 createBlockEntity (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_523;
+		ARG 0 presetName
+	METHOD method_9648 register (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_1636;
+		ARG 0 name
+	METHOD method_9649 registerIndexed (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_1636;
+		ARG 0 name
+	METHOD method_9650 getByName (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_1636;
+		ARG 0 id
+	METHOD method_9651 getInstances ()Ljava/util/Set;
