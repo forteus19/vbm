@@ -1,15 +1,34 @@
 CLASS com/boehmod/blockfront/unnamed/BF_53 com/boehmod/blockfront/client/gui/widget/BFButton
-	FIELD field_288 texture Lnet/minecraft/resources/ResourceLocation;
-	FIELD field_291 displayType Lcom/boehmod/blockfront/unnamed/BF_53$BF_54;
+	FIELD field_282 backgroundTexture Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_283 FADE_RED Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_288 icon Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_289 backgroundHoveredTexture Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_290 notificationSupplier Lcom/boehmod/blockfront/unnamed/BF_51;
+	FIELD field_291 background Lcom/boehmod/blockfront/unnamed/BF_53$BF_54;
 	FIELD field_292 alignment Lcom/boehmod/blockfront/unnamed/BF_53$BF_55;
 	FIELD field_293 textStyle Lcom/boehmod/blockfront/unnamed/BF_53$BF_56;
 	FIELD field_294 enabledPredicate Ljava/util/function/Predicate;
 	FIELD field_295 downSound Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_296 color I
-	FIELD field_297 width I
-	FIELD field_298 height I
+	FIELD field_297 iconWidth I
+	FIELD field_298 iconHeight I
+	FIELD field_299 iconOffsetX I
+	FIELD field_300 iconOffsetY I
+	FIELD field_301 textColor I
+	FIELD field_302 hoverTextColor I
+	FIELD field_303 useHoverColor Z
+	FIELD field_304 dimmed Z
+	FIELD field_305 useHoverSound Z
+	FIELD field_306 wasHovered Z
 	FIELD field_307 onHover Lnet/minecraft/client/gui/components/Button$OnPress;
+	FIELD field_308 disabledTextColor I
+	FIELD field_309 hoverColor I
+	FIELD field_310 backgroundTextureAlpha F
+	FIELD field_311 messageOffsetX F
+	FIELD field_312 messageOffsetY F
+	FIELD field_313 textScale F
 	FIELD field_314 tip Lnet/minecraft/network/chat/Component;
+	FIELD field_8977 iconTint I
 	METHOD <init> (IIIILnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)V
 		ARG 1 x
 		ARG 2 y
@@ -17,30 +36,103 @@ CLASS com/boehmod/blockfront/unnamed/BF_53 com/boehmod/blockfront/client/gui/wid
 		ARG 4 height
 		ARG 5 message
 		ARG 6 onPress
-	METHOD method_370 size (II)Lcom/boehmod/blockfront/unnamed/BF_53;
+	METHOD method_366 ignoreHoverSound ()Lcom/boehmod/blockfront/unnamed/BF_53;
+	METHOD method_367 backgroundTextureAlpha (F)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 alpha
+	METHOD method_368 messageOffset (FF)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 x
+		ARG 2 y
+	METHOD method_369 textColor (I)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 textColor
+	METHOD method_370 iconSize (II)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 width
 		ARG 2 height
-	METHOD method_372 displayType (Lcom/boehmod/blockfront/unnamed/BF_53$BF_54;)Lcom/boehmod/blockfront/unnamed/BF_53;
-		ARG 1 displayType
+	METHOD method_371 notificationSupplier (Lcom/boehmod/blockfront/unnamed/BF_51;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 notificationSupplier
+	METHOD method_372 background (Lcom/boehmod/blockfront/unnamed/BF_53$BF_54;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 background
 	METHOD method_373 alignment (Lcom/boehmod/blockfront/unnamed/BF_53$BF_55;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 alignment
 	METHOD method_374 textStyle (Lcom/boehmod/blockfront/unnamed/BF_53$BF_56;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 textStyle
+	METHOD method_375 renderNotifications (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;F)V
+		ARG 1 poseStack
+		ARG 2 font
+		ARG 3 graphics
+		ARG 4 partialTick
+	METHOD method_376 renderMessage (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+		ARG 1 poseStack
+		ARG 2 font
+		ARG 3 graphics
+		ARG 4 mouseX
+		ARG 5 mouseY
+		ARG 6 partialTick
+	METHOD method_377 renderIcon (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;)V
+		ARG 1 poseStack
+		ARG 2 graphics
 	METHOD method_378 enabled (Ljava/util/function/Predicate;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 predicate
+	METHOD method_379 renderAbove (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+		ARG 1 minecraft
+		ARG 2 poseStack
+		ARG 3 font
+		ARG 4 graphics
+		ARG 5 mouseX
+		ARG 6 mouseY
+		ARG 7 partialTick
+	METHOD method_380 renderTooltip (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;II)V
+		ARG 1 font
+		ARG 2 graphics
+		ARG 3 mouseX
+		ARG 4 mouseY
+	METHOD method_381 renderBackground (Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;IIFF)V
+		ARG 1 graphics
+		ARG 2 poseStack
+		ARG 3 mouseX
+		ARG 4 mouseY
+		ARG 5 renderTime
+		ARG 6 partialTick
 	METHOD method_382 onHover (Lnet/minecraft/client/gui/components/Button$OnPress;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 onHover
 	METHOD method_383 tip (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 tip
-	METHOD method_384 texture (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_53;
+	METHOD method_384 icon (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 icon
+	METHOD method_385 backgroundTexture (Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 texture
+		ARG 2 textureHovered
 	METHOD method_386 downSound (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 downSound
-	METHOD method_394 size (I)Lcom/boehmod/blockfront/unnamed/BF_53;
+	METHOD method_387 dimmed (Z)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 dimmed
+	METHOD method_388 ignoreHoverColor ()Lcom/boehmod/blockfront/unnamed/BF_53;
+	METHOD method_389 textScale (F)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 textScale
+	METHOD method_390 hoverTextColor (I)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 hoverTextColor
+	METHOD method_391 iconOffset (II)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 x
+		ARG 2 y
+	METHOD method_392 backgroundTexture (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 texture
+	METHOD method_393 disabledTextColor (I)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 disabledTextColor
+	METHOD method_394 iconSize (I)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 size
 	METHOD method_395 color (I)Lcom/boehmod/blockfront/unnamed/BF_53;
 		ARG 1 color
+	METHOD method_396 getTextScale ()F
 	METHOD method_397 hoverColor (I)Lcom/boehmod/blockfront/unnamed/BF_53;
-	CLASS BF_54 DisplayType
+		ARG 1 hoverColor
+	METHOD method_398 getTextColor ()I
+	METHOD method_399 getColor ()I
+	METHOD playDownSound (Lnet/minecraft/client/sounds/SoundManager;)V
+		ARG 1 soundManager
+	METHOD renderWidget (Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+		ARG 1 graphics
+		ARG 2 mouseX
+		ARG 3 mouseY
+		ARG 4 partialTick
+	CLASS BF_54 Background
 	CLASS BF_55 Alignment
 	CLASS BF_56 TextStyle

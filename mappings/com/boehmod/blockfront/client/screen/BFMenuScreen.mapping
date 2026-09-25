@@ -2,7 +2,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen
 	FIELD field_1044 splashText Ljava/lang/String;
 	FIELD field_1045 RENDERERS Lit/unimi/dsi/fastutil/objects/ObjectList;
 	FIELD field_1046 particles Lit/unimi/dsi/fastutil/objects/ObjectList;
-	FIELD field_1047 widgets Ljava/util/List;
+	FIELD field_1047 compoundWidgets Ljava/util/List;
 	FIELD field_1049 RETURN_ICON Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1050 LOGO Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1051 BACKSHADOW Lnet/minecraft/resources/ResourceLocation;
@@ -16,15 +16,26 @@ CLASS com/boehmod/blockfront/unnamed/BF_186 com/boehmod/blockfront/client/screen
 	FIELD field_1062 BACKSHADOW_WHITE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1063 CORNERSHADOW Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_1064 SPLASHES Lnet/minecraft/resources/ResourceLocation;
-	METHOD method_759 clearWidgets ()V
-	METHOD method_764 addWidget (Lcom/boehmod/blockfront/unnamed/BF_121;)V
+	METHOD method_758 widgetInit ()V
+	METHOD method_759 clearCompoundWidgets ()V
+	METHOD method_761 isAdded (Lcom/boehmod/blockfront/unnamed/BF_53;)Z
+		ARG 1 button
+	METHOD method_764 addCompound (Lcom/boehmod/blockfront/unnamed/BF_121;)V
 		ARG 1 widget
+	METHOD method_766 isReturnDown (Lnet/minecraft/client/Minecraft;)Z
+		ARG 0 minecraft
 	METHOD method_767 addParticle (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_147;)V
 		ARG 1 minecraft
 		ARG 2 particle
+	METHOD method_768 renderCompoundWidgets (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lcom/boehmod/blockfront/unnamed/BF_476;IIFF)V
+	METHOD method_769 isEscapeDown (Lnet/minecraft/client/Minecraft;)Z
+		ARG 0 minecraft
 	METHOD method_770 openUrl (Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V
 		ARG 0 minecraft
 		ARG 1 url
+	METHOD method_771 isBackspaceDown (Lnet/minecraft/client/Minecraft;)Z
+		ARG 0 minecraft
 	METHOD method_772 getMenuParticles ()Ljava/util/List;
 	METHOD method_773 getSplashText ()Ljava/lang/String;
-	METHOD method_774 menuInit ()V
+	METHOD method_774 compoundInit ()V
+	METHOD method_9182 isHttpUri (Ljava/lang/String;)Z

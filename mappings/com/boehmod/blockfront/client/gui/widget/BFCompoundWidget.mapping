@@ -1,0 +1,100 @@
+CLASS com/boehmod/blockfront/unnamed/BF_121 com/boehmod/blockfront/client/gui/widget/BFCompoundWidget
+	FIELD field_559 hoverSound Z
+	FIELD field_560 wasHovered Z
+	FIELD field_561 isHovered Z
+	FIELD field_562 shouldRenderNested Z
+	FIELD field_563 parent Lnet/minecraft/client/gui/screens/Screen;
+	FIELD field_564 x I
+	FIELD field_565 y I
+	FIELD field_566 width I
+	FIELD field_567 height I
+	FIELD field_568 nested Ljava/util/List;
+	FIELD field_569 widgets Ljava/util/List;
+	FIELD field_570 tooltip Lnet/minecraft/network/chat/Component;
+	METHOD <init> (IIIILnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 screen
+	METHOD method_531 hoverSound ()Lcom/boehmod/blockfront/unnamed/BF_121;
+	METHOD method_532 getScreen ()Lnet/minecraft/client/gui/screens/Screen;
+	METHOD method_533 addNested (Lcom/boehmod/blockfront/unnamed/BF_121;)Z
+		ARG 1 widget
+	METHOD method_534 renderNested (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;IIFF)V
+		ARG 1 minecraft
+		ARG 2 dataHandler
+		ARG 3 poseStack
+		ARG 4 graphics
+		ARG 5 mouseX
+		ARG 6 mouseY
+		ARG 7 renderTime
+		ARG 8 partialTick
+	METHOD method_535 clearAll (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 dataHandler
+	METHOD method_536 onPress (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;DDI)Z
+	METHOD method_537 tick (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;F)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 dataHandler
+		ARG 4 partialTick
+	METHOD method_540 render (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_476;IIFF)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 dataHandler
+		ARG 4 poseStack
+		ARG 5 graphics
+		ARG 6 font
+		ARG 7 cloudData
+		ARG 8 mouseX
+		ARG 9 mouseY
+		ARG 10 renderTime
+		ARG 11 partialTick
+	METHOD method_541 renderAbove (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;IIF)V
+		ARG 1 minecraft
+		ARG 2 manager
+		ARG 3 dataHandler
+		ARG 4 font
+		ARG 5 graphics
+		ARG 6 mouseX
+		ARG 7 mouseY
+		ARG 8 partialTick
+	METHOD method_542 renderTooltip (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/gui/GuiGraphics;II)V
+		ARG 1 font
+		ARG 2 graphics
+		ARG 3 mouseX
+		ARG 4 mouseY
+	METHOD method_543 addWidget (Lnet/minecraft/client/gui/components/AbstractWidget;)Z
+		ARG 1 widget
+	METHOD method_545 setParent (Lnet/minecraft/client/gui/screens/Screen;)V
+		ARG 1 parent
+	METHOD method_546 tooltip (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_121;
+		ARG 1 tooltip
+	METHOD method_547 shouldRenderNested ()Lcom/boehmod/blockfront/unnamed/BF_121;
+	METHOD method_548 removeNested (Lcom/boehmod/blockfront/unnamed/BF_121;)Z
+		ARG 1 widget
+	METHOD method_549 containsWidget (Lnet/minecraft/client/gui/components/AbstractWidget;)Z
+		ARG 1 widget
+	METHOD method_550 getWidgets ()Ljava/util/List;
+	METHOD method_551 x (I)V
+		ARG 1 x
+	METHOD method_552 y (I)V
+		ARG 1 y
+	METHOD method_553 width (I)V
+		ARG 1 width
+	METHOD method_554 height (I)V
+		ARG 1 height
+	METHOD method_555 setHovered (Z)V
+		ARG 1 hovered
+	METHOD method_556 shouldRenderNested (Z)V
+		ARG 1 shouldRenderNested
+	METHOD method_557 isBeingHovered ()Z
+	METHOD method_558 getWidth ()I
+	METHOD method_559 getX ()I
+	METHOD method_560 getY ()I
+	METHOD method_561 clearWidgets ()V
+	METHOD method_562 clearNested ()V
+	METHOD method_563 clearBfSubWidgets ()V
+	METHOD method_9753 getHeight ()I

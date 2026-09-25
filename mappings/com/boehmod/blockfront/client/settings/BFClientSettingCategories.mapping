@@ -1,8 +1,18 @@
 CLASS com/boehmod/blockfront/unnamed/BF_433 com/boehmod/blockfront/client/settings/BFClientSettingCategories
+	FIELD field_10036 ACCESSIBILITY Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_10574 CONTROLS Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_10575 GRAPHICS Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_10576 GRAPHICS_WEAPONS Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_10577 GRAPHICS_WORLD Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_10578 GRAPHICS_SCREEN Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_10579 UI_MATCH Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_10580 UI_GENERAL Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_10581 NOTIFICATIONS_FRIENDS Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_10582 NOTIFICATIONS_PROFILE Lcom/boehmod/blockfront/unnamed/BF_434;
 	FIELD field_2001 INSTANCES Ljava/util/List;
 	FIELD field_2002 NOTIFICATIONS Lcom/boehmod/blockfront/unnamed/BF_434;
 	FIELD field_2003 AUDIO Lcom/boehmod/blockfront/unnamed/BF_434;
-	FIELD field_2004 CROSSHAIR Lcom/boehmod/blockfront/unnamed/BF_434;
+	FIELD field_2004 UI_CROSSHAIR Lcom/boehmod/blockfront/unnamed/BF_434;
 	FIELD field_2005 UI Lcom/boehmod/blockfront/unnamed/BF_434;
 	FIELD field_2007 DEBUG Lcom/boehmod/blockfront/unnamed/BF_434;
 	FIELD field_2008 RULES Lcom/boehmod/blockfront/unnamed/BF_434;
