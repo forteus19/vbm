@@ -61,8 +61,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_445 com/boehmod/blockfront/common/BFAbst
 		ARG 2 level
 	METHOD method_1566 (Lnet/minecraft/server/level/ServerLevel;Lcom/boehmod/blockfront/unnamed/BF_683;)V
 		ARG 2 game
-	METHOD method_1567 getPlayerGame (Lnet/minecraft/world/entity/player/Player;)Lcom/boehmod/blockfront/unnamed/BF_677;
-		ARG 1 player
 	METHOD method_1568 setGameRules (Lnet/minecraft/world/level/Level;Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 level
 		ARG 2 server
