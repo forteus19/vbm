@@ -10,24 +10,24 @@ import java.util.Objects;
 import java.util.Set;
 
 public class VbmJarIndexer implements JarIndexerService {
-    public static final String ID = "vbm:jar_indexer";
+	public static final String ID = "vbm:jar_indexer";
 
-    private final EnigmaProposalCollector collector;
+	private final EnigmaProposalCollector collector;
 
-    public VbmJarIndexer(EnigmaProposalCollector collector) {
-        this.collector = collector;
-    }
+	public VbmJarIndexer(EnigmaProposalCollector collector) {
+		this.collector = collector;
+	}
 
-    @Override
-    public String getId() {
-        return ID;
-    }
+	@Override
+	public String getId() {
+		return ID;
+	}
 
-    @Override
-    public void acceptJar(Set<String> scope, ProjectClassProvider classProvider, JarIndex jarIndex) {
-        ProposalRegistry.collect(collector, scope.stream()
-                .map(classProvider::get)
-                .filter(Objects::nonNull)
-                .toList());
-    }
+	@Override
+	public void acceptJar(Set<String> scope, ProjectClassProvider classProvider, JarIndex jarIndex) {
+		ProposalRegistry.collect(collector, scope.stream()
+			.map(classProvider::get)
+			.filter(Objects::nonNull)
+			.toList());
+	}
 }

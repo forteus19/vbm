@@ -14,8 +14,11 @@ CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/t
 	FIELD field_10457 iconTint I
 	FIELD field_10469 title Lnet/minecraft/network/chat/Component;
 	FIELD field_10470 message Lnet/minecraft/network/chat/Component;
+	FIELD field_10638 ggAction Lcom/boehmod/blockfront/unnamed/BF_1659;
 	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;)V
 		ARG 1 builder
+	METHOD method_10015 hasAcceptAction ()Z
+	METHOD method_10016 getGgAction ()Lcom/boehmod/blockfront/unnamed/BF_1659;
 	METHOD method_9765 shouldNarrate ()Z
 	METHOD method_9768 getAnimatedIcon ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;
 	METHOD method_9769 builder ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
@@ -23,6 +26,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/t
 	METHOD method_9771 getAcceptAction ()Lcom/boehmod/blockfront/unnamed/BF_1659;
 	METHOD method_9772 getType ()Lcom/boehmod/blockfront/unnamed/BF_1663;
 	METHOD method_9784 getDenyAction ()Lcom/boehmod/blockfront/unnamed/BF_1659;
+	METHOD method_9806 hasAction ()Z
 	CLASS BF_1654 AnimatedIcon
 	CLASS BF_1656 Builder
 		FIELD field_10479 icon Lnet/minecraft/resources/ResourceLocation;
@@ -35,6 +39,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/t
 		FIELD field_10489 shouldNarrate Z
 		FIELD field_10494 title Lnet/minecraft/network/chat/Component;
 		FIELD field_10495 message Lnet/minecraft/network/chat/Component;
+		FIELD field_10640 ggAction Lcom/boehmod/blockfront/unnamed/BF_1659;
+		METHOD method_10017 ggAction (Lnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 label
+			ARG 2 action
 		METHOD method_9814 build ()Lcom/boehmod/blockfront/unnamed/BF_1653;
 		METHOD method_9817 animatedIcon (Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 animatedIcon

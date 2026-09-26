@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1317 com/boehmod/blockfront/client/shader/BFInstancedBulletTracerShader
+	FIELD field_7872 ID Ljava/lang/String;
+	FIELD field_7873 instance Lnet/minecraft/client/renderer/ShaderInstance;
+	FIELD field_7874 RESOURCE Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_7027 get ()Lnet/minecraft/client/renderer/ShaderInstance;
+	METHOD method_7028 set (Lnet/minecraft/client/renderer/ShaderInstance;)V
+		ARG 0 instance
+	METHOD method_7029 onRegisterShaders (Lnet/neoforged/neoforge/client/event/RegisterShadersEvent;)V
+		ARG 0 event

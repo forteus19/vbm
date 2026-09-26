@@ -13,48 +13,48 @@ import red.vuis.vbm.util.VbmUtils;
 import java.util.Arrays;
 
 public class LdcStringForInvokeVisitor extends ClassInitVisitor {
-    private final int invokeOpcode;
-    private final int argIndex;
-    private final String[] registerMethods;
+	private final int invokeOpcode;
+	private final int argIndex;
+	private final String[] registerMethods;
 
-    public LdcStringForInvokeVisitor(ProposalCollector collector, int invokeOpcode, int argIndex, String... registerMethods) {
-        super(collector);
-        this.invokeOpcode = invokeOpcode;
-        this.argIndex = argIndex;
-        this.registerMethods = registerMethods;
-    }
+	public LdcStringForInvokeVisitor(ProposalCollector collector, int invokeOpcode, int argIndex, String... registerMethods) {
+		super(collector);
+		this.invokeOpcode = invokeOpcode;
+		this.argIndex = argIndex;
+		this.registerMethods = registerMethods;
+	}
 
-    @Override
-    protected void analyzeClInit(MethodNode clInit, Frame<SourceValue>[] frames) {
-        for (int i = 0; i < clInit.instructions.size() - 1; i++) {
-            var match = matchInvokePutPattern(className, clInit.instructions, i, invokeOpcode);
-            if (match == null) {
-                continue;
-            }
+	@Override
+	protected void analyzeClInit(MethodNode clInit, Frame<SourceValue>[] frames) {
+		for (int i = 0; i < clInit.instructions.size() - 1; i++) {
+			var match = matchInvokePutPattern(className, clInit.instructions, i, invokeOpcode);
+			if (match == null) {
+				continue;
+			}
 
-            MethodInsnNode insn1 = match.insn1();
-            FieldInsnNode insn2 = match.insn2();
+			MethodInsnNode insn1 = match.insn1();
+			FieldInsnNode insn2 = match.insn2();
 
-            if (!Arrays.asList(registerMethods).contains(insn1.name)) {
-                continue;
-            }
+			if (!Arrays.asList(registerMethods).contains(insn1.name)) {
+				continue;
+			}
 
-            String ldcValue = getStringLdc(frames[i], argIndex);
-            if (ldcValue != null) {
-                collector.collectField(className, insn2.name, insn2.desc, VbmUtils.javaName(ldcValue));
-            }
-        }
-    }
+			String ldcValue = getStringLdc(frames[i], argIndex);
+			if (ldcValue != null) {
+				collector.collectField(className, insn2.name, insn2.desc, VbmUtils.javaName(ldcValue));
+			}
+		}
+	}
 
-    public static MatchTwoResult<MethodInsnNode, FieldInsnNode> matchInvokePutPattern(String className, InsnList insns, int offset, int invokeOpcode) {
-        var match = matchTwoInsns(
-                insns, offset,
-                MethodInsnNode.class, FieldInsnNode.class,
-                invokeOpcode, Opcodes.PUTSTATIC
-        );
-        if (match == null || !match.insn2().owner.equals(className)) {
-            return null;
-        }
-        return match;
-    }
+	public static MatchTwoResult<MethodInsnNode, FieldInsnNode> matchInvokePutPattern(String className, InsnList insns, int offset, int invokeOpcode) {
+		var match = matchTwoInsns(
+			insns, offset,
+			MethodInsnNode.class, FieldInsnNode.class,
+			invokeOpcode, Opcodes.PUTSTATIC
+		);
+		if (match == null || !match.insn2().owner.equals(className)) {
+			return null;
+		}
+		return match;
+	}
 }

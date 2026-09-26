@@ -1,0 +1,15 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1673 com/boehmod/blockfront/client/shader/BFInstancedSurfaceDecalShader
+	FIELD field_10703 instance Lnet/minecraft/client/renderer/ShaderInstance;
+	FIELD field_10704 ID Ljava/lang/String;
+	FIELD field_10705 RESOURCE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_10819 ID_FILL Ljava/lang/String;
+	FIELD field_10820 RESOURCE_FILL Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_10821 instanceFill Lnet/minecraft/client/renderer/ShaderInstance;
+	METHOD method_10063 get ()Lnet/minecraft/client/renderer/ShaderInstance;
+	METHOD method_10064 set (Lnet/minecraft/client/renderer/ShaderInstance;)V
+		ARG 0 instance
+	METHOD method_10065 onRegisterShaders (Lnet/neoforged/neoforge/client/event/RegisterShadersEvent;)V
+		ARG 0 event
+	METHOD method_10146 getFill ()Lnet/minecraft/client/renderer/ShaderInstance;
+	METHOD method_10147 setFill (Lnet/minecraft/client/renderer/ShaderInstance;)V
+		ARG 0 instance

@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1618 com/boehmod/blockfront/client/shader/BFInstancedTrailShader
+	FIELD field_10003 ID Ljava/lang/String;
+	FIELD field_10004 instance Lnet/minecraft/client/renderer/ShaderInstance;
+	FIELD field_10005 RESOURCE Lnet/minecraft/resources/ResourceLocation;
+	METHOD method_9380 get ()Lnet/minecraft/client/renderer/ShaderInstance;
+	METHOD method_9381 set (Lnet/minecraft/client/renderer/ShaderInstance;)V
+		ARG 0 instance
+	METHOD method_9382 onRegisterShaders (Lnet/neoforged/neoforge/client/event/RegisterShadersEvent;)V
+		ARG 0 event

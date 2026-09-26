@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_410 com/boehmod/blockfront/client/SkinFetcher
+CLASS com/boehmod/blockfront/unnamed/BF_410 com/boehmod/blockfront/client/player/SkinFetcher
 	FIELD field_1858 URL Ljava/lang/String;
 	FIELD field_1859 cache Lcom/google/common/cache/Cache;
 	FIELD field_1860 executor Ljava/util/concurrent/ExecutorService;

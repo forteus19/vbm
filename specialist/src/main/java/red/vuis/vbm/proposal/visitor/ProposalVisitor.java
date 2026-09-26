@@ -13,53 +13,53 @@ import red.vuis.vbm.proposal.ProposalCollector;
 import red.vuis.vbm.util.DoubleId;
 
 public abstract class ProposalVisitor extends ClassVisitor {
-    protected final ProposalCollector collector;
-    protected String className = null;
+	protected final ProposalCollector collector;
+	protected String className = null;
 
-    public ProposalVisitor(@NotNull ProposalCollector collector) {
-        super(Opcodes.ASM9);
-        this.collector = collector;
-    }
+	public ProposalVisitor(@NotNull ProposalCollector collector) {
+		super(Opcodes.ASM9);
+		this.collector = collector;
+	}
 
-    @Override
-    public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
-        super.visit(version, access, name, signature, superName, interfaces);
-        className = name;
-    }
+	@Override
+	public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
+		super.visit(version, access, name, signature, superName, interfaces);
+		className = name;
+	}
 
-    public static String getStringLdc(Frame<SourceValue> frame, int argIndex) {
-        int a = 0;
-        for (int i = 0; i < frame.getStackSize(); i++) {
-            SourceValue source = frame.getStack(i);
+	public static String getStringLdc(Frame<SourceValue> frame, int argIndex) {
+		int a = 0;
+		for (int i = 0; i < frame.getStackSize(); i++) {
+			SourceValue source = frame.getStack(i);
 
-            for (AbstractInsnNode sourceInsn : source.insns) {
-                if (sourceInsn instanceof LdcInsnNode ldcInsn && ldcInsn.cst instanceof String value) {
-                    if (a++ == argIndex) {
-                        return value;
-                    }
-                }
-            }
-        }
-        return null;
-    }
+			for (AbstractInsnNode sourceInsn : source.insns) {
+				if (sourceInsn instanceof LdcInsnNode ldcInsn && ldcInsn.cst instanceof String value) {
+					if (a++ == argIndex) {
+						return value;
+					}
+				}
+			}
+		}
+		return null;
+	}
 
-    public static <A extends AbstractInsnNode, B extends AbstractInsnNode> MatchTwoResult<A, B> matchTwoInsns(InsnList insns, int offset, Class<A> insnClass1, Class<B> insnClass2, int opcode1, int opcode2) {
-        AbstractInsnNode absInsn1 = insns.get(offset);
-        AbstractInsnNode absInsn2 = insns.get(offset + 1);
-        if (absInsn1.getOpcode() == opcode1 && absInsn2.getOpcode() == opcode2) {
-            return new MatchTwoResult<>(insnClass1.cast(absInsn1), insnClass2.cast(absInsn2));
-        } else {
-            return null;
-        }
-    }
+	public static <A extends AbstractInsnNode, B extends AbstractInsnNode> MatchTwoResult<A, B> matchTwoInsns(InsnList insns, int offset, Class<A> insnClass1, Class<B> insnClass2, int opcode1, int opcode2) {
+		AbstractInsnNode absInsn1 = insns.get(offset);
+		AbstractInsnNode absInsn2 = insns.get(offset + 1);
+		if (absInsn1.getOpcode() == opcode1 && absInsn2.getOpcode() == opcode2) {
+			return new MatchTwoResult<>(insnClass1.cast(absInsn1), insnClass2.cast(absInsn2));
+		} else {
+			return null;
+		}
+	}
 
-    public record MatchTwoResult<A extends AbstractInsnNode, B extends AbstractInsnNode>(A insn1, B insn2) {
-        public DoubleId fieldId2() {
-            if (insn2 instanceof FieldInsnNode fieldInsn2) {
-                return new DoubleId(fieldInsn2.name, fieldInsn2.desc);
-            } else {
-                throw new RuntimeException("Not a FieldInsnNode");
-            }
-        }
-    }
+	public record MatchTwoResult<A extends AbstractInsnNode, B extends AbstractInsnNode>(A insn1, B insn2) {
+		public DoubleId fieldId2() {
+			if (insn2 instanceof FieldInsnNode fieldInsn2) {
+				return new DoubleId(fieldInsn2.name, fieldInsn2.desc);
+			} else {
+				throw new RuntimeException("Not a FieldInsnNode");
+			}
+		}
+	}
 }

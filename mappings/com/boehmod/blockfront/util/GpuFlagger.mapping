@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1691 com/boehmod/blockfront/util/GpuFlagger
+	FIELD field_10822 isLowEnd Ljava/lang/Boolean;
+	FIELD field_10823 INTEL_ARC_PATTERN Ljava/util/regex/Pattern;
+	FIELD field_10824 AMD_MOBILE_PATTERN Ljava/util/regex/Pattern;
+	METHOD method_10148 isLowEnd ()Z
+	METHOD method_10149 detectLowEnd (Ljava/lang/String;)Z
+		ARG 0 renderer

@@ -6,26 +6,26 @@ import red.vuis.vbm.proposal.ProposalCollector;
 import red.vuis.vbm.util.VbmUtils;
 
 public class PacketVisitor extends ProposalVisitor {
-    public static final String CUSTOM_PACKET_PAYLOAD = "net/minecraft/network/protocol/common/custom/CustomPacketPayload";
+	public static final String CUSTOM_PACKET_PAYLOAD = "net/minecraft/network/protocol/common/custom/CustomPacketPayload";
 
-    private static final String TYPE_DESCRIPTOR = "Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload$Type;";
-    private static final String CODEC_DESCRIPTOR = "Lnet/minecraft/network/codec/StreamCodec;";
-    private static final String PAYLOAD_CONTEXT_NAME = "net/neoforged/neoforge/network/handling/IPayloadContext";
+	private static final String TYPE_DESCRIPTOR = "Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload$Type;";
+	private static final String CODEC_DESCRIPTOR = "Lnet/minecraft/network/codec/StreamCodec;";
+	private static final String PAYLOAD_CONTEXT_NAME = "net/neoforged/neoforge/network/handling/IPayloadContext";
 
-    public PacketVisitor(ProposalCollector collector) {
-        super(collector);
-    }
+	public PacketVisitor(ProposalCollector collector) {
+		super(collector);
+	}
 
-    @Override
-    public FieldVisitor visitField(int access, String name, String descriptor, String signature, Object value) {
-        if (VbmUtils.allBits(access, Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC | Opcodes.ACC_FINAL)) {
-            switch (descriptor) {
-                case TYPE_DESCRIPTOR -> collector.collectField(className, name, descriptor, "TYPE");
-                case CODEC_DESCRIPTOR -> collector.collectField(className, name, descriptor, "CODEC");
-            }
-        }
-        return super.visitField(access, name, descriptor, signature, value);
-    }
+	@Override
+	public FieldVisitor visitField(int access, String name, String descriptor, String signature, Object value) {
+		if (VbmUtils.allBits(access, Opcodes.ACC_PUBLIC | Opcodes.ACC_STATIC | Opcodes.ACC_FINAL)) {
+			switch (descriptor) {
+				case TYPE_DESCRIPTOR -> collector.collectField(className, name, descriptor, "TYPE");
+				case CODEC_DESCRIPTOR -> collector.collectField(className, name, descriptor, "CODEC");
+			}
+		}
+		return super.visitField(access, name, descriptor, signature, value);
+	}
 
 //    @Override
 //    public MethodVisitor visitMethod(int access, String name, String descriptor, String signature, String[] exceptions) {

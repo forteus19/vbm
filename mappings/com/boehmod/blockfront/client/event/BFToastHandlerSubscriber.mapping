@@ -1,4 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1652 com/boehmod/blockfront/client/event/BFToastHandlerSubscriber
+	METHOD method_10136 onRenderFramePost (Lnet/neoforged/neoforge/client/event/RenderFrameEvent$Post;)V
+		ARG 0 event
 	METHOD method_9746 onClientTickPost (Lnet/neoforged/neoforge/client/event/ClientTickEvent$Post;)V
 		ARG 0 event
 	METHOD method_9747 onMouseButtonPre (Lnet/neoforged/neoforge/client/event/InputEvent$MouseButton$Pre;)V

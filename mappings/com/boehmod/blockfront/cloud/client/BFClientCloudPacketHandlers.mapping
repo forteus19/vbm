@@ -69,3 +69,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_497 com/boehmod/blockfront/cloud/client/
 	METHOD method_8332 requestedRecentMatches (Lcom/boehmod/bflib/cloud/packet/common/requests/PacketRequestedRecentMatches;Lcom/boehmod/bflib/cloud/connection/Connection;)V
 		ARG 0 packet
 		ARG 1 connection
+	METHOD method_9982 notificationUpdate (Lcom/boehmod/bflib/cloud/packet/common/PacketNotificationUpdate;Lcom/boehmod/bflib/cloud/connection/Connection;)V

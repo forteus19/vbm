@@ -1,0 +1,23 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1668 com/boehmod/blockfront/client/BFEarlyLoadingAnimation
+	FIELD field_10629 TEXTURE Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_10630 isTextureLoaded Z
+	FIELD field_10636 textureWidth I
+	FIELD field_10637 textureHeight I
+	METHOD method_10011 render (IIIIIF)V
+		ARG 0 windowWidth
+		ARG 1 windowHeight
+		ARG 2 width
+		ARG 3 height
+		ARG 4 scale
+		ARG 5 alpha
+	METHOD method_10012 getDeclaredField (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+		ARG 0 clazz
+		ARG 1 fieldName
+	METHOD method_10013 removeFoxElement (Ljava/lang/Object;)Z
+		ARG 0 displayWindow
+	METHOD method_10014 register (Lnet/minecraft/client/Minecraft;Ljava/lang/Object;)V
+		ARG 0 minecraft
+		ARG 1 displayWindow
+	CLASS BF_1669 Texture
+		METHOD getTextureImage (Lnet/minecraft/server/packs/resources/ResourceManager;)Lnet/minecraft/client/renderer/texture/SimpleTexture$TextureImage;
+			ARG 1 resourceManager

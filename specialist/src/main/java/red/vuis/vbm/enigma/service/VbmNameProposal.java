@@ -11,26 +11,26 @@ import red.vuis.vbm.enigma.EnigmaProposalCollector;
 import java.util.Map;
 
 public class VbmNameProposal implements NameProposalService {
-    public static final String ID = "vbm:name_proposal";
+	public static final String ID = "vbm:name_proposal";
 
-    private final EnigmaProposalCollector collector;
+	private final EnigmaProposalCollector collector;
 
-    public VbmNameProposal(EnigmaProposalCollector collector) {
-        this.collector = collector;
-    }
+	public VbmNameProposal(EnigmaProposalCollector collector) {
+		this.collector = collector;
+	}
 
-    @Override
-    public Map<Entry<?>, EntryMapping> getProposedNames(Enigma enigma, JarIndex index) {
-        return collector.targets;
-    }
+	@Override
+	public Map<Entry<?>, EntryMapping> getProposedNames(Enigma enigma, JarIndex index) {
+		return collector.targets;
+	}
 
-    @Override
-    public Map<Entry<?>, EntryMapping> getDynamicProposedNames(EntryRemapper remapper, Entry<?> obfEntry, EntryMapping oldMapping, EntryMapping newMapping) {
-        return Map.of();
-    }
+	@Override
+	public Map<Entry<?>, EntryMapping> getDynamicProposedNames(EntryRemapper remapper, Entry<?> obfEntry, EntryMapping oldMapping, EntryMapping newMapping) {
+		return Map.of();
+	}
 
-    @Override
-    public String getId() {
-        return ID;
-    }
+	@Override
+	public String getId() {
+		return ID;
+	}
 }
