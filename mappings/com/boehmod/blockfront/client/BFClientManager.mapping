@@ -44,7 +44,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_606 com/boehmod/blockfront/client/BFClie
 	METHOD method_2239 getCrosshairResource ()Lcom/boehmod/blockfront/unnamed/BF_1124$BF_1125;
 	METHOD method_2240 getCreditsEntryResource ()Lcom/boehmod/blockfront/unnamed/BF_1126$BF_1127;
 	METHOD method_2241 getMinecraft ()Lnet/minecraft/client/Minecraft;
-	METHOD method_2242 showConnectionToast (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;)V
+	METHOD method_2242 showConnectionNotification (Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;Lcom/boehmod/bflib/cloud/connection/ConnectionStatus;)V
 		ARG 1 fromStatus
 		ARG 2 toStatus
 	METHOD method_2246 onLeaveGame (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/multiplayer/ClientLevel;)V

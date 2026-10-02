@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_921 com/boehmod/blockfront/common/net/BFPopup
+CLASS com/boehmod/blockfront/unnamed/BF_921 com/boehmod/blockfront/game/GamePopup
 	FIELD field_3656 duration I
 	FIELD field_3657 message Lnet/minecraft/network/chat/Component;
 	METHOD <init> (Lnet/minecraft/network/chat/Component;I)V

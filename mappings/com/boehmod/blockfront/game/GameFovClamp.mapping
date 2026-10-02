@@ -1,5 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1666 com/boehmod/blockfront/game/GameFovClamp
-	FIELD field_10608 TOAST_TITLE Lnet/minecraft/network/chat/Component;
+	FIELD field_10608 NOTIFICATION_TITLE Lnet/minecraft/network/chat/Component;
 	FIELD field_10609 messageShown Z
 	FIELD field_10610 MIN_FOV I
 	FIELD field_10611 MAX_FOV I

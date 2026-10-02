@@ -1,0 +1,43 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1658 com/boehmod/blockfront/client/gui/notification/CloudNotifications
+	FIELD field_10497 TITLE_CLOUD Lnet/minecraft/network/chat/Component;
+	FIELD field_10498 TITLE_FRIEND_REQUEST Lnet/minecraft/network/chat/Component;
+	FIELD field_10499 TITLE_PARTY_INVITE Lnet/minecraft/network/chat/Component;
+	FIELD field_10500 TITLE_CLAN_INVITE Lnet/minecraft/network/chat/Component;
+	FIELD field_10501 TITLE_MATCH_INVITE Lnet/minecraft/network/chat/Component;
+	FIELD field_10502 TITLE_ACHIEVEMENT Lnet/minecraft/network/chat/Component;
+	FIELD field_10503 TITLE_RANK_UP Lnet/minecraft/network/chat/Component;
+	FIELD field_10504 TITLE_DAILY_CHALLENGE Lnet/minecraft/network/chat/Component;
+	FIELD field_10505 TITLE_FRIEND_RANK_UP Lnet/minecraft/network/chat/Component;
+	FIELD field_10506 TITLE_FRIEND_PRESTIGE Lnet/minecraft/network/chat/Component;
+	FIELD field_10507 TITLE_CONNECTION_ESTABLISHED Lnet/minecraft/network/chat/Component;
+	FIELD field_10508 TITLE_CONNECTION_LOST Lnet/minecraft/network/chat/Component;
+	FIELD field_10509 ACTION_ACCEPT Lnet/minecraft/network/chat/Component;
+	FIELD field_10510 ACTION_DECLINE Lnet/minecraft/network/chat/Component;
+	FIELD field_10511 ACTION_JOIN Lnet/minecraft/network/chat/Component;
+	FIELD field_10641 ACTION_CANCEL Lnet/minecraft/network/chat/Component;
+	FIELD field_10642 ACTION_GG Lnet/minecraft/network/chat/Component;
+	FIELD field_10643 ACTION_INVITE_PARTY Lnet/minecraft/network/chat/Component;
+	FIELD field_10644 ACTION_INVITE_MATCH Lnet/minecraft/network/chat/Component;
+	METHOD method_10019 handleInvite (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;Ljava/util/UUID;)V
+		ARG 0 manager
+		ARG 1 builder
+		ARG 2 subject
+	METHOD method_9834 handleConnectionEstablished ()V
+	METHOD method_9837 convertTone (Lcom/boehmod/bflib/cloud/common/NotificationTone;)Lcom/boehmod/blockfront/unnamed/BF_1663;
+		ARG 0 tone
+	METHOD method_9838 getToneFromType (Lcom/boehmod/bflib/cloud/common/NotificationType;)Lcom/boehmod/blockfront/unnamed/BF_1663;
+		ARG 0 type
+	METHOD method_9839 getTitleFromType (Lcom/boehmod/bflib/cloud/common/NotificationType;)Lnet/minecraft/network/chat/Component;
+		ARG 0 type
+	METHOD method_9841 handle (Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/bflib/cloud/common/NotificationType;Lnet/minecraft/network/chat/Component;Ljava/util/UUID;Ljava/util/UUID;IZLcom/boehmod/bflib/cloud/common/NotificationTone;Lcom/boehmod/bflib/cloud/common/NotificationPrompt;)V
+		ARG 0 manager
+		ARG 1 type
+		ARG 2 message
+		ARG 3 subject
+		ARG 4 id
+		ARG 5 durationTicks
+		ARG 6 tracking
+		ARG 7 tone
+		ARG 8 prompt
+	METHOD method_9845 handleConnectionError (Ljava/lang/String;)V
+		ARG 0 error

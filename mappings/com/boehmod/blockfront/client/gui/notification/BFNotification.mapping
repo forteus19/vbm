@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/toast/BFToast
+CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/notification/BFNotification
 	FIELD field_10392 CHECK_ICON Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_10393 CROSS_ICON Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_10394 icon Lnet/minecraft/resources/ResourceLocation;
@@ -6,12 +6,21 @@ CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/t
 	FIELD field_10397 state Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1657;
 	FIELD field_10398 acceptAction Lcom/boehmod/blockfront/unnamed/BF_1659;
 	FIELD field_10399 onResponse Lcom/boehmod/blockfront/unnamed/BF_1662;
-	FIELD field_10400 type Lcom/boehmod/blockfront/unnamed/BF_1663;
+	FIELD field_10400 tone Lcom/boehmod/blockfront/unnamed/BF_1663;
+	FIELD field_10401 clickAction Ljava/lang/Runnable;
 	FIELD field_10402 visibleWhile Ljava/util/function/BooleanSupplier;
 	FIELD field_10405 animatedIcon Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;
 	FIELD field_10407 denyAction Lcom/boehmod/blockfront/unnamed/BF_1659;
+	FIELD field_10408 subject Lcom/mojang/authlib/GameProfile;
+	FIELD field_10409 onRemoved Ljava/lang/Runnable;
 	FIELD field_10410 shouldNarrate Z
+	FIELD field_10412 clickLabel Lnet/minecraft/network/chat/Component;
+	FIELD field_10413 sticky Z
+	FIELD field_10421 key Ljava/lang/Object;
+	FIELD field_10422 height I
+	FIELD field_10454 duration I
 	FIELD field_10457 iconTint I
+	FIELD field_10462 stateTimer I
 	FIELD field_10469 title Lnet/minecraft/network/chat/Component;
 	FIELD field_10470 message Lnet/minecraft/network/chat/Component;
 	FIELD field_10638 ggAction Lcom/boehmod/blockfront/unnamed/BF_1659;
@@ -19,24 +28,52 @@ CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/t
 		ARG 1 builder
 	METHOD method_10015 hasAcceptAction ()Z
 	METHOD method_10016 getGgAction ()Lcom/boehmod/blockfront/unnamed/BF_1659;
+	METHOD method_9760 isPersistent ()Z
+	METHOD method_9762 hasIcon ()Z
+	METHOD method_9763 isSticky ()Z
+	METHOD method_9764 hasClickAction ()Z
 	METHOD method_9765 shouldNarrate ()Z
+	METHOD method_9766 exit ()V
 	METHOD method_9768 getAnimatedIcon ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;
 	METHOD method_9769 builder ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 	METHOD method_9770 getState ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1657;
 	METHOD method_9771 getAcceptAction ()Lcom/boehmod/blockfront/unnamed/BF_1659;
-	METHOD method_9772 getType ()Lcom/boehmod/blockfront/unnamed/BF_1663;
+	METHOD method_9772 getTone ()Lcom/boehmod/blockfront/unnamed/BF_1663;
+	METHOD method_9773 getSubject ()Lcom/mojang/authlib/GameProfile;
+	METHOD method_9774 getKey ()Ljava/lang/Object;
+	METHOD method_9775 getClickAction ()Ljava/lang/Runnable;
+	METHOD method_9779 setState (Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1657;)V
+		ARG 1 state
+	METHOD method_9780 refreshDimensions (Lnet/minecraft/client/gui/Font;)V
+		ARG 1 font
+	METHOD method_9783 update (Lnet/minecraft/network/chat/Component;Lnet/minecraft/network/chat/Component;Lcom/boehmod/blockfront/unnamed/BF_1663;Lnet/minecraft/resources/ResourceLocation;IZ)V
+		ARG 1 title
+		ARG 2 message
+		ARG 3 tone
+		ARG 4 icon
+		ARG 5 duration
+		ARG 6 toneBorder
 	METHOD method_9784 getDenyAction ()Lcom/boehmod/blockfront/unnamed/BF_1659;
+	METHOD method_9785 getOnRemoved ()Ljava/lang/Runnable;
+	METHOD method_9789 getClickLabel ()Lnet/minecraft/network/chat/Component;
 	METHOD method_9806 hasAction ()Z
 	CLASS BF_1654 AnimatedIcon
 	CLASS BF_1656 Builder
 		FIELD field_10479 icon Lnet/minecraft/resources/ResourceLocation;
 		FIELD field_10480 acceptAction Lcom/boehmod/blockfront/unnamed/BF_1659;
 		FIELD field_10481 onResponse Lcom/boehmod/blockfront/unnamed/BF_1662;
-		FIELD field_10482 type Lcom/boehmod/blockfront/unnamed/BF_1663;
+		FIELD field_10482 tone Lcom/boehmod/blockfront/unnamed/BF_1663;
+		FIELD field_10483 clickAction Ljava/lang/Runnable;
 		FIELD field_10484 visibleWhile Ljava/util/function/BooleanSupplier;
 		FIELD field_10485 animatedIcon Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;
 		FIELD field_10486 denyAction Lcom/boehmod/blockfront/unnamed/BF_1659;
+		FIELD field_10487 subject Lcom/mojang/authlib/GameProfile;
+		FIELD field_10488 onRemoved Ljava/lang/Runnable;
 		FIELD field_10489 shouldNarrate Z
+		FIELD field_10490 clickLabel Lnet/minecraft/network/chat/Component;
+		FIELD field_10491 sticky Z
+		FIELD field_10492 key Ljava/lang/Object;
+		FIELD field_10493 duration I
 		FIELD field_10494 title Lnet/minecraft/network/chat/Component;
 		FIELD field_10495 message Lnet/minecraft/network/chat/Component;
 		FIELD field_10640 ggAction Lcom/boehmod/blockfront/unnamed/BF_1659;
@@ -44,16 +81,29 @@ CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/t
 			ARG 1 label
 			ARG 2 action
 		METHOD method_9814 build ()Lcom/boehmod/blockfront/unnamed/BF_1653;
+		METHOD method_9815 durationSeconds (F)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 seconds
+		METHOD method_9816 durationTicks (I)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 ticks
 		METHOD method_9817 animatedIcon (Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1654;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 animatedIcon
 		METHOD method_9818 onResponse (Lcom/boehmod/blockfront/unnamed/BF_1662;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 onResponse
-		METHOD method_9819 type (Lcom/boehmod/blockfront/unnamed/BF_1663;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
-			ARG 1 type
+		METHOD method_9819 tone (Lcom/boehmod/blockfront/unnamed/BF_1663;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 tone
+		METHOD method_9820 subject (Lcom/mojang/authlib/GameProfile;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 subject
+		METHOD method_9821 key (Ljava/lang/Object;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 key
+		METHOD method_9822 onRemoved (Ljava/lang/Runnable;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 onRemoved
 		METHOD method_9823 visibleWhile (Ljava/util/function/BooleanSupplier;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 visibleWhile
 		METHOD method_9824 title (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 title
+		METHOD method_9825 clickAction (Lnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
+			ARG 1 label
+			ARG 2 action
 		METHOD method_9826 icon (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 icon
 		METHOD method_9827 animatedIcon (Lnet/minecraft/resources/ResourceLocation;III)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
@@ -63,11 +113,13 @@ CLASS com/boehmod/blockfront/unnamed/BF_1653 com/boehmod/blockfront/client/gui/t
 			ARG 4 ticksPerFrame
 		METHOD method_9828 shouldNarrate (Z)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 shouldNarrate
+		METHOD method_9829 sticky ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 		METHOD method_9830 message (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 message
 		METHOD method_9831 acceptAction (Lnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 label
 			ARG 2 action
+		METHOD method_9832 persistent ()Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 		METHOD method_9833 denyAction (Lnet/minecraft/network/chat/Component;Ljava/lang/Runnable;)Lcom/boehmod/blockfront/unnamed/BF_1653$BF_1656;
 			ARG 1 label
 			ARG 2 action
