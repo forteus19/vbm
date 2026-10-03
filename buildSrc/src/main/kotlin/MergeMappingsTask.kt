@@ -26,7 +26,7 @@ abstract class MergeMappingsTask : DefaultTask() {
 
     @TaskAction
     fun run() {
-        var tree = MemoryMappingTree()
+        val tree = MemoryMappingTree()
         for (file in inputFiles.files) {
             MappingReader.read(file.toPath(), MappingSourceNsSwitch(tree, "intermediary"))
         }

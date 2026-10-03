@@ -7,5 +7,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_287 com/boehmod/blockfront/client/render
 	METHOD method_1192 getBuffer ()Lcom/mojang/blaze3d/vertex/VertexBuffer;
 	METHOD method_1193 setLastUpdated (J)V
 		ARG 1 lastUpdated
-	METHOD method_1194 close ()V
 	METHOD method_1195 getLastUpdated ()J
