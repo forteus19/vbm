@@ -10,9 +10,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_849 com/boehmod/blockfront/game/impl/ttt
 	METHOD method_3518 setRoleStat (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_859;)V
 		ARG 1 player
 		ARG 2 role
-	METHOD method_3519 playerRoleEquals (Ljava/util/UUID;Ljava/lang/String;)Z
-		ARG 1 player
-		ARG 2 roleKey
 	METHOD method_3520 activateRandomat (Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/server/level/ServerLevel;Ljava/util/Set;)V
 		ARG 1 player
 		ARG 2 level

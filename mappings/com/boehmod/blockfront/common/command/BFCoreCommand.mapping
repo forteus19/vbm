@@ -27,15 +27,12 @@ CLASS com/boehmod/blockfront/unnamed/BF_585 com/boehmod/blockfront/common/comman
 		ARG 1 suggestions
 	METHOD method_2121 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
-	METHOD method_2122 runNextbot (Lcom/mojang/brigadier/context/CommandContext;)V
 	METHOD method_2123 (Lcom/mojang/brigadier/context/CommandContext;Lcom/mojang/brigadier/suggestion/SuggestionsBuilder;)Ljava/util/concurrent/CompletableFuture;
 		ARG 0 context
 		ARG 1 suggestions
 	METHOD method_2124 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_2125 runPause (Lcom/mojang/brigadier/context/CommandContext;)V
-	METHOD method_2126 (Lcom/mojang/brigadier/context/CommandContext;)I
-		ARG 0 context
 	METHOD method_2127 (Lcom/mojang/brigadier/context/CommandContext;)I
 		ARG 0 context
 	METHOD method_2128 (Lcom/mojang/brigadier/context/CommandContext;)I
