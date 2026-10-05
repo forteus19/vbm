@@ -1,1 +1,3 @@
 CLASS com/boehmod/blockfront/unnamed/BF_850 com/boehmod/blockfront/game/impl/ttt/TroubleTownGameClient
+	FIELD field_10911 radarRenderer Lcom/boehmod/blockfront/unnamed/BF_1705;
+	METHOD method_3533 renderPlayerInfo (Lnet/minecraft/client/gui/Font;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/gui/GuiGraphics;II)V

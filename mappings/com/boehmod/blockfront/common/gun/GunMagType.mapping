@@ -1,4 +1,6 @@
 CLASS com/boehmod/blockfront/unnamed/BF_994 com/boehmod/blockfront/common/gun/GunMagType
+	FIELD field_11023 INTERNAL_CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_11024 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_4071 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_994;
 	FIELD field_4072 DEFAULT_ID Ljava/lang/String;
 	FIELD field_4075 DEFAULT_NAME Lnet/minecraft/network/chat/Component;

@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/AbstractGame
+	FIELD field_10895 telemetryManager Lcom/boehmod/blockfront/unnamed/BF_1710;
 	FIELD field_2822 mapInstance Lcom/boehmod/blockfront/unnamed/BF_457;
 	FIELD field_2823 baseCommand Lcom/boehmod/blockfront/unnamed/BF_462;
 	FIELD field_2824 playerManager Lcom/boehmod/blockfront/unnamed/BF_682;
@@ -43,6 +44,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_677 com/boehmod/blockfront/game/Abstract
 		ARG 1 other
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 other
+	METHOD method_10233 getTelemetryManager ()Lcom/boehmod/blockfront/unnamed/BF_1710;
 	METHOD method_2582 setPaused (Z)V
 		ARG 1 paused
 	METHOD method_2583 getName ()Ljava/lang/String;

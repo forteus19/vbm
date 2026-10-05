@@ -1,4 +1,10 @@
 CLASS com/boehmod/blockfront/unnamed/BF_814 com/boehmod/blockfront/game/tag/IHasCrateGuns
+	METHOD method_3406 onCrateUsed (Lcom/boehmod/blockfront/unnamed/BF_445;Lnet/minecraft/world/level/Level;Lnet/minecraft/server/level/ServerPlayer;Lcom/boehmod/blockfront/unnamed/BF_581;)Z
+		ARG 1 manager
+		ARG 2 level
+		ARG 3 player
+		ARG 4 crate
 	METHOD method_3407 getCrateRefreshInterval (Lcom/boehmod/blockfront/unnamed/BF_581;)I
+		ARG 1 crate
 	METHOD method_3408 putCrateItem (Lcom/boehmod/blockfront/unnamed/BF_581;)V
 		ARG 1 crate

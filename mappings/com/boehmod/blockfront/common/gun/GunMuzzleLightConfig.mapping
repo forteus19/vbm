@@ -1,0 +1,23 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1455 com/boehmod/blockfront/common/gun/GunMuzzleLightConfig
+	FIELD field_11040 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_8526 color I
+	FIELD field_8527 rateLimited Z
+	FIELD field_8528 primaryRadius F
+	FIELD field_8529 primaryBrightness F
+	FIELD field_8530 surroundingRadius F
+	FIELD field_8531 surroundingBrightness F
+	FIELD field_8532 rateLimitResetTicks I
+	METHOD method_8023 primaryRadius (F)Lcom/boehmod/blockfront/unnamed/BF_1455;
+	METHOD method_8024 color (I)Lcom/boehmod/blockfront/unnamed/BF_1455;
+		ARG 1 color
+	METHOD method_8025 rateLimited (Z)Lcom/boehmod/blockfront/unnamed/BF_1455;
+	METHOD method_8026 primaryBrightness (F)Lcom/boehmod/blockfront/unnamed/BF_1455;
+	METHOD method_8027 rateLimitResetTicks (I)Lcom/boehmod/blockfront/unnamed/BF_1455;
+	METHOD method_8028 getRateLimitResetTicks ()I
+	METHOD method_8029 getPrimaryRadius ()F
+	METHOD method_8030 getPrimaryBrightness ()F
+	METHOD method_8031 getSurroundingRadius ()F
+	METHOD method_8032 getSurroundingBrightness ()F
+	METHOD method_8033 surroundingRadius (F)Lcom/boehmod/blockfront/unnamed/BF_1455;
+	METHOD method_8034 isRateLimited ()Z
+	METHOD method_8035 surroundingBrightness (F)Lcom/boehmod/blockfront/unnamed/BF_1455;

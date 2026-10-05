@@ -27,6 +27,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 1 manager
 		ARG 2 game
 		ARG 3 dataHandler
+	METHOD method_10236 isEventActive (Ljava/lang/String;)Z
 	METHOD method_2675 getStamina ()F
 	METHOD method_2676 getGame ()Lcom/boehmod/blockfront/unnamed/BF_677;
 	METHOD method_2677 getScoreboard ()Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;

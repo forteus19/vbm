@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1710 com/boehmod/blockfront/game/GameTelemetryManager
+	FIELD field_10951 enabled Z
+	FIELD field_10952 game Lcom/boehmod/blockfront/unnamed/BF_677;
+	METHOD method_10280 buildReport (Ljava/lang/String;)Lcom/boehmod/bflib/cloud/common/mm/report/telemetry/MatchTelemetry;
+		ARG 1 modVersion
+	METHOD method_10281 getPlayer (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_1710$BF_1713;
+		ARG 1 uuid
+	METHOD method_10283 handleScore (Ljava/util/UUID;Lcom/boehmod/blockfront/unnamed/BF_1709;I)V
+		ARG 1 playerUuid
+		ARG 2 key
+		ARG 3 amount
+	METHOD method_10298 buildReportInternal (Ljava/lang/String;)Lcom/boehmod/bflib/cloud/common/mm/report/telemetry/MatchTelemetry;
+	METHOD method_10303 reset ()V
+	METHOD method_10304 encodeMovement ()[B
+	METHOD method_10312 update (Lnet/minecraft/server/level/ServerLevel;)V
+	CLASS BF_1713 Player
+		FIELD field_10986 counts Lit/unimi/dsi/fastutil/objects/Object2IntOpenHashMap;

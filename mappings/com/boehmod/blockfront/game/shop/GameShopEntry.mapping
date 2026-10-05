@@ -1,4 +1,4 @@
-CLASS com/boehmod/blockfront/unnamed/BF_755 com/boehmod/blockfront/game/GameShopItem
+CLASS com/boehmod/blockfront/unnamed/BF_755 com/boehmod/blockfront/game/shop/GameShopEntry
 	FIELD field_3241 price I
 	FIELD field_3243 buttonPos Lnet/minecraft/world/phys/Vec2;
 	METHOD method_3149 getPrice ()I

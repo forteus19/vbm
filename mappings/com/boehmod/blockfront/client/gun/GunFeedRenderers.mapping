@@ -1,7 +1,9 @@
-CLASS com/boehmod/blockfront/unnamed/BF_991 com/boehmod/blockfront/client/render/ClipTextRenderers
+CLASS com/boehmod/blockfront/unnamed/BF_991 com/boehmod/blockfront/client/gun/GunFeedRenderers
 	FIELD field_3998 FLAMETHROWER Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
 	FIELD field_3999 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
 	FIELD field_4000 SLASH_COMPONENT Lnet/minecraft/network/chat/Component;
+	METHOD method_10337 getRenderer (Lcom/boehmod/blockfront/unnamed/BF_1715;)Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
+		ARG 0 feed
 	CLASS BF_992 Renderer
 		METHOD method_4116 render (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;Lcom/boehmod/blockfront/unnamed/BF_993;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/network/chat/Style;IFFIIIIF)V
 			ARG 1 minecraft

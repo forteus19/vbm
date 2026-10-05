@@ -1,7 +1,16 @@
 CLASS com/boehmod/blockfront/unnamed/BF_428 com/boehmod/blockfront/util/math/ShakeNodePresets
 	FIELD field_1906 BULLET_DAMAGE Lcom/boehmod/blockfront/unnamed/BF_427;
-	FIELD field_1910 GUN_HEAVY Lcom/boehmod/blockfront/unnamed/BF_427;
-	FIELD field_1911 GUN_WEBLEY Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_1910 ROCKET_LAUNCHER Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_1911 GUN_REVOLVER Lcom/boehmod/blockfront/unnamed/BF_427;
 	FIELD field_1913 EXPLOSION Lcom/boehmod/blockfront/unnamed/BF_427;
 	FIELD field_1914 EXPLOSION_FAINT Lcom/boehmod/blockfront/unnamed/BF_427;
 	FIELD field_1917 EXPLOSION_SMALL Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_6670 GUN_PISTOL Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_6671 GUN_RIFLE Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_6672 GUN_CARBINE Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_6673 GUN_SMG Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_6674 GUN_AT Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_6675 GUN_PISTOL_RAPID Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_9379 DRY_FIRE_LIGHT Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_9380 DRY_FIRE Lcom/boehmod/blockfront/unnamed/BF_427;
+	FIELD field_9381 DRY_FIRE_HEAVY Lcom/boehmod/blockfront/unnamed/BF_427;

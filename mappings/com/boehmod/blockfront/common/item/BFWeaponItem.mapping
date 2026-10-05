@@ -25,3 +25,4 @@ CLASS com/boehmod/blockfront/unnamed/BF_906 com/boehmod/blockfront/common/item/B
 	METHOD method_3770 getWobbleIntensity ()F
 	METHOD method_7959 spread (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_906;
 		ARG 1 spread
+	METHOD method_8881 getWallTiltSpeed ()F

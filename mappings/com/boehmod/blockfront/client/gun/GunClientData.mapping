@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1716 com/boehmod/blockfront/client/gun/GunClientData
+	FIELD field_11011 INSTANCES Ljava/util/Map;
+	METHOD method_10341 get (Lcom/boehmod/blockfront/unnamed/BF_993;)Lcom/boehmod/blockfront/unnamed/BF_1716;
+		ARG 0 gunItem

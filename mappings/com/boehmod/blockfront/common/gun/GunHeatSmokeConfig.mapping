@@ -1,1 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1644 com/boehmod/blockfront/common/gun/GunHeatSmokeConfig
+	FIELD field_11039 CODEC Lcom/mojang/serialization/Codec;

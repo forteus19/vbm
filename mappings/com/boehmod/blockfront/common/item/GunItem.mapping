@@ -1,11 +1,18 @@
 CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/GunItem
+	FIELD field_11009 config Lcom/boehmod/blockfront/unnamed/BF_1719;
+	FIELD field_4014 INSTANCES Ljava/util/List;
+	FIELD field_4017 geoCache Lsoftware/bernie/geckolib/animatable/instance/AnimatableInstanceCache;
 	METHOD appendHoverText (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item$TooltipContext;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;)V
 		ARG 1 itemStack
 		ARG 2 context
 		ARG 3 entries
 		ARG 4 flag
+	METHOD method_10338 getClientData ()Lcom/boehmod/blockfront/unnamed/BF_1716;
+	METHOD method_10656 getFallbackSprintRecoveryTicks (Lcom/boehmod/bflib/cloud/common/player/challenge/GunType;)F
+		ARG 0 gunType
+	METHOD method_10657 getSprintRecoveryTicks ()F
 	METHOD method_4119 getDefaultFireConfig ()Lcom/boehmod/blockfront/unnamed/BF_957;
-	METHOD method_4120 getClipTextRenderer ()Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
+	METHOD method_4120 getFeedRenderer ()Lcom/boehmod/blockfront/unnamed/BF_991$BF_992;
 	METHOD method_4121 getBipod ()Lcom/boehmod/blockfront/unnamed/BF_996;
 	METHOD method_4122 getChestArmor ()Lnet/neoforged/neoforge/registries/DeferredItem;
 	METHOD method_4140 clientTick (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lcom/boehmod/blockfront/unnamed/BF_273;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/world/item/ItemStack;Lcom/boehmod/blockfront/unnamed/BF_271;)V
@@ -46,6 +53,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 		ARG 0 itemStack
 		ARG 1 value
 	METHOD method_4182 getMaxHitDist ()I
+	METHOD method_4184 isRightHanded ()Z
 	METHOD method_4185 canRefillAmmo ()Z
 	METHOD method_4186 isSecondary ()Z
 	METHOD method_4187 hasBipod ()Z
@@ -59,7 +67,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4202 setMaxAmmo (Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 0 itemStack
 		ARG 1 value
-	METHOD method_4208 getFireMode (Lnet/minecraft/world/item/ItemStack;)I
+	METHOD method_4208 getFireModeIndex (Lnet/minecraft/world/item/ItemStack;)I
 		ARG 0 itemStack
 	METHOD method_4209 getBarrelType (Lnet/minecraft/world/item/ItemStack;)Ljava/lang/String;
 		ARG 0 itemStack
@@ -74,7 +82,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_4220 setMuzzleFlash (Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 0 itemStack
 		ARG 1 value
-	METHOD method_4224 updateMuzzleFlash (Lnet/minecraft/world/item/ItemStack;)V
+	METHOD method_4224 decrementMuzzleFlash (Lnet/minecraft/world/item/ItemStack;)V
 		ARG 0 itemStack
 	METHOD method_4225 hasMuzzleFlash (Lnet/minecraft/world/item/ItemStack;)Z
 		ARG 0 itemStack
@@ -82,13 +90,25 @@ CLASS com/boehmod/blockfront/unnamed/BF_993 com/boehmod/blockfront/common/item/G
 	METHOD method_5531 getBulletParticles ()Lcom/boehmod/blockfront/unnamed/BF_1136;
 	METHOD method_5712 getCameraConfig ()Lcom/boehmod/blockfront/unnamed/BF_1183;
 	METHOD method_6159 getGunType ()Lcom/boehmod/bflib/cloud/common/player/challenge/GunType;
+	METHOD method_6179 getTracerOffset ()Lnet/minecraft/world/phys/Vec3;
+	METHOD method_6180 getTracerOffsetAiming ()Lnet/minecraft/world/phys/Vec3;
+	METHOD method_8884 getConfig ()Lcom/boehmod/blockfront/unnamed/BF_1719;
+	METHOD method_8885 getFallbackShake (Lcom/boehmod/bflib/cloud/common/player/challenge/GunType;)Lcom/boehmod/blockfront/unnamed/BF_427;
+		ARG 0 gunType
+	METHOD method_8886 getFallbackDryFireSound (Lcom/boehmod/bflib/cloud/common/player/challenge/GunType;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+		ARG 0 gunType
+	METHOD method_8887 getDryFireSound (Lnet/minecraft/world/item/ItemStack;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+		ARG 1 stack
+	METHOD method_9272 getFireModeConfig (Lnet/minecraft/world/item/ItemStack;)Lcom/boehmod/blockfront/unnamed/BF_957;
 	METHOD method_9274 setReloadTick (Lnet/minecraft/world/item/ItemStack;J)V
 		ARG 0 itemStack
 		ARG 1 value
 	METHOD method_9277 getReloadTick (Lnet/minecraft/world/item/ItemStack;)J
 		ARG 0 itemStack
-	METHOD method_9279 setFireMode (Lnet/minecraft/world/item/ItemStack;I)V
+	METHOD method_9279 setFireModeIndex (Lnet/minecraft/world/item/ItemStack;I)V
 		ARG 0 itemStack
 		ARG 1 index
+	METHOD method_9431 updateMuzzleFlash (Lnet/minecraft/world/item/ItemStack;)V
+		ARG 0 stack
 	METHOD method_9704 getHeatSmokeConfig ()Lcom/boehmod/blockfront/unnamed/BF_1644;
 	METHOD method_9705 getBulletTrailConfig ()Lcom/boehmod/blockfront/unnamed/BF_1646;

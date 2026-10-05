@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1718 com/boehmod/blockfront/common/gun/GunPresetCodecs
+	FIELD field_11027 MOVEMENT_PENALTY Lcom/mojang/serialization/Codec;
+	FIELD field_11028 WALL_TILT_SPEED Lcom/mojang/serialization/Codec;
+	FIELD field_11029 SHAKE Lcom/mojang/serialization/Codec;
+	FIELD field_11030 SHOOT_BACK Lcom/mojang/serialization/Codec;
+	FIELD field_11031 HEAT_SMOKE Lcom/mojang/serialization/Codec;
+	FIELD field_11032 BULLET_TRAIL Lcom/mojang/serialization/Codec;
+	FIELD field_11033 MUZZLE_LIGHT Lcom/mojang/serialization/Codec;
+	FIELD field_11034 EFFECTS Lcom/mojang/serialization/Codec;
+	FIELD field_11226 SPRINT_RECOVERY_TICKS Lcom/mojang/serialization/Codec;
+	METHOD method_10359 mapOf ([Ljava/lang/Object;)Ljava/util/Map;
+		ARG 0 keyValuePairs

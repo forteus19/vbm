@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_522 com/boehmod/blockfront/registry/gen/ShuttersGenerator
+	FIELD field_10888 corner Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_2220 full Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_2221 left Lnet/neoforged/neoforge/registries/DeferredHolder;
 	FIELD field_2222 right Lnet/neoforged/neoforge/registries/DeferredHolder;

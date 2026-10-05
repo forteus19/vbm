@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1727 com/boehmod/blockfront/common/data/BFCodecs
+	FIELD field_11184 COLOR Lcom/mojang/serialization/Codec;
+	FIELD field_11185 COMPONENT Lcom/mojang/serialization/Codec;
+	FIELD field_11186 VEC3 Lcom/mojang/serialization/Codec;
+	METHOD method_10618 enumName (Ljava/lang/Class;)Lcom/mojang/serialization/Codec;
+		ARG 0 enumClass
+	METHOD method_10625 preset (Ljava/util/Map;Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;
+	METHOD method_10629 registryEntry (Lnet/minecraft/resources/ResourceKey;)Lcom/mojang/serialization/Codec;
+		ARG 0 registryKey
+	METHOD method_10637 optionalRegistryEntry (Lnet/minecraft/resources/ResourceKey;)Lcom/mojang/serialization/Codec;
+		ARG 0 registryKey
+	METHOD method_10639 parseColor (Ljava/lang/String;)Lcom/mojang/serialization/DataResult;

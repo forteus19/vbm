@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_949 com/boehmod/blockfront/common/gun/GunAimConfig
+	FIELD field_11036 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_11037 scope Ljava/lang/String;
+	FIELD field_3842 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_949;
+	FIELD field_3843 sightsTexture Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_3845 allowAim Z
+	FIELD field_3846 renderCrosshair Z
+	FIELD field_3851 zoom F
+	FIELD field_3852 zoomSpeed F
+	FIELD field_6808 spreadMultiplier F
+	CLASS BF_950 Type

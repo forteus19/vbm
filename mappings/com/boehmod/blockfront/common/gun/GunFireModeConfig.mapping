@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_957 com/boehmod/blockfront/common/gun/GunFireModeConfig
+	FIELD field_11035 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_3912 mode Lcom/boehmod/blockfront/unnamed/BF_958;
+	FIELD field_3914 fireRate I
+	FIELD field_3915 shotCount I
+	METHOD method_4022 getBehavior ()Lcom/boehmod/blockfront/unnamed/BF_958;
+	METHOD method_4023 getSpawnType ()Lcom/boehmod/blockfront/unnamed/BF_959;
+	METHOD method_4024 getEntity ()Ljava/util/function/Supplier;
+	METHOD method_4025 getFireRate ()I
+	METHOD method_4026 getShotCount ()I

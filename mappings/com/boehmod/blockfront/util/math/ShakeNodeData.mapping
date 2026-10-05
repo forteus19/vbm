@@ -1,4 +1,5 @@
 CLASS com/boehmod/blockfront/unnamed/BF_427 com/boehmod/blockfront/util/math/ShakeNodeData
+	FIELD field_10876 CODEC Lcom/mojang/serialization/Codec;
 	METHOD method_1495 readBuf (Lnet/minecraft/network/FriendlyByteBuf;)Lcom/boehmod/blockfront/unnamed/BF_427;
 		ARG 0 buf
 	METHOD method_1496 writeBuf (Lnet/minecraft/network/FriendlyByteBuf;)V

@@ -1,3 +1,3 @@
-CLASS com/boehmod/blockfront/unnamed/BF_1690 com/boehmod/blockfront/client/gun/bullet/BulletImpactSize
+CLASS com/boehmod/blockfront/unnamed/BF_1690 com/boehmod/blockfront/common/gun/bullet/BulletHoleSize
 	METHOD fromGunType (Lcom/boehmod/bflib/cloud/common/player/challenge/GunType;)Lcom/boehmod/blockfront/unnamed/BF_1690;
 		ARG 0 gunType

@@ -1,3 +1,15 @@
 CLASS com/boehmod/blockfront/unnamed/BF_1184 com/boehmod/blockfront/common/gun/GunCameraConfigs
-	FIELD field_6758 LMG Lcom/boehmod/blockfront/unnamed/BF_1183;
-	FIELD field_6759 SMG Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_11004 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6758 SMG Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6759 SMG_RAPID Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6760 RIFLE Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6761 CARBINE Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6762 MG Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6763 LMG Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6764 ROCKET Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6765 AT Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6766 SHOTGUN Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6767 PISTOL Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6768 PISTOL_RAPID Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6769 REVOLVER Lcom/boehmod/blockfront/unnamed/BF_1183;
+	FIELD field_6806 MG_RAPID Lcom/boehmod/blockfront/unnamed/BF_1183;

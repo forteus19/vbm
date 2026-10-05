@@ -1,0 +1,13 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1136 com/boehmod/blockfront/common/gun/GunEffectConfig
+	FIELD field_10812 bulletHoleSize Lcom/boehmod/blockfront/unnamed/BF_1690;
+	FIELD field_11038 CODEC Lcom/mojang/serialization/Codec;
+	FIELD field_6375 IMPACT_FLASH Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_10133 getBulletHoleSize (Lcom/boehmod/bflib/cloud/common/player/challenge/GunType;)Lcom/boehmod/blockfront/unnamed/BF_1690;
+		ARG 1 gunType
+	METHOD method_10134 bulletHoleSize (Lcom/boehmod/blockfront/unnamed/BF_1690;)Lcom/boehmod/blockfront/unnamed/BF_1136;
+	METHOD method_10379 getImpactFlashParticle ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_5523 impactFlashParticle (Lnet/neoforged/neoforge/registries/DeferredHolder;)Lcom/boehmod/blockfront/unnamed/BF_1136;
+		ARG 1 particleType
+	METHOD method_5526 getImpactFlash ()Lnet/neoforged/neoforge/registries/DeferredHolder;
+	METHOD method_8021 impactFlashBrightness (F)Lcom/boehmod/blockfront/unnamed/BF_1136;
+	METHOD method_8022 getImpactFlashBrightness ()F

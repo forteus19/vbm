@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1137 com/boehmod/blockfront/common/gun/GunEffectConfigs
+	FIELD field_6378 DEFAULT Lcom/boehmod/blockfront/unnamed/BF_1136;
+	FIELD field_6379 MG Lcom/boehmod/blockfront/unnamed/BF_1136;

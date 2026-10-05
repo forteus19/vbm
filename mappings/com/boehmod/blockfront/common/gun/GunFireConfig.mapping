@@ -1,9 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_957 com/boehmod/blockfront/common/gun/GunFireConfig
-	FIELD field_3912 mode Lcom/boehmod/blockfront/unnamed/BF_958;
-	FIELD field_3914 fireRate I
-	FIELD field_3915 instanceCount I
-	METHOD method_4022 getMode ()Lcom/boehmod/blockfront/unnamed/BF_958;
-	METHOD method_4023 getSpawnType ()Lcom/boehmod/blockfront/unnamed/BF_959;
-	METHOD method_4024 getEntity ()Ljava/util/function/Supplier;
-	METHOD method_4025 getFireRate ()I
-	METHOD method_4026 getInstanceCount ()I
