@@ -4,4 +4,3 @@ CLASS com/boehmod/blockfront/unnamed/BF_97 com/boehmod/blockfront/client/render/
 	FIELD field_455 CP_FLICKER Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_456 shouldFlicker Z
 	FIELD field_457 CP_ALLIES Lnet/minecraft/resources/ResourceLocation;
-	CLASS BF_98 Entry

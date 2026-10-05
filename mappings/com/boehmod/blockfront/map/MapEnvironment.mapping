@@ -89,7 +89,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1182 com/boehmod/blockfront/map/MapEnvir
 		ARG 1 template
 	METHOD method_7805 getUsedMapEffectTemplate (Ljava/util/UUID;)Lcom/boehmod/blockfront/unnamed/BF_1353;
 		ARG 1 uuid
-	METHOD method_7807 renderEdit (Lnet/minecraft/client/Minecraft;Lcom/boehmod/blockfront/unnamed/BF_606;Lnet/minecraft/client/player/LocalPlayer;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/client/gui/GuiGraphics;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/Font;II)V
 	METHOD method_7808 reset (Lnet/minecraft/client/Minecraft;Lnet/minecraft/util/RandomSource;)V
 	METHOD method_7810 getSkyColorAmount ()F
 	METHOD method_7811 getFogColorAmount ()F

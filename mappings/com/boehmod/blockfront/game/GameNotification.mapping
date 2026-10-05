@@ -2,7 +2,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_1379 com/boehmod/blockfront/game/GameNot
 	FIELD field_8094 time I
 	FIELD field_8097 key Ljava/lang/String;
 	FIELD field_8964 lines Ljava/util/List;
-	FIELD field_8965 linesVisualOrderText Ljava/util/List;
 	FIELD field_9258 position Lnet/minecraft/world/phys/Vec3;
 	FIELD field_9260 pointerColor I
 	FIELD field_9266 compassColor I
@@ -14,12 +13,10 @@ CLASS com/boehmod/blockfront/unnamed/BF_1379 com/boehmod/blockfront/game/GameNot
 		ARG 1 message
 		ARG 2 time
 		ARG 4 key
-	METHOD method_7249 render (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/gui/Font;IIF)V
 	METHOD method_7250 resetTime ()V
 	METHOD method_7251 getTime ()I
 	METHOD method_7253 update ()Z
 	METHOD method_8351 getLines ()Ljava/util/List;
-	METHOD method_8352 convertToVisualOrderText (Ljava/util/List;)Ljava/util/List;
 	METHOD method_8704 positioned (Lnet/minecraft/world/phys/Vec3;II)Lcom/boehmod/blockfront/unnamed/BF_1379;
 		ARG 1 position
 		ARG 2 compassColor

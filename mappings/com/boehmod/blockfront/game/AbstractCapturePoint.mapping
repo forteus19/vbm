@@ -4,7 +4,6 @@ CLASS com/boehmod/blockfront/unnamed/BF_754 com/boehmod/blockfront/game/Abstract
 	FIELD field_3224 name Ljava/lang/String;
 	FIELD field_3226 WAYPOINT_TEXTURE Lnet/minecraft/resources/ResourceLocation;
 	FIELD field_3231 renderProgress F
-	FIELD field_3232 renderProgressPrev F
 	FIELD field_3236 captureTimer I
 	FIELD field_6358 playerManager Lcom/boehmod/blockfront/unnamed/BF_682;
 	FIELD field_6359 cbTeam Lcom/boehmod/blockfront/unnamed/BF_686;

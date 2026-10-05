@@ -1,6 +1,2 @@
 CLASS com/boehmod/blockfront/unnamed/BF_194 com/boehmod/blockfront/client/screen/match/MatchCalloutScreen
 	FIELD field_1213 TITLE Lnet/minecraft/network/chat/Component;
-	METHOD method_892 doCallout (Lcom/boehmod/blockfront/unnamed/BF_753;)V
-		ARG 1 callout
-	METHOD method_893 (Lcom/boehmod/blockfront/unnamed/BF_753;Lnet/minecraft/client/gui/components/Button;)V
-		ARG 2 button

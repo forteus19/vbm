@@ -2,12 +2,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_1429 com/boehmod/blockfront/common/block
 	FIELD field_8404 OVERLAY_EFFECT_TYPE_CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_8405 CODEC Lcom/mojang/serialization/Codec;
 	FIELD field_8406 INSTANCES Ljava/util/Map;
-	METHOD method_7886 (Lcom/boehmod/blockfront/unnamed/BF_112$BF_114$BF_115;)Ljava/lang/String;
-		ARG 0 type
 	METHOD method_7887 (Lcom/boehmod/blockfront/unnamed/BF_1429;)Ljava/util/Optional;
 		ARG 0 data
-	METHOD method_7888 (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_112$BF_114$BF_115;
-		ARG 0 name
 	METHOD method_7889 getByResourceLocation (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_1429;
 		ARG 0 location
 	METHOD method_7890 putInstance (Lnet/minecraft/resources/ResourceLocation;Lcom/boehmod/blockfront/unnamed/BF_1429;)V
