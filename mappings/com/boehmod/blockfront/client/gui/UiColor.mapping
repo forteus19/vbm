@@ -1,0 +1,35 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1911 com/boehmod/blockfront/client/gui/UiColor
+	FIELD field_14213 TRANSPARENT Lcom/boehmod/blockfront/unnamed/BF_1911;
+	METHOD method_11812 alpha (F)Lcom/boehmod/blockfront/unnamed/BF_1911;
+		ARG 1 alpha
+	METHOD method_11813 withAlpha (IF)I
+		ARG 0 color
+		ARG 1 alpha
+	METHOD method_11814 blend (IIF)I
+		ARG 0 color1
+		ARG 1 color2
+		ARG 2 favor
+	METHOD method_11815 theme (Lcom/boehmod/blockfront/unnamed/BF_1915;)Lcom/boehmod/blockfront/unnamed/BF_1911;
+		ARG 0 color
+	METHOD method_11816 raw (I)Lcom/boehmod/blockfront/unnamed/BF_1911;
+		ARG 0 color
+	METHOD resolve (Lcom/boehmod/blockfront/unnamed/BF_1965;)I
+		ARG 1 theme
+	CLASS BF_1912 WithAlpha
+		FIELD field_14214 alpha F
+		FIELD field_14215 color Lcom/boehmod/blockfront/unnamed/BF_1911;
+		METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1911;F)V
+			ARG 1 color
+			ARG 2 alpha
+		METHOD method_11817 getAlpha ()F
+		METHOD method_11818 getColor ()Lcom/boehmod/blockfront/unnamed/BF_1911;
+	CLASS BF_1913 Raw
+		FIELD field_14216 color I
+		METHOD <init> (I)V
+			ARG 1 color
+		METHOD method_11819 getColor ()I
+	CLASS BF_1914 Theme
+		FIELD field_14217 target Lcom/boehmod/blockfront/unnamed/BF_1915;
+		METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1915;)V
+			ARG 1 target
+		METHOD method_11820 getThemeColor ()Lcom/boehmod/blockfront/unnamed/BF_1915;

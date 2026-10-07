@@ -1,0 +1,144 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1858 com/boehmod/blockfront/client/gui/UiComponentGraphics
+	FIELD field_14011 currentOpacity F
+	FIELD field_14012 deltaTime F
+	FIELD field_14013 guiScale F
+	FIELD field_14015 theme Lcom/boehmod/blockfront/unnamed/BF_1965;
+	FIELD field_14016 scissorModeStack Lit/unimi/dsi/fastutil/booleans/BooleanArrayList;
+	FIELD field_14017 font Lnet/minecraft/client/gui/Font;
+	FIELD field_14018 mouseX D
+	FIELD field_14019 poseStack Lcom/mojang/blaze3d/vertex/PoseStack;
+	FIELD field_14020 mouseY D
+	FIELD field_14021 opacityStack Lit/unimi/dsi/fastutil/floats/FloatArrayList;
+	FIELD field_14022 guiGraphics Lnet/minecraft/client/gui/GuiGraphics;
+	FIELD field_14023 scissorStack Lit/unimi/dsi/fastutil/floats/FloatArrayList;
+	FIELD field_14025 scratchMatrix Lorg/joml/Matrix4f;
+	FIELD field_14027 verticesPending Z
+	FIELD field_14028 scratchVector Lorg/joml/Vector3f;
+	FIELD field_14030 partialTick F
+	METHOD method_11605 getMouseX ()D
+	METHOD method_11606 getMouseY ()D
+	METHOD method_11607 getTheme ()Lcom/boehmod/blockfront/unnamed/BF_1965;
+	METHOD method_11608 getFont ()Lnet/minecraft/client/gui/Font;
+	METHOD method_11609 getGuiGraphics ()Lnet/minecraft/client/gui/GuiGraphics;
+	METHOD method_11610 enableScissor (FFFF)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+	METHOD method_11611 isRectVisible (FFFF)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+	METHOD method_11612 triangle (FFFFFFI)V
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 x2
+		ARG 4 y2
+		ARG 5 x3
+		ARG 6 y3
+		ARG 7 color
+	METHOD method_11613 border (FFFFFI)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 thickness
+		ARG 6 color
+	METHOD method_11614 rectangle (FFFFI)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 color
+	METHOD method_11615 quadVerticalGradient (FFFFII)V
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 x2
+		ARG 4 y2
+		ARG 5 colorTop
+		ARG 6 colorBottom
+	METHOD method_11616 enableScissor (FFFFZ)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 bfMode
+	METHOD method_11618 adjustColor (Lcom/boehmod/blockfront/unnamed/BF_1911;)I
+		ARG 1 color
+	METHOD method_11619 adjustColor (Lcom/boehmod/blockfront/unnamed/BF_1915;)I
+		ARG 1 target
+	METHOD method_11620 addVertex (Lcom/mojang/blaze3d/vertex/VertexConsumer;Lorg/joml/Matrix4f;FF)Lcom/mojang/blaze3d/vertex/VertexConsumer;
+		ARG 1 vertexConsumer
+		ARG 2 matrix
+		ARG 3 x
+		ARG 4 y
+	METHOD method_11621 preRender (Lnet/minecraft/client/gui/GuiGraphics;DDF)V
+		ARG 1 guiGraphics
+		ARG 2 mouseX
+		ARG 4 mouseY
+		ARG 6 deltaTime
+	METHOD method_11622 texture (Lnet/minecraft/resources/ResourceLocation;FFFFFFFFI)V
+		ARG 1 texture
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
+		ARG 6 u1
+		ARG 7 v1
+		ARG 8 u2
+		ARG 9 v2
+		ARG 10 color
+	METHOD method_11623 texture (Lnet/minecraft/resources/ResourceLocation;FFFFI)V
+		ARG 1 texture
+		ARG 2 x
+		ARG 3 y
+		ARG 4 width
+		ARG 5 height
+		ARG 6 color
+	METHOD method_11624 text (Lnet/minecraft/util/FormattedCharSequence;FFFIZ)V
+		ARG 1 text
+		ARG 2 x
+		ARG 3 y
+		ARG 4 scale
+		ARG 5 color
+		ARG 6 shadow
+	METHOD method_11625 getCurrentOpacity ()F
+	METHOD method_11626 getDeltaTime ()F
+	METHOD method_11627 getPartialTick ()F
+	METHOD method_11628 getPoseStack ()Lcom/mojang/blaze3d/vertex/PoseStack;
+	METHOD method_11629 line (FFFFFI)V
+		ARG 1 x1
+		ARG 2 y1
+		ARG 3 x2
+		ARG 4 y2
+		ARG 5 thickness
+		ARG 6 color
+	METHOD method_11630 verticalGradient (FFFFII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 colorTop
+		ARG 6 colorBottom
+	METHOD method_11631 horizontalGradient (FFFFII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 width
+		ARG 4 height
+		ARG 5 colorLeft
+		ARG 6 colorRight
+	METHOD method_11632 finishFrame ()V
+	METHOD method_11633 flushIfPending ()V
+	METHOD method_11634 postRender ()V
+	METHOD method_11635 popOpacity ()V
+	METHOD method_11636 disableScissor ()V
+	METHOD method_11637 backgroundBlur ()V
+	METHOD method_11638 flushAndReset ()V
+	METHOD method_11639 getRenderTime ()F
+	METHOD method_11640 pushOpacity (F)V
+		ARG 1 opacity
+	METHOD method_11641 backgroundBlur (I)V
+		ARG 1 radius
+	METHOD method_11642 snap (F)F
+		ARG 1 position

@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1960 com/boehmod/blockfront/client/gui/component/addon/ShadowRenderAddon
+	FIELD field_14427 padding F
+	FIELD field_14428 DEFAULT_COLOR Lcom/boehmod/blockfront/unnamed/BF_1911;
+	FIELD field_14429 color Lcom/boehmod/blockfront/unnamed/BF_1911;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1911;F)V
+		ARG 1 color
+		ARG 2 padding

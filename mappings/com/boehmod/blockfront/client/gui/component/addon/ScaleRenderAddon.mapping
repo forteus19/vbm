@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1962 com/boehmod/blockfront/client/gui/component/addon/ScaleRenderAddon
+	FIELD field_14433 centerNormalX F
+	FIELD field_14434 centerNormalY F
+	FIELD field_14435 scaleSupplier Ljava/util/function/DoubleSupplier;
+	METHOD <init> (F)V
+		ARG 1 scale
+	METHOD <init> (Ljava/util/function/DoubleSupplier;)V
+		ARG 1 scaleSupplier
+	METHOD method_12033 centerAt (FF)Lcom/boehmod/blockfront/unnamed/BF_1962;
+		ARG 1 normalX
+		ARG 2 normalY

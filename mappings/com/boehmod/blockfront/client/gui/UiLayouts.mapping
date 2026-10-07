@@ -1,0 +1,127 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1937 com/boehmod/blockfront/client/gui/UiLayouts
+	FIELD field_14344 CENTER Lcom/boehmod/blockfront/unnamed/BF_1934;
+	METHOD method_11945 px (F)Lcom/boehmod/blockfront/unnamed/BF_1937$BF_1949;
+		ARG 0 offset
+	METHOD method_11946 sibling (F)Lcom/boehmod/blockfront/unnamed/BF_1937$BF_1951;
+		ARG 0 gap
+	METHOD method_11947 copyOf (Lcom/boehmod/blockfront/unnamed/BF_1856;)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 target
+	METHOD method_11948 percentOf (Lcom/boehmod/blockfront/unnamed/BF_1856;F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 target
+		ARG 1 percent
+	METHOD method_11949 propertyOf (Lcom/boehmod/blockfront/unnamed/BF_1856;Lcom/boehmod/blockfront/unnamed/BF_1952;)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 target
+		ARG 1 targetProperty
+	METHOD method_11950 parentSize (Lcom/boehmod/blockfront/unnamed/BF_1856;Lcom/boehmod/blockfront/unnamed/BF_1952;)F
+		ARG 0 component
+		ARG 1 property
+	METHOD method_11951 center ()Lcom/boehmod/blockfront/unnamed/BF_1934;
+	METHOD method_11952 fill ()Lcom/boehmod/blockfront/unnamed/BF_1934;
+	METHOD method_11953 formatNumber (F)Ljava/lang/String;
+		ARG 0 num
+	METHOD method_11954 childrenMax ()Lcom/boehmod/blockfront/unnamed/BF_1934;
+	METHOD method_11955 childrenExtent ()Lcom/boehmod/blockfront/unnamed/BF_1934;
+	METHOD method_11956 percent (F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 percent
+	METHOD method_11957 middle (F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 offset
+	METHOD method_11958 centerAt (F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 offset
+	METHOD method_11959 centerAtMiddle (F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 offset
+	METHOD method_11960 cover (F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 aspectRatio
+	METHOD method_11961 cramSibling (F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 gap
+	METHOD method_11962 fill (F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 padding
+	METHOD method_11963 aspect (F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 ratio
+	METHOD method_11964 childrenSum (F)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 0 gap
+	CLASS BF_1938 Aspect
+		FIELD field_14346 ratio F
+		METHOD <init> (F)V
+			ARG 1 ratio
+		METHOD method_11965 ratio ()F
+	CLASS BF_1939 Center
+	CLASS BF_1940 CenterAt
+		FIELD field_14347 offset F
+		FIELD field_14348 isMiddle Z
+		METHOD <init> (FZ)V
+			ARG 1 offset
+			ARG 2 middle
+		METHOD method_11966 isMiddle ()Z
+		METHOD method_11967 offset ()F
+	CLASS BF_1941 Children
+		FIELD field_14349 gap F
+		FIELD field_14350 mode Lcom/boehmod/blockfront/unnamed/BF_1937$BF_1941$BF_1942;
+		METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1937$BF_1941$BF_1942;F)V
+			ARG 1 mode
+			ARG 2 gap
+		METHOD method_11968 mode ()Lcom/boehmod/blockfront/unnamed/BF_1937$BF_1941$BF_1942;
+		METHOD method_11969 gap ()F
+		CLASS BF_1942 Mode
+	CLASS BF_1943 Copy
+		FIELD field_14351 target Lcom/boehmod/blockfront/unnamed/BF_1856;
+		METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1856;)V
+			ARG 1 target
+		METHOD method_11970 target ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	CLASS BF_1944 Cover
+		FIELD field_14352 aspectRatio F
+		METHOD <init> (F)V
+			ARG 1 aspectRatio
+		METHOD method_11971 aspectRatio ()F
+	CLASS BF_1945 CramSibling
+		FIELD field_14353 gap F
+		METHOD <init> (F)V
+			ARG 1 gap
+		METHOD method_11972 gap ()F
+	CLASS BF_1946 Fill
+		FIELD field_14354 padding F
+		METHOD <init> (F)V
+			ARG 1 padding
+		METHOD method_11973 padding ()F
+	CLASS BF_1947 Middle
+		FIELD field_14355 offset F
+		METHOD <init> (F)V
+			ARG 1 offset
+		METHOD method_11974 offset ()F
+	CLASS BF_1948 Percent
+		FIELD field_14356 percent F
+		FIELD field_14357 target Lcom/boehmod/blockfront/unnamed/BF_1856;
+		METHOD <init> (FLcom/boehmod/blockfront/unnamed/BF_1856;)V
+			ARG 1 percent
+			ARG 2 target
+		METHOD method_11975 percent ()F
+		METHOD method_11976 target ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	CLASS BF_1949 Offset
+		FIELD field_14358 offset F
+		FIELD field_14359 isFromEnd Z
+		FIELD field_14360 isOutside Z
+		METHOD <init> (FZZ)V
+			ARG 1 offset
+			ARG 2 fromEnd
+			ARG 3 outside
+		METHOD method_11977 fromEnd ()Lcom/boehmod/blockfront/unnamed/BF_1937$BF_1949;
+		METHOD method_11978 outside ()Lcom/boehmod/blockfront/unnamed/BF_1937$BF_1949;
+		METHOD method_11979 isFromEnd ()Z
+		METHOD method_11980 isOutside ()Z
+		METHOD method_11981 offset ()F
+	CLASS BF_1950 Property
+		FIELD field_14361 targetProperty Lcom/boehmod/blockfront/unnamed/BF_1952;
+		FIELD field_14362 target Lcom/boehmod/blockfront/unnamed/BF_1856;
+		METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1856;Lcom/boehmod/blockfront/unnamed/BF_1952;)V
+			ARG 1 target
+			ARG 2 targetProperty
+		METHOD method_11982 targetProperty ()Lcom/boehmod/blockfront/unnamed/BF_1952;
+		METHOD method_11983 target ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	CLASS BF_1951 Sibling
+		FIELD field_14363 gap F
+		FIELD field_14364 isReverse Z
+		METHOD <init> (FZ)V
+			ARG 1 gap
+			ARG 2 end
+		METHOD method_11984 reverse ()Lcom/boehmod/blockfront/unnamed/BF_1937$BF_1951;
+		METHOD method_11985 isReverse ()Z
+		METHOD method_11986 gap ()F

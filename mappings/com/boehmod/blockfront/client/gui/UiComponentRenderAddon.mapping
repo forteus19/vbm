@@ -1,0 +1,10 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1886 com/boehmod/blockfront/client/gui/UiComponentRenderAddon
+	METHOD method_11723 postDraw (Lcom/boehmod/blockfront/unnamed/BF_1858;Lcom/boehmod/blockfront/unnamed/BF_1856;)V
+		ARG 1 graphics
+		ARG 2 component
+	METHOD method_11724 postScissor (Lcom/boehmod/blockfront/unnamed/BF_1858;Lcom/boehmod/blockfront/unnamed/BF_1856;)V
+		ARG 1 graphics
+		ARG 2 component
+	METHOD method_11725 preDraw (Lcom/boehmod/blockfront/unnamed/BF_1858;Lcom/boehmod/blockfront/unnamed/BF_1856;)V
+		ARG 1 graphics
+		ARG 2 component

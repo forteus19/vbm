@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1899 com/boehmod/blockfront/client/gui/component/MinimapUiComponent
+	FIELD field_14136 zoom F
+	FIELD field_14137 waypointSupplier Ljava/util/function/Supplier;
+	METHOD method_11765 zoom (F)Lcom/boehmod/blockfront/unnamed/BF_1899;
+		ARG 1 zoom
+	METHOD method_11766 waypoints (Ljava/util/function/Supplier;)Lcom/boehmod/blockfront/unnamed/BF_1899;
+		ARG 1 waypointSupplier

@@ -1,0 +1,12 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1861 com/boehmod/blockfront/client/sound/UiSounds
+	METHOD method_11651 sideMenuClose ()V
+	METHOD method_11652 play (Lnet/minecraft/sounds/SoundEvent;F)V
+		ARG 0 soundEvent
+		ARG 1 pitch
+	METHOD method_11653 play (Lnet/neoforged/neoforge/registries/DeferredHolder;FF)V
+		ARG 0 soundHolder
+		ARG 1 minPitch
+		ARG 2 maxPitch
+	METHOD method_11654 buttonPress ()V
+	METHOD method_11655 buttonHover (F)V
+		ARG 0 pitch

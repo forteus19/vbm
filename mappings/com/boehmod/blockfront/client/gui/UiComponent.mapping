@@ -1,0 +1,152 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1856 com/boehmod/blockfront/client/gui/UiComponent
+	FIELD field_13969 x F
+	FIELD field_13970 y F
+	FIELD field_13971 opacity F
+	FIELD field_13975 name Ljava/lang/String;
+	FIELD field_13979 visible Z
+	FIELD field_13981 tickHandlers Ljava/util/List;
+	FIELD field_13982 uiManager Lcom/boehmod/blockfront/unnamed/BF_1864;
+	FIELD field_13984 layoutProperties [Lcom/boehmod/blockfront/unnamed/BF_1934;
+	FIELD field_13986 children Ljava/util/List;
+	FIELD field_13987 frameHandlers Ljava/util/List;
+	FIELD field_13988 mouseClickedHandlers Ljava/util/List;
+	FIELD field_13989 mouseReleasedHandlers Ljava/util/List;
+	FIELD field_13990 mouseDraggedHandlers Ljava/util/List;
+	FIELD field_13991 mouseScrollHandlers Ljava/util/List;
+	FIELD field_13992 charTypedHandlers Ljava/util/List;
+	FIELD field_13993 drawHookMethodName Ljava/lang/String;
+	FIELD field_13995 parent Lcom/boehmod/blockfront/unnamed/BF_1856;
+	FIELD field_13997 color Lcom/boehmod/blockfront/unnamed/BF_1911;
+	FIELD field_13998 flowIgnored Z
+	FIELD field_13999 noRender Z
+	FIELD field_14000 cursorPassthrough Z
+	FIELD field_14001 scissorAddonPresent Z
+	FIELD field_14005 renderAddons Ljava/util/List;
+	FIELD field_14006 narrationMessage Lnet/minecraft/network/chat/Component;
+	METHOD method_11493 getDebugName ()Ljava/lang/String;
+	METHOD method_11494 getDrawHookMethodName ()Ljava/lang/String;
+	METHOD method_11496 getChildren ()Ljava/util/List;
+	METHOD method_11498 scissorArea ()Z
+	METHOD method_11499 getUiManager ()Lcom/boehmod/blockfront/unnamed/BF_1864;
+	METHOD method_11500 getColor ()Lcom/boehmod/blockfront/unnamed/BF_1911;
+	METHOD method_11505 x (F)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 x
+	METHOD method_11506 size (FF)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 width
+		ARG 2 height
+	METHOD method_11507 addTo (Lcom/boehmod/blockfront/unnamed/BF_1856;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 parent
+	METHOD method_11508 removeChild (Lcom/boehmod/blockfront/unnamed/BF_1856;)V
+		ARG 1 child
+	METHOD method_11510 renderAddon (Lcom/boehmod/blockfront/unnamed/BF_1886;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 addon
+	METHOD method_11511 removeRenderAddon (Lcom/boehmod/blockfront/unnamed/BF_1886;)V
+		ARG 1 addon
+	METHOD method_11512 handleMouseScroll (Lcom/boehmod/blockfront/unnamed/BF_1890;)V
+		ARG 1 event
+	METHOD method_11513 color (Lcom/boehmod/blockfront/unnamed/BF_1911;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 color
+	METHOD method_11514 color (Lcom/boehmod/blockfront/unnamed/BF_1915;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 target
+	METHOD method_11515 x (Lcom/boehmod/blockfront/unnamed/BF_1934;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 layout
+	METHOD method_11516 position (Lcom/boehmod/blockfront/unnamed/BF_1934;Lcom/boehmod/blockfront/unnamed/BF_1934;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 layoutX
+		ARG 2 layoutY
+	METHOD method_11517 getLayoutValue (Lcom/boehmod/blockfront/unnamed/BF_1952;)F
+		ARG 1 property
+	METHOD method_11518 getLayout (Lcom/boehmod/blockfront/unnamed/BF_1952;)Lcom/boehmod/blockfront/unnamed/BF_1934;
+		ARG 1 property
+	METHOD method_11520 layout (Lcom/boehmod/blockfront/unnamed/BF_1952;Lcom/boehmod/blockfront/unnamed/BF_1934;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 property
+		ARG 2 layout
+	METHOD method_11523 name (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 name
+	METHOD method_11524 isDrawHookMethod (Ljava/lang/reflect/Method;)Z
+		ARG 0 method
+	METHOD method_11525 runEventHandlers (Ljava/util/List;Lcom/boehmod/blockfront/unnamed/BF_1887;)V
+		ARG 0 handlers
+		ARG 1 event
+	METHOD method_11526 onMouseClicked (Ljava/util/function/Consumer;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 handler
+	METHOD method_11528 narration (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 message
+	METHOD method_11529 visible (Z)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 visible
+	METHOD method_11530 children ([Lcom/boehmod/blockfront/unnamed/BF_1856;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 children
+	METHOD method_11532 isVisible ()Z
+	METHOD method_11533 getWidth ()F
+	METHOD method_11534 isFlowIgnored ()Z
+	METHOD method_11535 getHeight ()F
+	METHOD method_11536 isRenderingDisabled ()Z
+	METHOD method_11537 getX ()F
+	METHOD method_11538 isCursorPassthrough ()Z
+	METHOD method_11539 getY ()F
+	METHOD method_11540 scissorEnabled ()Z
+	METHOD method_11541 getEndX ()F
+	METHOD method_11543 getEndY ()F
+	METHOD method_11553 getOpacity ()F
+	METHOD method_11554 disableSiblingFlush ()Z
+	METHOD method_11556 hasHook ()Z
+	METHOD method_11557 self ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	METHOD method_11558 y (F)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 y
+	METHOD method_11559 child (Lcom/boehmod/blockfront/unnamed/BF_1856;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 child
+	METHOD method_11560 onChildAdded (Lcom/boehmod/blockfront/unnamed/BF_1856;)V
+		ARG 1 child
+	METHOD method_11561 handleCharTyped (Lcom/boehmod/blockfront/unnamed/BF_1888;)V
+		ARG 1 event
+	METHOD method_11562 y (Lcom/boehmod/blockfront/unnamed/BF_1934;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 layout
+	METHOD method_11563 size (Lcom/boehmod/blockfront/unnamed/BF_1934;Lcom/boehmod/blockfront/unnamed/BF_1934;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 width
+		ARG 2 height
+	METHOD method_11565 initList (Ljava/util/List;)Ljava/util/List;
+	METHOD method_11566 onMouseReleased (Ljava/util/function/Consumer;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 handler
+	METHOD method_11567 cursorPassthrough (Z)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 cursorPassthrough
+	METHOD method_11568 getParent ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	METHOD method_11569 width (F)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 width
+	METHOD method_11570 width (Lcom/boehmod/blockfront/unnamed/BF_1934;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 layout
+	METHOD method_11573 onMouseDragged (Ljava/util/function/Consumer;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 handler
+	METHOD method_11575 getLastVisibleSibling ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	METHOD method_11576 height (F)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 height
+	METHOD method_11577 height (Lcom/boehmod/blockfront/unnamed/BF_1934;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 layout
+	METHOD method_11579 onMouseScroll (Ljava/util/function/Consumer;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 handler
+	METHOD method_11580 clearChildren ()V
+	METHOD method_11581 updatePosition ()V
+	METHOD method_11582 tick ()V
+	METHOD method_11583 center ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	METHOD method_11584 opacity (F)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 opacity
+	METHOD method_11586 onTick (Ljava/lang/Runnable;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 handler
+	METHOD method_11588 onCharTyped (Ljava/util/function/Consumer;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 handler
+	METHOD method_11589 fill ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	METHOD method_11590 draw (Lcom/boehmod/blockfront/unnamed/BF_1858;)V
+		ARG 1 graphics
+	METHOD method_11591 handleMouseClicked (Lcom/boehmod/blockfront/unnamed/BF_1889;)V
+		ARG 1 event
+	METHOD method_11592 onFrame (Ljava/util/function/Consumer;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 handler
+	METHOD method_11593 flowIgnored ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	METHOD method_11594 handleMouseReleased (Lcom/boehmod/blockfront/unnamed/BF_1889;)V
+		ARG 1 event
+	METHOD method_11595 noRender ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	METHOD method_11596 handleMouseDragged (Lcom/boehmod/blockfront/unnamed/BF_1889;)V
+		ARG 1 event
+	METHOD method_11597 noCursor ()Lcom/boehmod/blockfront/unnamed/BF_1856;
+	METHOD method_11601 render (Lcom/boehmod/blockfront/unnamed/BF_1858;)V
+		ARG 1 graphics
+	METHOD method_11602 getNarrationMessage ()Lnet/minecraft/network/chat/Component;
+	CLASS BF_1857 DrawHook

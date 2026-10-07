@@ -1,0 +1,11 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1961 com/boehmod/blockfront/client/gui/component/addon/RotationRenderAddon
+	FIELD field_14430 centerNormalX F
+	FIELD field_14431 centerNormalY F
+	FIELD field_14432 rotationSupplier Ljava/util/function/DoubleSupplier;
+	METHOD <init> (F)V
+		ARG 1 rotation
+	METHOD <init> (Ljava/util/function/DoubleSupplier;)V
+		ARG 1 rotationSupplier
+	METHOD method_12031 centerAt (FF)Lcom/boehmod/blockfront/unnamed/BF_1961;
+		ARG 1 normalX
+		ARG 2 normalY

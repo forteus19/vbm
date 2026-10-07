@@ -1,4 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_53 com/boehmod/blockfront/client/gui/widget/BFButton
-	FIELD field_292 alignment Lcom/boehmod/blockfront/unnamed/BF_53$BF_55;
-	CLASS BF_54 Background
-	CLASS BF_55 Alignment

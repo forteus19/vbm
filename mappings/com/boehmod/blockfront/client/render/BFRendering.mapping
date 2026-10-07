@@ -598,7 +598,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_47 com/boehmod/blockfront/client/render/
 		ARG 0 minecraft
 		ARG 1 manager
 		ARG 2 playerId
-	METHOD method_280 vanillaCrosshair (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/player/LocalPlayer;FF)V
+	METHOD method_280 attackIndicator (Lnet/minecraft/client/Minecraft;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/player/LocalPlayer;FF)V
 		ARG 0 minecraft
 		ARG 1 poseStack
 		ARG 2 graphics

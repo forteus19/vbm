@@ -1,0 +1,15 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1916 com/boehmod/blockfront/client/gui/component/TextureUiComponent
+	FIELD field_14218 texture Lnet/minecraft/resources/ResourceLocation;
+	FIELD field_14582 u1 F
+	FIELD field_14583 v1 F
+	FIELD field_14584 u2 F
+	FIELD field_14585 v2 F
+	METHOD <init> (Lnet/minecraft/resources/ResourceLocation;)V
+		ARG 1 texture
+	METHOD method_11821 texture (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_1916;
+		ARG 1 texture
+	METHOD method_12129 uv (FFFF)Lcom/boehmod/blockfront/unnamed/BF_1916;
+		ARG 1 u1
+		ARG 2 v1
+		ARG 3 u2
+		ARG 4 v2

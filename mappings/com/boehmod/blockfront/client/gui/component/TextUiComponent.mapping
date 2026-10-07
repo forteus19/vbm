@@ -1,0 +1,18 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1925 com/boehmod/blockfront/client/gui/component/TextUiComponent
+	FIELD field_14281 text Lnet/minecraft/network/chat/Component;
+	FIELD field_14282 scale F
+	FIELD field_14283 visualText Lnet/minecraft/util/FormattedCharSequence;
+	FIELD field_14284 outlineColor Lcom/boehmod/blockfront/unnamed/BF_1911;
+	FIELD field_14285 textWidth I
+	FIELD field_14286 shadow Z
+	METHOD method_11881 scale (F)Lcom/boehmod/blockfront/unnamed/BF_1925;
+		ARG 1 scale
+	METHOD method_11882 outlineColor (Lcom/boehmod/blockfront/unnamed/BF_1911;)Lcom/boehmod/blockfront/unnamed/BF_1925;
+		ARG 1 color
+	METHOD method_11883 text (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1925;
+		ARG 1 component
+	METHOD method_11884 shadow (Z)Lcom/boehmod/blockfront/unnamed/BF_1925;
+		ARG 1 shadow
+	METHOD method_11885 getTextWidth ()I
+	METHOD method_11886 init ()V
+	METHOD method_11887 getComponent ()Lnet/minecraft/network/chat/Component;

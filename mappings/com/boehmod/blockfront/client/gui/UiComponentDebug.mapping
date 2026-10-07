@@ -1,0 +1,8 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1958 com/boehmod/blockfront/client/gui/UiComponentDebug
+	FIELD field_14419 isEnabled Z
+	METHOD method_12024 onKeyPressed (II)Z
+	METHOD method_12027 isEnabled ()Z
+	METHOD method_12028 render (Lcom/boehmod/blockfront/unnamed/BF_1858;Lcom/boehmod/blockfront/unnamed/BF_1856;)V
+		ARG 0 graphics
+		ARG 1 component
+	METHOD method_12030 onKeyReleased (I)V

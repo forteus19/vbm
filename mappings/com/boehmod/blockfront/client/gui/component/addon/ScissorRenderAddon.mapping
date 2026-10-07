@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1884 com/boehmod/blockfront/client/gui/component/addon/ScissorRenderAddon
+	FIELD field_14095 bfMode Z
+	METHOD <init> (Z)V
+		ARG 1 bfMode
+	METHOD method_11722 bfMode ()Lcom/boehmod/blockfront/unnamed/BF_1884;

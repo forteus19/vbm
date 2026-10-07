@@ -1,0 +1,7 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1852 com/boehmod/blockfront/client/gui/UiComponentInterpolation
+	FIELD field_13955 target Lcom/boehmod/blockfront/unnamed/BF_1852$BF_1855;
+	FIELD field_13959 component Lcom/boehmod/blockfront/unnamed/BF_1856;
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1856;Lcom/boehmod/blockfront/unnamed/BF_1852$BF_1855;Lcom/boehmod/blockfront/unnamed/BF_1865;FFLjava/lang/Runnable;)V
+		ARG 1 component
+		ARG 2 target
+	CLASS BF_1855 Target

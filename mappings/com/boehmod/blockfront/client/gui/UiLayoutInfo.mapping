@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1933 com/boehmod/blockfront/client/gui/UiLayoutInfo
+	METHOD <init> (FFLjava/lang/String;)V
+		ARG 1 origin
+		ARG 2 reach
+		ARG 3 label

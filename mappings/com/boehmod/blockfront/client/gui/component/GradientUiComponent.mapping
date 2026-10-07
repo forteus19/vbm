@@ -1,0 +1,6 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1883 com/boehmod/blockfront/client/gui/component/GradientUiComponent
+	FIELD field_14093 altColor Lcom/boehmod/blockfront/unnamed/BF_1911;
+	FIELD field_14094 horizontal Z
+	METHOD method_11719 horizontal ()Lcom/boehmod/blockfront/unnamed/BF_1883;
+	METHOD method_11720 altColor (Lcom/boehmod/blockfront/unnamed/BF_1911;)Lcom/boehmod/blockfront/unnamed/BF_1883;
+		ARG 1 altColor

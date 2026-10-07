@@ -1,0 +1,17 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1965 com/boehmod/blockfront/client/gui/UiTheme
+	FIELD field_14465 DARK Lcom/boehmod/blockfront/unnamed/BF_1965;
+	FIELD field_14466 name Ljava/lang/String;
+	FIELD field_14467 current Lcom/boehmod/blockfront/unnamed/BF_1965;
+	FIELD field_14468 colors [I
+	METHOD <init> (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD method_12046 color (Lcom/boehmod/blockfront/unnamed/BF_1915;I)Lcom/boehmod/blockfront/unnamed/BF_1965;
+		ARG 1 target
+		ARG 2 color
+	METHOD method_12047 setCurrent (Lcom/boehmod/blockfront/unnamed/BF_1965;)V
+		ARG 0 theme
+	METHOD method_12048 copy (Ljava/lang/String;)Lcom/boehmod/blockfront/unnamed/BF_1965;
+		ARG 1 newName
+	METHOD method_12049 current ()Lcom/boehmod/blockfront/unnamed/BF_1965;
+	METHOD method_12050 getColor (Lcom/boehmod/blockfront/unnamed/BF_1915;)I
+		ARG 1 target

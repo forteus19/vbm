@@ -1,0 +1,14 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1741 com/boehmod/blockfront/client/gui/UiUtils
+	FIELD field_11456 TRANSLUCENT_BLACK Lcom/boehmod/blockfront/unnamed/BF_1911;
+	FIELD field_11457 SOLID_WHITE Lcom/boehmod/blockfront/unnamed/BF_1911;
+	FIELD field_11458 WHITE Lcom/boehmod/blockfront/unnamed/BF_1911;
+	METHOD method_10718 backgroundRectangle ()Lcom/boehmod/blockfront/unnamed/BF_1867;
+	METHOD method_10719 solidColor (I)Lcom/boehmod/blockfront/unnamed/BF_1911;
+		ARG 0 rawColor
+	METHOD method_10720 colorWithAlpha (IF)Lcom/boehmod/blockfront/unnamed/BF_1911;
+		ARG 0 rawColor
+		ARG 1 alpha
+	METHOD method_10722 textComponentWithShadow (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1925;
+		ARG 0 text
+	METHOD method_10723 textComponent (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1925;
+		ARG 0 text

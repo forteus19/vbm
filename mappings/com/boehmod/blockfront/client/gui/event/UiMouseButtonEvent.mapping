@@ -1,0 +1,9 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1889 com/boehmod/blockfront/client/gui/event/UiMouseButtonEvent
+	FIELD field_14105 mouseX D
+	FIELD field_14106 mouseY D
+	FIELD field_14107 button I
+	METHOD method_11737 mouseX ()D
+	METHOD method_11738 mouseY ()D
+	METHOD method_11739 button ()I
+	METHOD method_11740 isLeftButton ()Z
+	METHOD method_11741 isRightButton ()Z

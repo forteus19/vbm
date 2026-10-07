@@ -1,0 +1,3 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1905 com/boehmod/blockfront/client/screen/UiComponentScreen
+	FIELD field_14203 uiManager Lcom/boehmod/blockfront/unnamed/BF_1864;
+	METHOD method_11796 getUiManager ()Lcom/boehmod/blockfront/unnamed/BF_1864;

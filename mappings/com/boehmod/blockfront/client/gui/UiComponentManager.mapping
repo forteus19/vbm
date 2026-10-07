@@ -1,0 +1,21 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1864 com/boehmod/blockfront/client/gui/UiComponentManager
+	FIELD field_14052 activeInterpolations Ljava/util/List;
+	FIELD field_14055 componentGraphics Lcom/boehmod/blockfront/unnamed/BF_1858;
+	FIELD field_14056 root Lcom/boehmod/blockfront/unnamed/BF_1871;
+	FIELD field_14057 vanillaTooltips Z
+	FIELD field_14063 prevNanos J
+	METHOD method_11677 getRoot ()Lcom/boehmod/blockfront/unnamed/BF_1871;
+	METHOD method_11684 render (Lnet/minecraft/client/gui/GuiGraphics;DD)V
+		ARG 1 guiGraphics
+		ARG 2 mouseX
+		ARG 4 mouseY
+	METHOD method_11686 enableVanillaTooltips ()Lcom/boehmod/blockfront/unnamed/BF_1864;
+	METHOD method_11687 getComponentAtPosition (DD)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 x
+		ARG 3 y
+	METHOD method_11688 handleMouse (DD)V
+		ARG 1 mouseX
+		ARG 3 mouseY
+	METHOD method_11693 renderTooltip (DD)V
+	METHOD method_11694 removeComponent (Lcom/boehmod/blockfront/unnamed/BF_1856;)V
+		ARG 1 component

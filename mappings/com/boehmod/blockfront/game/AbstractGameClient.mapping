@@ -119,7 +119,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	METHOD method_2731 decreaseStamina (F)V
 		ARG 1 amount
 	METHOD method_2735 getTips ()Ljava/util/List;
-	METHOD method_2736 getGameElements ()Ljava/util/List;
+	METHOD method_2736 getTopComponents ()Ljava/util/List;
 	METHOD method_2737 getRadioPoints ()Ljava/util/List;
 	METHOD method_2740 getKillFeedEntries ()Ljava/util/List;
 	METHOD method_2741 advanceSummary (Lnet/minecraft/client/Minecraft;)V

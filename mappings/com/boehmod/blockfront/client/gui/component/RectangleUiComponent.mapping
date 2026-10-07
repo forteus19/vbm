@@ -1,0 +1,5 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1868 com/boehmod/blockfront/client/gui/component/RectangleUiComponent
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1911;)V
+		ARG 1 color
+	METHOD <init> (Lcom/boehmod/blockfront/unnamed/BF_1915;)V
+		ARG 1 color

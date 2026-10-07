@@ -1,3 +1,0 @@
-CLASS com/boehmod/blockfront/unnamed/BF_100 com/boehmod/blockfront/client/render/game/element/TextGameElement
-	METHOD method_485 setText (Lnet/minecraft/network/chat/Component;)V
-		ARG 1 component

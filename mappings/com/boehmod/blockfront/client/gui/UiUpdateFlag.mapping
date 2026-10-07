@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1859 com/boehmod/blockfront/client/gui/UiUpdateFlag
+	FIELD field_14031 value I
+	METHOD method_11643 value ()I
+	METHOD method_11644 flag ()V

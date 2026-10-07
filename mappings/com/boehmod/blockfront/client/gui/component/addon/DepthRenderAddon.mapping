@@ -1,0 +1,4 @@
+CLASS com/boehmod/blockfront/unnamed/BF_1959 com/boehmod/blockfront/client/gui/component/addon/DepthRenderAddon
+	FIELD field_14426 z F
+	METHOD <init> (F)V
+		ARG 1 z

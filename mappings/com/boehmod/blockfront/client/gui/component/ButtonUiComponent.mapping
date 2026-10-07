@@ -1,0 +1,39 @@
+CLASS com/boehmod/blockfront/unnamed/BF_53 com/boehmod/blockfront/client/gui/component/ButtonUiComponent
+	FIELD field_12639 label Lcom/boehmod/blockfront/unnamed/BF_1925;
+	FIELD field_12640 background Lcom/boehmod/blockfront/unnamed/BF_1856;
+	FIELD field_12642 BACKGROUND_COLOR Lcom/boehmod/blockfront/unnamed/BF_1911;
+	FIELD field_12647 textureColor Lcom/boehmod/blockfront/unnamed/BF_1911;
+	FIELD field_12652 texture Lcom/boehmod/blockfront/unnamed/BF_1916;
+	FIELD field_12657 labelScale F
+	FIELD field_12658 labelOffsetX F
+	FIELD field_12659 labelOffsetY F
+	FIELD field_12660 backgroundTexture Lcom/boehmod/blockfront/unnamed/BF_1916;
+	FIELD field_292 alignment Lcom/boehmod/blockfront/unnamed/BF_53$BF_55;
+	METHOD <init> (Lnet/minecraft/network/chat/Component;FFLcom/boehmod/blockfront/unnamed/BF_53$BF_54;Ljava/lang/Runnable;)V
+		ARG 1 narrationMessage
+		ARG 2 width
+		ARG 3 height
+		ARG 4 background
+		ARG 5 onClick
+	METHOD method_11098 updateComponents ()Lcom/boehmod/blockfront/unnamed/BF_53;
+	METHOD method_11099 labelScale (F)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 scale
+	METHOD method_11100 alignment (Lcom/boehmod/blockfront/unnamed/BF_53$BF_55;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 alignment
+	METHOD method_11103 label (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 label
+	METHOD method_11104 backgroundTexture (Lnet/minecraft/resources/ResourceLocation;)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 texture
+	METHOD method_11105 texture (Lnet/minecraft/resources/ResourceLocation;FFF)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 texture
+		ARG 2 size
+		ARG 3 offsetX
+		ARG 4 offsetY
+	METHOD method_11106 labelShadow (Z)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 shadow
+	METHOD method_11107 labelOffset (FF)Lcom/boehmod/blockfront/unnamed/BF_53;
+		ARG 1 offsetX
+		ARG 2 offsetY
+	METHOD method_11110 updateColorAndOpacity ()V
+	CLASS BF_54 Background
+	CLASS BF_55 Alignment

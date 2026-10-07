@@ -1,0 +1,2 @@
+CLASS com/boehmod/blockfront/unnamed/BF_99 com/boehmod/blockfront/client/gui/component/game/TextWithIconTopComponent
+	METHOD method_10797 setIcon (Lnet/minecraft/resources/ResourceLocation;)V
