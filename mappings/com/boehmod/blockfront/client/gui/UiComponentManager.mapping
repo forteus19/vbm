@@ -17,5 +17,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1864 com/boehmod/blockfront/client/gui/U
 		ARG 1 mouseX
 		ARG 3 mouseY
 	METHOD method_11693 renderTooltip (DD)V
+		ARG 1 mouseX
+		ARG 3 mouseY
 	METHOD method_11694 removeComponent (Lcom/boehmod/blockfront/unnamed/BF_1856;)V
 		ARG 1 component

@@ -7,6 +7,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_1856 com/boehmod/blockfront/client/gui/U
 	FIELD field_13981 tickHandlers Ljava/util/List;
 	FIELD field_13982 uiManager Lcom/boehmod/blockfront/unnamed/BF_1864;
 	FIELD field_13984 layoutProperties [Lcom/boehmod/blockfront/unnamed/BF_1934;
+	FIELD field_13985 layoutValuesComputed [Z
 	FIELD field_13986 children Ljava/util/List;
 	FIELD field_13987 frameHandlers Ljava/util/List;
 	FIELD field_13988 mouseClickedHandlers Ljava/util/List;
@@ -16,19 +17,25 @@ CLASS com/boehmod/blockfront/unnamed/BF_1856 com/boehmod/blockfront/client/gui/U
 	FIELD field_13992 charTypedHandlers Ljava/util/List;
 	FIELD field_13993 drawHookMethodName Ljava/lang/String;
 	FIELD field_13995 parent Lcom/boehmod/blockfront/unnamed/BF_1856;
+	FIELD field_13996 tooltip Ljava/util/function/Supplier;
 	FIELD field_13997 color Lcom/boehmod/blockfront/unnamed/BF_1911;
 	FIELD field_13998 flowIgnored Z
 	FIELD field_13999 noRender Z
 	FIELD field_14000 cursorPassthrough Z
 	FIELD field_14001 scissorAddonPresent Z
+	FIELD field_14004 constraintCycleWarning Z
 	FIELD field_14005 renderAddons Ljava/util/List;
 	FIELD field_14006 narrationMessage Lnet/minecraft/network/chat/Component;
+	FIELD field_14007 NUM_LAYOUT_PROPERTIES I
+	FIELD field_14009 layoutFlagValues [I
+	FIELD field_14010 layoutValues [F
 	METHOD method_11493 getDebugName ()Ljava/lang/String;
 	METHOD method_11494 getDrawHookMethodName ()Ljava/lang/String;
 	METHOD method_11496 getChildren ()Ljava/util/List;
 	METHOD method_11498 scissorArea ()Z
 	METHOD method_11499 getUiManager ()Lcom/boehmod/blockfront/unnamed/BF_1864;
 	METHOD method_11500 getColor ()Lcom/boehmod/blockfront/unnamed/BF_1911;
+	METHOD method_11501 getTooltip ()Ljava/util/function/Supplier;
 	METHOD method_11505 x (F)Lcom/boehmod/blockfront/unnamed/BF_1856;
 		ARG 1 x
 	METHOD method_11506 size (FF)Lcom/boehmod/blockfront/unnamed/BF_1856;
@@ -57,6 +64,8 @@ CLASS com/boehmod/blockfront/unnamed/BF_1856 com/boehmod/blockfront/client/gui/U
 		ARG 1 property
 	METHOD method_11518 getLayout (Lcom/boehmod/blockfront/unnamed/BF_1952;)Lcom/boehmod/blockfront/unnamed/BF_1934;
 		ARG 1 property
+	METHOD method_11519 warnConstraintCycle (Lcom/boehmod/blockfront/unnamed/BF_1952;)V
+		ARG 1 property
 	METHOD method_11520 layout (Lcom/boehmod/blockfront/unnamed/BF_1952;Lcom/boehmod/blockfront/unnamed/BF_1934;)Lcom/boehmod/blockfront/unnamed/BF_1856;
 		ARG 1 property
 		ARG 2 layout
@@ -69,12 +78,16 @@ CLASS com/boehmod/blockfront/unnamed/BF_1856 com/boehmod/blockfront/client/gui/U
 		ARG 1 event
 	METHOD method_11526 onMouseClicked (Ljava/util/function/Consumer;)Lcom/boehmod/blockfront/unnamed/BF_1856;
 		ARG 1 handler
+	METHOD method_11527 tooltip (Ljava/util/function/Supplier;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 linesSupplier
 	METHOD method_11528 narration (Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1856;
 		ARG 1 message
 	METHOD method_11529 visible (Z)Lcom/boehmod/blockfront/unnamed/BF_1856;
 		ARG 1 visible
 	METHOD method_11530 children ([Lcom/boehmod/blockfront/unnamed/BF_1856;)Lcom/boehmod/blockfront/unnamed/BF_1856;
 		ARG 1 children
+	METHOD method_11531 tooltip ([Lnet/minecraft/network/chat/Component;)Lcom/boehmod/blockfront/unnamed/BF_1856;
+		ARG 1 lines
 	METHOD method_11532 isVisible ()Z
 	METHOD method_11533 getWidth ()F
 	METHOD method_11534 isFlowIgnored ()Z

@@ -8,7 +8,7 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 	FIELD field_2863 scoreboardHeader Lcom/boehmod/blockfront/unnamed/BF_933;
 	FIELD field_2864 tips Ljava/util/List;
 	FIELD field_2865 killFeedEntries Ljava/util/List;
-	FIELD field_2866 gameElements Ljava/util/List;
+	FIELD field_2866 topComponents Ljava/util/List;
 	FIELD field_2867 popups Ljava/util/List;
 	FIELD field_2868 dataHandler Lcom/boehmod/blockfront/unnamed/BF_273;
 	FIELD field_2870 PLAYER_ICON_TEXTURE Lnet/minecraft/resources/ResourceLocation;
@@ -27,9 +27,17 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 2 game
 		ARG 3 dataHandler
 	METHOD method_10236 isEventActive (Ljava/lang/String;)Z
+	METHOD method_12072 getClientNotifications ()Ljava/util/List;
+	METHOD method_12073 getScoreboardHeader ()Lcom/boehmod/blockfront/unnamed/BF_933;
+	METHOD method_12074 getServerNotifications ()Ljava/util/List;
+	METHOD method_12075 getTopComponents ()Ljava/util/List;
+	METHOD method_12076 getScoreboard ()Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
+	METHOD method_12077 getPings ()Ljava/util/Collection;
+	METHOD method_12078 addComponents (Lcom/boehmod/blockfront/unnamed/BF_1871;)V
+		ARG 1 root
 	METHOD method_2675 getStamina ()F
 	METHOD method_2676 getGame ()Lcom/boehmod/blockfront/unnamed/BF_677;
-	METHOD method_2677 getScoreboard ()Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
+	METHOD method_2677 createScoreboard ()Lcom/boehmod/blockfront/unnamed/BF_679$BF_680;
 	METHOD method_2678 getStageTimer ()Lcom/boehmod/blockfront/unnamed/BF_687;
 	METHOD method_2679 getSummaryManager ()Lcom/boehmod/blockfront/unnamed/BF_890;
 	METHOD method_2680 getKillMessage ()Lcom/boehmod/blockfront/unnamed/BF_922;
@@ -112,14 +120,14 @@ CLASS com/boehmod/blockfront/unnamed/BF_679 com/boehmod/blockfront/game/Abstract
 		ARG 2 players
 		ARG 3 player
 		ARG 4 level
-	METHOD method_2724 updateGameElements (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;)V
+	METHOD method_2724 updateTopComponents (Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/player/LocalPlayer;)V
 	METHOD method_2727 getMinimapWaypoints ()Ljava/util/Collection;
 	METHOD method_2730 canChangePerspective (Lnet/minecraft/world/entity/player/Player;)Z
 		ARG 1 player
 	METHOD method_2731 decreaseStamina (F)V
 		ARG 1 amount
 	METHOD method_2735 getTips ()Ljava/util/List;
-	METHOD method_2736 getTopComponents ()Ljava/util/List;
+	METHOD method_2736 createTopComponents ()Ljava/util/List;
 	METHOD method_2737 getRadioPoints ()Ljava/util/List;
 	METHOD method_2740 getKillFeedEntries ()Ljava/util/List;
 	METHOD method_2741 advanceSummary (Lnet/minecraft/client/Minecraft;)V
